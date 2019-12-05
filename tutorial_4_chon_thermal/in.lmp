@@ -1,0 +1,117 @@
+#LAMMPS Input file
+# Title
+clear
+
+# ----- condition settings -----
+
+variable    temp index 298.0 # K
+
+variable    pres index 300.0 # 30 MPa (bar units)
+
+# ----- thermal conductivity calculation settings-----
+# Sample LAMMPS input script for thermal conductivity
+units       real
+variable    T equal ${temp}
+variable    V equal vol
+variable   dt equal 0.5     # 0.5 fs
+variable    p equal 200     # correlation length
+variable    s equal 10      # sample interval
+variable    d equal $p*$s   # dump interval
+
+# convert from LAMMPS real units to SI
+# metal units case
+#variable    kB equal 1.3806504e-23    # [J/K] Boltzmann
+#variable    eV2J equal 1.60218e-19 # eV to J (energy)
+#variable    A2m equal 1.0e-10  # Angstrom to metol (length)
+#variable    ps2s equal 1.0e-12 # ps to s (time)
+#variable    convert equal ${eV2J}*${eV2J}/${ps2s}/${A2m}
+#real units case
+variable    kB equal 1.3806504e-23    # [J/K] Boltzmann
+variable    kCal2J equal 4186.0/6.02214e23 # Kcal/mol to J (energy)
+variable    A2m equal 1.0e-10  # Angstrom to metol (length)
+variable    fs2s equal 1.0e-15 # fs to s (time)
+variable    convert equal ${kCal2J}*${kCal2J}/${fs2s}/${A2m}
+
+# setup problem
+atom_style charge
+dimension    3
+boundary     p p p
+read_data data.chon
+replicate 1 1 1
+mass 1 12.0107 # C
+mass 2 1.00794 # H
+mass 3 15.9994 # O
+mass 4 14.0000 # N
+pair_style   reax/c control.reax_c.chon
+pair_coeff   * * ffield.reax C H O N
+fix          2 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+#fix         2 all qeq/shielded 1 10.0 1.0e-6 100 reax/c # shielded case
+timestep     ${dt}
+thermo       $d
+
+# pre process
+fix          f1 all box/relax iso 0.0
+minimize     1.0e-10 0.0 1000 100000
+unfix        f1
+
+# output file
+dump         d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type
+dump_modify  d1 element C H O N
+variable     energy equal etotal
+variable     temperature equal temp
+fix          f1 all ave/time 1 100 100 v_energy v_temperature file out_energy.txt
+
+# equilibration and thermalization
+velocity     all create $T 123456
+fix          NPT all npt temp $T $T $(100.0*dt) iso 0.0 ${pres} $(1000.0*dt)
+run          8000
+unfix        NPT
+#
+fix          NVT all nvt temp $T $T $(100.0*dt)
+compute      distribution all rdf 400  1 1  2 2  3 3  4 4  1 2  1 3  1 4   2 3  2 4  3 4  * * # C-C, H-H, O-O, N-N, C-H, C-O, C-N, H-O, H-N, O-N, Total
+fix          f2 all ave/time 3000 1 3000 c_distribution[*] file out_rdf.txt mode vector
+group        C type 1
+compute      Cmsd C msd
+fix          f3 all ave/time 1 1 5 c_Cmsd[*] file out_C_msd.txt
+group        H type 2
+compute      Hmsd H msd
+fix          f4 all ave/time 1 1 5 c_Hmsd[*] file out_H_msd.txt
+group        O type 3
+compute      Omsd O msd
+fix          f5 all ave/time 1 1 5 c_Omsd[*] file out_O_msd.txt
+group        N type 4
+compute      Nmsd N msd
+fix          f6 all ave/time 1 1 5 c_Nmsd[*] file out_N_msd.txt
+compute      allmsd all msd
+fix          f7 all ave/time 1 1 5 c_allmsd[*] file out_all_msd.txt
+run          3000
+unfix        f1
+unfix        f2
+unfix        f3
+unfix        f4
+unfix        f5
+unfix        f6
+unfix        f7
+# thermal conductivity calculation, switch to NVE if desired
+unfix        NVT
+fix          NVE all nve
+
+reset_timestep 0
+compute      myKE all ke/atom
+compute      myPE all pe/atom
+compute      myStress all stress/atom NULL virial
+compute      flux all heat/flux myKE myPE myStress
+variable     Jx equal c_flux[1]/vol
+variable     Jy equal c_flux[2]/vol
+variable     Jz equal c_flux[3]/vol
+fix          JJ all ave/correlate $s $p $d &
+             c_flux[1] c_flux[2] c_flux[3] type auto file J0Jt.dat ave running
+variable     scale equal ${convert}/${kB}/$T/$T/$V*$s*${dt}
+variable     k11 equal trap(f_JJ[3])*${scale}
+variable     k22 equal trap(f_JJ[4])*${scale}
+variable     k33 equal trap(f_JJ[5])*${scale}
+thermo_style custom step temp v_Jx v_Jy v_Jz v_k11 v_k22 v_k33
+run          100000
+variable     kappa equal (v_k11+v_k22+v_k33)/3.0
+variable     ndens equal count(all)/vol
+print        "average conductivity: ${kappa} [W/mK] @ $T K, ${ndens} /A^3"

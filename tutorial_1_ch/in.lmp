@@ -1,0 +1,83 @@
+#LAMMPS Input file
+# Title
+clear
+
+# ----- condition settings -----
+
+variable    temp index 298.0 # K
+
+variable    pres index 300.0 # 30 MPa (bar units)
+
+
+# -----other settings -----
+variable    fs   index 0.5 # 0.5 fs
+variable    ps   index 20000 # 20 ps
+variable    nstep equal ${ps}/${fs}
+variable    tdamp equal ${fs}*100
+variable    pdamp equal ${fs}*1000
+
+# ----- Structure settings -----
+units real
+atom_style charge
+dimension     3
+boundary p p p
+read_data data.ch
+replicate 1 1 1
+timestep ${fs}
+
+mass 1 12.0107 # C
+mass 2 1.00794 # H
+
+# ----- Potential settings -----
+pair_style      hybrid/overlay reax/c control checkqeq no table linear 11000
+pair_coeff      * * reax/c ffield.ci-reax.CH C H
+pair_coeff      1 1 table ci-reaxFF_ZBL.dat CC_cireaxFF 
+pair_coeff      1 2 table ci-reaxFF_ZBL.dat CH_cireaxFF 
+pair_coeff      2 2 table ci-reaxFF_ZBL.dat HH_cireaxFF
+
+# ----- Relax calculation (0 K) -----
+thermo_style    custom step etotal temp lx vol press
+thermo          10
+
+fix             f1 all box/relax iso 0.0
+minimize        1.0e-10 0.0 1000 100000
+unfix           f1
+
+# ----- Output setting -----
+dump            d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type
+dump_modify     d1 element C H
+
+# ----- Check equilibriation setting -----
+variable        energy equal etotal
+variable        temperature equal temp
+fix             fout1 all ave/time 1 100 100 v_energy v_temperature file out_energy.txt
+
+# ----- Equilibriation -----
+velocity        all create 10.0 123456
+fix             f1 all npt temp 10.0 ${temp} ${tdamp} iso 0.0 ${pres} ${pdamp}
+run             ${nstep} # 20 ps
+unfix           f1
+
+# ----- Calculation -----
+# fix            f1 all deform 1 x erate 0.001 remap x
+fix             f1 all nvt temp ${temp} ${temp} ${tdamp}
+run             ${nstep} # 20 ps
+unfix           f1
+
+# ----- Radial Distribution Function -----
+#comm_modify cutoff 14
+compute         distribution all rdf 480  1 1  2 2  1 2  * * # C-C, H-H, C-H, Total
+fix             f2 all ave/time 3000 1 3000 c_distribution[*] file out_rdf.txt mode vector
+
+# ----- Mean Square Displacement -----
+group           C type 1
+compute         Cmsd C msd
+fix             f3 all ave/time 1 1 5 c_Cmsd[*] file out_C_msd.txt
+group           H type 2
+compute         Hmsd H msd
+fix             f4 all ave/time 1 1 5 c_Hmsd[*] file out_H_msd.txt
+compute         allmsd all msd
+fix             f5 all ave/time 1 1 5 c_allmsd[*] file out_all_msd.txt
+
+fix             f1 all nvt temp ${temp} ${temp} ${tdamp}
+run             3000
