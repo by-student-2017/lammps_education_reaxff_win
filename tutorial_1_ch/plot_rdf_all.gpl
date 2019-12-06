@@ -1,0 +1,18 @@
+#!/usr/bin/gnuplot
+
+set terminal win font "Arial,12"
+set xlabel "Distance / nm"
+set xtics 0.1
+set mxtics 5
+set ylabel "G(r)"
+set mytics 5
+set y2label "CN(r)"
+set y2tics
+set my2tics 5
+plot "out_rdf.txt" u ($2/10):9 w l t "Total", "out_rdf.txt" u ($2/10):10 w l t "Cumulative coordination number" axis x1y2
+
+# pause -1
+
+#set terminal postscript color enhanced lw 2
+#set out "rdf_all.ps"
+#replot
