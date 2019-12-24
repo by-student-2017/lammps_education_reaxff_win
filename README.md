@@ -55,7 +55,20 @@ Lammps ZTC for education (windows 10 (64 bit))
 
 ------------------------------------------------------------------------------
 ■ 赤外スペクトル
-  こちらはpythonをインストールできる方向けです。
+
+□ pythonのインストール
+1. python(https://www.python.org/downloads)から Release version と書かれたところから下にある Python 3.8.1 をクリックします。Windows x86-64 executable installer をクリックして保存します。
+2. ダウンロードした python-3.8.1-amd64.exe をダブルクリックします。
+3. Add Python 3.8 to PATH にもチェックを入れます。
+4. Install Now をクリックします。
+5. shift を押しながら右クリックして PowerShellウインドウを開きます。そして、下記をコピー&ペーストします。
+  python -m pip install numpy
+  python -m pip install scipy
+  python -m pip install matplotlib
+  python -m pip install pandas
+  python -m pip install scikit-learn
+  python -m pip install opencv-contrib-python
+上から3つまで必要ですが、今後、機械学習などを使うことになるでしょうから、この時点でインストールしておきます。
 
 □ IR spectra [IR1]
 1. git clone https://github.com/EfremBraun/calc-ir-spectra-from-lammps.git
@@ -64,19 +77,31 @@ Lammps ZTC for education (windows 10 (64 bit))
 4. python calc-ir-spectra.py
   IR-zoom-spectra.pngを開くとスペクトルが得られます。 in.infraredでの最後の run の数値を大きくするとよりよいスペクトルが得られます。in.infraredの中に書かれているコメントを読むと良いです。ただし、12時間などという多くの時間が必要になります。O KのIRで良ければ計算条件にもよりますがMOPACを用いた方が綺麗なスペクトルをより短い時間で計算できます。
 
+□ tutorial_6_ch_IR
+  赤外スペクトルの計算（C-H-O用のものでdata.choの酸素を除いて使っています。C-H-O-N用でも同様に計算が可能だと思われます
+  上の例（"IR spectra"）が成功したら次のようにすると赤外スペクトルが計算できます。
+1. run.bat をダブルクリック
+2. plot_IR.gpl をダブルクリック
+3. plot_IR_4000.gpl をダブルクリック
+
 □ tutorial_6_cho_IR
   赤外スペクトルの計算（C-H-O用）
   上の例（"IR spectra"）が成功したら次のようにすると赤外スペクトルが計算できます。
 1. run.bat をダブルクリック
-2. python calc-ir-spectra.py
+2. plot_IR.gpl をダブルクリック
+3. plot_IR_4000.gpl をダブルクリック
 
 □ tutorial_6_chon_IR
   赤外スペクトルの計算（C-H-O-N用）
   上の例（"IR spectra"）が成功したら次のようにすると赤外スペクトルが計算できます。
 1. run.bat をダブルクリック
-2. python calc-ir-spectra.py
+2. plot_IR.gpl をダブルクリック
+3. plot_IR_4000.gpl をダブルクリック
 
 ※ これらの計算は非常に長い時間が必要になります。Step 1.を走らせて帰る気持ちでいる方が良いでしょう。スペクトルをよりシャープにしたければ、最後のrunの値をより大きな値にします。
+※ IR-と付いたファイルがあると上手く動作しないことがあります。その場合は、IR-と付いたファイルを削除してください。Linux OSのUbuntuでそれが発生しました。
+※ [IR-zoom-spectra-quantumcorrection.png] をダブルクリックして図を表示しても良いですし、IR-data.txt（の1列目と最後の列）を使ってExcelなどで図を描くこともできます。
+※ 横軸はスケーリングファクターを掛けて実験値をより合うようにするのも良いかと思います。
 
 ------------------------------------------------------------------------------
 ■ References

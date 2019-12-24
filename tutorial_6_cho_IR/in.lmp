@@ -4,12 +4,12 @@ clear
 variable    temp index 298.0 # K
 
 # ----------------- Atom Definition Section -----------------
-units real
-atom_style charge
-dimension     3
-boundary p p p
-read_data data.cho
-replicate 1 1 1
+units       real
+atom_style  charge
+dimension   3
+boundary    p p p
+read_data   data.cho
+replicate   1 1 1
 
 mass 1 12.0107 # C
 mass 2 1.00794 # H
@@ -21,12 +21,12 @@ pair_coeff         * * ffield.reax.cho C H O
 fix                2 all qeq/reax 1 0.0 10.0 1e-6 param.qeq
 
 # ----------------- Settings Section -----------------
-timestep           0.5
+timestep           0.5 # 0.5 fs
 thermo             200
 
 # ----- Output setting -----
-dump               d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type
-dump_modify        d1 element C H O
+#dump               d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type
+#dump_modify        d1 element C H O
 
 # ----- Check equilibriation setting -----
 variable           energy equal etotal
@@ -38,7 +38,7 @@ fix                f1 all ave/time 1 100 100 v_energy v_temperature file out_ene
 run                0
 velocity           all create ${temp} 123456
 fix                1 all nvt temp ${temp} ${temp} $(100.0*dt)
-run                40000
+run                40000 # 20 ps
 unfix              f1
 reset_timestep     0
 

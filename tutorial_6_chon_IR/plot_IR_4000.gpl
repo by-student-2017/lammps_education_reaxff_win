@@ -1,0 +1,17 @@
+#!/usr/bin/gnuplot
+
+set terminal win font "Arial,12"
+set xlabel "Wavenumber / cm^-^1"
+set xtics  200
+set mxtics 5
+set xrange [0:4000]
+set ylabel "Intensity / arb.units"
+set mytics 5
+set yrange [0:]
+plot "IR-data.txt" u 1:6 w l t "IR spectra"
+
+# pause -1
+
+#set terminal postscript color enhanced lw 2
+#set out "energy.ps"
+#replot

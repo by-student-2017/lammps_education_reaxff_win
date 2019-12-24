@@ -3,32 +3,36 @@ clear
 
 variable    temp index 298.0 # K
 
+variable    lambda index 532 # lazer (nm)
+
+variable    hz_fs equal 299792458*(10^-15/10^-9)/${lambda} # lazer (Hz/fs)
+
+variable    Amplitude index 1.0 # lazer (Amplitude)
+
 # ----------------- Atom Definition Section -----------------
 units       real
 atom_style  charge
 dimension   3
 boundary    p p p
-read_data   data.chon
+read_data   data.cho
 replicate   1 1 1
 
-mass 1 12.0107 # C
-mass 2 1.00794 # H
-mass 3 15.9994 # O
-mass 4 14.0000 # N
+mass        1 12.0107 # C
+mass        2 1.00794 # H
+mass        3 15.9994 # O
 
 # ----- Potential settings -----
-pair_style         reax/c control.reax_c.chon
-pair_coeff         * * ffield.reax C H O N
-fix                2 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
-#fix                2 all qeq/shielded 1 10.0 1.0e-6 100 reax/c # shielded case
+pair_style         reax/c lmp_control
+pair_coeff         * * ffield.reax.cho C H O
+fix                q2 all qeq/reax 1 0.0 10.0 1e-6 param.qeq
 
 # ----------------- Settings Section -----------------
-timestep           0.5 # 0.5 fs
+timestep           0.05
 thermo             200
 
 # ----- Output setting -----
 #dump               d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type
-#dump_modify        d1 element C H O N
+#dump_modify        d1 element C H O
 
 # ----- Check equilibriation setting -----
 variable           energy equal etotal
@@ -39,10 +43,13 @@ fix                f1 all ave/time 1 100 100 v_energy v_temperature file out_ene
 #equilibration
 run                0
 velocity           all create ${temp} 123456
-fix                1 all nvt temp ${temp} ${temp} $(100.0*dt)
-run                40000 # 20 ps
+fix                f2 all nvt temp ${temp} ${temp} $(100.0*dt)
+run                2000
 unfix              f1
 reset_timestep     0
+
+variable           oscillate equal ${Amplitude}*cos(2*PI*${hz_fs}*$(step*dt))
+fix                f3 all efield 0.0 0.0 ${oscillate}
 
 #calculate dipole moment vector
 #WARNING: This definition of the dipole moment is ONLY valid when the system has 0 net charge, so you should verify that before use.
@@ -69,7 +76,7 @@ fix                printdipole all ave/time 1 1 2 v_mytime v_totaldipolex v_tota
 #The only good reason for a filter in this case is if you want to sample a very long trajectory and storing it is computationally prohibitive.
 
 #production
-run                500000
+run                1000000
 #Note that running for 1,000,000 times the printout frequency, as I do here, gets you wavenumbers at 1,000,000 increments between 0 and the maximum wavenumber.
 #If you only use the autocorrelation function up to 0.01 times the trajectory length for statistical purposes, then you only get 10,000 increments.
 #e.g., you get the intensity calculated at every 16,678/9,999 = 1.668 cm^-1.
