@@ -106,9 +106,14 @@ Lammps ZTC for education (windows 10 (64 bit))
 ------------------------------------------------------------------------------
 ■ References
 
+
 [IR1] [lammps-users] Script for calculating IR spectra
   https://lammps.sandia.gov/threads/msg64502.html
   calc-ir-spectra-from-lammps
   https://github.com/EfremBraun/calc-ir-spectra-from-lammps
 
+
+[P1] http://kiff.vfab.org/
+  http://kiff.vfab.org/reax
+  potentials folder are getting from above URL.
 ------------------------------------------------------------------------------
