@@ -4,16 +4,24 @@ Lammps ZTC for education (windows 10 (64 bit))
 ------------------------------------------------------------------------------
 ■ lammps
 
-□ インストール方法
-1. http://packages.lammps.org/windows.html のHPで"64-bit Windows download area"をクリックする
+□ lammpsのインストール
+1. http://packages.lammps.org/windows.html のHPで"their own download area"と”64bit”をクリックする
+  （LAMMPS Binaries Repository: ./admin/64bit）
 2. LAMMPS-64bit-18Jun2019.exe をダウンロードして解凍する
 3. ディフォルトの設定のまま最後まで進めばよい
 以上で lammps のダウンロードと設定は完了です
+※ 配布元のHPが変更を加えるなどして、別のバージョンのlammpsを使う必要になった場合には、run.batで["C:\Program Files\LAMMPS 64-bit 18Jun2019\bin\lmp_serial.exe" -in in.lmp]の部分をインストールしたlammpsのバージョンに対応するものに書き換えてください。または[C:\Program Files\LAMMPS 64-bit **********]を書き換えるという方法もあります
 
 □ 描画ソフト（gnuplotとOvito）
-  gnuplotとOvitoについてはweb上に有益な情報が豊富にありますので、お手数をおかけしますが、そちらをご参照ください
-  
-
+ ・gnuplot（http://www.gnuplot.info/）
+  http://www.yamamo10.jp/yamamoto/comp/gnuplot/inst_win/index.php
+・Ovito（https://www.ovito.org/windows-downloads/）
+※ web上に情報がありますので、お手数をおかけしますが、そちらをご参照ください
+※ gnuplotのインストールと環境設定 (Edit: Dec/11/2020)
+1. gnuplot - Browse /gnuplot at SourceForge.net から gp528-win64-mingw.exe を得る
+  gp528-win64-mingw.exe をダブルクリック。設定はディフォルトのままでよい
+2. コントロール パネル > システムとセキュリティ > システム
+3. システムの環境設定 > 環境変数（N）... > システム環境変数（S）のPath > 編集（I）... > 新規（N）> C:\Program Files\gnuplot\bin を追加する > OK > OK
 ------------------------------------------------------------------------------
 ■ ReaxFF ポテンシャルを用いた分子動力学シミュレーション
 
