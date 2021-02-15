@@ -1,4 +1,4 @@
-# REAX potential for high energy Au-SCH3 systems
+# REAX potential for high energy H-ZSM-5 systems
 # Title
 
 # Intialization
@@ -8,18 +8,18 @@ boundary	p p p
 atom_style	charge
 
 # Atom Definition
-read_data	data.Au-SCH3
-replicate	2 2 1
+read_data	data.H-ZSM-5
+replicate	1 1 1
 
 # Mass Definition
-mass 1 196.96655 # Au
-mass 2 12.0107   # C
-mass 3 1.00794   # H
-mass 4 32.065    # S
+mass 1 28.0855 # Si
+mass 2 15.9994 # O
+mass 3 26.9816 # Al
+mass 4 1.00794 # H
 
 # Potential Definition
 pair_style	reax/c lmp_control
-pair_coeff	* * ffield.reax.AuSCH Au C H S
+pair_coeff	* * ffield.reax.CHONSSiCaCsKSrNaMgAlCu Si O Al H
 
 neighbor	2 bin
 neigh_modify	every 10 delay 0 check no
@@ -36,12 +36,12 @@ unfix           f1
 unfix           f2
 
 # initial velocity settings
-velocity       all create 77.15 4928459 rot yes mom yes dist gaussian
+velocity       all create 298.15 4928459 rot yes mom yes dist gaussian
 
-# Berendsen thermostat (from 298.15 K to 398.15 K)
+# Berendsen thermostat (from 298.15 K to 2000 K)
 fix		1 all nve
 fix		2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
-fix		3 all temp/berendsen 298.15 398.15 400.0 # relaxation constant 0.25*400 = 0.1 ps
+fix		3 all temp/berendsen 298.15 2000 400.0 # relaxation constant 0.25*400 = 0.1 ps
 
 fix		4 all reax/c/bonds 100 bonds.reaxc
 fix		5 all reax/c/species 50 1 50 species.reaxc
@@ -50,7 +50,7 @@ timestep	0.25 # 0.25 fs
 
 # ovito settings
 dump		d1 all cfg 50 cfg/run.*.cfg mass type xs ys zs id type
-dump_modify	d1 element Au C H S
+dump_modify	d1 element Si O Al H
 
 # gnuplot settings
 variable	energy equal etotal
