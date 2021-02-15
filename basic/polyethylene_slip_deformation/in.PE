@@ -25,7 +25,7 @@ fix     6 all deform 1 xy erate 0.04 remap v
 timestep	0.25
 
 #dump		1 all atom 30 dump.reax.rdx
-dump		d1 all cfg 10 cfg/run.*.cfg mass type xs ys zs id type
+dump		d1 all cfg 10 cfg/run.*.cfg mass type xs ys zs id type q
 dump_modify	d1 element C H
 
 variable        energy equal etotal

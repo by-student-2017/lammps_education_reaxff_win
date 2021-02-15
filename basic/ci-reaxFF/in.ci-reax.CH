@@ -18,7 +18,7 @@ fix				3 all reax/c/bonds 100 bonds.reaxc
 fix				4 all reax/c/species 10 1 10 species.reaxc
 
 #dump           1 all atom 30 dump.ci-reax.lammpstrj
-dump			d1 all cfg 10 cfg/run.*.cfg mass type xs ys zs id type
+dump			d1 all cfg 10 cfg/run.*.cfg mass type xs ys zs id type q
 dump_modify		d1 element C H
 
 variable		energy equal etotal

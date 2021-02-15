@@ -19,7 +19,7 @@ fix			2 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
 thermo		10
 thermo_style	custom step temp ke pe pxx pyy pzz etotal
 
-dump		d1 all cfg 10 cfg/run.*.cfg mass type xs ys zs id type
+dump		d1 all cfg 10 cfg/run.*.cfg mass type xs ys zs id type q
 dump_modify	d1 element C H O N
 
 variable	energy equal etotal

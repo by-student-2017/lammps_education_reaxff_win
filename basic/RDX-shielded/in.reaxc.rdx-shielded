@@ -47,7 +47,7 @@ timestep	1.0
 #dump		3 all movie 25 movie.mpg type type axes yes 0.8 0.02 view 60 -30
 #dump_modify	3 pad 3
 
-dump		d1 all cfg 10 cfg/run.*.cfg mass type xs ys zs id type
+dump		d1 all cfg 10 cfg/run.*.cfg mass type xs ys zs id type q
 dump_modify	d1 element C H O N
 
 run		100

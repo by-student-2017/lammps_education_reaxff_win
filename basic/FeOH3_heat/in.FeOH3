@@ -22,7 +22,7 @@ fix		5 all reax/c/species 10 1 10 species.reaxc
 timestep	0.25
 
 #dump		1 all atom 30 dump.reax.feoh
-dump		d1 all cfg 10 cfg/run.*.cfg mass type xs ys zs id type
+dump		d1 all cfg 10 cfg/run.*.cfg mass type xs ys zs id type q
 dump_modify	d1 element H O Fe
 
 variable        energy equal etotal

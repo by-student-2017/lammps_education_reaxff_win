@@ -37,7 +37,7 @@ velocity          all create 300.0 41279 loop geom
 fix               1 all nve
 fix               2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
 
-dump              d1 all cfg 10 cfg/run.*.cfg mass type xs ys zs id type
+dump              d1 all cfg 10 cfg/run.*.cfg mass type xs ys zs id type q
 dump_modify       d1 element C H O N
 
 variable          energy equal etotal

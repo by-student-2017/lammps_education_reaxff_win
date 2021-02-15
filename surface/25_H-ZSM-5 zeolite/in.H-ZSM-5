@@ -49,7 +49,7 @@ fix		5 all reax/c/species 50 1 50 species.reaxc
 timestep	0.25 # 0.25 fs
 
 # ovito settings
-dump		d1 all cfg 50 cfg/run.*.cfg mass type xs ys zs id type
+dump		d1 all cfg 50 cfg/run.*.cfg mass type xs ys zs id type q
 dump_modify	d1 element Si O Al H
 
 # gnuplot settings

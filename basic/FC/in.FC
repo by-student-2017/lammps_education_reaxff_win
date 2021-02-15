@@ -16,7 +16,7 @@ fix             2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
 
 # should equilibrate much longer in practice
 
-dump			d1 all cfg 1 cfg/run.*.cfg mass type xs ys zs id type
+dump			d1 all cfg 1 cfg/run.*.cfg mass type xs ys zs id type q
 dump_modify		d1 element C F
 
 variable        energy equal etotal
