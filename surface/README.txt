@@ -14,6 +14,9 @@ J. Phys. Chem. C 2013, 117, 10, 5221-5228.
 Eugenio Jaramillo, Adri C. T. van Duin,
 J. Phys. Chem. C 2015, 119, 12, 6678-6686.
 
+45_Ni-CH3: Jonathan E. Mueller, Adri C. T. van Duin, 
+William A. Goddard III, J. Phys. Chem. C 2010, 114, 11, 4939-4949.
+
 48_Pd-H2:Thomas P. Senftle, Michael J. Janik, Adri C. T. van Duin,
 J. Phys. Chem. C 2014, 118, 9, 4967-4981.
 
