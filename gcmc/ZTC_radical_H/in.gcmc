@@ -1,0 +1,96 @@
+# fix gcmc example
+# Title
+clear
+
+# ----- condition settings -----
+
+variable   temp index 77.0 # K (for GCMC process)
+
+variable   pres index 1.0 # (bar units), 1.0 bar = 0.1 MPa 
+
+
+# variables available on command line
+# -----other settings -----
+variable   fs   index 0.25 # 0.25 fs
+variable   ps   index 1 # 1 ps
+variable   ps_gcmc index 2 # 2 ps
+variable   nfreq index 10 # = Nevery * Nrepeat
+variable   nstep equal ${ps}*1000/${fs}
+variable   nstep_gcmc equal ${ps_gcmc}*1000/${fs}
+variable   tdamp equal ${fs}*100
+variable   pdamp equal ${fs}*1000
+variable   disp index 0.01
+variable   natom index 10
+variable   nmove index 10
+variable   mu   index -5.46 # Fermi Energy (eV) from MOPAC2016 PM7
+variable   tfac equal 5.0/3.0 # (3 trans + 2 rot)/(3 trans)
+
+# Intialization
+units          real
+atom_style     charge
+boundary       p p p
+
+# Atom Definition
+read_data      data.cho
+
+# Potential settings
+pair_style     reax/c lmp_control safezone 1.6 mincap 150
+pair_coeff     * * ffield.reax.CHONSSiPtZrNiCuCoHeArKrXe C H O
+
+fix            reax all qeq/reax 1 0.0 10.0 1e-6 reax/c
+
+# Mass Definition
+mass 1 12.0107 # C
+mass 2 1.00794 # H
+mass 3 15.9994 # O
+
+# ----- Output setting -----
+dump           d1 all cfg 10 cfg/run.*.cfg mass type xs ys zs id type q
+dump_modify    d1 element C H O
+
+# ----- Check equilibriation setting -----
+variable        Energy equal etotal
+variable        Temperature equal temp
+variable        Pressure equal press
+fix             fout1 all ave/time 1 ${nfreq} ${nfreq} v_Energy v_Temperature v_Pressure file out_energy.txt
+
+thermo_modify  flush yes
+
+# ----- GCMC Calculation-----
+#group           sub type 1:3
+#fix             f1 sub npt temp ${temp} ${temp} 100 iso ${pres} ${pres} 1000
+fix             f1 all npt temp ${temp} ${temp} 100 iso ${pres} ${pres} 1000
+# GCMC settings
+group           gas type 2 # 2=H
+#fix             f2 gas nvt temp ${temp} ${temp} 100
+fix             mygcmc gas gcmc ${nfreq} ${natom} ${nmove} 2 761341 ${temp} ${mu} ${disp} pressure ${pres} tfac_insert ${tfac}
+
+# ----- Output setting 2-----
+variable 	carbon   atom "type==1"
+variable 	hydrogen atom "type==2"
+variable 	oxygen   atom "type==3"
+group 	    carbon   dynamic all var carbon
+group 	    hydrogen dynamic all var hydrogen
+group 	    oxygen   dynamic all var oxygen
+variable    nC  equal count(carbon)
+variable    nH  equal count(hydrogen)
+variable    nO  equal count(oxygen)
+
+variable	tacc equal f_mygcmc[2]/(f_mygcmc[1]+0.1)
+variable	iacc equal f_mygcmc[4]/(f_mygcmc[3]+0.1)
+variable	dacc equal f_mygcmc[6]/(f_mygcmc[5]+0.1)
+variable	racc equal f_mygcmc[8]/(f_mygcmc[7]+0.1)
+
+thermo_style   custom step temp press vol pe ke etotal enthalpy density atoms v_iacc v_dacc v_tacc v_racc v_nC v_nH v_nO
+thermo         10
+
+# ----- averaging -----
+variable        rho equal density
+variable        p equal press
+variable        t equal temp
+variable        nugget equal 1.0e-8
+variable        lambda equal 1.0
+variable        muex equal ${mu}-${temp}*ln(density*${lambda}+${nugget})
+fix             ave all ave/time 1 ${nfreq} ${nfreq} v_rho v_p v_muex v_t ave one file rho_vs_p.dat
+
+run            ${nstep_gcmc}
