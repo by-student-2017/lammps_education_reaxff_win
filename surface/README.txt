@@ -14,5 +14,8 @@ J. Phys. Chem. C 2013, 117, 10, 5221-5228.
 Eugenio Jaramillo, Adri C. T. van Duin,
 J. Phys. Chem. C 2015, 119, 12, 6678-6686.
 
+48_Pd-H2:Thomas P. Senftle, Michael J. Janik, Adri C. T. van Duin,
+J. Phys. Chem. C 2014, 118, 9, 4967-4981.
+
 49_CH3OH_on_V2O5: Chenoweth, K.; et
 al. J. Phys. Chem. C, 2008, 112, 14645-14654.
