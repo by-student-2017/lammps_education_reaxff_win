@@ -1,0 +1,2 @@
+| rcut |  x y z of new origin  | center of coord. x y z |
+  20.0     30.0  30.0  30.0      20.856439590 20.856439590 20.856439590

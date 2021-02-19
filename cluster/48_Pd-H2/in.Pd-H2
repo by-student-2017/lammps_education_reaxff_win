@@ -1,0 +1,65 @@
+# REAX potential for high energy Pd-H2 systems
+# Title
+
+# Intialization
+units		real
+dimension	3
+boundary	p p p
+atom_style	charge
+
+# Atom Definition
+read_data	data.Pd-H2
+replicate	1 1 1
+
+# Mass Definition
+mass 1 196.96655 # Pd
+mass 2 1.00794   # H
+
+# Potential Definition
+pair_style	reax/c lmp_control
+pair_coeff	* * ffield.reax.HPd Pd H
+
+neighbor	2 bin
+neigh_modify	every 10 delay 0 check no
+
+# output
+thermo_style    one #custom step etotal temp lx vol press
+thermo          10
+
+# relax structure, 0 K
+fix				f1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+fix             f2 all box/relax iso 0.1
+minimize        1.0e-10 0.0 1000 100000
+unfix           f1
+unfix           f2
+
+# initial velocity settings
+velocity       all create 298.15 4928459 rot yes mom yes dist gaussian
+
+# Berendsen thermostat (from 298.15 K to 298.15 K)
+fix		1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+#
+fix		2 all nve
+fix		3 all temp/berendsen 298.15 298.15 400.0 # relaxation constant 0.25*400 = 0.1 ps
+#
+#fix		2 all nve
+#fix		3 all press/berendsen iso 0.1 0.1 1000.0
+#
+#fix		2 all npt temp 298.15 298.15 400.0 iso 0.1 0.1 1000
+
+#fix		4 all reax/c/bonds 10 bonds.reaxc
+#fix		5 all reax/c/species 10 1 10 species.reaxc
+
+timestep	0.25 # 0.25 fs
+
+# ovito settings
+dump		d1 all cfg 10 cfg/run.*.cfg mass type xs ys zs id type q
+dump_modify	d1 element Pd H
+
+# gnuplot settings
+variable	energy equal etotal
+variable	temperature equal temp
+fix			fout1 all ave/time 1 10 10 v_energy v_temperature file out_energy.txt
+
+# Run the simulation
+run			50000

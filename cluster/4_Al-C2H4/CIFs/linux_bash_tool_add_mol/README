@@ -1,0 +1,9 @@
+
+setup
+1. sudo apt install bc
+2. chmod +x add_mol.sh
+
+run
+1. (Put one *.vasp from VESTA (cartesian coord.) in the same directory)
+2. gedit settings.txt
+3. ./add_mol.sh
