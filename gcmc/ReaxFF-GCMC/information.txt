@@ -32,5 +32,5 @@ log.lammpss: log file
 
 
 #-----Reference-----
-[1] M.M. Islam et al., Phys. Chem. Chem. Phys., 17 (2015) 3383-3393.
+[1] M. M. Islam et al., Phys. Chem. Chem. Phys., 17 (2015) 3383-3393.
   https://pubs.rsc.org/en/content/articlelanding/2015/CP/C4CP04532G#!divAbstract
