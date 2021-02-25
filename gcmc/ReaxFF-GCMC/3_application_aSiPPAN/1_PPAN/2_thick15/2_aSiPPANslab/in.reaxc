@@ -26,6 +26,14 @@ variable        dmax equal 1.0e-1
 # Energy Minimization and equilibration
 fix             1 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
 
+# output settings
+variable        energy equal etotal
+variable        temperature equal temp
+fix             fout1 all ave/time 1 100 100 v_energy v_temperature file out_energy.txt
+#
+dump		d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q
+dump_modify	d1 element Si H C N
+
 minimize        ${etol} ${ftol} ${maxiter} ${maxeval}
 min_style       cg
 

@@ -23,9 +23,17 @@ atom_modify	map yes
 if		"${readfile} == 0" then "read_data data.in" else "read_restart infile"
 group		freezeatoms id ${ifix1}:${ifix2}
 
+
+
 # output settings
+variable        energy equal etotal
+variable        temperature equal temp
+fix             fout1 all ave/time 1 100 100 v_energy v_temperature file out_energy.txt
+#
 dump		d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q
 dump_modify	d1 element Si Li
+
+
 
 # Variables for minimization
 variable        etol equal 	1.0e-10
