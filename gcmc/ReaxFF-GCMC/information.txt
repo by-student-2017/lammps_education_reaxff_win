@@ -14,11 +14,9 @@ ReaxFF-GCMC
 (see cfg file on Ovito)
 
 
-#-----File information-----
+#-----Input file information-----
 
 run.bat: run file
-
-cfg: structure data folder for ovito
 
 in.reaxc: input file for lammps
 
@@ -26,9 +24,44 @@ data.in: structure file
 
 ffield: potential file
 
+lmp_control: trajectory setting file
+
+control_emin: Control file for running ReaxFF energy minimization on  geometory
+
+control_md: Control file for running ReaxFF MD on  geometory
+
+control_gc: User Inputs
+
+
+#-----Output file information-----
+
+cfg: structure data folder for ovito
+
 my.log: log file
 
 log.lammpss: log file
+
+Si_PPAN.trj; trajectory file
+
+Si_PPAN.pot
+
+out_energy.txt: energy and temperature at every steps
+
+dump.last
+dump.reax
+bonds.last
+bonds.out
+ener_comp
+Thermo
+dump.strs.last
+dump.strs
+MClog
+status.log
+
+
+#-----Other file information-----
+
+getcoord.py
 
 
 #-----Reference-----
