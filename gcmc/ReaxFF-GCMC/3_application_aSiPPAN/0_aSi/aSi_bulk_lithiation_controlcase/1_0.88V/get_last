@@ -1,0 +1,36 @@
+#!/bin/sh
+
+echo 'Filename:'
+read filename
+if [ "$filename" == "dump.last" ]
+then
+	steps=`grep -n 'TIMESTEP' dump.last | wc -l | awk '{print $1}'`
+        if [ "$steps" -gt 1 ]
+        then
+        	l=`grep -n 'TIMESTEP' dump.last | tail -1| awk '{print $1}' | cut -d : -f 1`
+        	l=$(($l-1))
+        	sed -i '1,'$l'd' dump.last
+	fi
+fi
+
+if [ "$filename" == "dump.strs.last" ]
+then
+	steps=`grep -n 'TIMESTEP' dump.strs.last | wc -l | awk '{print $1}'`
+        if [ "$steps" -gt 1 ]
+        then
+        	l=`grep -n 'TIMESTEP' dump.strs.last | tail -1| awk '{print $1}' | cut -d : -f 1`
+        	l=$(($l-1))
+        	sed -i '1,'$l'd' dump.strs.last
+	fi
+fi
+
+if [ "$filename" == "bonds.last" ]
+then
+	steps=`grep -n 'Timestep' $filename | wc -l | awk '{print $1}'`
+        if [ "$steps" -gt 1 ]
+        then
+		l=`grep -n 'Timestep' $filename | tail -1| awk '{print $1}' | cut -d : -f 1`
+		l=$(($l-1))
+		sed -i '1,'$l'd' $filename
+	fi
+fi

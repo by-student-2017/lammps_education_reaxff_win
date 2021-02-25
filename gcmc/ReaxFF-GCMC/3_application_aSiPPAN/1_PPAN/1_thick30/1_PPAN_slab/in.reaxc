@@ -1,0 +1,77 @@
+# REAX potential for PPAN system
+# .....
+print		"SEED: ${seed}"
+units		real
+
+atom_style	charge
+boundary	p p f
+read_data	data.in 
+
+pair_style	reax/c lmp_control
+pair_coeff	* * ffield C N H
+
+#Neighbor list
+neighbor	2.5 bin
+neigh_modify	delay 0 every 5 check no
+
+#Emin
+# Variable for minimization
+variable        etol equal 1.0e-10
+variable        ftol equal 1.0e-10
+variable        maxiter equal 50000
+variable        maxeval equal 10000
+variable        dmax equal 1.0e-1
+
+# Energy Minimization and equilibration
+fix             1 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+
+# output settings
+dump		d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q
+dump_modify	d1 element C N H
+
+minimize        ${etol} ${ftol} ${maxiter} ${maxeval}
+min_style       cg
+
+dump            1 all atom 1 dump.reax1
+dump_modify     1 scale no
+run 		0
+undump		1
+
+#Initial temp
+velocity all create 0.1 ${seed}
+reset_timestep	0
+restart		1000 refile1 refile2
+variable	zlow equal zlo
+variable	zhigh equal zhi
+
+#NVT MD Nose-Hoover thermostat
+fix		2 all nvt temp 0.1 300.0 100.0
+fix		3 all wall/reflect zlo v_zlow zhi v_zhigh
+fix             5 all reax/c/bonds 10000 bonds.out
+fix             6 all reax/c/species 1 10 10000 mol.out position 10000 mol.pos
+
+timestep	0.25
+
+thermo 		1000
+thermo_style	custom step time pe ke etotal vol temp press pxx pyy pzz lx ly lz density
+
+dump            1 all atom 1000 dump.reax_md
+dump            2 all custom 1000 dump.reax_mdu id type xu yu zu
+dump_modify	1 scale no
+
+run 		100000
+
+unfix		2
+fix		2 all nvt temp 300.0 300.0 100.0
+fix		4 all deform 1 x final 48 78.5669 y final 48 78.5669 z final 48 78.5669
+run 		760000
+write_restart	refile.*
+
+unfix		4
+fix		4 all deform 1 z final 55.5 71.0669
+run 		492000
+write_restart	refile.*
+
+unfix		4
+run		2000000
+write_restart	refile.*

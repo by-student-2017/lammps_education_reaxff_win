@@ -1,0 +1,36 @@
+#-----Attention-----
+You must get python 3.9 from Microsft Store.
+(python -V)
+(Python 3.9.1)
+
+
+#-----Run: 3_application_aSiPPAN-----
+(go to following file)
+ReaxFF-GCMC
+> 3_application_aSiPPAN
+  > 0_aSi\aSi_bulk_lithiation_controlcase
+    > 1_0.88V
+(click) run.bat
+(see cfg file on Ovito)
+
+
+#-----File information-----
+
+run.bat: run file
+
+cfg: structure data folder for ovito
+
+in.reaxc: input file for lammps
+
+data.in: structure file
+
+ffield: potential file
+
+my.log: log file
+
+log.lammpss: log file
+
+
+#-----Reference-----
+[1] M.M. Islam et al., Phys. Chem. Chem. Phys., 17 (2015) 3383-3393.
+  https://pubs.rsc.org/en/content/articlelanding/2015/CP/C4CP04532G#!divAbstract

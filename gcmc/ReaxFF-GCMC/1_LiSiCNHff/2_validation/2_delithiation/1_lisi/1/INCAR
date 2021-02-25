@@ -1,0 +1,43 @@
+SYSTEM = Si_bulk
+
+#startup options
+ISTART   = 0        ! job: 0-new, 1-cont, 2-samecut
+ICHARG   = 2        ! charge: 1-file, 2-atom, 3-const
+INIWAV   = 1        ! wfn: 0-lowe, 1-rand
+
+#electronic relaxation
+NELM     = 100      ! Maximum number of SCF iterations
+ALGO     = fast     ! SCF algorithm
+ISPIN    = 2        ! spin polarization: 1-no spin polarization, 2-spin polarization
+EDIFF    = 1E-05    ! energy difference cutoff
+ISMEAR   = 0        ! smearing method: 0-gaussian, -5->tetrahedral method, 2-MP method (2nd order)
+SIGMA    = 0.01     ! smearing width
+PREC     = accurate
+ENCUT    = 450      ! Kinetic Energy cut-off (determined by convergence study)
+LREAL    = auto  ! Real space projection
+
+#output options
+LWAVE    = .FALSE.   ! Write the wavecar file?
+LCHARG   = .FALSE.   ! Write the chgcar file?
+LAECHG   = .FALSE.   ! Write atomic core charge file?
+LVHAR = .FALSE.      ! Write Hartree potential
+
+#dos options
+NEDOS    = 1200
+LORBIT   = 11
+
+#ionic relaxation options
+EDIFFG    = -0.02    ! if negative, relax until forces are below this value (in eV/A)
+IBRION    = 2        ! -1 freeze; 0 AIMD, 1 quasi-Newton, 2 CG method, 3 damp MD
+NSW       = 100        ! Number of relaxation steps
+ISIF      = 2        ! if relaxation, allows the all to relax
+POTIM     = 0.5      ! default is 0.5, scaling factor for forces
+
+#Van der waals correction
+IVDW = 11
+
+#Parallelization
+LPLANE = .TRUE.
+NCORE  = 4
+LSCALU = .FALSE.
+NSIM   = 4

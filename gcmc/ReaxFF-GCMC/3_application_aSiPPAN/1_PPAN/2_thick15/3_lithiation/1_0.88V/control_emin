@@ -1,0 +1,69 @@
+# Control file for running ReaxFF energy minimization on a geometry
+
+#Force field: Define all GCMC species (including the ones not in geometry file) in the order they appear in datafile
+pair_style	reax/c lmp_control safezone 1.6 mincap 100
+pair_coeff	* * ffield Si H C N Li
+#Group
+group		silicon type 1
+
+#Neighbor list
+neighbor	2.5 bin
+neigh_modify	delay 0 every 1 check yes
+
+#Property computes
+compute virial all stress/atom NULL
+compute e all pair reax/c
+variable eb equal c_e[1]
+variable ea equal c_e[2]
+variable elp equal c_e[3]
+variable emol equal c_e[4]
+variable ev equal c_e[5]
+variable epen equal c_e[6]
+variable ecoa equal c_e[7]
+variable ehb equal c_e[8]
+variable et equal c_e[9]
+variable eco equal c_e[10]
+variable ew equal c_e[11]
+variable ep equal c_e[12]
+variable efi equal c_e[13]
+variable eqeq equal c_e[14]
+variable stp equal "step"
+variable Pe equal "pe"
+
+variable Ke equal "ke"
+variable Te equal "etotal"
+variable V equal "vol"
+variable Tmp equal "temp"
+variable P equal "press"
+variable Px equal "pxx"
+variable Py equal "pyy"
+variable Pz equal "pzz"
+variable Lx equal "lx"
+variable Ly equal "ly"
+variable Lz equal "lz"
+variable Dens equal "density"
+
+# Energy Minimization and equilibration
+fix             1 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+fix		2 all box/relax iso 0.0
+fix		freeze freezeatoms setforce 0 0 0
+fix		5 all reax/c/bonds 1 bonds.last
+#fix		si_com silicon recenter INIT INIT INIT
+
+minimize        ${etol} ${ftol} ${maxiter} ${maxeval}
+min_style       cg
+
+thermo		1000
+thermo_style	custom step time pe ke etotal vol temp press pxx pyy pzz lx ly lz density c_e[1]
+dump		1 all custom 1 dump.last id type x y z fx fy fz
+dump            2 all custom 1 dump.strs.last c_virial[1] c_virial[2] c_virial[3] c_virial[4] c_virial[5] c_virial[6]
+
+run 		0 post no
+
+if		"${imc}!=0" then &
+		"shell echo dump.last | get_last" &
+		"shell echo dump.strs.last | get_last" &
+		"shell echo bonds.last | get_last"
+
+undump		1
+undump		2

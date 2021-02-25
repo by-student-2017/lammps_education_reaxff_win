@@ -1,0 +1,38 @@
+# User Inputs
+
+variable	iEnsmble equal 	0		#0:GCMC NVT, 1:GCMC NPT, 2:MC NVT, 3:NPT
+variable	nmciter equal 	1000000		#No. of GCMC iterations
+variable	EmMD equal	1		#0:control_emin, 1:control_md (Emin/MD for every GCMC iter)
+variable	MDstp1 equal	200		#MD steps (for every GCMC iter) if control_md selected
+variable	readfile equal	0		#Type of the input geo file. 0:data.in, 1:infile
+
+variable	iMD equal	1		#1:Perform MD run every iMDfreq GCMC iter
+variable	iMDfreq equal	5		#GCMC iter if iMD=1
+variable	MDstp2 equal	200		#MD steps (for iMDfreq MD) if iMD=1
+variable	initMD equal	1		#1:Run (longer) MD on first geometry (for EmMD=1,MD)
+variable	MDstp3 equal	10000		#MD steps (for 1st long MD) if initMD=1
+
+variable	Temp equal 	300		#Temp for MD, GCMC prob
+variable	Pressure equal 	0.0		#For GCMC NPT
+variable	vfactIn equal 	0.01		#Max change in length during NPT
+variable	volAvoid equal	12609		#Vol of sim box - Vol (Li) used for GCMC
+
+variable	ifix1 equal 	0		#first atom-id in the range of fixed atoms
+variable	ifix2 equal 	0		#last atom-id in the range of fixed atoms
+variable	inonMC equal	2808		#last id of nonMC atom (not part of any GCMC move)
+variable	iMC equal	2808		#last id of MC atoms (just displacable)(should be at the end of data.in file)(inonMC=iMC, if no MC atom)
+
+variable	Rmax equal 	3.0		#Farthest new atom can be (from typeNear* if iNear*=1, otherwise any atom) 	(default-criteria1)
+variable	Rmin equal 	2.0		#Closest new atom can be (to typeNear* if iNear*=1, otherwise any atom) 	(default-criteria2)
+variable	typeGC equal	5		#Atom type of GCMC atom (one type for now)
+variable	mass equal	6.941		#Mass of GCMC atom
+variable	mu equal	-59.54		#Chemical potential of GCMC atom
+variable	iSiDist equal	0		#1:To apply distance criteria from Si for new atom placement, 0:otherwise 	(addon-criteria1)
+variable	iNear1 equal	1		#1:To restrict placement of typeGC atoms near typeNear1 atoms (near Si) 	(addon-criteria2.1)
+variable	typeNear1 equal	1		#Type of atom1 near which typeGC atoms are placed (Si)
+variable	iNear2 equal	0		#1:To restrict placement of typeGC atoms near typeNear1 or typeNear2 atoms (near Si or Li) 	(addon-criteria2.2)
+variable	typeNear2 equal	5		#Type of atom2 near which typeGC atoms are placed (Li)
+variable	iparticle equal	0		#1:To place typeGC in a particle of typeNear (iNear must be 1), 0:otherwise (Change r_atoms and r_factor in getcoords.py) (addon-criteria3)
+variable	far_atoms equal	75		## farthest atoms used to calculate r of particle
+
+variable	far_rfact equal	0.9025		#multiplication factor to r to get r for placing in particle

@@ -1,0 +1,425 @@
+# GCMC parent script
+
+include		control_gc
+
+
+
+#Initialize
+print           "Seed: ${seed}"
+variable	rn_01 equal	random(0,1,${seed})
+variable	beta equal	1/(0.0019872041*${Temp})
+variable	lambda equal	sqrt(1/(${mass}*${Temp}))*17.45822066
+variable	therm_vel equal	sqrt(${Temp}/${mass})*0.001579347326
+print		"beta: ${beta}; lambda:${lambda}; therm_vel:${therm_vel}"
+#shell		rm dump.last dump.reax bonds.last bonds.out ener_comp  Thermo dump.strs.last dump.strs MClog status.log
+shell		del dump.last dump.reax bonds.last bonds.out ener_comp  Thermo dump.strs.last dump.strs MClog status.log
+print		"imc  pass  n_system  E_system  vol_system  vol_GC  pr_system  prob1  prob2" append MClog
+print 		"1imc  2nGCMC  3Pe  4eb  5ea  6elp  7emol  8ev  9epen  10ecoa  11ehb  12et  13eco  14ew  15ep  16efi  17eqeq" file ener_comp
+print 		"1imc  2nGCMC  3Pe  4Ke  5Te  6V  7Tmp  8P  9Px  10Py  11Pz  12Lx  13Ly  14Lz  15Dens" file Thermo
+
+units           real
+atom_style      charge
+atom_modify	map yes
+if		"${readfile} == 0" then "read_data data.in" else "read_restart infile"
+group		freezeatoms id ${ifix1}:${ifix2}
+
+
+
+# output settings
+dump		d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q
+dump_modify	d1 element Si H C N Li
+
+
+
+# Variables for minimization
+variable        etol equal 	1.0e-10
+variable        ftol equal 	1.0e-10
+variable        maxiter equal 	500000
+variable        maxeval equal 	100000
+variable        dmax equal 	1.0e-1
+
+
+
+#First reax run
+variable	n_trial equal 	count(all)
+variable	E_trial equal 	pe
+variable	vol_trial equal vol
+variable	pr_trial equal press
+variable	imc equal 0
+
+if		"${initMD}==1" then &
+		"variable	MDstp equal	${MDstp3}" &
+else		"variable	MDstp equal	${MDstp1}"
+if		"(${initMD}==1) && (${MDstp3}<1000)" then &
+		"variable	MDdmp equal	${MDstp3}" &
+else		"variable	MDdmp equal	1000"
+if		"${EmMD}==0" then "variable	filename string control_emin" else "variable	filename string control_md"
+
+include 	${filename}
+
+variable	MDstp equal	${MDstp1}
+variable	MDdmp equal	${MDstp1}
+
+variable	n_system equal	${n_trial}
+variable	E_system equal 	${E_trial}
+variable	vol_system equal ${vol_trial}
+variable	vol_GC equal	(vol-${volAvoid})			#Volume available to GCMC atoms (to be used in prob. calculation)
+variable	pr_system equal ${pr_trial}
+variable	n_MC equal	v_n_system-v_inonMC		#displacable atoms
+variable	n_GCMC equal	v_n_system-v_iMC		#deletable atoms
+variable	flgCoord equal	0
+print 		"${imc}  ${n_GCMC}  ${Pe}  ${eb}  ${ea}  ${elp}  ${emol}  ${ev}  ${epen}  ${ecoa}  ${ehb}  ${et}  ${eco}  ${ew}  ${ep}  ${efi}  ${eqeq}" append ener_comp
+print 		"${imc}  ${n_GCMC}  ${Pe}  ${Ke}  ${Te}  ${V}  ${Tmp}  ${P}  ${Px}  ${Py}  ${Pz}  ${Lx}  ${Ly}  ${Lz}  ${Dens}" append Thermo
+variable	imc delete
+shell		cat dump.last >> dump.reax
+shell		cat bonds.last >> bonds.out
+shell		cat dump.strs.last >> dump.strs
+print		"First run  ${n_system}  ${E_system}  ${vol_system}  ${vol_GC}  ${pr_system}" append status.log
+print		"--------------------------------------------------------------------------------------" append status.log
+print		"imc  pass  n_system  E_system  E_trial  vol_system  vol_GC  pr_system  prob_MC  iMCflag  n_MC  n_GCMC  iblock  prob1  prob2  atomid  status" append status.log
+write_restart	refile
+
+
+
+#Ensemble pick
+if		"${iEnsmble}==0" then "variable iMCpick equal 3"
+if		"${iEnsmble}==1" then "variable iMCpick equal 4"
+if		"${iEnsmble}==2" then "variable iMCpick equal 1"
+if		"${iEnsmble}==3" then "variable iMCflag equal 3"
+
+
+
+#GCMC loop
+variable	imc loop 	0 ${nmciter}
+variable	pass loop 	0 ${nmciter}
+variable	MDcheck equal 	"v_imc%v_iMDfreq"
+label		imcloop
+if		"${imc} >= ${nmciter}" then "print 'End of loop'" 	"quit"
+next		imc
+print		"imc, pass: ${imc}, ${pass}"
+variable	prob_MC equal	${rn_01}
+if		"${iEnsmble}!=3" then "variable iMCflag equal floor(${iMCpick}*${prob_MC})"
+print 		"prob_MC, iMCflag: ${prob_MC}, ${iMCflag}"
+print 		"n_MC:${n_MC}; n_GCMC:${n_GCMC}"
+variable	iblock equal	0
+variable	prob1 equal	0
+variable	prob2 equal	0
+variable	rx string	0
+variable	ry string	0
+variable	rz string	0
+variable	flgCoord delete
+variable	flgCoord equal	0
+print 		"iblock:${iblock}"
+#run		0 pre no post no
+#print		"${imc}  ${pass}  ${n_system}  ${E_system}  ${E_trial}  ${vol_system}  ${vol_GC}  ${pr_system}  ${prob_MC}  ${iMCflag}  ${n_MC}  ${n_GCMC}  ${iblock}  ${prob1}  ${prob2}  loop head" append status.log
+
+
+
+#Displace atom block
+if 		"(${iMCflag} == 0) && (${n_MC}>0)" then &
+		"print 		'in displace block'" &
+		"variable	iblock equal 1" &
+		"variable	nMCmoved equal	floor(${inonMC}+${rn_01}*${n_MC})+1" &
+		"print 		'nMCmoved is ${nMCmoved}'" &
+		"clear" &
+		"read_restart	refile" &
+		"group		disp id ${nMCmoved}" &
+		"variable	flgCoord delete" &
+		"variable	flgCoord python	getRandCoords" &
+		"python		getRandCoords input 5 1 ${nMCmoved} ${Rmin} ${Rmax} SELF return v_flgCoord format iiffpi file getcoord.py" &
+		"python		getRandCoords invoke"
+
+if 		"(${iblock}==1) && (${flgCoord}==1)" 	then &
+		"displace_atoms	disp move ${rx} ${ry} ${rz} units box" &
+		"group		disp delete" &
+		"jump		SELF run_control" &
+elif		"${iblock}==1" &
+		"print		'${imc}  ${pass}  ${n_system}  ${E_system}  ${E_system}  ${vol_system}  ${vol_GC}  ${pr_system}  ${prob_MC}  ${iMCflag}  ${n_MC}  ${n_GCMC}  ${iblock}  ${prob1}  ${prob2}  add fail getrandCoords' append status.log" &
+		"variable	iblock equal 0" &
+		"variable	prob1 equal 0" &
+		"variable	prob2 equal 0" &
+		"jump		SELF MDfreqrun"
+
+label		iblock1
+print		"iblock:${iblock}"
+if 		"${iblock}==1" 	then &
+		"variable	prob1 equal	exp(-${beta}*(${E_trial}-${E_system}))" &
+		"variable	prob2 equal	${rn_01}" &
+		"print 		'beta:${beta}; E_trail:${E_trial}; E_system:${E_system};prob1:${prob1}; prob2:${prob2}'"
+
+print		"iblock:${iblock}"
+if 		"(${iblock}==1) && (${prob1}>${prob2})" then &
+		"variable	n_system equal ${n_trial}" &
+		"variable	E_system equal ${E_trial}" &
+		"variable	vol_system equal ${vol_trial}" &
+		"variable	pr_system equal ${pr_trial}" &
+		"print 		'${imc}  ${n_GCMC}  ${Pe}  ${eb}  ${ea}  ${elp}  ${emol}  ${ev}  ${epen}  ${ecoa}  ${ehb}  ${et}  ${eco}  ${ew}  ${ep}  ${efi}  ${eqeq}' append ener_comp" &
+		"print 		'${imc}  ${n_GCMC}  ${Pe}  ${Ke}  ${Te}  ${V}  ${Tmp}  ${P}  ${Px}  ${Py}  ${Pz}  ${Lx}  ${Ly}  ${Lz}  ${Dens}' append Thermo" &
+		"shell		cat dump.last >> dump.reax" &
+		"shell		cat bonds.last >> bonds.out" &
+		"shell		cat dump.strs.last >> dump.strs" &
+		"next		pass" &
+		"print		'${imc}  ${pass}  ${n_system}  ${E_system}  ${E_trial}  ${vol_system}  ${vol_GC}  ${pr_system}  ${prob_MC}  ${iMCflag}  ${n_MC}  ${n_GCMC}  ${iblock}  ${prob1}  ${prob2}  displace pass  ${nMCmoved}  ${rx}  ${ry}  ${rz}' append status.log" &
+		"print 		'PE is ${E_system}, total atoms are ${n_system}'" &
+		"print 		'${imc}  ${pass}  ${n_system}  ${E_system}  ${vol_system}  ${vol_GC}  ${pr_system}  ${prob1}  ${prob2}' append MClog" &
+		"write_restart	refile" &
+		"variable	iblock equal 0" &
+		"variable	prob1 equal 0" &
+		"variable	prob2 equal 0" &
+		"jump		SELF MDfreqrun" &
+elif 		"(${iblock}==1)" &
+		"print		'${imc}  ${pass}  ${n_system}  ${E_system}  ${E_trial}  ${vol_system}  ${vol_GC}  ${pr_system}  ${prob_MC}  ${iMCflag}  ${n_MC}  ${n_GCMC}  ${iblock}  ${prob1}  ${prob2}  displace fail  ${nMCmoved}  ${rx}  ${ry}  ${rz}' append status.log" &
+		"variable	iblock equal 0" &
+		"variable	prob1 equal 0" &
+		"variable	prob2 equal 0" &
+		"jump		SELF MDfreqrun"
+
+
+
+#Delete atom block
+print 		"iMCflag at delete block: ${iMCflag}"
+if 		"(${iMCflag} == 1) && (${n_GCMC}>0)" then &
+		"print 		'in delete block'" &
+		"variable	iblock equal 2" &
+		"variable	nGCdeleted equal floor(${iMC}+${rn_01}*${n_GCMC})+1" &
+		"print 		'nGCdeleted trying on ${nGCdeleted}'" &
+		"variable	lastatom equal ${n_system}" &
+		"clear" &
+		"read_restart	refile" &
+		"variable	lastx equal x[${lastatom}]" &
+		"variable	lasty equal y[${lastatom}]" &
+		"variable	lastz equal z[${lastatom}]" &
+		"variable	lastvx equal vx[${lastatom}]" &
+		"variable	lastvy equal vy[${lastatom}]" &
+		"variable	lastvz equal vz[${lastatom}]" &
+		"variable	lasttyp equal type[${lastatom}]" &
+		"variable	tx equal ${lastx}" &
+		"variable	ty equal ${lasty}" &
+		"variable	tz equal ${lastz}" &
+		"variable	tvx equal ${lastvx}" &
+		"variable	tvy equal ${lastvy}" &
+		"variable	tvz equal ${lastvz}" &
+		"variable	ttyp equal ${lasttyp}" &
+		"variable	delx equal x[${nGCdeleted}]" &
+		"variable	dely equal y[${nGCdeleted}]" &
+		"variable	delz equal z[${nGCdeleted}]" &
+		"variable	dx equal (${tx}-${delx})" &
+		"variable	dy equal (${ty}-${dely})" &
+		"variable	dz equal (${tz}-${delz})" &
+		"print		'Del atom, coords: ${nGCdeleted} ${delx} ${dely} ${delz}; Last coords: ${tx} ${ty} ${tz}'" &
+		"print		'Last vels: ${tvx} ${tvy} ${tvz} Last type: ${ttyp}'" &
+		"group		del id ${lastatom}" &
+		"delete_atoms	group del compress no" &
+		"group		del delete" &
+		"group		delDisp id ${nGCdeleted}" &
+		"displace_atoms	delDisp move ${dx} ${dy} ${dz}" &
+		"group		delDisp delete" &
+		"set		atom ${nGCdeleted} vx ${tvx} vy ${tvy} vz ${tvz}" &
+		"set		atom ${nGCdeleted} type ${ttyp}" &
+		"jump		SELF run_control"
+
+label		iblock2
+print 		"iblock:${iblock}"
+if 		"${iblock}==2" 	then &
+		"variable	prob1 equal	(${n_system}*(${lambda}^3)/${vol_GC})*exp(-${beta}*(${E_trial}-${E_system}+${mu}))" &
+		"variable	prob2 equal	${rn_01}" &
+		"print 		'beta:${beta}; E_trail:${E_trial}; E_system:${E_system};prob1:${prob1}; prob2:${prob2}'"
+
+print 		"iblock:${iblock}"
+if 		"(${iblock}==2) && (${prob1}>${prob2})" then &
+		"variable	n_system equal ${n_trial}" &
+		"variable	E_system equal ${E_trial}" &
+		"variable	vol_system equal ${vol_trial}" &
+		"variable	pr_system equal ${pr_trial}" &
+		"print 		'${imc}  ${n_GCMC}  ${Pe}  ${eb}  ${ea}  ${elp}  ${emol}  ${ev}  ${epen}  ${ecoa}  ${ehb}  ${et}  ${eco}  ${ew}  ${ep}  ${efi}  ${eqeq}' append ener_comp" &
+		"print 		'${imc}  ${n_GCMC}  ${Pe}  ${Ke}  ${Te}  ${V}  ${Tmp}  ${P}  ${Px}  ${Py}  ${Pz}  ${Lx}  ${Ly}  ${Lz}  ${Dens}' append Thermo" &
+		"shell		cat dump.last >> dump.reax" &
+		"shell		cat bonds.last >> bonds.out" &
+		"shell		cat dump.strs.last >> dump.strs" &
+		"next		pass" &
+		"print		'${imc}  ${pass}  ${n_system}  ${E_system}  ${E_trial}  ${vol_system}  ${vol_GC}  ${pr_system}  ${prob_MC}  ${iMCflag}  ${n_MC}  ${n_GCMC}  ${iblock}  ${prob1}  ${prob2}  delete  pass  ${nGCdeleted}' append status.log" &
+		"print 		'PE is ${E_system}, total atoms are ${n_system}'" &
+		"print 		'${imc}  ${pass}  ${n_system}  ${E_system}  ${vol_system}  ${vol_GC}  ${pr_system}  ${prob1}  ${prob2}' append MClog" &
+		"write_restart	refile" &
+		"variable	iblock equal 0" &
+		"variable	prob1 equal 0" &
+		"variable	prob2 equal 0" &
+		"jump		SELF MDfreqrun" &
+elif 		"(${iblock}==2)" &
+		"print		'${imc}  ${pass}  ${n_system}  ${E_system}  ${E_trial}  ${vol_system}  ${vol_GC}  ${pr_system}  ${prob_MC}  ${iMCflag}  ${n_MC}  ${n_GCMC}  ${iblock}  ${prob1}  ${prob2}  delete fail  ${nGCdeleted}' append status.log" &
+		"variable	iblock equal 0" &
+		"variable	prob1 equal 0" &
+		"variable	prob2 equal 0" &
+		"jump		SELF MDfreqrun"
+
+
+
+#Add atom block
+print 		"iMCflag at add block: ${iMCflag}"
+if 		"(${iMCflag} == 2)" then &
+		"print 		'in add block'" &
+		"variable	iblock equal 3" &
+		"clear" &
+		"read_restart	refile" &
+		"variable	flgCoord delete" &
+		"variable	flgCoord python	getRandCoords" &
+		"python		getRandCoords input 5 0 0 ${Rmin} ${Rmax} SELF return v_flgCoord format iiffpi file getcoord.py" &
+		"python		getRandCoords invoke"
+
+
+if 		"(${iblock}==3) && (${flgCoord}==1)" 	then &
+		"create_atoms	${typeGC} single ${rx} ${ry} ${rz} units box" &
+		"variable	ncreated equal ${n_trial}" &
+		"print 		'ncreated is ${ncreated}'" &
+		"group		created id ${ncreated}" &
+		"variable	rvx equal (2*${rn_01}-1)*${therm_vel}*${EmMD}" &
+		"variable	rvy equal (2*${rn_01}-1)*${therm_vel}*${EmMD}" &
+		"variable	rvz equal (2*${rn_01}-1)*${therm_vel}*${EmMD}" &
+		"velocity	created set ${rvx} ${rvy} ${rvz}" &
+		"group		created delete" &
+		"jump		SELF run_control" &
+elif		"${iblock}==3" &
+		"print		'${imc}  ${pass}  ${n_system}  ${E_system}  ${E_system}  ${vol_system}  ${vol_GC}  ${pr_system}  ${prob_MC}  ${iMCflag}  ${n_MC}  ${n_GCMC}  ${iblock}  ${prob1}  ${prob2}  add fail getrandCoords' append status.log" &
+		"variable	iblock equal 0" &
+		"variable	prob1 equal 0" &
+		"variable	prob2 equal 0" &
+		"jump		SELF MDfreqrun"
+
+label		iblock3
+print 		"iblock:${iblock}"
+if 		"${iblock}==3" 	then &
+		"variable	prob1 equal	(${vol_GC}/((${n_system}+1)*(${lambda}^3)))*exp(-${beta}*(${E_trial}-${E_system}-${mu}))" &
+		"variable	prob2 equal	${rn_01}" &
+		"print 		'beta:${beta}; E_trail:${E_trial}; E_system:${E_system};prob1:${prob1}; prob2:${prob2}'"
+
+print 		"iblock:${iblock}"
+if 		"(${iblock}==3) && (${prob1}>${prob2})" then &
+		"variable	n_system equal ${n_trial}" &
+		"variable	E_system equal ${E_trial}" &
+		"variable	vol_system equal ${vol_trial}" &
+		"variable	pr_system equal ${pr_trial}" &
+		"print 		'${imc}  ${n_GCMC}  ${Pe}  ${eb}  ${ea}  ${elp}  ${emol}  ${ev}  ${epen}  ${ecoa}  ${ehb}  ${et}  ${eco}  ${ew}  ${ep}  ${efi}  ${eqeq}' append ener_comp" &
+		"print 		'${imc}  ${n_GCMC}  ${Pe}  ${Ke}  ${Te}  ${V}  ${Tmp}  ${P}  ${Px}  ${Py}  ${Pz}  ${Lx}  ${Ly}  ${Lz}  ${Dens}' append Thermo" &
+		"shell		cat dump.last >> dump.reax" &
+		"shell		cat bonds.last >> bonds.out" &
+		"shell		cat dump.strs.last >> dump.strs" &
+		"next		pass" &
+		"print		'${imc}  ${pass}  ${n_system}  ${E_system}  ${E_trial}  ${vol_system}  ${vol_GC}  ${pr_system}  ${prob_MC}  ${iMCflag}  ${n_MC}  ${n_GCMC}  ${iblock}  ${prob1}  ${prob2}  add pass  ${ncreated}  ${rx}  ${ry}  ${rz} ${rvx}  ${rvy}  ${rvz}' append status.log" &
+		"print 		'PE is ${E_system}, total atoms are ${n_system}'" &
+		"print 		'${imc}  ${pass}  ${n_system}  ${E_system}  ${vol_system}  ${vol_GC}  ${pr_system}  ${prob1}  ${prob2}' append MClog" &
+		"write_restart	refile" &
+		"variable	iblock equal 0" &
+		"variable	prob1 equal 0" &
+		"variable	prob2 equal 0" &
+		"jump		SELF MDfreqrun" &
+elif 		"(${iblock}==3)" &
+		"print		'${imc}  ${pass}  ${n_system}  ${E_system}  ${E_trial}  ${vol_system}  ${vol_GC}  ${pr_system}  ${prob_MC}  ${iMCflag}  ${n_MC}  ${n_GCMC}  ${iblock}  ${prob1}  ${prob2}  add fail  ${ncreated}  ${rx}  ${ry}  ${rz} ${rvx}  ${rvy}  ${rvz}' append status.log" &
+		"variable	iblock equal 0" &
+		"variable	prob1 equal 0" &
+		"variable	prob2 equal 0" &
+		"jump		SELF MDfreqrun" 
+
+
+
+#Volume block (NPT)
+print 		"iMCflag at vol block: ${iMCflag}"
+if 		"(${iMCflag} == 3)" then &
+		"print 'in vol block'" &
+		"variable	iblock equal 4" &
+		"clear" &
+		"read_restart	refile" &
+		"variable	vfactor equal (1+(2*${rn_01}-1)*${vfactIn})" &
+		"change_box	all x scale ${vfactor} y scale ${vfactor} z scale ${vfactor} remap" &
+		"print 		'vfactor is ${vfactor}'" &
+		"jump		SELF run_control"
+
+label		iblock4
+print	 	"iblock:${iblock}"
+if 		"${iblock}==4" 	then &
+		"variable	prob1 equal	(exp((${n_system}*ln(${vfactor}*${vfactor}*${vfactor}))-(${beta}*(${E_trial}-${E_system}))-(${beta}*${Pressure}*0.143941*(${vol_GC}*(1-${vfactor}*${vfactor}*${vfactor})))))" &
+		"variable	prob2 equal	${rn_01}" &
+		"print 		'beta:${beta}; E_trail:${E_trial}; E_system:${E_system};prob1:${prob1}; prob2:${prob2}'"
+
+print 		"iblock:${iblock}"
+if	 	"(${iblock}==4) && (${prob1}>${prob2})" then &
+		"variable	n_system equal ${n_trial}" &
+		"variable	E_system equal ${E_trial}" &
+		"variable	vol_system equal ${vol_trial}" &
+		"variable	pr_system equal ${pr_trial}" &
+		"print 		'${imc}  ${n_GCMC}  ${Pe}  ${eb}  ${ea}  ${elp}  ${emol}  ${ev}  ${epen}  ${ecoa}  ${ehb}  ${et}  ${eco}  ${ew}  ${ep}  ${efi}  ${eqeq}' append ener_comp" &
+		"print 		'${imc}  ${n_GCMC}  ${Pe}  ${Ke}  ${Te}  ${V}  ${Tmp}  ${P}  ${Px}  ${Py}  ${Pz}  ${Lx}  ${Ly}  ${Lz}  ${Dens}' append Thermo" &
+		"shell		cat dump.last >> dump.reax" &
+		"shell		cat bonds.last >> bonds.out" &
+		"shell		cat dump.strs.last >> dump.strs" &
+		"next		pass" &
+		"print		'${imc}  ${pass}  ${n_system}  ${E_system}  ${E_trial}  ${vol_system}  ${vol_GC}  ${pr_system}  ${prob_MC}  ${n_MC}  ${n_GCMC}  ${iblock}  ${prob1}  ${prob2}  vol pass  ${vfactor}*${vfactor}*${vfactor}' append status.log" &
+		"print 		'PE is ${E_system}, total atoms are ${n_system}'" &
+		"print 		'${imc}  ${pass}  ${n_system}  ${E_system}  ${vol_system}  ${vol_GC}  ${pr_system}  ${prob1}  ${prob2}' append MClog" &
+		"write_restart	refile" &
+		"variable	iblock equal 0" &
+		"variable	prob1 equal 0" &
+		"variable	prob2 equal 0" &
+		"jump		SELF MDfreqrun" &
+elif 		"(${iblock}==4)" &
+		"print		'${imc}  ${pass}  ${n_system}  ${E_system}  ${E_trial}  ${vol_system}  ${vol_GC}  ${pr_system}  ${prob_MC}  ${n_MC}  ${n_GCMC}  ${iblock}  ${prob1}  ${prob2}  vol fail  ${vfactor}*${vfactor}*${vfactor}' append status.log" &
+		"variable	iblock equal 0" &
+		"variable	prob1 equal 0" &
+		"variable	prob2 equal 0" &
+		"jump		SELF MDfreqrun"
+
+
+
+#iMDfreq Reax run
+label		MDfreqrun
+if		"(${MDcheck}==0)" then &
+		"variable 	iblock equal 5" &
+		"print 		'iMDfreq Reax run at imc: ${imc}'" &
+		"print 		'in iMDfreq block'" &
+		"variable	MDstp equal	${MDstp2}" &
+else		"jump		SELF imcloop"
+
+if 		"(${iblock} == 5) && (${MDstp2}<1000)" then &
+		"variable	MDdmp equal	${MDstp2}" 
+if 		"(${iblock} == 5) && (${MDstp2}>=1000)" then &
+		"variable	MDdmp equal	1000" 
+
+if 		"${iblock} == 5" then &
+		"clear" &
+		"read_restart	refile" &
+		"jump		SELF run_control"
+
+label		iblock5
+print 		"iblock:${iblock}"
+if 		"${iblock}==5" 	then &
+		"variable	n_system equal ${n_trial}" &
+		"variable	E_system equal ${E_trial}" &
+		"variable	vol_system equal ${vol_trial}" &
+		"variable	pr_system equal ${pr_trial}" &
+		"print 		'${imc}  ${n_GCMC}  ${Pe}  ${eb}  ${ea}  ${elp}  ${emol}  ${ev}  ${epen}  ${ecoa}  ${ehb}  ${et}  ${eco}  ${ew}  ${ep}  ${efi}  ${eqeq}' append ener_comp" &
+		"print 		'${imc}  ${n_GCMC}  ${Pe}  ${Ke}  ${Te}  ${V}  ${Tmp}  ${P}  ${Px}  ${Py}  ${Pz}  ${Lx}  ${Ly}  ${Lz}  ${Dens}' append Thermo" &
+		"shell		cat dump.last >> dump.reax" &
+		"shell		cat bonds.last >> bonds.out" &
+		"shell		cat dump.strs.last >> dump.strs" &
+		"print		'${imc}  ${pass}  ${n_system}  ${E_system}  ${E_trial}  ${vol_system}  ${vol_GC}  ${pr_system}  ${prob_MC}  ${iMCflag}  ${n_MC}  ${n_GCMC}  ${iblock}  ${prob1}  ${prob2}  MD run' append status.log" &
+		"print 		'PE is ${E_system}, total atoms are ${n_system}'" &
+		"print 		'${imc}  ${pass}  ${n_system}  ${E_system}  ${vol_system}  ${vol_GC}  ${pr_system}  ${prob1}  ${prob2}' append MClog" &
+		"write_restart	refile" &
+		"variable	iblock equal 0" &
+		"variable	prob1 equal 0" &
+		"variable	prob2 equal 0" &
+		"variable	MDstp equal	${MDstp1}"&
+		"variable	MDdmp equal	${MDstp1}"&
+		"jump		SELF imcloop" 
+
+
+
+
+label		run_control
+if 		"${iblock}==5" 	then  	"variable temp_filename string ${filename}"	"variable filename string control_md"
+include		${filename}
+if 		"${iblock}==5" 	then  	"variable filename delete"			"variable filename string ${temp_filename}"
+if 		"${iblock}==1" 	then  	"jump SELF iblock1" &
+elif 		"${iblock}==2" 		"jump SELF iblock2" &
+elif 		"${iblock}==3" 		"jump SELF iblock3" &
+elif 		"${iblock}==4" 		"jump SELF iblock4" &
+elif 		"${iblock}==5" 		"jump SELF iblock5"
