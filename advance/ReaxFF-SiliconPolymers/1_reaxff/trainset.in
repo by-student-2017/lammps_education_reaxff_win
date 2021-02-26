@@ -1,0 +1,1393 @@
+CHARGE
+#Keyw Weight Atom (a5,1x,f6.2,1x,i4)
+sih3 0.1 1 0.34                      
+geo8 0.1 1 -0.597
+geo8 0.1 2  1.068
+geo8 0.1 7  0.336
+ENDCHARGE
+HEATFO
+#Keyw Weight Lit# (a5,1x,f6.2,f10.4)
+ENDHEATFO
+GEOMETRY
+#Keyw Weight At1 At2 At3 At4 #Lit (a5,1x,f6.2,1x,4i4,f10.4)
+H2NSiH3  0.01   1   2           1.736 
+H2NSiH3  2.00   3   1   2       107.8
+H2NSiH3  2.00   6   2   1       119.2
+HN=SiH2  0.01   1   2           1.607 
+HN=SiH2  2.00   3   1   2       120.7
+N#SiH    0.01   1   2           1.568
+ENDGEOMETRY
+CELL PARAMETERS
+#Keyw Weight Type #Lit
+SiNb_min  0.02    a  15.463
+SiNb_min  0.02    b  15.463
+SiNb_min  0.02    c   8.8446
+ENDCELL PARAMETERS
+ENERGY  
+#Weigh op1 Key1  n1  op2 Key2  n2  op3 Key3  n3  op4 Key4  n4  op5 Key5  n5  #Lit (f6.2,5(1x,a1,3x,a5,1x,i3),f10.4)  
+# Si-N single bond 
+50.0   +   H2NSiH3 /1   -   Si-N_1  /1                                             -350.1 
+10.0   +   H2NSiH3 /1   -   Si-N_2  /1                                              -99.5  
+ 5.0   +   H2NSiH3 /1   -   Si-N_3  /1                                              -16.3 
+ 5.0   +   H2NSiH3 /1   -   Si-N_4  /1                                              -0.01 
+ 5.0   +   H2NSiH3 /1   -   Si-N_5  /1                                               -7.6 
+ 5.0   +   H2NSiH3 /1   -   Si-N_6  /1                                              -22.5 
+ 5.0   +   H2NSiH3 /1   -   Si-N_7  /1                                              -38.8 
+ 5.0   +   H2NSiH3 /1   -   Si-N_8  /1                                              -54.1 
+ 5.0   +   H2NSiH3 /1   -   Si-N_9  /1                                              -67.9 
+ 5.0   +   H2NSiH3 /1   -   Si-N_10 /1                                              -80.0 
+ 5.0   +   H2NSiH3 /1   -   Si-N_11 /1                                              -90.4 
+25.0   +   H2NSiH3 /1   -   Si-N_12 /1                                              -99.2 
+25.0   +   H2NSiH3 /1   -   Si-N_13 /1                                             -100.8 
+25.0   +   H2NSiH3 /1   -   Si-N_14 /1                                             -100.2 
+ 5.0   +   H2NSiH3 /1   -   Si-N_15 /1                                             -99.95
+# Si=N double bond 
+100.0  +   HN=SiH2 /1   -   Si=N_1  /1                                             -576.0 
+20.0   +   HN=SiH2 /1   -   Si=N_2  /1                                             -150.0 
+ 5.0   +   HN=SiH2 /1   -   Si=N_3  /1                                             -16.6 
+ 5.0   +   HN=SiH2 /1   -   Si=N_4  /1                                             -0.01 
+ 5.0   +   HN=SiH2 /1   -   Si=N_5  /1                                             -5.7
+ 5.0   +   HN=SiH2 /1   -   Si=N_6  /1                                             -30.9
+ 5.0   +   HN=SiH2 /1   -   Si=N_7  /1                                             -58.0
+ 5.0   +   HN=SiH2 /1   -   Si=N_8  /1                                             -82.7
+25.0   +   HN=SiH2 /1   -   Si=N_9  /1                                             -98.3
+25.0   +   HN=SiH2 /1   -   Si=N_10 /1                                             -98.1
+25.0   +   HN=SiH2 /1   -   Si=N_11 /1                                             -98.2
+25.0   +   HN=SiH2 /1   -   Si=N_12 /1                                             -98.4
+25.0   +   HN=SiH2 /1   -   Si=N_13 /1                                             -98.9
+25.0   +   HN=SiH2 /1   -   Si=N_14 /1                                             -98.0
+25.0   +   HN=SiH2 /1   -   Si=N_15 /1                                             -98.0
+ 5.0   +   HN=SiH2 /1   -   Si=N_16 /1                                             -98.4
+# Si#N triple bond 
+50.0   +   N#SiH /1   -   Si#N_1  /1                                             -212.1
+ 7.5   +   N#SiH /1   -   Si#N_2  /1                                             -35.2 
+ 5.0   +   N#SiH /1   -   Si#N_3  /1                                             -0.01
+ 5.0   +   N#SiH /1   -   Si#N_4  /1                                             -17.2
+ 5.0   +   N#SiH /1   -   Si#N_5  /1                                             -50.1
+ 5.0   +   N#SiH /1   -   Si#N_6  /1                                             -83.6
+25.0   +   N#SiH /1   -   Si#N_7  /1                                             -86.9
+25.0   +   N#SiH /1   -   Si#N_8  /1                                             -86.7
+25.0   +   N#SiH /1   -   Si#N_9  /1                                             -86.8
+25.0   +   N#SiH /1   -   Si#N_10 /1                                             -86.4
+25.0   +   N#SiH /1   -   Si#N_11 /1                                             -86.8
+25.0   +   N#SiH /1   -   Si#N_12 /1                                             -86.9
+25.0   +   N#SiH /1   -   Si#N_13 /1                                             -86.5
+25.0   +   N#SiH /1   -   Si#N_14 /1                                             -86.0
+25.0   +   N#SiH /1   -   Si#N_15 /1                                             -86.6
+ 5.0   +   N#SiH /1   -   Si#N_16 /1                                             -86.7
+# H-Si-N angle
+ 2.0   +   H2NSiH3 /1   -   H-Si-N_1  /1                                             -21.5
+ 2.0   +   H2NSiH3 /1   -   H-Si-N_2  /1                                             -18.5
+ 2.0   +   H2NSiH3 /1   -   H-Si-N_3  /1                                             -15.8
+ 2.0   +   H2NSiH3 /1   -   H-Si-N_4  /1                                             -13.3
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_5  /1                                             -11.1
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_6  /1                                             -9.1
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_7  /1                                             -7.4
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_8  /1                                             -5.9
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_9  /1                                             -4.6
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_10 /1                                             -3.4
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_11 /1                                             -2.5
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_12 /1                                             -1.7
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_13 /1                                             -1.1
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_14 /1                                             -0.6
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_15 /1                                             -0.3
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_16 /1                                             -0.08
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_17 /1                                             -0.001
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_18 /1                                             -0.02
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_19 /1                                             -0.13
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_20 /1                                             -0.4
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_21 /1                                             -0.2
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_22 /1                                             -0.1
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_23 /1                                             -0.4
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_24 /1                                             -0.8
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_25 /1                                             -1.3
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_26 /1                                             -1.9
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_27 /1                                             -2.7
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_28 /1                                             -3.7
+ 1.0   +   H2NSiH3 /1   -   H-Si-N_29 /1                                             -4.7
+ 2.0   +   H2NSiH3 /1   -   H-Si-N_30 /1                                             -5.9
+ 2.0   +   H2NSiH3 /1   -   H-Si-N_31 /1                                             -7.2
+ 2.0   +   H2NSiH3 /1   -   H-Si-N_32 /1                                             -8.6
+ 2.0   +   H2NSiH3 /1   -   H-Si-N_33 /1                                             -10.1
+# N-N-Si angle
+ 2.0   +   H2NNHSiH3 /1   -   N-N-Si_1  /1                                             -8.9
+ 2.0   +   H2NNHSiH3 /1   -   N-N-Si_2  /1                                             -7.7
+ 2.0   +   H2NNHSiH3 /1   -   N-N-Si_3  /1                                             -6.6
+ 2.0   +   H2NNHSiH3 /1   -   N-N-Si_4  /1                                             -5.7
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_5  /1                                             -4.8
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_6  /1                                             -4.0
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_7  /1                                             -3.2
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_8  /1                                             -2.6
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_9  /1                                             -2.0
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_10 /1                                             -1.5
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_11 /1                                             -1.1
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_12 /1                                             -0.8
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_13 /1                                             -0.5
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_14 /1                                             -0.3
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_15 /1                                             -0.1
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_16 /1                                             -0.02
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_17 /1                                             -0.001
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_18 /1                                             -0.04
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_19 /1                                             -0.13
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_20 /1                                             -0.3
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_21 /1                                             -0.6
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_22 /1                                             -0.9
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_23 /1                                             -1.4
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_24 /1                                             -1.9
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_25 /1                                             -2.5
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_26 /1                                             -3.3
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_27 /1                                             -4.1
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_28 /1                                             -5.0
+ 1.0   +   H2NNHSiH3 /1   -   N-N-Si_29 /1                                             -6.0
+ 2.0   +   H2NNHSiH3 /1   -   N-N-Si_30 /1                                             -7.1
+ 2.0   +   H2NNHSiH3 /1   -   N-N-Si_31 /1                                             -8.3
+ 2.0   +   H2NNHSiH3 /1   -   N-N-Si_32 /1                                             -9.5
+ 2.0   +   H2NNHSiH3 /1   -   N-N-Si_33 /1                                             -10.9
+# N-Si-N angle
+ 2.0   +   H2NSiH2NH2 /1   -   N-Si-N_1  /1                                             -23.2
+ 2.0   +   H2NSiH2NH2 /1   -   N-Si-N_2  /1                                             -19.4
+ 2.0   +   H2NSiH2NH2 /1   -   N-Si-N_3  /1                                             -16.1
+ 2.0   +   H2NSiH2NH2 /1   -   N-Si-N_4  /1                                             -13.3
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_5  /1                                             -10.8
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_6  /1                                             -8.7
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_7  /1                                             -6.9
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_8  /1                                             -5.3
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_9  /1                                             -4.0
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_10 /1                                             -3.0
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_11 /1                                             -2.1
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_12 /1                                             -1.4
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_13 /1                                             -0.8
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_14 /1                                             -0.4
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_15 /1                                             -0.2
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_16 /1                                             -0.04
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_17 /1                                             -0.02
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_18 /1                                             -0.1
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_19 /1                                             -0.2
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_20 /1                                             -0.4
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_21 /1                                             -0.5
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_22 /1                                             -0.2
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_23 /1                                             -0.03
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_24 /1                                             -0.001
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_25 /1                                             -0.1
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_26 /1                                             -0.4
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_27 /1                                             -0.8
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_28 /1                                             -1.3
+ 1.0   +   H2NSiH2NH2 /1   -   N-Si-N_29 /1                                             -1.9
+ 2.0   +   H2NSiH2NH2 /1   -   N-Si-N_30 /1                                             -2.7
+ 2.0   +   H2NSiH2NH2 /1   -   N-Si-N_31 /1                                             -3.6
+ 2.0   +   H2NSiH2NH2 /1   -   N-Si-N_32 /1                                             -4.7
+ 2.0   +   H2NSiH2NH2 /1   -   N-Si-N_33 /1                                             -5.7
+# Si-N-H angle
+ 2.0   +   H2NSiH3 /1   -   Si-N-H_1  /1                                             -10.9
+ 2.0   +   H2NSiH3 /1   -   Si-N-H_2  /1                                             -9.5 
+ 2.0   +   H2NSiH3 /1   -   Si-N-H_3  /1                                             -8.3 
+ 2.0   +   H2NSiH3 /1   -   Si-N-H_4  /1                                             -7.1
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_5  /1                                             -6.0
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_6  /1                                             -5.0
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_7  /1                                             -4.2
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_8  /1                                             -3.4
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_9  /1                                             -2.7
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_10 /1                                             -2.1
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_11 /1                                             -1.6
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_12 /1                                             -1.1
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_13 /1                                             -0.8
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_14 /1                                             -0.5
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_15 /1                                             -0.3
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_16 /1                                             -0.1
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_17 /1                                             -0.02
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_18 /1                                             -0.001
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_19 /1                                             -0.04
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_20 /1                                             -0.14
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_21 /1                                             -0.3
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_22 /1                                             -0.5
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_23 /1                                             -0.8
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_24 /1                                             -1.2
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_25 /1                                             -1.7
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_26 /1                                             -2.1
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_27 /1                                             -2.7
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_28 /1                                             -3.4
+ 1.0   +   H2NSiH3 /1   -   Si-N-H_29 /1                                             -4.2
+ 2.0   +   H2NSiH3 /1   -   Si-N-H_30 /1                                             -5.1
+ 2.0   +   H2NSiH3 /1   -   Si-N-H_31 /1                                             -6.0
+ 2.0   +   H2NSiH3 /1   -   Si-N-H_32 /1                                             -7.0
+ 2.0   +   H2NSiH3 /1   -   Si-N-H_33 /1                                             -8.1
+# Si-N-Si angle
+ 2.0   +   H3SiNHSiH3 /1   -   Si-N-Si_1  /1                                             -10.3
+ 2.0   +   H3SiNHSiH3 /1   -   Si-N-Si_2  /1                                             -8.8 
+ 2.0   +   H3SiNHSiH3 /1   -   Si-N-Si_3  /1                                             -7.5 
+ 2.0   +   H3SiNHSiH3 /1   -   Si-N-Si_4  /1                                             -6.3
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_5  /1                                             -5.3
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_6  /1                                             -4.4
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_7  /1                                             -3.6
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_8  /1                                             -2.9
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_9  /1                                             -2.3
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_10 /1                                             -1.7
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_11 /1                                             -1.2
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_12 /1                                             -0.9
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_13 /1                                             -0.5
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_14 /1                                             -0.3
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_15 /1                                             -0.1
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_16 /1                                             -0.001
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_17 /1                                             -0.01
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_18 /1                                             -0.1
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_19 /1                                             -0.3
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_20 /1                                             -0.5
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_21 /1                                             -0.8
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_22 /1                                             -1.2
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_23 /1                                             -1.6
+ 1.0   +   H3SiNHSiH3 /1   -   Si-N-Si_24 /1                                             -2.1
+ 2.0   +   H3SiNHSiH3 /1   -   Si-N-Si_25 /1                                             -2.6
+ 2.0   +   H3SiNHSiH3 /1   -   Si-N-Si_26 /1                                             -3.2
+ 2.0   +   H3SiNHSiH3 /1   -   Si-N-Si_27 /1                                             -3.8
+# Si-Si-N angle
+ 2.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_1  /1                                             -12.2
+ 2.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_2  /1                                             -10.5
+ 2.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_3  /1                                             -8.9 
+ 2.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_4  /1                                             -7.5
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_5  /1                                             -6.3
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_6  /1                                             -5.1
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_7  /1                                             -4.1
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_8  /1                                             -3.3
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_9  /1                                             -2.5
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_10 /1                                             -1.9
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_11 /1                                             -1.3
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_12 /1                                             -0.9
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_13 /1                                             -0.6
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_14 /1                                             -0.3
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_15 /1                                             -0.1
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_16 /1                                             -0.02
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_17 /1                                             -0.001
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_18 /1                                             -0.05
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_19 /1                                             -0.2
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_20 /1                                             -0.4
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_21 /1                                             -0.6
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_22 /1                                             -1.0
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_23 /1                                             -1.4
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_24 /1                                             -1.8
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_25 /1                                             -1.0
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_26 /1                                             -1.3
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_27 /1                                             -1.7
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_28 /1                                             -2.2
+ 1.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_29 /1                                             -2.8
+ 2.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_30 /1                                             -3.5
+ 2.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_31 /1                                             -4.2
+ 2.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_32 /1                                             -5.0
+ 2.0   +   H2NSiH2SiH3 /1   -   Si-Si-N_33 /1                                             -5.9
+# H-Si-N-H torsion angle
+ 0.2   +   H2N-SiH3_10 /1  - H2N-SiH3_1 /1                                          -0.16
+ 0.2   +   H2N-SiH3_10 /1  - H2N-SiH3_2 /1                                          -0.001
+ 0.2   +   H2N-SiH3_10 /1  - H2N-SiH3_3 /1                                          -0.0006
+ 0.2   +   H2N-SiH3_10 /1  - H2N-SiH3_4 /1                                          -0.24
+ 0.2   +   H2N-SiH3_10 /1  - H2N-SiH3_5 /1                                          -0.16
+ 0.2   +   H2N-SiH3_10 /1  - H2N-SiH3_6 /1                                          -0.002
+ 0.2   +   H2N-SiH3_10 /1  - H2N-SiH3_7 /1                                          -0.85
+ 0.2   +   H2N-SiH3_10 /1  - H2N-SiH3_8 /1                                          -0.23
+ 0.2   +   H2N-SiH3_10 /1  - H2N-SiH3_9 /1                                          -0.16
+ 0.2   +   H2N-SiH3_10 /1  - H2N-SiH3_11 /1                                         -0.003
+500.0   +   H2N-SiH3_10 /1  - H2N-SiH3_12 /1                                         -0.23
+# N(SiH3) pucker
+ 2.0   +   N(SiH3)3_1 /1  - N(SiH3)3_2 /1                                            -1.3 
+ 2.0   +   N(SiH3)3_1 /1  - N(SiH3)3_3 /1                                            -7.1 
+25.0   +   N(SiH3)3_1 /1  - N(SiH3)3_4 /1                                           -29.5 
+# H3NOSi clusters
+ 5.0   +   H2NSiOH /1   -   H2NSiH=O /1                                             -6.2
+ 5.0   +   H2NSiOH /1   -   HN=SiHOH /1                                            -22.1
+ 5.0   +   H2NSiOH /1   -   3ring1 /1                                              -71.2
+ 5.0   +   H2NSiOH /1   -   O=NSiH3 /1                                             -94.1
+ 5.0   +   H2NSiOH /1   -   HON=SiH2 /1                                            -96.6
+# H5NOSi clusters
+ 5.0   +   H2NSiH2OH /1   -   H2NOSiH3 /1                                          -64.6
+ 5.0   +   H2NSiH2OH /1   -   HONHSiH3/1                                           -77.1
+# Si-N-Si 3-ring
+ 5.0   +   3ring2 /1   -   HN=SiHSiH3 /1                                           -16.9
+# Si-N-Si-N 4-ring
+ 5.0   +   4ring_o /1   -   4ring /1  -NH3/1                                       -24.8
+# Si overcoordination
+ 2.5   +   Si(NH2)6 /1   -   Si(NH2)4 /1  -NH2/1 -NH2/1                            12.9
+ 2.5   +   Si(NH2)4 /1   -   Si(NH2)2 /1  -NH2/1 -NH2/1                          -160.7
+# Si(NH2)4 dimerization
+ 2.0   +   Si(NH2)4 /1 + Si(NH2)4/1  -   Int1 /1                                  -13.7
+ 2.0   +   Si(NH2)4 /1 + Si(NH2)4/1  -   Prod1 /1 - NH3/1                           5.4
+# Si(OH)4 + Si(OH)3NH3 dimerization
+ 5.0   +   Int2 /1 -   Prod2a /1 - NH3/1                                          -12.5
+ 5.0   +   Int2 /1 -   Prod2b /1 - H2O/1                                           -7.8
+# Benzene configuration vs. cubane configuration
+ 5.0   +   Cubane /4 -   Benzene /3                                               -6.2
+10.0   +   Cubane /4 -   N#SiH /1                                               -101.9
+# Si3N4-beta EOS
+ 0.5   +   SiNbeta0 /12 -   SiNbeta_-5 /12                                              -1.28
+ 0.5   +   SiNbeta0 /12 -   SiNbeta_5 /12                                               -1.22
+ 1.0   +   SiNbeta0 /12 -   SiNbeta_10 /12                                              -4.56
+50.0   +   SiNbeta0 /12 -   SiNbeta_50 /12                                              -74.6
+100.0  +   SiNbeta0 /12 -   SiNbeta_100 /12                                            -254.6
+ 2.0   +   SiNbeta0 /12 -   SiNb_min /12                                                0.001
+# Si3N4-beta heat of formation
+500.0  +   SiNb_min /24 -   a_Si_x3_opt /8 - N2_min/1  - N2_min/1                      -50.00
+#NH3 adsorption on Si100 surfaces
+ 0.05	+   SiNH3_4x2 /1 - Si_4x2 /1 - NH3_1 /1                                        -42.49
+ 0.15	+   SiNH3_2x1 /1 - Si_2x1 /1 - NH3_1 /1                                        -22.91
+ 0.15	+   SiNH3_4x4 /1 - Si_4x4 /1 - NH3_1 /1                                        -43.34
+ 2.0	+   SiNH2_4x2 /1 + SiH_4x2 /1 - SiNH3_4x2 /1 - Si_4x2 /1                       -23.19
+ 2.0	+   SiNH_4x2 /1 + SiH_4x2 /1 - SiNH2_4x2 /1 - Si_4x2 /1                         26.68
+ 5.0	+   SiN_4x2 /1 + SiH_4x2 /1 - SiNH_4x2 /1 - Si_4x2 /1                           23.44
+#Si-Pyridine angle
+ 2.0   +   sipyr_rel /1   -   sipyr_01 /1                                     -16.79
+ 2.0   +   sipyr_rel /1   -   sipyr_02 /1                                     -14.86
+ 2.0   +   sipyr_rel /1   -   sipyr_03 /1                                     -13.03
+ 2.0   +   sipyr_rel /1   -   sipyr_04 /1                                     -11.31
+ 2.0   +   sipyr_rel /1   -   sipyr_05 /1                                     -9.69
+ 2.0   +   sipyr_rel /1   -   sipyr_06 /1                                     -8.19
+ 2.0   +   sipyr_rel /1   -   sipyr_07 /1                                     -6.81
+ 2.0   +   sipyr_rel /1   -   sipyr_08 /1                                     -5.54
+ 2.0   +   sipyr_rel /1   -   sipyr_09 /1                                     -4.38
+ 2.0   +   sipyr_rel /1   -   sipyr_10 /1                                     -3.35
+ 2.0   +   sipyr_rel /1   -   sipyr_11 /1                                     -2.45
+ 2.0   +   sipyr_rel /1   -   sipyr_12 /1                                     -1.68
+ 2.0   +   sipyr_rel /1   -   sipyr_13 /1                                     -1.06
+ 2.0   +   sipyr_rel /1   -   sipyr_14 /1                                     -0.58
+ 2.0   +   sipyr_rel /1   -   sipyr_15 /1                                     -0.25
+ 2.0   +   sipyr_rel /1   -   sipyr_16 /1                                     -0.06
+ 2.0   +   sipyr_rel /1   -   sipyr_17 /1                                     -0.001
+ 2.0   +   sipyr_rel /1   -   sipyr_18 /1                                     -0.06
+ 2.0   +   sipyr_rel /1   -   sipyr_19 /1                                     -0.24
+ 2.0   +   sipyr_rel /1   -   sipyr_20 /1                                     -0.54
+ 2.0   +   sipyr_rel /1   -   sipyr_21 /1                                     -0.96
+ 2.0   +   sipyr_rel /1   -   sipyr_22 /1                                     -1.52
+ 2.0   +   sipyr_rel /1   -   sipyr_23 /1                                     -2.22
+ 2.0   +   sipyr_rel /1   -   sipyr_24 /1                                     -3.06
+ 2.0   +   sipyr_rel /1   -   sipyr_25 /1                                     -4.04
+ 2.0   +   sipyr_rel /1   -   sipyr_26 /1                                     -5.16
+ 2.0   +   sipyr_rel /1   -   sipyr_27 /1                                     -6.43
+ 2.0   +   sipyr_rel /1   -   sipyr_28 /1                                     -7.83
+ 2.0   +   sipyr_rel /1   -   sipyr_29 /1                                     -9.37
+ 2.0   +   sipyr_rel /1   -   sipyr_30 /1                                     -11.06
+ 2.0   +   sipyr_rel /1   -   sipyr_31 /1                                     -12.9
+ 2.0   +   sipyr_rel /1   -   sipyr_32 /1                                     -14.88
+ 2.0   +   sipyr_rel /1   -   sipyr_33 /1                                     -17
+#Si-Aniline angle
+ 2.0   +   siani_rel /1   -   siani_01 /1                                     -26.91
+ 2.0   +   siani_rel /1   -   siani_02 /1                                     -23.11
+ 2.0   +   siani_rel /1   -   siani_03 /1                                     -19.65
+ 2.0   +   siani_rel /1   -   siani_04 /1                                     -16.52
+ 2.0   +   siani_rel /1   -   siani_05 /1                                     -13.71
+ 2.0   +   siani_rel /1   -   siani_06 /1                                     -11.21
+ 2.0   +   siani_rel /1   -   siani_07 /1                                     -9.01
+ 2.0   +   siani_rel /1   -   siani_08 /1                                     -7.09
+ 2.0   +   siani_rel /1   -   siani_09 /1                                     -5.43
+ 2.0   +   siani_rel /1   -   siani_10 /1                                     -4.03
+ 2.0   +   siani_rel /1   -   siani_11 /1                                     -2.87
+ 2.0   +   siani_rel /1   -   siani_12 /1                                     -1.93
+ 1.0   +   siani_rel /1   -   siani_13 /1                                     -1.19
+ 1.0   +   siani_rel /1   -   siani_14 /1                                     -0.65
+ 1.0   +   siani_rel /1   -   siani_15 /1                                     -0.28
+ 1.0   +   siani_rel /1   -   siani_16 /1                                     -0.07
+ 0.5   +   siani_rel /1   -   siani_17 /1                                     -0.001
+ 1.0   +   siani_rel /1   -   siani_18 /1                                     -0.06
+ 1.0   +   siani_rel /1   -   siani_19 /1                                     -0.25
+ 2.0   +   siani_rel /1   -   siani_20 /1                                     -0.56
+ 2.0   +   siani_rel /1   -   siani_21 /1                                     -0.98
+ 2.0   +   siani_rel /1   -   siani_22 /1                                     -1.5
+ 2.0   +   siani_rel /1   -   siani_23 /1                                     -2.13
+ 2.0   +   siani_rel /1   -   siani_24 /1                                     -2.85
+ 2.0   +   siani_rel /1   -   siani_25 /1                                     -3.67
+ 2.0   +   siani_rel /1   -   siani_26 /1                                     -4.57
+ 2.0   +   siani_rel /1   -   siani_27 /1                                     -5.57
+ 2.0   +   siani_rel /1   -   siani_28 /1                                     -6.64
+ 2.0   +   siani_rel /1   -   siani_29 /1                                     -7.8
+ 2.0   +   siani_rel /1   -   siani_30 /1                                     -9.03
+ 2.0   +   siani_rel /1   -   siani_31 /1                                     -10.33
+ 2.0   +   siani_rel /1   -   siani_32 /1                                     -11.71
+ 2.0   +   siani_rel /1   -   siani_33 /1                                     -13.14
+#Si-Imidazole angle
+ 2.0   +   siimid_rel /1   -   siimid_01 /1                                     -20.67
+ 2.0   +   siimid_rel /1   -   siimid_02 /1                                     -17.89
+ 2.0   +   siimid_rel /1   -   siimid_03 /1                                     -15.33
+ 2.0   +   siimid_rel /1   -   siimid_04 /1                                     -13
+ 2.0   +   siimid_rel /1   -   siimid_05 /1                                     -10.89
+ 2.0   +   siimid_rel /1   -   siimid_06 /1                                     -8.99
+ 2.0   +   siimid_rel /1   -   siimid_07 /1                                     -7.29
+ 2.0   +   siimid_rel /1   -   siimid_08 /1                                     -5.8
+ 2.0   +   siimid_rel /1   -   siimid_09 /1                                     -4.5
+ 2.0   +   siimid_rel /1   -   siimid_10 /1                                     -3.38
+ 2.0   +   siimid_rel /1   -   siimid_11 /1                                     -2.44
+ 2.0   +   siimid_rel /1   -   siimid_12 /1                                     -1.66
+ 2.0   +   siimid_rel /1   -   siimid_13 /1                                     -1.04
+ 2.0   +   siimid_rel /1   -   siimid_14 /1                                     -0.58
+ 2.0   +   siimid_rel /1   -   siimid_15 /1                                     -0.25
+ 2.0   +   siimid_rel /1   -   siimid_16 /1                                     -0.06
+ 2.0   +   siimid_rel /1   -   siimid_17 /1                                     -0.001
+ 2.0   +   siimid_rel /1   -   siimid_18 /1                                     -0.06
+ 2.0   +   siimid_rel /1   -   siimid_19 /1                                     -0.24
+ 2.0   +   siimid_rel /1   -   siimid_20 /1                                     -0.54
+ 2.0   +   siimid_rel /1   -   siimid_21 /1                                     -0.95
+ 2.0   +   siimid_rel /1   -   siimid_22 /1                                     -1.47
+ 2.0   +   siimid_rel /1   -   siimid_23 /1                                     -2.11
+ 2.0   +   siimid_rel /1   -   siimid_24 /1                                     -2.85
+ 2.0   +   siimid_rel /1   -   siimid_25 /1                                     -3.71
+ 2.0   +   siimid_rel /1   -   siimid_26 /1                                     -4.69
+ 2.0   +   siimid_rel /1   -   siimid_27 /1                                     -5.77
+ 2.0   +   siimid_rel /1   -   siimid_28 /1                                     -6.98
+ 2.0   +   siimid_rel /1   -   siimid_29 /1                                     -8.3
+ 2.0   +   siimid_rel /1   -   siimid_30 /1                                     -9.74
+ 2.0   +   siimid_rel /1   -   siimid_31 /1                                     -11.31
+ 2.0   +   siimid_rel /1   -   siimid_32 /1                                     -13.01
+ 2.0   +   siimid_rel /1   -   siimid_33 /1                                     -14.83
+#Si-Pyrazole angle
+ 2.0   +   sipyra_rel /1   -   sipyra_01 /1                                     -16.88
+ 2.0   +   sipyra_rel /1   -   sipyra_02 /1                                     -14.64
+ 2.0   +   sipyra_rel /1   -   sipyra_03 /1                                     -12.6
+ 2.0   +   sipyra_rel /1   -   sipyra_04 /1                                     -10.76
+ 2.0   +   sipyra_rel /1   -   sipyra_05 /1                                     -9.08
+ 2.0   +   sipyra_rel /1   -   sipyra_06 /1                                     -7.58
+ 2.0   +   sipyra_rel /1   -   sipyra_07 /1                                     -6.23
+ 2.0   +   sipyra_rel /1   -   sipyra_08 /1                                     -5.02
+ 2.0   +   sipyra_rel /1   -   sipyra_09 /1                                     -3.96
+ 2.0   +   sipyra_rel /1   -   sipyra_10 /1                                     -3.03
+ 2.0   +   sipyra_rel /1   -   sipyra_11 /1                                     -2.23
+ 2.0   +   sipyra_rel /1   -   sipyra_12 /1                                     -1.55
+ 2.0   +   sipyra_rel /1   -   sipyra_13 /1                                     -1
+ 2.0   +   sipyra_rel /1   -   sipyra_14 /1                                     -0.56
+ 1.0   +   sipyra_rel /1   -   sipyra_15 /1                                     -0.25
+ 1.0   +   sipyra_rel /1   -   sipyra_16 /1                                     -0.06
+ 0.5   +   sipyra_rel /1   -   sipyra_17 /1                                     -0.001
+ 1.0   +   sipyra_rel /1   -   sipyra_18 /1                                     -0.07
+ 1.0   +   sipyra_rel /1   -   sipyra_19 /1                                     -0.26
+ 1.0   +   sipyra_rel /1   -   sipyra_20 /1                                     -0.59
+ 1.0   +   sipyra_rel /1   -   sipyra_21 /1                                     -1.06
+ 2.0   +   sipyra_rel /1   -   sipyra_22 /1                                     -1.67
+ 2.0   +   sipyra_rel /1   -   sipyra_23 /1                                     -2.42
+ 2.0   +   sipyra_rel /1   -   sipyra_24 /1                                     -3.32
+ 2.0   +   sipyra_rel /1   -   sipyra_25 /1                                     -4.36
+ 2.0   +   sipyra_rel /1   -   sipyra_26 /1                                     -5.56
+ 2.0   +   sipyra_rel /1   -   sipyra_27 /1                                     -6.9
+ 2.0   +   sipyra_rel /1   -   sipyra_28 /1                                     -8.4
+ 2.0   +   sipyra_rel /1   -   sipyra_29 /1                                     -10.04
+ 2.0   +   sipyra_rel /1   -   sipyra_30 /1                                     -11.84
+ 2.0   +   sipyra_rel /1   -   sipyra_31 /1                                     -13.79
+ 2.0   +   sipyra_rel /1   -   sipyra_32 /1                                     -15.88
+ 2.0   +   sipyra_rel /1   -   sipyra_33 /1                                     -18.12
+#Si-Pyrrole angle
+ 2.0   +   sipyrr_rel /1   -   sipyrr_01 /1                                     -24.39
+ 2.0   +   sipyrr_rel /1   -   sipyrr_02 /1                                     -21.14
+ 2.0   +   sipyrr_rel /1   -   sipyrr_03 /1                                     -18.13
+ 2.0   +   sipyrr_rel /1   -   sipyrr_04 /1                                     -15.37
+ 2.0   +   sipyrr_rel /1   -   sipyrr_05 /1                                     -12.86
+ 2.0   +   sipyrr_rel /1   -   sipyrr_06 /1                                     -10.6
+ 2.0   +   sipyrr_rel /1   -   sipyrr_07 /1                                     -8.59
+ 2.0   +   sipyrr_rel /1   -   sipyrr_08 /1                                     -6.82
+ 2.0   +   sipyrr_rel /1   -   sipyrr_09 /1                                     -5.28
+ 2.0   +   sipyrr_rel /1   -   sipyrr_10 /1                                     -3.95
+ 2.0   +   sipyrr_rel /1   -   sipyrr_11 /1                                     -2.84
+ 2.0   +   sipyrr_rel /1   -   sipyrr_12 /1                                     -1.93
+ 2.0   +   sipyrr_rel /1   -   sipyrr_13 /1                                     -1.21
+ 2.0   +   sipyrr_rel /1   -   sipyrr_14 /1                                     -0.66
+ 2.0   +   sipyrr_rel /1   -   sipyrr_15 /1                                     -0.29
+ 2.0   +   sipyrr_rel /1   -   sipyrr_16 /1                                     -0.07
+ 2.0   +   sipyrr_rel /1   -   sipyrr_17 /1                                     -0.001
+ 2.0   +   sipyrr_rel /1   -   sipyrr_18 /1                                     -0.07
+ 2.0   +   sipyrr_rel /1   -   sipyrr_19 /1                                     -0.27
+ 2.0   +   sipyrr_rel /1   -   sipyrr_20 /1                                     -0.59
+ 2.0   +   sipyrr_rel /1   -   sipyrr_21 /1                                     -1.04
+ 2.0   +   sipyrr_rel /1   -   sipyrr_22 /1                                     -1.61
+ 2.0   +   sipyrr_rel /1   -   sipyrr_23 /1                                     -2.3
+ 2.0   +   sipyrr_rel /1   -   sipyrr_24 /1                                     -3.11
+ 2.0   +   sipyrr_rel /1   -   sipyrr_25 /1                                     -4.04
+ 2.0   +   sipyrr_rel /1   -   sipyrr_26 /1                                     -5.08
+ 2.0   +   sipyrr_rel /1   -   sipyrr_27 /1                                     -6.25
+ 2.0   +   sipyrr_rel /1   -   sipyrr_28 /1                                     -7.54
+ 2.0   +   sipyrr_rel /1   -   sipyrr_29 /1                                     -8.95
+ 2.0   +   sipyrr_rel /1   -   sipyrr_30 /1                                     -10.49
+ 2.0   +   sipyrr_rel /1   -   sipyrr_31 /1                                     -12.16
+ 2.0   +   sipyrr_rel /1   -   sipyrr_32 /1                                     -13.96
+ 2.0   +   sipyrr_rel /1   -   sipyrr_33 /1                                     -15.9
+#Si-Piperidine angle
+ 2.0   +   sipiper_rel /1   -   sipiper_01 /1                                     -16.8
+ 2.0   +   sipiper_rel /1   -   sipiper_02 /1                                     -14.25
+ 2.0   +   sipiper_rel /1   -   sipiper_03 /1                                     -11.99
+ 2.0   +   sipiper_rel /1   -   sipiper_04 /1                                     -10
+ 2.0   +   sipiper_rel /1   -   sipiper_05 /1                                     -8.26
+ 2.0   +   sipiper_rel /1   -   sipiper_06 /1                                     -6.74
+ 2.0   +   sipiper_rel /1   -   sipiper_07 /1                                     -5.42
+ 2.0   +   sipiper_rel /1   -   sipiper_08 /1                                     -4.29
+ 2.0   +   sipiper_rel /1   -   sipiper_09 /1                                     -3.33
+ 2.0   +   sipiper_rel /1   -   sipiper_10 /1                                     -2.5
+ 2.0   +   sipiper_rel /1   -   sipiper_11 /1                                     -1.81
+ 2.0   +   sipiper_rel /1   -   sipiper_12 /1                                     -1.24
+ 2.0   +   sipiper_rel /1   -   sipiper_13 /1                                     -0.79
+ 2.0   +   sipiper_rel /1   -   sipiper_14 /1                                     -0.44
+ 2.0   +   sipiper_rel /1   -   sipiper_15 /1                                     -0.19
+ 2.0   +   sipiper_rel /1   -   sipiper_16 /1                                     -0.05
+ 2.0   +   sipiper_rel /1   -   sipiper_17 /1                                     -0.001
+ 2.0   +   sipiper_rel /1   -   sipiper_18 /1                                     -0.05
+ 2.0   +   sipiper_rel /1   -   sipiper_19 /1                                     -0.2
+ 2.0   +   sipiper_rel /1   -   sipiper_20 /1                                     -0.45
+ 2.0   +   sipiper_rel /1   -   sipiper_21 /1                                     -0.79
+ 2.0   +   sipiper_rel /1   -   sipiper_22 /1                                     -1.23
+ 2.0   +   sipiper_rel /1   -   sipiper_23 /1                                     -1.76
+ 2.0   +   sipiper_rel /1   -   sipiper_24 /1                                     -2.38
+ 2.0   +   sipiper_rel /1   -   sipiper_25 /1                                     -3.09
+ 2.0   +   sipiper_rel /1   -   sipiper_26 /1                                     -3.92
+ 2.0   +   sipiper_rel /1   -   sipiper_27 /1                                     -4.85
+ 2.0   +   sipiper_rel /1   -   sipiper_28 /1                                     -5.89
+ 2.0   +   sipiper_rel /1   -   sipiper_29 /1                                     -7.04
+ 2.0   +   sipiper_rel /1   -   sipiper_30 /1                                     -8.3
+ 2.0   +   sipiper_rel /1   -   sipiper_31 /1                                     -9.68
+ 2.0   +   sipiper_rel /1   -   sipiper_32 /1                                     -11.17
+ 2.0   +   sipiper_rel /1   -   sipiper_33 /1                                     -12.77
+#N-C-Si angle
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_03 /1                                     -13.25
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_04 /1                                     -11.24
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_05 /1                                     -9.38
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_06 /1                                     -7.7
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_07 /1                                     -6.21
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_08 /1                                     -4.9
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_09 /1                                     -3.78
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_10 /1                                     -2.82
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_11 /1                                     -2.03
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_12 /1                                     -1.38
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_13 /1                                     -0.87
+ 1.0   +   N-C-Si_rel /1   -   N-C-Si_14 /1                                     -0.48
+ 1.0   +   N-C-Si_rel /1   -   N-C-Si_15 /1                                     -0.21
+ 0.5   +   N-C-Si_rel /1   -   N-C-Si_16 /1                                     -0.05
+ 0.5   +   N-C-Si_rel /1   -   N-C-Si_17 /1                                     -0.001
+ 0.5   +   N-C-Si_rel /1   -   N-C-Si_18 /1                                     -0.05
+ 1.0   +   N-C-Si_rel /1   -   N-C-Si_19 /1                                     -0.2
+ 1.0   +   N-C-Si_rel /1   -   N-C-Si_20 /1                                     -0.45
+ 1.0   +   N-C-Si_rel /1   -   N-C-Si_21 /1                                     -0.79
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_22 /1                                     -1.22
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_23 /1                                     -1.75
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_24 /1                                     -2.37
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_25 /1                                     -3.08
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_26 /1                                     -3.89
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_27 /1                                     -4.78
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_28 /1                                     -5.77
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_29 /1                                     -6.86
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_30 /1                                     -8.03
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_31 /1                                     -9.3
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_32 /1                                     -10.66
+ 2.0   +   N-C-Si_rel /1   -   N-C-Si_33 /1                                     -12.12
+#N=C-Si angle
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_01 /1                                     -23.95
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_02 /1                                     -20.59
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_03 /1                                     -17.52
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_04 /1                                     -14.73
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_05 /1                                     -12.22
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_06 /1                                     -9.99
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_07 /1                                     -8.03
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_08 /1                                     -6.32
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_09 /1                                     -4.85
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_10 /1                                     -3.61
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_11 /1                                     -2.58
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_12 /1                                     -1.74
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_13 /1                                     -1.08
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_14 /1                                     -0.59
+ 1.0   +   N=C-Si_rel /1   -   N=C-Si_15 /1                                     -0.25
+ 0.5   +   N=C-Si_rel /1   -   N=C-Si_16 /1                                     -0.06
+ 0.5   +   N=C-Si_rel /1   -   N=C-Si_17 /1                                     -0.001
+ 0.5   +   N=C-Si_rel /1   -   N=C-Si_18 /1                                     -0.06
+ 1.0   +   N=C-Si_rel /1   -   N=C-Si_19 /1                                     -0.23
+ 1.0   +   N=C-Si_rel /1   -   N=C-Si_20 /1                                     -0.5
+ 1.0   +   N=C-Si_rel /1   -   N=C-Si_21 /1                                     -0.87
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_22 /1                                     -1.34
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_23 /1                                     -1.89
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_24 /1                                     -2.54
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_25 /1                                     -3.27
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_26 /1                                     -4.09
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_27 /1                                     -4.99
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_28 /1                                     -5.97
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_29 /1                                     -7.04
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_30 /1                                     -8.17
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_31 /1                                     -9.39
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_32 /1                                     -10.68
+ 2.0   +   N=C-Si_rel /1   -   N=C-Si_33 /1                                     -12.05
+#N-C=Si angle
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_01 /1                                     -19.72
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_02 /1                                     -16.89
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_03 /1                                     -14.3
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_04 /1                                     -11.97
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_05 /1                                     -9.9
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_06 /1                                     -8.08
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_07 /1                                     -6.48
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_08 /1                                     -5.11
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_09 /1                                     -3.93
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_10 /1                                     -2.93
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_11 /1                                     -2.1
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_12 /1                                     -1.43
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_13 /1                                     -0.9
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_14 /1                                     -0.5
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_15 /1                                     -0.22
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_16 /1                                     -0.05
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_17 /1                                     -0.001
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_18 /1                                     -0.05
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_19 /1                                     -0.22
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_20 /1                                     -0.48
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_21 /1                                     -0.84
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_22 /1                                     -1.31
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_23 /1                                     -1.87
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_24 /1                                     -2.53
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_25 /1                                     -3.29
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_26 /1                                     -4.14
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_27 /1                                     -5.08
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_28 /1                                     -6.12
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_29 /1                                     -7.24
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_30 /1                                     -8.44
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_31 /1                                     -9.72
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_32 /1                                     -11.09
+ 2.0   +   N-C=Si_rel /1   -   N-C=Si_33 /1                                     -12.53
+#N=C=Si angle
+ 2.0   +   N=C=Si_rel /1   -   N=C=Si_01 /1                                     -11.05
+ 2.0   +   N=C=Si_rel /1   -   N=C=Si_02 /1                                     -9.63
+ 2.0   +   N=C=Si_rel /1   -   N=C=Si_03 /1                                     -8.31
+ 2.0   +   N=C=Si_rel /1   -   N=C=Si_04 /1                                     -7.11
+ 2.0   +   N=C=Si_rel /1   -   N=C=Si_05 /1                                     -6
+ 2.0   +   N=C=Si_rel /1   -   N=C=Si_06 /1                                     -5
+ 2.0   +   N=C=Si_rel /1   -   N=C=Si_07 /1                                     -4.1
+ 2.0   +   N=C=Si_rel /1   -   N=C=Si_08 /1                                     -3.29
+ 2.0   +   N=C=Si_rel /1   -   N=C=Si_09 /1                                     -2.58
+ 2.0   +   N=C=Si_rel /1   -   N=C=Si_10 /1                                     -1.96
+ 2.0   +   N=C=Si_rel /1   -   N=C=Si_11 /1                                     -1.42
+ 2.0   +   N=C=Si_rel /1   -   N=C=Si_12 /1                                     -0.98
+ 2.0   +   N=C=Si_rel /1   -   N=C=Si_13 /1                                     -0.62
+ 1.0   +   N=C=Si_rel /1   -   N=C=Si_14 /1                                     -0.35
+ 1.0   +   N=C=Si_rel /1   -   N=C=Si_15 /1                                     -0.15
+ 0.5   +   N=C=Si_rel /1   -   N=C=Si_16 /1                                     -0.04
+ 0.5   +   N=C=Si_rel /1   -   N=C=Si_17 /1                                     -0.001
+ 0.5   +   N=C=Si_rel /1   -   N=C=Si_18 /1                                     -0.04
+ 1.0   +   N=C=Si_rel /1   -   N=C=Si_19 /1                                     -0.15
+ 1.0   +   N=C=Si_rel /1   -   N=C=Si_20 /1                                     -0.33
+ 1.0   +   N=C=Si_rel /1   -   N=C=Si_21 /1                                     -0.58
+ 1.0   +   N=C=Si_rel /1   -   N=C=Si_22 /1                                     -0.89
+ 1.0   +   N=C=Si_rel /1   -   N=C=Si_23 /1                                     -1.27
+ 1.0   +   N=C=Si_rel /1   -   N=C=Si_24 /1                                     -1.7
+ 1.0   +   N=C=Si_rel /1   -   N=C=Si_25 /1                                     -2.17
+ 1.0   +   N=C=Si_rel /1   -   N=C=Si_26 /1                                     -2.69
+#NC-Si angle
+ 2.0   +   NC-Si_rel /1   -   NC-Si_01 /1                                     -4.64
+ 2.0   +   NC-Si_rel /1   -   NC-Si_02 /1                                     -4.1
+ 2.0   +   NC-Si_rel /1   -   NC-Si_03 /1                                     -3.59
+ 2.0   +   NC-Si_rel /1   -   NC-Si_04 /1                                     -3.11
+ 2.0   +   NC-Si_rel /1   -   NC-Si_05 /1                                     -2.66
+ 2.0   +   NC-Si_rel /1   -   NC-Si_06 /1                                     -2.25
+ 2.0   +   NC-Si_rel /1   -   NC-Si_07 /1                                     -1.87
+ 2.0   +   NC-Si_rel /1   -   NC-Si_08 /1                                     -1.52
+ 2.0   +   NC-Si_rel /1   -   NC-Si_09 /1                                     -1.21
+ 2.0   +   NC-Si_rel /1   -   NC-Si_10 /1                                     -0.93
+ 2.0   +   NC-Si_rel /1   -   NC-Si_11 /1                                     -0.69
+ 2.0   +   NC-Si_rel /1   -   NC-Si_17 /1                                     -0.001
+#N-CSi angle
+ 2.0   +   N-CSi_rel /1   -   N-CSi_01 /1                                     -8.22
+ 2.0   +   N-CSi_rel /1   -   N-CSi_02 /1                                     -7.14
+ 2.0   +   N-CSi_rel /1   -   N-CSi_03 /1                                     -6.16
+ 2.0   +   N-CSi_rel /1   -   N-CSi_04 /1                                     -5.26
+ 2.0   +   N-CSi_rel /1   -   N-CSi_05 /1                                     -4.43
+ 2.0   +   N-CSi_rel /1   -   N-CSi_06 /1                                     -3.69
+ 2.0   +   N-CSi_rel /1   -   N-CSi_07 /1                                     -3.02
+ 2.0   +   N-CSi_rel /1   -   N-CSi_08 /1                                     -2.42
+ 2.0   +   N-CSi_rel /1   -   N-CSi_09 /1                                     -1.9
+ 2.0   +   N-CSi_rel /1   -   N-CSi_10 /1                                     -1.44
+ 2.0   +   N-CSi_rel /1   -   N-CSi_11 /1                                     -1.05
+ 2.0   +   N-CSi_rel /1   -   N-CSi_12 /1                                     -0.72
+ 2.0   +   N-CSi_rel /1   -   N-CSi_13 /1                                     -0.46
+ 2.0   +   N-CSi_rel /1   -   N-CSi_14 /1                                     -0.26
+ 1.0   +   N-CSi_rel /1   -   N-CSi_15 /1                                     -0.11
+ 1.0   +   N-CSi_rel /1   -   N-CSi_16 /1                                     -0.03
+ 0.5   +   N-CSi_rel /1   -   N-CSi_17 /1                                     -0.001
+ 1.0   +   N-CSi_rel /1   -   N-CSi_18 /1                                     -0.03
+ 1.0   +   N-CSi_rel /1   -   N-CSi_19 /1                                     -0.11
+ 2.0   +   N-CSi_rel /1   -   N-CSi_20 /1                                     -0.25
+ 2.0   +   N-CSi_rel /1   -   N-CSi_21 /1                                     -0.48
+#C-N-Si angle
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_01 /1                                     -13.53
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_02 /1                                     -11.47
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_03 /1                                     -9.66
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_04 /1                                     -8.06
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_05 /1                                     -6.66
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_06 /1                                     -5.44
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_07 /1                                     -4.39
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_08 /1                                     -3.49
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_09 /1                                     -2.71
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_10 /1                                     -2.04
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_11 /1                                     -1.49
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_12 /1                                     -1.02
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_13 /1                                     -0.65
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_14 /1                                     -0.37
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_15 /1                                     -0.17
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_16 /1                                     -0.05
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_17 /1                                     -0.001
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_18 /1                                     -0.04
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_19 /1                                     -0.16
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_20 /1                                     -0.35
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_21 /1                                     -0.63
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_22 /1                                     -0.99
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_23 /1                                     -1.43
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_24 /1                                     -1.95
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_25 /1                                     -2.56
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_26 /1                                     -3.24
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_27 /1                                     -4.01
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_28 /1                                     -4.87
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_29 /1                                     -5.81
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_30 /1                                     -6.83
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_31 /1                                     -7.92
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_32 /1                                     -9.09
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_33 /1                                     -10.32
+#C=N-Si angle
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_01 /1                                     -19.87
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_02 /1                                     -16.82
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_03 /1                                     -14.08
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_04 /1                                     -11.65
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_05 /1                                     -9.5
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_06 /1                                     -7.62
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_07 /1                                     -6.01
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_08 /1                                     -4.63
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_09 /1                                     -3.48
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_10 /1                                     -2.53
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_11 /1                                     -1.76
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_12 /1                                     -1.16
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_13 /1                                     -0.7
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_14 /1                                     -0.37
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_15 /1                                     -0.16
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_16 /1                                     -0.04
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_17 /1                                     -0.001
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_18 /1                                     -0.03
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_19 /1                                     -0.13
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_20 /1                                     -0.27
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_21 /1                                     -0.46
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_22 /1                                     -0.7
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_23 /1                                     -0.97
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_24 /1                                     -1.27
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_25 /1                                     -1.59
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_26 /1                                     -1.94
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_27 /1                                     -2.31
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_28 /1                                     -2.69
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_29 /1                                     -3.08
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_30 /1                                     -3.47
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_31 /1                                     -3.86
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_32 /1                                     -4.26
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_33 /1                                     -4.65
+#C-N=Si angle
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_01 /1                                     -7.57
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_02 /1                                     -6.33
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_03 /1                                     -5.25
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_04 /1                                     -4.32
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_05 /1                                     -3.52
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_06 /1                                     -2.84
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_07 /1                                     -2.26
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_08 /1                                     -1.77
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_09 /1                                     -1.35
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_10 /1                                     -1
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_11 /1                                     -0.71
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_12 /1                                     -0.48
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_13 /1                                     -0.3
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_14 /1                                     -0.16
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_15 /1                                     -0.07
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_16 /1                                     -0.02
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_17 /1                                     -0.001
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_18 /1                                     -0.02
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_19 /1                                     -0.06
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_20 /1                                     -0.13
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_21 /1                                     -0.22
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_22 /1                                     -0.33
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_23 /1                                     -0.46
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_24 /1                                     -0.6
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_25 /1                                     -0.75
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_26 /1                                     -0.9
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_27 /1                                     -1.06
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_28 /1                                     -1.21
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_29 /1                                     -1.36
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_30 /1                                     -1.51
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_31 /1                                     -1.65
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_32 /1                                     -1.78
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_33 /1                                     -1.89
+#CN-Si angle
+ 2.0   +   CN-Si_rel /1   -   CN-Si_01 /1                                     -6.89
+ 2.0   +   CN-Si_rel /1   -   CN-Si_02 /1                                     -5.92
+ 2.0   +   CN-Si_rel /1   -   CN-Si_03 /1                                     -5.04
+ 2.0   +   CN-Si_rel /1   -   CN-Si_04 /1                                     -4.24
+ 2.0   +   CN-Si_rel /1   -   CN-Si_05 /1                                     -3.52
+ 2.0   +   CN-Si_rel /1   -   CN-Si_06 /1                                     -2.88
+ 2.0   +   CN-Si_rel /1   -   CN-Si_07 /1                                     -2.32
+ 2.0   +   CN-Si_rel /1   -   CN-Si_08 /1                                     -1.82
+ 2.0   +   CN-Si_rel /1   -   CN-Si_09 /1                                     -1.4
+ 2.0   +   CN-Si_rel /1   -   CN-Si_10 /1                                     -1.04
+ 2.0   +   CN-Si_rel /1   -   CN-Si_11 /1                                     -0.74
+ 2.0   +   CN-Si_rel /1   -   CN-Si_12 /1                                     -0.5
+ 2.0   +   CN-Si_rel /1   -   CN-Si_13 /1                                     -0.31
+ 2.0   +   CN-Si_rel /1   -   CN-Si_14 /1                                     -0.17
+ 2.0   +   CN-Si_rel /1   -   CN-Si_15 /1                                     -0.07
+ 2.0   +   CN-Si_rel /1   -   CN-Si_16 /1                                     -0.02
+ 2.0   +   CN-Si_rel /1   -   CN-Si_17 /1                                     -0.001
+ 2.0   +   CN-Si_rel /1   -   CN-Si_18 /1                                     -0.02
+ 2.0   +   CN-Si_rel /1   -   CN-Si_19 /1                                     -0.07
+ 2.0   +   CN-Si_rel /1   -   CN-Si_20 /1                                     -0.14
+ 2.0   +   CN-Si_rel /1   -   CN-Si_21 /1                                     -0.25
+ 2.0   +   CN-Si_rel /1   -   CN-Si_22 /1                                     -0.37
+ 2.0   +   CN-Si_rel /1   -   CN-Si_23 /1                                     -0.52
+ 2.0   +   CN-Si_rel /1   -   CN-Si_24 /1                                     -0.68
+ 2.0   +   CN-Si_rel /1   -   CN-Si_25 /1                                     -0.86
+ 0.5   +   CN-Si_rel /1   -   CN-Si_26 /1                                     -1.05
+ 2.0   +   CN-Si_rel /1   -   CN-Si_27 /1                                     -1.25
+ 2.0   +   CN-Si_rel /1   -   CN-Si_28 /1                                     -1.45
+ 2.0   +   CN-Si_rel /1   -   CN-Si_29 /1                                     -1.66
+ 2.0   +   CN-Si_rel /1   -   CN-Si_30 /1                                     -1.88
+ 2.0   +   CN-Si_rel /1   -   CN-Si_31 /1                                     -2.09
+ 2.0   +   CN-Si_rel /1   -   CN-Si_32 /1                                     -2.29
+ 2.0   +   CN-Si_rel /1   -   CN-Si_33 /1                                     -2.49
+#C-Si-N angle
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_01 /1                                     -24.33
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_02 /1                                     -20.52
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_03 /1                                     -17.15
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_04 /1                                     -14.18
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_05 /1                                     -11.59
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_06 /1                                     -9.33
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_07 /1                                     -7.39
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_08 /1                                     -5.74
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_09 /1                                     -4.35
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_10 /1                                     -3.2
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_11 /1                                     -2.26
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_12 /1                                     -1.5
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_13 /1                                     -0.93
+ 1.0   +   C-Si-N_rel /1   -   C-Si-N_14 /1                                     -0.5
+ 1.0   +   C-Si-N_rel /1   -   C-Si-N_15 /1                                     -0.22
+ 0.5   +   C-Si-N_rel /1   -   C-Si-N_16 /1                                     -0.05
+ 0.5   +   C-Si-N_rel /1   -   C-Si-N_17 /1                                     -0.001
+ 0.5   +   C-Si-N_rel /1   -   C-Si-N_18 /1                                     -0.05
+ 1.0   +   C-Si-N_rel /1   -   C-Si-N_19 /1                                     -0.19
+ 1.0   +   C-Si-N_rel /1   -   C-Si-N_20 /1                                     -0.4
+ 1.0   +   C-Si-N_rel /1   -   C-Si-N_21 /1                                     -0.32
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_22 /1                                     -0.43
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_23 /1                                     -0.66
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_24 /1                                     -0.99
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_25 /1                                     -1.44
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_26 /1                                     -1.98
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_27 /1                                     -2.64
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_28 /1                                     -3.39
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_29 /1                                     -4.25
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_30 /1                                     -5.2
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_31 /1                                     -6.25
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_32 /1                                     -7.39
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_33 /1                                     -8.63
+#C=Si-N angle
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_01 /1                                     -20.44
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_02 /1                                     -17.44
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_03 /1                                     -14.77
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_04 /1                                     -12.39
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_05 /1                                     -10.28
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_06 /1                                     -8.43
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_07 /1                                     -6.81
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_08 /1                                     -5.41
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_09 /1                                     -4.2
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_10 /1                                     -3.16
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_11 /1                                     -2.29
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_12 /1                                     -1.57
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_13 /1                                     -1
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_14 /1                                     -0.55
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_15 /1                                     -0.24
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_16 /1                                     -0.06
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_17 /1                                     -0.001
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_18 /1                                     -0.06
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_19 /1                                     -0.24
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_20 /1                                     -0.53
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_21 /1                                     -0.93
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_22 /1                                     -1.45
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_23 /1                                     -2.08
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_24 /1                                     -2.82
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_25 /1                                     -3.67
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_26 /1                                     -4.63
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_27 /1                                     -5.7
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_28 /1                                     -6.89
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_29 /1                                     -8.19
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_30 /1                                     -9.6
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_31 /1                                     -11.13
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_32 /1                                     -12.78
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_33 /1                                     -14.54
+#C-Si=N angle
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_01 /1                                     -18.51
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_02 /1                                     -15.91
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_03 /1                                     -13.58
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_04 /1                                     -11.49
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_05 /1                                     -9.61
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_06 /1                                     -7.94
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_07 /1                                     -6.47
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_08 /1                                     -5.17
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_09 /1                                     -4.04
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_10 /1                                     -3.07
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_11 /1                                     -2.24
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_12 /1                                     -1.54
+ 1.0   +   C-Si=N_rel /1   -   C-Si=N_13 /1                                     -0.98
+ 1.0   +   C-Si=N_rel /1   -   C-Si=N_14 /1                                     -0.55
+ 0.5   +   C-Si=N_rel /1   -   C-Si=N_15 /1                                     -0.24
+ 0.5   +   C-Si=N_rel /1   -   C-Si=N_16 /1                                     -0.06
+ 0.5   +   C-Si=N_rel /1   -   C-Si=N_17 /1                                     -0.001
+ 1.0   +   C-Si=N_rel /1   -   C-Si=N_18 /1                                     -0.06
+ 1.0   +   C-Si=N_rel /1   -   C-Si=N_19 /1                                     -0.24
+ 1.0   +   C-Si=N_rel /1   -   C-Si=N_20 /1                                     -0.53
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_21 /1                                     -0.94
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_22 /1                                     -1.46
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_23 /1                                     -2.1
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_24 /1                                     -2.85
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_25 /1                                     -3.72
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_26 /1                                     -4.69
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_27 /1                                     -5.78
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_28 /1                                     -6.98
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_29 /1                                     -8.29
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_30 /1                                     -9.72
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_31 /1                                     -11.26
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_32 /1                                     -12.91
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_33 /1                                     -14.68
+#C=Si=N angle
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_04 /1                                     -2.44
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_05 /1                                     -2.01
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_06 /1                                     -1.63
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_07 /1                                     -1.29
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_08 /1                                     -1.01
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_09 /1                                     -0.77
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_10 /1                                     -0.57
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_11 /1                                     -0.4
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_12 /1                                     -0.27
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_13 /1                                     -0.17
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_14 /1                                     -0.09
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_15 /1                                     -0.04
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_16 /1                                     -0.01
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_17 /1                                     -0.001
+#CSi-N angle
+ 2.0   +   CSi-N_rel /1   -   CSi-N_01 /1                                     -10.02
+ 2.0   +   CSi-N_rel /1   -   CSi-N_02 /1                                     -8.69
+ 2.0   +   CSi-N_rel /1   -   CSi-N_03 /1                                     -7.47
+ 2.0   +   CSi-N_rel /1   -   CSi-N_04 /1                                     -6.35
+ 2.0   +   CSi-N_rel /1   -   CSi-N_05 /1                                     -5.32
+ 2.0   +   CSi-N_rel /1   -   CSi-N_06 /1                                     -4.4
+ 2.0   +   CSi-N_rel /1   -   CSi-N_07 /1                                     -3.58
+ 2.0   +   CSi-N_rel /1   -   CSi-N_08 /1                                     -2.85
+ 2.0   +   CSi-N_rel /1   -   CSi-N_09 /1                                     -2.22
+ 2.0   +   CSi-N_rel /1   -   CSi-N_10 /1                                     -1.67
+ 2.0   +   CSi-N_rel /1   -   CSi-N_11 /1                                     -1.21
+ 2.0   +   CSi-N_rel /1   -   CSi-N_12 /1                                     -0.83
+ 1.0   +   CSi-N_rel /1   -   CSi-N_13 /1                                     -0.52
+ 1.0   +   CSi-N_rel /1   -   CSi-N_14 /1                                     -0.29
+ 1.0   +   CSi-N_rel /1   -   CSi-N_15 /1                                     -0.13
+ 0.5   +   CSi-N_rel /1   -   CSi-N_16 /1                                     -0.03
+ 0.5   +   CSi-N_rel /1   -   CSi-N_17 /1                                     -0.001
+ 0.5   +   CSi-N_rel /1   -   CSi-N_18 /1                                     -0.03
+ 0.5   +   CSi-N_rel /1   -   CSi-N_19 /1                                     -0.12
+ 1.0   +   CSi-N_rel /1   -   CSi-N_20 /1                                     -0.26
+ 1.0   +   CSi-N_rel /1   -   CSi-N_21 /1                                     -0.46
+ 1.0   +   CSi-N_rel /1   -   CSi-N_22 /1                                     -0.7
+ 1.0   +   CSi-N_rel /1   -   CSi-N_23 /1                                     -1
+ 1.0   +   CSi-N_rel /1   -   CSi-N_24 /1                                     -1.33
+ 1.0   +   CSi-N_rel /1   -   CSi-N_25 /1                                     -1.71
+ 1.0   +   CSi-N_rel /1   -   CSi-N_26 /1                                     -2.13
+ 1.0   +   CSi-N_rel /1   -   CSi-N_27 /1                                     -2.58
+ 1.0   +   CSi-N_rel /1   -   CSi-N_28 /1                                     -3.06
+ 1.0   +   CSi-N_rel /1   -   CSi-N_29 /1                                     -3.57
+ 1.0   +   CSi-N_rel /1   -   CSi-N_30 /1                                     -4.1
+ 1.0   +   CSi-N_rel /1   -   CSi-N_31 /1                                     -4.65
+ 1.0   +   CSi-N_rel /1   -   CSi-N_32 /1                                     -5.2
+ 1.0   +   CSi-N_rel /1   -   CSi-N_33 /1                                     -5.75
+#C-SiN angle
+ 2.0   +   C-SiN_rel /1   -   C-SiN_01 /1                                     -2.39
+ 2.0   +   C-SiN_rel /1   -   C-SiN_02 /1                                     -2.08
+ 2.0   +   C-SiN_rel /1   -   C-SiN_03 /1                                     -1.81
+ 2.0   +   C-SiN_rel /1   -   C-SiN_04 /1                                     -1.55
+ 2.0   +   C-SiN_rel /1   -   C-SiN_05 /1                                     -1.31
+ 1.0   +   C-SiN_rel /1   -   C-SiN_06 /1                                     -1.1
+ 1.0   +   C-SiN_rel /1   -   C-SiN_07 /1                                     -0.9
+ 1.0   +   C-SiN_rel /1   -   C-SiN_08 /1                                     -0.73
+ 1.0   +   C-SiN_rel /1   -   C-SiN_09 /1                                     -0.57
+ 0.5   +   C-SiN_rel /1   -   C-SiN_10 /1                                     -0.44
+ 0.5   +   C-SiN_rel /1   -   C-SiN_17 /1                                     -0.001
+#Si100-cyclic CHN molecules adsorption energies
+0.15   +   SiPyr_ads /1   -   Si_4x2 /1   -   Pyr /1                                     -51.26
+ 0.1   +   SiAni_ads /1   -   Si_4x2 /1   -   Ani /1                                     -38.55
+ 0.1   +   SiImid_ads /1   -   Si_4x2 /1   -   Imid /1                                   -50.42
+ 0.1   +   SiPyra_ads /1   -   Si_4x2 /1   -   Pyra /1                                   -49.49
+ 0.1   +   SiPyrr_ads /1   -   Si_4x2 /1   -   Pyrr /1                                   -22.14
+0.15   +   SiPiper_ads /1   -   Si_4x2 /1   -   Piper /1                                 -60.07
+0.15   +   SiRCN_ads /1   -   Si_4x2 /1   -   RCN /1                                     -38.2
+#Si-Pyridine bond
+200.0   +   sipyr_rel /1   -   sipyr_01_b /1                                     -320.12
+100.0   +   sipyr_rel /1   -   sipyr_02_b /1                                     -177.67
+20.0   +   sipyr_rel /1   -   sipyr_03_b /1                                     -91.85
+10.0   +   sipyr_rel /1   -   sipyr_04_b /1                                     -42.18
+ 2.0   +   sipyr_rel /1   -   sipyr_05_b /1                                     -15.47
+ 2.0   +   sipyr_rel /1   -   sipyr_06_b /1                                     -3.22
+ 2.0   +   sipyr_rel /1   -   sipyr_07_b /1                                     -0.001
+ 2.0   +   sipyr_rel /1   -   sipyr_08_b /1                                     -2.27
+ 2.0   +   sipyr_rel /1   -   sipyr_09_b /1                                     -7.57
+ 2.0   +   sipyr_rel /1   -   sipyr_10_b /1                                     -13.79
+ 2.0   +   sipyr_rel /1   -   sipyr_11_b /1                                     -19.2
+ 2.0   +   sipyr_rel /1   -   sipyr_12_b /1                                     -19.55
+ 2.0   +   sipyr_rel /1   -   sipyr_13_b /1                                     -19.07
+ 1.0   +   sipyr_rel /1   -   sipyr_14_b /1                                     -18.65
+ 1.0   +   sipyr_rel /1   -   sipyr_15_b /1                                     -18.4
+ 1.0   +   sipyr_rel /1   -   sipyr_16_b /1                                     -18.31
+ 0.3   +   sipyr_rel /1   -   sipyr_17_b /1                                     -18.33
+ 0.3   +   sipyr_rel /1   -   sipyr_18_b /1                                     -18.45
+ 0.3   +   sipyr_rel /1   -   sipyr_19_b /1                                     -18.63
+ 0.3   +   sipyr_rel /1   -   sipyr_20_b /1                                     -18.84
+ 0.3   +   sipyr_rel /1   -   sipyr_21_b /1                                     -19.08
+ 0.3   +   sipyr_rel /1   -   sipyr_22_b /1                                     -19.33
+ 0.3   +   sipyr_rel /1   -   sipyr_23_b /1                                     -19.6
+ 0.3   +   sipyr_rel /1   -   sipyr_24_b /1                                     -19.86
+ 0.3   +   sipyr_rel /1   -   sipyr_25_b /1                                     -20.12
+ 0.3   +   sipyr_rel /1   -   sipyr_26_b /1                                     -20.38
+ 0.3   +   sipyr_rel /1   -   sipyr_27_b /1                                     -20.64
+ 0.3   +   sipyr_rel /1   -   sipyr_28_b /1                                     -22.78
+#Si-Piperidine bond
+200.0   +   sipiper_rel /1   -   sipiper_01_b /1                                     -356.59
+100.0   +   sipiper_rel /1   -   sipiper_02_b /1                                     -197.19
+20.0   +   sipiper_rel /1   -   sipiper_03_b /1                                     -101.41
+10.0   +   sipiper_rel /1   -   sipiper_04_b /1                                     -46.22
+ 2.0   +   sipiper_rel /1   -   sipiper_05_b /1                                     -16.77
+ 2.0   +   sipiper_rel /1   -   sipiper_06_b /1                                     -3.44
+ 2.0   +   sipiper_rel /1   -   sipiper_07_b /1                                     -0.001
+ 2.0   +   sipiper_rel /1   -   sipiper_08_b /1                                     -2.35
+ 2.0   +   sipiper_rel /1   -   sipiper_09_b /1                                     -7.91
+ 2.0   +   sipiper_rel /1   -   sipiper_10_b /1                                     -15.15
+ 2.0   +   sipiper_rel /1   -   sipiper_11_b /1                                     -23.09
+ 2.0   +   sipiper_rel /1   -   sipiper_12_b /1                                     -31.17
+ 2.0   +   sipiper_rel /1   -   sipiper_13_b /1                                     -38.99
+ 2.0   +   sipiper_rel /1   -   sipiper_14_b /1                                     -46.41
+ 2.0   +   sipiper_rel /1   -   sipiper_15_b /1                                     -53.41
+ 2.0   +   sipiper_rel /1   -   sipiper_16_b /1                                     -59.95
+ 2.0   +   sipiper_rel /1   -   sipiper_17_b /1                                     -65.98
+ 1.0   +   sipiper_rel /1   -   sipiper_18_b /1                                     -71.49
+ 1.0   +   sipiper_rel /1   -   sipiper_19_b /1                                     -76.53
+ 0.3   +   sipiper_rel /1   -   sipiper_20_b /1                                     -81.11
+ 0.3   +   sipiper_rel /1   -   sipiper_21_b /1                                     -81.88
+ 0.3   +   sipiper_rel /1   -   sipiper_22_b /1                                     -82.22
+ 0.3   +   sipiper_rel /1   -   sipiper_23_b /1                                     -82.54
+ 0.3   +   sipiper_rel /1   -   sipiper_24_b /1                                     -82.83
+ 0.3   +   sipiper_rel /1   -   sipiper_25_b /1                                     -83.12
+ 0.3   +   sipiper_rel /1   -   sipiper_26_b /1                                     -83.41
+ 0.3   +   sipiper_rel /1   -   sipiper_27_b /1                                     -83.67
+ 0.3   +   sipiper_rel /1   -   sipiper_28_b /1                                     -86.3
+#C-N-Si bond
+200.0   +   C-N-Si_rel /1   -   C-N-Si_01_b /1                                     -364.25
+100.0   +   C-N-Si_rel /1   -   C-N-Si_02_b /1                                     -201.61
+20.0   +   C-N-Si_rel /1   -   C-N-Si_03_b /1                                     -103.74
+10.0   +   C-N-Si_rel /1   -   C-N-Si_04_b /1                                     -47.31
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_05_b /1                                     -17.16
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_06_b /1                                     -3.51
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_07_b /1                                     -0.001
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_08_b /1                                     -2.39
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_09_b /1                                     -7.99
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_10_b /1                                     -15.24
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_11_b /1                                     -23.22
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_12_b /1                                     -31.36
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_13_b /1                                     -39.32
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_14_b /1                                     -46.94
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_15_b /1                                     -54.17
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_16_b /1                                     -60.94
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_17_b /1                                     -67.24
+ 2.0   +   C-N-Si_rel /1   -   C-N-Si_18_b /1                                     -73.06
+ 1.0   +   C-N-Si_rel /1   -   C-N-Si_19_b /1                                     -78.43
+ 0.3   +   C-N-Si_rel /1   -   C-N-Si_20_b /1                                     -83.37
+ 0.3   +   C-N-Si_rel /1   -   C-N-Si_21_b /1                                     -87.91
+ 0.3   +   C-N-Si_rel /1   -   C-N-Si_22_b /1                                     -88.47
+ 0.3   +   C-N-Si_rel /1   -   C-N-Si_23_b /1                                     -88.69
+ 0.3   +   C-N-Si_rel /1   -   C-N-Si_24_b /1                                     -88.91
+ 0.3   +   C-N-Si_rel /1   -   C-N-Si_25_b /1                                     -89.14
+ 0.3   +   C-N-Si_rel /1   -   C-N-Si_26_b /1                                     -89.47
+ 0.3   +   C-N-Si_rel /1   -   C-N-Si_27_b /1                                     -89.6
+ 0.3   +   C-N-Si_rel /1   -   C-N-Si_28_b /1                                     -91.8
+#C=N-Si bond
+200.0   +   C=N-Si_rel /1   -   C=N-Si_01_b /1                                     -296.51
+100.0   +   C=N-Si_rel /1   -   C=N-Si_02_b /1                                     -161.03
+20.0   +   C=N-Si_rel /1   -   C=N-Si_03_b /1                                     -81.48
+10.0   +   C=N-Si_rel /1   -   C=N-Si_04_b /1                                     -37.16
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_05_b /1                                     -13.71
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_06_b /1                                     -2.86
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_07_b /1                                     -0.001
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_08_b /1                                     -2.03
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_09_b /1                                     -6.92
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_10_b /1                                     -13.35
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_11_b /1                                     -20.47
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_12_b /1                                     -27.77
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_13_b /1                                     -34.94
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_14_b /1                                     -41.82
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_15_b /1                                     -48.32
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_16_b /1                                     -54.41
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_17_b /1                                     -60.06
+ 2.0   +   C=N-Si_rel /1   -   C=N-Si_18_b /1                                     -65.28
+ 0.5   +   C=N-Si_rel /1   -   C=N-Si_19_b /1                                     -70.08
+ 0.4   +   C=N-Si_rel /1   -   C=N-Si_20_b /1                                     -74.49
+ 0.4   +   C=N-Si_rel /1   -   C=N-Si_21_b /1                                     -76.31
+ 0.4   +   C=N-Si_rel /1   -   C=N-Si_22_b /1                                     -76.2
+ 0.4   +   C=N-Si_rel /1   -   C=N-Si_23_b /1                                     -76.22
+ 0.4   +   C=N-Si_rel /1   -   C=N-Si_24_b /1                                     -76.26
+ 0.4   +   C=N-Si_rel /1   -   C=N-Si_25_b /1                                     -76.32
+ 0.4   +   C=N-Si_rel /1   -   C=N-Si_26_b /1                                     -76.68
+ 0.4   +   C=N-Si_rel /1   -   C=N-Si_27_b /1                                     -76.55
+ 0.4   +   C=N-Si_rel /1   -   C=N-Si_28_b /1                                     -78.04
+#C-N=Si bond
+200.0   +   C-N=Si_rel /1   -   C-N=Si_01_b /1                                     -324.97
+100.0   +   C-N=Si_rel /1   -   C-N=Si_02_b /1                                     -179.31
+20.0   +   C-N=Si_rel /1   -   C-N=Si_03_b /1                                     -124.81
+10.0   +   C-N=Si_rel /1   -   C-N=Si_04_b /1                                     -54.79
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_05_b /1                                     -19.28
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_06_b /1                                     -3.87
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_07_b /1                                     -0.001
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_08_b /1                                     -2.6
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_09_b /1                                     -8.63
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_10_b /1                                     -16.32
+ 2.0   +   C-N=Si_rel /1   -   C-N=Si_11_b /1                                     -24.66
+ 1.0   +   C-N=Si_rel /1   -   C-N=Si_12_b /1                                     -33.04
+ 1.0   +   C-N=Si_rel /1   -   C-N=Si_13_b /1                                     -41.16
+ 0.5   +   C-N=Si_rel /1   -   C-N=Si_14_b /1                                     -48.89
+ 0.5   +   C-N=Si_rel /1   -   C-N=Si_15_b /1                                     -56.16
+ 0.5   +   C-N=Si_rel /1   -   C-N=Si_16_b /1                                     -62.96
+ 0.5   +   C-N=Si_rel /1   -   C-N=Si_17_b /1                                     -69.29
+ 0.5   +   C-N=Si_rel /1   -   C-N=Si_18_b /1                                     -75.16
+ 0.3   +   C-N=Si_rel /1   -   C-N=Si_19_b /1                                     -80.58
+ 0.3   +   C-N=Si_rel /1   -   C-N=Si_20_b /1                                     -85.57
+ 0.3   +   C-N=Si_rel /1   -   C-N=Si_21_b /1                                     -89.73
+ 0.3   +   C-N=Si_rel /1   -   C-N=Si_22_b /1                                     -89.33
+ 0.3   +   C-N=Si_rel /1   -   C-N=Si_23_b /1                                     -87.62
+ 0.3   +   C-N=Si_rel /1   -   C-N=Si_24_b /1                                     -86.98
+ 0.3   +   C-N=Si_rel /1   -   C-N=Si_25_b /1                                     -87.28
+ 0.3   +   C-N=Si_rel /1   -   C-N=Si_26_b /1                                     -87.27
+ 0.3   +   C-N=Si_rel /1   -   C-N=Si_27_b /1                                     -87.3
+ 0.3   +   C-N=Si_rel /1   -   C-N=Si_28_b /1                                     -87.79
+#C-Si-N bond
+200.0   +   C-Si-N_rel /1   -   C-Si-N_01_b /1                                     -354.49
+100.0   +   C-Si-N_rel /1   -   C-Si-N_02_b /1                                     -196.07
+20.0   +   C-Si-N_rel /1   -   C-Si-N_03_b /1                                     -100.78
+10.0   +   C-Si-N_rel /1   -   C-Si-N_04_b /1                                     -45.86
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_05_b /1                                     -16.56
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_06_b /1                                     -3.36
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_07_b /1                                     -0.001
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_08_b /1                                     -2.27
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_09_b /1                                     -7.69
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_10_b /1                                     -14.8
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_11_b /1                                     -22.72
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_12_b /1                                     -30.88
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_13_b /1                                     -38.95
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_14_b /1                                     -46.77
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_15_b /1                                     -54.26
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_16_b /1                                     -61.35
+ 2.0   +   C-Si-N_rel /1   -   C-Si-N_17_b /1                                     -68
+ 1.5   +   C-Si-N_rel /1   -   C-Si-N_18_b /1                                     -74.23
+ 1.5   +   C-Si-N_rel /1   -   C-Si-N_19_b /1                                     -80.02
+ 1.5   +   C-Si-N_rel /1   -   C-Si-N_20_b /1                                     -85.41
+ 0.5   +   C-Si-N_rel /1   -   C-Si-N_21_b /1                                     -90.41
+ 0.3   +   C-Si-N_rel /1   -   C-Si-N_22_b /1                                     -95.04
+ 0.2   +   C-Si-N_rel /1   -   C-Si-N_23_b /1                                     -99.33
+ 0.2   +   C-Si-N_rel /1   -   C-Si-N_24_b /1                                     -99.95
+ 0.2   +   C-Si-N_rel /1   -   C-Si-N_25_b /1                                     -99.92
+ 0.2   +   C-Si-N_rel /1   -   C-Si-N_26_b /1                                     -99.77
+ 0.2   +   C-Si-N_rel /1   -   C-Si-N_27_b /1                                     -99.87
+ 0.2   +   C-Si-N_rel /1   -   C-Si-N_28_b /1                                     -101.07
+#C=Si-N bond
+200.0   +   C=Si-N_rel /1   -   C=Si-N_01_b /1                                     -408.64
+100.0   +   C=Si-N_rel /1   -   C=Si-N_02_b /1                                     -226.94
+20.0   +   C=Si-N_rel /1   -   C=Si-N_03_b /1                                     -117.3
+10.0   +   C=Si-N_rel /1   -   C=Si-N_04_b /1                                     -53.84
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_05_b /1                                     -19.73
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_06_b /1                                     -4.11
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_07_b /1                                     -0.001
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_08_b /1                                     -2.94
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_09_b /1                                     -8.62
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_10_b /1                                     -16.25
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_11_b /1                                     -24.57
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_12_b /1                                     -32.93
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_13_b /1                                     -41.16
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_14_b /1                                     -49.17
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_15_b /1                                     -56.88
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_16_b /1                                     -64.19
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_17_b /1                                     -71.09
+ 2.0   +   C=Si-N_rel /1   -   C=Si-N_18_b /1                                     -77.55
+ 1.5   +   C=Si-N_rel /1   -   C=Si-N_19_b /1                                     -83.57
+ 0.3   +   C=Si-N_rel /1   -   C=Si-N_20_b /1                                     -89.17
+ 0.3   +   C=Si-N_rel /1   -   C=Si-N_21_b /1                                     -94.37
+ 0.3   +   C=Si-N_rel /1   -   C=Si-N_22_b /1                                     -99.18
+ 0.2   +   C=Si-N_rel /1   -   C=Si-N_23_b /1                                     -99.56
+ 0.2   +   C=Si-N_rel /1   -   C=Si-N_24_b /1                                     -99.74
+ 0.2   +   C=Si-N_rel /1   -   C=Si-N_25_b /1                                     -99.93
+ 0.2   +   C=Si-N_rel /1   -   C=Si-N_26_b /1                                     -100.13
+ 0.2   +   C=Si-N_rel /1   -   C=Si-N_27_b /1                                     -100.33
+ 0.2   +   C=Si-N_rel /1   -   C=Si-N_28_b /1                                     -102.34
+#C-Si=N bond
+200.0   +   C-Si=N_rel /1   -   C-Si=N_01_b /1                                     -599.83
+100.0   +   C-Si=N_rel /1   -   C-Si=N_02_b /1                                     -325.94
+20.0   +   C-Si=N_rel /1   -   C-Si=N_03_b /1                                     -162.29
+10.0   +   C-Si=N_rel /1   -   C-Si=N_04_b /1                                     -70.3
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_05_b /1                                     -23.92
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_06_b /1                                     -5.15
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_07_b /1                                     -0.001
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_08_b /1                                     -3.79
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_09_b /1                                     -12.98
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_10_b /1                                     -25.09
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_11_b /1                                     -38.51
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_12_b /1                                     -52.23
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_13_b /1                                     -64.69
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_14_b /1                                     -74.9
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_15_b /1                                     -77.46
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_16_b /1                                     -83.1
+ 2.0   +   C-Si=N_rel /1   -   C-Si=N_17_b /1                                     -87.99
+ 0.3   +   C-Si=N_rel /1   -   C-Si=N_18_b /1                                     -105.05
+ 0.3   +   C-Si=N_rel /1   -   C-Si=N_19_b /1                                     -105.49
+ 0.3   +   C-Si=N_rel /1   -   C-Si=N_20_b /1                                     -105.85
+ 0.3   +   C-Si=N_rel /1   -   C-Si=N_21_b /1                                     -106.16
+ 0.3   +   C-Si=N_rel /1   -   C-Si=N_22_b /1                                     -106.42
+ 0.3   +   C-Si=N_rel /1   -   C-Si=N_23_b /1                                     -106.65
+ 0.3   +   C-Si=N_rel /1   -   C-Si=N_25_b /1                                     -107.02
+ 0.3   +   C-Si=N_rel /1   -   C-Si=N_26_b /1                                     -107.19
+ 0.3   +   C-Si=N_rel /1   -   C-Si=N_27_b /1                                     -107.32
+ 0.3   +   C-Si=N_rel /1   -   C-Si=N_28_b /1                                     -108.52
+#C-SiN bond
+200.0   +   C-SiN_rel /1   -   C-SiN_01_b /1                                     -750.62
+100.0   +   C-SiN_rel /1   -   C-SiN_02_b /1                                     -420.22
+20.0   +   C-SiN_rel /1   -   C-SiN_03_b /1                                     -217.02
+10.0   +   C-SiN_rel /1   -   C-SiN_04_b /1                                     -99.11
+ 2.0   +   C-SiN_rel /1   -   C-SiN_05_b /1                                     -36.04
+ 2.0   +   C-SiN_rel /1   -   C-SiN_06_b /1                                     -7.43
+ 2.0   +   C-SiN_rel /1   -   C-SiN_07_b /1                                     -0.001
+ 2.0   +   C-SiN_rel /1   -   C-SiN_08_b /1                                     -5.17
+ 2.0   +   C-SiN_rel /1   -   C-SiN_09_b /1                                     -17.41
+ 2.0   +   C-SiN_rel /1   -   C-SiN_10_b /1                                     -33.21
+ 2.0   +   C-SiN_rel /1   -   C-SiN_11_b /1                                     -40.11
+ 2.0   +   C-SiN_rel /1   -   C-SiN_12_b /1                                     -48.46
+ 2.0   +   C-SiN_rel /1   -   C-SiN_13_b /1                                     -42.51
+ 2.0   +   C-SiN_rel /1   -   C-SiN_15_b /1                                     -53.79
+ 2.0   +   C-SiN_rel /1   -   C-SiN_16_b /1                                     -59.15
+ 2.0   +   C-SiN_rel /1   -   C-SiN_17_b /1                                     -64.14
+ 2.0   +   C-SiN_rel /1   -   C-SiN_18_b /1                                     -68.41
+ 2.0   +   C-SiN_rel /1   -   C-SiN_19_b /1                                     -72.09
+ 2.0   +   C-SiN_rel /1   -   C-SiN_20_b /1                                     -75.14
+ 2.0   +   C-SiN_rel /1   -   C-SiN_21_b /1                                     -78.03
+ 2.0   +   C-SiN_rel /1   -   C-SiN_22_b /1                                     -79.78
+ 2.0   +   C-SiN_rel /1   -   C-SiN_23_b /1                                     -81.48
+ 2.0   +   C-SiN_rel /1   -   C-SiN_24_b /1                                     -82.93
+ 2.0   +   C-SiN_rel /1   -   C-SiN_25_b /1                                     -84.15
+ 2.0   +   C-SiN_rel /1   -   C-SiN_26_b /1                                     -85.21
+ 2.0   +   C-SiN_rel /1   -   C-SiN_27_b /1                                     -86.12
+ 2.0   +   C-SiN_rel /1   -   C-SiN_28_b /1                                     -91.37
+#Si-Aniline bond
+200.0   +   siani_rel /1   -   siani_01_b /1                                     -341.25
+100.0   +   siani_rel /1   -   siani_02_b /1                                     -189.24
+20.0   +   siani_rel /1   -   siani_03_b /1                                     -97.72
+10.0   +   siani_rel /1   -   siani_04_b /1                                     -44.83
+ 2.0   +   siani_rel /1   -   siani_05_b /1                                     -16.42
+ 2.0   +   siani_rel /1   -   siani_06_b /1                                     -3.42
+ 2.0   +   siani_rel /1   -   siani_07_b /1                                     -0.001
+ 2.0   +   siani_rel /1   -   siani_08_b /1                                     -2.44
+ 2.0   +   siani_rel /1   -   siani_09_b /1                                     -8.35
+ 2.0   +   siani_rel /1   -   siani_10_b /1                                     -16.19
+ 2.0   +   siani_rel /1   -   siani_11_b /1                                     -24.97
+ 2.0   +   siani_rel /1   -   siani_12_b /1                                     -34.06
+ 2.0   +   siani_rel /1   -   siani_13_b /1                                     -43.03
+ 2.0   +   siani_rel /1   -   siani_14_b /1                                     -51.71
+ 2.0   +   siani_rel /1   -   siani_15_b /1                                     -60.02
+ 2.0   +   siani_rel /1   -   siani_16_b /1                                     -58.7
+ 2.0   +   siani_rel /1   -   siani_17_b /1                                     -64.17
+ 2.0   +   siani_rel /1   -   siani_18_b /1                                     -69.09
+ 2.0   +   siani_rel /1   -   siani_19_b /1                                     -73.51
+ 1.5   +   siani_rel /1   -   siani_20_b /1                                     -77.47
+ 0.3   +   siani_rel /1   -   siani_21_b /1                                     -81.62
+ 0.3   +   siani_rel /1   -   siani_22_b /1                                     -81.59
+ 0.3   +   siani_rel /1   -   siani_23_b /1                                     -81.62
+ 0.3   +   siani_rel /1   -   siani_24_b /1                                     -81.66
+ 0.3   +   siani_rel /1   -   siani_25_b /1                                     -81.72
+ 0.3   +   siani_rel /1   -   siani_26_b /1                                     -81.83
+ 0.3   +   siani_rel /1   -   siani_27_b /1                                     -81.94
+ 0.3   +   siani_rel /1   -   siani_28_b /1                                     -83.04
+#CN-Si bond
+200.0   +   CN-Si_rel /1   -   CN-Si_01_b /1                                     -302.01
+100.0   +   CN-Si_rel /1   -   CN-Si_02_b /1                                     -164.49
+20.0   +   CN-Si_rel /1   -   CN-Si_03_b /1                                     -83
+10.0   +   CN-Si_rel /1   -   CN-Si_04_b /1                                     -37.06
+ 2.0   +   CN-Si_rel /1   -   CN-Si_05_b /1                                     -13.27
+ 2.0   +   CN-Si_rel /1   -   CN-Si_06_b /1                                     -2.74
+ 2.0   +   CN-Si_rel /1   -   CN-Si_07_b /1                                     -0.001
+ 2.0   +   CN-Si_rel /1   -   CN-Si_08_b /1                                     -1.9
+ 2.0   +   CN-Si_rel /1   -   CN-Si_09_b /1                                     -6.44
+ 2.0   +   CN-Si_rel /1   -   CN-Si_10_b /1                                     -12.24
+ 2.0   +   CN-Si_rel /1   -   CN-Si_11_b /1                                     -18.32
+ 2.0   +   CN-Si_rel /1   -   CN-Si_12_b /1                                     -23.85
+ 2.0   +   CN-Si_rel /1   -   CN-Si_13_b /1                                     -20.87
+ 2.0   +   CN-Si_rel /1   -   CN-Si_14_b /1                                     -19.69
+ 1.0   +   CN-Si_rel /1   -   CN-Si_15_b /1                                     -18.6
+ 1.0   +   CN-Si_rel /1   -   CN-Si_16_b /1                                     -17.69
+ 0.3   +   CN-Si_rel /1   -   CN-Si_17_b /1                                     -16.96
+ 0.3   +   CN-Si_rel /1   -   CN-Si_18_b /1                                     -16.41
+ 0.3   +   CN-Si_rel /1   -   CN-Si_19_b /1                                     -16.01
+ 0.3   +   CN-Si_rel /1   -   CN-Si_20_b /1                                     -15.73
+ 0.3   +   CN-Si_rel /1   -   CN-Si_21_b /1                                     -15.54
+ 0.3   +   CN-Si_rel /1   -   CN-Si_22_b /1                                     -15.44
+ 0.3   +   CN-Si_rel /1   -   CN-Si_23_b /1                                     -15.39
+ 0.3   +   CN-Si_rel /1   -   CN-Si_24_b /1                                     -15.4
+ 0.3   +   CN-Si_rel /1   -   CN-Si_25_b /1                                     -15.45
+ 0.3   +   CN-Si_rel /1   -   CN-Si_26_b /1                                     -15.53
+ 0.3   +   CN-Si_rel /1   -   CN-Si_27_b /1                                     -15.63
+ 0.3   +   CN-Si_rel /1   -   CN-Si_28_b /1                                     -16.9
+#C=Si=N bond
+200.0   +   C=Si=N_rel /1   -   C=Si=N_01_b /1                                     -859.6
+100.0   +   C=Si=N_rel /1   -   C=Si=N_02_b /1                                     -483.27
+20.0   +   C=Si=N_rel /1   -   C=Si=N_03_b /1                                     -251.02
+10.0   +   C=Si=N_rel /1   -   C=Si=N_04_b /1                                     -115.38
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_05_b /1                                     -42.25
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_06_b /1                                     -8.78
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_07_b /1                                     -0.001
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_08_b /1                                     2.01
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_09_b /1                                     -4.22
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_10_b /1                                     -14.32
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_11_b /1                                     -25.46
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_12_b /1                                     -33.23
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_13_b /1                                     -39.7
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_14_b /1                                     -45.86
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_15_b /1                                     -51.2
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_16_b /1                                     -55.67
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_17_b /1                                     -59.27
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_18_b /1                                     -62.28
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_19_b /1                                     -64.42
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_20_b /1                                     -65.87
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_21_b /1                                     -67.3
+ 2.0   +   C=Si=N_rel /1   -   C=Si=N_22_b /1                                     -76.57
+ 1.0   +   C=Si=N_rel /1   -   C=Si=N_23_b /1                                     -69
+ 1.0   +   C=Si=N_rel /1   -   C=Si=N_24_b /1                                     -69.53
+ 1.0   +   C=Si=N_rel /1   -   C=Si=N_25_b /1                                     -74.53
+ 1.0   +   C=Si=N_rel /1   -   C=Si=N_26_b /1                                     -70.24
+ 1.0   +   C=Si=N_rel /1   -   C=Si=N_27_b /1                                     -70.54
+ 1.0   +   C=Si=N_rel /1   -   C=Si=N_28_b /1                                     -73.66
+#CSi-N bond
+200.0   +   CSi-N_rel /1   -   CSi-N_01_b /1                                     -410.42
+100.0   +   CSi-N_rel /1   -   CSi-N_02_b /1                                     -228.27
+20.0   +   CSi-N_rel /1   -   CSi-N_03_b /1                                     -118.35
+10.0   +   CSi-N_rel /1   -   CSi-N_04_b /1                                     -54.57
+ 2.0   +   CSi-N_rel /1   -   CSi-N_05_b /1                                     -19.98
+ 2.0   +   CSi-N_rel /1   -   CSi-N_06_b /1                                     -3.65
+ 2.0   +   CSi-N_rel /1   -   CSi-N_07_b /1                                     1.44
+ 2.0   +   CSi-N_rel /1   -   CSi-N_08_b /1                                     -0.21
+ 2.0   +   CSi-N_rel /1   -   CSi-N_09_b /1                                     -5.7
+ 2.0   +   CSi-N_rel /1   -   CSi-N_10_b /1                                     -13.13
+ 2.0   +   CSi-N_rel /1   -   CSi-N_11_b /1                                     -21.18
+ 2.0   +   CSi-N_rel /1   -   CSi-N_12_b /1                                     -28.92
+ 2.0   +   CSi-N_rel /1   -   CSi-N_13_b /1                                     -35.38
+ 2.0   +   CSi-N_rel /1   -   CSi-N_14_b /1                                     -40.89
+ 2.0   +   CSi-N_rel /1   -   CSi-N_15_b /1                                     -45.34
+ 0.3   +   CSi-N_rel /1   -   CSi-N_16_b /1                                     -48.54
+ 0.3   +   CSi-N_rel /1   -   CSi-N_17_b /1                                     -50.94
+ 0.3   +   CSi-N_rel /1   -   CSi-N_18_b /1                                     -52.74
+ 0.2   +   CSi-N_rel /1   -   CSi-N_19_b /1                                     -54.14
+ 0.2   +   CSi-N_rel /1   -   CSi-N_20_b /1                                     -55.24
+ 0.2   +   CSi-N_rel /1   -   CSi-N_21_b /1                                     -56.13
+ 0.2   +   CSi-N_rel /1   -   CSi-N_22_b /1                                     -56.87
+ 0.2   +   CSi-N_rel /1   -   CSi-N_23_b /1                                     -57.5
+ 0.2   +   CSi-N_rel /1   -   CSi-N_24_b /1                                     -58.04
+ 0.2   +   CSi-N_rel /1   -   CSi-N_25_b /1                                     -58.53
+ 0.2   +   CSi-N_rel /1   -   CSi-N_26_b /1                                     -59.02
+ 0.2   +   CSi-N_rel /1   -   CSi-N_27_b /1                                     -59.36
+ 0.2   +   CSi-N_rel /1   -   CSi-N_28_b /1                                     -62.02
+#N in Si Binding
+ 0.1   +   Si_1N /1   -   Si_bulk_32 /1   -   N2 /2                             32.34
+ 0.1   +   Si_2N /1   -   Si_bulk_32 /1   -   N2 /1                             54.49
+ 0.1   +   Si_3N /3   -   Si_bulk_32 /3   -   N2 /2                             28.13
+ 0.1   +   Si_4N /2   -   Si_bulk_32 /2   -   N2 /1                             16.47
+ 0.1   +   Si_5N /5   -   Si_bulk_32 /5   -   N2 /2                             7.62
+ 0.1   +   Si_6N /3   -   Si_bulk_32 /3   -   N2 /1                             10.2
+ENDENERGY
+#Weigh op1 Key1  n1  op2 Key2  n2  op3 Key3  n3  op4 Key4  n4  op5 Key5  n5  #Lit (f6.2,5(1x,a1,3x,a5,1x,i3),f10.4)  
+#GEODIFF  
+#Weigh op1 Key1 At1 At2 At3 At4 op2 Key2 At1 At2 At3 At4 #Lit
+# 0.1   +   HhhhhH3  1   2           -  Si-N_1  1   2           0.17
+#ENDGEODIFF  

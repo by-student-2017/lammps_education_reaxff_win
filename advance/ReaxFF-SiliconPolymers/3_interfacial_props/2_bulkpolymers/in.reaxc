@@ -1,0 +1,107 @@
+# REAX potential for PPAN system
+# .....
+
+units           real
+
+atom_style      charge
+read_data       data.in
+#read_restart	infile
+
+pair_style	reax/c lmp_control
+pair_coeff	* * ffield Si H C N
+
+#Neighbor list
+neighbor	2.5 bin
+neigh_modify	delay 0 every 5 check no
+
+#Emin
+# Variable for minimization
+variable        etol equal 1.0e-10
+variable        ftol equal 1.0e-10
+variable        maxiter equal 50000
+variable        maxeval equal 10000
+variable        dmax equal 1.0e-1
+
+# Energy Minimization and equilibration
+fix             1 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+
+minimize        ${etol} ${ftol} ${maxiter} ${maxeval}
+min_style       cg
+
+dump            1 all atom 1 dump.reax1
+dump_modify     1 scale no
+run 		0
+undump		1
+
+#Initial temp
+velocity all create 300.0 16312
+reset_timestep	0
+restart		1000 refile1 refile2
+
+#Property computes
+compute e all pair reax/c
+variable eb equal c_e[1]
+variable ea equal c_e[2]
+variable elp equal c_e[3]
+variable emol equal c_e[4]
+variable ev equal c_e[5]
+variable epen equal c_e[6]
+variable ecoa equal c_e[7]
+variable ehb equal c_e[8]
+variable et equal c_e[9]
+variable eco equal c_e[10]
+variable ew equal c_e[11]
+variable ep equal c_e[12]
+variable efi equal c_e[13]
+variable eqeq equal c_e[14]
+variable stp equal "step"
+variable Pe equal "pe"
+
+variable Ke equal "ke"
+variable Te equal "etotal"
+variable Temp equal "temp"
+variable P equal "press"
+variable Px equal "pxx"
+variable Py equal "pyy"
+variable Pz equal "pzz"
+variable Lx equal "lx"
+variable Ly equal "ly"
+variable Lz equal "lz"
+variable Dens equal "density"
+
+#NVT MD Nose-Hoover thermostat
+fix             1 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+fix		2 all nvt temp 300.0 300.0 100.0
+fix             5 all reax/c/bonds 10000 bonds.out
+fix             6 all reax/c/species 1 10 10000 mol.out position 10000 mol.pos
+
+fix		7a all print 100 "${stp} ${Pe}  ${eb}  ${ea}  ${elp}  ${emol}  ${ev}  ${epen}  ${ecoa}  ${ehb}  ${et}  ${eco}  ${ew}  ${ep}  ${efi}  ${eqeq}" file energy_comp
+fix		7b all print 100 "${stp} ${Pe}  ${Ke}  ${Te}  ${Temp}  ${P}  ${Px}  ${Py}  ${Pz}  ${Lx}  ${Ly}  ${Lz}  ${Dens}" file Thermo
+
+
+timestep	0.25
+
+thermo 		100
+thermo_style	custom step time pe ke etotal vol temp press pxx pyy pzz lx ly lz density
+
+dump            1 all atom 1000 dump.reax_md
+dump_modify	1 scale no
+
+run 		6000000
+write_restart	refile.*
+unfix           2
+fix             2 all npt temp 300.0 300.0 100.0 aniso 0.0 5000.0 1000.0
+run             400000
+write_restart   refile.*
+unfix           2
+fix             2 all npt temp 300.0 300.0 100.0 aniso 5000.0 5000.0 1000.0
+run             5600000
+write_restart   refile.*
+unfix           2
+fix             2 all npt temp 300.0 300.0 100.0 aniso 5000.0 0.0 1000.0
+run             400000
+write_restart   refile.*
+unfix           2
+fix             2 all npt temp 300.0 300.0 100.0 aniso 0.0 0.0 1000.0
+run             4000000
+write_restart   refile.*

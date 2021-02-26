@@ -1,0 +1,84 @@
+# REAX potential for PPAN system
+# .....
+
+units           real
+
+atom_style      charge
+
+read_data       datafile
+
+pair_style      reax/c NULL
+pair_coeff      * * ffield C N H
+
+#Neighbor list
+neighbor	2.5 bin
+neigh_modify	delay 0 every 5 check no
+
+#Initial run
+fix             1 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+run		0 pre no post no
+
+variable tmp equal "ly"
+variable Ly0 equal ${tmp}
+print "Initial Length, Ly0: ${Ly0}"
+
+#Property computes
+compute virial all stress/atom NULL
+compute e all pair reax/c
+variable eb equal c_e[1]
+variable ea equal c_e[2]
+variable elp equal c_e[3]
+variable emol equal c_e[4]
+variable ev equal c_e[5]
+variable epen equal c_e[6]
+variable ecoa equal c_e[7]
+variable ehb equal c_e[8]
+variable et equal c_e[9]
+variable eco equal c_e[10]
+variable ew equal c_e[11]
+variable ep equal c_e[12]
+variable efi equal c_e[13]
+variable eqeq equal c_e[14]
+variable stp equal "step"
+variable Pe equal "pe"
+variable Ke equal "ke"
+variable Te equal "etotal"
+variable Temp equal "temp"
+
+variable Lx equal "lx"
+variable Ly equal "ly"
+variable Lz equal "lz"
+variable Strain equal "(ly - v_Ly0)/v_Ly0"
+variable Pxx equal "-pxx*1.01325/10000"
+variable Pyy equal "-pyy*1.01325/10000"
+variable Pzz equal "-pzz*1.01325/10000"
+variable P equal "-press*1.01325/10000"
+variable Dens equal "density"
+
+#Initial temp
+reset_timestep	0
+restart		1000 refile1 refile2
+
+#NVT MD Nose-Hoover thermostat
+fix             5 all reax/c/bonds 10000 bonds.out
+fix             6 all reax/c/species 1 10 10000 mol.out position 10000 mol.pos
+
+fix		7a all print 100 "${stp} ${eb}  ${ea}  ${elp}  ${emol}  ${ev}  ${epen}  ${ecoa}  ${ehb}  ${et}  ${eco}  ${ew}  ${ep}  ${efi}  ${eqeq} ${Pe} ${Ke} ${Te} ${Temp}" file energy_comp
+
+fix             7b all print 1 "${stp} ${Strain} ${Lx} ${Ly} ${Lz} ${Pxx} ${Pyy} ${Pzz} ${P} ${Pe} ${Dens}" file stretch.out
+
+timestep	0.25
+
+thermo 		100
+thermo_style	custom step time pe ke etotal vol temp press pxx pyy pzz lx ly lz density
+
+dump            1 all atom 1000 dump.reax_md
+dump_modify	1 scale no
+
+dump            2 all custom 1000 dump.strs id fx fy fz &
+                c_virial[1] c_virial[2] c_virial[3] c_virial[4] c_virial[5] c_virial[6]
+
+fix		2 all npt temp 300.0 300.0 100.0 x 0.0 0.0 1000.0 z 0.0 0.0 1000.0
+fix		4 all deform 1 y erate 0.000001
+run 		2000000
+write_restart	refile.*

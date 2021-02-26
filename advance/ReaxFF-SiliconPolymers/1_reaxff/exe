@@ -1,0 +1,81 @@
+#!/bin/csh
+if (-f xmolout) rm xmolout
+if (-f moldyn.vel) mv moldyn.vel vels23
+if (-f ffield) cp ffield ffieldss
+if (-f fort.83) mv fort.83 83s
+if (-f fort.4) cp fort.4 4s
+if (-f fort.41) cp fort.41 41s
+if (-f fort.91) cp fort.91 91s
+if (-f fort.59) cp fort.59 59s
+if (-f fort.58) cp fort.58 58s
+if (-f fort.57) cp fort.57 57s
+if (-f fort.71) cp fort.71 71s
+if (-f fort.72) cp fort.72 72s
+if (-f fort.73) cp fort.73 73s
+if (-f fort.74) cp fort.74 74s
+if (-f fort.76) cp fort.76 76s
+if (-f 13s) cp 13s 13s2
+if (-f fort.13) cp fort.13 13s
+if (-f fort.99) cp fort.99 99s
+if (-f fort.79) cp fort.79 79s
+if (-f fort.7) cp fort.7 7s
+if (-f fort.8) cp fort.8 8s
+if (-f fort.81) cp fort.81 81s
+if (-f fort.97) cp fort.97 97s
+if (-f fort.90) cp fort.90 90s
+if (-f fort.98) cp fort.98 98s
+if (-f end.geo) rm end.geo
+touch fort.5a
+touch moldyn.0a
+touch molsav.0a
+rm fort.*
+rm moldyn.0*
+rm molsav.0*
+if  (-f control )  then
+#
+else
+echo 'Missing control'
+exit
+endif
+if  (-f geo )  then
+cp geo fort.3
+else
+echo 'Missing geo'
+exit
+endif
+if  (-f ffield )  then
+cp ffield fort.4
+else
+echo 'Missing ffield'
+exit
+endif
+if  (-f ranfile )  then
+cp ranfile fort.35
+else
+echo 'Created ranfile in unit 35'
+echo '234535.1' > fort.35
+endif
+if (-f iopt ) then
+cp iopt fort.20
+else
+echo 'Created iopt in unit 20; assume normal run'
+echo '  0   0: Normal run   1: Force field optimization' > fort.20
+endif
+if (-f outres ) then
+cp outres fort.9
+else
+echo 'Touched unit 9 (outres)'
+touch fort.9
+endif
+if (-f inilp) cp inilp fort.2
+if (-f params) cp params fort.21
+if (-f koppel) cp koppel fort.22
+if (-f koppel2) cp koppel2 fort.23
+if (-f tregime) cp tregime fort.19
+if (-f restraint) cp restraint fort.18
+if (-f restraintt) cp restraintt fort.28
+if (-f restraintv) cp restraintv fort.38
+if (-f vels) cp vels moldyn.vel
+#reac > run.log
+~/exes/reac_aug27 > run.log
+exit

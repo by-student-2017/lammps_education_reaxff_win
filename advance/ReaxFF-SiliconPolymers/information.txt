@@ -1,0 +1,60 @@
+
+#-----Run: 2_mech_props-----
+(go to following file)
+ReaxFF-GCMC
+> 2_mech_props
+  > 1_density
+    > pan
+      > x
+        > trial_1
+(click) run.bat
+(see cfg file on Ovito)
+
+
+#-----Input file information-----
+
+run.bat: run file
+
+in.reaxc: input file for lammps
+in.reaxc_x: input file for lammps
+in.reaxc_y: input file for lammps
+in.reaxc_z: input file for lammps
+
+data.in: structure file
+
+ffield: potential file
+
+lmp_control: trajectory setting file
+
+
+#-----Output file information-----
+
+cfg: structure data folder for ovito
+
+log.lammpss: log file
+
+PAN.trj; trajectory file
+
+PAN.pot
+
+out_energy.txt: energy and temperature at every steps
+
+log.cite
+
+dump.reax1
+dump.reax_md
+mol.pos
+mol.out
+bonds.out
+Thermo
+energy.comp
+
+
+#-----Other file information-----
+
+getcoord.py
+
+
+#-----Reference-----
+[1] M. Bhati and T. P. Senftle, J. Phys. Chem. C 2019, 123, 44, 27036-27047.
+  https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.9b08216

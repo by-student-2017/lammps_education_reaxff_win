@@ -1,0 +1,72 @@
+# General parameters
+      1 icentr     
+      1 itrans     
+      1 imetho     0: Normal MD-run 1: Energy minimisation 2:MD-energy minimisation
+      1 igeofo     0:xyz-input geometry 1: Biograf input geometry 2: xmol-input geometry
+ 80.000 axis1      a (for non-periodical systems)
+ 80.000 axis2      b (for non-periodical systems)
+ 80.000 axis3      c (for non-periodical systems)
+ 0.0050 cutof2     BO-cutoff for valency angles and torsion angles
+  0.300 cutof3     BO-cutoff for bond order for graphs
+      3 icharg     Charges. 1:EEM 2:- 3: Shielded EEM (default for crystals) 4: Full system EEM 5: Fixed (unit 26) 6: Fragment EEM
+      1 ichaen     Charges. 1:include charge energy 0: Do not include charge energy
+      0 iappen     1: Append fort.7 and fort.8
+      1 isurpr     1: Surpress lots of output 2: Read in all geometries at the same time
+     25 irecon     Frequency of reading control-file
+      0 icheck     0: Normal run 1:Check first derivatives;2: Single run
+      0 idebug     0: normal run 1: debug run
+      0 ixmolo     0: only x,y,z-coordinates in xmolout  1: x,y,z + velocities + molnr. in xmolout
+10.0000 volcha     volume change (%) with 'S' and 'B' labels
+      0 iconne     0: Normal run 1: Run with fixed connection table 2: Read in from cnt.in
+      0 imolde     0: Normal run 1: Run with fixed molecule definition (moldef.in)
+# MD-parameters
+      1 imdmet     MD-method. 1:Velocity Verlet+Berendsen 2:Hoover-Nose;3:NVE 4: NPT
+  0.250 tstep      MD-time step (fs)
+0001.00 mdtemp     1st MD-temperature
+0005.00 mdtem2     2nd MD-temperature
+0000.00 tincr      Increase/decrease temperature
+      2 itdmet     0: T-damp atoms 1: Energy cons 2:System 3: Mols 4: Anderson 5: Mols+2 types of damping  6: System with 2 types of damping 
+    1.0 tdamp1     1st Berendsen/Anderson temperature damping constant (fs)
+    1.0 tdamp2     2nd Berendsen/Anderson temperature damping constant (fs)
+    192 ntdamp     Nr. of atoms with 1st Berendsen damping constant and 1st MD-temperature
+0000.00 mdpres     MD-pressure (MPa)
+00100.0 pdamp1     Berendsen pressure damping constant (fs)
+      0 inpt       0: Change all cell parameters in NPT-run  1: fixed x 2: fixed y 3: fixed z
+0000010 nmdit      Number of MD-iterations
+ 000000 nmdeqi     Number of MD-equilibrium iterations
+  00001 ichupd     Charge update frequency
+    005 iout1      Output to unit 71 and unit 73
+   0050 iout2      Save coordinates
+      0 ivels      1:Set vels and accels from moldyn.vel to zero
+  00025 itrafr     Frequency of trarot-calls
+      1 iout3      0: create moldyn.xxxx-files 1: do not create moldyn.xxxx-files
+      1 iravel     1: Random initial velocities
+0.00001 endmd      End point criterium for MD energy minimisation
+ 001000 iout6      Save velocity file
+ 000025 irten      Frequency of removal of rotational and translational energy
+      0 npreit     Nr. of iterations in previous runs
+   2.50 range      Range for back-translation of atoms
+# MM-parameters
+1.00000 endmm      End point criterium for MM energy minimisation
+  00000 imaxmo     Maximum movement (1/1D6 A) during minimisation 0: Conjugate gradient
+  00250 imaxit     Maximum number of iterations
+    050 iout4      Frequency of structure output during minimisation
+      0 iout5      1:Remove fort.57 and fort.58 files
+1.00050 celopt     Cell parameter change
+      0 icelo2     Change all cell parameters (0) or only x/y/z axis (1/2/3)
+# FF-optimisation parameters
+   1.00 parsca     Parameter optimization: parameter step scaling
+ 0.0100 parext     Parameter optimization: extrapolation
+      1 icelop     0: No cell parameter optimisation 1:Cell parameter optimisation
+      1 igeopt     0: Always use same start gemetries 1:Use latest geometries in optimisation
+      0 iincop     heat increment optimisation 1: yes 0: no
+5.00000 accerr     Accepted increase in error force field
+    251 nmoset     Nr. of molecules in training set
+#Outdated parameters 
+      0 ideve1     0: Normal run 1:Check for radical/double bond distances
+   2000 ideve2     Frequency of radical/double bond check
+      0 nreac      0: reactive; 1: non-reactive; 2: Place default atoms
+      1 ibiola     0: Use old Biograf-labels 1: Assign Biograf-labels
+100.000 tdhoov     Hoover-Noose temperature damping constant (fs)
+ 01.000 achoov     100*Accuracy Hoover-Noose
+      0 itfix      1:Keep temperature fixed at exactly tset
