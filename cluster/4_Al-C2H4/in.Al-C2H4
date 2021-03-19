@@ -67,5 +67,5 @@ run			60000 # 15 ps
 
 unfix		3
 fix		3 ethylene temp/berendsen 2500 300 400.0 # relaxation constant 0.25*400 = 0.1 ps
-run			34000 # 8.5 ps
+run		   120000 # 30 ps
 
