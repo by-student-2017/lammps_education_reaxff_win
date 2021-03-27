@@ -1,0 +1,77 @@
+# REAX potential for high energy H-ZSM-5 systems
+# Title
+
+# Intialization
+units		real
+dimension	3
+boundary	p p p
+atom_style	charge
+
+# Atom Definition
+read_data	data.H2O-ZMS-5
+replicate	1 1 2
+
+# Mass Definition
+mass 1 28.0855 # Si
+mass 2 26.9816 # Al
+mass 3 15.9994 # O
+mass 4 1.00794 # H
+
+# Potential Definition
+pair_style	reax/c lmp_control
+pair_coeff	* * ffield.reax.CHONSSiNaAl Si Al O H
+
+neighbor	2 bin
+neigh_modify	every 10 delay 0 check no
+
+# output
+thermo_style    one #custom step etotal temp lx vol press
+thermo          50
+
+# relax structure, 0 K
+fix				f1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+fix             f2 all box/relax iso 0.0
+minimize        1.0e-10 0.0 1000 100000
+unfix           f1
+unfix           f2
+
+# initial velocity settings
+velocity       all create 698.15 4928459 rot yes mom yes dist gaussian
+
+# Berendsen thermostat (from 698.15 K to 698.15 K)
+fix		1 all nve
+fix		2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+fix		3 all temp/berendsen 698.15 698.15 400.0 # relaxation constant 0.25*400 = 0.1 ps
+
+fix		4 all reax/c/bonds 100 bonds.reaxc
+fix		5 all reax/c/species 50 1 50 species.reaxc
+
+timestep	0.25 # 0.25 fs
+
+# ovito settings
+dump		d1 all cfg 50 cfg/run.*.cfg mass type xs ys zs id type q
+dump_modify	d1 element Si Al O H
+
+# gnuplot settings
+variable	energy equal etotal
+variable	temperature equal temp
+fix			fout1 all ave/time 1 50 50 v_energy v_temperature file out_energy.txt
+
+# Run the simulation
+# To speed up reactions, a high temperature (1600 K) was applied for 
+#a short period in a fixed interval of simulation time. 
+
+# The temperature control was as follows: running at 700 K for 100 ps,
+run			40000 # 100 ps
+
+# heating up to 1600 K in 10 ps
+fix		4 ethylene temp/berendsen 700 1600 400.0 # relaxation constant 0.25*400 = 0.1 ps
+run		    4000 # 10 ps
+
+# running at 1600 K for 20 ps
+fix		5 ethylene temp/berendsen 1600 1600 400.0 # relaxation constant 0.25*400 = 0.1 ps
+run		    8000 # 20 ps
+
+# cooling to 700 K in 10 ps
+fix		6 ethylene temp/berendsen 1600 700 400.0 # relaxation constant 0.25*400 = 0.1 ps
+run		    4000 # 10 ps

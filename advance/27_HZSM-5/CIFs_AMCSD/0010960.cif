@@ -1,0 +1,85 @@
+data_global
+_chemical_name_mineral 'Mutinaite'
+loop_
+_publ_author_name
+'Taylor J C'
+'Miller S A'
+'Bibby D M'
+_journal_name_full 'Zeitschrift fur Kristallographie'
+_journal_volume 176 
+_journal_year 1986
+_journal_page_first 183
+_journal_page_last 192
+_publ_section_title
+;
+ A study of decomposition methods for refinement of H+-ZSM5 zeolite
+ with powder diffraction data
+ Note: dehydrated mutinaite
+;
+_database_code_amcsd 0010960
+_chemical_compound_source 'Synthetic'
+_chemical_formula_sum 'Si O2'
+_cell_length_a 20.108
+_cell_length_b 19.918
+_cell_length_c 13.392
+_cell_angle_alpha 90
+_cell_angle_beta 90
+_cell_angle_gamma 90
+_cell_volume 5363.645
+_exptl_crystal_density_diffrn      1.786
+_symmetry_space_group_name_H-M 'P n m a'
+loop_
+_space_group_symop_operation_xyz
+  'x,y,z'
+  'x,1/2-y,z'
+  '-x,1/2+y,-z'
+  '1/2-x,1/2+y,1/2+z'
+  '1/2+x,1/2-y,1/2-z'
+  '1/2+x,y,1/2-z'
+  '1/2-x,-y,1/2+z'
+  '-x,-y,-z'
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+Si1   0.42640   0.05810  -0.33960   0.01520
+Si2   0.30960   0.02970  -0.18140   0.01520
+Si3   0.27550   0.06030   0.03500   0.01520
+Si4   0.11980   0.06170   0.02870   0.01520
+Si5   0.06990   0.02530  -0.18620   0.01520
+Si6   0.18840   0.05930  -0.32730   0.01520
+Si7   0.42630  -0.17070  -0.32840   0.01520
+Si8   0.31380  -0.12800  -0.17590   0.01520
+Si9   0.26970  -0.17520   0.03660   0.01520
+Si10   0.11860  -0.17440   0.03560   0.01520
+Si11   0.07280  -0.12880  -0.17860   0.01520
+Si12   0.19290  -0.17340  -0.30980   0.01520
+O1   0.37330   0.05650  -0.24490   0.02786
+O2   0.30900   0.06040  -0.07280   0.02786
+O3   0.19770   0.04880   0.02120   0.02786
+O4   0.09490   0.05890  -0.08500   0.02786
+O5   0.12080   0.05600  -0.26680   0.02786
+O6   0.24210   0.05690  -0.24050   0.02786
+O7   0.37770  -0.15340  -0.22640   0.02786
+O8   0.30760  -0.16230  -0.07200   0.02786
+O9   0.19330  -0.15680   0.03590   0.02786
+O10   0.09260  -0.15790  -0.07430   0.02786
+O11   0.12410  -0.15310  -0.26350   0.02786
+O12   0.24980  -0.15540  -0.23560   0.02786
+O13   0.29940  -0.04950  -0.17280   0.02786
+O14   0.08040  -0.05250  -0.16700   0.02786
+O15   0.42070   0.12750  -0.38160   0.02786
+O16   0.40500   0.00180  -0.41800   0.02786
+O17   0.39740  -0.13150  -0.42680   0.02786
+O18   0.18930   0.12880  -0.37620   0.02786
+O19   0.20010  -0.00030  -0.40290   0.02786
+O20   0.20160  -0.12770  -0.41190   0.02786
+O21  -0.00380   0.04630  -0.21390   0.02786
+O22  -0.00040  -0.15040  -0.20770   0.02786
+O23   0.42370  -0.25000  -0.34360   0.02786
+O24   0.20010  -0.25000  -0.32930   0.02786
+O25   0.27490  -0.25000   0.06570   0.02786
+O26   0.10480  -0.25000   0.05790   0.02786
+
