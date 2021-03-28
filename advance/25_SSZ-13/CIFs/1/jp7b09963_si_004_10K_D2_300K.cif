@@ -1,0 +1,4358 @@
+data_CUSS0P5_RV2CUX2_publ
+
+_pd_block_id
+  2016-09-02T14:46|CUSS0P5_RV2CUX2|bahar|bt1
+
+_audit_creation_method  "from EXP file using GSAS2CIF"
+_audit_creation_date                   2016-09-02T14:46
+_audit_author_name                     bahar
+_audit_update_record
+; 2016-09-02T14:46  Initial CIF as created by GSAS2CIF
+;
+
+#=============================================================================
+# this information describes the project, paper etc. for the CIF             #
+# Acta Cryst. Section C papers and editorial correspondence is generated     #
+# from the information in this section                                       #
+#                                                                            #
+#   (from)   CIF submission form for Rietveld refinements (Acta Cryst. C)    #
+#                                                 Version 14 December 1998   #
+#=============================================================================
+# 1. SUBMISSION DETAILS
+
+_publ_contact_author_name            ?   # Name of author for correspondence
+_publ_contact_author_address             # Address of author for correspondence
+; ?
+;
+_publ_contact_author_email           ?
+_publ_contact_author_fax             ?
+_publ_contact_author_phone           ?
+
+_publ_contact_letter
+; ?
+;
+
+_publ_requested_journal              ?
+_publ_requested_coeditor_name        ?
+_publ_requested_category             ?   # Acta C: one of CI/CM/CO/FI/FM/FO
+
+#==============================================================================
+
+# 2. PROCESSING SUMMARY (IUCr Office Use Only)
+
+_journal_data_validation_number      ?
+
+_journal_date_recd_electronic        ?
+_journal_date_to_coeditor            ?
+_journal_date_from_coeditor          ?
+_journal_date_accepted               ?
+_journal_date_printers_first         ?
+_journal_date_printers_final         ?
+_journal_date_proofs_out             ?
+_journal_date_proofs_in              ?
+_journal_coeditor_name               ?
+_journal_coeditor_code               ?
+_journal_coeditor_notes
+; ?
+;
+_journal_techeditor_code             ?
+_journal_techeditor_notes
+; ?
+;
+_journal_coden_ASTM                  ?
+_journal_name_full                   ?
+_journal_year                        ?
+_journal_volume                      ?
+_journal_issue                       ?
+_journal_page_first                  ?
+_journal_page_last                   ?
+_journal_paper_category              ?
+_journal_suppl_publ_number           ?
+_journal_suppl_publ_pages            ?
+
+#==============================================================================
+
+# 3. TITLE AND AUTHOR LIST
+
+_publ_section_title
+; ?
+;
+_publ_section_title_footnote
+; ?
+;
+
+# The loop structure below should contain the names and addresses of all
+# authors, in the required order of publication. Repeat as necessary.
+
+loop_
+	_publ_author_name
+        _publ_author_footnote
+	_publ_author_address
+ ?                                   #<--'Last name, first name'
+; ?
+;
+; ?
+;
+
+#==============================================================================
+
+# 4. TEXT
+
+_publ_section_synopsis
+;  ?
+;
+_publ_section_abstract
+; ?
+;
+_publ_section_comment
+; ?
+;
+_publ_section_exptl_prep      # Details of the preparation of the sample(s)
+                              # should be given here.
+; ?
+;
+_publ_section_exptl_refinement
+; ?
+;
+_publ_section_references
+; ?
+;
+_publ_section_figure_captions
+; ?
+;
+_publ_section_acknowledgements
+; ?
+;
+
+#=============================================================================
+# 5. OVERALL REFINEMENT & COMPUTING DETAILS
+
+_refine_special_details
+; ?
+;
+_pd_proc_ls_special_details
+; ?
+;
+
+# The following items are used to identify the programs used.
+_computing_molecular_graphics     ?
+_computing_publication_material   ?
+
+_refine_ls_weighting_scheme       ?
+_refine_ls_weighting_details      ?
+_refine_ls_hydrogen_treatment     ?
+_refine_ls_extinction_method      ?
+_refine_ls_extinction_coef        ?
+_refine_ls_number_constraints     ?
+
+_refine_ls_restrained_S_all       ?
+_refine_ls_restrained_S_obs       ?
+
+#==============================================================================
+# 6. SAMPLE PREPARATION DATA
+
+# (In the unusual case where multiple samples are used in a single
+#  Rietveld study, this information should be moved into the phase
+#  blocks)
+
+# The following three fields describe the preparation of the material.
+# The cooling rate is in K/min.  The pressure at which the sample was
+# prepared is in kPa.  The temperature of preparation is in K.
+
+_pd_prep_cool_rate                ?
+_pd_prep_pressure                 ?
+_pd_prep_temperature              ?
+
+_pd_char_colour                   ?       # use ICDD colour descriptions
+_refine_ls_shift/su_max                0.68
+_refine_ls_shift/su_mean               0.13
+_computing_structure_refinement        GSAS
+_refine_ls_number_parameters           43
+_refine_ls_goodness_of_fit_all         1.01
+_refine_ls_number_restraints           10
+_refine_ls_matrix_type                 full
+#==============================================================================
+# 7. CHEMICAL, STRUCTURAL AND CRYSTAL DATA
+
+_pd_char_particle_morphology      ?
+
+_chemical_name_systematic
+; ?
+;
+_chemical_name_common             ?
+_chemical_formula_moiety          ?
+_chemical_formula_structural      ?
+_chemical_formula_analytical      ?
+_chemical_melting_point           ?
+_chemical_compound_source         ?       # for minerals and
+                                          # natural products
+_symmetry_space_group_name_Hall   ?
+
+_exptl_crystal_F_000               ?
+_exptl_crystal_density_diffrn      ?
+_exptl_crystal_density_meas        ?
+_exptl_crystal_density_method      ?
+
+_cell_measurement_temperature     ?
+
+_cell_special_details
+; ?
+;
+
+_geom_special_details             ?
+
+# The following item identifies the program(s) used (if appropriate).
+_computing_structure_solution     ?
+
+#==============================================================================
+
+# 8. Phase information from GSAS
+
+_pd_phase_name
+    "from C:/Users/mac2/Documents/Practice/GSAS/CuSSZ13/CUSSZ13.EXP"
+_cell_length_a                         13.6235(5)
+_cell_length_b                         13.6235
+_cell_length_c                         15.0332(9)
+_cell_angle_alpha                      90.0
+_cell_angle_beta                       90.0
+_cell_angle_gamma                      120.0
+_cell_volume                           2416.35(15)
+_symmetry_cell_setting                 trigonal
+_symmetry_space_group_name_H-M         "R -3 m"
+loop_ _symmetry_equiv_pos_site_id _symmetry_equiv_pos_as_xyz
+       1 +x,+y,+z 
+       2 -y,x-y,+z 
+       3 y-x,-x,+z 
+       4 y-x,+y,+z 
+       5 -y,-x,+z 
+       6 +x,x-y,+z 
+      -1 -x,-y,-z 
+      -2 +y,y-x,-z 
+      -3 x-y,+x,-z 
+      -4 x-y,-y,-z 
+      -5 +y,+x,-z 
+      -6 -x,y-x,-z 
+     101 +x+1/3,+y+2/3,+z+2/3 
+     102 -y+1/3,x-y+2/3,+z+2/3 
+     103 y-x+1/3,-x+2/3,+z+2/3 
+     104 y-x+1/3,+y+2/3,+z+2/3 
+     105 -y+1/3,-x+2/3,+z+2/3 
+     106 +x+1/3,x-y+2/3,+z+2/3 
+    -101 -x+2/3,-y+1/3,-z+1/3 
+    -102 +y+2/3,y-x+1/3,-z+1/3 
+    -103 x-y+2/3,+x+1/3,-z+1/3 
+    -104 x-y+2/3,-y+1/3,-z+1/3 
+    -105 +y+2/3,+x+1/3,-z+1/3 
+    -106 -x+2/3,y-x+1/3,-z+1/3 
+     201 +x+2/3,+y+1/3,+z+1/3 
+     202 -y+2/3,x-y+1/3,+z+1/3 
+     203 y-x+2/3,-x+1/3,+z+1/3 
+     204 y-x+2/3,+y+1/3,+z+1/3 
+     205 -y+2/3,-x+1/3,+z+1/3 
+     206 +x+2/3,x-y+1/3,+z+1/3 
+    -201 -x+1/3,-y+2/3,-z+2/3 
+    -202 +y+1/3,y-x+2/3,-z+2/3 
+    -203 x-y+1/3,+x+2/3,-z+2/3 
+    -204 x-y+1/3,-y+2/3,-z+2/3 
+    -205 +y+1/3,+x+2/3,-z+2/3 
+    -206 -x+1/3,y-x+2/3,-z+2/3 
+
+# ATOMIC COORDINATES AND DISPLACEMENT PARAMETERS
+
+
+loop_
+      _atom_site_type_symbol
+      _atom_site_label
+      _atom_site_fract_x
+      _atom_site_fract_y
+      _atom_site_fract_z
+      _atom_site_occupancy
+      _atom_site_thermal_displace_type
+      _atom_site_U_iso_or_equiv
+      _atom_site_symmetry_multiplicity
+Si
+Si     -0.00023(24)  0.22758(22)  0.10197(18)  0.8596     Uiso   0.0031(11)   36
+Al
+Al     -0.00023(24)  0.22758(22)  0.10197(18)  0.14045    Uiso   0.0031(11)   36
+O 
+O1      0.90577(24)  0.09423(24)  0.1145(5)    1.0        Uani   0.03476      18
+O 
+O2      0.9700(4)    0.3034(4)    0.1667       1.0        Uani   0.02032      18
+O 
+O3      0.12228(24)  0.2445(5)    0.1289(4)    1.0        Uani   0.02185      18
+O 
+O4      0.0          0.2654(4)    0.0          1.0        Uani   0.02636      18
+Cu
+Cu      0.0          0.0          0.1129(22)   0.221(13)  Uiso   0.00019       6
+D 
+D       0.0          0.0          0.266(7)     0.151(20)  Uiso   0.08055       6
+Cu
+Cu2     0.0          0.0          0.187(11)    0.077(12)  Uiso   0.03446       6
+D 
+D2      0.0          0.0          0.342(14)    0.077(12)  Uiso   0.08          6
+D 
+D3      0.0577(21)   0.115(4)     0.343(4)     0.109(9)   Uiso   0.08         18
+Cu
+Cu3     0.927(4)     0.727(4)     0.5741(34)   0.055(4)   Uiso   0.02054      36
+
+loop_ _atom_site_aniso_label
+      _atom_site_aniso_U_11
+      _atom_site_aniso_U_12
+      _atom_site_aniso_U_13
+      _atom_site_aniso_U_22
+      _atom_site_aniso_U_23
+      _atom_site_aniso_U_33
+O1      0.0206(33)  0.003(4)   -0.0108(22)  0.0206(33)  0.0108(22)  0.053(6)  
+O2      0.029(4)    0.017(4)   -0.0030(16)  0.029(4)    0.0030(16)  0.007(4)  
+O3      0.0137(30)  0.0213(25) -0.0037(22)  0.043(5)   -0.007(4)    0.019(5)  
+O4      0.042(5)    0.0212(23)  0.000(4)    0.0179(27)  0.0001(21)  0.027(4)  
+ 
+# If you change Z, be sure to change all 3 of the following
+_chemical_formula_sum                  "Al0.07 Cu0.05 D0.05 O Si0.43"
+_chemical_formula_weight               33.38
+_cell_formula_units_Z                  72
+
+# MOLECULAR GEOMETRY
+
+loop_
+      _geom_bond_atom_site_label_1
+      _geom_bond_atom_site_label_2
+      _geom_bond_distance
+      _geom_bond_site_symmetry_1
+      _geom_bond_site_symmetry_2
+      _geom_bond_publ_flag
+  Si        Al                3.107(6)  .      4_555  N
+  Si        Al                3.097(5)  .      5_555  N
+  Si        Al                3.066(5)  .     -6_555  N
+  Si        O1              1.6277(24)  .      1_455  N
+  Si        O2              1.6117(24)  .      1_455  N
+  Si        O3              1.6183(25)  .      1_555  N
+  Si        O4              1.6165(25)  .      1_555  N
+  Si        Cu              3.1063(31)  .      1_555  N
+  Si        Cu               4.478(24)  .     -1_555  N
+  Si        Cu2                3.35(6)  .      1_555  N
+  Si        Cu3                3.75(6)  .    101_444  N
+  Si        Cu3              2.939(34)  .    104_544  N
+  Si        Cu3              2.932(35)  .   -102_344  N
+  Si        Cu3                4.14(6)  .    205_564  N
+  Al        Si                3.107(6)  .      4_555  N
+  Al        Si                3.097(5)  .      5_555  N
+  Al        Si                3.066(5)  .     -6_555  N
+  Al        Al                3.107(6)  .      4_555  N
+  Al        Al                3.097(5)  .      5_555  N
+  Al        Al                3.066(5)  .     -6_555  N
+  Al        Al                3.160(5)  .   -205_344  N
+  Al        O1              1.6277(24)  .      1_455  N
+  Al        O2              1.6117(24)  .      1_455  N
+  Al        O3              1.6183(25)  .      1_555  N
+  Al        O4              1.6165(25)  .      1_555  N
+  Al        Cu              3.1063(31)  .      1_555  N
+  Al        Cu               4.478(24)  .     -1_555  N
+  Al        Cu2                3.35(6)  .      1_555  N
+  Al        Cu3                3.75(6)  .    101_444  N
+  Al        Cu3              2.939(34)  .    104_544  N
+  Al        Cu3              2.932(35)  .   -102_344  N
+  Al        Cu3                4.14(6)  .    205_564  N
+  O1        Si              1.6277(24)  .      1_655  N
+  O1        Si              1.6276(24)  .      5_655  N
+  O1        Al              1.6277(24)  .      1_655  N
+  O1        Al              1.6276(24)  .      5_655  N
+  O1        Cu                2.224(6)  .      1_655  N
+  O1        Cu               4.078(27)  .     -1_655  N
+  O1        Cu2                2.47(7)  .      1_655  N
+  O2        Si              1.6117(24)  .      1_655  N
+  O2        Si              1.6098(24)  .   -205_444  N
+  O2        Al              1.6117(24)  .      1_655  N
+  O2        Al              1.6098(24)  .   -205_444  N
+  O2        Cu3                3.68(5)  .    101_544  N
+  O2        Cu3              2.224(16)  .    104_644  N
+  O2        Cu3              2.223(16)  .   -102_444  N
+  O2        Cu3                3.68(5)  .   -105_434  N
+  O3        Si              1.6183(25)  .      1_555  N
+  O3        Si              1.6171(25)  .      4_555  N
+  O3        Al              1.6183(25)  .      1_555  N
+  O3        Al              1.6171(25)  .      4_555  N
+  O3        Cu                2.894(7)  .      1_555  N
+  O3        Cu2                3.01(5)  .      1_555  N
+  O3        Cu3                2.58(5)  .    101_444  N
+  O3        Cu3                2.58(5)  .    104_544  N
+  O3        Cu3                3.57(4)  .   -102_344  N
+  O3        Cu3                3.57(4)  .   -106_544  N
+  O4        Si              1.6165(25)  .      1_555  N
+  O4        Si              1.6165(25)  .     -6_555  N
+  O4        Al              1.6165(25)  .      1_555  N
+  O4        Al              1.6165(25)  .     -6_555  N
+  O4        Cu               3.993(14)  .      1_555  N
+  O4        Cu               3.993(14)  .     -1_555  N
+  O4        Cu3                4.03(4)  .    104_544  N
+  O4        Cu3                2.80(5)  .   -102_344  N
+  O4        Cu3                2.80(5)  .    205_564  N
+  O4        Cu3                4.03(4)  .   -203_334  N
+  Cu        Si              3.1063(31)  .      1_555  N
+  Cu        Si              3.1063(31)  .      2_555  N
+  Cu        Si              3.1063(31)  .      3_555  N
+  Cu        Si              3.1063(31)  .      4_555  N
+  Cu        Si              3.1063(31)  .      5_555  N
+  Cu        Si              3.1063(31)  .      6_555  N
+  Cu        Si               4.478(24)  .     -1_555  N
+  Cu        Si               4.478(24)  .     -2_555  N
+  Cu        Si               4.478(24)  .     -3_555  N
+  Cu        Si               4.478(24)  .     -4_555  N
+  Cu        Si               4.478(24)  .     -5_555  N
+  Cu        Si               4.478(24)  .     -6_555  N
+  Cu        Al              3.1063(31)  .      1_555  N
+  Cu        Al              3.1063(31)  .      2_555  N
+  Cu        Al              3.1063(31)  .      3_555  N
+  Cu        Al              3.1063(31)  .      4_555  N
+  Cu        Al              3.1063(31)  .      5_555  N
+  Cu        Al              3.1063(31)  .      6_555  N
+  Cu        Al               4.478(24)  .     -1_555  N
+  Cu        Al               4.478(24)  .     -2_555  N
+  Cu        Al               4.478(24)  .     -3_555  N
+  Cu        Al               4.478(24)  .     -4_555  N
+  Cu        Al               4.478(24)  .     -5_555  N
+  Cu        Al               4.478(24)  .     -6_555  N
+  Cu        O1                2.224(6)  .      1_455  N
+  Cu        O1                2.224(6)  .      2_545  N
+  Cu        O1                2.224(6)  .      3_665  N
+  Cu        O1               4.078(27)  .     -1_655  N
+  Cu        O1               4.078(27)  .     -2_565  N
+  Cu        O1               4.078(27)  .     -3_445  N
+  Cu        O3                2.894(7)  .      1_555  N
+  Cu        O3                2.894(7)  .      2_555  N
+  Cu        O3                2.894(7)  .      3_555  N
+  Cu        O4               3.993(14)  .      1_555  N
+  Cu        O4               3.993(14)  .      2_555  N
+  Cu        O4               3.993(14)  .      3_555  N
+  Cu        O4               3.993(14)  .      4_555  N
+  Cu        O4               3.993(14)  .      5_555  N
+  Cu        O4               3.993(14)  .      6_555  N
+  Cu        Cu                 3.39(6)  .     -1_555  N
+  Cu        D                 2.30(10)  .      1_555  N
+  Cu        Cu2               1.11(16)  .      1_555  N
+  Cu        Cu2               4.50(19)  .     -1_555  N
+  Cu        D2                3.44(20)  .      1_555  N
+  Cu        D3                 3.71(6)  .      1_555  N
+  Cu        D3                 3.71(6)  .      2_555  N
+  Cu        D3                 3.71(6)  .      3_555  N
+  Cu        Cu3                5.77(5)  .     -1_666  N
+  Cu        Cu3                5.77(5)  .     -2_456  N
+  Cu        Cu3                5.77(5)  .     -3_546  N
+  Cu        Cu3                5.77(5)  .     -4_566  N
+  Cu        Cu3                5.77(5)  .     -5_446  N
+  Cu        Cu3                5.77(5)  .     -6_656  N
+  Cu        Cu3                5.10(5)  .    101_444  N
+  Cu        Cu3                5.10(5)  .    102_544  N
+  Cu        Cu3                5.10(5)  .    103_554  N
+  Cu        Cu3                5.10(5)  .    104_544  N
+  Cu        Cu3                5.10(5)  .    105_554  N
+  Cu        Cu3                5.10(5)  .    106_444  N
+  Cu        Cu3                5.99(4)  .   -101_544  N
+  Cu        Cu3                5.99(4)  .   -102_344  N
+  Cu        Cu3                5.99(4)  .   -103_324  N
+  Cu        Cu3                5.99(4)  .   -104_344  N
+  Cu        Cu3                5.99(4)  .   -105_324  N
+  Cu        Cu3                5.99(4)  .   -106_544  N
+  D         Cu                2.30(10)  .      1_555  N
+  D         Cu2               1.19(16)  .      1_555  N
+  D         D2                1.14(19)  .      1_555  N
+  D         D3                 1.79(8)  .      1_555  N
+  D         D3                 1.79(8)  .      2_555  N
+  D         D3                 1.79(8)  .      3_555  N
+  Cu2       Si                 3.35(6)  .      1_555  N
+  Cu2       Si                 3.35(6)  .      2_555  N
+  Cu2       Si                 3.35(6)  .      3_555  N
+  Cu2       Si                 3.35(6)  .      4_555  N
+  Cu2       Si                 3.35(6)  .      5_555  N
+  Cu2       Si                 3.35(6)  .      6_555  N
+  Cu2       Al                 3.35(6)  .      1_555  N
+  Cu2       Al                 3.35(6)  .      2_555  N
+  Cu2       Al                 3.35(6)  .      3_555  N
+  Cu2       Al                 3.35(6)  .      4_555  N
+  Cu2       Al                 3.35(6)  .      5_555  N
+  Cu2       Al                 3.35(6)  .      6_555  N
+  Cu2       O1                 2.47(7)  .      1_455  N
+  Cu2       O1                 2.47(7)  .      2_545  N
+  Cu2       O1                 2.47(7)  .      3_665  N
+  Cu2       O3                 3.01(5)  .      1_555  N
+  Cu2       O3                 3.01(5)  .      2_555  N
+  Cu2       O3                 3.01(5)  .      3_555  N
+  Cu2       Cu                1.11(16)  .      1_555  N
+  Cu2       Cu                4.50(19)  .     -1_555  N
+  Cu2       D                 1.19(16)  .      1_555  N
+  Cu2       Cu2               5.61(34)  .     -1_555  N
+  Cu2       D2                2.33(21)  .      1_555  N
+  Cu2       D3                2.71(16)  .      1_555  N
+  Cu2       D3                2.71(16)  .      2_555  N
+  Cu2       D3                2.71(16)  .      3_555  N
+  Cu2       Cu3               4.91(13)  .     -1_666  N
+  Cu2       Cu3               4.91(13)  .     -2_456  N
+  Cu2       Cu3               4.91(13)  .     -3_546  N
+  Cu2       Cu3               4.91(13)  .     -4_566  N
+  Cu2       Cu3               4.91(13)  .     -5_446  N
+  Cu2       Cu3               4.91(13)  .     -6_656  N
+  Cu2       Cu3                4.79(5)  .    101_444  N
+  Cu2       Cu3                4.79(5)  .    102_544  N
+  Cu2       Cu3                4.79(5)  .    103_554  N
+  Cu2       Cu3                4.79(5)  .    104_544  N
+  Cu2       Cu3                4.79(5)  .    105_554  N
+  Cu2       Cu3                4.79(5)  .    106_444  N
+  D2        Cu                3.44(20)  .      1_555  N
+  D2        D                 1.14(19)  .      1_555  N
+  D2        Cu2               2.33(21)  .      1_555  N
+  D2        D3                 1.36(5)  .      1_555  N
+  D2        D3                 1.36(5)  .      2_555  N
+  D2        D3                 1.36(5)  .      3_555  N
+  D2        Cu3                3.57(8)  .     -1_666  N
+  D2        Cu3                3.57(8)  .     -2_456  N
+  D2        Cu3                3.57(8)  .     -3_546  N
+  D2        Cu3                3.57(8)  .     -4_566  N
+  D2        Cu3                3.57(8)  .     -5_446  N
+  D2        Cu3                3.57(8)  .     -6_656  N
+  D3        Cu                 3.71(6)  .      1_555  N
+  D3        D                  1.79(8)  .      1_555  N
+  D3        Cu2               2.71(16)  .      1_555  N
+  D3        D2                 1.36(5)  .      1_555  N
+  D3        Cu3              2.408(14)  .     -1_666  N
+  D3        Cu3              2.408(14)  .     -4_566  N
+  D3        Cu3                3.72(9)  .    101_444  N
+  D3        Cu3                3.72(9)  .    104_544  N
+  Cu3       Si                 4.14(6)  .    105_655  N
+  Cu3       Si               2.932(35)  .   -103_544  N
+  Cu3       Si                 3.75(6)  .    201_555  N
+  Cu3       Si               2.939(34)  .    204_555  N
+  Cu3       Al                 4.14(6)  .    105_655  N
+  Cu3       Al               2.932(35)  .   -103_544  N
+  Cu3       Al                 3.75(6)  .    201_555  N
+  Cu3       Al               2.939(34)  .    204_555  N
+  Cu3       O2               2.223(16)  .   -103_434  N
+  Cu3       O2                 3.68(5)  .   -105_434  N
+  Cu3       O3                 3.57(4)  .   -103_544  N
+  Cu3       O3                 2.58(5)  .    201_555  N
+  Cu3       O4                 2.80(5)  .    105_655  N
+  Cu3       O4                 4.03(4)  .    204_555  N
+  Cu3       Cu                 5.77(5)  .     -1_666  N
+  Cu3       Cu                 5.99(4)  .   -101_544  N
+  Cu3       Cu                 5.10(5)  .    201_555  N
+  Cu3       Cu2               4.91(13)  .     -1_666  N
+  Cu3       Cu2                4.79(5)  .    201_555  N
+  Cu3       D2                 3.57(8)  .     -1_666  N
+  Cu3       D3               2.408(14)  .     -1_666  N
+  Cu3       D3                 3.72(9)  .    201_555  N
+  Cu3       Cu3                5.79(7)  .      2_765  N
+  Cu3       Cu3                5.79(7)  .      3_675  N
+  Cu3       Cu3                1.74(8)  .      4_655  N
+  Cu3       Cu3               4.72(10)  .      5_775  N
+  Cu3       Cu3                4.02(7)  .     -2_566  N
+  Cu3       Cu3                4.02(7)  .     -3_656  N
+  Cu3       Cu3               5.23(10)  .     -5_556  N
+  Cu3       Cu3                2.82(8)  .     -6_766  N
+  Cu3       Cu3              5.702(27)  .    103_664  N
+  Cu3       Cu3              5.702(27)  .    202_655  N
+  Cu3       Cu3                3.57(8)  .   -201_555  N
+  Cu3       Cu3               3.12(10)  .   -204_455  N
+
+loop_
+      _geom_angle_atom_site_label_1
+      _geom_angle_atom_site_label_2
+      _geom_angle_atom_site_label_3
+      _geom_angle
+      _geom_angle_site_symmetry_1
+      _geom_angle_site_symmetry_2
+      _geom_angle_site_symmetry_3
+      _geom_angle_publ_flag
+  O1        Si        O2                109.6(4)      1_455  .      1_455  N
+  O1        Si        O3              108.04(32)      1_455  .      1_555  N
+  O1        Si        O4              109.90(34)      1_455  .      1_555  N
+  O2        Si        O3              109.25(23)      1_455  .      1_555  N
+  O2        Si        O4              109.24(19)      1_455  .      1_555  N
+  O3        Si        O4              110.76(31)      1_555  .      1_555  N
+  O1        Al        O2                109.6(4)      1_455  .      1_455  N
+  O1        Al        O3              108.04(32)      1_455  .      1_555  N
+  O1        Al        O4              109.90(34)      1_455  .      1_555  N
+  O2        Al        O3              109.25(23)      1_455  .      1_555  N
+  O2        Al        O4              109.24(19)      1_455  .      1_555  N
+  O3        Al        O4              110.76(31)      1_555  .      1_555  N
+  Si        O1        Si                144.1(5)      1_655  .      5_655  N
+  Si        O1        Al                     0.0      1_655  .      1_655  N
+  Si        O1        Al                144.1(5)      1_655  .      5_655  N
+  Si        O1        Al                144.1(5)      5_655  .      1_655  N
+  Si        O1        Al                     0.0      5_655  .      5_655  N
+  Al        O1        Al                144.1(5)      1_655  .      5_655  N
+  Si        O2        Si                157.5(5)      1_655  .   -205_444  N
+  Si        O2        Al                     0.0      1_655  .      1_655  N
+  Si        O2        Al                157.5(5)      1_655  .   -205_444  N
+  Si        O2        Al                157.5(5)   -205_444  .      1_655  N
+  Si        O2        Al                     0.0   -205_444  .   -205_444  N
+  Al        O2        Al                157.5(5)      1_655  .   -205_444  N
+  Si        O3        Si                147.6(5)      1_555  .      4_555  N
+  Si        O3        Al                     0.0      1_555  .      1_555  N
+  Si        O3        Al                147.6(5)      1_555  .      4_555  N
+  Si        O3        Al                147.6(5)      4_555  .      1_555  N
+  Si        O3        Al                     0.0      4_555  .      4_555  N
+  Al        O3        Al                147.6(5)      1_555  .      4_555  N
+  Si        O4        Si                143.0(4)      1_555  .     -6_555  N
+  Si        O4        Al                     0.0      1_555  .      1_555  N
+  Si        O4        Al                143.0(4)      1_555  .     -6_555  N
+  Si        O4        Al                143.0(4)     -6_555  .      1_555  N
+  Si        O4        Al                     0.0     -6_555  .     -6_555  N
+  Al        O4        Al                143.0(4)      1_555  .     -6_555  N
+  Cu2       D         D2                   180.0      1_555  .      1_555  N
+  Cu        Cu2       D                    180.0      1_555  .      1_555  N
+  D         D2        D3                  91(10)      1_555  .      1_555  N
+  D         D2        D3                  91(10)      1_555  .      2_555  N
+  D         D2        D3                  91(10)      1_555  .      3_555  N
+  D3        D2        D3                120.0(4)      1_555  .      2_555  N
+  D3        D2        D3                120.0(4)      1_555  .      3_555  N
+  D3        D2        D3                120.0(4)      2_555  .      3_555  N
+
+# Powder diffraction data for histogram  7
+#==============================================================================
+# 9. INSTRUMENT CHARACTERIZATION
+
+_exptl_special_details
+; ?
+;
+
+# if regions of the data are excluded, the reason(s) are supplied here:
+_pd_proc_info_excluded_regions
+; ?
+;
+
+# The following item is used to identify the equipment used to record
+# the powder pattern when the diffractogram was measured at a laboratory
+# other than the authors' home institution, e.g. when neutron or synchrotron
+# radiation is used.
+
+_pd_instr_location
+; ?
+;
+_pd_calibration_special_details           # description of the method used
+                                          # to calibrate the instrument
+; ?
+;
+
+_diffrn_ambient_temperature       ?
+_diffrn_source                    ?
+_diffrn_source_target             ?
+_diffrn_source_type               ?
+_diffrn_measurement_device_type   ?
+_diffrn_detector                  ?
+_diffrn_detector_type             ?       # make or model of detector
+
+_pd_meas_scan_method              ?       # options are 'step', 'cont',
+                                          # 'tof', 'fixed' or
+                                          # 'disp' (= dispersive)
+_pd_meas_special_details
+;  ?
+;
+
+# The following two items identify the program(s) used (if appropriate).
+_computing_data_collection        ?
+_computing_data_reduction         ?
+
+# Describe any processing performed on the data, prior to refinement.
+# For example: a manual Lp correction or a precomputed absorption correction
+_pd_proc_info_data_reduction      ?
+
+# The following item is used for angular dispersive measurements only.
+
+_diffrn_radiation_monochromator   ?
+
+# The following items are used to define the size of the instrument.
+# Not all distances are appropriate for all instrument types.
+
+_pd_instr_dist_src/mono           ?
+_pd_instr_dist_mono/spec          ?
+_pd_instr_dist_src/spec           ?
+_pd_instr_dist_spec/anal          ?
+_pd_instr_dist_anal/detc          ?
+_pd_instr_dist_spec/detc          ?
+
+# 10. Specimen size and mounting information
+
+# The next three fields give the specimen dimensions in mm.  The equatorial
+# plane contains the incident and diffracted beam.
+
+_pd_spec_size_axial               ?       # perpendicular to
+                                          # equatorial plane
+
+_pd_spec_size_equat               ?       # parallel to
+                                          # scattering vector
+                                          # in transmission
+
+_pd_spec_size_thick               ?       # parallel to
+                                          # scattering vector
+                                          # in reflection
+
+_pd_spec_mounting                         # This field should be
+                                          # used to give details of the
+                                          # container.
+; ?
+;
+
+_pd_spec_mount_mode               ?       # options are 'reflection'
+                                          # or 'transmission'
+
+_pd_spec_shape                    ?       # options are 'cylinder'
+                                          # 'flat_sheet' or 'irregular'
+
+
+loop_ _atom_type_symbol
+      _atom_type_number_in_cell
+      _atom_type_scat_length_neutron
+      _atom_type_scat_source
+  Si        30.946   0.4149
+  International_Tables_Vol_C
+  Al         5.056   0.3449
+  International_Tables_Vol_C
+  O         72.0   0.5803
+  International_Tables_Vol_C
+  Cu+1       3.762   0.7718
+  International_Tables_Vol_C
+  D          3.326   0.6671
+  International_Tables_Vol_C
+_diffrn_radiation_probe                neutron
+_diffrn_radiation_wavelength           2.078
+_pd_proc_ls_prof_R_factor              0.0425
+_pd_proc_ls_prof_wR_factor             0.0527
+_pd_proc_ls_prof_wR_expected           0.0528
+_refine_ls_R_Fsqd_factor               0.04335
+
+_pd_proc_ls_background_function
+;   GSAS Background function number 1 with  8 terms.
+ Shifted Chebyshev function of 1st kind
+      1:    279.013     2:   -48.3998     3:    48.7724     4:   -16.9012    
+      5:    14.7454     6:   -5.76752     7:    5.92163     8:  -0.157157    
+;
+
+_exptl_absorpt_process_details
+;   GSAS Absorption/surface roughness correction: function number 0
+ No correction is applied.
+;
+_exptl_absorpt_correction_T_min        1.00000
+_exptl_absorpt_correction_T_max        1.00000
+# Extinction correction
+_gsas_exptl_extinct_corr_T_min         1.00000
+_gsas_exptl_extinct_corr_T_max         1.00000
+
+_pd_proc_ls_profile_function
+;
+ CW Profile function number 3 with  19 terms
+ Pseudovoigt profile coefficients as parameterized in
+ P. Thompson, D.E. Cox & J.B. Hastings (1987). J. Appl. Cryst.,20,79-83.
+ Asymmetry correction of L.W. Finger, D.E. Cox & A. P. Jephcoat (1994).
+ J. Appl. Cryst.,27,892-900.
+ #1(GU)   =  455.262 #2(GV)   =  -36.691 #3(GW)   =   75.028
+ #4(GP)   =    1.477 #5(LX)   =    4.134 #6(LY)   =   34.701
+ #7(S/L)  =   0.0113 #8(H/L)  =   0.0454
+ #9(trns) =     0.00 #10(shft)=   0.0000
+ #11(stec)=     0.00 #12(ptec)=     0.00 #13(sfec)=     0.00
+ #14(L11) =    0.000 #15(L22) =    0.000 #16(L33) =    0.000
+ #17(L12) =    0.000 #18(L13) =    0.000 #19(L23) =    0.000
+ Peak tails are ignored  where the intensity is below 0.0001 times the peak
+   Aniso. broadening axis   0.0   0.0   1.0
+;
+_pd_proc_ls_peak_cutoff 0.00010
+_pd_proc_info_datetime                 2016-09-02T14:46:06
+_pd_calc_method                        "Rietveld Refinement"
+
+#---- raw/calc data loop -----
+_pd_meas_2theta_range_min              1.5
+_pd_meas_2theta_range_max              166.25
+_pd_meas_2theta_range_inc              0.05
+_pd_proc_2theta_range_min              1.4836
+_pd_proc_2theta_range_max              166.2336
+_pd_proc_2theta_range_inc              0.05
+
+loop_
+      _pd_meas_intensity_total
+      _pd_proc_ls_weight
+      _pd_proc_intensity_bkg_calc
+      _pd_calc_intensity_total
+   4020(140)    0.0         518.    .
+   4090(140)    0.0         516.    .
+   3350(120)    0.0         515.    .
+   3220(120)    0.0         514.    .
+   2700(110)    0.0         513.    .
+   2440(110)    0.0         512.    .
+   2210(100)    0.0         511.    .
+   2072(97)     0.0         510.    .
+   1839(91)     0.0         509.    .
+   1834(91)     0.0         508.    .
+   1619(85)     0.0         507.    .
+   1624(85)     0.0         506.    .
+   1259(74)     0.0         505.    .
+   1395(78)     0.0         504.    .
+   1339(77)     0.0         503.    .
+   1292(75)     0.0         502.    .
+   1199(72)     0.0         501.    .
+   1283(75)     0.0         500.    .
+   1124(70)     0.0         499.    .
+   1213(73)     0.0         498.    .
+   1040(67)     0.0         497.    .
+   1054(68)     0.0         496.    .
+   1082(68)     0.0         495.    .
+   1017(66)     0.0         494.    .
+   1073(68)     0.0         493.    .
+   951(64)      0.0         492.    .
+   970(65)      0.0         491.    .
+   942(64)      0.0         490.    .
+   965(64)      0.0         489.    .
+   946(64)      0.0         488.    .
+   1026(67)     0.0         487.    .
+   820(59)      0.0         486.    .
+   764(57)      0.0         485.    .
+   853(60)      0.0         484.    .
+   825(59)      0.0         483.    .
+   676(53)      0.0         482.    .
+   769(57)      0.0         481.    .
+   862(61)      0.0         480.    .
+   741(56)      0.0         479.    .
+   746(56)      0.0         478.    .
+   704(54)      0.0         477.    .
+   746(56)      0.0         477.    .
+   704(54)      0.0         476.    .
+   694(54)      0.0         475.    .
+   713(54)      0.0         474.    .
+   615(50)      0.0         473.    .
+   624(51)      0.0         472.    .
+   778(57)      0.0         471.    .
+   722(55)      0.0         470.    .
+   764(57)      0.0         469.    .
+   629(51)      0.0         468.    .
+   680(53)      0.0         467.    .
+   694(54)      0.0         467.    .
+   643(51)      0.0         466.    .
+   662(52)      0.0         465.    .
+   694(54)      0.0         464.    .
+   648(52)      0.0         463.    .
+   610(50)      0.0         462.    .
+   549(47)      0.0         461.    .
+   610(50)      0.0         460.    .
+   587(49)      0.0         460.    .
+   559(47)      0.0         459.    .
+   559(47)      0.0         458.    .
+   507(45)      0.0         457.    .
+   685(53)      0.0         456.    .
+   498(44)      0.0         455.    .
+   638(51)      0.0         454.    .
+   493(44)      0.0         454.    .
+   521(46)      0.0         453.    .
+   526(46)      0.0         452.    .
+   596(49)      0.0         451.    .
+   545(47)      0.0         450.    .
+   526(46)      0.0         449.    .
+   610(50)      0.0         449.    .
+   587(49)      0.0         448.    .
+   577(48)      0.0         447.    .
+   591(49)      0.0         446.    .
+   498(44)      0.0         445.    .
+   521(46)      0.0         445.    .
+   451(42)      0.0         444.    .
+   489(44)      0.0         443.    .
+   465(43)      0.0         442.    .
+   610(50)      0.0         441.    .
+   512(45)      0.0         441.    .
+   554(47)      0.0         440.    .
+   456(42)      0.0         439.    .
+   503(45)      0.0         438.    .
+   531(46)      0.0         437.    .
+   521(46)      0.0         437.    .
+   437(41)      0.0         436.    .
+   461(42)      0.0         435.    .
+   512(45)      0.0         434.    .
+   451(42)      0.0         434.    .
+   428(40)      0.0         433.    .
+   503(45)      0.0         432.    .
+   577(48)      0.0         431.    .
+   470(43)      0.0         431.    .
+   559(47)      0.0         430.    .
+   447(42)      0.0         429.    .
+   521(46)      0.0         428.    .
+   583(34)      0.0         427.6   .
+   581(34)      0.0         426.9   .
+   488(30)      0.0         426.2   .
+   498(31)      0.0         425.4   .
+   518(31)      0.0         424.7   .
+   513(31)      0.0         424.0   .
+   481(30)      0.0         423.2   .
+   438(28)      0.0         422.5   .
+   447(29)      0.0         421.8   .
+   447(29)      0.0         421.1   .
+   487(30)      0.0         420.4   .
+   475(30)      0.001111    419.7   420.8
+   462(29)      0.001189    419.0   420.1
+   431(28)      0.001276    418.3   419.4
+   445(29)      0.001189    417.6   418.7
+   449(29)      0.001189    416.9   418.1
+   432(28)      0.001276    416.2   417.4
+   397(27)      0.001372    415.5   416.7
+   461(29)      0.001189    414.8   416.0
+   435(28)      0.001276    414.1   415.4
+   393(27)      0.001372    413.4   414.7
+   460(29)      0.001189    412.7   414.1
+   387(26)      0.001479    412.1   413.4
+   436(28)      0.001276    411.4   412.8
+   449(29)      0.001189    410.7   412.1
+   421(28)      0.001276    410.0   411.5
+   389(26)      0.001479    409.4   410.8
+   441(29)      0.001189    408.7   410.2
+   471(30)      0.001111    408.1   409.6
+   474(30)      0.001111    407.4   408.9
+   415(27)      0.001372    406.7   408.3
+   414(27)      0.001372    406.1   407.7
+   422(28)      0.001276    405.4   407.1
+   409(27)      0.001372    404.8   406.5
+   354(25)      0.001600    404.1   405.8
+   374(26)      0.001479    403.5   405.2
+   433(28)      0.001276    402.8   404.6
+   395(27)      0.001372    402.2   404.0
+   424(28)      0.001276    401.6   403.4
+   372(26)      0.001479    400.9   402.8
+   374(26)      0.001479    400.3   402.3
+   349(25)      0.001600    399.7   401.7
+   384(26)      0.001479    399.0   401.1
+   419(28)      0.001276    398.4   400.5
+   466(29)      0.001189    397.8   400.0
+   403(27)      0.001372    397.2   399.5
+   391(26)      0.001479    396.6   398.9
+   378(26)      0.001479    396.0   398.4
+   386(26)      0.001479    395.3   397.8
+   401(27)      0.001372    394.7   397.3
+   386(26)      0.001479    394.1   396.7
+   407(27)      0.001372    393.5   396.2
+   380(26)      0.001479    392.9   395.7
+   370(26)      0.001479    392.3   395.1
+   408(27)      0.001372    391.7   394.6
+   431(28)      0.001276    391.1   394.1
+   410(27)      0.001372    390.5   393.6
+   355(25)      0.001600    390.0   393.1
+   375(26)      0.001479    389.4   392.6
+   380(26)      0.001479    388.8   392.1
+   353(25)      0.001600    388.2   391.6
+   404(27)      0.001372    387.6   391.1
+   433(28)      0.001276    387.0   390.7
+   394(27)      0.001372    386.5   390.2
+   431(28)      0.001276    385.9   389.8
+   399(27)      0.001372    385.3   389.3
+   378(26)      0.001479    384.8   388.9
+   371(26)      0.001479    384.2   388.5
+   369(26)      0.001479    383.6   388.0
+   424(28)      0.001276    383.1   387.6
+   470(30)      0.001111    382.5   387.2
+   387(26)      0.001479    382.0   386.9
+   399(27)      0.001372    381.4   386.5
+   397(27)      0.001372    380.8   386.1
+   378(26)      0.001479    380.3   385.8
+   396(27)      0.001372    379.8   385.4
+   364(25)      0.001600    379.2   385.1
+   445(29)      0.001189    378.7   384.8
+   406(27)      0.001372    378.1   384.5
+   359(25)      0.001600    377.6   384.3
+   395(27)      0.001372    377.0   384.0
+   362(25)      0.001600    376.5   383.8
+   420(28)      0.001276    376.0   383.6
+   357(25)      0.001600    375.5   383.5
+   380(26)      0.001479    374.9   383.3
+   419(28)      0.001276    374.4   383.2
+   388(26)      0.001479    373.9   383.1
+   420(28)      0.001276    373.4   383.1
+   424(28)      0.001276    372.8   383.1
+   386(26)      0.001479    372.3   383.1
+   392(27)      0.001372    371.8   383.2
+   394(27)      0.001372    371.3   383.4
+   368(25)      0.001600    370.8   383.6
+   395(27)      0.001372    370.3   383.9
+   397(27)      0.001372    369.8   384.2
+   350(25)      0.001600    369.3   384.7
+   384(36)      0.000772    369.    385.
+   339(33)      0.000918    368.3   385.9
+   398(37)      0.000730    368.    387.
+   356(35)      0.000816    367.3   387.7
+   371(26)      0.001479    366.8   388.8
+   401(27)      0.001372    366.3   390.2
+   411(28)      0.001276    365.8   391.8
+   386(27)      0.001372    365.3   393.7
+   394(27)      0.001372    364.8   395.9
+   377(26)      0.001479    364.4   398.5
+   410(28)      0.001276    363.9   401.7
+   393(27)      0.001372    363.4   405.4
+   398(27)      0.001372    362.9   409.9
+   376(26)      0.001479    362.4   415.4
+   387(27)      0.001372    362.0   422.2
+   401(27)      0.001372    361.5   430.5
+   410(28)      0.001276    361.0   441.0
+   449(29)      0.001189    360.6   454.7
+   491(31)      0.001041    360.1   473.6
+   507(31)      0.001041    359.6   502.6
+   632(35)      0.000816    359.2   552.0
+   692(37)      0.000730    359.    641.
+   798(40)      0.000625    358.    800.
+   1127(49)     0.000416    358.    1068.
+   1445(55)     0.0003306   357.    1487.
+   1955(65)     0.0002367   357.    2087.
+   2752(77)     0.0001687   356.    2876.
+   3699(90)     0.0001235   356.    3825.
+   4780(100)    0.0000943   356.    4821.
+   5770(110)    0.0000783   355.    5643.
+   6140(120)    0.0000731   355.    5988.
+   5490(110)    0.0000826   354.    5599.
+   4484(99)     0.0001020   354.    4511.
+   3192(83)     0.0001452   353.    3171.
+   2001(65)     0.0002367   353.    2035.
+   1207(50)     0.000400    352.    1277.
+   734(38)      0.000693    352.    859.
+   519(32)      0.000977    351.6   655.8
+   442(29)      0.001189    351.2   560.4
+   407(28)      0.001276    350.8   510.6
+   392(27)      0.001372    350.4   479.7
+   402(27)      0.001372    349.9   457.5
+   388(27)      0.001372    349.5   440.6
+   393(27)      0.001372    349.1   427.3
+   420(28)      0.001276    348.7   416.5
+   373(26)      0.001479    348.3   407.7
+   394(27)      0.001372    347.9   400.3
+   406(28)      0.001276    347.5   394.2
+   401(27)      0.001372    347.0   388.9
+   369(26)      0.001479    346.6   384.4
+   397(27)      0.001372    346.2   380.4
+   371(26)      0.001479    345.8   377.0
+   392(27)      0.001372    345.4   373.9
+   349(25)      0.001600    345.0   371.2
+   336(24)      0.001736    344.6   368.8
+   344(25)      0.001600    344.2   366.6
+   382(26)      0.001479    343.8   364.6
+   328(24)      0.001736    343.4   362.8
+   331(24)      0.001736    343.1   361.1
+   337(24)      0.001736    342.7   359.6
+   322(24)      0.001736    342.3   358.2
+   342(25)      0.001600    341.9   356.9
+   337(25)      0.001600    341.5   355.7
+   368(26)      0.001479    341.1   354.6
+   388(27)      0.001372    340.7   353.5
+   337(25)      0.001600    340.4   352.5
+   351(25)      0.001600    340.0   351.5
+   372(26)      0.001479    339.6   350.6
+   379(26)      0.001479    339.2   349.8
+   342(25)      0.001600    338.9   349.0
+   362(26)      0.001479    338.5   348.2
+   324(24)      0.001736    338.1   347.4
+   343(25)      0.001600    337.8   346.7
+   360(26)      0.001479    337.4   346.1
+   356(25)      0.001600    337.0   345.4
+   360(26)      0.001479    336.7   344.8
+   371(26)      0.001479    336.3   344.2
+   352(25)      0.001600    335.9   343.6
+   367(26)      0.001479    335.6   343.0
+   362(26)      0.001479    335.2   342.5
+   347(25)      0.001600    334.9   342.0
+   388(27)      0.001372    334.5   341.5
+   365(26)      0.001479    334.2   341.0
+   367(26)      0.001479    333.8   340.5
+   366(26)      0.001479    333.5   340.1
+   340(25)      0.001600    333.1   339.7
+   360(25)      0.001600    332.8   339.2
+   325(24)      0.001736    332.4   338.9
+   370(26)      0.001479    332.1   338.5
+   338(25)      0.001600    331.8   338.1
+   351(25)      0.001600    331.4   337.8
+   365(26)      0.001479    331.1   337.5
+   328(24)      0.001736    330.7   337.2
+   336(24)      0.001736    330.4   336.9
+   323(24)      0.001736    330.1   336.6
+   336(25)      0.001600    329.7   336.4
+   336(24)      0.001736    329.4   336.2
+   339(25)      0.001600    329.1   336.0
+   357(25)      0.001600    328.8   335.9
+   315(24)      0.001736    328.4   335.8
+   290(33)      0.000918    328.1   335.8
+   356(25)      0.001600    327.8   335.8
+   323(24)      0.001736    327.5   335.8
+   320(24)      0.001736    327.1   335.9
+   327(24)      0.001736    326.8   336.2
+   342(25)      0.001600    326.5   336.5
+   360(25)      0.001600    326.2   336.9
+   341(25)      0.001600    325.9   337.5
+   349(25)      0.001600    325.6   338.3
+   345(25)      0.001600    325.2   339.3
+   316(23)      0.001890    324.9   340.6
+   335(24)      0.001736    324.6   342.4
+   336(24)      0.001736    324.3   344.7
+   352(25)      0.001600    324.0   347.9
+   373(26)      0.001479    323.7   352.6
+   380(26)      0.001479    323.4   360.4
+   385(26)      0.001479    323.1   374.3
+   445(29)      0.001189    322.8   400.2
+   484(30)      0.001111    322.5   447.5
+   617(35)      0.000816    322.2   527.5
+   707(37)      0.000730    322.    649.
+   859(41)      0.000595    322.    812.
+   973(44)      0.000517    321.    993.
+   1152(48)     0.000434    321.    1147.
+   1184(49)     0.000416    321.    1215.
+   1151(48)     0.000434    320.    1155.
+   983(45)      0.000494    320.    983.
+   765(39)      0.000657    320.    776.
+   583(33)      0.000918    319.6   600.4
+   525(32)      0.000977    319.3   481.0
+   404(27)      0.001372    319.0   412.4
+   360(25)      0.001600    318.7   377.3
+   305(23)      0.001890    318.5   360.0
+   318(24)      0.001736    318.2   350.7
+   309(23)      0.001890    317.9   344.9
+   313(23)      0.001890    317.6   340.8
+   311(23)      0.001890    317.3   337.8
+   356(25)      0.001600    317.1   335.4
+   350(25)      0.001600    316.8   333.7
+   316(23)      0.001890    316.5   332.3
+   333(24)      0.001736    316.3   331.5
+   301(23)      0.001890    316.0   331.2
+   342(25)      0.001600    315.7   331.8
+   335(24)      0.001736    315.4   333.9
+   308(23)      0.001890    315.2   338.7
+   355(25)      0.001600    314.9   348.1
+   377(26)      0.001479    314.7   364.0
+   431(28)      0.001276    314.4   387.1
+   376(26)      0.001479    314.1   415.5
+   419(28)      0.001276    313.9   443.2
+   450(29)      0.001189    313.6   460.8
+   448(29)      0.001189    313.4   459.7
+   452(29)      0.001189    313.1   438.0
+   379(26)      0.001479    312.8   405.1
+   377(26)      0.001479    312.6   373.6
+   372(26)      0.001479    312.3   350.1
+   343(25)      0.001600    312.1   335.4
+   295(22)      0.002066    311.8   327.3
+   302(23)      0.001890    311.6   323.1
+   372(26)      0.001479    311.3   320.8
+   350(25)      0.001600    311.1   319.3
+   332(24)      0.001736    310.8   318.2
+   317(24)      0.001736    310.6   317.3
+   322(24)      0.001736    310.4   316.6
+   316(24)      0.001736    310.1   315.9
+   310(23)      0.001890    309.9   315.3
+   290(22)      0.002066    309.6   314.8
+   293(22)      0.002066    309.4   314.4
+   271(21)      0.002268    309.2   314.0
+   319(24)      0.001736    308.9   313.6
+   339(25)      0.001600    308.7   313.2
+   312(23)      0.001890    308.5   312.9
+   293(22)      0.002066    308.2   312.6
+   336(24)      0.001736    308.0   312.3
+   335(24)      0.001736    307.8   312.0
+   346(25)      0.001600    307.5   311.8
+   341(25)      0.001600    307.3   311.6
+   296(23)      0.001890    307.1   311.3
+   301(23)      0.001890    306.8   311.1
+   313(23)      0.001890    306.6   310.9
+   325(24)      0.001736    306.4   310.8
+   308(23)      0.001890    306.2   310.6
+   326(24)      0.001736    305.9   310.5
+   329(24)      0.001736    305.7   310.4
+   337(24)      0.001736    305.5   310.3
+   330(24)      0.001736    305.3   310.3
+   311(23)      0.001890    305.1   310.2
+   290(22)      0.002066    304.8   310.2
+   321(24)      0.001736    304.6   310.3
+   318(24)      0.001736    304.4   310.4
+   317(24)      0.001736    304.2   310.5
+   324(24)      0.001736    304.0   310.7
+   278(22)      0.002066    303.8   311.0
+   311(23)      0.001890    303.6   311.4
+   320(24)      0.001736    303.4   311.9
+   351(25)      0.001600    303.1   312.6
+   320(24)      0.001736    302.9   313.5
+   329(24)      0.001736    302.7   314.6
+   316(23)      0.001890    302.5   316.1
+   309(23)      0.001890    302.3   318.2
+   380(25)      0.001600    302.1   321.3
+   364(24)      0.001736    301.9   326.5
+   328(23)      0.001890    301.7   335.8
+   337(23)      0.001890    301.5   353.1
+   407(26)      0.001479    301.3   384.5
+   460(28)      0.001276    301.1   436.6
+   510(29)      0.001189    300.9   513.1
+   579(32)      0.000977    300.7   607.8
+   665(34)      0.000865    300.5   701.3
+   759(37)      0.000730    300.    763.
+   715(36)      0.000772    300.    760.
+   739(36)      0.000772    300.    692.
+   583(32)      0.000977    299.7   588.6
+   456(28)      0.001276    299.5   489.9
+   413(26)      0.001479    299.3   415.7
+   376(25)      0.001600    299.2   368.6
+   316(22)      0.002066    299.0   342.3
+   331(23)      0.001890    298.8   328.7
+   323(23)      0.001890    298.6   321.5
+   338(23)      0.001890    298.4   317.3
+   313(22)      0.002066    298.2   314.5
+   326(23)      0.001890    298.0   312.4
+   310(22)      0.002066    297.8   310.8
+   296(21)      0.002268    297.7   309.5
+   329(23)      0.001890    297.5   308.6
+   302(22)      0.002066    297.3   307.8
+   318(22)      0.002066    297.1   307.1
+   322(23)      0.001890    296.9   306.7
+   304(22)      0.002066    296.8   306.3
+   341(23)      0.001890    296.6   306.1
+   327(23)      0.001890    296.4   306.0
+   307(22)      0.002066    296.2   306.0
+   292(21)      0.002268    296.1   306.1
+   298(21)      0.002268    295.9   306.3
+   287(21)      0.002268    295.7   306.6
+   289(21)      0.002268    295.5   307.1
+   309(22)      0.002066    295.4   307.8
+   341(23)      0.001890    295.2   308.6
+   332(23)      0.001890    295.0   309.8
+   332(23)      0.001890    294.8   311.3
+   322(23)      0.001890    294.7   313.3
+   313(22)      0.002066    294.5   316.0
+   301(22)      0.002066    294.3   319.7
+   330(23)      0.001890    294.2   325.5
+   335(23)      0.001890    294.0   335.4
+   338(23)      0.001890    293.8   353.4
+   378(25)      0.001600    293.7   386.6
+   442(27)      0.001372    293.5   444.2
+   518(30)      0.001111    293.3   534.6
+   631(33)      0.000918    293.2   657.6
+   691(35)      0.000816    293.0   795.4
+   851(39)      0.000657    293.    911.
+   867(39)      0.000657    293.    957.
+   812(38)      0.000693    293.    905.
+   738(36)      0.000772    292.    779.
+   590(32)      0.000977    292.2   633.5
+   499(29)      0.001189    292.1   510.5
+   435(27)      0.001372    291.9   424.5
+   396(25)      0.001600    291.8   372.4
+   350(24)      0.001736    291.6   343.8
+   338(23)      0.001890    291.5   328.8
+   322(23)      0.001890    291.3   320.4
+   322(23)      0.001890    291.1   315.2
+   309(22)      0.002066    291.0   311.5
+   316(22)      0.002066    290.8   308.7
+   314(22)      0.002066    290.7   306.5
+   314(22)      0.002066    290.5   304.8
+   305(22)      0.002066    290.4   303.3
+   312(22)      0.002066    290.2   302.1
+   330(23)      0.001890    290.1   301.1
+   322(22)      0.002066    290.0   300.3
+   305(22)      0.002066    289.8   299.6
+   296(21)      0.002268    289.7   299.1
+   268(20)      0.002500    289.5   298.6
+   306(22)      0.002066    289.4   298.3
+   349(24)      0.001736    289.2   298.0
+   307(22)      0.002066    289.1   297.8
+   327(23)      0.001890    288.9   297.8
+   297(21)      0.002268    288.8   297.8
+   291(21)      0.002268    288.7   298.0
+   270(20)      0.002500    288.5   298.4
+   247(19)      0.002770    288.4   299.1
+   302(22)      0.002066    288.2   300.3
+   303(22)      0.002066    288.1   302.6
+   304(22)      0.002066    288.0   307.0
+   341(23)      0.001890    287.8   314.9
+   329(23)      0.001890    287.7   328.4
+   326(23)      0.001890    287.6   348.9
+   367(24)      0.001736    287.4   375.7
+   391(25)      0.001600    287.3   404.1
+   430(27)      0.001372    287.2   425.6
+   430(27)      0.001372    287.0   432.1
+   434(27)      0.001372    286.9   418.8
+   412(26)      0.001479    286.8   391.4
+   389(25)      0.001600    286.6   361.4
+   360(24)      0.001736    286.5   336.5
+   345(23)      0.001890    286.4   319.1
+   333(23)      0.001890    286.2   308.5
+   279(21)      0.002268    286.1   302.6
+   286(21)      0.002268    286.0   299.5
+   249(19)      0.002770    285.9   297.8
+   308(22)      0.002066    285.7   296.8
+   329(23)      0.001890    285.6   296.1
+   315(22)      0.002066    285.5   295.6
+   315(22)      0.002066    285.4   295.3
+   326(23)      0.001890    285.2   295.1
+   316(22)      0.002066    285.1   295.1
+   287(21)      0.002268    285.0   295.1
+   324(22)      0.002066    284.9   295.2
+   339(23)      0.001890    284.7   295.4
+   333(23)      0.001890    284.6   295.7
+   298(21)      0.002268    284.5   296.1
+   282(21)      0.002268    284.4   296.5
+   304(22)      0.002066    284.3   297.1
+   296(21)      0.002268    284.1   297.9
+   316(22)      0.002066    284.0   298.7
+   306(22)      0.002066    283.9   299.8
+   280(21)      0.002268    283.8   301.0
+   289(21)      0.002268    283.7   302.5
+   291(21)      0.002268    283.6   304.3
+   323(22)      0.002066    283.4   306.4
+   308(22)      0.002066    283.3   309.1
+   317(22)      0.002066    283.2   312.3
+   329(23)      0.001890    283.1   316.3
+   326(23)      0.001890    283.0   321.4
+   324(23)      0.001890    282.9   328.0
+   314(22)      0.002066    282.8   337.1
+   348(23)      0.001890    282.6   350.8
+   355(24)      0.001736    282.5   373.8
+   389(25)      0.001600    282.4   414.6
+   467(28)      0.001276    282.3   487.3
+   591(32)      0.000977    282.2   609.6
+   796(37)      0.000730    282.    796.
+   1045(43)     0.000541    282.    1044.
+   1284(48)     0.000434    282.    1320.
+   1492(52)     0.000370    282.    1547.
+   1651(55)     0.0003306   282.    1641.
+   1610(54)     0.0003429   282.    1549.
+   1429(51)     0.000384    281.    1309.
+   1130(45)     0.000494    281.    1024.
+   760(37)      0.000730    281.    774.
+   613(32)      0.000977    281.1   590.2
+   435(27)      0.001372    281.0   472.9
+   384(25)      0.001600    280.9   404.9
+   352(24)      0.001736    280.8   367.5
+   326(23)      0.001890    280.7   346.6
+   321(22)      0.002066    280.6   333.8
+   322(22)      0.002066    280.5   325.0
+   329(23)      0.001890    280.4   318.5
+   321(22)      0.002066    280.3   313.5
+   318(22)      0.002066    280.2   309.5
+   308(22)      0.002066    280.1   306.2
+   281(21)      0.002268    280.0   303.5
+   309(22)      0.002066    279.9   301.2
+   306(22)      0.002066    279.8   299.3
+   311(22)      0.002066    279.7   297.8
+   292(21)      0.002268    279.6   296.5
+   296(21)      0.002268    279.5   295.4
+   300(21)      0.002268    279.4   294.5
+   306(22)      0.002066    279.3   293.8
+   301(21)      0.002268    279.2   293.3
+   305(22)      0.002066    279.1   293.1
+   288(21)      0.002268    279.0   293.3
+   309(22)      0.002066    278.9   294.0
+   356(24)      0.001736    278.9   295.9
+   313(22)      0.002066    278.8   299.3
+   290(21)      0.002268    278.7   304.6
+   305(22)      0.002066    278.6   312.0
+   343(23)      0.001890    278.5   320.4
+   301(21)      0.002268    278.4   327.6
+   327(23)      0.001890    278.3   331.0
+   308(22)      0.002066    278.2   328.8
+   295(21)      0.002268    278.1   322.1
+   304(22)      0.002066    278.0   313.8
+   274(20)      0.002500    277.9   306.7
+   282(21)      0.002268    277.8   301.7
+   274(20)      0.002500    277.8   299.2
+   326(23)      0.001890    277.7   299.1
+   302(22)      0.002066    277.6   301.4
+   321(22)      0.002066    277.5   307.1
+   317(22)      0.002066    277.4   318.1
+   331(23)      0.001890    277.3   336.9
+   348(23)      0.001890    277.2   366.0
+   399(25)      0.001600    277.1   405.5
+   463(28)      0.001276    277.1   451.2
+   461(28)      0.001276    277.0   492.1
+   510(29)      0.001189    276.9   513.7
+   508(29)      0.001189    276.8   505.4
+   492(29)      0.001189    276.7   470.2
+   428(27)      0.001372    276.6   423.9
+   424(26)      0.001479    276.5   380.7
+   368(24)      0.001736    276.5   347.4
+   355(24)      0.001736    276.4   325.5
+   310(22)      0.002066    276.3   313.0
+   290(21)      0.002268    276.2   307.4
+   296(21)      0.002268    276.1   307.2
+   327(23)      0.001890    276.0   312.1
+   332(23)      0.001890    276.0   323.0
+   372(24)      0.001736    275.9   340.9
+   395(25)      0.001600    275.8   365.9
+   379(24)      0.001736    275.7   395.0
+   386(25)      0.001600    275.6   421.2
+   423(26)      0.001479    275.6   434.8
+   416(26)      0.001479    275.5   429.0
+   403(25)      0.001600    275.4   405.7
+   355(23)      0.001890    275.3   375.0
+   326(22)      0.002066    275.2   346.0
+   320(22)      0.002066    275.2   323.4
+   333(23)      0.001890    275.1   307.9
+   308(22)      0.002066    275.0   298.3
+   297(21)      0.002268    274.9   292.7
+   291(21)      0.002268    274.9   289.5
+   285(20)      0.002500    274.8   287.6
+   319(22)      0.002066    274.7   286.3
+   294(21)      0.002268    274.6   285.5
+   276(20)      0.002500    274.6   284.8
+   271(20)      0.002500    274.5   284.3
+   263(20)      0.002500    274.4   283.9
+   278(20)      0.002500    274.3   283.7
+   284(20)      0.002500    274.3   283.5
+   283(20)      0.002500    274.2   283.4
+   310(22)      0.002066    274.1   283.4
+   317(22)      0.002066    274.0   283.5
+   282(20)      0.002500    274.0   283.6
+   280(20)      0.002500    273.9   283.9
+   257(19)      0.002770    273.8   284.2
+   263(20)      0.002500    273.7   284.6
+   248(19)      0.002770    273.7   285.0
+   286(21)      0.002268    273.6   285.7
+   308(22)      0.002066    273.5   286.4
+   291(21)      0.002268    273.5   287.3
+   308(22)      0.002066    273.4   288.5
+   294(21)      0.002268    273.3   289.8
+   274(20)      0.002500    273.2   291.5
+   319(22)      0.002066    273.2   293.5
+   286(21)      0.002268    273.1   296.1
+   277(20)      0.002500    273.0   299.3
+   292(21)      0.002268    273.0   303.5
+   274(20)      0.002500    272.9   309.4
+   280(20)      0.002500    272.8   318.4
+   345(23)      0.001890    272.8   333.3
+   380(24)      0.001736    272.7   359.4
+   415(26)      0.001479    272.6   404.2
+   531(29)      0.001189    272.6   476.7
+   612(32)      0.000977    272.5   582.7
+   696(34)      0.000865    272.4   719.1
+   841(38)      0.000693    272.    867.
+   908(39)      0.000657    272.    986.
+   961(40)      0.000625    272.    1020.
+   928(40)      0.000625    272.    950.
+   854(38)      0.000693    272.    815.
+   756(36)      0.000772    272.    668.
+   619(32)      0.000977    272.0   540.8
+   482(28)      0.001276    271.9   446.9
+   405(25)      0.001600    271.8   385.2
+   374(24)      0.001736    271.8   348.0
+   345(23)      0.001890    271.7   326.6
+   323(22)      0.002066    271.6   314.2
+   311(22)      0.002066    271.6   306.5
+   291(21)      0.002268    271.5   301.3
+   321(22)      0.002066    271.4   297.5
+   279(20)      0.002500    271.4   294.6
+   274(20)      0.002500    271.3   292.3
+   270(20)      0.002500    271.3   290.4
+   278(20)      0.002500    271.2   289.0
+   264(20)      0.002500    271.1   287.9
+   268(20)      0.002500    271.1   287.0
+   312(22)      0.002066    271.0   286.4
+   319(22)      0.002066    271.0   286.1
+   316(22)      0.002066    270.9   286.0
+   294(21)      0.002268    270.8   286.1
+   282(20)      0.002500    270.8   286.5
+   290(21)      0.002268    270.7   287.2
+   295(21)      0.002268    270.6   288.4
+   282(20)      0.002500    270.6   290.4
+   286(21)      0.002268    270.5   293.7
+   303(21)      0.002268    270.5   299.6
+   320(22)      0.002066    270.4   310.0
+   342(23)      0.001890    270.3   327.6
+   377(24)      0.001736    270.3   355.2
+   387(25)      0.001600    270.2   394.4
+   445(27)      0.001372    270.2   443.2
+   492(28)      0.001276    270.1   494.1
+   564(30)      0.001111    270.1   532.2
+   557(30)      0.001111    270.0   539.9
+   535(30)      0.001111    269.9   512.4
+   496(28)      0.001276    269.9   464.3
+   447(27)      0.001372    269.8   412.9
+   396(25)      0.001600    269.8   368.7
+   358(24)      0.001736    269.7   335.8
+   327(22)      0.002066    269.7   313.8
+   306(21)      0.002268    269.6   300.3
+   282(20)      0.002500    269.5   292.3
+   273(20)      0.002500    269.5   287.5
+   258(19)      0.002770    269.4   284.5
+   277(20)      0.002500    269.4   282.5
+   300(21)      0.002268    269.3   280.9
+   309(22)      0.002066    269.3   279.7
+   298(21)      0.002268    269.2   278.7
+   289(21)      0.002268    269.2   277.9
+   283(16)      0.00391     269.1   277.2
+   294(20)      0.002500    269.0   276.6
+   283(19)      0.002770    269.0   276.1
+   276(19)      0.002770    268.9   275.7
+   303(20)      0.002500    268.9   275.3
+   287(19)      0.002770    268.8   275.0
+   266(19)      0.002770    268.8   274.7
+   262(19)      0.002770    268.7   274.5
+   279(19)      0.002770    268.7   274.3
+   293(20)      0.002500    268.6   274.2
+   267(19)      0.002770    268.6   274.1
+   289(20)      0.002500    268.5   274.0
+   285(19)      0.002770    268.4   273.9
+   281(19)      0.002770    268.4   273.9
+   282(19)      0.002770    268.3   273.9
+   268(19)      0.002770    268.3   274.0
+   254(18)      0.003086    268.2   274.1
+   283(19)      0.002770    268.2   274.2
+   293(20)      0.002500    268.1   274.5
+   294(20)      0.002500    268.1   274.8
+   287(19)      0.002770    268.0   275.2
+   252(18)      0.003086    268.0   275.8
+   253(18)      0.003086    267.9   276.8
+   264(19)      0.002770    267.9   278.2
+   269(19)      0.002770    267.8   280.7
+   290(20)      0.002500    267.8   284.8
+   332(21)      0.002268    267.7   291.5
+   321(21)      0.002268    267.7   301.9
+   302(20)      0.002500    267.6   316.2
+   346(22)      0.002066    267.6   334.0
+   365(22)      0.002066    267.5   352.8
+   414(24)      0.001736    267.5   367.7
+   416(24)      0.001736    267.4   372.8
+   402(24)      0.001736    267.4   365.8
+   406(24)      0.001736    267.3   351.2
+   346(22)      0.002066    267.3   335.1
+   336(21)      0.002268    267.2   321.4
+   332(21)      0.002268    267.2   311.7
+   334(21)      0.002268    267.1   305.0
+   339(21)      0.002268    267.1   299.7
+   286(19)      0.002770    267.0   294.6
+   313(20)      0.002500    267.0   289.5
+   306(20)      0.002500    266.9   284.9
+   282(19)      0.002770    266.9   281.2
+   262(18)      0.003086    266.8   278.3
+   281(19)      0.002770    266.8   276.3
+   250(18)      0.003086    266.7   275.0
+   244(18)      0.003086    266.7   274.2
+   271(19)      0.002770    266.6   273.7
+   306(20)      0.002500    266.6   273.4
+   293(20)      0.002500    266.5   273.3
+   285(19)      0.002770    266.5   273.4
+   291(20)      0.002500    266.4   273.9
+   292(20)      0.002500    266.4   274.7
+   270(19)      0.002770    266.3   276.0
+   265(19)      0.002770    266.3   277.8
+   268(19)      0.002770    266.3   279.8
+   265(19)      0.002770    266.2   281.6
+   296(20)      0.002500    266.2   282.7
+   297(20)      0.002500    266.1   282.5
+   291(20)      0.002500    266.1   281.0
+   281(19)      0.002770    266.0   279.0
+   272(19)      0.002770    266.0   277.1
+   275(19)      0.002770    265.9   275.5
+   277(19)      0.002770    265.9   274.3
+   284(19)      0.002770    265.8   273.6
+   266(19)      0.002770    265.8   273.2
+   252(18)      0.003086    265.7   273.1
+   279(19)      0.002770    265.7   273.1
+   278(19)      0.002770    265.6   273.3
+   275(19)      0.002770    265.6   273.5
+   265(19)      0.002770    265.6   273.9
+   251(18)      0.003086    265.5   274.3
+   266(19)      0.002770    265.5   274.9
+   279(19)      0.002770    265.4   275.7
+   274(19)      0.002770    265.4   276.9
+   266(19)      0.002770    265.3   278.7
+   282(19)      0.002770    265.3   281.7
+   273(19)      0.002770    265.2   286.2
+   303(20)      0.002500    265.2   292.9
+   295(20)      0.002500    265.1   301.8
+   318(21)      0.002268    265.1   312.5
+   345(22)      0.002066    265.1   323.6
+   336(21)      0.002268    265.0   332.5
+   354(22)      0.002066    265.0   335.6
+   344(22)      0.002066    264.9   331.8
+   327(21)      0.002268    264.9   323.1
+   315(21)      0.002268    264.8   313.0
+   306(20)      0.002500    264.8   303.8
+   280(19)      0.002770    264.7   296.8
+   282(19)      0.002770    264.7   292.1
+   295(20)      0.002500    264.7   289.5
+   310(20)      0.002500    264.6   288.5
+   280(19)      0.002770    264.6   288.7
+   264(19)      0.002770    264.5   289.7
+   278(19)      0.002770    264.5   291.3
+   264(19)      0.002770    264.4   293.6
+   268(19)      0.002770    264.4   296.5
+   278(19)      0.002770    264.4   300.2
+   299(20)      0.002500    264.3   305.2
+   310(19)      0.002770    264.3   312.3
+   334(20)      0.002500    264.2   322.6
+   325(20)      0.002500    264.2   338.0
+   380(22)      0.002066    264.1   361.3
+   415(23)      0.001890    264.1   395.1
+   452(24)      0.001736    264.1   441.8
+   495(25)      0.001600    264.0   502.3
+   561(27)      0.001372    264.0   574.9
+   588(27)      0.001372    263.9   654.4
+   681(30)      0.001111    263.9   732.2
+   775(32)      0.000977    263.8   804.4
+   875(34)      0.000865    263.8   878.8
+   998(36)      0.000772    264.    966.
+   1107(38)     0.000693    264.    1061.
+   1179(39)     0.000657    264.    1141.
+   1166(39)     0.000657    264.    1169.
+   1176(39)     0.000657    264.    1127.
+   1091(38)     0.000693    264.    1039.
+   988(36)      0.000772    263.    942.
+   925(35)      0.000816    263.5   859.4
+   777(32)      0.000977    263.4   796.4
+   722(31)      0.001041    263.4   740.8
+   684(30)      0.001111    263.3   678.1
+   598(28)      0.001276    263.3   606.2
+   493(25)      0.001600    263.2   533.4
+   475(24)      0.001736    263.2   468.4
+   371(21)      0.002268    263.2   415.3
+   344(21)      0.002268    263.1   375.2
+   327(20)      0.002500    263.1   346.7
+   323(20)      0.002500    263.0   327.4
+   318(20)      0.002500    263.0   314.6
+   291(19)      0.002770    263.0   306.1
+   276(18)      0.003086    262.9   300.2
+   279(18)      0.003086    262.9   296.0
+   277(18)      0.003086    262.8   293.1
+   275(18)      0.003086    262.8   291.0
+   285(19)      0.002770    262.8   289.6
+   289(19)      0.002770    262.7   288.7
+   303(19)      0.002770    262.7   288.0
+   272(18)      0.003086    262.6   287.0
+   262(18)      0.003086    262.6   285.5
+   273(18)      0.003086    262.5   283.4
+   267(18)      0.003086    262.5   281.2
+   298(19)      0.002770    262.5   279.0
+   276(18)      0.003086    262.4   277.1
+   263(18)      0.003086    262.4   275.5
+   251(17)      0.003460    262.3   274.3
+   270(18)      0.003086    262.3   273.3
+   281(18)      0.003086    262.3   272.5
+   281(18)      0.003086    262.2   271.8
+   250(17)      0.003460    262.2   271.3
+   246(17)      0.003460    262.1   270.8
+   264(18)      0.003086    262.1   270.4
+   253(17)      0.003460    262.1   270.1
+   257(17)      0.003460    262.0   269.9
+   285(19)      0.002770    262.0   269.8
+   274(18)      0.003086    261.9   269.8
+   265(18)      0.003086    261.9   270.1
+   271(18)      0.003086    261.9   270.7
+   287(19)      0.002770    261.8   271.5
+   274(18)      0.003086    261.8   272.5
+   274(18)      0.003086    261.7   273.5
+   265(18)      0.003086    261.7   274.3
+   248(17)      0.003460    261.7   274.5
+   268(18)      0.003086    261.6   273.8
+   287(19)      0.002770    261.6   272.6
+   269(18)      0.003086    261.5   271.2
+   284(18)      0.003086    261.5   269.8
+   267(18)      0.003086    261.5   268.6
+   267(18)      0.003086    261.4   267.7
+   275(18)      0.003086    261.4   267.0
+   274(18)      0.003086    261.3   266.5
+   269(18)      0.003086    261.3   266.2
+   280(18)      0.003086    261.3   266.0
+   266(18)      0.003086    261.2   265.9
+   261(18)      0.003086    261.2   265.8
+   284(18)      0.003086    261.1   265.7
+   287(19)      0.002770    261.1   265.7
+   256(17)      0.003460    261.1   265.8
+   270(18)      0.003086    261.0   266.0
+   251(17)      0.003460    261.0   266.3
+   257(17)      0.003460    260.9   266.9
+   282(18)      0.003086    260.9   267.7
+   274(18)      0.003086    260.9   268.8
+   276(18)      0.003086    260.8   270.1
+   257(17)      0.003460    260.8   271.7
+   271(18)      0.003086    260.7   273.2
+   278(18)      0.003086    260.7   274.7
+   296(19)      0.002770    260.7   276.1
+   290(19)      0.002770    260.6   277.5
+   283(18)      0.003086    260.6   278.8
+   330(20)      0.002500    260.5   279.6
+   291(19)      0.002770    260.5   279.4
+   296(19)      0.002770    260.5   277.9
+   276(18)      0.003086    260.4   275.6
+   274(18)      0.003086    260.4   273.0
+   302(19)      0.002770    260.3   270.6
+   271(18)      0.003086    260.3   268.6
+   268(18)      0.003086    260.3   267.1
+   251(17)      0.003460    260.2   266.0
+   244(16)      0.00391     260.2   265.3
+   260(17)      0.003460    260.1   264.9
+   282(18)      0.003086    260.1   264.6
+   275(17)      0.003460    260.1   264.4
+   299(18)      0.003086    260.0   264.3
+   271(17)      0.003460    260.0   264.3
+   262(17)      0.003460    260.0   264.3
+   255(17)      0.003460    259.9   264.3
+   266(17)      0.003460    259.9   264.4
+   270(17)      0.003460    259.8   264.5
+   267(17)      0.003460    259.8   264.7
+   242(16)      0.00391     259.8   264.9
+   278(17)      0.003460    259.7   265.1
+   260(17)      0.003460    259.7   265.5
+   254(17)      0.003460    259.6   266.0
+   258(17)      0.003460    259.6   266.8
+   254(17)      0.003460    259.6   267.9
+   267(17)      0.003460    259.5   269.7
+   269(17)      0.003460    259.5   272.4
+   292(18)      0.003086    259.4   276.5
+   284(18)      0.003086    259.4   282.4
+   284(18)      0.003086    259.4   290.2
+   297(18)      0.003086    259.3   299.9
+   292(18)      0.003086    259.3   310.7
+   304(18)      0.003086    259.2   320.8
+   321(19)      0.002770    259.2   327.8
+   343(20)      0.002500    259.2   329.2
+   359(20)      0.002500    259.1   324.5
+   335(19)      0.002770    259.1   316.1
+   318(19)      0.002770    259.1   306.9
+   301(18)      0.003086    259.0   299.0
+   309(19)      0.002770    259.0   293.7
+   300(18)      0.003086    258.9   291.4
+   270(17)      0.003460    258.9   291.9
+   274(17)      0.003460    258.9   294.6
+   295(18)      0.003086    258.8   298.1
+   289(18)      0.003086    258.8   300.7
+   292(18)      0.003086    258.7   300.9
+   317(19)      0.002770    258.7   298.0
+   300(18)      0.003086    258.7   292.9
+   288(18)      0.003086    258.6   287.0
+   305(18)      0.003086    258.6   281.4
+   294(18)      0.003086    258.5   276.7
+   270(17)      0.003460    258.5   273.2
+   284(18)      0.003086    258.5   270.9
+   262(17)      0.003460    258.4   269.6
+   246(16)      0.00391     258.4   269.2
+   294(18)      0.003086    258.4   269.6
+   294(18)      0.003086    258.3   270.9
+   261(17)      0.003460    258.3   273.0
+   255(17)      0.003460    258.2   275.9
+   275(17)      0.003460    258.2   279.8
+   276(17)      0.003460    258.2   284.4
+   290(18)      0.003086    258.1   289.5
+   304(18)      0.003086    258.1   294.6
+   299(18)      0.003086    258.0   299.6
+   302(18)      0.003086    258.0   304.6
+   319(19)      0.002770    258.0   309.1
+   306(18)      0.003086    257.9   312.1
+   306(18)      0.003086    257.9   311.9
+   310(19)      0.002770    257.8   307.8
+   300(18)      0.003086    257.8   301.0
+   254(17)      0.003460    257.8   293.1
+   254(17)      0.003460    257.7   285.5
+   279(17)      0.003460    257.7   278.9
+   280(18)      0.003086    257.7   273.8
+   271(17)      0.003460    257.6   270.0
+   255(17)      0.003460    257.6   267.3
+   245(16)      0.00391     257.5   265.5
+   274(17)      0.003460    257.5   264.3
+   285(18)      0.003086    257.5   263.5
+   267(17)      0.003460    257.4   263.0
+   238(16)      0.00391     257.4   262.5
+   260(17)      0.003460    257.3   262.2
+   269(17)      0.003460    257.3   261.9
+   254(17)      0.003460    257.3   261.7
+   255(17)      0.003460    257.2   261.5
+   260(17)      0.003460    257.2   261.4
+   278(17)      0.003460    257.2   261.3
+   255(17)      0.003460    257.1   261.2
+   264(17)      0.003460    257.1   261.1
+   289(18)      0.003086    257.0   261.0
+   256(17)      0.003460    257.0   260.9
+   240(16)      0.00391     257.0   260.9
+   253(17)      0.003460    256.9   260.8
+   236(16)      0.00391     256.9   260.8
+   246(16)      0.00391     256.8   260.8
+   249(16)      0.00391     256.8   260.8
+   263(17)      0.003460    256.8   260.8
+   274(17)      0.003460    256.7   260.8
+   266(17)      0.003460    256.7   260.8
+   272(17)      0.003460    256.6   260.8
+   274(17)      0.003460    256.6   260.8
+   264(17)      0.003460    256.6   260.9
+   267(17)      0.003460    256.5   260.9
+   278(17)      0.003460    256.5   261.0
+   279(17)      0.003460    256.5   261.1
+   280(18)      0.003086    256.4   261.2
+   273(17)      0.003460    256.4   261.3
+   264(17)      0.003460    256.3   261.4
+   256(16)      0.00391     256.3   261.6
+   298(17)      0.003460    256.3   261.7
+   236(15)      0.00444     256.2   261.9
+   240(15)      0.00444     256.2   262.2
+   276(17)      0.003460    256.1   262.4
+   267(16)      0.00391     256.1   262.7
+   277(17)      0.003460    256.1   263.1
+   219(15)      0.00444     256.0   263.5
+   241(15)      0.00444     256.0   264.0
+   270(16)      0.00391     256.0   264.6
+   262(16)      0.00391     255.9   265.4
+   240(15)      0.00444     255.9   266.5
+   269(16)      0.00391     255.8   267.9
+   273(16)      0.00391     255.8   270.0
+   285(17)      0.003460    255.8   273.1
+   290(17)      0.003460    255.7   277.6
+   323(18)      0.003086    255.7   283.9
+   303(17)      0.003460    255.6   292.4
+   354(19)      0.002770    255.6   303.2
+   334(18)      0.003086    255.6   315.9
+   322(18)      0.003086    255.5   329.4
+   338(18)      0.003086    255.5   341.8
+   338(18)      0.003086    255.4   350.4
+   363(19)      0.002770    255.4   352.7
+   309(18)      0.003086    255.4   348.6
+   346(19)      0.002770    255.3   340.8
+   346(19)      0.002770    255.3   332.5
+   348(19)      0.002770    255.3   326.0
+   362(19)      0.002770    255.2   322.7
+   346(19)      0.002770    255.2   322.9
+   369(19)      0.002770    255.1   325.9
+   340(19)      0.002770    255.1   330.0
+   354(19)      0.002770    255.1   333.0
+   358(19)      0.002770    255.0   333.0
+   385(20)      0.002500    255.0   329.6
+   366(19)      0.002770    254.9   324.0
+   323(18)      0.003086    254.9   317.6
+   297(17)      0.003460    254.9   311.3
+   310(18)      0.003086    254.8   305.4
+   274(17)      0.003460    254.8   300.0
+   291(17)      0.003460    254.7   295.4
+   283(17)      0.003460    254.7   292.2
+   302(17)      0.003460    254.7   290.5
+   277(17)      0.003460    254.6   290.8
+   266(16)      0.00391     254.6   293.4
+   272(16)      0.00391     254.6   298.8
+   298(17)      0.003460    254.5   307.7
+   269(16)      0.00391     254.5   320.5
+   301(17)      0.003460    254.4   337.5
+   320(18)      0.003086    254.4   358.2
+   391(20)      0.002500    254.4   381.4
+   416(21)      0.002268    254.3   404.6
+   449(21)      0.002268    254.3   423.9
+   464(22)      0.002066    254.2   434.9
+   480(22)      0.002066    254.2   436.1
+   465(22)      0.002066    254.2   430.4
+   415(21)      0.002268    254.1   423.6
+   437(21)      0.002268    254.1   420.9
+   414(21)      0.002268    254.1   425.4
+   425(21)      0.002268    254.0   438.0
+   469(22)      0.002066    254.0   457.6
+   451(21)      0.002268    253.9   480.4
+   477(22)      0.002066    253.9   500.3
+   509(23)      0.001890    253.9   510.8
+   530(23)      0.001890    253.8   508.8
+   507(23)      0.001890    253.8   497.8
+   473(22)      0.002066    253.7   485.4
+   493(22)      0.002066    253.7   478.4
+   480(22)      0.002066    253.7   481.2
+   472(22)      0.002066    253.6   495.2
+   510(23)      0.001890    253.6   518.4
+   490(22)      0.002066    253.5   545.7
+   608(25)      0.001600    253.5   568.6
+   605(25)      0.001600    253.5   576.8
+   550(24)      0.001736    253.4   564.1
+   537(23)      0.001890    253.4   532.8
+   504(23)      0.001890    253.4   491.0
+   439(21)      0.002268    253.3   447.0
+   362(19)      0.002770    253.3   406.3
+   333(18)      0.003086    253.2   371.9
+   324(18)      0.003086    253.2   344.8
+   323(18)      0.003086    253.2   324.8
+   305(17)      0.003460    253.1   311.0
+   275(17)      0.003460    253.1   302.3
+   249(16)      0.00391     253.0   297.5
+   294(17)      0.003460    253.0   295.9
+   314(18)      0.003086    253.0   297.1
+   260(16)      0.00391     252.9   300.9
+   280(17)      0.003460    252.9   307.2
+   320(18)      0.003086    252.8   315.7
+   345(19)      0.002770    252.8   325.8
+   315(18)      0.003086    252.8   336.6
+   346(19)      0.002770    252.7   346.2
+   348(19)      0.002770    252.7   352.5
+   368(19)      0.002770    252.7   354.1
+   342(19)      0.002770    252.6   351.5
+   333(18)      0.003086    252.6   346.7
+   321(18)      0.003086    252.5   341.8
+   339(18)      0.003086    252.5   338.0
+   329(18)      0.003086    252.5   336.1
+   322(17)      0.003460    252.4   335.9
+   340(18)      0.003086    252.4   336.8
+   339(18)      0.003086    252.3   337.4
+   372(19)      0.002770    252.3   335.6
+   334(18)      0.003086    252.3   330.5
+   301(17)      0.003460    252.2   322.3
+   304(17)      0.003460    252.2   312.6
+   308(17)      0.003460    252.2   302.7
+   277(16)      0.00391     252.1   293.7
+   261(16)      0.00391     252.1   286.1
+   281(16)      0.00391     252.0   280.0
+   291(16)      0.00391     252.0   275.5
+   290(16)      0.00391     252.0   272.2
+   270(16)      0.00391     251.9   269.8
+   259(15)      0.00444     251.9   268.3
+   254(15)      0.00444     251.8   267.2
+   257(15)      0.00444     251.8   266.5
+   265(16)      0.00391     251.8   266.0
+   273(16)      0.00391     251.7   265.7
+   269(16)      0.00391     251.7   265.6
+   304(17)      0.003460    251.7   265.5
+   264(16)      0.00391     251.6   265.6
+   236(15)      0.00444     251.6   265.8
+   255(15)      0.00444     251.5   266.1
+   260(15)      0.00444     251.5   266.6
+   294(17)      0.003460    251.5   267.4
+   280(16)      0.00391     251.4   268.4
+   254(15)      0.00444     251.4   269.8
+   280(16)      0.00391     251.3   271.9
+   284(16)      0.00391     251.3   274.7
+   292(16)      0.00391     251.3   278.6
+   282(16)      0.00391     251.2   283.6
+   306(17)      0.003460    251.2   289.8
+   306(17)      0.003460    251.2   297.0
+   334(18)      0.003086    251.1   304.9
+   356(18)      0.003086    251.1   312.8
+   368(19)      0.002770    251.0   319.3
+   366(19)      0.002770    251.0   323.4
+   361(18)      0.003086    251.0   324.4
+   316(17)      0.003460    250.9   323.1
+   354(18)      0.003086    250.9   321.1
+   354(18)      0.003086    250.8   320.3
+   347(18)      0.003086    250.8   322.5
+   338(18)      0.003086    250.8   329.3
+   364(19)      0.002770    250.7   342.2
+   380(19)      0.002770    250.7   362.4
+   389(19)      0.002770    250.7   390.6
+   454(21)      0.002268    250.6   426.7
+   501(22)      0.002066    250.6   469.2
+   541(23)      0.001890    250.5   514.9
+   585(24)      0.001736    250.5   558.1
+   559(23)      0.001890    250.5   590.8
+   641(25)      0.001600    250.4   604.7
+   584(24)      0.001736    250.4   596.4
+   585(24)      0.001736    250.3   569.7
+   554(23)      0.001890    250.3   532.8
+   508(22)      0.002066    250.3   493.0
+   482(22)      0.002066    250.2   455.1
+   466(21)      0.002268    250.2   421.8
+   393(19)      0.002770    250.2   394.3
+   358(18)      0.003086    250.1   372.4
+   321(17)      0.003460    250.1   355.0
+   361(18)      0.003086    250.0   341.0
+   320(17)      0.003460    250.0   329.6
+   295(17)      0.003460    250.0   320.4
+   300(17)      0.003460    249.9   313.4
+   264(16)      0.00391     249.9   308.6
+   258(15)      0.00444     249.9   306.1
+   277(16)      0.00391     249.8   306.1
+   309(17)      0.003460    249.8   309.0
+   306(17)      0.003460    249.7   315.7
+   302(17)      0.003460    249.7   327.1
+   328(18)      0.003086    249.7   344.3
+   340(18)      0.003086    249.6   368.5
+   408(20)      0.002500    249.6   400.6
+   454(21)      0.002268    249.5   440.4
+   493(22)      0.002066    249.5   486.8
+   573(24)      0.001736    249.5   536.5
+   649(25)      0.001600    249.4   583.9
+   698(26)      0.001479    249.4   620.6
+   691(26)      0.001479    249.4   637.4
+   727(27)      0.001372    249.3   629.1
+   715(26)      0.001479    249.3   598.2
+   589(24)      0.001736    249.2   553.4
+   531(23)      0.001890    249.2   503.7
+   439(20)      0.002500    249.2   455.8
+   395(19)      0.002770    249.1   413.7
+   327(18)      0.003086    249.1   379.4
+   323(17)      0.003460    249.1   353.4
+   311(17)      0.003460    249.0   335.3
+   298(17)      0.003460    249.0   324.3
+   281(16)      0.00391     248.9   319.4
+   286(16)      0.00391     248.9   319.7
+   307(17)      0.003460    248.9   324.3
+   315(17)      0.003460    248.8   332.5
+   339(18)      0.003086    248.8   343.2
+   360(18)      0.003086    248.8   355.1
+   393(19)      0.002770    248.7   366.3
+   369(19)      0.002770    248.7   374.3
+   390(19)      0.002770    248.6   376.7
+   367(18)      0.003086    248.6   372.5
+   378(18)      0.003086    248.6   363.0
+   348(18)      0.003086    248.5   350.8
+   330(17)      0.003460    248.5   338.2
+   340(17)      0.003460    248.5   327.2
+   327(17)      0.003460    248.4   319.0
+   292(16)      0.00391     248.4   314.3
+   287(16)      0.00391     248.3   313.5
+   305(16)      0.00391     248.3   316.7
+   295(16)      0.00391     248.3   323.8
+   307(16)      0.00391     248.2   334.5
+   319(17)      0.003460    248.2   347.9
+   347(17)      0.003460    248.2   362.8
+   362(18)      0.003086    248.1   377.7
+   360(18)      0.003086    248.1   390.9
+   385(18)      0.003086    248.1   401.2
+   425(19)      0.002770    248.0   407.7
+   424(19)      0.002770    248.0   409.1
+   415(19)      0.002770    247.9   404.2
+   401(19)      0.002770    247.9   392.7
+   376(18)      0.003086    247.9   376.7
+   378(18)      0.003086    247.8   358.7
+   324(17)      0.003460    247.8   341.1
+   319(17)      0.003460    247.8   325.4
+   314(17)      0.003460    247.7   312.2
+   286(16)      0.00391     247.7   301.6
+   280(16)      0.00391     247.6   293.3
+   280(16)      0.00391     247.6   286.8
+   243(14)      0.00510     247.6   281.5
+   291(16)      0.00391     247.5   277.1
+   277(15)      0.00444     247.5   273.5
+   268(15)      0.00444     247.5   270.5
+   268(15)      0.00444     247.4   268.0
+   262(15)      0.00444     247.4   266.0
+   244(15)      0.00444     247.4   264.3
+   260(15)      0.00444     247.3   263.1
+   269(15)      0.00444     247.3   262.1
+   292(16)      0.00391     247.2   261.4
+   273(15)      0.00444     247.2   260.9
+   259(15)      0.00444     247.2   260.7
+   268(15)      0.00444     247.1   260.7
+   288(16)      0.00391     247.1   261.0
+   238(14)      0.00510     247.1   261.6
+   263(15)      0.00444     247.0   262.5
+   263(15)      0.00444     247.0   263.7
+   260(15)      0.00444     247.0   265.1
+   269(15)      0.00444     246.9   266.8
+   266(15)      0.00444     246.9   268.5
+   290(16)      0.00391     246.8   270.1
+   279(16)      0.00391     246.8   271.2
+   292(16)      0.00391     246.8   271.5
+   284(16)      0.00391     246.7   271.0
+   272(15)      0.00444     246.7   269.9
+   266(15)      0.00444     246.7   268.5
+   255(15)      0.00444     246.6   267.0
+   290(16)      0.00391     246.6   265.7
+   278(16)      0.00391     246.6   264.6
+   283(16)      0.00391     246.5   263.9
+   266(15)      0.00444     246.5   263.5
+   258(15)      0.00444     246.5   263.5
+   264(15)      0.00444     246.4   263.9
+   275(15)      0.00444     246.4   264.7
+   295(16)      0.00391     246.3   265.9
+   258(15)      0.00444     246.3   267.6
+   267(15)      0.00444     246.3   270.0
+   269(15)      0.00444     246.2   273.1
+   258(15)      0.00444     246.2   277.0
+   264(15)      0.00444     246.2   282.0
+   301(16)      0.00391     246.1   288.2
+   288(16)      0.00391     246.1   295.7
+   304(16)      0.00391     246.1   304.5
+   282(16)      0.00391     246.0   314.8
+   319(17)      0.003460    246.0   326.5
+   358(18)      0.003086    246.0   339.6
+   351(18)      0.003086    245.9   354.6
+   368(18)      0.003086    245.9   372.2
+   403(19)      0.002770    245.9   393.2
+   414(19)      0.002770    245.8   418.1
+   440(20)      0.002500    245.8   446.2
+   480(21)      0.002268    245.8   475.8
+   496(21)      0.002268    245.7   503.4
+   517(22)      0.002066    245.7   524.6
+   576(23)      0.001890    245.6   535.7
+   581(23)      0.001890    245.6   535.3
+   567(23)      0.001890    245.6   525.1
+   560(22)      0.002066    245.5   507.6
+   503(21)      0.002268    245.5   484.5
+   487(21)      0.002268    245.5   457.5
+   448(20)      0.002500    245.4   428.3
+   408(19)      0.002770    245.4   399.2
+   372(18)      0.003086    245.4   372.4
+   332(17)      0.003460    245.3   349.0
+   293(16)      0.00391     245.3   329.5
+   299(16)      0.00391     245.3   314.0
+   286(16)      0.00391     245.2   302.0
+   269(15)      0.00444     245.2   293.2
+   268(15)      0.00444     245.2   287.0
+   264(15)      0.00444     245.1   283.1
+   274(15)      0.00444     245.1   281.0
+   269(15)      0.00444     245.1   280.5
+   277(22)      0.002066    245.0   281.6
+   295(16)      0.00391     245.0   284.2
+   288(15)      0.00444     245.0   288.1
+   298(16)      0.00391     244.9   293.4
+   305(16)      0.00391     244.9   299.8
+   318(16)      0.00391     244.9   306.8
+   327(16)      0.00391     244.8   313.9
+   317(16)      0.00391     244.8   320.1
+   323(16)      0.00391     244.8   324.4
+   330(16)      0.00391     244.7   325.9
+   339(17)      0.003460    244.7   324.7
+   324(16)      0.00391     244.7   321.6
+   315(16)      0.00391     244.6   317.7
+   302(16)      0.00391     244.6   313.9
+   316(16)      0.00391     244.6   310.7
+   313(16)      0.00391     244.5   308.3
+   298(16)      0.00391     244.5   306.4
+   312(16)      0.00391     244.5   304.5
+   292(15)      0.00444     244.4   302.2
+   268(15)      0.00444     244.4   299.4
+   290(15)      0.00444     244.4   296.5
+   294(16)      0.00391     244.3   294.0
+   284(15)      0.00444     244.3   292.4
+   287(15)      0.00444     244.3   292.3
+   291(15)      0.00444     244.2   294.2
+   308(16)      0.00391     244.2   298.7
+   302(16)      0.00391     244.2   306.4
+   313(16)      0.00391     244.1   317.9
+   333(17)      0.003460    244.1   333.7
+   372(18)      0.003086    244.1   353.9
+   415(19)      0.002770    244.0   378.4
+   437(19)      0.002770    244.0   406.4
+   452(19)      0.002770    244.0   436.3
+   486(20)      0.002500    243.9   465.3
+   519(21)      0.002268    243.9   489.6
+   533(21)      0.002268    243.9   504.6
+   530(21)      0.002268    243.9   506.8
+   498(20)      0.002500    243.8   495.5
+   486(20)      0.002500    243.8   473.5
+   458(19)      0.002770    243.8   445.4
+   424(19)      0.002770    243.7   415.2
+   409(18)      0.003086    243.7   386.1
+   374(18)      0.003086    243.7   359.8
+   337(17)      0.003460    243.6   337.4
+   319(16)      0.00391     243.6   319.1
+   299(16)      0.00391     243.6   304.7
+   299(16)      0.00391     243.5   293.8
+   296(16)      0.00391     243.5   285.8
+   280(15)      0.00444     243.5   280.1
+   270(15)      0.00444     243.4   276.3
+   265(15)      0.00444     243.4   274.0
+   262(15)      0.00444     243.4   272.6
+   251(14)      0.00510     243.3   272.2
+   259(15)      0.00444     243.3   272.2
+   263(15)      0.00444     243.3   272.7
+   253(14)      0.00510     243.3   273.3
+   242(14)      0.00510     243.2   273.8
+   273(15)      0.00444     243.2   273.8
+   264(15)      0.00444     243.2   273.3
+   281(15)      0.00444     243.1   272.2
+   263(15)      0.00444     243.1   270.7
+   266(15)      0.00444     243.1   269.0
+   261(15)      0.00444     243.0   267.4
+   257(14)      0.00510     243.0   265.9
+   253(14)      0.00510     243.0   264.7
+   257(14)      0.00510     243.0   263.9
+   278(15)      0.00444     242.9   263.3
+   270(15)      0.00444     242.9   263.1
+   265(15)      0.00444     242.9   263.2
+   260(15)      0.00444     242.8   263.7
+   244(14)      0.00510     242.8   264.4
+   258(15)      0.00444     242.8   265.6
+   265(15)      0.00444     242.7   267.2
+   261(15)      0.00444     242.7   269.3
+   250(14)      0.00510     242.7   272.3
+   279(15)      0.00444     242.7   276.3
+   281(15)      0.00444     242.6   281.8
+   280(15)      0.00444     242.6   289.4
+   293(15)      0.00444     242.6   299.6
+   292(15)      0.00444     242.5   313.1
+   323(16)      0.00391     242.5   330.4
+   343(17)      0.003460    242.5   352.1
+   393(18)      0.003086    242.4   378.2
+   455(19)      0.002770    242.4   408.3
+   472(20)      0.002500    242.4   441.3
+   493(20)      0.002500    242.4   475.1
+   514(21)      0.002268    242.3   506.6
+   534(21)      0.002268    242.3   531.5
+   561(22)      0.002066    242.3   545.3
+   539(21)      0.002268    242.2   545.4
+   519(21)      0.002268    242.2   532.3
+   495(20)      0.002500    242.2   509.3
+   477(20)      0.002500    242.2   480.3
+   420(19)      0.002770    242.1   448.9
+   401(18)      0.003086    242.1   417.7
+   367(17)      0.003460    242.1   388.4
+   350(17)      0.003460    242.0   362.3
+   349(17)      0.003460    242.0   340.0
+   334(17)      0.003460    242.0   321.8
+   300(16)      0.00391     242.0   307.3
+   274(15)      0.00444     241.9   296.1
+   287(15)      0.00444     241.9   287.8
+   303(16)      0.00391     241.9   281.8
+   284(15)      0.00444     241.9   277.6
+   274(15)      0.00444     241.8   275.0
+   259(15)      0.00444     241.8   273.6
+   267(15)      0.00444     241.8   273.3
+   285(15)      0.00444     241.7   273.9
+   278(15)      0.00444     241.7   275.2
+   269(15)      0.00444     241.7   277.1
+   280(15)      0.00444     241.7   279.4
+   294(16)      0.00391     241.6   281.9
+   292(16)      0.00391     241.6   284.1
+   274(15)      0.00444     241.6   285.6
+   317(16)      0.00391     241.6   286.1
+   277(15)      0.00444     241.5   285.5
+   302(16)      0.00391     241.5   284.0
+   274(15)      0.00444     241.5   281.9
+   273(15)      0.00444     241.4   279.9
+   278(15)      0.00444     241.4   278.4
+   267(15)      0.00444     241.4   277.8
+   285(15)      0.00444     241.4   278.3
+   300(16)      0.00391     241.3   280.2
+   280(15)      0.00444     241.3   283.7
+   273(15)      0.00444     241.3   288.7
+   309(16)      0.00391     241.3   295.3
+   308(16)      0.00391     241.2   303.1
+   324(16)      0.00391     241.2   311.7
+   326(16)      0.00391     241.2   320.4
+   326(16)      0.00391     241.2   328.2
+   346(17)      0.003460    241.1   333.9
+   341(17)      0.003460    241.1   336.3
+   373(18)      0.003086    241.1   334.9
+   349(17)      0.003460    241.1   330.0
+   322(16)      0.00391     241.0   322.7
+   337(17)      0.003460    241.0   314.2
+   333(17)      0.003460    241.0   305.6
+   297(16)      0.00391     241.0   297.7
+   266(15)      0.00444     240.9   291.0
+   263(15)      0.00444     240.9   285.9
+   274(15)      0.00444     240.9   282.4
+   302(16)      0.00391     240.9   280.6
+   295(16)      0.00391     240.8   280.4
+   259(15)      0.00444     240.8   281.7
+   248(14)      0.00510     240.8   284.1
+   263(15)      0.00444     240.8   287.5
+   281(15)      0.00444     240.7   291.3
+   296(16)      0.00391     240.7   295.1
+   272(15)      0.00444     240.7   298.4
+   284(15)      0.00444     240.7   300.8
+   314(16)      0.00391     240.6   302.0
+   302(16)      0.00391     240.6   302.2
+   295(16)      0.00391     240.6   301.9
+   288(15)      0.00444     240.6   301.4
+   293(16)      0.00391     240.5   300.7
+   306(16)      0.00391     240.5   299.9
+   347(17)      0.003460    240.5   298.8
+   315(16)      0.00391     240.5   296.9
+   305(16)      0.00391     240.4   294.3
+   278(15)      0.00444     240.4   291.1
+   282(15)      0.00444     240.4   287.7
+   311(16)      0.00391     240.4   284.5
+   288(15)      0.00444     240.3   281.9
+   275(15)      0.00444     240.3   280.0
+   279(15)      0.00444     240.3   279.3
+   282(15)      0.00444     240.3   280.0
+   283(15)      0.00444     240.3   282.3
+   308(16)      0.00391     240.2   286.5
+   303(16)      0.00391     240.2   293.0
+   296(16)      0.00391     240.2   301.8
+   315(16)      0.00391     240.2   313.2
+   333(17)      0.003460    240.1   327.3
+   349(17)      0.003460    240.1   343.7
+   360(17)      0.003460    240.1   362.0
+   389(18)      0.003086    240.1   381.2
+   409(18)      0.003086    240.1   400.1
+   409(18)      0.003086    240.0   416.4
+   397(18)      0.003086    240.0   428.0
+   450(19)      0.002770    240.0   432.5
+   432(19)      0.002770    240.0   429.2
+   451(19)      0.002770    239.9   418.8
+   459(20)      0.002500    239.9   403.2
+   419(19)      0.002770    239.9   385.1
+   363(17)      0.003460    239.9   366.3
+   347(17)      0.003460    239.9   348.5
+   328(16)      0.00391     239.8   332.7
+   299(16)      0.00391     239.8   319.5
+   277(15)      0.00444     239.8   309.1
+   295(16)      0.00391     239.8   301.7
+   287(15)      0.00444     239.7   297.2
+   284(15)      0.00444     239.7   295.4
+   305(16)      0.00391     239.7   296.3
+   304(16)      0.00391     239.7   299.4
+   287(15)      0.00444     239.7   304.7
+   293(16)      0.00391     239.6   311.6
+   322(16)      0.00391     239.6   319.8
+   313(16)      0.00391     239.6   328.7
+   347(17)      0.003460    239.6   337.4
+   362(17)      0.003460    239.6   345.2
+   352(17)      0.003460    239.5   350.9
+   347(14)      0.00510     239.5   353.9
+   370(17)      0.003460    239.5   354.2
+   363(17)      0.003460    239.5   352.6
+   375(18)      0.003086    239.5   350.2
+   352(17)      0.003460    239.4   348.0
+   348(17)      0.003460    239.4   346.6
+   377(18)      0.003086    239.4   346.5
+   378(18)      0.003086    239.4   347.7
+   373(18)      0.003086    239.4   349.7
+   363(17)      0.003460    239.3   352.2
+   377(18)      0.003086    239.3   354.5
+   374(18)      0.003086    239.3   355.8
+   349(17)      0.003460    239.3   355.2
+   352(17)      0.003460    239.3   351.9
+   354(17)      0.003460    239.2   345.7
+   349(17)      0.003460    239.2   337.2
+   298(16)      0.00391     239.2   327.3
+   315(16)      0.00391     239.2   316.8
+   297(16)      0.00391     239.2   306.6
+   312(16)      0.00391     239.2   297.1
+   310(16)      0.00391     239.1   288.8
+   290(15)      0.00444     239.1   281.6
+   288(15)      0.00444     239.1   275.6
+   294(15)      0.00444     239.1   270.8
+   254(14)      0.00510     239.1   267.1
+   265(15)      0.00444     239.0   264.3
+   272(15)      0.00444     239.0   262.3
+   255(14)      0.00510     239.0   260.9
+   245(14)      0.00510     239.0   260.0
+   250(14)      0.00510     239.0   259.6
+   255(14)      0.00510     239.0   259.6
+   259(15)      0.00444     238.9   260.1
+   247(14)      0.00510     238.9   260.8
+   269(15)      0.00444     238.9   262.0
+   279(15)      0.00444     238.9   263.5
+   271(15)      0.00444     238.9   265.3
+   260(15)      0.00444     238.9   267.4
+   283(15)      0.00444     238.8   269.7
+   284(15)      0.00444     238.8   272.0
+   295(16)      0.00391     238.8   274.3
+   288(15)      0.00444     238.8   276.3
+   284(15)      0.00444     238.8   277.7
+   287(15)      0.00444     238.8   278.6
+   267(15)      0.00444     238.7   279.0
+   284(15)      0.00444     238.7   279.1
+   286(15)      0.00444     238.7   279.3
+   309(16)      0.00391     238.7   279.9
+   306(16)      0.00391     238.7   281.3
+   299(16)      0.00391     238.7   283.9
+   298(16)      0.00391     238.6   288.1
+   296(16)      0.00391     238.6   294.3
+   315(16)      0.00391     238.6   302.8
+   341(17)      0.003460    238.6   314.1
+   327(16)      0.00391     238.6   328.5
+   330(16)      0.00391     238.6   346.0
+   372(17)      0.003460    238.5   366.7
+   392(18)      0.003086    238.5   390.3
+   401(18)      0.003086    238.5   416.0
+   447(19)      0.002770    238.5   442.6
+   457(19)      0.002770    238.5   468.5
+   478(20)      0.002500    238.5   491.3
+   495(20)      0.002500    238.5   508.2
+   519(21)      0.002268    238.4   516.9
+   519(21)      0.002268    238.4   515.9
+   506(20)      0.002500    238.4   505.6
+   509(21)      0.002268    238.4   488.0
+   486(20)      0.002500    238.4   465.4
+   454(19)      0.002770    238.4   440.5
+   412(18)      0.003086    238.4   415.0
+   366(17)      0.003460    238.3   390.6
+   388(18)      0.003086    238.3   368.2
+   354(17)      0.003460    238.3   348.7
+   332(17)      0.003460    238.3   332.2
+   334(17)      0.003460    238.3   318.8
+   306(16)      0.00391     238.3   308.3
+   276(15)      0.00444     238.3   300.2
+   291(15)      0.00444     238.2   294.1
+   300(16)      0.00391     238.2   289.5
+   261(15)      0.00444     238.2   285.9
+   285(15)      0.00444     238.2   282.9
+   281(15)      0.00444     238.2   280.0
+   250(14)      0.00510     238.2   277.3
+   259(14)      0.00510     238.2   274.8
+   297(16)      0.00391     238.2   272.5
+   273(15)      0.00444     238.1   270.5
+   259(15)      0.00444     238.1   268.9
+   265(15)      0.00444     238.1   267.9
+   279(15)      0.00444     238.1   267.4
+   278(15)      0.00444     238.1   267.4
+   271(15)      0.00444     238.1   267.9
+   259(15)      0.00444     238.1   268.9
+   257(14)      0.00510     238.1   270.2
+   258(15)      0.00444     238.0   271.7
+   270(15)      0.00444     238.0   273.3
+   280(15)      0.00444     238.0   274.5
+   279(15)      0.00444     238.0   275.3
+   292(15)      0.00444     238.0   275.4
+   297(16)      0.00391     238.0   274.9
+   274(15)      0.00444     238.0   274.0
+   285(15)      0.00444     238.0   272.8
+   294(21)      0.002268    237.9   271.6
+   287(15)      0.00444     237.9   270.7
+   265(14)      0.00510     237.9   270.3
+   270(14)      0.00510     237.9   270.3
+   281(15)      0.00444     237.9   270.8
+   276(15)      0.00444     237.9   271.9
+   288(15)      0.00444     237.9   273.3
+   275(15)      0.00444     237.9   274.9
+   265(14)      0.00510     237.9   276.5
+   301(15)      0.00444     237.8   277.9
+   304(15)      0.00444     237.8   278.9
+   278(15)      0.00444     237.8   279.3
+   275(15)      0.00444     237.8   278.9
+   278(15)      0.00444     237.8   277.8
+   279(15)      0.00444     237.8   275.9
+   268(14)      0.00510     237.8   273.3
+   282(15)      0.00444     237.8   270.4
+   282(15)      0.00444     237.8   267.3
+   274(15)      0.00444     237.8   264.3
+   271(14)      0.00510     237.7   261.5
+   277(15)      0.00444     237.7   259.0
+   257(14)      0.00510     237.7   256.8
+   248(14)      0.00510     237.7   254.9
+   271(14)      0.00510     237.7   253.4
+   280(15)      0.00444     237.7   252.2
+   236(13)      0.00592     237.7   251.3
+   264(14)      0.00510     237.7   250.6
+   267(14)      0.00510     237.7   250.1
+   236(13)      0.00592     237.7   249.8
+   258(14)      0.00510     237.7   249.7
+   245(14)      0.00510     237.6   249.6
+   250(14)      0.00510     237.6   249.7
+   257(14)      0.00510     237.6   249.9
+   268(14)      0.00510     237.6   250.2
+   246(14)      0.00510     237.6   250.5
+   227(13)      0.00592     237.6   250.9
+   256(14)      0.00510     237.6   251.4
+   249(14)      0.00510     237.6   252.0
+   257(14)      0.00510     237.6   252.6
+   244(14)      0.00510     237.6   253.2
+   244(14)      0.00510     237.6   253.8
+   252(14)      0.00510     237.6   254.4
+   262(14)      0.00510     237.6   255.0
+   253(14)      0.00510     237.5   255.7
+   251(14)      0.00510     237.5   256.4
+   251(14)      0.00510     237.5   257.2
+   258(14)      0.00510     237.5   258.3
+   262(14)      0.00510     237.5   259.7
+   264(14)      0.00510     237.5   261.5
+   257(14)      0.00510     237.5   263.9
+   257(14)      0.00510     237.5   267.0
+   277(15)      0.00444     237.5   271.0
+   269(14)      0.00510     237.5   276.0
+   282(15)      0.00444     237.5   282.3
+   314(16)      0.00391     237.5   290.0
+   299(15)      0.00444     237.5   299.3
+   336(16)      0.00391     237.5   310.3
+   334(16)      0.00391     237.5   322.9
+   359(17)      0.003460    237.4   337.1
+   374(17)      0.003460    237.4   352.6
+   389(17)      0.003460    237.4   368.9
+   414(18)      0.003086    237.4   385.3
+   438(18)      0.003086    237.4   401.1
+   475(19)      0.002770    237.4   415.3
+   460(19)      0.002770    237.4   427.1
+   472(19)      0.002770    237.4   435.4
+   482(19)      0.002770    237.4   439.7
+   464(19)      0.002770    237.4   439.8
+   443(19)      0.002770    237.4   436.1
+   452(19)      0.002770    237.4   429.5
+   418(18)      0.003086    237.4   421.1
+   370(17)      0.003460    237.4   411.7
+   402(18)      0.003086    237.4   402.0
+   378(17)      0.003460    237.4   392.0
+   373(17)      0.003460    237.4   381.6
+   329(16)      0.00391     237.4   370.6
+   351(16)      0.00391     237.3   359.1
+   341(16)      0.00391     237.3   347.2
+   320(16)      0.00391     237.3   335.3
+   307(15)      0.00444     237.3   323.8
+   295(15)      0.00444     237.3   313.2
+   302(15)      0.00444     237.3   303.5
+   266(14)      0.00510     237.3   294.9
+   267(14)      0.00510     237.3   287.5
+   284(15)      0.00444     237.3   281.2
+   267(14)      0.00510     237.3   275.9
+   272(14)      0.00510     237.3   271.6
+   242(14)      0.00510     237.3   268.1
+   245(14)      0.00510     237.3   265.3
+   238(13)      0.00592     237.3   263.1
+   250(14)      0.00510     237.3   261.4
+   270(14)      0.00510     237.3   260.2
+   230(13)      0.00592     237.3   259.3
+   239(14)      0.00510     237.3   258.7
+   246(14)      0.00510     237.3   258.4
+   249(14)      0.00510     237.3   258.3
+   240(14)      0.00510     237.3   258.4
+   260(14)      0.00510     237.3   258.7
+   286(15)      0.00444     237.3   259.3
+   288(15)      0.00444     237.3   260.3
+   283(15)      0.00444     237.3   261.5
+   246(14)      0.00510     237.3   263.2
+   271(15)      0.00444     237.3   265.5
+   306(15)      0.00444     237.3   268.3
+   273(15)      0.00444     237.3   271.9
+   295(15)      0.00444     237.3   276.3
+   297(15)      0.00444     237.3   281.6
+   309(16)      0.00391     237.3   287.9
+   302(15)      0.00444     237.2   295.3
+   361(17)      0.003460    237.2   303.6
+   332(16)      0.00391     237.2   312.8
+   334(16)      0.00391     237.2   322.8
+   352(17)      0.003460    237.2   333.2
+   307(15)      0.00444     237.2   343.7
+   391(18)      0.003086    237.2   353.7
+   366(17)      0.003460    237.2   362.7
+   376(17)      0.003460    237.2   370.2
+   368(17)      0.003460    237.2   376.1
+   346(16)      0.00391     237.2   380.7
+   373(17)      0.003460    237.2   384.1
+   399(18)      0.003086    237.2   386.7
+   444(19)      0.002770    237.2   388.6
+   408(18)      0.003086    237.2   389.5
+   400(18)      0.003086    237.2   389.4
+   392(18)      0.003086    237.2   387.8
+   389(17)      0.003460    237.2   384.8
+   407(18)      0.003086    237.2   380.5
+   389(17)      0.003460    237.2   375.1
+   385(17)      0.003460    237.2   368.9
+   366(17)      0.003460    237.2   362.3
+   373(17)      0.003460    237.2   355.8
+   342(16)      0.00391     237.2   349.9
+   363(17)      0.003460    237.2   344.9
+   343(16)      0.00391     237.2   341.1
+   365(17)      0.003460    237.2   338.6
+   348(17)      0.003460    237.2   337.3
+   322(16)      0.00391     237.2   337.0
+   340(16)      0.00391     237.2   337.3
+   319(16)      0.00391     237.2   337.7
+   333(16)      0.00391     237.2   337.5
+   307(15)      0.00444     237.2   336.4
+   310(16)      0.00391     237.2   333.8
+   352(17)      0.003460    237.2   329.9
+   350(17)      0.003460    237.2   324.8
+   304(15)      0.00444     237.2   318.9
+   314(16)      0.00391     237.2   312.7
+   293(15)      0.00444     237.2   306.3
+   319(16)      0.00391     237.2   300.2
+   316(16)      0.00391     237.2   294.4
+   280(15)      0.00444     237.2   289.0
+   264(14)      0.00510     237.2   284.2
+   255(14)      0.00510     237.2   279.9
+   270(14)      0.00510     237.3   276.3
+   269(14)      0.00510     237.3   273.2
+   254(14)      0.00510     237.3   270.8
+   264(14)      0.00510     237.3   269.0
+   259(14)      0.00510     237.3   267.8
+   262(14)      0.00510     237.3   267.2
+   265(14)      0.00510     237.3   267.2
+   263(14)      0.00510     237.3   267.7
+   294(15)      0.00444     237.3   269.0
+   262(14)      0.00510     237.3   270.9
+   285(15)      0.00444     237.3   273.6
+   288(15)      0.00444     237.3   277.2
+   291(15)      0.00444     237.3   281.7
+   297(15)      0.00444     237.3   287.0
+   303(15)      0.00444     237.3   293.3
+   341(16)      0.00391     237.3   300.3
+   323(16)      0.00391     237.3   308.0
+   322(16)      0.00391     237.3   316.2
+   328(16)      0.00391     237.3   324.5
+   330(16)      0.00391     237.3   332.4
+   340(16)      0.00391     237.3   339.5
+   387(17)      0.003460    237.3   345.2
+   355(17)      0.003460    237.3   349.1
+   363(17)      0.003460    237.3   350.8
+   344(16)      0.00391     237.3   350.2
+   343(16)      0.00391     237.3   347.2
+   329(16)      0.00391     237.3   342.2
+   361(17)      0.003460    237.3   335.5
+   335(16)      0.00391     237.3   327.7
+   347(16)      0.00391     237.3   319.3
+   316(16)      0.00391     237.3   310.7
+   320(16)      0.00391     237.3   302.5
+   282(15)      0.00444     237.3   294.9
+   299(15)      0.00444     237.4   287.9
+   255(14)      0.00510     237.4   281.9
+   283(15)      0.00444     237.4   276.6
+   274(15)      0.00444     237.4   272.2
+   257(14)      0.00510     237.4   268.6
+   256(14)      0.00510     237.4   265.7
+   285(15)      0.00444     237.4   263.5
+   268(14)      0.00510     237.4   261.9
+   264(14)      0.00510     237.4   260.7
+   255(14)      0.00510     237.4   260.1
+   252(14)      0.00510     237.4   259.8
+   236(14)      0.00510     237.4   259.8
+   245(14)      0.00510     237.4   260.3
+   256(14)      0.00510     237.4   261.0
+   260(14)      0.00510     237.4   262.1
+   259(14)      0.00510     237.4   263.5
+   275(15)      0.00444     237.4   265.2
+   250(14)      0.00510     237.4   267.3
+   269(15)      0.00444     237.4   269.7
+   277(15)      0.00444     237.4   272.4
+   268(15)      0.00444     237.5   275.5
+   267(15)      0.00444     237.5   278.8
+   275(15)      0.00444     237.5   282.4
+   300(16)      0.00391     237.5   286.2
+   277(15)      0.00444     237.5   290.0
+   282(15)      0.00444     237.5   294.1
+   269(15)      0.00444     237.5   298.3
+   274(15)      0.00444     237.5   302.8
+   327(17)      0.003460    237.5   307.8
+   333(17)      0.003460    237.5   313.3
+   309(16)      0.00391     237.5   319.4
+   322(16)      0.00391     237.5   326.2
+   319(16)      0.00391     237.5   333.4
+   325(16)      0.00391     237.5   340.9
+   368(18)      0.003086    237.5   348.1
+   351(17)      0.003460    237.5   354.7
+   344(17)      0.003460    237.6   359.9
+   369(18)      0.003086    237.6   363.3
+   352(17)      0.003460    237.6   364.4
+   355(17)      0.003460    237.6   363.3
+   346(17)      0.003460    237.6   360.1
+   340(17)      0.003460    237.6   355.3
+   336(17)      0.003460    237.6   349.4
+   331(17)      0.003460    237.6   342.8
+   320(16)      0.00391     237.6   336.0
+   352(17)      0.003460    237.6   329.2
+   330(17)      0.003460    237.6   322.6
+   346(17)      0.003460    237.6   316.4
+   310(16)      0.00391     237.6   311.0
+   299(16)      0.00391     237.6   306.4
+   316(16)      0.00391     237.7   302.9
+   276(15)      0.00444     237.7   300.5
+   297(16)      0.00391     237.7   299.3
+   282(15)      0.00444     237.7   299.2
+   277(15)      0.00444     237.7   300.2
+   286(15)      0.00444     237.7   302.1
+   279(15)      0.00444     237.7   304.9
+   289(15)      0.00444     237.7   308.3
+   308(16)      0.00391     237.7   312.0
+   309(16)      0.00391     237.7   315.7
+   323(16)      0.00391     237.7   319.0
+   309(16)      0.00391     237.7   321.5
+   299(16)      0.00391     237.8   323.0
+   280(15)      0.00444     237.8   323.1
+   342(17)      0.003460    237.8   321.9
+   304(16)      0.00391     237.8   319.6
+   296(16)      0.00391     237.8   316.5
+   306(16)      0.00391     237.8   313.0
+   295(16)      0.00391     237.8   309.5
+   321(16)      0.00391     237.8   306.2
+   291(16)      0.00391     237.8   303.2
+   296(16)      0.00391     237.8   300.8
+   300(16)      0.00391     237.8   299.1
+   314(16)      0.00391     237.8   297.9
+   302(16)      0.00391     237.9   297.3
+   288(15)      0.00444     237.9   297.3
+   287(15)      0.00444     237.9   297.6
+   293(16)      0.00391     237.9   298.1
+   284(15)      0.00444     237.9   298.8
+   288(15)      0.00444     237.9   299.5
+   316(16)      0.00391     237.9   300.4
+   290(16)      0.00391     237.9   301.4
+   293(16)      0.00391     237.9   302.9
+   286(15)      0.00444     237.9   304.8
+   294(16)      0.00391     238.0   307.5
+   320(16)      0.00391     238.0   311.0
+   316(16)      0.00391     238.0   315.4
+   295(16)      0.00391     238.0   320.9
+   317(16)      0.00391     238.0   327.3
+   332(17)      0.003460    238.0   334.7
+   332(17)      0.003460    238.0   343.1
+   341(17)      0.003460    238.0   352.5
+   348(17)      0.003460    238.0   362.6
+   366(18)      0.003086    238.0   373.6
+   388(18)      0.003086    238.1   385.4
+   407(18)      0.003086    238.1   397.8
+   413(19)      0.002770    238.1   410.8
+   439(19)      0.002770    238.1   423.9
+   435(19)      0.002770    238.1   437.0
+   441(19)      0.002770    238.1   449.4
+   474(20)      0.002500    238.1   460.4
+   470(20)      0.002500    238.1   469.0
+   496(20)      0.002500    238.1   474.4
+   473(20)      0.002500    238.1   475.5
+   494(20)      0.002500    238.2   472.1
+   495(20)      0.002500    238.2   464.2
+   484(20)      0.002500    238.2   452.4
+   468(20)      0.002500    238.2   437.6
+   455(20)      0.002500    238.2   421.0
+   399(18)      0.003086    238.2   403.5
+   422(19)      0.002770    238.2   386.0
+   389(18)      0.003086    238.2   369.0
+   340(17)      0.003460    238.2   353.1
+   339(17)      0.003460    238.3   338.5
+   326(16)      0.00391     238.3   325.3
+   329(17)      0.003460    238.3   313.7
+   337(17)      0.003460    238.3   303.7
+   278(15)      0.00444     238.3   295.0
+   296(16)      0.00391     238.3   287.8
+   265(15)      0.00444     238.3   281.7
+   251(15)      0.00444     238.3   276.7
+   253(15)      0.00444     238.3   272.7
+   238(14)      0.00510     238.4   269.4
+   256(15)      0.00444     238.4   266.7
+   259(15)      0.00444     238.4   264.5
+   262(15)      0.00444     238.4   262.8
+   265(15)      0.00444     238.4   261.3
+   286(16)      0.00391     238.4   260.2
+   264(15)      0.00444     238.4   259.3
+   274(15)      0.00444     238.4   258.5
+   245(14)      0.00510     238.5   257.9
+   236(14)      0.00510     238.5   257.5
+   252(15)      0.00444     238.5   257.2
+   260(15)      0.00444     238.5   257.0
+   283(16)      0.00391     238.5   257.0
+   244(14)      0.00510     238.5   257.1
+   270(15)      0.00444     238.5   257.4
+   282(16)      0.00391     238.5   257.9
+   241(14)      0.00510     238.5   258.5
+   241(14)      0.00510     238.6   259.4
+   244(14)      0.00510     238.6   260.4
+   258(15)      0.00444     238.6   261.7
+   272(15)      0.00444     238.6   263.2
+   247(15)      0.00444     238.6   265.0
+   244(14)      0.00510     238.6   266.9
+   268(15)      0.00444     238.6   268.9
+   277(15)      0.00444     238.6   271.1
+   302(16)      0.00391     238.7   273.3
+   248(15)      0.00444     238.7   275.5
+   242(14)      0.00510     238.7   277.5
+   299(16)      0.00391     238.7   279.3
+   250(15)      0.00444     238.7   280.6
+   276(15)      0.00444     238.7   281.3
+   276(15)      0.00444     238.7   281.5
+   291(16)      0.00391     238.7   281.1
+   266(15)      0.00444     238.8   280.1
+   270(15)      0.00444     238.8   278.7
+   275(15)      0.00444     238.8   277.1
+   252(15)      0.00444     238.8   275.3
+   287(16)      0.00391     238.8   273.4
+   265(15)      0.00444     238.8   271.7
+   276(15)      0.00444     238.8   270.1
+   274(15)      0.00444     238.9   268.7
+   238(14)      0.00510     238.9   267.6
+   267(15)      0.00444     238.9   266.8
+   272(15)      0.00444     238.9   266.3
+   266(15)      0.00444     238.9   266.1
+   278(15)      0.00444     238.9   266.2
+   270(15)      0.00444     238.9   266.5
+   259(15)      0.00444     238.9   267.0
+   274(15)      0.00444     239.0   267.8
+   260(15)      0.00444     239.0   268.6
+   271(15)      0.00444     239.0   269.6
+   282(16)      0.00391     239.0   270.7
+   271(15)      0.00444     239.0   271.8
+   260(15)      0.00444     239.0   272.9
+   274(15)      0.00444     239.0   273.9
+   299(16)      0.00391     239.1   274.9
+   267(15)      0.00444     239.1   275.7
+   276(15)      0.00444     239.1   276.4
+   307(16)      0.00391     239.1   277.1
+   295(16)      0.00391     239.1   277.9
+   286(16)      0.00391     239.1   278.8
+   279(15)      0.00444     239.1   279.9
+   268(15)      0.00444     239.1   281.3
+   288(16)      0.00391     239.2   283.2
+   295(16)      0.00391     239.2   285.5
+   282(16)      0.00391     239.2   288.3
+   284(16)      0.00391     239.2   291.9
+   283(16)      0.00391     239.2   296.1
+   279(15)      0.00444     239.2   301.2
+   288(16)      0.00391     239.2   307.1
+   316(16)      0.00391     239.3   314.0
+   329(17)      0.003460    239.3   321.7
+   328(17)      0.003460    239.3   330.2
+   332(17)      0.003460    239.3   339.5
+   355(17)      0.003460    239.3   349.3
+   358(18)      0.003086    239.3   359.3
+   380(18)      0.003086    239.3   369.2
+   391(18)      0.003086    239.4   378.5
+   383(18)      0.003086    239.4   386.8
+   400(19)      0.002770    239.4   393.4
+   393(18)      0.003086    239.4   397.8
+   398(19)      0.002770    239.4   399.9
+   401(19)      0.002770    239.4   399.4
+   439(19)      0.002770    239.4   396.6
+   424(19)      0.002770    239.5   392.0
+   404(19)      0.002770    239.5   386.1
+   410(19)      0.002770    239.5   379.5
+   393(18)      0.003086    239.5   372.6
+   373(18)      0.003086    239.5   366.0
+   365(18)      0.003086    239.5   359.9
+   363(18)      0.003086    239.5   354.6
+   369(18)      0.003086    239.6   350.3
+   373(18)      0.003086    239.6   347.0
+   370(18)      0.003086    239.6   344.9
+   354(17)      0.003460    239.6   343.9
+   336(16)      0.00391     239.6   343.9
+   349(17)      0.003460    239.6   344.7
+   345(17)      0.003460    239.6   346.3
+   305(16)      0.00391     239.7   348.2
+   341(16)      0.00391     239.7   350.2
+   349(17)      0.003460    239.7   351.8
+   337(16)      0.00391     239.7   352.7
+   341(16)      0.00391     239.7   352.6
+   364(17)      0.003460    239.7   351.3
+   344(17)      0.003460    239.8   348.9
+   340(16)      0.00391     239.8   345.3
+   320(16)      0.00391     239.8   341.0
+   347(17)      0.003460    239.8   336.2
+   320(16)      0.00391     239.8   331.2
+   318(16)      0.00391     239.8   326.3
+   338(16)      0.00391     239.8   321.7
+   331(16)      0.00391     239.9   317.8
+   338(16)      0.00391     239.9   314.5
+   320(16)      0.00391     239.9   312.1
+   332(16)      0.00391     239.9   310.5
+   302(15)      0.00444     239.9   310.0
+   325(16)      0.00391     239.9   310.6
+   316(16)      0.00391     239.9   312.2
+   313(16)      0.00391     240.0   314.8
+   310(16)      0.00391     240.0   318.5
+   343(17)      0.003460    240.0   323.2
+   328(16)      0.00391     240.0   328.9
+   350(17)      0.003460    240.0   335.5
+   329(16)      0.00391     240.0   342.8
+   331(16)      0.00391     240.0   350.8
+   353(17)      0.003460    240.1   359.2
+   376(17)      0.003460    240.1   367.7
+   378(17)      0.003460    240.1   376.0
+   390(18)      0.003086    240.1   383.6
+   389(18)      0.003086    240.1   390.2
+   391(18)      0.003086    240.1   395.2
+   435(19)      0.002770    240.2   398.4
+   385(18)      0.003086    240.2   399.4
+   399(18)      0.003086    240.2   398.3
+   397(18)      0.003086    240.2   395.1
+   386(18)      0.003086    240.2   390.2
+   382(17)      0.003460    240.2   384.0
+   375(17)      0.003460    240.2   376.9
+   361(17)      0.003460    240.3   369.4
+   355(17)      0.003460    240.3   361.7
+   343(17)      0.003460    240.3   354.3
+   349(17)      0.003460    240.3   347.4
+   320(16)      0.00391     240.3   341.3
+   318(16)      0.00391     240.3   336.2
+   333(16)      0.00391     240.4   332.2
+   311(16)      0.00391     240.4   329.4
+   295(15)      0.00444     240.4   327.9
+   326(16)      0.00391     240.4   327.6
+   306(16)      0.00391     240.4   328.6
+   334(16)      0.00391     240.4   330.8
+   337(16)      0.00391     240.4   334.2
+   341(16)      0.00391     240.5   338.7
+   351(17)      0.003460    240.5   344.1
+   373(17)      0.003460    240.5   350.2
+   370(17)      0.003460    240.5   357.0
+   377(17)      0.003460    240.5   364.1
+   403(18)      0.003086    240.5   371.4
+   390(18)      0.003086    240.5   378.8
+   385(18)      0.003086    240.6   386.0
+   407(18)      0.003086    240.6   393.0
+   390(18)      0.003086    240.6   399.6
+   381(17)      0.003460    240.6   405.7
+   386(18)      0.003086    240.6   410.9
+   395(18)      0.003086    240.6   415.2
+   404(18)      0.003086    240.7   418.2
+   426(18)      0.003086    240.7   419.8
+   418(18)      0.003086    240.7   420.0
+   440(19)      0.002770    240.7   418.9
+   432(19)      0.002770    240.7   416.6
+   400(18)      0.003086    240.7   413.3
+   397(18)      0.003086    240.7   409.3
+   410(18)      0.003086    240.8   404.5
+   404(18)      0.003086    240.8   399.1
+   389(18)      0.003086    240.8   393.2
+   355(17)      0.003460    240.8   386.8
+   377(17)      0.003460    240.8   380.2
+   356(17)      0.003460    240.8   373.5
+   347(17)      0.003460    240.9   366.9
+   350(17)      0.003460    240.9   360.7
+   361(17)      0.003460    240.9   355.1
+   334(16)      0.00391     240.9   350.3
+   348(17)      0.003460    240.9   346.3
+   329(16)      0.00391     240.9   343.2
+   349(17)      0.003460    240.9   341.0
+   332(16)      0.00391     241.0   339.7
+   290(15)      0.00444     241.0   339.3
+   317(16)      0.00391     241.0   339.5
+   309(16)      0.00391     241.0   340.3
+   347(17)      0.003460    241.0   341.6
+   347(17)      0.003460    241.0   343.0
+   346(17)      0.003460    241.1   344.4
+   334(16)      0.00391     241.1   345.8
+   322(16)      0.00391     241.1   346.9
+   354(23)      0.001890    241.1   347.7
+   350(17)      0.003460    241.1   348.1
+   350(17)      0.003460    241.1   348.1
+   335(16)      0.00391     241.1   347.5
+   342(17)      0.003460    241.2   346.3
+   343(17)      0.003460    241.2   344.4
+   331(16)      0.00391     241.2   341.8
+   346(17)      0.003460    241.2   338.6
+   344(17)      0.003460    241.2   334.7
+   327(16)      0.00391     241.2   330.4
+   342(16)      0.00391     241.2   325.8
+   316(16)      0.00391     241.3   321.1
+   303(16)      0.00391     241.3   316.4
+   315(16)      0.00391     241.3   312.0
+   299(15)      0.00444     241.3   307.9
+   332(16)      0.00391     241.3   304.1
+   295(15)      0.00444     241.3   300.9
+   287(15)      0.00444     241.4   298.0
+   292(15)      0.00444     241.4   295.7
+   286(15)      0.00444     241.4   293.8
+   306(16)      0.00391     241.4   292.3
+   289(15)      0.00444     241.4   291.2
+   274(15)      0.00444     241.4   290.4
+   270(15)      0.00444     241.4   289.8
+   273(15)      0.00444     241.5   289.3
+   295(15)      0.00444     241.5   288.9
+   288(15)      0.00444     241.5   288.5
+   264(14)      0.00510     241.5   287.9
+   264(14)      0.00510     241.5   287.2
+   274(15)      0.00444     241.5   286.3
+   297(15)      0.00444     241.5   285.3
+   304(16)      0.00391     241.6   284.2
+   299(15)      0.00444     241.6   283.1
+   291(15)      0.00444     241.6   281.9
+   268(15)      0.00444     241.6   280.9
+   272(15)      0.00444     241.6   279.9
+   285(15)      0.00444     241.6   279.1
+   295(15)      0.00444     241.7   278.5
+   261(14)      0.00510     241.7   278.2
+   281(15)      0.00444     241.7   278.1
+   289(15)      0.00444     241.7   278.3
+   259(14)      0.00510     241.7   278.8
+   245(14)      0.00510     241.7   279.7
+   269(15)      0.00444     241.7   281.0
+   284(15)      0.00444     241.8   282.6
+   282(15)      0.00444     241.8   284.7
+   290(15)      0.00444     241.8   287.2
+   297(15)      0.00444     241.8   290.1
+   300(15)      0.00444     241.8   293.5
+   315(16)      0.00391     241.8   297.3
+   305(16)      0.00391     241.8   301.7
+   315(16)      0.00391     241.9   306.5
+   312(16)      0.00391     241.9   311.8
+   308(16)      0.00391     241.9   317.5
+   312(16)      0.00391     241.9   323.8
+   328(16)      0.00391     241.9   330.4
+   331(16)      0.00391     241.9   337.3
+   336(16)      0.00391     241.9   344.5
+   351(17)      0.003460    242.0   351.7
+   369(17)      0.003460    242.0   358.9
+   385(18)      0.003086    242.0   365.9
+   379(17)      0.003460    242.0   372.4
+   396(18)      0.003086    242.0   378.3
+   360(17)      0.003460    242.0   383.5
+   388(18)      0.003086    242.0   388.0
+   385(18)      0.003086    242.1   391.8
+   394(18)      0.003086    242.1   395.1
+   383(17)      0.003460    242.1   397.9
+   401(18)      0.003086    242.1   400.3
+   399(18)      0.003086    242.1   402.4
+   416(18)      0.003086    242.1   404.1
+   395(18)      0.003086    242.1   405.4
+   389(18)      0.003086    242.2   406.1
+   384(18)      0.003086    242.2   406.0
+   395(18)      0.003086    242.2   405.0
+   388(18)      0.003086    242.2   403.0
+   369(17)      0.003460    242.2   399.9
+   372(17)      0.003460    242.2   395.7
+   380(17)      0.003460    242.2   390.8
+   385(18)      0.003086    242.3   385.2
+   364(17)      0.003460    242.3   379.2
+   366(17)      0.003460    242.3   373.2
+   364(17)      0.003460    242.3   367.2
+   353(17)      0.003460    242.3   361.6
+   341(16)      0.00391     242.3   356.5
+   367(17)      0.003460    242.3   351.9
+   364(17)      0.003460    242.4   347.9
+   341(16)      0.00391     242.4   344.5
+   306(16)      0.00391     242.4   341.8
+   341(16)      0.00391     242.4   339.6
+   352(17)      0.003460    242.4   337.9
+   342(16)      0.00391     242.4   336.7
+   320(16)      0.00391     242.4   335.8
+   328(16)      0.00391     242.4   335.2
+   312(16)      0.00391     242.5   334.7
+   307(16)      0.00391     242.5   334.5
+   308(16)      0.00391     242.5   334.5
+   345(17)      0.003460    242.5   334.7
+   328(16)      0.00391     242.5   335.2
+   333(16)      0.00391     242.5   336.0
+   331(16)      0.00391     242.5   337.3
+   321(16)      0.00391     242.6   339.0
+   334(16)      0.00391     242.6   341.2
+   354(17)      0.003460    242.6   343.8
+   332(16)      0.00391     242.6   346.9
+   338(17)      0.003460    242.6   350.2
+   343(17)      0.003460    242.6   353.8
+   364(17)      0.003460    242.6   357.5
+   353(17)      0.003460    242.6   361.2
+   350(17)      0.003460    242.7   364.6
+   396(18)      0.003086    242.7   367.7
+   394(18)      0.003086    242.7   370.4
+   403(18)      0.003086    242.7   372.6
+   399(18)      0.003086    242.7   374.2
+   375(17)      0.003460    242.7   375.2
+   366(17)      0.003460    242.7   375.7
+   388(18)      0.003086    242.8   375.6
+   399(18)      0.003086    242.8   375.0
+   404(18)      0.003086    242.8   373.7
+   368(17)      0.003460    242.8   371.9
+   371(17)      0.003460    242.8   369.6
+   355(17)      0.003460    242.8   366.8
+   356(17)      0.003460    242.8   363.7
+   371(17)      0.003460    242.8   360.4
+   373(17)      0.003460    242.9   356.9
+   374(17)      0.003460    242.9   353.5
+   340(17)      0.003460    242.9   350.2
+   380(17)      0.003460    242.9   347.1
+   367(17)      0.003460    242.9   344.2
+   357(17)      0.003460    242.9   341.5
+   344(17)      0.003460    242.9   339.0
+   334(16)      0.00391     242.9   336.6
+   340(17)      0.003460    243.0   334.3
+   330(16)      0.00391     243.0   332.2
+   316(16)      0.00391     243.0   330.1
+   319(16)      0.00391     243.0   328.1
+   319(16)      0.00391     243.0   326.2
+   310(16)      0.00391     243.0   324.6
+   326(16)      0.00391     243.0   323.1
+   325(16)      0.00391     243.0   322.0
+   316(16)      0.00391     243.1   321.2
+   318(16)      0.00391     243.1   320.7
+   296(15)      0.00444     243.1   320.5
+   303(16)      0.00391     243.1   320.7
+   296(15)      0.00444     243.1   321.2
+   307(16)      0.00391     243.1   321.8
+   334(16)      0.00391     243.1   322.7
+   317(16)      0.00391     243.1   323.6
+   311(16)      0.00391     243.2   324.5
+   326(16)      0.00391     243.2   325.3
+   308(16)      0.00391     243.2   325.9
+   319(16)      0.00391     243.2   326.2
+   313(16)      0.00391     243.2   326.2
+   323(16)      0.00391     243.2   325.9
+   324(16)      0.00391     243.2   325.3
+   330(16)      0.00391     243.2   324.4
+   326(16)      0.00391     243.3   323.5
+   330(16)      0.00391     243.3   322.5
+   334(16)      0.00391     243.3   321.6
+   336(16)      0.00391     243.3   320.8
+   330(16)      0.00391     243.3   320.2
+   315(16)      0.00391     243.3   319.8
+   344(17)      0.003460    243.3   319.6
+   322(16)      0.00391     243.3   319.7
+   332(16)      0.00391     243.3   319.9
+   358(17)      0.003460    243.4   320.3
+   359(17)      0.003460    243.4   320.8
+   327(16)      0.00391     243.4   321.3
+   342(17)      0.003460    243.4   321.8
+   347(17)      0.003460    243.4   322.2
+   328(16)      0.00391     243.4   322.4
+   341(17)      0.003460    243.4   322.3
+   319(16)      0.00391     243.4   321.9
+   317(16)      0.00391     243.5   321.1
+   326(16)      0.00391     243.5   319.9
+   335(16)      0.00391     243.5   318.3
+   326(16)      0.00391     243.5   316.4
+   324(16)      0.00391     243.5   314.3
+   322(16)      0.00391     243.5   311.9
+   305(16)      0.00391     243.5   309.4
+   280(15)      0.00444     243.5   307.0
+   305(16)      0.00391     243.5   304.6
+   309(16)      0.00391     243.6   302.3
+   297(15)      0.00444     243.6   300.3
+   302(16)      0.00391     243.6   298.5
+   305(16)      0.00391     243.6   297.0
+   308(16)      0.00391     243.6   295.9
+   311(16)      0.00391     243.6   295.2
+   304(16)      0.00391     243.6   294.8
+   301(16)      0.00391     243.6   295.0
+   290(15)      0.00444     243.6   295.5
+   298(15)      0.00444     243.7   296.6
+   309(16)      0.00391     243.7   298.1
+   309(16)      0.00391     243.7   300.1
+   312(16)      0.00391     243.7   302.6
+   315(16)      0.00391     243.7   305.6
+   318(16)      0.00391     243.7   309.0
+   316(16)      0.00391     243.7   312.9
+   326(16)      0.00391     243.7   317.2
+   321(16)      0.00391     243.7   321.9
+   336(16)      0.00391     243.8   326.9
+   310(16)      0.00391     243.8   332.2
+   314(16)      0.00391     243.8   337.8
+   352(17)      0.003460    243.8   343.4
+   343(17)      0.003460    243.8   349.1
+   345(17)      0.003460    243.8   354.8
+   328(17)      0.003460    243.8   360.2
+   354(17)      0.003460    243.8   365.3
+   375(18)      0.003086    243.8   369.9
+   365(18)      0.003086    243.8   373.9
+   363(18)      0.003086    243.9   377.2
+   368(18)      0.003086    243.9   379.9
+   351(17)      0.003460    243.9   381.9
+   363(18)      0.003086    243.9   383.2
+   370(18)      0.003086    243.9   384.1
+   410(19)      0.002770    243.9   384.6
+   376(18)      0.003086    243.9   384.8
+   365(18)      0.003086    243.9   385.0
+   355(17)      0.003460    243.9   385.1
+   366(18)      0.003086    244.0   385.2
+   388(18)      0.003086    244.0   385.4
+   395(18)      0.003086    244.0   385.6
+   398(18)      0.003086    244.0   385.8
+   373(18)      0.003086    244.0   385.8
+   393(18)      0.003086    244.0   385.6
+   384(18)      0.003086    244.0   385.0
+   390(18)      0.003086    244.0   383.9
+   382(18)      0.003086    244.0   382.1
+   369(18)      0.003086    244.0   379.7
+   374(18)      0.003086    244.1   376.5
+   361(18)      0.003086    244.1   372.6
+   397(18)      0.003086    244.1   368.0
+   366(18)      0.003086    244.1   362.9
+   376(18)      0.003086    244.1   357.5
+   383(18)      0.003086    244.1   351.8
+   350(17)      0.003460    244.1   345.9
+   331(17)      0.003460    244.1   340.1
+   323(17)      0.003460    244.1   334.4
+   317(16)      0.00391     244.1   328.9
+   324(17)      0.003460    244.2   323.6
+   310(16)      0.00391     244.2   318.6
+   311(16)      0.00391     244.2   313.9
+   298(16)      0.00391     244.2   309.7
+   295(16)      0.00391     244.2   305.7
+   289(16)      0.00391     244.2   302.2
+   284(16)      0.00391     244.2   299.0
+   277(15)      0.00444     244.2   296.2
+   284(16)      0.00391     244.2   293.8
+   283(16)      0.00391     244.2   291.7
+   291(16)      0.00391     244.2   289.9
+   281(16)      0.00391     244.3   288.5
+   275(15)      0.00444     244.3   287.3
+   272(15)      0.00444     244.3   286.5
+   286(16)      0.00391     244.3   285.9
+   277(15)      0.00444     244.3   285.5
+   289(16)      0.00391     244.3   285.4
+   284(16)      0.00391     244.3   285.5
+   275(15)      0.00444     244.3   285.8
+   261(15)      0.00444     244.3   286.3
+   305(16)      0.00391     244.3   287.1
+   289(16)      0.00391     244.4   288.1
+   293(16)      0.00391     244.4   289.3
+   288(16)      0.00391     244.4   290.8
+   302(16)      0.00391     244.4   292.5
+   286(16)      0.00391     244.4   294.6
+   294(16)      0.00391     244.4   297.0
+   285(16)      0.00391     244.4   299.8
+   282(16)      0.00391     244.4   303.0
+   299(16)      0.00391     244.4   306.7
+   295(16)      0.00391     244.4   310.8
+   311(16)      0.00391     244.4   315.6
+   291(16)      0.00391     244.5   320.9
+   311(16)      0.00391     244.5   327.0
+   341(17)      0.003460    244.5   333.7
+   315(16)      0.00391     244.5   341.3
+   336(17)      0.003460    244.5   349.7
+   374(18)      0.003086    244.5   359.0
+   397(18)      0.003086    244.5   369.2
+   390(18)      0.003086    244.5   380.3
+   399(18)      0.003086    244.5   392.4
+   432(19)      0.002770    244.5   405.4
+   448(20)      0.002500    244.5   419.3
+   428(19)      0.002770    244.6   434.1
+   432(19)      0.002770    244.6   449.7
+   465(20)      0.002500    244.6   466.0
+   488(20)      0.002500    244.6   482.9
+   518(21)      0.002268    244.6   500.2
+   525(21)      0.002268    244.6   517.8
+   534(21)      0.002268    244.6   535.4
+   526(21)      0.002268    244.6   552.7
+   578(22)      0.002066    244.6   569.5
+   561(22)      0.002066    244.6   585.3
+   544(22)      0.002066    244.6   600.0
+   590(22)      0.002066    244.7   613.0
+   610(23)      0.001890    244.7   624.2
+   603(23)      0.001890    244.7   633.2
+   592(22)      0.002066    244.7   639.9
+   644(23)      0.001890    244.7   644.1
+   673(24)      0.001736    244.7   645.9
+   622(23)      0.001890    244.7   645.4
+   643(19)      0.002770    244.7   642.8
+   650(24)      0.001736    244.7   638.2
+   613(23)      0.001890    244.7   632.1
+   637(24)      0.001736    244.7   624.7
+   645(24)      0.001736    244.8   616.4
+   621(23)      0.001890    244.8   607.5
+   644(24)      0.001736    244.8   598.2
+   636(24)      0.001736    244.8   588.8
+   614(23)      0.001890    244.8   579.3
+   570(23)      0.001890    244.8   570.0
+   581(23)      0.001890    244.8   560.9
+   597(23)      0.001890    244.8   551.9
+   565(22)      0.002066    244.8   543.2
+   550(22)      0.002066    244.8   534.7
+   553(22)      0.002066    244.8   526.5
+   515(21)      0.002268    244.9   518.6
+   549(22)      0.002066    244.9   511.1
+   509(21)      0.002268    244.9   504.1
+   505(21)      0.002268    244.9   497.8
+   487(21)      0.002268    244.9   492.0
+   515(21)      0.002268    244.9   487.0
+   464(20)      0.002500    244.9   482.7
+   472(21)      0.002268    244.9   479.2
+   466(20)      0.002500    244.9   476.4
+   457(20)      0.002500    244.9   474.2
+   450(20)      0.002500    244.9   472.5
+   451(20)      0.002500    245.0   471.2
+   472(21)      0.002268    245.0   470.1
+   470(20)      0.002500    245.0   469.1
+   445(20)      0.002500    245.0   467.9
+   477(21)      0.002268    245.0   466.4
+   449(20)      0.002500    245.0   464.4
+   475(21)      0.002268    245.0   461.7
+   459(20)      0.002500    245.0   458.4
+   436(20)      0.002500    245.0   454.4
+   463(20)      0.002500    245.0   449.8
+   427(20)      0.002500    245.1   444.6
+   448(20)      0.002500    245.1   439.0
+   450(20)      0.002500    245.1   433.1
+   413(19)      0.002770    245.1   427.1
+   398(19)      0.002770    245.1   421.1
+   436(20)      0.002500    245.1   415.3
+   390(19)      0.002770    245.1   409.8
+   378(18)      0.003086    245.1   404.7
+   406(19)      0.002770    245.1   400.1
+   419(19)      0.002770    245.1   396.0
+   372(18)      0.003086    245.1   392.5
+   404(19)      0.002770    245.2   389.5
+   382(18)      0.003086    245.2   387.1
+   396(19)      0.002770    245.2   385.3
+   394(19)      0.002770    245.2   383.9
+   364(18)      0.003086    245.2   383.1
+   359(18)      0.003086    245.2   382.6
+   357(18)      0.003086    245.2   382.4
+   377(18)      0.003086    245.2   382.5
+   353(18)      0.003086    245.2   382.6
+   341(17)      0.003460    245.2   382.8
+   367(18)      0.003086    245.3   382.8
+   337(17)      0.003460    245.3   382.6
+   352(18)      0.003086    245.3   382.0
+   349(18)      0.003086    245.3   381.0
+   358(18)      0.003086    245.3   379.6
+   358(18)      0.003086    245.3   377.5
+   345(18)      0.003086    245.3   374.9
+   332(17)      0.003460    245.3   371.9
+   332(17)      0.003460    245.3   368.3
+   339(17)      0.003460    245.3   364.3
+   356(18)      0.003086    245.4   360.1
+   338(17)      0.003460    245.4   355.6
+   341(17)      0.003460    245.4   351.0
+   335(17)      0.003460    245.4   346.3
+   334(17)      0.003460    245.4   341.6
+   307(17)      0.003460    245.4   337.1
+   287(16)      0.00391     245.4   332.7
+   311(17)      0.003460    245.4   328.5
+   312(17)      0.003460    245.4   324.6
+   315(17)      0.003460    245.4   321.0
+   337(17)      0.003460    245.5   317.6
+   291(16)      0.00391     245.5   314.6
+   306(17)      0.003460    245.5   311.9
+   296(16)      0.00391     245.5   309.6
+   295(16)      0.00391     245.5   307.6
+   309(17)      0.003460    245.5   306.0
+   332(17)      0.003460    245.5   304.7
+   286(16)      0.00391     245.5   303.9
+   299(16)      0.00391     245.5   303.3
+   293(16)      0.00391     245.6   303.2
+   294(16)      0.00391     245.6   303.4
+   282(16)      0.00391     245.6   304.0
+   284(16)      0.00391     245.6   304.9
+   297(16)      0.00391     245.6   306.1
+   287(16)      0.00391     245.6   307.7
+   306(17)      0.003460    245.6   309.6
+   295(16)      0.00391     245.6   311.8
+   314(17)      0.003460    245.6   314.3
+   306(17)      0.003460    245.7   317.0
+   278(16)      0.00391     245.7   320.1
+   333(17)      0.003460    245.7   323.4
+   338(17)      0.003460    245.7   327.0
+   328(17)      0.003460    245.7   330.7
+   307(17)      0.003460    245.7   334.8
+   333(17)      0.003460    245.7   339.0
+   369(18)      0.003086    245.7   343.4
+   356(17)      0.003460    245.7   348.0
+   380(18)      0.003086    245.8   352.7
+   364(17)      0.003460    245.8   357.6
+   329(17)      0.003460    245.8   362.5
+   366(17)      0.003460    245.8   367.4
+   361(17)      0.003460    245.8   372.3
+   380(18)      0.003086    245.8   377.1
+   384(18)      0.003086    245.8   381.6
+   394(18)      0.003086    245.8   385.8
+   357(17)      0.003460    245.9   389.6
+   390(18)      0.003086    245.9   392.9
+   368(18)      0.003086    245.9   395.5
+   392(18)      0.003086    245.9   397.5
+   407(18)      0.003086    245.9   398.7
+   410(18)      0.003086    245.9   399.1
+   413(19)      0.002770    245.9   398.6
+   395(18)      0.003086    245.9   397.4
+   382(18)      0.003086    246.0   395.3
+   407(18)      0.003086    246.0   392.5
+   376(18)      0.003086    246.0   389.1
+   368(18)      0.003086    246.0   385.1
+   393(18)      0.003086    246.0   380.7
+   382(18)      0.003086    246.0   375.9
+   346(17)      0.003460    246.0   371.0
+   376(18)      0.003086    246.1   366.0
+   327(17)      0.003460    246.1   361.0
+   328(17)      0.003460    246.1   356.0
+   339(17)      0.003460    246.1   351.2
+   353(17)      0.003460    246.1   346.5
+   318(16)      0.00391     246.1   342.1
+   350(17)      0.003460    246.1   338.0
+   347(17)      0.003460    246.1   334.2
+   337(17)      0.003460    246.2   330.7
+   327(17)      0.003460    246.2   327.5
+   315(16)      0.00391     246.2   324.6
+   320(16)      0.00391     246.2   322.0
+   302(16)      0.00391     246.2   319.7
+   334(17)      0.003460    246.2   317.8
+   327(17)      0.003460    246.3   316.1
+   329(17)      0.003460    246.3   314.6
+   335(17)      0.003460    246.3   313.4
+   307(16)      0.00391     246.3   312.5
+   299(16)      0.00391     246.3   311.7
+   294(16)      0.00391     246.3   311.1
+   285(15)      0.00444     246.3   310.7
+   287(16)      0.00391     246.4   310.5
+   284(15)      0.00444     246.4   310.4
+   294(16)      0.00391     246.4   310.6
+   289(16)      0.00391     246.4   310.9
+   311(16)      0.00391     246.4   311.3
+   324(16)      0.00391     246.4   312.0
+   322(16)      0.00391     246.5   312.8
+   320(16)      0.00391     246.5   313.8
+   316(16)      0.00391     246.5   314.9
+   318(16)      0.00391     246.5   316.2
+   301(16)      0.00391     246.5   317.8
+   320(16)      0.00391     246.5   319.4
+   334(17)      0.003460    246.6   321.3
+   323(16)      0.00391     246.6   323.4
+   335(17)      0.003460    246.6   325.6
+   325(16)      0.00391     246.6   328.0
+   327(17)      0.003460    246.6   330.6
+   321(16)      0.00391     246.6   333.4
+   331(17)      0.003460    246.7   336.5
+   333(17)      0.003460    246.7   339.7
+   345(17)      0.003460    246.7   343.2
+   357(17)      0.003460    246.7   346.8
+   329(17)      0.003460    246.7   350.8
+   347(17)      0.003460    246.8   354.9
+   376(18)      0.003086    246.8   359.3
+   363(17)      0.003460    246.8   363.9
+   394(18)      0.003086    246.8   368.7
+   375(18)      0.003086    246.8   373.7
+   404(18)      0.003086    246.8   378.9
+   375(18)      0.003086    246.9   384.1
+   381(18)      0.003086    246.9   389.3
+   405(18)      0.003086    246.9   394.6
+   406(18)      0.003086    246.9   399.8
+   440(19)      0.002770    246.9   404.8
+   389(18)      0.003086    247.0   409.7
+   390(18)      0.003086    247.0   414.3
+   437(19)      0.002770    247.0   418.6
+   431(19)      0.002770    247.0   422.6
+   429(19)      0.002770    247.0   426.2
+   467(20)      0.002500    247.1   429.3
+   445(19)      0.002770    247.1   431.9
+   422(19)      0.002770    247.1   434.0
+   430(19)      0.002770    247.1   435.6
+   417(19)      0.002770    247.2   436.6
+   425(19)      0.002770    247.2   437.0
+   432(19)      0.002770    247.2   436.8
+   455(19)      0.002770    247.2   435.9
+   421(19)      0.002770    247.2   434.3
+   431(19)      0.002770    247.3   432.0
+   416(19)      0.002770    247.3   429.1
+   443(19)      0.002770    247.3   425.4
+   407(18)      0.003086    247.3   421.2
+   400(26)      0.001479    247.4   416.4
+   415(18)      0.003086    247.4   411.1
+   432(19)      0.002770    247.4   405.3
+   405(18)      0.003086    247.4   399.3
+   421(18)      0.003086    247.4   393.0
+   397(18)      0.003086    247.5   386.6
+   392(18)      0.003086    247.5   380.1
+   383(18)      0.003086    247.5   373.7
+   364(17)      0.003460    247.5   367.3
+   368(17)      0.003460    247.6   361.1
+   365(17)      0.003460    247.6   355.1
+   345(17)      0.003460    247.6   349.3
+   363(17)      0.003460    247.6   343.7
+   351(17)      0.003460    247.7   338.5
+   362(17)      0.003460    247.7   333.5
+   312(16)      0.00391     247.7   328.8
+   322(16)      0.00391     247.7   324.5
+   334(16)      0.00391     247.8   320.4
+   332(16)      0.00391     247.8   316.7
+   333(16)      0.00391     247.8   313.2
+   322(16)      0.00391     247.9   310.1
+   315(16)      0.00391     247.9   307.2
+   306(16)      0.00391     247.9   304.6
+   291(15)      0.00444     247.9   302.2
+   292(15)      0.00444     248.0   300.0
+   303(16)      0.00391     248.0   298.1
+   300(16)      0.00391     248.0   296.4
+   292(15)      0.00444     248.0   294.8
+   297(16)      0.00391     248.1   293.5
+   306(16)      0.00391     248.1   292.2
+   303(16)      0.00391     248.1   291.2
+   290(15)      0.00444     248.2   290.2
+   279(15)      0.00444     248.2   289.5
+   282(15)      0.00444     248.2   288.8
+   300(16)      0.00391     248.2   288.2
+   269(15)      0.00444     248.3   287.8
+   280(15)      0.00444     248.3   287.5
+   320(16)      0.00391     248.3   287.3
+   305(16)      0.00391     248.4   287.3
+   274(15)      0.00444     248.4   287.3
+   287(15)      0.00444     248.4   287.4
+   289(15)      0.00444     248.5   287.7
+   307(16)      0.00391     248.5   288.0
+   290(15)      0.00444     248.5   288.5
+   292(15)      0.00444     248.6   289.0
+   288(15)      0.00444     248.6   289.7
+   291(15)      0.00444     248.6   290.4
+   295(16)      0.00391     248.7   291.2
+   302(16)      0.00391     248.7   292.2
+   329(16)      0.00391     248.7   293.2
+   296(16)      0.00391     248.8   294.3
+   289(15)      0.00444     248.8   295.5
+   292(15)      0.00444     248.8   296.7
+   306(16)      0.00391     248.9   298.1
+   336(17)      0.003460    248.9   299.5
+   338(17)      0.003460    248.9   301.1
+   309(16)      0.00391     249.0   302.7
+   288(15)      0.00444     249.0   304.4
+   328(16)      0.00391     249.0   306.2
+   316(16)      0.00391     249.1   308.1
+   325(16)      0.00391     249.1   310.1
+   301(16)      0.00391     249.1   312.1
+   312(16)      0.00391     249.2   314.3
+   337(17)      0.003460    249.2   316.6
+   333(16)      0.00391     249.3   318.9
+   325(16)      0.00391     249.3   321.4
+   326(16)      0.00391     249.3   323.9
+   333(16)      0.00391     249.4   326.5
+   338(17)      0.003460    249.4   329.2
+   322(16)      0.00391     249.4   331.9
+   374(17)      0.003460    249.5   334.7
+   360(17)      0.003460    249.5   337.6
+   361(17)      0.003460    249.6   340.5
+   367(17)      0.003460    249.6   343.4
+   383(18)      0.003086    249.6   346.4
+   374(17)      0.003460    249.7   349.4
+   378(18)      0.003086    249.7   352.3
+   353(17)      0.003460    249.8   355.3
+   342(17)      0.003460    249.8   358.3
+   370(17)      0.003460    249.8   361.1
+   362(17)      0.003460    249.9   363.9
+   370(17)      0.003460    249.9   366.5
+   388(18)      0.003086    250.0   369.0
+   381(18)      0.003086    250.0   371.2
+   379(18)      0.003086    250.1   373.1
+   394(18)      0.003086    250.1   374.8
+   376(17)      0.003460    250.1   376.0
+   377(17)      0.003460    250.2   376.9
+   373(17)      0.003460    250.2   377.3
+   366(17)      0.003460    250.3   377.4
+   371(17)      0.003460    250.3   377.0
+   382(18)      0.003086    250.4   376.1
+   368(17)      0.003460    250.4   374.9
+   363(17)      0.003460    250.5   373.3
+   353(17)      0.003460    250.5   371.4
+   366(17)      0.003460    250.6   369.2
+   388(18)      0.003086    250.6   366.8
+   381(18)      0.003086    250.6   364.2
+   351(17)      0.003460    250.7   361.5
+   344(17)      0.003460    250.7   358.6
+   366(14)      0.00510     250.8   355.7
+   374(17)      0.003460    250.8   352.8
+   369(17)      0.003460    250.9   349.9
+   349(17)      0.003460    250.9   347.1
+   333(16)      0.00391     251.0   344.3
+   351(17)      0.003460    251.0   341.6
+   348(17)      0.003460    251.1   339.0
+   333(16)      0.00391     251.1   336.6
+   338(17)      0.003460    251.2   334.3
+   359(17)      0.003460    251.2   332.1
+   353(17)      0.003460    251.3   330.1
+   334(16)      0.00391     251.3   328.3
+   318(16)      0.00391     251.4   326.7
+   330(16)      0.00391     251.5   325.2
+   326(16)      0.00391     251.5   323.9
+   323(16)      0.00391     251.6   322.9
+   324(16)      0.00391     251.6   322.0
+   328(16)      0.00391     251.7   321.4
+   338(16)      0.00391     251.7   320.9
+   329(16)      0.00391     251.8   320.6
+   338(17)      0.003460    251.8   320.6
+   333(16)      0.00391     251.9   320.8
+   326(16)      0.00391     252.0   321.1
+   336(16)      0.00391     252.0   321.7
+   322(16)      0.00391     252.1   322.4
+   353(17)      0.003460    252.1   323.4
+   340(17)      0.003460    252.2   324.5
+   333(16)      0.00391     252.2   325.8
+   345(17)      0.003460    252.3   327.2
+   351(17)      0.003460    252.4   328.7
+   352(17)      0.003460    252.4   330.4
+   340(17)      0.003460    252.5   332.1
+   352(17)      0.003460    252.5   333.9
+   359(17)      0.003460    252.6   335.8
+   331(16)      0.00391     252.7   337.7
+   351(17)      0.003460    252.7   339.6
+   349(17)      0.003460    252.8   341.5
+   353(17)      0.003460    252.9   343.3
+   360(17)      0.003460    252.9   345.0
+   333(16)      0.00391     253.0   346.7
+   330(16)      0.00391     253.0   348.1
+   320(16)      0.00391     253.1   349.5
+   333(16)      0.00391     253.2   350.7
+   342(17)      0.003460    253.2   351.7
+   353(17)      0.003460    253.3   352.4
+   348(17)      0.003460    253.4   353.0
+   343(17)      0.003460    253.4   353.3
+   365(17)      0.003460    253.5   353.5
+   368(17)      0.003460    253.6   353.4
+   360(17)      0.003460    253.6   353.1
+   385(18)      0.003086    253.7   352.6
+   373(17)      0.003460    253.8   351.8
+   372(17)      0.003460    253.9   351.0
+   361(17)      0.003460    253.9   349.9
+   362(17)      0.003460    254.0   348.8
+   365(17)      0.003460    254.1   347.5
+   357(17)      0.003460    254.1   346.1
+   373(17)      0.003460    254.2   344.6
+   369(17)      0.003460    254.3   343.1
+   350(17)      0.003460    254.4   341.5
+   367(17)      0.003460    254.4   339.9
+   354(17)      0.003460    254.5   338.3
+   360(17)      0.003460    254.6   336.7
+   344(17)      0.003460    254.6   335.0
+   351(17)      0.003460    254.7   333.4
+   347(17)      0.003460    254.8   331.7
+   345(17)      0.003460    254.9   330.1
+   339(17)      0.003460    255.0   328.5
+   353(17)      0.003460    255.0   326.9
+   316(16)      0.00391     255.1   325.3
+   339(17)      0.003460    255.2   323.8
+   350(17)      0.003460    255.3   322.3
+   343(17)      0.003460    255.3   320.9
+   342(17)      0.003460    255.4   319.5
+   349(17)      0.003460    255.5   318.2
+   318(16)      0.00391     255.6   317.1
+   326(16)      0.00391     255.7   316.0
+   325(16)      0.00391     255.8   315.0
+   332(16)      0.00391     255.8   314.1
+   322(16)      0.00391     255.9   313.4
+   295(15)      0.00444     256.0   312.8
+   301(16)      0.00391     256.1   312.4
+   313(16)      0.00391     256.2   312.1
+   319(16)      0.00391     256.3   311.9
+   307(16)      0.00391     256.3   311.9
+   308(16)      0.00391     256.4   312.1
+   316(16)      0.00391     256.5   312.4
+   330(16)      0.00391     256.6   312.9
+   334(16)      0.00391     256.7   313.5
+   324(16)      0.00391     256.8   314.3
+   316(16)      0.00391     256.9   315.3
+   305(16)      0.00391     257.0   316.4
+   312(16)      0.00391     257.1   317.6
+   322(16)      0.00391     257.1   319.0
+   319(16)      0.00391     257.2   320.4
+   315(16)      0.00391     257.3   322.1
+   322(16)      0.00391     257.4   323.8
+   313(16)      0.00391     257.5   325.6
+   308(16)      0.00391     257.6   327.5
+   311(16)      0.00391     257.7   329.4
+   316(16)      0.00391     257.8   331.4
+   329(16)      0.00391     257.9   333.5
+   323(16)      0.00391     258.0   335.5
+   338(17)      0.003460    258.1   337.6
+   337(17)      0.003460    258.2   339.6
+   322(16)      0.00391     258.3   341.5
+   336(17)      0.003460    258.4   343.4
+   338(17)      0.003460    258.5   345.2
+   331(16)      0.00391     258.6   346.8
+   354(17)      0.003460    258.7   348.3
+   367(17)      0.003460    258.8   349.6
+   336(17)      0.003460    258.9   350.7
+   342(17)      0.003460    259.0   351.6
+   335(17)      0.003460    259.1   352.2
+   342(17)      0.003460    259.2   352.6
+   354(17)      0.003460    259.3   352.8
+   349(17)      0.003460    259.4   352.7
+   344(17)      0.003460    259.5   352.4
+   341(17)      0.003460    259.6   351.8
+   339(17)      0.003460    259.7   351.0
+   325(16)      0.00391     259.8   350.0
+   357(17)      0.003460    260.0   348.8
+   353(17)      0.003460    260.1   347.4
+   330(16)      0.00391     260.2   345.8
+   348(17)      0.003460    260.3   344.1
+   341(17)      0.003460    260.4   342.2
+   352(17)      0.003460    260.5   340.3
+   351(17)      0.003460    260.6   338.2
+   360(17)      0.003460    260.7   336.1
+   331(16)      0.00391     260.9   333.9
+   348(17)      0.003460    261.0   331.6
+   302(16)      0.00391     261.1   329.4
+   325(16)      0.00391     261.2   327.1
+   315(16)      0.00391     261.3   324.9
+   342(17)      0.003460    261.4   322.6
+   323(16)      0.00391     261.6   320.4
+   337(17)      0.003460    261.7   318.2
+   315(16)      0.00391     261.8   316.1
+   296(16)      0.00391     261.9   314.1
+   299(16)      0.00391     262.0   312.1
+   290(15)      0.00444     262.2   310.2
+   290(15)      0.00444     262.3   308.3
+   309(16)      0.00391     262.4   306.5
+   294(16)      0.00391     262.5   304.9
+   295(16)      0.00391     262.7   303.2
+   294(16)      0.00391     262.8   301.7
+   289(15)      0.00444     262.9   300.3
+   300(16)      0.00391     263.0   298.9
+   310(16)      0.00391     263.2   297.6
+   324(16)      0.00391     263.3   296.4
+   280(15)      0.00444     263.4   295.3
+   289(15)      0.00444     263.6   294.3
+   294(16)      0.00391     263.7   293.3
+   299(16)      0.00391     263.8   292.4
+   272(15)      0.00444     263.9   291.6
+   262(15)      0.00444     264.1   290.8
+   254(14)      0.00510     264.2   290.1
+   286(15)      0.00444     264.4   289.4
+   299(16)      0.00391     264.5   288.9
+   270(15)      0.00444     264.6   288.3
+   288(15)      0.00444     264.8   287.9
+   271(15)      0.00444     264.9   287.4
+   289(15)      0.00444     265.0   287.1
+   291(15)      0.00444     265.2   286.7
+   283(15)      0.00444     265.3   286.5
+   299(16)      0.00391     265.5   286.2
+   292(16)      0.00391     265.6   286.0
+   299(16)      0.00391     265.7   285.9
+   311(16)      0.00391     265.9   285.8
+   279(15)      0.00444     266.0   285.7
+   272(15)      0.00444     266.2   285.7
+   283(15)      0.00444     266.3   285.7
+   283(15)      0.00444     266.5   285.7
+   285(15)      0.00444     266.6   285.8
+   281(15)      0.00444     266.8   285.9
+   277(15)      0.00444     266.9   286.0
+   288(15)      0.00444     267.1   286.2
+   294(16)      0.00391     267.2   286.4
+   293(16)      0.00391     267.4   286.6
+   293(16)      0.00391     267.5   286.9
+   294(16)      0.00391     267.7   287.2
+   318(16)      0.00391     267.8   287.5
+   286(15)      0.00444     268.0   287.8
+   280(15)      0.00444     268.2   288.2
+   305(16)      0.00391     268.3   288.6
+   308(16)      0.00391     268.5   289.0
+   269(15)      0.00444     268.6   289.4
+   282(15)      0.00444     268.8   289.9
+   289(15)      0.00444     269.0   290.3
+   283(15)      0.00444     269.1   290.8
+   280(15)      0.00444     269.3   291.3
+   315(16)      0.00391     269.4   291.8
+   295(16)      0.00391     269.6   292.4
+   289(15)      0.00444     269.8   292.9
+   301(16)      0.00391     269.9   293.4
+   310(16)      0.00391     270.1   294.0
+   303(16)      0.00391     270.3   294.6
+   314(16)      0.00391     270.4   295.1
+   301(16)      0.00391     270.6   295.7
+   280(15)      0.00444     270.8   296.2
+   311(16)      0.00391     271.0   296.8
+   301(16)      0.00391     271.1   297.3
+   283(16)      0.00391     271.3   297.8
+   272(15)      0.00444     271.5   298.3
+   288(16)      0.00391     271.7   298.8
+   315(16)      0.00391     271.8   299.3
+   308(16)      0.00391     272.0   299.7
+   317(16)      0.00391     272.2   300.1
+   308(16)      0.00391     272.4   300.4
+   297(16)      0.00391     272.6   300.7
+   301(16)      0.00391     272.7   301.0
+   306(16)      0.00391     272.9   301.2
+   283(16)      0.00391     273.1   301.4
+   305(16)      0.00391     273.3   301.5
+   290(16)      0.00391     273.5   301.6
+   288(16)      0.00391     273.7   301.6
+   303(16)      0.00391     273.9   301.6
+   302(16)      0.00391     274.1   301.6
+   300(16)      0.00391     274.2   301.5
+   304(16)      0.00391     274.4   301.4
+   307(16)      0.00391     274.6   301.3
+   310(16)      0.00391     274.8   301.1
+   291(16)      0.00391     275.0   300.9
+   300(16)      0.00391     275.2   300.8
+   306(16)      0.00391     275.4   300.5
+   303(16)      0.00391     275.6   300.3
+   314(16)      0.00391     275.8   300.1
+   308(16)      0.00391     276.0   299.8
+   309(16)      0.00391     276.2   299.6
+   308(16)      0.00391     276.4   299.4
+   306(16)      0.00391     276.6   299.1
+   306(16)      0.00391     276.8   298.9
+   300(16)      0.00391     277.0   298.7
+   321(17)      0.003460    277.2   298.5
+   300(16)     .            .       .
+   276(15)     .            .       .
+   289(16)     .            .       .
+   319(16)     .            .       .
+   332(17)     .            .       .
+   306(16)     .            .       .
+   316(16)     .            .       .
+   301(16)     .            .       .
+   301(16)     .            .       .
+   289(16)     .            .       .
+   301(16)     .            .       .
+   289(16)     .            .       .
+   288(16)     .            .       .
+   303(16)     .            .       .
+   318(16)     .            .       .
+   310(16)     .            .       .
+   311(16)     .            .       .
+   303(16)     .            .       .
+   303(16)     .            .       .
+   294(16)     .            .       .
+   295(16)     .            .       .
+   306(16)     .            .       .
+   303(16)     .            .       .
+   306(16)     .            .       .
+   312(16)     .            .       .
+   315(16)     .            .       .
+   304(16)     .            .       .
+   298(16)     .            .       .
+   314(16)     .            .       .
+   329(17)     .            .       .
+   325(17)     .            .       .
+   322(17)     .            .       .
+   300(16)     .            .       .
+   302(16)     .            .       .
+   300(16)     .            .       .
+   306(16)     .            .       .
+   311(16)     .            .       .
+   317(16)     .            .       .
+   300(16)     .            .       .
+   280(15)     .            .       .
+   294(16)     .            .       .
+   301(16)     .            .       .
+   315(16)     .            .       .
+   311(16)     .            .       .
+   299(16)     .            .       .
+   322(17)     .            .       .
+   319(16)     .            .       .
+   317(16)     .            .       .
+   307(16)     .            .       .
+   340(17)     .            .       .
+   314(16)     .            .       .
+   322(17)     .            .       .
+   323(17)     .            .       .
+   318(16)     .            .       .
+   312(16)     .            .       .
+   336(17)     .            .       .
+   319(16)     .            .       .
+   307(16)     .            .       .
+   298(16)     .            .       .
+   334(17)     .            .       .
+   309(16)     .            .       .
+   303(16)     .            .       .
+   318(16)     .            .       .
+   334(17)     .            .       .
+   331(17)     .            .       .
+   322(17)     .            .       .
+   325(14)     .            .       .
+   323(17)     .            .       .
+   320(17)     .            .       .
+   337(17)     .            .       .
+   344(17)     .            .       .
+   338(17)     .            .       .
+   356(18)     .            .       .
+   365(18)     .            .       .
+   359(18)     .            .       .
+   341(17)     .            .       .
+   337(17)     .            .       .
+   358(18)     .            .       .
+   360(18)     .            .       .
+   341(17)     .            .       .
+   345(17)     .            .       .
+   330(17)     .            .       .
+   320(17)     .            .       .
+   350(18)     .            .       .
+   339(17)     .            .       .
+   338(17)     .            .       .
+   355(18)     .            .       .
+   356(18)     .            .       .
+   343(17)     .            .       .
+   345(17)     .            .       .
+   331(17)     .            .       .
+   353(18)     .            .       .
+   344(17)     .            .       .
+   334(17)     .            .       .
+   361(18)     .            .       .
+   366(18)     .            .       .
+   361(18)     .            .       .
+   354(18)     .            .       .
+   351(18)     .            .       .
+   347(18)     .            .       .
+   369(18)     .            .       .
+   387(18)     .            .       .
+   367(18)     .            .       .
+   347(18)     .            .       .
+   360(18)     .            .       .
+   367(18)     .            .       .
+   378(18)     .            .       .
+   380(18)     .            .       .
+   364(18)     .            .       .
+   363(18)     .            .       .
+   390(18)     .            .       .
+   380(18)     .            .       .
+   365(18)     .            .       .
+   371(18)     .            .       .
+   358(18)     .            .       .
+   390(18)     .            .       .
+   410(19)     .            .       .
+   392(19)     .            .       .
+   382(18)     .            .       .
+   382(18)     .            .       .
+   400(19)     .            .       .
+   410(19)     .            .       .
+   393(19)     .            .       .
+   353(18)     .            .       .
+   378(18)     .            .       .
+   395(19)     .            .       .
+   377(18)     .            .       .
+   380(18)     .            .       .
+   378(18)     .            .       .
+   397(19)     .            .       .
+   384(18)     .            .       .
+   381(18)     .            .       .
+   386(18)     .            .       .
+   399(19)     .            .       .
+   419(19)     .            .       .
+   380(18)     .            .       .
+   383(18)     .            .       .
+   399(19)     .            .       .
+   382(18)     .            .       .
+   376(18)     .            .       .
+   424(19)     .            .       .
+   420(19)     .            .       .
+   413(19)     .            .       .
+   411(19)     .            .       .
+   402(19)     .            .       .
+   414(19)     .            .       .
+   414(19)     .            .       .
+   432(19)     .            .       .
+   413(19)     .            .       .
+   421(19)     .            .       .
+   427(19)     .            .       .
+   410(19)     .            .       .
+   426(19)     .            .       .
+   435(19)     .            .       .
+   423(19)     .            .       .
+   425(19)     .            .       .
+   430(19)     .            .       .
+   420(19)     .            .       .
+   425(19)     .            .       .
+   440(20)     .            .       .
+   437(19)     .            .       .
+   426(19)     .            .       .
+   421(19)     .            .       .
+   407(19)     .            .       .
+   431(19)     .            .       .
+   450(20)     .            .       .
+   441(20)     .            .       .
+   446(20)     .            .       .
+   455(20)     .            .       .
+   461(21)     .            .       .
+   480(21)     .            .       .
+   469(21)     .            .       .
+   470(21)     .            .       .
+   426(20)     .            .       .
+   447(20)     .            .       .
+   457(20)     .            .       .
+   471(21)     .            .       .
+   481(21)     .            .       .
+   463(21)     .            .       .
+   465(21)     .            .       .
+   496(21)     .            .       .
+   469(21)     .            .       .
+   472(21)     .            .       .
+   489(21)     .            .       .
+   479(21)     .            .       .
+   471(21)     .            .       .
+   512(22)     .            .       .
+   500(21)     .            .       .
+   473(21)     .            .       .
+   476(21)     .            .       .
+   495(21)     .            .       .
+   514(22)     .            .       .
+   489(21)     .            .       .
+   505(21)     .            .       .
+   477(21)     .            .       .
+   493(21)     .            .       .
+   496(21)     .            .       .
+   474(21)     .            .       .
+   508(21)     .            .       .
+   559(22)     .            .       .
+   531(22)     .            .       .
+   523(22)     .            .       .
+   522(22)     .            .       .
+   532(22)     .            .       .
+   528(22)     .            .       .
+   506(21)     .            .       .
+   527(22)     .            .       .
+   518(22)     .            .       .
+   531(22)     .            .       .
+   518(22)     .            .       .
+   520(22)     .            .       .
+   539(22)     .            .       .
+   547(22)     .            .       .
+   543(22)     .            .       .
+   545(22)     .            .       .
+   563(22)     .            .       .
+   553(22)     .            .       .
+   549(22)     .            .       .
+   546(22)     .            .       .
+   545(22)     .            .       .
+   574(23)     .            .       .
+   579(23)     .            .       .
+   576(23)     .            .       .
+   569(23)     .            .       .
+   582(23)     .            .       .
+   543(22)     .            .       .
+   592(23)     .            .       .
+   584(23)     .            .       .
+   589(23)     .            .       .
+   591(23)     .            .       .
+   607(23)     .            .       .
+   599(23)     .            .       .
+   607(23)     .            .       .
+   594(23)     .            .       .
+   600(23)     .            .       .
+   570(23)     .            .       .
+   605(23)     .            .       .
+   632(24)     .            .       .
+   645(24)     .            .       .
+   641(24)     .            .       .
+   632(24)     .            .       .
+   618(23)     .            .       .
+   634(24)     .            .       .
+   630(24)     .            .       .
+   651(24)     .            .       .
+   660(24)     .            .       .
+   632(24)     .            .       .
+   650(24)     .            .       .
+   621(24)     .            .       .
+   644(24)     .            .       .
+   647(24)     .            .       .
+   660(24)     .            .       .
+   676(24)     .            .       .
+   666(24)     .            .       .
+   705(25)     .            .       .
+   695(25)     .            .       .
+   668(24)     .            .       .
+   673(24)     .            .       .
+   697(25)     .            .       .
+   654(24)     .            .       .
+   692(25)     .            .       .
+   689(25)     .            .       .
+   692(25)     .            .       .
+   649(24)     .            .       .
+   669(24)     .            .       .
+   703(25)     .            .       .
+   749(37)     .            .       .
+   736(37)     .            .       .
+   664(35)     .            .       .
+   684(35)     .            .       .
+   733(36)     .            .       .
+   726(36)     .            .       .
+   687(35)     .            .       .
+   722(36)     .            .       .
+   747(37)     .            .       .
+   707(36)     .            .       .
+   710(36)     .            .       .
+   736(37)     .            .       .
+   741(37)     .            .       .
+   683(35)     .            .       .
+   773(37)     .            .       .
+   803(38)     .            .       .
+   764(37)     .            .       .
+   775(37)     .            .       .
+   749(37)     .            .       .
+   803(38)     .            .       .
+   793(38)     .            .       .
+   766(37)     .            .       .
+   753(37)     .            .       .
+   756(37)     .            .       .
+   745(37)     .            .       .
+   732(36)     .            .       .
+   832(39)     .            .       .
+   808(38)     .            .       .
+   772(37)     .            .       .
+   767(37)     .            .       .
+   812(38)     .            .       .
+   753(37)     .            .       .
+   790(38)     .            .       .
+   851(39)     .            .       .
+   812(38)     .            .       .
+   822(38)     .            .       .
+   881(40)     .            .       .
+   812(38)     .            .       .
+   828(38)     .            .       .
+   872(39)     .            .       .
+   817(38)     .            .       .
+   868(39)     .            .       .
+   839(39)     .            .       .
+   800(38)     .            .       .
+   856(39)     .            .       .
+   803(38)     .            .       .
+   802(38)     .            .       .
+   919(40)     .            .       .
+   862(39)     .            .       .
+   815(38)     .            .       .
+   891(40)     .            .       .
+   908(40)     .            .       .
+   880(40)     .            .       .
+   863(39)     .            .       .
+   885(40)     .            .       .
+   879(40)     .            .       .
+   896(40)     .            .       .
+   844(39)     .            .       .
+   866(39)     .            .       .
+   890(40)     .            .       .
+   940(41)     .            .       .
+   868(39)     .            .       .
+   890(40)     .            .       .
+   871(39)     .            .       .
+   830(39)     .            .       .
+   909(40)     .            .       .
+   906(40)     .            .       .
+   867(39)     .            .       .
+   905(40)     .            .       .
+   907(40)     .            .       .
+   906(40)     .            .       .
+   814(38)     .            .       .
+   875(39)     .            .       .
+   870(39)     .            .       .
+   904(40)     .            .       .
+   893(40)     .            .       .
+   896(40)     .            .       .
+   975(41)     .            .       .
+   924(40)     .            .       .
+   884(40)     .            .       .
+   938(41)     .            .       .
+   947(41)     .            .       .
+   949(41)     .            .       .
+   944(41)     .            .       .
+   974(41)     .            .       .
+   991(42)     .            .       .
+   1006(42)    .            .       .
+   989(42)     .            .       .
+   954(41)     .            .       .
+   955(41)     .            .       .
+   967(41)     .            .       .
+   912(40)     .            .       .
+   964(41)     .            .       .
+   949(41)     .            .       .
+   1001(42)    .            .       .
+   945(41)     .            .       .
+   1018(42)    .            .       .
+   1021(42)    .            .       .
+   931(41)     .            .       .
+   975(41)     .            .       .
+_pd_meas_number_of_points              3296
+_pd_proc_number_of_points              3296
+
+loop_
+      _refln_index_h
+      _refln_index_k
+      _refln_index_l
+      _refln_observed_status
+      _refln_F_squared_meas
+      _refln_F_squared_calc
+      _refln_phase_calc
+      _refln_d_spacing
+      _gsas_i100_meas
+   1   0   1 o  273.095  275.963   0.00    9.28127  100.00
+   1   1   0 o  79.398   77.463   180.00   6.81176  15.75 
+   1   0  -2 o  14.218   14.469    0.00    6.33938   2.45 
+   2   0  -1 o  65.137   62.749   180.00   5.49149   8.45 
+   0   0   3 o  304.907  323.559  180.00   5.01107  11.02 
+   2   0   2 o  29.712   27.295   180.00   4.64064   2.77 
+   2   1   1 o  161.440  158.279  180.00   4.27522  25.70 
+   1   1   3 o   4.748    5.607    0.00    4.03649   0.68 
+   3   0   0 o  67.074   64.938    0.00    3.93277   4.54 
+   2   1  -2 o  22.503   22.683   180.00   3.83520   2.90 
+   1   0   4 o  259.570  253.507  180.00   3.58101  14.69 
+   2   2   0 o  116.041  102.669  180.00   3.40588   5.97 
+   3   1  -1 o  29.704   22.493    0.00    3.19739   2.71 
+   2   0  -4 o  11.452    8.139    0.00    3.16969   0.51 
+   3   0  -3 o   1.954    1.761    0.00    3.09376   0.08 
+   3   0   3 o   4.197    3.783    0.00    3.09376   0.18 
+   3   1   2 o  16.448   15.915    0.00    3.00028   1.33 
+   1   0  -5 o  153.169  159.467  180.00   2.91352   5.88 
+   4   0   1 o  453.320  451.154   0.00    2.89439  17.19 
+   2   1   4 o  84.050   87.756    0.00    2.87379   6.29 
+   2   2   3 o   1.531    2.185    0.00    2.81684   0.11 
+   4   0  -2 o   4.962    5.075    0.00    2.74574   0.17 
+   2   0   5 o   5.344    3.938    0.00    2.67878   0.18 
+   3   2   1 o   8.507    5.085   180.00   2.66388   0.55 
+   3   2  -2 o  14.955   14.317   180.00   2.54664   0.90 
+   4   1   0 o  26.724   25.712    0.00    2.57460   1.64 
+   0   0   6 o  34.944   37.273    0.00    2.50553   0.34 
+   2   1  -5 o  16.827   19.523    0.00    2.49294   0.97 
+   3   1  -4 o   0.003    0.004    0.00    2.46791   0.00 
+   1   1   6 o  47.920   42.525   180.00   2.35151   2.50 
+   5   0  -1 o  70.171   56.929   180.00   2.33112   1.80 
+   4   0   4 o  14.419   14.319    0.00    2.32032   0.37 
+   4   1   3 o  66.659   67.180    0.00    2.29003   3.31 
+   4   1  -3 o  11.675   11.766   180.00   2.29003   0.58 
+   3   3   0 o  224.342  228.211   0.00    2.27059   5.49 
+   5   0   2 o  312.113  326.902   0.00    2.25133   7.53 
+   3   1   5 o  40.595   43.842    0.00    2.21397   1.90 
+   4   2  -1 o   6.098    6.431    0.00    2.20554   0.28 
+   3   2   4 o  34.904   35.964   180.00   2.19639   1.61 
+   3   0   6 o  238.059  224.777   0.00    2.11313   5.16 
+   3   0  -6 o  149.014  140.701   0.00    2.11313   3.23 
+   1   0   7 o  69.632   65.828    0.00    2.11288   1.51 
+   4   2   2 o  42.437   31.801   180.00   2.13761   1.87 
+   4   0  -5 o  29.206   28.759    0.00    2.10555   0.63 
+   5   1   1 o  16.559   18.270   180.00   2.09830   0.71 
+   3   3   3 o  273.959  261.850  180.00   2.06818  11.45 
+   2   2   6 o   5.748    6.427   180.00   2.01824   0.23 
+   2   0  -7 o  62.219   69.385   180.00   2.01803   1.25 
+   3   2  -5 o  81.861   85.552   180.00   2.01164   3.27 
+   5   1  -2 o  72.875   76.023   180.00   2.03954   2.98 
+   5   0  -4 o  12.153   13.544    0.00    1.99842   0.24 
+   6   0   0 o  27.912   22.370   180.00   1.96639   0.54 
+   4   3   1 o  190.811  184.768   0.00    1.92368   7.09 
+   4   2  -4 o  84.439   83.478   180.00   1.91760   3.12 
+   2   1   7 o  27.338   28.207   180.00   1.93491   1.02 
+   5   2   0 o  54.072   53.424   180.00   1.88924   1.95 
+   4   3  -2 o  24.386   25.989    0.00    1.87811   0.87 
+   5   1   4 o   1.868    1.931   180.00   1.84585   0.07 
+   5   0   5 o  303.963  289.257  180.00   1.85625   5.34 
+   1   0  -8 o  197.820  188.546   0.00    1.85576   3.47 
+   6   0   3 o   9.868   13.202   180.00   1.83050   0.17 
+   6   0  -3 o  10.415   13.934   180.00   1.83050   0.18 
+   4   1  -6 o   6.847    6.943   180.00   1.79560   0.23 
+   4   1   6 o  214.510  217.514  180.00   1.79560   7.16 
+   3   1  -7 o  61.559   62.456    0.00    1.79545   2.06 
+   4   2   5 o   5.781    5.968   180.00   1.79095   0.19 
+   2   0   8 o  45.025   46.527   180.00   1.79050   0.75 
+   5   2  -3 o  26.082   24.907    0.00    1.76778   0.85 
+   5   2   3 o   5.046    4.819   180.00   1.76778   0.16 
+   6   1  -1 o   1.387    1.427   180.00   1.78648   0.05 
+   6   1   2 o  98.371   92.099   180.00   1.74980   3.16 
+   4   0   7 o   0.311    0.356   180.00   1.73616   0.00 
+   5   1  -5 o   1.541    1.703   180.00   1.73208   0.05 
+   2   1  -8 o  36.166   39.650   180.00   1.73168   1.15 
+   4   3   4 o  37.042   34.774   180.00   1.72362   1.17 
+   4   4   0 o  443.554  430.264   0.00    1.70294   6.86 
+   3   3   6 o  107.846  103.878   0.00    1.68249   3.28 
+   3   2   7 o   0.631    0.607   180.00   1.68237   0.02 
+   7   0   1 o  10.217    9.357    0.00    1.67498   0.15 
+   5   3  -1 o  20.147   18.451    0.00    1.67498   0.61 
+   0   0   9 o  675.146  628.745   0.00    1.67036   3.39 
+   7   0  -2 o  40.714   34.668    0.00    1.64463   0.60 
+   5   3   2 o   9.976    8.495    0.00    1.64463   0.29 
+   4   3  -5 o   0.722    0.698   180.00   1.62990   0.02 
+   3   1   8 o  10.389   10.060   180.00   1.62956   0.30 
+   6   2   1 o  342.065  334.935  180.00   1.62653   9.94 
+   6   1  -4 o  31.953   31.448    0.00    1.62284   0.93 
+   1   1   9 o   0.206    0.203    0.00    1.62229   0.01 
+   7   5  -4 o   9.111    8.289   180.00   1.08221   0.32 
+   6   2  -2 o  37.023   33.089    0.00    1.59870   1.05 
+   4   4   3 o  21.512   22.389    0.00    1.61238   0.62 
+   5   0  -7 o  38.829   33.185   180.00   1.58827   0.55 
+   4   0  -8 o  77.511   65.278    0.00    1.58484   1.09 
+   9   2  -5 o  38.936   36.278    0.00    1.08429   1.35 
+   7   3  -8 o  44.071   41.032   180.00   1.08419   1.53 
+   6   0  -6 o  60.203   54.674    0.00    1.54688   0.82 
+   6   0   6 o   4.836    4.392    0.00    1.54688   0.07 
+   4   2  -7 o  38.150   34.667    0.00    1.54678   1.04 
+   7   1   0 o   4.010    4.280    0.00    1.56272   0.11 
+   6   1   5 o  165.122  155.458   0.00    1.54390   4.50 
+   3   2  -8 o  63.147   59.763    0.00    1.54362   1.72 
+   5   3  -4 o  13.111   14.188    0.00    1.53790   0.36 
+   7   0   4 o  17.575   19.018    0.00    1.53790   0.24 
+   3   0  -9 o  10.342   11.322   180.00   1.53743   0.14 
+   3   0   9 o  144.429  158.108  180.00   1.53743   1.96 
+   5   2  -6 o  45.406   41.450   180.00   1.50847   1.20 
+   5   2   6 o   8.506    7.765    0.00    1.50847   0.23 
+   5   1   7 o  91.173   83.325   180.00   1.50838   2.42 
+   6   1  11 o   4.856    4.618   180.00   1.08830   0.16 
+   5   4   1 o  122.801  115.208   0.00    1.50305   3.24 
+   6   2   4 o  67.279   63.580    0.00    1.50014   1.77 
+   2   2   9 o   7.320    6.932   180.00   1.49971   0.19 
+   5   4  -2 o   2.387    2.468    0.00    1.48101   0.06 
+   7   1  -3 o  86.803   87.892    0.00    1.49186   2.27 
+   7   1   3 o   0.205    0.208    0.00    1.49186   0.01 
+   1   0  10 o  62.221   63.276    0.00    1.49126   0.81 
+   9   3   0 o   0.157    0.157    0.00    1.09075   0.01 
+   6   3   0 o  11.056   11.737   180.00   1.48645   0.29 
+   3   1 -13 o   1.031    1.020    0.00    1.09032   0.03 
+   5   3   5 o  20.417   18.921   180.00   1.47022   0.53 
+   7   0  -5 o  119.764  110.988   0.00    1.47022   1.55 
+   5   0   8 o  20.993   19.495    0.00    1.46997   0.27 
+   8   0  -1 o  235.697  223.105   0.00    1.46774   3.04 
+   8   0   2 o  73.312   81.566    0.00    1.44720   0.93 
+   2   0 -10 o   0.480    0.538    0.00    1.45676   0.01 
+  10   1   3 o   1.309    1.370   180.00   1.09289   0.04 
+  10   1  -3 o  10.741   11.237    0.00    1.09289   0.35 
+   4   3   7 o  174.960  185.694   0.00    1.43945   4.43 
+   6   2  -5 o   6.086    6.434   180.00   1.43713   0.15 
+   4   2   8 o   1.115    1.178    0.00    1.43690   0.03 
+   6   4   8 o  32.131   33.268   180.00   1.09819   1.01 
+   7   2  -1 o  33.495   35.518   180.00   1.43481   0.84 
+   3   3  12 o  31.899   33.214   180.00   1.09689   1.01 
+   7   2   2 o  45.993   49.739   180.00   1.41560   1.15 
+   6   3  -3 o   9.530   10.800   180.00   1.42507   0.24 
+   6   3   3 o  16.461   18.656   180.00   1.42507   0.41 
+   2   1  10 o  85.214   96.221   180.00   1.42455   2.14 
+   4   4   6 o  46.780   49.199   180.00   1.40842   1.16 
+   5   1  -8 o  44.261   45.198   180.00   1.40596   1.10 
+   7   4   6 o   2.367    2.440    0.00    1.09937   0.07 
+   7   4  -6 o  202.357  208.521   0.00    1.09937   6.32 
+   5   4   4 o  201.820  197.748  180.00   1.40163   4.99 
+   4   1   9 o  147.156  143.951   0.00    1.40128   3.64 
+   4   1  -9 o  91.590   89.595    0.00    1.40128   2.26 
+  10   0  -5 o  143.767  148.803  180.00   1.09830   2.26 
+   8   4  -2 o   0.061    0.060   180.00   1.10277   0.00 
+   6   1  -7 o   0.751    0.867   180.00   1.37918   0.02 
+   5   5   0 o  60.845   58.471    0.00    1.36235   0.74 
+   8   1   1 o  55.754   63.686    0.00    1.37510   1.36 
+   6   6   3 o  33.564   30.236   180.00   1.10723   1.01 
+   8   0  -4 o   4.743    5.267    0.00    1.37287   0.06 
+   6   2  10 o  72.786   65.701   180.00   1.10699   2.18 
+   8   1  -2 o   4.834    4.781    0.00    1.35816   0.12 
+   1   0 -11 o  16.136   16.063    0.00    1.35758   0.20 
+   8   4   1 o  117.541  107.372   0.00    1.11178   3.45 
+   3   1 -10 o   5.772    5.735    0.00    1.36606   0.14 
+   4   0  10 o  386.432  384.896   0.00    1.33939   4.64 
+   9   2   4 o  38.428   34.895    0.00    1.11060   1.13 
+   6   3  -9 o  28.208   25.584   180.00   1.11043   0.83 
+   6   3   9 o  120.715  109.485  180.00   1.11043   3.56 
+   5   4  -5 o  240.650  231.372  180.00   1.34983   5.80 
+   4   3  -8 o  84.881   81.465    0.00    1.34964   2.05 
+   6   4  -1 o   0.480    0.456   180.00   1.34791   0.01 
+   7   2  -4 o   0.120    0.114    0.00    1.34581   0.00 
+   3   3   9 o  21.099   20.079   180.00   1.34550   0.51 
+   6   4   2 o   3.532    3.434   180.00   1.33194   0.08 
+   2   0  11 o  19.977   19.481   180.00   1.33139   0.24 
+   5   5   3 o  90.564   91.223   180.00   1.31463   2.16 
+   8   3   5 o   0.010    0.009   180.00   1.11286   0.00 
+  10   1   0 o   0.010    0.009    0.00    1.11985   0.00 
+   8   1  -8 o  28.838   26.367    0.00    1.11275   0.84 
+   3   2  10 o   6.093    6.138   180.00   1.31422   0.15 
+   7   1   6 o  54.147   54.663    0.00    1.32596   1.29 
+   7   1  -6 o   1.677    1.693   180.00   1.32596   0.04 
+   5   3  -7 o  102.792  103.817  180.00   1.32590   2.46 
+   7   0   7 o  216.072  218.227   0.00    1.32590   2.58 
+   2   1  13 o  28.222   26.394    0.00    1.11938   0.80 
+   8   0   5 o  123.814  126.836  180.00   1.32408   1.48 
+   7   2   5 o  48.566   51.678    0.00    1.29975   1.15 
+   6   1   8 o  42.755   45.439   180.00   1.29958   1.02 
+   9   0   0 o  487.904  498.618   0.00    1.31092   5.81 
+   7   3   1 o   3.608    3.744   180.00   1.32227   0.09 
+   7   5   2 o   2.960    2.734   180.00   1.11751   0.08 
+   4   3 -11 o  39.642   36.527    0.00    1.11719   1.14 
+   8   1   4 o  137.500  142.902  180.00   1.29617   3.26 
+   7   3  -2 o  139.177  146.075  180.00   1.30719   3.31 
+   2   1 -11 o  10.365   10.923   180.00   1.30667   0.25 
+   7   0  10 o  20.593   19.281   180.00   1.12190   0.29 
+   5   3 -10 o  389.022  364.233   0.00    1.12190  10.96 
+   7   3   7 o  33.287   29.800   180.00   1.12914   0.92 
+   6   2   7 o   4.686    5.034   180.00   1.30147   0.11 
+   6   3   6 o   0.027    0.028   180.00   1.27840   0.00 
+   6   3  -6 o  10.794   11.082   180.00   1.27840   0.26 
+   8   2   0 o  53.045   56.469   180.00   1.28730   1.26 
+   7   5  -1 o  13.672   12.266    0.00    1.12689   0.38 
+   4   1 -12 o  11.991   10.781   180.00   1.12649   0.33 
+   4   1  12 o   0.150    0.135    0.00    1.12649   0.00 
+  10   0   4 o  115.421  104.357  180.00   1.12567   1.61 
+   6   4  -4 o  42.533   43.472   180.00   1.27332   1.01 
+   6   0   9 o  61.685   63.121   180.00   1.27305   0.73 
+   6   0  -9 o  276.586  283.023  180.00   1.27305   3.28 
+   5   2   9 o  37.464   36.274   180.00   1.25139   0.89 
+   5   2  -9 o   0.156    0.151    0.00    1.25139   0.00 
+   3   1  11 o  99.101   104.642   0.00    1.26109   2.35 
+   9   0   3 o  292.653  307.419  180.00   1.26824   3.47 
+   9   0  -3 o  169.521  178.075  180.00   1.26824   2.01 
+   8   2  -3 o  13.960   13.989   180.00   1.24682   0.33 
+   8   2   3 o  34.097   34.168    0.00    1.24682   0.81 
+   5   0 -10 o  97.548   102.581   0.00    1.26788   1.16 
+   4   2 -10 o  52.848   53.215   180.00   1.24647   1.26 
+   8   2  -6 o  58.486   57.697    0.00    1.14502   1.54 
+   8   2   6 o  29.575   29.176   180.00   1.14502   0.78 
+   6   4  -7 o  25.520   25.172    0.00    1.14498   0.67 
+   5   4   7 o   9.683    8.935   180.00   1.23557   0.23 
+   8   1  -5 o  106.493  105.390  180.00   1.25487   2.53 
+   7   0  -8 o   0.000    0.000   180.00   1.25471   0.00 
+   5   3   8 o  55.486   54.811    0.00    1.25471   1.32 
+   6   4   5 o   0.035    0.032   180.00   1.23410   0.00 
+   9   1   5 o  68.376   67.137   180.00   1.14381   1.81 
+   6   5  -5 o   6.593    6.474   180.00   1.14381   0.17 
+   6   2  -8 o  32.115   29.463   180.00   1.23395   0.77 
+   7   2   8 o  120.203  117.974  180.00   1.14369   3.18 
+   7   4   0 o   9.141    9.113   180.00   1.22343   0.22 
+   6   6   0 o   0.000    0.000   180.00   1.13529   0.00 
+   1   0  13 o  33.655   34.703   180.00   1.15089   0.44 
+   9   2   1 o   7.194    7.477   180.00   1.15906   0.18 
+   9   1  -1 o  48.839   45.042    0.00    1.23263   1.17 
+   6   5   1 o  11.109   10.246   180.00   1.23263   0.27 
+   0   0  12 o  75.540   73.400    0.00    1.25277   0.30 
+   1   1  12 o  71.876   66.515   180.00   1.23210   1.72 
+   2   0 -13 o  56.390   52.683   180.00   1.13480   0.76 
+   7   3   4 o  126.799  122.794   0.00    1.25164   3.01 
+   4   4   9 o  504.752  506.101   0.00    1.19247  12.36 
+   8   3  -4 o  385.765  374.069   0.00    1.14136  10.26 
+   9   1   2 o  41.654   43.108   180.00   1.22039   1.00 
+   6   5  -2 o   0.214    0.222   180.00   1.22039   0.01 
+   8   3   2 o  402.061  412.922   0.00    1.18301   9.94 
+  10   0  -2 o  25.736   27.980    0.00    1.16556   0.33 
+   7   1   9 o  12.787   12.382    0.00    1.14117   0.34 
+   7   1  -9 o  32.325   31.303    0.00    1.14117   0.86 
+   4   0 -11 o  284.032  284.382   0.00    1.24002   3.38 
+   3   2 -11 o  223.325  231.625  180.00   1.21997   5.36 
+   9   2  -2 o  53.308   53.978   180.00   1.14886   1.39 
+   5   0  11 o  117.137  120.617   0.00    1.18262   1.45 
+   4   2  11 o  27.111   29.320   180.00   1.16519   0.69 
+   5   1 -11 o   4.757    4.802   180.00   1.14851   0.12 
+   7   4  -3 o  28.632   28.388    0.00    1.18852   0.70 
+   7   4   3 o  326.111  323.332   0.00    1.18852   8.01 
+   5   1  10 o   1.454    1.394    0.00    1.22611   0.03 
+   4   3  10 o   0.132    0.131    0.00    1.18822   0.00 
+   8   0  -7 o   1.626    1.675   180.00   1.21573   0.02 
+   5   5   6 o  37.743   38.616   180.00   1.19687   0.92 
+   7   2  -7 o   0.360    0.368    0.00    1.19682   0.01 
+   6   1 -10 o  48.171   50.302   180.00   1.15363   1.25 
+   9   0  -6 o  130.906  136.708  180.00   1.16154   1.67 
+   9   0   6 o  42.894   44.795   180.00   1.16154   0.55 
+   8   1   7 o   7.488    7.818    0.00    1.16150   0.19 
+   7   3  -5 o  283.310  291.715   0.00    1.21433   6.82 
+   5   4  -8 o  12.193   13.456    0.00    1.17736   0.30 
+   8   0   8 o  686.799  714.354   0.00    1.16016   8.78 
+   8   3  -1 o  275.798  279.181  180.00   1.19415   6.74 
+  10   0   1 o   8.810    9.916    0.00    1.17621   0.11 
+   3   0 -12 o  162.552  164.149   0.00    1.19367   1.99 
+   3   0  12 o  461.597  466.133   0.00    1.19367   5.64 
+   2   2  12 o  65.972   74.746   180.00   1.17575   1.65 
+   9   1  -4 o  198.686  227.394  180.00   1.17482   4.96 
+   6   5   4 o   7.574    8.669    0.00    1.17482   0.19 
+_reflns_number_total                   267
+_reflns_limit_h_min                    0
+_reflns_limit_h_max                    11
+_reflns_limit_k_min                    0
+_reflns_limit_k_max                    6
+_reflns_limit_l_min                    -14
+_reflns_limit_l_max                    14
+_reflns_d_resolution_high              1.082
+_reflns_d_resolution_low               9.281
+#--eof--eof--eof--eof--eof--eof--eof--eof--eof--eof--eof--eof--eof--eof--eof--#
