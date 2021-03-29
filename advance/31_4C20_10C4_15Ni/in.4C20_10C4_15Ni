@@ -60,3 +60,6 @@ run			400000 # 1000 ps
 
 fix		4 all temp/berendsen 1498.15 1498.15 400.0 # relaxation constant 0.25*400 = 0.1 ps
 run			400000 # 1000 ps
+
+fix		5 all temp/berendsen 1498.15 298.15 400.0 # relaxation constant 0.25*400 = 0.1 ps
+run			400000 # 1000 ps
