@@ -12,6 +12,7 @@ variable   pres index 1.0 # (bar units), 1.0 bar = 0.1 MPa
 # variables available on command line
 # -----other settings -----
 variable   fs   index 0.10 # (0.10 fs for 1500 K, 0.50 fs for 0 - 1000 K)
+#                  and at more elevated temperatures smallter time steps.
 variable   ps   index 20 # 20 ps
 variable   ps_gcmc index 1000 # 1000 ps
 variable   nfreq index 10 # = Nevery * Nrepeat
