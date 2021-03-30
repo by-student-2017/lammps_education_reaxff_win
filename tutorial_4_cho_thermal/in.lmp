@@ -61,7 +61,7 @@ fix          f1 all ave/time 1 100 100 v_energy v_temperature file out_energy.tx
 
 # equilibration and thermalization
 velocity     all create $T 123456
-fix          NPT all npt temp $T $T $(100.0*dt) iso 0.0 ${pres} $(1000.0*dt)
+fix          NPT all npt temp $T $T 100.0 iso 0.0 ${pres} 1000.0
 run          8000
 unfix        NPT
 #

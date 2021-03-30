@@ -17,8 +17,8 @@ variable   ps_gcmc index 2 # 2 ps
 variable   nfreq index 10 # = Nevery * Nrepeat
 variable   nstep equal ${ps}*1000/${fs}
 variable   nstep_gcmc equal ${ps_gcmc}*1000/${fs}
-variable   tdamp equal ${fs}*100
-variable   pdamp equal ${fs}*1000
+variable   tdamp equal 100
+variable   pdamp equal 1000
 variable   disp index 0.01
 variable   natom index 10
 variable   nmove index 10

@@ -40,7 +40,7 @@ velocity       all create 298.15 4928459 rot yes mom yes dist gaussian
 fix		1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
 #
 fix		2 all nve
-fix		3 all temp/berendsen 298.15 298.15 400.0 # relaxation constant 0.25*400 = 0.1 ps
+fix		3 all temp/berendsen 298.15 298.15 100.0 # relaxation constant, 0.1 ps
 #
 #fix		2 all nve
 #fix		3 all press/berendsen iso 0.1 0.1 1000.0

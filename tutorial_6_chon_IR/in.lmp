@@ -39,7 +39,7 @@ fix                f1 all ave/time 1 100 100 v_energy v_temperature file out_ene
 #equilibration
 run                0
 velocity           all create ${temp} 123456
-fix                1 all nvt temp ${temp} ${temp} $(100.0*dt)
+fix                1 all nvt temp ${temp} ${temp} 100.0
 run                40000 # 20 ps
 unfix              f1
 reset_timestep     0

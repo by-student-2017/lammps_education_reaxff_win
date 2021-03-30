@@ -13,8 +13,8 @@ variable    pres index 300.0 # 30 MPa (bar units)
 variable    fs   index 0.5 # 0.5 fs
 variable    ps   index 20000 # 20 ps
 variable    nstep equal ${ps}/${fs}
-variable    tdamp equal ${fs}*100
-variable    pdamp equal ${fs}*1000
+variable    tdamp equal 100
+variable    pdamp equal 1000
 
 # ----- Structure settings -----
 units real
