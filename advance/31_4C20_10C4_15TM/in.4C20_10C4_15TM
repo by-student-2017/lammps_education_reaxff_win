@@ -59,4 +59,4 @@ variable	temperature equal temp
 fix			fout1 all ave/time 1 100 100 v_energy v_temperature file out_energy.txt
 
 # Run the simulation
-run			400000 # 1000 ps
+run			10000000 # 1000 ps
