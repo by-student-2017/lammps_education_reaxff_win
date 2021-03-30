@@ -1,4 +1,4 @@
-# REAX potential for high energy C60 systems
+# REAX potential for high energy C_TM systems
 # Title
 
 # Intialization
@@ -13,16 +13,17 @@ replicate	1 1 1
 
 # Mass Definition
 #mass 1 58.9332 # Co
-#mass 1 58.6934 # Ni
-mass 1 63.546  # Cu
+mass 1 58.6934 # Ni
+#mass 1 63.546  # Cu
 mass 2 12.0107 # C
 
 # Potential Definition
-pair_style	reax/c lmp_control
-pair_coeff	* * ffield.reax.CHONSSiPtZrNiCuCo Cu C
+#pair_style	reax/c lmp_control
+pair_style	reax/c NULL
+pair_coeff	* * ffield.reax.CHONSSiPtZrNiCuCo Ni C
 
-neighbor	2 bin
-neigh_modify	every 10 delay 0 check no
+#neighbor	2 bin
+#neigh_modify	every 10 delay 0 check no
 
 # output
 thermo_style    one #custom step etotal temp lx vol press
@@ -50,7 +51,7 @@ timestep	0.25 # 0.25 fs
 
 # ovito settings
 dump		d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q
-dump_modify	d1 element Cu C
+dump_modify	d1 element Ni C
 
 # gnuplot settings
 variable	energy equal etotal
