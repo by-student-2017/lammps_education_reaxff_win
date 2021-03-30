@@ -1,4 +1,4 @@
 test version
   ffield.reax.ZrYONiHC
-  ffield.reax.CHONSSiPtZrNiCuCoYBa_rm_1st_Zr
+  ffield.reax.CHONSSiPtZrNiCuCoYBa_rm_1st_Zr (failed)
   ffield.reax.CHONSSiPtZrNiCuCoYBa_rm_2nd_Zr
