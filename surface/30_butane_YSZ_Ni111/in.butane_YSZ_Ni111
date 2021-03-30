@@ -23,8 +23,8 @@ mass 6   1.00794 # H
 #pair_style	reax/c lmp_control
 pair_style	reax/c NULL
 #pair_coeff	* * ffield.reax.ZrYONiHC Zr Y Ni O C H
-pair_coeff	* * ffield.reax.CHONSSiPtZrNiCuCoYBa_rm_1st_Zr Zr Y Ni O C H
-#pair_coeff	* * ffield.reax.CHONSSiPtZrNiCuCoYBa_rm_2nd_Zr Zr Y Ni O C H
+#pair_coeff	* * ffield.reax.CHONSSiPtZrNiCuCoYBa_rm_1st_Zr Zr Y Ni O C H
+pair_coeff	* * ffield.reax.CHONSSiPtZrNiCuCoYBa_rm_2nd_Zr Zr Y Ni O C H
 
 neighbor	2 bin
 neigh_modify	every 10 delay 0 check no
