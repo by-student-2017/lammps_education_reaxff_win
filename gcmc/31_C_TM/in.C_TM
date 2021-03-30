@@ -4,21 +4,21 @@ clear
 
 # ----- condition settings -----
 
-variable   temp index 2498.15 # K (for GCMC process)
+variable   temp index 1498.15 # K (for GCMC process)
 
 variable   pres index 1.0 # (bar units), 1.0 bar = 0.1 MPa 
 
 
 # variables available on command line
 # -----other settings -----
-variable   fs   index 0.25 # 0.25 fs
-variable   ps   index 1 # 1 ps
+variable   fs   index 0.10 # (0.10 fs for 1500 K, 0.50 fs for 0 - 1000 K)
+variable   ps   index 20 # 20 ps
 variable   ps_gcmc index 1000 # 1000 ps
 variable   nfreq index 10 # = Nevery * Nrepeat
 variable   nstep equal ${ps}*1000/${fs}
 variable   nstep_gcmc equal ${ps_gcmc}*1000/${fs}
-variable   tdamp equal ${fs}*10
-variable   pdamp equal ${fs}*100
+variable   tdamp equal 250/${fs} # 250 fs
+variable   pdamp equal 10*250/${fs}
 variable   disp index 0.01
 variable   natom index 10
 variable   nmove index 10
@@ -70,8 +70,6 @@ fix		3 all temp/berendsen ${temp} ${temp} ${tdamp} # relaxation constant
 
 #fix		4 all reax/c/bonds 100 bonds.reaxc
 #fix		5 all reax/c/species 100 1 100 species.reaxc
-
-timestep	0.25 # 0.25 fs
 
 # ovito settings
 dump		d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q
