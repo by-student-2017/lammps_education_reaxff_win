@@ -1,0 +1,121 @@
+# REAX potential for high energy C60 systems
+# Title
+clear
+
+# ----- condition settings -----
+
+variable   temp index 2498.15 # K (for GCMC process)
+
+variable   pres index 1.0 # (bar units), 1.0 bar = 0.1 MPa 
+
+
+# variables available on command line
+# -----other settings -----
+variable   fs   index 0.25 # 0.25 fs
+variable   ps   index 1 # 1 ps
+variable   ps_gcmc index 1000 # 1000 ps
+variable   nfreq index 10 # = Nevery * Nrepeat
+variable   nstep equal ${ps}*1000/${fs}
+variable   nstep_gcmc equal ${ps_gcmc}*1000/${fs}
+variable   tdamp equal ${fs}*10
+variable   pdamp equal ${fs}*100
+variable   disp index 0.01
+variable   natom index 10
+variable   nmove index 10
+variable   mu   index -5.46 # Fermi Energy (eV) from MOPAC2016 PM7
+variable   tfac equal 5.0/3.0 # (3 trans + 2 rot)/(3 trans)
+
+# Intialization
+units		real
+dimension	3
+boundary	p p p
+atom_style	charge
+
+# Atom Definition
+read_data	data.C_TM
+replicate	1 1 1
+
+# Mass Definition
+#mass 1 58.9332 # Co
+#mass 1 58.6934 # Ni
+mass 1 63.546  # Cu
+mass 2 12.0107 # C
+
+# Potential Definition
+pair_style	reax/c lmp_control
+pair_coeff	* * ffield.reax.CHONSSiPtZrNiCuCo Cu C
+
+neighbor	2 bin
+neigh_modify	every 10 delay 0 check no
+
+# output
+thermo_style    one #custom step etotal temp lx vol press
+thermo          100
+
+# relax structure, 0 K
+fix				f1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+fix             f2 all box/relax iso 0.0
+minimize        1.0e-10 0.0 1000 100000
+unfix           f1
+unfix           f2
+
+# initial velocity settings
+velocity       all create ${temp} 4928459 rot yes mom yes dist gaussian
+
+# Berendsen thermostat
+fix		1 all nve
+fix		2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+fix		3 all temp/berendsen ${temp} ${temp} ${tdamp} # relaxation constant
+
+#fix		4 all reax/c/bonds 100 bonds.reaxc
+#fix		5 all reax/c/species 100 1 100 species.reaxc
+
+timestep	0.25 # 0.25 fs
+
+# ovito settings
+dump		d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q
+dump_modify	d1 element Cu C
+
+# gnuplot settings
+variable	energy equal etotal
+variable	temperature equal temp
+fix			fout1 all ave/time 1 100 100 v_energy v_temperature file out_energy.txt
+
+# Run the simulation
+run			4000 # 10 ps
+
+# ----- GCMC Calculation-----
+#group           sub type 1:3
+#fix             f1 sub npt temp ${temp} ${temp} ${tdamp} iso ${pres} ${pres} ${pdamp}
+fix             f1 all npt temp ${temp} ${temp} ${tdamp} iso ${pres} ${pres} ${pdamp}
+# GCMC settings
+group           gas type 2 # 2=C
+#fix             f2 gas nvt temp ${temp} ${temp} ${tdamp}
+fix             mygcmc gas gcmc ${nfreq} ${natom} ${nmove} 2 761341 ${temp} ${mu} ${disp} pressure ${pres} tfac_insert ${tfac}
+
+# ----- Output setting 2-----
+variable 	tm   atom "type==1"
+variable 	carbon atom "type==2"
+group 	    tm   dynamic all var tm
+group 	    carbon dynamic all var carbon
+variable    nTM  equal count(tm)
+variable    nC  equal count(carbon)
+
+variable	tacc equal f_mygcmc[2]/(f_mygcmc[1]+0.1)
+variable	iacc equal f_mygcmc[4]/(f_mygcmc[3]+0.1)
+variable	dacc equal f_mygcmc[6]/(f_mygcmc[5]+0.1)
+variable	racc equal f_mygcmc[8]/(f_mygcmc[7]+0.1)
+
+thermo_style   custom step temp press vol pe ke etotal enthalpy density atoms v_iacc v_dacc v_tacc v_racc v_nTM v_nC
+thermo         100
+
+# ----- averaging -----
+variable        rho equal density
+variable        p equal press
+variable        t equal temp
+variable        nugget equal 1.0e-8
+variable        lambda equal 1.0
+variable        muex equal ${mu}-${temp}*ln(density*${lambda}+${nugget})
+fix             ave all ave/time 1 ${nfreq} ${nfreq} v_rho v_p v_muex v_t ave one file rho_vs_p.dat
+
+run            ${nstep_gcmc}
