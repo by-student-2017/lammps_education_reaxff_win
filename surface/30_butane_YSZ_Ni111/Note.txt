@@ -1,4 +1,4 @@
-For ffield.reax.CHONSSiPtZrNiCuCoYBa
-(The original "ReaxFF" file lists two Zr. So I deleted the second Zr column. I don't know if this is correct. Ba may not work. )
-
-The Ni/YSZ ReaxFF developed by combining the YSZ and Ni/C/H descriptions and defining the missing angular terms from combination rules. Ni-Zr and Ni-Y bonded interactions were ignored; Ni/Y and Ni/Zr non-bonded parameters were obtained from combination rules.
+test version
+  ffield.reax.ZrYONiHC
+  ffield.reax.CHONSSiPtZrNiCuCoYBa_rm_1st_Zr
+  ffield.reax.CHONSSiPtZrNiCuCoYBa_rm_2nd_Zr
