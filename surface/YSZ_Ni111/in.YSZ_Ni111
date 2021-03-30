@@ -1,4 +1,4 @@
-# REAX potential for high energy butane_YSZ_Ni111 systems
+# REAX potential for high energy YSZ systems
 # Title
 
 # Intialization
@@ -8,7 +8,7 @@ boundary	p p p
 atom_style	charge
 
 # Atom Definition
-read_data	data.butane_YSZ_Ni111
+read_data	data.YSZ_Ni111
 replicate	1 1 1
 
 # Mass Definition
@@ -16,15 +16,12 @@ mass 1  91.224   # Zr
 mass 2  88.9058  # Y
 mass 3  58.6934  # Ni
 mass 4  15.9994  # O
-mass 5  12.0107  # C
-mass 6   1.00794 # H
+#mass 5  12.0107  # C
+#mass 6   1.00794 # H
 
 # Potential Definition
-#pair_style	reax/c lmp_control
-pair_style	reax/c NULL
-#pair_coeff	* * ffield.reax.ZrYONiHC Zr Y Ni O C H
-#pair_coeff	* * ffield.reax.CHONSSiPtZrNiCuCoYBa_rm_1st_Zr Zr Y Ni O C H
-pair_coeff	* * ffield.reax.CHONSSiPtZrNiCuCoYBa_rm_2nd_Zr Zr Y Ni O C H
+pair_style	reax/c lmp_control
+pair_coeff	* * ffield.reax.ZrYONiH Zr Y Ni O
 
 neighbor	2 bin
 neigh_modify	every 10 delay 0 check no
@@ -43,22 +40,22 @@ unfix           f2
 # initial velocity settings
 velocity       all create 298.15 4928459 rot yes mom yes dist gaussian
 
-# Berendsen thermostat (from 298.15 K to 1998.15 K)
+# Berendsen thermostat (from 298.15 K to 1248.15 K)
 fix		1 all nve
 fix		2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
-fix		3 all temp/berendsen 298.15 1998.15 100.0 # relaxation constant, 0.1 ps
+fix		3 all temp/berendsen 298.15 1248.15 100.0 # relaxation constant, 0.1 ps
 
 #fix		4 all reax/c/bonds 100 bonds.reaxc
-#fix		5 all reax/c/species 100 1 100 species.reaxc
+#fix		5 all reax/c/species 50 1 50 species.reaxc
 
-timestep	0.05 # 0.05 fs at 2000 K
+#timestep	0.05 # 0.05 fs at 2000 K
 #timestep	0.10 # 0.10 fs at 1500 K
-#timestep	0.25 # 0.25 fs at 1000 - 1500 K
+timestep	0.25 # 0.25 fs at 1000 - 1500 K
 #timestep	0.50 # 0.50 fs at 0 - 1000 K
 
 # ovito settings
 dump		d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q
-dump_modify	d1 element Zr Y Ni O C H
+dump_modify	d1 element Zr Y Ni O
 
 # gnuplot settings
 variable	energy equal etotal
@@ -66,7 +63,8 @@ variable	temperature equal temp
 fix			fout1 all ave/time 1 100 100 v_energy v_temperature file out_energy.txt
 
 # Run the simulation
-run			100000 # 50 ps
+run			40000 # 10 ps
 
-fix		3 all temp/berendsen 1998.15 1998.15 100.0 # relaxation constant, 0.1 ps
-run			4000000 # 2000 ps = 2ns
+unfix		3
+fix		3 ethylene temp/berendsen 1248.15 1248.15 100.0 # relaxation constant, 0.1 ps
+run			600000 # 150 ps
