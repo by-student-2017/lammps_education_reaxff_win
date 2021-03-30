@@ -42,7 +42,7 @@ velocity       all create 1498.15 4928459 rot yes mom yes dist gaussian
 # Berendsen thermostat (from 1498.15 K to 1498.15 K)
 fix		1 all nve
 fix		2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
-fix		3 all temp/berendsen 1498.15 1498.15 1000.0 # relaxation constant 0.25*1000 = 250 fs at 1500 K
+fix		3 all temp/berendsen 1498.15 1498.15 250.0 # relaxation constant
 
 #fix		4 all reax/c/bonds 100 bonds.reaxc
 #fix		5 all reax/c/species 100 1 100 species.reaxc
