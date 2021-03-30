@@ -1,0 +1,13 @@
+| rcut |  x y z of new origin  | center of coord. x y z |
+   0.1     9.31  9,31  9.31      25.348834991  25.348834991  25.348834991
+
+| rcut for molecule |
+   0.1
+! number of mesh (x y z) |
+   6.4  6.4  6.4
+| number of molecule posision line |
+  3
+| molecule position |
+O  0.0      0.0      0.0
+H -0.27885 -0.76332 -0.52778
+H  0.96789 -0.03819 -0.02641
