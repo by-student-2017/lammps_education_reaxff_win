@@ -28,11 +28,11 @@ thermo_style    one #custom step etotal temp lx vol press
 thermo          50
 
 # relax structure, 0 K
-#fix				f1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
-#fix             f2 all box/relax iso 0.0
-#minimize        1.0e-10 0.0 1000 100000
-#unfix           f1
-#unfix           f2
+fix				f1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+fix             f2 all box/relax iso 0.0
+minimize        1.0e-10 0.0 1000 100000
+unfix           f1
+unfix           f2
 
 # initial velocity settings
 group           cluster type 1
