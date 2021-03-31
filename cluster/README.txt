@@ -7,7 +7,7 @@ information.
 J. Phys. Chem. C 2016, 120, 17, 9464-9474.
 http://dx.doi.org/10.1021/acs.jpcc.6b00786
   Because the previous ReaxFF study indicated that the time step should be lower than one order of the highest frequency of the simulated system (normally, t 0.5 - 1.0 fs), and because our MD simulations were performed under a relatively high- temperature range (2500 - 3000 K), we chose to use the time step of 0.1 fs, which enabled us to correctly capture reaction events for the carbon coating/oxidation processes up to 3000 K. The bare ANPs consisting of 864 Al atoms were obtained from the previous ReaxFF study of the oxidation of the ANPs.
- Other Ref: https://pubs.acs.org/doi/10.1021/jp709896w (No.8)
+ Other Ref: https://pubs.acs.org/doi/10.1021/jp709896w (No.2)
 
 5_Au-SCH3: Tommi T. Jarvi, Adri C. T. van Duin, Kai Nordlund, 
 William A. GoddardIII; Lee, J., J. Phys. Chem. A 2011, 115, 
