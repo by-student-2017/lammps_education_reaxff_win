@@ -57,7 +57,7 @@ variable	temperature equal temp
 fix			fout1 all ave/time 1 50 50 v_energy v_temperature file out_energy.txt
 
 # Run the equilibration simulation
-run			6000 # 15 ps
+run			60000 # 15 ps
 
 # After equilibration
 unfix		1
