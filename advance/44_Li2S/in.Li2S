@@ -34,12 +34,13 @@ unfix           f1
 unfix           f2
 
 # initial velocity settings
-velocity       all create 298.15 4928459 rot yes mom yes dist gaussian
+velocity       all create 300.0 4928459 rot yes mom yes dist gaussian
 
-# Berendsen thermostat (from 298.15 K to 1598.15 K)
-fix		1 all nve
+# NPT thermostat (from 300.0 K to 1600.0 K)
+#fix		1 all nve
 fix		2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
-fix		3 all temp/berendsen 298.15 1598.15 100.0 # relaxation constant, 0.1 ps
+#fix		3 all temp/berendsen 300.0 1600.0 100.0
+fix		1 all npt temp 300.0 1600.0 100 iso 1.0 1.0 2500
 
 #fix		4 all reax/c/bonds 100 bonds.reaxc
 #fix		5 all reax/c/species 50 1 50 species.reaxc
@@ -57,3 +58,18 @@ fix			fout1 all ave/time 1 50 50 v_energy v_temperature file out_energy.txt
 
 # Run the simulation
 run			8000 # 20 ps
+
+# the room temperature densities of these annealed structures
+unfix		1
+fix			1 all npt temp 1600.0 300.0 100 iso 1.0 1.0 2500
+run			4000 # 10 ps
+
+# final structures from the 300 K NPT simulations
+unfix		1
+fix			1 all npt temp 300.0 300.0 500 iso 1.0 1.0 5000
+run			400000 # 1000 ps = 1 ns
+
+# evaluate mechanical properties 
+unfix		1
+fix			1 all npt temp 300.0 300.0 50 iso 1.0 1.0 10000
+run			40000 # 100 ps
