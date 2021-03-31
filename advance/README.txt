@@ -1,0 +1,79 @@
+Disclaimer: Using these force fields for systems they have not been
+explicitly trained against may produce unrealistic results.  Please
+see the README file in each subdirectory for more detailed
+information.
+
+6_C60: S. G. Srinivasan, A. C. T. van Duin, P. Ganesh;
+J. Phys. Chem. A 2015, 119, 4, 571-580.
+https://pubs.acs.org/doi/10.1021/jp510274e
+  To study the thermal decomposition dynamics of a large fullerene, we performed molecular dynamics (MD) simulations on a C 180 molecule using the newly developed ReaxFF C-2013 potential. Prior to the MD simulations, the molecule was energy minimized with a root mean square (RMS) force convergence criteria of 0.1 kcal/(mol Angstrom). The molecular dynamics simulations were performed in canonical ensemble (NVT ensemble) at five different temperatures, between 4100 and 4500 K, at intervals of 100 K. All our MD simulations used the Nose-Hoover chain thermostat of chain length 3 and 10 fs damping constant (100 time units) to maintain the system temperature at the desired value. Following energy minimization, the molecule was first equilibrated at 300 K before the temperature was raised to the desired value. The equilibration simulation was carried out in the canonical (NVT) ensemble for a duration of 60 ps using a time step of 0.25 fs. The potential energy and temperature values indicated that the system had well equilibrated by 15 ps. Thus, after equilibration, we initiated temperature ramping simulations from 300 K to the desired final temperature using atomic positions, velocities and accelerations from the equilibration simulation, harvested at 5 ps intervals beginning at 15 ps until 60 ps, giving us a total of 10 independent trajectories for every target temperature (i.e., a total of 50 trajectories). For each of these trajectories, the temperature was increased linearly from 300 K to the desired final value at the rate of 0.005 K per iteration, using at time step of 0.1 fs. After the temperature ramp, production runs were carried out at the target temperature (4100-4500 K in intervals of 100 K) in canonical ensemble using a time step of 0.1 fs, on each of the 10 independent trajectories. The production runs lasted from anywhere between 0.8 and 8 ns depending on the temperature, with lower temperature simulations lasting for a longer duration of time. It is now well-known from earlier DFTB-based MD simulations and our own simulations using the ReaxFF CHO potential that large fullerenes can both lose and gain small C n fragments when subjected to high temperature annealing. To avoid the recapture of small fragments by the fullerene molecule, we performed the simulations in 1000 Å~ 1000 Å~ 1000 Angstrom^3 box. In effect, we simulated a closed system that can exchange energy with the surroundings while its mass remains constant. All our MD simulations were carried out using the LAMMPS atomic simulation package. 
+
+13_Cu-BTC: L. Huang, T. Bandosz, K. L. Joshi, A. C. T. van Duin, 
+K. E. Gubbins; J. Chem. Phys. 138, 034102 (2013)
+http://dx.doi.org/10.1063/1.4774332
+  The periodic cubic simulation box was made up of a 1 Å~ 1 Å~ 1 unit cell of the dehydrated CuBTC framework (molecular formula: Cu48 C288 O192 H96 ) with the desired number of NH3 and or H2O molecules. The calculations were performed in an isothermal-isobaric (NPT) ensemble with Verlet integrator and a time step of 0.25 fs. The pressure and temperature were controlled by the Bersendsen barostatting and thermostatting methods, with damping constants of 2500 fs and 100 fs, respectively. Velocities were initiated using a Boltzmann distribution. The trajectory was collected every 50 fs to analyze the results of each RDM calculation.
+We studied the hydrostatic stability of CuBTC framework under the following conditions: temperatures - 301, 323, 345, 367, 389 K; water concentrations (the number of water molecules) - 12, 24, 48, 96, 144, 196. The defined number of water molecules corresponds to 0.25, 0.5, 1.0, 2.0, 3.0, and 4.0 mole equivalents with respect to copper sites of the CuBTC framework. The choice of water content corresponds to that in a recent publication of Gul-E-Noor et al., where they studied water adsorption on CuBTC by 1 H and 13 C solid-state NMR spectroscopy. 26 Our aim was to determine the hydrostatic stability of dehydrated CuBTC at temperatures where most adsorption and separation experiments are conducted.
+In accordance with our previous experiments, 8 NH3 adsorption was studied at three temperatures: 301 K, 318 K, and 348 K, where the simulation box had 120, 88, and 63 NH3 molecules, respectively. Last, three NH3/H2O mixtures (24 H2O/120 NH3 , 48 H2O/120 NH3 , 96 H2O/120 NH3 ) were chosen to study how water molecules affect NH3 adsorption on CuBTC at room temperature, 301 K.
+
+21_SiC: D. A. Newsome, D. Sengupta, H. Foroutan, M. F. Russo, 
+A. C. T. van Duin; J. Phys. Chem. C 2012, 116, 30, 16111-16121.
+https://pubs.acs.org/doi/10.1021/jp306391p
+  Since the bare silicon carbide surface is highly reactive, we populated both the silicon carbide slab surfaces with hydroxyl groups, thus ensuring that all carbon and silicon atoms have their normal coordination of four at the beginning of the simulation. This system was first equilibrated at 100 K, primarily to remove short contacts in the O2 gas phase related to their random placement, after which the system temperature was raised quickly to target temperatures of 500, 750, 1000, 1250, 1500, 1750, 2000, 2500, 3000, 3500, 4000, 4500, 5000, and 5500 K. The temperature was controlled using a Berendsen thermostat, with a temperature damping constant of 100 fs. A time step of 0.25 fs was used in all simulations up to 3500 K, above which the time step was reduced to 0.1 fs. All simulations were performed in the NVT (Canonical) ensemble, using a fixed, orthogonal, periodic cell of 15.92 Å~ 12.07 Å~ 50 Angstrom and containing 680 atoms. For comparison, the cutoff radius is 10 Angstrom. The slab itself is more than twice this length, at around 25 Angstrom.
+
+25_SSZ-13: G. M. Psofogiannakis, J. F. McCleerey, E. Jaramillo, 
+A. C. T. van Duin; J. Phys. Chem. C 2015, 119, 12, 6678-6686.
+https://pubs.acs.org/doi/10.1021/acs.jpcc.5b00699
+  All 3 sets of simulations were performed at six different starting temperatures: 100, 300, 500, 700, 900, and 1100 K. A short NPT run was performed first, at 1 atm pressure for all temperatures (progressively raising the temperature) to preoptimize the supercell sizes. The final structure from the NPT run for each temperature was then used as the starting structure in NVE simulations. The time step for integration was 0.25 fs. The total simulation time for each run was 500 ps (0.5 ns), or 2 million time steps. Because the reactive events in the simulations were only mildly exothermic, the temperatures throughout the simulations did not deviate much from their initial values (no more than 50 K). Thus, we can categorize the results according to the initial temperatures.
+
+26_SiGe: G. Psofogiannakis, A. C. T. van Duin;
+Surface Science, 646, April 2016, Pages 253-260.
+http://dx.doi.org/10.1016/j.susc.2015.08.019
+  A 0.1fs time step was used in all molecular dynamics simulations described here. The MD simulations were performed in an NVT ensemble using a Berendsen thermostat [30] with a 50 fs damping constant. When bombarded with H atoms, only the slab atoms (Si,Ge) were thermostated, as the kinetic energy of the progressively added H atoms was selected in advance, and thus the NVT ensemble applies only to the constant-mass Si/Ge slab. In particular, the H atoms were inserted sequentially at a particular distance above the surface, one hydrogen atom being added every 100 time steps (10 fs).
+
+27_HZSM-5: C. Bai, L. Liu, H. Sun;
+J. Phys. Chem. C 2012, 116, 12, 7029-7039.
+http://dx.doi.org/10.1021/jp300221j
+  NVT molecular dynamics simulations were performed using the ReaxFF package in the LAMMPS software suite (12 June 2011 version). The time step of integration was 0.25 fs, and the total simulation time is 1 ns. The simulation and data collection temperature was 700 K, which was close to the experimental temperature. To speed up reactions, a high temperature (1600 K) was applied for a short period in a fixed interval of simulation time. The temperature control was as follows: running at 700 K for 100 ps, heating up to 1600 K in 10 ps, running at 1600 K for 20 ps, cooling to 700 K in 10 ps, and repeating the above steps. The 20 ps simulation time at 1600 K was estimated such that about 1% to 2% of the slowest reactions occur based on estimated activation energies, which are discussed in the following section of the current paper. The temperatures were controlled using a Berendsen thermostat with a damping constant of 0.1 ps. 
+
+28_Gly_PC44: B. Zhang, A. C. T. van Duin, J K. Johnson;
+J. Phys. Chem. B 2014, 118, 41, 12008-12016.
+http://dx.doi.org/10.1021/jp5054277
+  MD simulations were performed with the large-scale atomic/molecular massively parallel simulator (LAMMPS) MD package. The isothermal-isobaric (NpT) ensemble was employed for equilibration and to measure the density. A time step of 0.5 fs was used, and the temperature was maintained using a Nose-Hoover thermostat with a damping parameter of 50 fs. Pressure was maintained at 1 atm for all NpT simulations using by Nose-Hoover barostat with a damping parameter of 500 fs. The temperature was first ramped up to 350 K for 1 ns to quickly equilibrate the system and relax high-energy configurations. Then, the temperature was lowered to 300 K to carry out production runs of 1 ns to determine the equilibrium density. We also used constant volume NVT ensemble simulations, again with the Nose-Hoover thermostat with a damping parameter of 50 fs. We also employed constant energy NVE simulations for some calculations to avoid any influence of the thermostat. The time step was lowered to 0.25 fs for NVE simulations to ensure good energy conservation.
+
+31_4C20_10C4_15TM: K. D. Nielson, A. C. T. van Duin, J. Oxgaard, 
+W.-Q. Deng, W. A. Goddard III; J. Phys. Chem. A 2005, 
+109, 3, 493-499
+http://dx.doi.org/10.1021/jp046244d
+  The NVT-MD simulations on C20 + C4 mixtures were performed using a velocity Verlet approach with a time step of 0.1 fs. This relatively short time step was chosen to ensure good MD behavior at the high temperatures (1500 K) employed in our simulations. When low to moderate temperatures are used (0-1000 K) ReaxFF MD will conserve energy in NVE simulations with time steps up to 0.5 fs, and at more elevated temperatures smaller time steps need to be used to obtain good energy conservation. A Berendsen thermostat with a temperature-damping constant of 250 fs was used to control the system temperature.
+
+33_YSZ: A. C. T. van Duin, B. V. Merinov, S. S. Jang, W. A. Goddard III;
+J. Phys. Chem. A 2008, 112, 14, 3133-3140.
+http://dx.doi.org/10.1021/jp076775c
+
+40_Cr2FeO4: Y. K. Shin, H. Kwak, A. V. Vasenkov, D. Sengupta, A. C.T. van Duin;
+ACS Catal. 2015, 5, 12, 7226-7236.
+http://dx.doi.org/10.1021/acscatal.5b01766
+  The systems were equilibrated at 800 K under NVT ensemble for 10 ps, using Nose-Hoover thermostat with a relaxation constant of 100 fs.
+  During the equilibration simulations, the interactions of butane/O2 , butane/Cr-oxide and butane/pyrite were switched off. Following the equilibration at 800 K, the systems were heated up to 2000 K. The NVT ensemble was applied for 20 ps with a relaxation constant of 100 fs during which the temperature of the system was maintained at a desired temperature, e.g., 1000, 1200, 1400, 1600, 1800, and 2000 K.
+  Atomic charges of the system were updated every step.
+  Following the equilibration and heating procedures (1600 K) as stated in the simulation of small systems, NVT simulations were performed for data analysis at 1600 K for 150 ps using a time step of 0.1 fs. We note that for the present work, we set no bond interactions between Cr/C and Cr/H pairs and set dummy force field parameters for relevant valence angle parameters. Thus, we do not observe bond-formation and bond-breaking between butane and Cr metal. In fact, dehydrogenation of alkanes can be carried out on metal as well as oxide catalysts. However, metal-C and metal-H bonds typically have lower strengths comparing to O-C and O-H bonds, and during our simulation, we do not observe metallic Cr-species, thus justifying the neglect of Cr/C and Cr/H bonds.
+
+42_Cu-216H2O: A. C. T. van Duin, V. S. Bryantsev, M. S. Diallo, 
+W. A. Goddard, O. Rahaman, D. J. Doren, D. Raymand, K. Hermansson;
+J. Phys. Chem. A 2010, 114, 35, 9507-9514.
+http://dx.doi.org/10.1021/jp102272z
+  A NVT ensemble was used with a Berendsen thermostat with a damping constant of 0.1 ps at 300 K.
+
+43_Li2Si2O5: A. Ostadhossein, S.-Y. Kim, E. D. Cubuk, Y. Qi, A. C. T. van Duin;
+J. Phys. Chem. A 2016, 120, 13, 2114-2127.
+http://dx.doi.org/10.1021/acs.jpca.5b11908
+
+44_Li2S: M. M. Islam, A. Ostadhossein, O. Borodin, A. T. Yeates, 
+W. W. Tipton, R. G. Hennig, N. Kumarf, A. C. T. van Duin;
+Physical Chemistry Chemical Physics, 5 (2015).
+http://dx.doi.org/10.1039/C4CP04532G
+  We employed our Li-S force field to study various lithiated sulfur configurations, Li x S (x = 0.4, 0.8, 1, 1.2, 1.6, 2.0). Initial geometries were constructed by randomly dispersing lithium atoms at the given ratios in an a-sulfur phase comprised of 2048 atoms. Lithiated sulfur geometries were relaxed using a conjugate gradient minimization scheme. We created amorphous structures by slowly heating the initial structures to 1600 K and then rapidly quenching them to 300 K. Temperature and pressure were regulated using the Berendsen thermostat and barostat, respectively. To obtain the room temperature densities of these annealed structures, NPT (constant pressure, temperature) simulations were performed at 300 K and atmospheric pressure. The temperature and pressure damping constants used in both annealing and the NPT simulations were 100 fs and 2500 fs, respectively. Next, final structures from the 300 K NPT simulations were taken from each of the given configurations, and NVT (constant volume, temperature) simulations were performed at various temperatures (i.e. 300 K, 600 K, 800 K, 1000 K, 1200 K, and 1600 K). Temperature and pressure damping constants were 500 and 5000 fs, respectively, and the simulation duration was about 1 ns. High temperature NVT simulations facilitate diffusion coefficient calculations. In order to evaluate mechanical properties of the lithiated sulfur compositions, deformation simulations were carried out using the NPT ensemble in LAMMPS at 300 K and atmospheric pressure. The Nose-Hoover thermostat and barostat were used with temperature and pressure damping constants of 50 fs and 1000 fs, respectively. Periodic boundary conditions were employed in all three directions, and a MD time step of 0.25 fs was used for all the simulations in this study.
+
+47_PtO2: D. Fantauzzi, J. Bandlow, L. Sabo, J. E. Mueller, A. C. T. van Duin, T. Jacob;
+Physical Chemistry Chemical Physics, 42 (2014).
+http://dx.doi.org/10.1039/C4CP03111C
