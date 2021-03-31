@@ -44,7 +44,7 @@ velocity       ethylene create 2500 4928459 rot yes mom yes dist gaussian
 fix		1 all nve
 fix		2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
 
-#fix		3 all temp/berendsen 298 2000 100.0 # relaxation constant, 0.1 ps
+#fix		3 all temp/berendsen 298 2500 100.0 # relaxation constant, 0.1 ps
 fix		3 cluster temp/berendsen 298 298 100.0 # relaxation constant, 0.1 ps
 fix		3 ethylene temp/berendsen 2500 2500 100.0 # relaxation constant,  0.1 ps
 
