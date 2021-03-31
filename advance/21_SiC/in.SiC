@@ -34,12 +34,12 @@ unfix           f1
 unfix           f2
 
 # initial velocity settings
-velocity       all create 298.15 4928459 rot yes mom yes dist gaussian
+velocity       all create 100.0 4928459 rot yes mom yes dist gaussian
 
-# Berendsen thermostat (from 298.15 K to 298.15 K)
+# Berendsen thermostat (from 100.0 K to 100.0 K)
 fix		1 all nve
 fix		2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
-fix		3 all temp/berendsen 298.15 298.15 100.0 # relaxation constant, 0.1 ps
+fix		3 all temp/berendsen 100.0 100.0 100.0 # relaxation constant, 0.1 ps
 
 fix		4 all reax/c/bonds 100 bonds.reaxc
 fix		5 all reax/c/species 50 1 50 species.reaxc
@@ -55,5 +55,15 @@ variable	energy equal etotal
 variable	temperature equal temp
 fix			fout1 all ave/time 1 50 50 v_energy v_temperature file out_energy.txt
 
-# Run the simulation
+# Run first equilibrated at 100 K
 run			4000 # 10 ps
+
+# After which the system temperature
+unfix	3
+fix		3 all temp/berendsen 100.0 3500.0 100.0 # relaxation constant, 0.1 ps
+run			8000 # 20 ps
+
+timestep	0.10 # 0.10 fs
+unfix	3
+fix		3 all temp/berendsen 3500.0 5500.0 100.0 # relaxation constant, 0.1 ps
+run			10000 # 10 ps

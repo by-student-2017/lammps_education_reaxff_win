@@ -51,7 +51,7 @@ fix		3 ethylene temp/berendsen 2500 2500 100.0 # relaxation constant,  0.1 ps
 fix		4 all reax/c/bonds 100 bonds.reaxc
 fix		5 all reax/c/species 50 1 50 species.reaxc
 
-timestep	0.25 # 0.25 fs
+timestep	0.10 # 0.10 fs
 
 # ovito settings
 dump		d1 all cfg 50 cfg/run.*.cfg mass type xs ys zs id type q
