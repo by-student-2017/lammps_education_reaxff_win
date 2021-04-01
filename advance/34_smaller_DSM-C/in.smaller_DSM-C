@@ -50,8 +50,8 @@ fix		5 all reax/c/species 100 1 100 species.reaxc
 
 # real unit: force = Kcal/mole-Angstrom
 # 69.4786 pN = 1 kcal/mol Angstrom
-variable pull_left  equal -1/69.4786*step*dt*2/1000*10/25 # increse 10 pN / 25 ps
-variable pull_right equal  1/69.4786*step*dt*2/1000*10/25 # increse 10 pN / 25 ps
+variable pull_left  equal -1/69.4786*step*dt*2/1000*5/25 # increse 5 pN / 25 ps
+variable pull_right equal  1/69.4786*step*dt*2/1000*5/25 # increse 5 pN / 25 ps
 #region	region_left_anchoring  block INF 31.7947 INF INF INF INF
 #region	region_right_anchoring block 44.1945 INF INF INF INF INF
 #group	group_left_anchoring  region region_left_anchoring
@@ -73,4 +73,4 @@ variable	temperature equal temp
 fix			fout1 all ave/time 1 100 100 v_energy v_temperature file out_energy.txt
 
 # Run the simulation
-run			12500000 # 0.5 * 12500000 = 6250 ps = 6.25 ns
+run			2500000 # 0.5 * 2500000 = 1250 ps = 1.25 ns
