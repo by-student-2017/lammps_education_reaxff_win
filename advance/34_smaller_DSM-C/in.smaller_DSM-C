@@ -50,14 +50,10 @@ fix		5 all reax/c/species 100 1 100 species.reaxc
 
 # real unit: force = Kcal/mole-Angstrom
 # 69.4786 pN = 1 kcal/mol-Angstrom
-variable pull_left  equal -1/69.4786*step*dt/1000*60/25/11 # increse 60 pN / 25 ps / 1 anchor (11 atoms)
-variable pull_right equal  1/69.4786*step*dt/1000*60/25/11 # increse 60 pN / 25 ps / 1 anchor (11 atoms)
-#region	region_left_anchor  block INF 31.7947 INF INF INF INF
-#region	region_right_anchor block 44.1945 INF INF INF INF INF
-#group	group_left_anchor  region region_left_anchor
-#group	group_right_anchor region region_right_anchor
-group	group_left_anchor  id 5:10 64:68 
-group	group_right_anchor id 35 38:42 53:57 
+variable pull_left  equal -1/69.4786*(step*dt/1000)*60/25/11 # increse 60 pN / 25 ps / 1 anchor (11 atoms)
+variable pull_right equal  1/69.4786*(step*dt/1000)*60/25/11 # increse 60 pN / 25 ps / 1 anchor (11 atoms)
+group	group_left_anchor  id 5:10 64:68     # click atom on VESTA (smaller_DSM-C.vasp) (6C+5H=11atoms)
+group	group_right_anchor id 35 38:42 53:57 # click atom on VESTA (smaller_DSM-C.vasp) (6C+5H=11atoms)
 fix		6 group_left_anchor  addforce v_pull_left  0.0 0.0 # test case
 fix		7 group_right_anchor addforce v_pull_right 0.0 0.0 # test case
 
