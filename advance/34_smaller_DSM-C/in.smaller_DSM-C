@@ -50,8 +50,8 @@ fix		5 all reax/c/species 100 1 100 species.reaxc
 
 # real unit: force = Kcal/mole-Angstrom
 # 69.4786 pN = 1 kcal/mol-Angstrom
-variable pull_left  equal -1/69.4786*step*dt*2/1000*30/25/11 # increse 30 pN / 25 ps / 1 anchor (11 atoms)
-variable pull_right equal  1/69.4786*step*dt*2/1000*30/25/11 # increse 30 pN / 25 ps / 1 anchor (11 atoms)
+variable pull_left  equal -1/69.4786*step*dt*2/1000*25/25/11 # increse 25 pN / 25 ps / 1 anchor (11 atoms)
+variable pull_right equal  1/69.4786*step*dt*2/1000*25/25/11 # increse 25 pN / 25 ps / 1 anchor (11 atoms)
 #region	region_left_anchor  block INF 31.7947 INF INF INF INF
 #region	region_right_anchor block 44.1945 INF INF INF INF INF
 #group	group_left_anchor  region region_left_anchor
