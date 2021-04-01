@@ -1,0 +1,76 @@
+# REAX potential for high energy Au-SCH3 systems
+# Title
+
+# Intialization
+units		real
+dimension	3
+boundary	p p p
+atom_style	charge
+
+# Atom Definition
+read_data	data.smaller_DSM-C
+replicate	1 1 1
+
+# Mass Definition
+mass 1 32.0650 # S
+mass 2 15.999  # O
+mass 3 12.0107 # C
+mass 4 1.00794 # H
+
+# Potential Definition
+pair_style	reax/c lmp_control
+pair_coeff	* * ffield.reax.CHOS S O C H
+
+neighbor	2 bin
+neigh_modify	every 10 delay 0 check no
+
+# output
+thermo_style    one #custom step etotal temp lx vol press
+thermo          100
+
+# relax structure, 0 K
+fix				f1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+fix             f2 all box/relax iso 0.0
+minimize        1.0e-10 0.0 1000 100000
+unfix           f1
+unfix           f2
+
+reset_timestep 	0
+
+# initial velocity settings
+velocity       all create 300.0 4928459 rot yes mom yes dist gaussian
+
+# berendsen thermostat (from 300.0 K to 300.0 K)
+fix		1 all nve
+fix		2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+fix		3 all temp/berendsen 300.0 300.0 100.0
+
+fix		4 all reax/c/bonds 100 bonds.reaxc
+fix		5 all reax/c/species 100 1 100 species.reaxc
+
+# real unit: force = Kcal/mole-Angstrom
+# 69.4786 pN = 1 kcal/mol Angstrom
+variable pull_left  equal -1/69.4786*step*dt*2/1000*10/25 # increse 10 pN / 25 ps
+variable pull_right equal  1/69.4786*step*dt*2/1000*10/25 # increse 10 pN / 25 ps
+#region	region_left_anchoring  block INF 31.7947 INF INF INF INF
+#region	region_right_anchoring block 44.1945 INF INF INF INF INF
+#group	group_left_anchoring  region region_left_anchoring
+#group	group_right_anchoring region region_right_anchoring
+group	group_left_anchoring  id 5:10 64:68 
+group	group_right_anchoring id 35 38:42 53:57 
+fix		6 group_left_anchoring  addforce v_pull_left  0.0 0.0 # test case
+fix		7 group_right_anchoring addforce v_pull_right 0.0 0.0 # test case
+
+timestep	0.50 # 0.50 fs
+
+# ovito settings
+dump		d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q
+dump_modify	d1 element S O C H
+
+# gnuplot settings
+variable	energy equal etotal
+variable	temperature equal temp
+fix			fout1 all ave/time 1 100 100 v_energy v_temperature file out_energy.txt
+
+# Run the simulation
+run			12500000 # 0.5 * 12500000 = 6250 ps = 6.25 ns

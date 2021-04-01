@@ -58,6 +58,11 @@ http://dx.doi.org/10.1021/jp046244d
 J. Phys. Chem. A 2008, 112, 14, 3133-3140.
 http://dx.doi.org/10.1021/jp076775c
 
+34_smaller_DSM-C: Julian Muller, Bernd Hartke,
+J. Chem. Theory Comput. 2016, 12, 8, 3913-3925.
+http://dx.doi.org/10.1021/acs.jctc.6b00461
+  All simulations were performed by using the LAMMPS software package with the reaxc extension, in the serial version of this code published on February 16th 2016. The external mechanical force was introduced via the add_force keyword that allows to add a force vector to the gradient for two anchoring atoms. These anchoring atoms are used to mimic the connection to a surface and to the AFM tip that would be present in an experimental setup. The calculations were performed with a time step of 0.5 fs at 300 K in the NVT ensemble and a Berendsen thermostat with a damping factor of 100. The random number generator used to generate the initial velocities was seeded with the running number of each respective trajectory to avoid redundant calculations. The simulations themselves included machanophores in vacuo as well as in a toluene solvent box with periodic boundary conditions.
+
 40_Cr2FeO4: Y. K. Shin, H. Kwak, A. V. Vasenkov, D. Sengupta, A. C.T. van Duin;
 ACS Catal. 2015, 5, 12, 7226-7236.
 http://dx.doi.org/10.1021/acscatal.5b01766
