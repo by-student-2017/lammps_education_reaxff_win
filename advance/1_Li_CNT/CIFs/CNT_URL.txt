@@ -1,0 +1,4 @@
+TubeGen 3.4 (web-interface, http://turin.nss.udel.edu/research/tubegenonline.html), J. T. Frey and D. J. Doren, University of Delaware, Newark DE, 2011.
+
+TubeGen Online - Version 3.4
+http://turin.nss.udel.edu/research/tubegenonline.html
