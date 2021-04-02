@@ -1,0 +1,90 @@
+GEOMETRY
+optiadfE1E2       0.001   1  17   2.4944
+optiadfE1E2       0.001   2  17   3.0143
+optiadfE1E2       0.001   1   2   2.4916
+Ag20SCH3_E1E1     0.001   1  14   2.6054
+Ag20SCH3_E1E1     0.001   1  15   2.6088
+Ag20SCH3_E1E1     0.001  14  15   2.9116
+Ag20_SCH3_E1E2S   0.001   1  14   2.9994
+Ag20_SCH3_E1E2S   0.001   1   2   2.5164
+Ag20_SCH3_E1E2S   0.001   1   8   2.5808
+Ag20_SCH3_E1S     0.001   1  14   2.5306
+Ag20_SCH3_E1S     0.001   1   8   2.5765
+Ag20_SCH3_E1S     0.001   8  14   2.9472
+Ag20_SCH3_V       0.001   1   2   2.3628
+Ag20_SCH3_VE1     0.001   1  16   2.4618
+Ag20_SCH3_VE1     0.001   1   2   2.5378
+#
+Ag20_SCH3_V       0.01    1   2   17   139.2
+Ag20_SCH3_V       0.01    1   2    3   143.9
+Ag20_SCH3_VE1     0.01    1  16   14   113.5
+Ag20_SCH3_VE1     0.01    1  16   15   114.5
+Ag20_SCH3_VE1     0.01    2   1   16    71.0
+ENDGEOMETRY
+#
+ENERGY
+ 0.5  + LT_angle_1/1 -  LT_angle_13/1    3.1751
+ 0.5  + LT_angle_2/1 -  LT_angle_13/1    3.4394
+ 0.5  + LT_angle_3/1 -  LT_angle_13/1    3.7344
+ 1.0  + LT_angle_4/1 -  LT_angle_13/1    4.0306
+ 1.0  + LT_angle_5/1 -  LT_angle_13/1    4.2980
+ 1.0  + LT_angle_6/1 -  LT_angle_13/1    4.4769
+ 1.0  + LT_angle_7/1 -  LT_angle_13/1    4.5033
+ 1.0  + LT_angle_8/1 -  LT_angle_13/1    4.2756
+ 1.0  + LT_angle_9/1 -  LT_angle_13/1    3.6101
+  0.5  + LT_angle_10/1 - LT_angle_13/1    2.1885
+  0.05 + LT_angle_11/1 - LT_angle_13/1    0.6803
+  0.01 + LT_angle_12/1 - LT_angle_13/1    0.0214
+  0.05 + LT_angle_14/1 - LT_angle_13/1    0.4055
+  0.1  + LT_angle_15/1 - LT_angle_13/1    1.0538
+  0.5  + LT_angle_16/1 - LT_angle_13/1    1.7996
+  0.5  + LT_angle_17/1 - LT_angle_13/1    2.5473
+ 0.5  + LT_angle_18/1 - LT_angle_13/1    3.2392
+ 0.5  + LT_angle_19/1 - LT_angle_13/1    3.8440
+ 1.0  + LT_angle_20/1 - LT_angle_13/1    4.3462
+ 1.0  + LT_angle_21/1 - LT_angle_13/1    4.7489
+ 1.0  + LT_angle_22/1 - LT_angle_13/1    5.0604
+ 1.0  + LT_angle_23/1 - LT_angle_13/1    5.2934
+ 1.0  + LT_angle_24/1 - LT_angle_13/1    5.4588
+ 1.0  + LT_angle_25/1 - LT_angle_13/1    5.5740
+ 1.0  + LT_angle_26/1 - LT_angle_13/1    5.6531
+ 1.0  + LT_angle_27/1 - LT_angle_13/1    5.7083
+ 1.0  + LT_angle_28/1 - LT_angle_13/1    5.7536
+ 1.0  + LT_angle_29/1 - LT_angle_13/1    5.7980
+ 1.0  + LT_angle_30/1 - LT_angle_13/1    5.8495
+#
+ 1.0  + LT_dist_1/1   - LT_dist_12/1   119.8076
+ 1.0  + LT_dist_2/1   - LT_dist_12/1    89.4385
+ 1.0  + LT_dist_3/1   - LT_dist_12/1    65.6904
+ 1.0  + LT_dist_4/1   - LT_dist_12/1    47.2752
+ 1.0  + LT_dist_5/1   - LT_dist_12/1    33.1392
+ 1.0  + LT_dist_6/1   - LT_dist_12/1    22.4386
+ 1.0  + LT_dist_7/1   - LT_dist_12/1    14.4868
+ 1.0  + LT_dist_8/1   - LT_dist_12/1     8.7322
+ 1.0  + LT_dist_9/1   - LT_dist_12/1     4.7313
+  0.5  + LT_dist_10/1  - LT_dist_12/1     2.1257
+  0.05 + LT_dist_11/1  - LT_dist_12/1     0.6260
+  0.01 + LT_dist_13/1  - LT_dist_12/1     0.0581
+  0.05 + LT_dist_14/1  - LT_dist_12/1     0.6510
+  0.1  + LT_dist_15/1  - LT_dist_12/1     1.6549
+  0.5  + LT_dist_16/1  - LT_dist_12/1     2.9729
+ 1.0  + LT_dist_17/1  - LT_dist_12/1     4.5241
+ 1.0  + LT_dist_18/1  - LT_dist_12/1     6.2461
+ 1.0  + LT_dist_19/1  - LT_dist_12/1     8.0867
+ 1.0  + LT_dist_20/1  - LT_dist_12/1    10.0052
+ 1.0  + LT_dist_21/1  - LT_dist_12/1    11.9683
+ 1.0  + LT_dist_22/1  - LT_dist_12/1    13.9499
+ 1.0  + LT_dist_23/1  - LT_dist_12/1    15.9290
+ 1.0  + LT_dist_24/1  - LT_dist_12/1    17.8892
+ 1.0  + LT_dist_25/1  - LT_dist_12/1    19.8176
+ 1.0  + LT_dist_26/1  - LT_dist_12/1    21.7044
+ 1.0  + LT_dist_27/1  - LT_dist_12/1    23.5419
+ 1.0  + LT_dist_28/1  - LT_dist_12/1    25.3246
+ 1.0  + LT_dist_29/1  - LT_dist_12/1    27.0485
+ 1.0  + LT_dist_30/1  - LT_dist_12/1    28.7192
+#
+ 0.01 + Ag20_SCH3_VE1/1   - optiadfE1E2/1   3.0555
+ 0.01 + Ag20_SCH3_E1E2S/1 - optiadfE1E2/1  10.61550
+ 0.01 + Ag20_SCH3_V/1     - optiadfE1E2/1  11.592
+ 0.01 + Ag20_SCH3_E1S/1   - optiadfE1E2/1  11.781 
+ENDENERGY

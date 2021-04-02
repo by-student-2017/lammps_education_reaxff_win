@@ -1,0 +1,48 @@
+# REAX potential for SAM of hexanethiolates on Au(111)
+
+units		real
+
+atom_style	charge
+boundary	p p p 
+read_data	data.surf #lecture de l'input avec géométrie et settings
+
+pair_style	reax/c lmp_control  
+pair_coeff	* * ffield.AgSCH2020 Ag S C H 
+
+neighbor	2.0 bin			 
+neigh_modify	every 1 delay 0 check no 
+
+fix		2 all nve	
+fix		3 all reax/c/bonds 100000 bond.dat
+fix             4 all qeq/reax 1 0.0 20.0 1e-6 reax/c 
+fix             5 all temp/berendsen 0.0 300.0 5.0
+
+compute 	reax all pair reax/c
+variable	eb equal c_reax[1]
+variable	ea equal c_reax[2]
+variable 	elp equal c_reax[3]
+variable 	emol equal c_reax[4]
+variable 	ev equal c_reax[5]
+variable 	epen equal c_reax[6]
+variable 	ecoa equal c_reax[7]
+variable 	ehb equal c_reax[8]
+variable 	et equal c_reax[9]
+variable 	eco equal c_reax[10]
+variable 	ew equal c_reax[11]
+variable 	ep equal c_reax[12]
+variable 	efi equal c_reax[13]
+variable 	eqeq equal c_reax[14]
+
+thermo		1000
+thermo_style 	custom step temp etotal v_eb v_ea v_elp v_ev v_ehb v_et v_ew v_ep v_eqeq
+
+timestep	0.25			  #Femtosec
+#dump            1 all xyz 1000 toto_reax.xyz
+#dump_modify	1 element Ag S C H 
+dump		d1 all cfg 1000 cfg/run.*.cfg mass type xs ys zs id type q
+dump_modify	d1 element Ag S C H
+
+minimize	1.0e-10 1.0e-10 10000 10000
+min_modify	line quadratic
+
+run		300000		  

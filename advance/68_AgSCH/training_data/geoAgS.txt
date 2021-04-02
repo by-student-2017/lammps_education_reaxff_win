@@ -1,0 +1,3752 @@
+BIOGRF 200
+DESCRP optiadfE1E2
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/SinglePoints/Ag20_SCH3_E1E2/optiadf/optiadfE1E2.t21
+RUTYPE NORMAL RUN
+MOLCHARGE 1 25 0
+HETATM     1 S                  10.48074  15.27412  11.93931    S   1 1   0.551041
+HETATM     2 Ag                 10.38758  12.78482  11.88236   Ag   1 1  -0.253319
+HETATM     3 Ag                 11.68814  12.10787   9.31810   Ag   1 1   0.732377
+HETATM     4 Ag                 10.25074   9.47285   9.27677   Ag   1 1   0.109588
+HETATM     5 Ag                  8.71511   8.89758   6.95486   Ag   1 1   0.047699
+HETATM     6 Ag                 11.49417   8.91837   6.78159   Ag   1 1   0.008001
+HETATM     7 Ag                 14.26355   9.01599   6.66953   Ag   1 1  -0.227635
+HETATM     8 Ag                 13.09512   9.62956   9.11352   Ag   1 1  -0.109681
+HETATM     9 Ag                 12.93744  11.45042   6.83555   Ag   1 1  -0.113398
+HETATM    10 Ag                 10.08594  11.38369   6.88267   Ag   1 1   0.107810
+HETATM    11 Ag                  7.25125  11.40863   7.18597   Ag   1 1  -0.082422
+HETATM    12 Ag                  5.95288   8.95101   7.18864   Ag   1 1  -0.234243
+HETATM    13 Ag                  7.40767   9.58281   9.46848   Ag   1 1  -0.088008
+HETATM    14 Ag                  8.94074  10.29231  11.67340   Ag   1 1   0.018660
+HETATM    15 Ag                 11.84125  10.30748  11.49376   Ag   1 1   0.038800
+HETATM    16 Ag                 10.52883  10.84806  13.87121   Ag   1 1  -0.252714
+HETATM    17 Ag                 10.23801  14.66650   9.53216   Ag   1 1  -0.255205
+HETATM    18 Ag                  8.76863  12.09205   9.50758   Ag   1 1   0.209467
+HETATM    19 Ag                  8.64194  13.81141   7.27578   Ag   1 1   0.017049
+HETATM    20 Ag                 11.53873  13.83319   7.08099   Ag   1 1   0.031645
+HETATM    21 Ag                 10.07380  16.17912   7.20560   Ag   1 1  -0.255969
+HETATM    22 C                  12.26880  15.66520  12.14489    C   1 1  -0.217946
+HETATM    23 H                  12.44320  16.69172  11.80048    H   1 1   0.093750
+HETATM    24 H                  12.52087  15.58966  13.20966    H   1 1   0.093512
+HETATM    25 H                  12.90176  14.97788  11.57319    H   1 1   0.031140
+UNIT ENERGY   kcal
+ENERGY -1673.687170191575
+END
+
+BIOGRF 200
+DESCRP Ag4SCH3
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag4SCH3/optiadf/Ag4SCH3.t21
+RUTYPE NORMAL RUN
+MOLCHARGE 1 9 0
+HETATM     1 H                   8.13399   6.45097   8.68970    H   1 1   0.080123
+HETATM     2 C                   8.18045   6.90356   9.68722    C   1 1  -0.242140
+HETATM     3 H                   8.22791   6.11143  10.44391    H   1 1   0.082214
+HETATM     4 H                   7.28650   7.51288   9.85443    H   1 1   0.085876
+HETATM     5 S                   9.72533   7.90316   9.79709    S   1 1   0.202380
+HETATM     6 Ag                  9.13316  10.14910   8.85315   Ag   1 1  -0.128752
+HETATM     7 Ag                  9.33428   9.47291  11.65889   Ag   1 1  -0.111384
+HETATM     8 Ag                  8.90064  11.41748  13.46463   Ag   1 1   0.000684
+HETATM     9 Ag                  8.67978  12.02854  10.79311   Ag   1 1   0.030999
+UNIT ENERGY   kcal
+ENERGY -732.7617152313138
+END
+
+BIOGRF 200
+DESCRP LT_angle_1
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.98078   7.50233   9.54413    H   1 1   0.073501
+HETATM     2 C                   7.53254   6.64545   9.95046    C   1 1  -0.187356
+HETATM     3 H                   7.45922   5.81768   9.23169    H   1 1   0.087632
+HETATM     4 H                   7.09114   6.33714  10.90476    H   1 1   0.085707
+HETATM     5 S                   9.31124   7.04481  10.11282    S   1 1  -0.005366
+HETATM     6 Ag                  9.28128  11.36693  10.99530   Ag   1 1   0.012010
+HETATM     7 Ag                  9.41319   8.80528  11.66665   Ag   1 1  -0.066128
+UNIT ENERGY   kcal
+ENERGY -616.7681847607005
+END
+
+BIOGRF 200
+DESCRP LT_angle_2
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.95458   7.64590   9.61616    H   1 1   0.074179
+HETATM     2 C                   7.51972   6.75201   9.90794    C   1 1  -0.186407
+HETATM     3 H                   7.42436   6.00826   9.10502    H   1 1   0.087788
+HETATM     4 H                   7.10781   6.33896  10.83563    H   1 1   0.083495
+HETATM     5 S                   9.30335   7.13625  10.06243    S   1 1  -0.005038
+HETATM     6 Ag                  9.26680  11.33359  10.96070   Ag   1 1   0.025365
+HETATM     7 Ag                  9.43189   8.79615  11.72226   Ag   1 1  -0.079382
+UNIT ENERGY   kcal
+ENERGY -616.5038806019992
+END
+
+BIOGRF 200
+DESCRP LT_angle_3
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.91973   7.73303   9.68692    H   1 1   0.074613
+HETATM     2 C                   7.51278   6.83078   9.87991    C   1 1  -0.183882
+HETATM     3 H                   7.40481   6.15728   9.01882    H   1 1   0.087879
+HETATM     4 H                   7.14290   6.32854  10.78085    H   1 1   0.081995
+HETATM     5 S                   9.29386   7.23881  10.00888    S   1 1  -0.008118
+HETATM     6 Ag                  9.25655  11.30042  10.92841   Ag   1 1   0.039085
+HETATM     7 Ag                  9.44593   8.78768  11.77437   Ag   1 1  -0.091572
+UNIT ENERGY   kcal
+ENERGY -616.2088423504932
+END
+
+BIOGRF 200
+DESCRP LT_angle_4
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.90574   7.86072   9.71665    H   1 1   0.073772
+HETATM     2 C                   7.50242   6.94793   9.83691    C   1 1  -0.175319
+HETATM     3 H                   7.38222   6.33632   8.93188    H   1 1   0.087717
+HETATM     4 H                   7.14492   6.38215  10.70504    H   1 1   0.080282
+HETATM     5 S                   9.28548   7.34541   9.96930    S   1 1  -0.017037
+HETATM     6 Ag                  9.24188  11.26018  10.89440   Ag   1 1   0.052559
+HETATM     7 Ag                  9.46459   8.77949  11.82630   Ag   1 1  -0.101975
+UNIT ENERGY   kcal
+ENERGY -615.9126073872138
+END
+
+BIOGRF 200
+DESCRP LT_angle_5
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.87763   7.93812   9.79393    H   1 1   0.074316
+HETATM     2 C                   7.49844   7.03451   9.81469    C   1 1  -0.167296
+HETATM     3 H                   7.36202   6.49947   8.86523    H   1 1   0.087337
+HETATM     4 H                   7.18511   6.38736  10.64155    H   1 1   0.079262
+HETATM     5 S                   9.27742   7.46246   9.92477    S   1 1  -0.030486
+HETATM     6 Ag                  9.23172  11.22065  10.86278   Ag   1 1   0.062777
+HETATM     7 Ag                  9.47769   8.77198  11.87424   Ag   1 1  -0.105909
+UNIT ENERGY   kcal
+ENERGY -615.6452413895963
+END
+
+BIOGRF 200
+DESCRP LT_angle_6
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.85770   8.03030   9.87283    H   1 1   0.074752
+HETATM     2 C                   7.49361   7.14165   9.78134    C   1 1  -0.156515
+HETATM     3 H                   7.33556   6.70401   8.78639    H   1 1   0.086073
+HETATM     4 H                   7.21569   6.40752  10.54615    H   1 1   0.077823
+HETATM     5 S                   9.26904   7.58602   9.88691    S   1 1  -0.047269
+HETATM     6 Ag                  9.21931  11.17344  10.82990   Ag   1 1   0.069488
+HETATM     7 Ag                  9.49329   8.76723  11.92307   Ag   1 1  -0.104353
+UNIT ENERGY   kcal
+ENERGY -615.4663622054497
+END
+
+BIOGRF 200
+DESCRP LT_angle_7
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.84479   8.12923   9.95321    H   1 1   0.075128
+HETATM     2 C                   7.48742   7.26538   9.74561    C   1 1  -0.146222
+HETATM     3 H                   7.30373   6.93523   8.71437    H   1 1   0.084253
+HETATM     4 H                   7.24334   6.44886  10.43493    H   1 1   0.077110
+HETATM     5 S                   9.26193   7.71839   9.85143    S   1 1  -0.063679
+HETATM     6 Ag                  9.20571  11.11895  10.79641   Ag   1 1   0.070900
+HETATM     7 Ag                  9.50988   8.76473  11.97216   Ag   1 1  -0.097491
+UNIT ENERGY   kcal
+ENERGY -615.439899499374
+END
+
+BIOGRF 200
+DESCRP LT_angle_8
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.83452   8.21056  10.05767    H   1 1   0.075581
+HETATM     2 C                   7.48281   7.39790   9.70935    C   1 1  -0.138868
+HETATM     3 H                   7.26240   7.20474   8.65118    H   1 1   0.081430
+HETATM     4 H                   7.28169   6.49125  10.29170    H   1 1   0.076914
+HETATM     5 S                   9.25422   7.86519   9.81612    S   1 1  -0.073763
+HETATM     6 Ag                  9.19200  11.05521  10.76231   Ag   1 1   0.064007
+HETATM     7 Ag                  9.52653   8.76599  12.02185   Ag   1 1  -0.085301
+UNIT ENERGY   kcal
+ENERGY -615.6676061041504
+END
+
+BIOGRF 200
+DESCRP LT_angle_9
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.83276   8.29568  10.16421    H   1 1   0.074369
+HETATM     2 C                   7.47496   7.56491   9.65886    C   1 1  -0.131862
+HETATM     3 H                   7.20843   7.53965   8.59431    H   1 1   0.077858
+HETATM     4 H                   7.31335   6.57242  10.09586    H   1 1   0.076961
+HETATM     5 S                   9.24612   8.03244   9.77547    S   1 1  -0.073396
+HETATM     6 Ag                  9.17508  10.97508  10.72476   Ag   1 1   0.043947
+HETATM     7 Ag                  9.54699   8.77263  12.07860   Ag   1 1  -0.067877
+UNIT ENERGY   kcal
+ENERGY -616.3331525587853
+END
+
+BIOGRF 200
+DESCRP LT_angle_10
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.82044   8.37320  10.24412    H   1 1   0.070471
+HETATM     2 C                   7.45026   7.80177   9.55273    C   1 1  -0.125905
+HETATM     3 H                   7.11303   7.98532   8.52517    H   1 1   0.075590
+HETATM     4 H                   7.35988   6.73274   9.77934    H   1 1   0.075977
+HETATM     5 S                   9.21505   8.29871   9.67604    S   1 1  -0.049396
+HETATM     6 Ag                  9.15417  10.83991  10.67328   Ag   1 1  -0.009551
+HETATM     7 Ag                  9.58054   8.79514  12.17462   Ag   1 1  -0.037186
+UNIT ENERGY   kcal
+ENERGY -617.754737209681
+END
+
+BIOGRF 200
+DESCRP LT_angle_11
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.83305   8.35873  10.31629    H   1 1   0.066237
+HETATM     2 C                   7.44986   7.91252   9.52801    C   1 1  -0.111297
+HETATM     3 H                   7.07353   8.23139   8.54874    H   1 1   0.076694
+HETATM     4 H                   7.39394   6.81973   9.59993    H   1 1   0.076471
+HETATM     5 S                   9.21177   8.41911   9.67512    S   1 1  -0.057522
+HETATM     6 Ag                  9.13853  10.81200  10.62911   Ag   1 1  -0.026673
+HETATM     7 Ag                  9.59714   8.77159  12.22262   Ag   1 1  -0.023910
+UNIT ENERGY   kcal
+ENERGY -619.2629308205735
+END
+
+BIOGRF 200
+DESCRP LT_angle_12
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.82926   8.37726  10.32652    H   1 1   0.062936
+HETATM     2 C                   7.46564   7.92731   9.55608    C   1 1  -0.098731
+HETATM     3 H                   7.10633   8.22960   8.56513    H   1 1   0.077604
+HETATM     4 H                   7.42121   6.83484   9.63993    H   1 1   0.077493
+HETATM     5 S                   9.22050   8.45558   9.72801    S   1 1  -0.074439
+HETATM     6 Ag                  9.13087  10.83425  10.60004   Ag   1 1  -0.022688
+HETATM     7 Ag                  9.59988   8.73648  12.23210   Ag   1 1  -0.022175
+UNIT ENERGY   kcal
+ENERGY -619.9218303623169
+END
+
+BIOGRF 200
+DESCRP LT_angle_13
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.82896   8.39413  10.33836    H   1 1   0.060432
+HETATM     2 C                   7.47974   7.94362   9.58064    C   1 1  -0.088565
+HETATM     3 H                   7.13469   8.23627   8.58199    H   1 1   0.078427
+HETATM     4 H                   7.44434   6.85161   9.67117    H   1 1   0.078491
+HETATM     5 S                   9.22876   8.48689   9.77442    S   1 1  -0.095326
+HETATM     6 Ag                  9.12246  10.85944  10.56971   Ag   1 1  -0.016585
+HETATM     7 Ag                  9.60376   8.69972  12.24522   Ag   1 1  -0.016874
+UNIT ENERGY   kcal
+ENERGY -619.9432492714109
+END
+
+BIOGRF 200
+DESCRP LT_angle_14
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.83052   8.40952  10.35253    H   1 1   0.058647
+HETATM     2 C                   7.49171   7.96564   9.59992    C   1 1  -0.080139
+HETATM     3 H                   7.15782   8.26166   8.59860    H   1 1   0.079181
+HETATM     4 H                   7.45995   6.87300   9.68393    H   1 1   0.078992
+HETATM     5 S                   9.23697   8.51525   9.81494    S   1 1  -0.117086
+HETATM     6 Ag                  9.11291  10.88597  10.53777   Ag   1 1  -0.009806
+HETATM     7 Ag                  9.60913   8.66164  12.26247   Ag   1 1  -0.009791
+UNIT ENERGY   kcal
+ENERGY -619.5377192514102
+END
+
+BIOGRF 200
+DESCRP LT_angle_15
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.83320   8.39955  10.37407    H   1 1   0.058095
+HETATM     2 C                   7.50413   7.97164   9.62102    C   1 1  -0.073356
+HETATM     3 H                   7.17066   8.26979   8.62014    H   1 1   0.079325
+HETATM     4 H                   7.49174   6.87811   9.69614    H   1 1   0.079766
+HETATM     5 S                   9.24087   8.54579   9.84883    S   1 1  -0.135632
+HETATM     6 Ag                  9.10485  10.91553  10.50537   Ag   1 1  -0.004232
+HETATM     7 Ag                  9.61418   8.62225  12.28185   Ag   1 1  -0.003965
+UNIT ENERGY   kcal
+ENERGY -618.8894816863095
+END
+
+BIOGRF 200
+DESCRP LT_angle_16
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.83615   8.42062  10.38486    H   1 1   0.057823
+HETATM     2 C                   7.51399   7.99886   9.63446    C   1 1  -0.067177
+HETATM     3 H                   7.19050   8.30549   8.63275    H   1 1   0.079691
+HETATM     4 H                   7.49907   6.90434   9.69971    H   1 1   0.079413
+HETATM     5 S                   9.24856   8.57025   9.88210    S   1 1  -0.152842
+HETATM     6 Ag                  9.09410  10.94479  10.47136   Ag   1 1   0.001379
+HETATM     7 Ag                  9.62125   8.58184  12.30415   Ag   1 1   0.001713
+UNIT ENERGY   kcal
+ENERGY -618.1436979196646
+END
+
+BIOGRF 200
+DESCRP LT_angle_17
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.83255   8.42878  10.38494    H   1 1   0.058794
+HETATM     2 C                   7.52355   8.00716   9.64673    C   1 1  -0.062486
+HETATM     3 H                   7.21213   8.30352   8.63839    H   1 1   0.079720
+HETATM     4 H                   7.51899   6.91343   9.71957    H   1 1   0.079603
+HETATM     5 S                   9.25062   8.59602   9.91286    S   1 1  -0.163441
+HETATM     6 Ag                  9.08506  10.97715  10.43762   Ag   1 1   0.004004
+HETATM     7 Ag                  9.62823   8.54070  12.32706   Ag   1 1   0.003806
+UNIT ENERGY   kcal
+ENERGY -617.3959735767281
+END
+
+BIOGRF 200
+DESCRP LT_angle_18
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.83694   8.44173  10.40007    H   1 1   0.059859
+HETATM     2 C                   7.53446   8.02635   9.66433    C   1 1  -0.058739
+HETATM     3 H                   7.22863   8.32590   8.65516    H   1 1   0.079423
+HETATM     4 H                   7.53346   6.93216   9.73152    H   1 1   0.079159
+HETATM     5 S                   9.25747   8.62021   9.94365    S   1 1  -0.171254
+HETATM     6 Ag                  9.07500  11.00841  10.40362   Ag   1 1   0.005720
+HETATM     7 Ag                  9.63469   8.49953  12.34947   Ag   1 1   0.005832
+UNIT ENERGY   kcal
+ENERGY -616.7040317241161
+END
+
+BIOGRF 200
+DESCRP LT_angle_19
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.83246   8.45208  10.39554    H   1 1   0.061770
+HETATM     2 C                   7.54440   8.03331   9.67551    C   1 1  -0.055715
+HETATM     3 H                   7.25299   8.31833   8.65773    H   1 1   0.079119
+HETATM     4 H                   7.55282   6.93989   9.75590    H   1 1   0.078871
+HETATM     5 S                   9.25832   8.64528   9.97396    S   1 1  -0.172175
+HETATM     6 Ag                  9.06614  11.04127  10.37000   Ag   1 1   0.004388
+HETATM     7 Ag                  9.64181   8.45830  12.37256   Ag   1 1   0.003741
+UNIT ENERGY   kcal
+ENERGY -616.0992920238364
+END
+
+BIOGRF 200
+DESCRP LT_angle_20
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.83992   8.47193  10.41328    H   1 1   0.063876
+HETATM     2 C                   7.55572   8.05581   9.69633    C   1 1  -0.054218
+HETATM     3 H                   7.26885   8.34132   8.67806    H   1 1   0.078635
+HETATM     4 H                   7.56449   6.96261   9.77444    H   1 1   0.078113
+HETATM     5 S                   9.26746   8.66936  10.00363    S   1 1  -0.172758
+HETATM     6 Ag                  9.05562  11.07234  10.33580   Ag   1 1   0.003458
+HETATM     7 Ag                  9.64800   8.41688  12.39502   Ag   1 1   0.002893
+UNIT ENERGY   kcal
+ENERGY -615.5970475073623
+END
+
+BIOGRF 200
+DESCRP LT_angle_21
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.84229   8.46854  10.42750    H   1 1   0.066400
+HETATM     2 C                   7.56703   8.06563   9.71157    C   1 1  -0.053055
+HETATM     3 H                   7.28325   8.35657   8.69347    H   1 1   0.077877
+HETATM     4 H                   7.58781   6.97198   9.78060    H   1 1   0.077733
+HETATM     5 S                   9.27037   8.69436  10.03471    S   1 1  -0.166191
+HETATM     6 Ag                  9.04668  11.10399  10.30252   Ag   1 1  -0.001381
+HETATM     7 Ag                  9.65442   8.37646  12.41695   Ag   1 1  -0.001385
+UNIT ENERGY   kcal
+ENERGY -615.1943559867245
+END
+
+BIOGRF 200
+DESCRP LT_angle_22
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.84484   8.47318  10.43794    H   1 1   0.069503
+HETATM     2 C                   7.57808   8.07884   9.72660    C   1 1  -0.053892
+HETATM     3 H                   7.30162   8.37119   8.70752    H   1 1   0.077465
+HETATM     4 H                   7.60779   6.98531   9.79136    H   1 1   0.077324
+HETATM     5 S                   9.27416   8.71995  10.06664    S   1 1  -0.155409
+HETATM     6 Ag                  9.03764  11.13400  10.26989   Ag   1 1  -0.007571
+HETATM     7 Ag                  9.66070   8.33700  12.43802   Ag   1 1  -0.007420
+UNIT ENERGY   kcal
+ENERGY -614.8828283443617
+END
+
+BIOGRF 200
+DESCRP LT_angle_23
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.84674   8.47545  10.44799    H   1 1   0.072769
+HETATM     2 C                   7.58913   8.09452   9.73864    C   1 1  -0.055879
+HETATM     3 H                   7.31955   8.39565   8.71992    H   1 1   0.077001
+HETATM     4 H                   7.62828   7.00064   9.79171    H   1 1   0.076912
+HETATM     5 S                   9.27716   8.74676  10.10060    S   1 1  -0.139455
+HETATM     6 Ag                  9.02896  11.16104  10.23869   Ag   1 1  -0.015786
+HETATM     7 Ag                  9.66686   8.29978  12.45749   Ag   1 1  -0.015562
+UNIT ENERGY   kcal
+ENERGY -614.6498002177227
+END
+
+BIOGRF 200
+DESCRP LT_angle_24
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.85264   8.48736  10.46331    H   1 1   0.076322
+HETATM     2 C                   7.60223   8.11199   9.75852    C   1 1  -0.057457
+HETATM     3 H                   7.33708   8.41275   8.73860    H   1 1   0.076470
+HETATM     4 H                   7.64670   7.01821   9.81013    H   1 1   0.076416
+HETATM     5 S                   9.28358   8.77280  10.13216    S   1 1  -0.124540
+HETATM     6 Ag                  9.01951  11.19013  10.20616   Ag   1 1  -0.023719
+HETATM     7 Ag                  9.67253   8.26051  12.47786   Ag   1 1  -0.023492
+UNIT ENERGY   kcal
+ENERGY -614.4844793258865
+END
+
+BIOGRF 200
+DESCRP LT_angle_25
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.85819   8.50164  10.47685    H   1 1   0.080323
+HETATM     2 C                   7.61524   8.13106   9.77759    C   1 1  -0.060848
+HETATM     3 H                   7.35644   8.43153   8.75591    H   1 1   0.076202
+HETATM     4 H                   7.66444   7.03739   9.82758    H   1 1   0.076049
+HETATM     5 S                   9.28999   8.80008  10.16555    S   1 1  -0.105243
+HETATM     6 Ag                  9.01045  11.21646  10.17515   Ag   1 1  -0.033296
+HETATM     7 Ag                  9.67781   8.22338  12.49628   Ag   1 1  -0.033186
+UNIT ENERGY   kcal
+ENERGY -614.3692362464587
+END
+
+BIOGRF 200
+DESCRP LT_angle_26
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.85792   8.50661  10.47905    H   1 1   0.084309
+HETATM     2 C                   7.62767   8.14258   9.79031    C   1 1  -0.064784
+HETATM     3 H                   7.38059   8.44005   8.76495    H   1 1   0.076491
+HETATM     4 H                   7.68717   7.04956   9.84213    H   1 1   0.076275
+HETATM     5 S                   9.29100   8.82804  10.20103    S   1 1  -0.080567
+HETATM     6 Ag                  9.00266  11.24191  10.14554   Ag   1 1  -0.045846
+HETATM     7 Ag                  9.68345   8.18804  12.51361   Ag   1 1  -0.045878
+UNIT ENERGY   kcal
+ENERGY -614.2901791890625
+END
+
+BIOGRF 200
+DESCRP LT_angle_27
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.86297   8.52249  10.48889    H   1 1   0.088708
+HETATM     2 C                   7.64179   8.16140   9.80895    C   1 1  -0.069334
+HETATM     3 H                   7.40351   8.45544   8.78041    H   1 1   0.076816
+HETATM     4 H                   7.70570   7.06871   9.86252    H   1 1   0.076387
+HETATM     5 S                   9.29645   8.85629  10.23602    S   1 1  -0.056687
+HETATM     6 Ag                  8.99414  11.26602  10.11602   Ag   1 1  -0.057842
+HETATM     7 Ag                  9.68833   8.15290  12.53015   Ag   1 1  -0.058048
+UNIT ENERGY   kcal
+ENERGY -614.2349543062463
+END
+
+BIOGRF 200
+DESCRP LT_angle_28
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.86474   8.53109  10.49359    H   1 1   0.092938
+HETATM     2 C                   7.65545   8.17421   9.82510    C   1 1  -0.073946
+HETATM     3 H                   7.42865   8.46262   8.79253    H   1 1   0.077535
+HETATM     4 H                   7.72841   7.08238   9.88422    H   1 1   0.077076
+HETATM     5 S                   9.29887   8.88520  10.27227    S   1 1  -0.030324
+HETATM     6 Ag                  8.98657  11.28941  10.08761   Ag   1 1  -0.071498
+HETATM     7 Ag                  9.69317   8.11914  12.54554   Ag   1 1  -0.071781
+UNIT ENERGY   kcal
+ENERGY -614.189652084666
+END
+
+BIOGRF 200
+DESCRP LT_angle_29
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.86988   8.54070  10.50300    H   1 1   0.097286
+HETATM     2 C                   7.67020   8.19152   9.84216    C   1 1  -0.078679
+HETATM     3 H                   7.45212   8.48042   8.80773    H   1 1   0.078423
+HETATM     4 H                   7.75052   7.10012   9.89860    H   1 1   0.077952
+HETATM     5 S                   9.30241   8.91438  10.30898    S   1 1  -0.004751
+HETATM     6 Ag                  8.97883  11.31119  10.05972   Ag   1 1  -0.084965
+HETATM     7 Ag                  9.69773   8.08626  12.56016   Ag   1 1  -0.085265
+UNIT ENERGY   kcal
+ENERGY -614.1452900907681
+END
+
+BIOGRF 200
+DESCRP LT_angle_30
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag2SCH3/testoptiadf/LT/LT_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 7 0
+HETATM     1 H                   6.87370   8.54205  10.51280    H   1 1   0.101158
+HETATM     2 C                   7.68479   8.20572   9.85812    C   1 1  -0.082764
+HETATM     3 H                   7.47387   8.49826   8.82339    H   1 1   0.079505
+HETATM     4 H                   7.77662   7.11491   9.90964    H   1 1   0.079238
+HETATM     5 S                   9.30436   8.94418  10.34655    S   1 1   0.020413
+HETATM     6 Ag                  8.97173  11.33198  10.03279   Ag   1 1  -0.098686
+HETATM     7 Ag                  9.70211   8.05465  12.57373   Ag   1 1  -0.098865
+UNIT ENERGY   kcal
+ENERGY -614.0937221372789
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_1
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  11.17002   8.10860  11.55090    H   1 1   0.006937
+HETATM     2 C                  10.74989   7.49835  10.73809    C   1 1  -0.162736
+HETATM     3 H                  10.53668   6.49068  11.11529    H   1 1   0.078993
+HETATM     4 H                  11.48053   7.42881   9.92296    H   1 1   0.078956
+HETATM     5 S                   9.19295   8.21906  10.07248    S   1 1   0.060113
+HETATM     6 Ag                  9.73724  10.68627  10.42535   Ag   1 1  -0.004119
+HETATM     7 Ag                  8.30711   9.25144  12.23155   Ag   1 1  -0.004294
+HETATM     8 Ag                 10.17760  11.06187  13.11246   Ag   1 1  -0.053851
+UNIT ENERGY   kcal
+ENERGY -680.9717531894432
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_2
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  11.15896   8.04339  11.48804    H   1 1   0.012684
+HETATM     2 C                  10.70842   7.45822  10.67373    C   1 1  -0.169243
+HETATM     3 H                  10.47622   6.44969  11.03673    H   1 1   0.078830
+HETATM     4 H                  11.41973   7.38533   9.84214    H   1 1   0.078819
+HETATM     5 S                   9.15764   8.23038  10.05327    S   1 1   0.064557
+HETATM     6 Ag                  9.75648  10.67922  10.43079   Ag   1 1  -0.006615
+HETATM     7 Ag                  8.32325   9.24121  12.24063   Ag   1 1  -0.006781
+HETATM     8 Ag                 10.15869  11.08169  13.11300   Ag   1 1  -0.052251
+UNIT ENERGY   kcal
+ENERGY -681.3984172761174
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_3
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  11.14370   7.97472  11.42593    H   1 1   0.019271
+HETATM     2 C                  10.66680   7.41942  10.60672    C   1 1  -0.175425
+HETATM     3 H                  10.41940   6.40752  10.94964    H   1 1   0.078689
+HETATM     4 H                  11.36202   7.35128   9.76125    H   1 1   0.078673
+HETATM     5 S                   9.12146   8.23767  10.03131    S   1 1   0.066606
+HETATM     6 Ag                  9.77281  10.66881  10.43659   Ag   1 1  -0.007955
+HETATM     7 Ag                  8.33984   9.23191  12.24556   Ag   1 1  -0.007879
+HETATM     8 Ag                 10.14248  11.10493  13.11853   Ag   1 1  -0.051981
+UNIT ENERGY   kcal
+ENERGY -681.8020259977663
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_4
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  11.12746   7.90641  11.36140    H   1 1   0.026098
+HETATM     2 C                  10.62327   7.38119  10.53903    C   1 1  -0.182470
+HETATM     3 H                  10.35906   6.36731  10.86311    H   1 1   0.078546
+HETATM     4 H                  11.30104   7.31719   9.67916    H   1 1   0.078532
+HETATM     5 S                   9.08584   8.24643  10.01103    S   1 1   0.069454
+HETATM     6 Ag                  9.78926  10.65818  10.44282   Ag   1 1  -0.008997
+HETATM     7 Ag                  8.35702   9.22272  12.25040   Ag   1 1  -0.008735
+HETATM     8 Ag                 10.12569  11.12777  13.12332   Ag   1 1  -0.052428
+UNIT ENERGY   kcal
+ENERGY -682.1830894726805
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_5
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  11.11013   7.83804  11.29397    H   1 1   0.033134
+HETATM     2 C                  10.57764   7.34477  10.47077    C   1 1  -0.190381
+HETATM     3 H                  10.29619   6.33000  10.77680    H   1 1   0.078431
+HETATM     4 H                  11.23695   7.28485   9.59645    H   1 1   0.078430
+HETATM     5 S                   9.05076   8.25668   9.99261    S   1 1   0.072872
+HETATM     6 Ag                  9.80610  10.64752  10.44924   Ag   1 1  -0.009683
+HETATM     7 Ag                  8.37462   9.21356  12.25552   Ag   1 1  -0.009271
+HETATM     8 Ag                 10.10821  11.14991  13.12718   Ag   1 1  -0.053531
+UNIT ENERGY   kcal
+ENERGY -682.537806505273
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_6
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  11.09085   7.76555  11.22432    H   1 1   0.040120
+HETATM     2 C                  10.52914   7.30634  10.40093    C   1 1  -0.198667
+HETATM     3 H                  10.22702   6.29195  10.68827    H   1 1   0.078344
+HETATM     4 H                  11.16852   7.25060   9.51160    H   1 1   0.078310
+HETATM     5 S                   9.01683   8.26830   9.97573    S   1 1   0.077272
+HETATM     6 Ag                  9.82309  10.63689  10.45593   Ag   1 1  -0.010161
+HETATM     7 Ag                  8.39284   9.20432  12.26067   Ag   1 1  -0.009788
+HETATM     8 Ag                 10.09008  11.17198  13.13052   Ag   1 1  -0.055429
+UNIT ENERGY   kcal
+ENERGY -682.8672460078375
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_7
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  11.06895   7.69815  11.15330    H   1 1   0.046540
+HETATM     2 C                  10.47632   7.27005  10.33558    C   1 1  -0.206901
+HETATM     3 H                  10.15132   6.25995  10.61288    H   1 1   0.078284
+HETATM     4 H                  11.09436   7.21079   9.43154    H   1 1   0.078203
+HETATM     5 S                   8.98395   8.28183   9.95931    S   1 1   0.081513
+HETATM     6 Ag                  9.84020  10.62679  10.46242   Ag   1 1  -0.009892
+HETATM     7 Ag                  8.41151   9.19437  12.26596   Ag   1 1  -0.009921
+HETATM     8 Ag                 10.07169  11.19337  13.13312   Ag   1 1  -0.057826
+UNIT ENERGY   kcal
+ENERGY -683.1732660533859
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_8
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  11.04568   7.63454  11.08102    H   1 1   0.052216
+HETATM     2 C                  10.42246   7.23656  10.27083    C   1 1  -0.214614
+HETATM     3 H                  10.07446   6.23187  10.54001    H   1 1   0.078223
+HETATM     4 H                  11.01744   7.17402   9.35161    H   1 1   0.078150
+HETATM     5 S                   8.95154   8.29642   9.94400    S   1 1   0.085821
+HETATM     6 Ag                  9.85748  10.61644  10.46903   Ag   1 1  -0.009501
+HETATM     7 Ag                  8.43029   9.18439  12.27130   Ag   1 1  -0.009792
+HETATM     8 Ag                 10.05303  11.21432  13.13514   Ag   1 1  -0.060503
+UNIT ENERGY   kcal
+ENERGY -683.4529257020632
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_9
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  11.01925   7.57487  11.00790    H   1 1   0.057309
+HETATM     2 C                  10.36720   7.20726  10.20670    C   1 1  -0.221855
+HETATM     3 H                   9.99774   6.20841  10.46860    H   1 1   0.078145
+HETATM     4 H                  10.93913   7.14309   9.27318    H   1 1   0.078119
+HETATM     5 S                   8.91960   8.31187   9.92966    S   1 1   0.089843
+HETATM     6 Ag                  9.87501  10.60579  10.47570   Ag   1 1  -0.009034
+HETATM     7 Ag                  8.44907   9.17431  12.27684   Ag   1 1  -0.009364
+HETATM     8 Ag                 10.03418  11.23478  13.13651   Ag   1 1  -0.063162
+UNIT ENERGY   kcal
+ENERGY -683.7036584082767
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_10
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  10.99143   7.51384  10.93244    H   1 1   0.061947
+HETATM     2 C                  10.31108   7.17945  10.14024    C   1 1  -0.228359
+HETATM     3 H                   9.92000   6.18624  10.39217    H   1 1   0.078025
+HETATM     4 H                  10.85918   7.11738   9.19229    H   1 1   0.078052
+HETATM     5 S                   8.88829   8.32816   9.91715    S   1 1   0.094304
+HETATM     6 Ag                  9.89283  10.59476  10.48264   Ag   1 1  -0.008993
+HETATM     7 Ag                  8.46796   9.16438  12.28255   Ag   1 1  -0.009184
+HETATM     8 Ag                 10.01489  11.25502  13.13727   Ag   1 1  -0.065791
+UNIT ENERGY   kcal
+ENERGY -683.925645223978
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_11
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  10.95586   7.45523  10.86491    H   1 1   0.065894
+HETATM     2 C                  10.25553   7.15855  10.07574    C   1 1  -0.233953
+HETATM     3 H                   9.84555   6.16804  10.30749    H   1 1   0.077929
+HETATM     4 H                  10.78737   7.10910   9.11785    H   1 1   0.077913
+HETATM     5 S                   8.85656   8.34521   9.90662    S   1 1   0.098140
+HETATM     6 Ag                  9.91107  10.58348  10.48931   Ag   1 1  -0.008970
+HETATM     7 Ag                  8.48652   9.15438  12.28850   Ag   1 1  -0.008942
+HETATM     8 Ag                  9.99553  11.27435  13.13717   Ag   1 1  -0.068011
+UNIT ENERGY   kcal
+ENERGY -684.1188021399098
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_12
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  10.91883   7.39873  10.79581    H   1 1   0.069331
+HETATM     2 C                  10.19723   7.13764  10.01313    C   1 1  -0.238285
+HETATM     3 H                   9.76558   6.15296  10.23007    H   1 1   0.077839
+HETATM     4 H                  10.71005   7.09691   9.04449    H   1 1   0.077770
+HETATM     5 S                   8.82568   8.36306   9.89660    S   1 1   0.101378
+HETATM     6 Ag                  9.92950  10.57271  10.49588   Ag   1 1  -0.009181
+HETATM     7 Ag                  8.50544   9.14401  12.29456   Ag   1 1  -0.009168
+HETATM     8 Ag                  9.97580  11.29329  13.13664   Ag   1 1  -0.069683
+UNIT ENERGY   kcal
+ENERGY -684.2796717795035
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_13
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  10.88161   7.34856  10.72266    H   1 1   0.072384
+HETATM     2 C                  10.13811   7.12199   9.95021    C   1 1  -0.241892
+HETATM     3 H                   9.68758   6.14335  10.15552    H   1 1   0.077603
+HETATM     4 H                  10.63037   7.08956   8.97065    H   1 1   0.077563
+HETATM     5 S                   8.79534   8.38174   9.88816    S   1 1   0.104642
+HETATM     6 Ag                  9.94816  10.56137  10.50269   Ag   1 1  -0.009834
+HETATM     7 Ag                  8.52431   9.13375  12.30077   Ag   1 1  -0.009761
+HETATM     8 Ag                  9.95581  11.31169  13.13530   Ag   1 1  -0.070706
+UNIT ENERGY   kcal
+ENERGY -684.4102671762258
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_14
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  10.84166   7.29383  10.64610    H   1 1   0.075412
+HETATM     2 C                  10.07552   7.10482   9.88566    C   1 1  -0.244595
+HETATM     3 H                   9.60263   6.13430  10.07927    H   1 1   0.077335
+HETATM     4 H                  10.54498   7.08130   8.89464    H   1 1   0.077305
+HETATM     5 S                   8.76655   8.40152   9.88127    S   1 1   0.108580
+HETATM     6 Ag                  9.96702  10.55018  10.50980   Ag   1 1  -0.011502
+HETATM     7 Ag                  8.54370   9.12338  12.30706   Ag   1 1  -0.011410
+HETATM     8 Ag                  9.93517  11.32994  13.13335   Ag   1 1  -0.071124
+UNIT ENERGY   kcal
+ENERGY -684.5074925466309
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_15
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  10.79749   7.24002  10.56902    H   1 1   0.078417
+HETATM     2 C                  10.01021   7.09030   9.82236    C   1 1  -0.246602
+HETATM     3 H                   9.51468   6.12899  10.00483    H   1 1   0.077007
+HETATM     4 H                  10.45752   7.07564   8.82097    H   1 1   0.076958
+HETATM     5 S                   8.73907   8.42286   9.87614    S   1 1   0.112595
+HETATM     6 Ag                  9.98635  10.53931  10.51672   Ag   1 1  -0.013791
+HETATM     7 Ag                  8.56305   9.11249  12.31379   Ag   1 1  -0.013647
+HETATM     8 Ag                  9.91411  11.34755  13.13046   Ag   1 1  -0.070938
+UNIT ENERGY   kcal
+ENERGY -684.5725350007497
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_16
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  10.75017   7.18582  10.49022    H   1 1   0.081113
+HETATM     2 C                   9.94221   7.07704   9.75831    C   1 1  -0.247374
+HETATM     3 H                   9.42153   6.12690   9.92948    H   1 1   0.076645
+HETATM     4 H                  10.36580   7.07378   8.74649    H   1 1   0.076585
+HETATM     5 S                   8.71287   8.44487   9.87250    S   1 1   0.116827
+HETATM     6 Ag                 10.00594  10.52842  10.52382   Ag   1 1  -0.017020
+HETATM     7 Ag                  8.58270   9.10154  12.32067   Ag   1 1  -0.016823
+HETATM     8 Ag                  9.89253  11.36486  13.12693   Ag   1 1  -0.069953
+UNIT ENERGY   kcal
+ENERGY -684.6043071711497
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_17
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  10.70336   7.15181  10.42216    H   1 1   0.082842
+HETATM     2 C                   9.87899   7.07525   9.70505    C   1 1  -0.247549
+HETATM     3 H                   9.34021   6.13410   9.86937    H   1 1   0.076286
+HETATM     4 H                  10.28252   7.08127   8.68514    H   1 1   0.076265
+HETATM     5 S                   8.68502   8.46792   9.86891    S   1 1   0.118925
+HETATM     6 Ag                 10.02519  10.51727  10.53034   Ag   1 1  -0.019355
+HETATM     7 Ag                  8.60171   9.09052  12.32725   Ag   1 1  -0.019104
+HETATM     8 Ag                  9.87169  11.38052  13.12266   Ag   1 1  -0.068309
+UNIT ENERGY   kcal
+ENERGY -684.6008714145332
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_18
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  10.65349   7.11353  10.35077    H   1 1   0.084624
+HETATM     2 C                   9.81305   7.07294   9.64933    C   1 1  -0.247124
+HETATM     3 H                   9.25370   6.14233   9.80508    H   1 1   0.075898
+HETATM     4 H                  10.19586   7.09067   8.62152    H   1 1   0.075866
+HETATM     5 S                   8.65853   8.49157   9.86692    S   1 1   0.121579
+HETATM     6 Ag                 10.04469  10.50613  10.53716   Ag   1 1  -0.022543
+HETATM     7 Ag                  8.62105   9.07954  12.33403   Ag   1 1  -0.022274
+HETATM     8 Ag                  9.85028  11.39601  13.11779   Ag   1 1  -0.066026
+UNIT ENERGY   kcal
+ENERGY -684.561384994063
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_19
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  10.59485   7.06911  10.27992    H   1 1   0.086659
+HETATM     2 C                   9.74317   7.07136   9.59167    C   1 1  -0.246454
+HETATM     3 H                   9.15989   6.15303   9.73148    H   1 1   0.075539
+HETATM     4 H                  10.11042   7.10609   8.55868    H   1 1   0.075312
+HETATM     5 S                   8.63338   8.51535   9.86660    S   1 1   0.124546
+HETATM     6 Ag                 10.06470  10.49526  10.54408   Ag   1 1  -0.026255
+HETATM     7 Ag                  8.64076   9.06849  12.34121   Ag   1 1  -0.026245
+HETATM     8 Ag                  9.82817  11.41118  13.11221   Ag   1 1  -0.063102
+UNIT ENERGY   kcal
+ENERGY -684.4881296576494
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_20
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  10.53471   7.02700  10.20733    H   1 1   0.088387
+HETATM     2 C                   9.67129   7.07197   9.53497    C   1 1  -0.245211
+HETATM     3 H                   9.06332   6.16773   9.66168    H   1 1   0.075138
+HETATM     4 H                  10.02068   7.12350   8.49643    H   1 1   0.074755
+HETATM     5 S                   8.60941   8.54002   9.86777    S   1 1   0.127813
+HETATM     6 Ag                 10.08492  10.48444  10.55106   Ag   1 1  -0.030430
+HETATM     7 Ag                  8.66064   9.05738  12.34849   Ag   1 1  -0.030679
+HETATM     8 Ag                  9.80563  11.42576  13.10590   Ag   1 1  -0.059774
+UNIT ENERGY   kcal
+ENERGY -684.3820373133141
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_21
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  10.47786   7.00042  10.13868    H   1 1   0.089705
+HETATM     2 C                   9.59888   7.07628   9.49025    C   1 1  -0.243998
+HETATM     3 H                   8.97118   6.18644   9.62242    H   1 1   0.074549
+HETATM     4 H                   9.92223   7.13145   8.44356    H   1 1   0.074394
+HETATM     5 S                   8.58593   8.56706   9.86885    S   1 1   0.130307
+HETATM     6 Ag                 10.10504  10.47455  10.55744   Ag   1 1  -0.034227
+HETATM     7 Ag                  8.68053   9.04587  12.35522   Ag   1 1  -0.034328
+HETATM     8 Ag                  9.78309  11.43857  13.09900   Ag   1 1  -0.056402
+UNIT ENERGY   kcal
+ENERGY -684.2442362245737
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_22
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  10.42093   6.97489  10.06236    H   1 1   0.090927
+HETATM     2 C                   9.52449   7.08241   9.44254    C   1 1  -0.242489
+HETATM     3 H                   8.87734   6.20779   9.58288    H   1 1   0.073900
+HETATM     4 H                   9.81640   7.14348   8.38688    H   1 1   0.074078
+HETATM     5 S                   8.56384   8.59437   9.87170    S   1 1   0.133353
+HETATM     6 Ag                 10.12549  10.46447  10.56407   Ag   1 1  -0.038599
+HETATM     7 Ag                  8.70051   9.03447  12.36240   Ag   1 1  -0.038431
+HETATM     8 Ag                  9.76004  11.45113  13.09132   Ag   1 1  -0.052740
+UNIT ENERGY   kcal
+ENERGY -684.0742151020404
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_23
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  10.36461   6.95680   9.97875    H   1 1   0.092244
+HETATM     2 C                   9.45177   7.09562   9.39077    C   1 1  -0.241290
+HETATM     3 H                   8.78985   6.23312   9.53684    H   1 1   0.073218
+HETATM     4 H                   9.71103   7.16876   8.32743    H   1 1   0.073727
+HETATM     5 S                   8.54229   8.62156   9.87680    S   1 1   0.136591
+HETATM     6 Ag                 10.14619  10.45356  10.57077   Ag   1 1  -0.042961
+HETATM     7 Ag                  8.71997   9.02328  12.37061   Ag   1 1  -0.042567
+HETATM     8 Ag                  9.73684  11.46331  13.08248   Ag   1 1  -0.048964
+UNIT ENERGY   kcal
+ENERGY -683.8695208709918
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_24
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  10.30090   6.93411   9.89660    H   1 1   0.093286
+HETATM     2 C                   9.37462   7.10940   9.33947    C   1 1  -0.239828
+HETATM     3 H                   8.69335   6.26259   9.48859    H   1 1   0.072627
+HETATM     4 H                   9.60325   7.19808   8.27014    H   1 1   0.073345
+HETATM     5 S                   8.52271   8.64936   9.88336    S   1 1   0.140419
+HETATM     6 Ag                 10.16723  10.44303  10.57759   Ag   1 1  -0.047638
+HETATM     7 Ag                  8.73985   9.01192  12.37893   Ag   1 1  -0.047086
+HETATM     8 Ag                  9.71296  11.47499  13.07291   Ag   1 1  -0.045125
+UNIT ENERGY   kcal
+ENERGY -683.6320478695586
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_25
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  10.23207   6.91884   9.84838    H   1 1   0.093774
+HETATM     2 C                   9.30827   7.13230   9.30126    C   1 1  -0.238730
+HETATM     3 H                   8.60627   6.29968   9.43261    H   1 1   0.072377
+HETATM     4 H                   9.53441   7.24177   8.23338    H   1 1   0.072638
+HETATM     5 S                   8.50031   8.67884   9.88999    S   1 1   0.142488
+HETATM     6 Ag                 10.18697  10.43230  10.58379   Ag   1 1  -0.050507
+HETATM     7 Ag                  8.75883   9.00062  12.38657   Ag   1 1  -0.050263
+HETATM     8 Ag                  9.69051  11.48502  13.06270   Ag   1 1  -0.041777
+UNIT ENERGY   kcal
+ENERGY -683.3673836382477
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_26
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  10.15774   6.89907   9.79520    H   1 1   0.094190
+HETATM     2 C                   9.23806   7.15621   9.25936    C   1 1  -0.237636
+HETATM     3 H                   8.51154   6.34165   9.37010    H   1 1   0.072212
+HETATM     4 H                   9.46236   7.29055   8.19386    H   1 1   0.071899
+HETATM     5 S                   8.47988   8.70835   9.89842    S   1 1   0.145239
+HETATM     6 Ag                 10.20718  10.42166  10.59020   Ag   1 1  -0.053707
+HETATM     7 Ag                  8.77803   8.98928  12.39488   Ag   1 1  -0.053800
+HETATM     8 Ag                  9.66737  11.49483  13.05162   Ag   1 1  -0.038397
+UNIT ENERGY   kcal
+ENERGY -683.0691250473362
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_27
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                  10.07887   6.88117   9.73422    H   1 1   0.094863
+HETATM     2 C                   9.16090   7.17989   9.21839    C   1 1  -0.237234
+HETATM     3 H                   8.41068   6.38595   9.31988    H   1 1   0.071907
+HETATM     4 H                   9.37462   7.33333   8.15336    H   1 1   0.071331
+HETATM     5 S                   8.46176   8.73808   9.90727    S   1 1   0.148435
+HETATM     6 Ag                 10.22796  10.41149  10.59700   Ag   1 1  -0.057122
+HETATM     7 Ag                  8.79788   8.97785  12.40302   Ag   1 1  -0.057192
+HETATM     8 Ag                  9.64334  11.50422  13.04007   Ag   1 1  -0.034988
+UNIT ENERGY   kcal
+ENERGY -682.7391484771832
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_28
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                   9.99546   6.86242   9.66713    H   1 1   0.095277
+HETATM     2 C                   9.07971   7.20635   9.17523    C   1 1  -0.237009
+HETATM     3 H                   8.30370   6.43632   9.26833    H   1 1   0.071661
+HETATM     4 H                   9.28066   7.38218   8.11109    H   1 1   0.070837
+HETATM     5 S                   8.44598   8.76800   9.91840    S   1 1   0.152524
+HETATM     6 Ag                 10.24930  10.40149  10.60386   Ag   1 1  -0.060731
+HETATM     7 Ag                  8.81783   8.96629  12.41184   Ag   1 1  -0.060802
+HETATM     8 Ag                  9.61855  11.51311  13.02742   Ag   1 1  -0.031757
+UNIT ENERGY   kcal
+ENERGY -682.3796303293004
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_29
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                   9.92549   6.86497   9.60726    H   1 1   0.095515
+HETATM     2 C                   9.00681   7.23825   9.14398    C   1 1  -0.237304
+HETATM     3 H                   8.21601   6.48414   9.24235    H   1 1   0.071179
+HETATM     4 H                   9.18640   7.42806   8.07847    H   1 1   0.070525
+HETATM     5 S                   8.42874   8.80010   9.92991    S   1 1   0.155856
+HETATM     6 Ag                 10.26977  10.39148  10.61025   Ag   1 1  -0.063424
+HETATM     7 Ag                  8.83695   8.95503  12.41968   Ag   1 1  -0.063387
+HETATM     8 Ag                  9.59468  11.52029  13.01437   Ag   1 1  -0.028961
+UNIT ENERGY   kcal
+ENERGY -681.9921231098613
+END
+
+BIOGRF 200
+DESCRP LT_dihedral_30
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag3SCH3/testoptiadf/LT/LT_dihedral.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 8 0
+HETATM     1 H                   9.85182   6.86731   9.54139    H   1 1   0.095529
+HETATM     2 C                   8.92913   7.27127   9.11204    C   1 1  -0.237871
+HETATM     3 H                   8.12266   6.53529   9.22075    H   1 1   0.070719
+HETATM     4 H                   9.08177   7.47685   8.04517    H   1 1   0.070383
+HETATM     5 S                   8.41365   8.83225   9.94274    S   1 1   0.159679
+HETATM     6 Ag                 10.29086  10.38187  10.61676   Ag   1 1  -0.066184
+HETATM     7 Ag                  8.85628   8.94368  12.42789   Ag   1 1  -0.065918
+HETATM     8 Ag                  9.57006  11.52696  13.00054   Ag   1 1  -0.026336
+UNIT ENERGY   kcal
+ENERGY -681.5763478484033
+END
+
+BIOGRF 200
+DESCRP LT_dist_1
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.35154   7.41742   9.78142    H   1 1   0.083623
+HETATM     2 C                  10.25937   7.49599   9.74674    C   1 1  -0.238869
+HETATM     3 H                   9.82027   6.68041  10.33673    H   1 1   0.096818
+HETATM     4 H                   9.90803   7.42017   8.71191    H   1 1   0.086376
+HETATM     5 S                   9.65767   9.05202  10.56453    S   1 1   0.283394
+HETATM     6 Ag                 10.17132  10.48742   9.81234   Ag   1 1  -0.311342
+UNIT ENERGY   kcal
+ENERGY -461.76312753265654
+END
+
+BIOGRF 200
+DESCRP LT_dist_2
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.35368   7.41455   9.78395    H   1 1   0.081169
+HETATM     2 C                  10.26107   7.48384   9.74384    C   1 1  -0.230987
+HETATM     3 H                   9.82597   6.65374  10.31644    H   1 1   0.095391
+HETATM     4 H                   9.91570   7.42273   8.70606    H   1 1   0.084582
+HETATM     5 S                   9.64364   9.01898  10.58608    S   1 1   0.224687
+HETATM     6 Ag                 10.17518  10.49893   9.80644   Ag   1 1  -0.254843
+UNIT ENERGY   kcal
+ENERGY -492.1321829562346
+END
+
+BIOGRF 200
+DESCRP LT_dist_3
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.35925   7.43321   9.75841    H   1 1   0.080586
+HETATM     2 C                  10.26475   7.47664   9.74045    C   1 1  -0.223581
+HETATM     3 H                   9.86250   6.62934  10.31204    H   1 1   0.094189
+HETATM     4 H                   9.90036   7.41722   8.70910    H   1 1   0.081164
+HETATM     5 S                   9.62636   8.98642  10.60760    S   1 1   0.171159
+HETATM     6 Ag                 10.17968  10.50958   9.80064   Ag   1 1  -0.203518
+UNIT ENERGY   kcal
+ENERGY -515.8803408566167
+END
+
+BIOGRF 200
+DESCRP LT_dist_4
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.36100   7.43770   9.74497    H   1 1   0.079706
+HETATM     2 C                  10.26564   7.46294   9.74034    C   1 1  -0.216544
+HETATM     3 H                   9.88632   6.60208  10.30766    H   1 1   0.093128
+HETATM     4 H                   9.89038   7.40573   8.71254    H   1 1   0.078699
+HETATM     5 S                   9.61198   8.95244  10.62642    S   1 1   0.123631
+HETATM     6 Ag                 10.18373  10.52160   9.79516   Ag   1 1  -0.158620
+UNIT ENERGY   kcal
+ENERGY -534.2954861812868
+END
+
+BIOGRF 200
+DESCRP LT_dist_5
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.36280   7.44310   9.73657    H   1 1   0.078848
+HETATM     2 C                  10.26731   7.45353   9.73876    C   1 1  -0.211198
+HETATM     3 H                   9.90406   6.57962  10.29653    H   1 1   0.092524
+HETATM     4 H                   9.88651   7.40416   8.71271    H   1 1   0.077203
+HETATM     5 S                   9.59722   8.91882  10.64678    S   1 1   0.083280
+HETATM     6 Ag                 10.18781  10.53289   9.78943   Ag   1 1  -0.120657
+UNIT ENERGY   kcal
+ENERGY -548.4315505139234
+END
+
+BIOGRF 200
+DESCRP LT_dist_6
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.36258   7.43906   9.73453    H   1 1   0.078011
+HETATM     2 C                  10.26686   7.43806   9.73976    C   1 1  -0.205301
+HETATM     3 H                   9.91608   6.55214  10.28690    H   1 1   0.091955
+HETATM     4 H                   9.88429   7.39518   8.71384    H   1 1   0.076100
+HETATM     5 S                   9.58436   8.88431  10.66503    S   1 1   0.048811
+HETATM     6 Ag                 10.19162  10.54533   9.78396   Ag   1 1  -0.089575
+UNIT ENERGY   kcal
+ENERGY -559.1320854687447
+END
+
+BIOGRF 200
+DESCRP LT_dist_7
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.36183   7.43041   9.73791    H   1 1   0.077509
+HETATM     2 C                  10.26642   7.42314   9.74078    C   1 1  -0.201636
+HETATM     3 H                   9.91888   6.52967  10.27674    H   1 1   0.092078
+HETATM     4 H                   9.88549   7.39182   8.71411    H   1 1   0.075998
+HETATM     5 S                   9.57204   8.84953  10.68327    S   1 1   0.022239
+HETATM     6 Ag                 10.19532  10.55773   9.77845   Ag   1 1  -0.066188
+UNIT ENERGY   kcal
+ENERGY -567.0839636413829
+END
+
+BIOGRF 200
+DESCRP LT_dist_8
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.36094   7.42145   9.74323    H   1 1   0.076786
+HETATM     2 C                  10.26522   7.40684   9.74227    C   1 1  -0.195385
+HETATM     3 H                   9.92430   6.50050  10.26178    H   1 1   0.091582
+HETATM     4 H                   9.88881   7.38557   8.71332    H   1 1   0.075661
+HETATM     5 S                   9.55998   8.81482  10.70140    S   1 1  -0.001556
+HETATM     6 Ag                 10.19899  10.57036   9.77296   Ag   1 1  -0.047090
+UNIT ENERGY   kcal
+ENERGY -572.8385694942001
+END
+
+BIOGRF 200
+DESCRP LT_dist_9
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.35924   7.40808   9.75051    H   1 1   0.076451
+HETATM     2 C                  10.26378   7.39015   9.74453    C   1 1  -0.191197
+HETATM     3 H                   9.92334   6.47670  10.25115    H   1 1   0.091735
+HETATM     4 H                   9.89150   7.38087   8.71406    H   1 1   0.075925
+HETATM     5 S                   9.54854   8.77960  10.71879    S   1 1  -0.019539
+HETATM     6 Ag                 10.20258  10.58316   9.76753   Ag   1 1  -0.033375
+UNIT ENERGY   kcal
+ENERGY -576.839380582539
+END
+
+BIOGRF 200
+DESCRP LT_dist_10
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.35679   7.39208   9.75781    H   1 1   0.075990
+HETATM     2 C                  10.26117   7.36930   9.74823    C   1 1  -0.185070
+HETATM     3 H                   9.92476   6.44691  10.24204    H   1 1   0.091418
+HETATM     4 H                   9.89258   7.36852   8.71616    H   1 1   0.075784
+HETATM     5 S                   9.53778   8.74412  10.73505    S   1 1  -0.036628
+HETATM     6 Ag                 10.20608  10.59666   9.76225   Ag   1 1  -0.021495
+UNIT ENERGY   kcal
+ENERGY -579.4450011326895
+END
+
+BIOGRF 200
+DESCRP LT_dist_11
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.35471   7.37902   9.76395    H   1 1   0.075678
+HETATM     2 C                  10.25927   7.35176   9.75117    C   1 1  -0.180063
+HETATM     3 H                   9.92618   6.42169  10.23266    H   1 1   0.091329
+HETATM     4 H                   9.89330   7.36097   8.71824    H   1 1   0.075828
+HETATM     5 S                   9.52651   8.70876  10.75197    S   1 1  -0.051645
+HETATM     6 Ag                 10.20967  10.60963   9.75687   Ag   1 1  -0.011127
+UNIT ENERGY   kcal
+ENERGY -580.9447513595192
+END
+
+BIOGRF 200
+DESCRP LT_dist_12
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.35074   7.35743   9.77091    H   1 1   0.075204
+HETATM     2 C                  10.25529   7.32615   9.75722    C   1 1  -0.173813
+HETATM     3 H                   9.92594   6.39112  10.23200    H   1 1   0.091123
+HETATM     4 H                   9.88989   7.34017   8.72401    H   1 1   0.075409
+HETATM     5 S                   9.51692   8.67262  10.76631    S   1 1  -0.066924
+HETATM     6 Ag                 10.21305  10.62401   9.75179   Ag   1 1  -0.001000
+UNIT ENERGY   kcal
+ENERGY -581.5707214396992
+END
+
+BIOGRF 200
+DESCRP LT_dist_13
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.34834   7.34576   9.77474    H   1 1   0.074785
+HETATM     2 C                  10.25300   7.30771   9.76077    C   1 1  -0.168143
+HETATM     3 H                   9.93129   6.36404  10.22430    H   1 1   0.090728
+HETATM     4 H                   9.88781   7.32893   8.72752    H   1 1   0.075018
+HETATM     5 S                   9.50573   8.63714  10.78275    S   1 1  -0.082480
+HETATM     6 Ag                 10.21665  10.63716   9.74648   Ag   1 1   0.010091
+UNIT ENERGY   kcal
+ENERGY -581.512577928631
+END
+
+BIOGRF 200
+DESCRP LT_dist_14
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.34352   7.32132   9.78176    H   1 1   0.074155
+HETATM     2 C                  10.24825   7.27962   9.76800    C   1 1  -0.161944
+HETATM     3 H                   9.92992   6.33296  10.22800    H   1 1   0.090534
+HETATM     4 H                   9.88231   7.30377   8.73502    H   1 1   0.074335
+HETATM     5 S                   9.49671   8.60067  10.79605    S   1 1  -0.098299
+HETATM     6 Ag                 10.21999  10.65198   9.74152   Ag   1 1   0.021218
+UNIT ENERGY   kcal
+ENERGY -580.9196864992364
+END
+
+BIOGRF 200
+DESCRP LT_dist_15
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.33973   7.30449   9.78539    H   1 1   0.073591
+HETATM     2 C                  10.24461   7.25644   9.77370    C   1 1  -0.156183
+HETATM     3 H                   9.93445   6.30394  10.22740    H   1 1   0.090205
+HETATM     4 H                   9.87625   7.28377   8.74154    H   1 1   0.073573
+HETATM     5 S                   9.48659   8.56461  10.81067    S   1 1  -0.114604
+HETATM     6 Ag                 10.22348  10.66599   9.73641   Ag   1 1   0.033417
+UNIT ENERGY   kcal
+ENERGY -579.9158302805671
+END
+
+BIOGRF 200
+DESCRP LT_dist_16
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.33441   7.27918   9.79214    H   1 1   0.072865
+HETATM     2 C                  10.23938   7.22721   9.78163    C   1 1  -0.150179
+HETATM     3 H                   9.93338   6.27195  10.23309    H   1 1   0.089899
+HETATM     4 H                   9.86955   7.25598   8.74998    H   1 1   0.072712
+HETATM     5 S                   9.47786   8.52801  10.82346    S   1 1  -0.131089
+HETATM     6 Ag                 10.22680  10.68101   9.73150   Ag   1 1   0.045792
+UNIT ENERGY   kcal
+ENERGY -578.5978488803347
+END
+
+BIOGRF 200
+DESCRP LT_dist_17
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.33002   7.25930   9.79738    H   1 1   0.072240
+HETATM     2 C                  10.23518   7.20197   9.78810    C   1 1  -0.144988
+HETATM     3 H                   9.93562   6.24209  10.23414    H   1 1   0.089591
+HETATM     4 H                   9.86355   7.23383   8.75709    H   1 1   0.071965
+HETATM     5 S                   9.46819   8.49180  10.83744    S   1 1  -0.147400
+HETATM     6 Ag                 10.23024  10.69536   9.72647   Ag   1 1   0.058592
+UNIT ENERGY   kcal
+ENERGY -577.0466443892321
+END
+
+BIOGRF 200
+DESCRP LT_dist_18
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.32447   7.23412   9.80385    H   1 1   0.071554
+HETATM     2 C                  10.22977   7.17256   9.79631    C   1 1  -0.139664
+HETATM     3 H                   9.93530   6.20975  10.24024    H   1 1   0.089225
+HETATM     4 H                   9.85606   7.20519   8.76603    H   1 1   0.071119
+HETATM     5 S                   9.45952   8.45519  10.85006    S   1 1  -0.163478
+HETATM     6 Ag                 10.23356  10.71042   9.72157   Ag   1 1   0.071245
+UNIT ENERGY   kcal
+ENERGY -575.3245906814662
+END
+
+BIOGRF 200
+DESCRP LT_dist_19
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.31917   7.20933   9.81102    H   1 1   0.070910
+HETATM     2 C                  10.22461   7.14415   9.80413    C   1 1  -0.135051
+HETATM     3 H                   9.93447   6.17829  10.24438    H   1 1   0.088918
+HETATM     4 H                   9.84968   7.17887   8.77426    H   1 1   0.070409
+HETATM     5 S                   9.45064   8.41870  10.86302    S   1 1  -0.178802
+HETATM     6 Ag                 10.23692  10.72530   9.71663   Ag   1 1   0.083616
+UNIT ENERGY   kcal
+ENERGY -573.483995186898
+END
+
+BIOGRF 200
+DESCRP LT_dist_20
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.31349   7.18375   9.81795    H   1 1   0.070333
+HETATM     2 C                  10.21909   7.11456   9.81249    C   1 1  -0.130696
+HETATM     3 H                   9.93380   6.14579  10.25024    H   1 1   0.088518
+HETATM     4 H                   9.84231   7.15027   8.78328    H   1 1   0.069719
+HETATM     5 S                   9.44206   8.38211  10.87557    S   1 1  -0.193383
+HETATM     6 Ag                 10.24023  10.74038   9.71173   Ag   1 1   0.095508
+UNIT ENERGY   kcal
+ENERGY -571.5655433144616
+END
+
+BIOGRF 200
+DESCRP LT_dist_21
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.30768   7.15663   9.82578    H   1 1   0.069795
+HETATM     2 C                  10.21340   7.08439   9.82109    C   1 1  -0.126908
+HETATM     3 H                   9.93192   6.11326  10.25629    H   1 1   0.088162
+HETATM     4 H                   9.83531   7.12129   8.79229    H   1 1   0.069113
+HETATM     5 S                   9.43364   8.34549  10.88795    S   1 1  -0.206881
+HETATM     6 Ag                 10.24353  10.75555   9.70685   Ag   1 1   0.106718
+UNIT ENERGY   kcal
+ENERGY -569.6023752918192
+END
+
+BIOGRF 200
+DESCRP LT_dist_22
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.30172   7.12926   9.83372    H   1 1   0.069338
+HETATM     2 C                  10.20757   7.05387   9.82987    C   1 1  -0.123549
+HETATM     3 H                   9.92993   6.08025  10.26264    H   1 1   0.087727
+HETATM     4 H                   9.82817   7.09185   8.80155    H   1 1   0.068601
+HETATM     5 S                   9.42531   8.30885  10.90020    S   1 1  -0.219291
+HETATM     6 Ag                 10.24682  10.77078   9.70198   Ag   1 1   0.117174
+UNIT ENERGY   kcal
+ENERGY -567.6208117241023
+END
+
+BIOGRF 200
+DESCRP LT_dist_23
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.29561   7.10081   9.84210    H   1 1   0.068946
+HETATM     2 C                  10.20157   7.02276   9.83891    C   1 1  -0.120733
+HETATM     3 H                   9.92732   6.04707  10.26948    H   1 1   0.087306
+HETATM     4 H                   9.82099   7.06163   8.81096    H   1 1   0.068155
+HETATM     5 S                   9.41712   8.27219  10.91227    S   1 1  -0.230459
+HETATM     6 Ag                 10.25009  10.78611   9.69712   Ag   1 1   0.126786
+UNIT ENERGY   kcal
+ENERGY -565.6417160916837
+END
+
+BIOGRF 200
+DESCRP LT_dist_24
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.28934   7.07169   9.85075    H   1 1   0.068630
+HETATM     2 C                  10.19541   6.99113   9.84817    C   1 1  -0.118383
+HETATM     3 H                   9.92430   6.01342  10.27675    H   1 1   0.086823
+HETATM     4 H                   9.81374   7.03079   8.82060    H   1 1   0.067800
+HETATM     5 S                   9.40905   8.23551  10.92418    S   1 1  -0.240395
+HETATM     6 Ag                 10.25335  10.80151   9.69228   Ag   1 1   0.135524
+UNIT ENERGY   kcal
+ENERGY -563.681508342228
+END
+
+BIOGRF 200
+DESCRP LT_dist_25
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.28304   7.04230   9.85969    H   1 1   0.068382
+HETATM     2 C                  10.18920   6.95948   9.85749    C   1 1  -0.116539
+HETATM     3 H                   9.92102   5.97983  10.28389    H   1 1   0.086332
+HETATM     4 H                   9.80661   7.00004   8.83020    H   1 1   0.067517
+HETATM     5 S                   9.40098   8.19885  10.93606    S   1 1  -0.249053
+HETATM     6 Ag                 10.25662  10.81691   9.68744   Ag   1 1   0.143361
+UNIT ENERGY   kcal
+ENERGY -561.7531356746347
+END
+
+BIOGRF 200
+DESCRP LT_dist_26
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.27652   7.01232   9.86849    H   1 1   0.068218
+HETATM     2 C                  10.18280   6.92708   9.86710    C   1 1  -0.115155
+HETATM     3 H                   9.91776   5.94570  10.29202    H   1 1   0.085796
+HETATM     4 H                   9.79896   6.96793   8.84023    H   1 1   0.067294
+HETATM     5 S                   9.39308   8.16215  10.94772    S   1 1  -0.256497
+HETATM     6 Ag                 10.25986  10.83243   9.68262   Ag   1 1   0.150344
+UNIT ENERGY   kcal                                                    
+ENERGY -559.8663441747498                                                
+END                                                                      
+
+BIOGRF 200
+DESCRP LT_dist_27
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.26998   6.98125   9.87810    H   1 1   0.068089
+HETATM     2 C                  10.17630   6.89438   9.87682    C   1 1  -0.114243
+HETATM     3 H                   9.91345   5.91146  10.29994    H   1 1   0.085252
+HETATM     4 H                   9.79182   6.93600   8.85012    H   1 1   0.067148
+HETATM     5 S                   9.38523   8.12548  10.95931    S   1 1  -0.262722
+HETATM     6 Ag                 10.26311  10.84798   9.67780   Ag   1 1   0.156477
+UNIT ENERGY   kcal
+ENERGY -558.028841920457
+END
+
+BIOGRF 200
+DESCRP LT_dist_28
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.26332   6.95070   9.88712    H   1 1   0.068046
+HETATM     2 C                  10.16976   6.86155   9.88663    C   1 1  -0.113726
+HETATM     3 H                   9.90992   5.87702  10.30835    H   1 1   0.084667
+HETATM     4 H                   9.78410   6.90336   8.86034    H   1 1   0.067050
+HETATM     5 S                   9.37743   8.08879  10.97083    S   1 1  -0.267854
+HETATM     6 Ag                 10.26634  10.86356   9.67300   Ag   1 1   0.161818
+UNIT ENERGY   kcal
+ENERGY -556.2461010677187
+END
+
+BIOGRF 200
+DESCRP LT_dist_29
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.25640   6.91681   9.89775    H   1 1   0.067998
+HETATM     2 C                  10.16278   6.82713   9.89704    C   1 1  -0.113644
+HETATM     3 H                   9.90396   5.84170  10.31767    H   1 1   0.084076
+HETATM     4 H                   9.77685   6.86935   8.87075    H   1 1   0.067006
+HETATM     5 S                   9.36994   8.05207  10.98197    S   1 1  -0.271879
+HETATM     6 Ag                 10.26956  10.87938   9.66821   Ag   1 1   0.166445
+UNIT ENERGY   kcal
+ENERGY -554.522189760608
+END
+
+BIOGRF 200
+DESCRP LT_dist_30
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/QEvalidation/Ag1SCH3/testoptiadf/LT/LT_dist.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 H                  11.25655   6.92968   9.89559    H   1 1   0.068281
+HETATM     2 C                  10.16428   6.82300   9.89509    C   1 1  -0.112811
+HETATM     3 H                   9.92360   5.82404  10.29439    H   1 1   0.083489
+HETATM     4 H                   9.77621   6.87902   8.86993    H   1 1   0.067147
+HETATM     5 S                   9.35656   8.01661  11.00123    S   1 1  -0.275772
+HETATM     6 Ag                 10.27321  10.89040   9.66292   Ag   1 1   0.169667
+UNIT ENERGY   kcal
+ENERGY -552.8514895568032
+END
+
+BIOGRF 200
+DESCRP Ag20
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/SinglePoints/Ag20/Ag20.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 20 0
+HETATM     1 Ag                  8.82324   9.00719   7.05220   Ag   1 1  -0.014989
+HETATM     2 Ag                 11.59178   9.03665   6.93965   Ag   1 1  -0.013922
+HETATM     3 Ag                 14.35812   9.14598   6.87940   Ag   1 1  -0.207244
+HETATM     4 Ag                  6.05813   9.04950   7.23046   Ag   1 1  -0.207079
+HETATM     5 Ag                 10.30484   9.61376   9.40340   Ag   1 1   0.246073
+HETATM     6 Ag                  7.46299   9.69658   9.52473   Ag   1 1  -0.013128
+HETATM     7 Ag                 13.14429   9.76775   9.29234   Ag   1 1  -0.013565
+HETATM     8 Ag                 10.17798  11.50235   7.02991   Ag   1 1   0.253430
+HETATM     9 Ag                 10.46934  11.11533  13.95318   Ag   1 1  -0.208747
+HETATM    10 Ag                  7.34441  11.50414   7.24959   Ag   1 1  -0.013244
+HETATM    11 Ag                 13.01989  11.56798   7.01527   Ag   1 1  -0.015631
+HETATM    12 Ag                  8.75681  12.22571   9.60894   Ag   1 1   0.248385
+HETATM    13 Ag                 11.78940  12.25820   9.48541   Ag   1 1   0.254273
+HETATM    14 Ag                  8.93653  10.38313  11.76800   Ag   1 1  -0.015300
+HETATM    15 Ag                 11.84617  10.42446  11.65283   Ag   1 1  -0.014150
+HETATM    16 Ag                  8.71008  13.91822   7.32810   Ag   1 1  -0.013735
+HETATM    17 Ag                 11.61513  13.94754   7.20781   Ag   1 1  -0.015597
+HETATM    18 Ag                 10.35952  12.91659  11.85149   Ag   1 1  -0.013830
+HETATM    19 Ag                 10.25443  14.64354   9.68403   Ag   1 1  -0.013806
+HETATM    20 Ag                 10.14908  16.28163   7.45069   Ag   1 1  -0.208195
+UNIT ENERGY   kcal
+ENERGY -1115.155988800135
+END
+
+BIOGRF 200
+DESCRP Ag_S
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S/Ag_S.t21
+RUTYPE NORMAL RUN
+MOLCHARGE 1 2 0
+HETATM     1 Ag                 -2.96760  -0.14192  -0.00000   Ag   1 1   0.084200
+HETATM     2 S                  -0.68282  -0.02475  -0.00000    S   1 1  -0.084200
+UNIT ENERGY   kcal
+ENERGY -92.38760207564343
+END
+
+BIOGRF 200
+DESCRP Ag20_S_E1E2
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/SinglePoints/Sulfur/E1E2/Ag20_S_E1E2.t21
+RUTYPE NORMAL RUN
+MOLCHARGE 1 21 0
+HETATM     1 Ag                 10.43536  10.14812  14.13700   Ag   1 1  -0.126938
+HETATM     2 Ag                 10.18843  15.46028   9.06917   Ag   1 1  -0.352541
+HETATM     3 Ag                 10.11249  16.26824   6.50355   Ag   1 1  -0.125873
+HETATM     4 Ag                 11.65999  14.01468   7.17674   Ag   1 1   0.039965
+HETATM     5 Ag                  8.67890  13.96578   7.25867   Ag   1 1   0.036562
+HETATM     6 Ag                  8.77819  12.43726   9.76111   Ag   1 1  -0.210543
+HETATM     7 Ag                 10.34599  12.49004  12.81993   Ag   1 1  -0.364348
+HETATM     8 Ag                 11.84951  10.40292  11.71669   Ag   1 1   0.051824
+HETATM     9 Ag                  8.86938  10.34561  11.80525   Ag   1 1   0.047823
+HETATM    10 Ag                  7.45342   9.84545   9.52456   Ag   1 1   0.105459
+HETATM    11 Ag                  6.08946   9.10399   7.21302   Ag   1 1  -0.214947
+HETATM    12 Ag                  7.36079  11.57801   7.35000   Ag   1 1   0.099521
+HETATM    13 Ag                 10.20948  11.59403   7.18466   Ag   1 1   0.277656
+HETATM    14 Ag                 11.76929  12.48395   9.66792   Ag   1 1  -0.231356
+HETATM    15 Ag                 13.05976  11.66600   7.17829   Ag   1 1   0.104397
+HETATM    16 Ag                 13.15092   9.93523   9.35813   Ag   1 1   0.111166
+HETATM    17 Ag                 14.39713   9.22892   6.96680   Ag   1 1  -0.215414
+HETATM    18 Ag                 11.63800   9.13349   7.00605   Ag   1 1   0.010388
+HETATM    19 Ag                 10.30276   9.79909   9.43353   Ag   1 1   0.260941
+HETATM    20 Ag                  8.84908   9.09470   7.08396   Ag   1 1   0.007595
+HETATM    21 S                  10.29895  14.09253  11.03720    S   1 1   0.688663
+UNIT ENERGY   kcal
+ENERGY -1215.967906451279
+END
+
+BIOGRF 200
+DESCRP Ag20_S_E1E2S
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/SinglePoints/Sulfur/Ag20_S_E1E2S/Ag20_S_E1E2S.t21
+RUTYPE NORMAL RUN
+MOLCHARGE 1 21 0
+HETATM     1 Ag                  9.91621  11.58969  14.20600   Ag   1 1  -0.200895
+HETATM     2 Ag                 10.25126  14.66106   9.67692   Ag   1 1   0.066858
+HETATM     3 Ag                 10.12940  16.27528   7.43213   Ag   1 1  -0.190770
+HETATM     4 Ag                 11.65377  13.96951   7.33330   Ag   1 1   0.066309
+HETATM     5 Ag                  8.75989  13.84892   7.33260   Ag   1 1   0.001134
+HETATM     6 Ag                  8.84053  12.15302   9.61905   Ag   1 1   0.345728
+HETATM     7 Ag                 10.24401  13.09583  11.91699   Ag   1 1  -0.010237
+HETATM     8 Ag                 11.65513  10.72085  12.27073   Ag   1 1  -0.406436
+HETATM     9 Ag                  8.86223  10.46404  11.86544   Ag   1 1   0.029082
+HETATM    10 Ag                  7.59818   9.62448   9.57232   Ag   1 1   0.052944
+HETATM    11 Ag                  6.21529   8.93393   7.25410   Ag   1 1  -0.232729
+HETATM    12 Ag                  7.43667  11.40142   7.25848   Ag   1 1  -0.005094
+HETATM    13 Ag                 10.28300  11.44598   7.20602   Ag   1 1   0.342753
+HETATM    14 Ag                 11.79628  12.22171   9.62666   Ag   1 1   0.336354
+HETATM    15 Ag                 13.12273  11.67614   7.10376   Ag   1 1  -0.010495
+HETATM    16 Ag                 13.55094   9.79092   9.11072   Ag   1 1  -0.406878
+HETATM    17 Ag                 14.49088   9.33624   6.57598   Ag   1 1  -0.200829
+HETATM    18 Ag                 11.74546   9.04729   7.05850   Ag   1 1   0.032552
+HETATM    19 Ag                 10.50429   9.41862   9.68093   Ag   1 1  -0.221668
+HETATM    20 Ag                  9.00224   8.93790   7.23163   Ag   1 1   0.054203
+HETATM    21 S                  12.55965   8.88264  11.06791    S   1 1   0.558113
+UNIT ENERGY   kcal
+ENERGY -1217.357212573005
+END
+
+BIOGRF 200
+DESCRP SH
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/SH/SH.t21
+RUTYPE NORMAL RUN
+MOLCHARGE 1 2 0
+HETATM     1 S                  -3.94153  -0.72082  -0.00000    S   1 1  -0.037122
+HETATM     2 H                  -2.59754  -0.92009  -0.00000    H   1 1   0.037122
+UNIT ENERGY   kcal
+ENERGY -136.2065932590528
+END
+
+BIOGRF 200
+DESCRP Ag20_staple
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/SinglePoints/Ag20_staple/Ag20_staple.t21
+RUTYPE NORMAL RUN
+MOLCHARGE 1 30 0
+HETATM     1 Ag                  9.45612  16.20626   8.28072   Ag   1 1  -0.259579
+HETATM     2 Ag                  7.29169  11.18322   7.36998   Ag   1 1  -0.019651
+HETATM     3 Ag                  8.32601  13.72952   7.80717   Ag   1 1  -0.076760
+HETATM     4 Ag                  6.34437   8.59923   6.99338   Ag   1 1  -0.207492
+HETATM     5 Ag                  7.89816   9.02698   9.25683   Ag   1 1  -0.042669
+HETATM     6 Ag                  9.49751   9.53594  11.47899   Ag   1 1   0.003688
+HETATM     7 Ag                 11.15523  10.13155  13.61386   Ag   1 1  -0.200581
+HETATM     8 Ag                 10.72072  12.18159  11.79639   Ag   1 1  -0.002884
+HETATM     9 Ag                  9.04656   9.00789   6.59593   Ag   1 1  -0.215021
+HETATM    10 Ag                 10.15668  14.18652  10.04871   Ag   1 1  -0.054163
+HETATM    11 Ag                 11.96381  11.97628   9.05281   Ag   1 1   0.229775
+HETATM    12 Ag                 11.17104  14.19726   7.43165   Ag   1 1  -0.042978
+HETATM    13 Ag                 12.33734   9.99824  11.10593   Ag   1 1  -0.138401
+HETATM    14 Ag                 10.68588   9.34870   8.91491   Ag   1 1   0.461819
+HETATM    15 Ag                  8.92567  11.66289   9.67144   Ag   1 1   0.224306
+HETATM    16 Ag                 10.03239  11.67125   6.87782   Ag   1 1   0.317818
+HETATM    17 Ag                 11.74756   9.50859   6.31837   Ag   1 1   0.655198
+HETATM    18 Ag                 12.71605  12.28571   6.22206   Ag   1 1  -0.179806
+HETATM    19 Ag                 13.50342   9.51051   8.67607   Ag   1 1  -0.445288
+HETATM    20 Ag                 14.58337   9.87289   5.81422   Ag   1 1  -0.822126
+HETATM    21 S                  15.31176   8.31836   7.47066    S   1 1   0.594537
+HETATM    22 C                  14.65083   6.66149   7.02372    C   1 1  -0.328008
+HETATM    23 H                  15.16940   6.29685   6.12837    H   1 1   0.078794
+HETATM    24 H                  14.85777   5.98683   7.86461    H   1 1   0.093276
+HETATM    25 H                  13.57106   6.68702   6.84040    H   1 1   0.005782
+HETATM    26 S                  14.07562  11.61486   4.25314    S   1 1   0.391093
+HETATM    27 C                  15.59258  12.65827   4.29478    C   1 1  -0.276436
+HETATM    28 H                  16.38630  12.15762   3.72603    H   1 1   0.085450
+HETATM    29 H                  15.34960  13.61526   3.81448    H   1 1   0.096562
+HETATM    30 H                  15.93872  12.84746   5.31693    H   1 1   0.073747
+UNIT ENERGY   kcal
+ENERGY -2254.282214521578
+END
+
+BIOGRF 200
+DESCRP Ag20_S_VE1
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/SinglePoints/Sulfur/Ag20_S_VE1/Ag20_S_VE1.t21
+RUTYPE NORMAL RUN
+MOLCHARGE 1 21 0
+HETATM     1 Ag                 10.45003   9.33053  12.70239   Ag   1 1  -0.301417
+HETATM     2 Ag                 10.24631  14.89197   9.27070   Ag   1 1   0.011252
+HETATM     3 Ag                 10.12487  16.20100   6.82033   Ag   1 1  -0.248000
+HETATM     4 Ag                 11.59359  13.86040   6.86890   Ag   1 1  -0.032548
+HETATM     5 Ag                  8.69796  13.83954   6.99919   Ag   1 1  -0.035665
+HETATM     6 Ag                  8.71516  12.54615   9.50840   Ag   1 1   0.250352
+HETATM     7 Ag                 10.36203  13.45907  11.66278   Ag   1 1  -0.101643
+HETATM     8 Ag                 12.20009  11.24948  11.82868   Ag   1 1  -0.258458
+HETATM     9 Ag                  8.59243  11.21298  11.98757   Ag   1 1  -0.256185
+HETATM    10 Ag                  7.40037  10.04911   9.82539   Ag   1 1  -0.127693
+HETATM    11 Ag                  6.08868   8.97795   7.61036   Ag   1 1  -0.209792
+HETATM    12 Ag                  7.33816  11.42653   7.29271   Ag   1 1  -0.061724
+HETATM    13 Ag                 10.17717  11.40465   7.15873   Ag   1 1   0.226053
+HETATM    14 Ag                 11.83776  12.57684   9.37181   Ag   1 1   0.244520
+HETATM    15 Ag                 13.01510  11.47169   7.04016   Ag   1 1  -0.061963
+HETATM    16 Ag                 13.21340  10.09579   9.56899   Ag   1 1  -0.127168
+HETATM    17 Ag                 14.33240   9.04663   7.23862   Ag   1 1  -0.210271
+HETATM    18 Ag                 11.59147   8.96068   7.51924   Ag   1 1  -0.088552
+HETATM    19 Ag                 10.31724  10.00396   9.89002   Ag   1 1   1.020990
+HETATM    20 Ag                  8.84503   8.93995   7.63739   Ag   1 1  -0.089120
+HETATM    21 S                  10.46757  11.74818  13.62915    S   1 1   0.457033
+UNIT ENERGY   kcal
+ENERGY -1216.160551880082
+END
+
+BIOGRF 200
+DESCRP Ag20_S_VE1E1
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/SinglePoints/Sulfur/Ag20_S_VE1E1/Ag20_S_VE1E1.t21
+RUTYPE NORMAL RUN
+MOLCHARGE 1 21 0
+HETATM     1 Ag                  9.90032  10.74872  14.33176   Ag   1 1  -0.265247
+HETATM     2 Ag                 10.30518  14.70772   9.54100   Ag   1 1  -0.007758
+HETATM     3 Ag                 10.08761  16.27691   7.24356   Ag   1 1  -0.219726
+HETATM     4 Ag                 11.56314  13.94262   7.04538   Ag   1 1  -0.012746
+HETATM     5 Ag                  8.66451  13.91429   7.26592   Ag   1 1   0.020852
+HETATM     6 Ag                  8.85521  12.32812   9.61700   Ag   1 1   0.190155
+HETATM     7 Ag                 10.61278  13.09067  11.78684   Ag   1 1  -0.301924
+HETATM     8 Ag                 12.12234  10.53846  11.57493   Ag   1 1  -0.317995
+HETATM     9 Ag                  9.11272  10.48715  11.71426   Ag   1 1   0.183335
+HETATM    10 Ag                  7.55409   9.74554   9.60678   Ag   1 1  -0.015312
+HETATM    11 Ag                  6.03698   9.02648   7.41871   Ag   1 1  -0.204719
+HETATM    12 Ag                  7.31468  11.49401   7.35520   Ag   1 1  -0.058559
+HETATM    13 Ag                 10.13878  11.48183   7.00689   Ag   1 1   0.282534
+HETATM    14 Ag                 11.83442  12.29170   9.34443   Ag   1 1   0.371992
+HETATM    15 Ag                 12.97801  11.56056   6.84864   Ag   1 1  -0.013910
+HETATM    16 Ag                 13.21631   9.78867   9.13164   Ag   1 1  -0.005190
+HETATM    17 Ag                 14.31250   9.14339   6.65090   Ag   1 1  -0.220694
+HETATM    18 Ag                 11.56506   9.01738   6.86503   Ag   1 1   0.021242
+HETATM    19 Ag                 10.44285   9.64467   9.39930   Ag   1 1   0.190274
+HETATM    20 Ag                  8.80716   8.96500   7.15575   Ag   1 1  -0.059395
+HETATM    21 S                  11.80076  11.90465  13.64361    S   1 1   0.442789
+UNIT ENERGY   kcal
+ENERGY -1210.110104894683
+END
+
+BIOGRF 200
+DESCRP Ag20SCH3_E1E1
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/SinglePoints/Ag20_SCH3_E1E1/Ag20SCH3_E1E1.t21
+RUTYPE NORMAL RUN
+MOLCHARGE 1 25 0
+HETATM     1 S                  13.09434  12.75034  12.58382    S   1 1   0.425498
+HETATM     2 Ag                 11.80355  12.29914   9.11104   Ag   1 1   0.550257
+HETATM     3 Ag                 10.42827   9.64830   9.34723   Ag   1 1   0.218187
+HETATM     4 Ag                  8.73109   8.90566   7.13822   Ag   1 1  -0.025727
+HETATM     5 Ag                 11.46350   8.96543   6.76811   Ag   1 1  -0.008412
+HETATM     6 Ag                 14.21372   9.11055   6.44811   Ag   1 1  -0.209687
+HETATM     7 Ag                 13.19875   9.80521   8.94273   Ag   1 1  -0.033957
+HETATM     8 Ag                 12.84612  11.51693   6.59147   Ag   1 1  -0.073539
+HETATM     9 Ag                 10.01730  11.42728   6.89308   Ag   1 1   0.233233
+HETATM    10 Ag                  7.21426  11.45614   7.36653   Ag   1 1  -0.023449
+HETATM    11 Ag                  5.95960   8.96534   7.44996   Ag   1 1  -0.210292
+HETATM    12 Ag                  7.53740   9.71776   9.59075   Ag   1 1  -0.159581
+HETATM    13 Ag                  9.12929  10.47895  11.70824   Ag   1 1   0.416677
+HETATM    14 Ag                 12.16659  10.61456  11.41509   Ag   1 1  -0.322641
+HETATM    15 Ag                 10.69206  13.11566  11.63431   Ag   1 1  -0.320280
+HETATM    16 Ag                  8.84671  12.31007   9.58669   Ag   1 1   0.203739
+HETATM    17 Ag                  8.55092  13.86228   7.20147   Ag   1 1  -0.004840
+HETATM    18 Ag                 11.42988  13.90020   6.79930   Ag   1 1  -0.074124
+HETATM    19 Ag                  9.96833  16.24138   7.07267   Ag   1 1  -0.209934
+HETATM    20 Ag                 10.28439  14.70995   9.37188   Ag   1 1  -0.038303
+HETATM    21 Ag                 10.65127  11.21057  13.78167   Ag   1 1  -0.311234
+HETATM    22 C                  13.36562  12.74261  14.40920    C   1 1  -0.210031
+HETATM    23 H                  12.57504  12.21508  14.96817    H   1 1   0.009170
+HETATM    24 H                  14.32260  12.24728  14.61518    H   1 1   0.089692
+HETATM    25 H                  13.40168  13.78187  14.75878    H   1 1   0.089576
+UNIT ENERGY   kcal
+ENERGY -1658.575485447498
+END
+
+BIOGRF 200
+DESCRP Ag20_SCH3_E1E2S
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/SinglePoints/Ag20_SCH3_E1E2S/Ag20_SCH3_E1E2S.t21
+RUTYPE NORMAL RUN
+MOLCHARGE 1 25 0
+HETATM     1 S                  14.05054  11.72895  10.85864    S   1 1   0.519376
+HETATM     2 Ag                 13.06412   9.91568   9.41932   Ag   1 1  -0.054452
+HETATM     3 Ag                 10.15450   9.54926   9.47093   Ag   1 1   0.095781
+HETATM     4 Ag                  8.82707   8.93948   7.04291   Ag   1 1  -0.138217
+HETATM     5 Ag                 11.61562   9.04747   7.14221   Ag   1 1   0.209349
+HETATM     6 Ag                 14.35451   9.30959   7.02587   Ag   1 1  -0.283110
+HETATM     7 Ag                 12.90258  11.68181   7.07665   Ag   1 1   0.035534
+HETATM     8 Ag                 11.92341  12.58917   9.67707   Ag   1 1  -0.090947
+HETATM     9 Ag                 10.11519  11.48483   7.15396   Ag   1 1   0.507072
+HETATM    10 Ag                  7.26370  11.35571   7.15852   Ag   1 1  -0.060423
+HETATM    11 Ag                  6.06229   8.84423   7.07947   Ag   1 1  -0.232832
+HETATM    12 Ag                  7.31294   9.60302   9.44599   Ag   1 1  -0.039105
+HETATM    13 Ag                  8.66236  10.35053  11.74652   Ag   1 1  -0.019755
+HETATM    14 Ag                 11.50343  10.42430  11.75666   Ag   1 1   0.061358
+HETATM    15 Ag                 10.06807  12.93792  11.83074   Ag   1 1   0.005649
+HETATM    16 Ag                  8.63428  12.13361   9.54832   Ag   1 1   0.264950
+HETATM    17 Ag                  8.49297  13.83046   7.25119   Ag   1 1  -0.026351
+HETATM    18 Ag                 11.39115  13.99659   7.23091   Ag   1 1  -0.066006
+HETATM    19 Ag                  9.78779  16.26636   7.40222   Ag   1 1  -0.250406
+HETATM    20 Ag                  9.94980  14.62231   9.63173   Ag   1 1  -0.126147
+HETATM    21 Ag                 10.07416  11.19449  13.98722   Ag   1 1  -0.243917
+HETATM    22 C                  15.52395  12.30200   9.91276    C   1 1  -0.162378
+HETATM    23 H                  15.31196  12.35069   8.83708    H   1 1  -0.099240
+HETATM    24 H                  15.78919  13.30381  10.27785    H   1 1   0.111792
+HETATM    25 H                  16.35803  11.61153  10.09360    H   1 1   0.082425
+UNIT ENERGY   kcal
+ENERGY -1662.900281197692
+END
+
+BIOGRF 200
+DESCRP Ag20_SCH3_E1S
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/SinglePoints/Ag20_SCH3_E1S/Ag20_SCH3_E1S.t21
+RUTYPE NORMAL RUN
+MOLCHARGE 1 25 0
+HETATM     1 S                  13.59511  12.28625  11.62434    S   1 1   0.434016
+HETATM     2 Ag                 13.00913   9.97140   9.40425   Ag   1 1   0.354186
+HETATM     3 Ag                 10.25014   9.58085   9.43013   Ag   1 1   0.042301
+HETATM     4 Ag                  8.95724   8.98769   6.97040   Ag   1 1  -0.135933
+HETATM     5 Ag                 11.72099   9.13912   7.03267   Ag   1 1   0.084299
+HETATM     6 Ag                 14.48510   9.42932   7.14022   Ag   1 1  -0.316020
+HETATM     7 Ag                 13.03008  11.79355   7.16451   Ag   1 1  -0.049614
+HETATM     8 Ag                 11.95704  12.69717   9.67839   Ag   1 1  -0.288130
+HETATM     9 Ag                 10.22847  11.54119   7.14770   Ag   1 1   0.391560
+HETATM    10 Ag                  7.36697  11.37140   7.10203   Ag   1 1  -0.045129
+HETATM    11 Ag                  6.19047   8.84737   7.03813   Ag   1 1  -0.243776
+HETATM    12 Ag                  7.42751   9.61741   9.39537   Ag   1 1  -0.106896
+HETATM    13 Ag                  8.83478  10.35600  11.69730   Ag   1 1  -0.019369
+HETATM    14 Ag                 11.66984  10.65117  11.78015   Ag   1 1  -0.002538
+HETATM    15 Ag                  9.98052  13.05733  11.82287   Ag   1 1   0.012653
+HETATM    16 Ag                  8.68720  12.17436   9.50269   Ag   1 1   0.292368
+HETATM    17 Ag                  8.56725  13.85486   7.18583   Ag   1 1  -0.006946
+HETATM    18 Ag                 11.46145  14.07831   7.25536   Ag   1 1   0.017620
+HETATM    19 Ag                  9.82405  16.31313   7.33177   Ag   1 1  -0.247082
+HETATM    20 Ag                  9.91548  14.70532   9.60053   Ag   1 1  -0.022773
+HETATM    21 Ag                 10.06836  11.28760  13.96940   Ag   1 1  -0.230674
+HETATM    22 C                  15.24179  11.65040  11.11157    C   1 1  -0.137021
+HETATM    23 H                  15.98744  12.33026  11.54882    H   1 1   0.126702
+HETATM    24 H                  15.41141  10.63942  11.50272    H   1 1   0.124532
+HETATM    25 H                  15.35659  11.65225  10.01977    H   1 1  -0.028335
+UNIT ENERGY   kcal
+ENERGY -1661.907561105294
+END
+
+BIOGRF 200
+DESCRP thiolate_seul
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/thiolate_seul/thiolate_seul.t21
+RUTYPE NORMAL RUN
+MOLCHARGE 1 5 0
+HETATM     1 S                   1.30467  -2.03456   0.00141    S   1 1  -0.117010
+HETATM     2 C                  -0.49387  -2.07832  -0.01377    C   1 1  -0.105094
+HETATM     3 H                  -0.92355  -1.17772   0.44554    H   1 1   0.074083
+HETATM     4 H                  -0.88967  -2.99170   0.44919    H   1 1   0.073869
+HETATM     5 H                  -0.79280  -2.07930  -1.07707    H   1 1   0.074153
+UNIT ENERGY   kcal
+ENERGY -517.4864098847009
+END
+
+BIOGRF 200
+DESCRP Ag20_SCH3_V
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/SinglePoints/Ag20_SCH3_V/Ag20_SCH3_V.t21
+RUTYPE NORMAL RUN
+MOLCHARGE 1 25 0
+HETATM     1 S                  11.33464  10.20604  16.32257    S   1 1  -0.026612
+HETATM     2 Ag                 10.94356  10.62620  14.03054   Ag   1 1  -0.478667
+HETATM     3 Ag                  9.24508  10.06974  11.90657   Ag   1 1  -0.122708
+HETATM     4 Ag                 10.42722   9.49353   9.40192   Ag   1 1   0.475855
+HETATM     5 Ag                  8.76156   9.08012   7.13574   Ag   1 1  -0.049919
+HETATM     6 Ag                 11.51351   9.12093   6.80081   Ag   1 1  -0.024737
+HETATM     7 Ag                 14.26122   9.24317   6.49225   Ag   1 1  -0.171043
+HETATM     8 Ag                 13.25470   9.65906   9.04392   Ag   1 1  -0.112900
+HETATM     9 Ag                 12.97242  11.64923   6.96757   Ag   1 1  -0.030916
+HETATM    10 Ag                 11.95417  12.14104   9.57440   Ag   1 1   0.468901
+HETATM    11 Ag                 10.13835  11.57214   7.24507   Ag   1 1   0.294593
+HETATM    12 Ag                  7.32135  11.56511   7.65690   Ag   1 1  -0.038183
+HETATM    13 Ag                  6.01704   9.12947   7.48340   Ag   1 1  -0.180157
+HETATM    14 Ag                  7.59230   9.57611   9.72641   Ag   1 1  -0.037015
+HETATM    15 Ag                  8.92053  12.08940   9.95293   Ag   1 1   0.447670
+HETATM    16 Ag                 10.71798  12.60001  12.07577   Ag   1 1  -0.152972
+HETATM    17 Ag                 12.14544  10.13043  11.55119   Ag   1 1  -0.032981
+HETATM    18 Ag                 10.43635  14.50235  10.06457   Ag   1 1  -0.031130
+HETATM    19 Ag                  8.70006  13.96202   7.82152   Ag   1 1  -0.048349
+HETATM    20 Ag                 11.59593  14.00742   7.46066   Ag   1 1  -0.055196
+HETATM    21 Ag                 10.15556  16.31146   7.97645   Ag   1 1  -0.184505
+HETATM    22 C                  10.14889  11.26239  17.22370    C   1 1  -0.203312
+HETATM    23 H                   9.10844  11.00864  16.98274    H   1 1   0.101420
+HETATM    24 H                  10.31163  11.07107  18.29552    H   1 1   0.097824
+HETATM    25 H                  10.32612  12.32900  17.03396    H   1 1   0.095038
+UNIT ENERGY   kcal
+ENERGY -1662.358740464608
+END
+
+BIOGRF 200
+DESCRP Ag20_SCH3_VE1
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/SinglePoints/Ag20_SCH3_VE1/Ag20_SCH3_VE1.t21
+RUTYPE NORMAL RUN
+MOLCHARGE 1 25 0
+HETATM     1 S                  10.29201  13.65324  14.25800    S   1 1   0.457272
+HETATM     2 Ag                 10.25344  13.17054  11.76680   Ag   1 1  -0.403076
+HETATM     3 Ag                 11.69193  12.31727   9.43917   Ag   1 1   0.341777
+HETATM     4 Ag                 10.29782   9.62129   9.36048   Ag   1 1   0.333391
+HETATM     5 Ag                  8.85340   8.92586   7.03970   Ag   1 1  -0.017110
+HETATM     6 Ag                 11.63631   9.01077   6.95476   Ag   1 1  -0.018505
+HETATM     7 Ag                 14.39518   9.18861   6.88590   Ag   1 1  -0.203238
+HETATM     8 Ag                 13.14827   9.86161   9.27359   Ag   1 1  -0.037207
+HETATM     9 Ag                 13.00454  11.58518   6.98381   Ag   1 1  -0.070970
+HETATM    10 Ag                 10.16724  11.45570   6.96035   Ag   1 1   0.218001
+HETATM    11 Ag                  7.33211  11.41530   7.15777   Ag   1 1  -0.065170
+HETATM    12 Ag                  6.08758   8.93488   7.14222   Ag   1 1  -0.214990
+HETATM    13 Ag                  7.43733   9.68546   9.44421   Ag   1 1  -0.137108
+HETATM    14 Ag                  8.91615  10.36004  11.69546   Ag   1 1   0.108564
+HETATM    15 Ag                 11.76602  10.44832  11.60802   Ag   1 1   0.054691
+HETATM    16 Ag                 10.39132  11.21996  13.89716   Ag   1 1  -0.512527
+HETATM    17 Ag                 10.14857  14.69206   9.44841   Ag   1 1   0.301637
+HETATM    18 Ag                  8.74655  12.22695   9.52540   Ag   1 1   0.362334
+HETATM    19 Ag                  8.64687  13.83925   7.14539   Ag   1 1  -0.120994
+HETATM    20 Ag                 11.55703  13.92583   7.05641   Ag   1 1  -0.055760
+HETATM    21 Ag                 10.03620  16.23755   7.15224   Ag   1 1  -0.229038
+HETATM    22 C                  12.00605  14.20540  14.60798    C   1 1  -0.286073
+HETATM    23 H                  12.19179  14.11581  15.68618    H   1 1   0.081580
+HETATM    24 H                  12.74829  13.61145  14.06180    H   1 1   0.021444
+HETATM    25 H                  12.09820  15.25769  14.30834    H   1 1   0.091075
+UNIT ENERGY   kcal
+ENERGY -1670.750425544026
+END
+
+BIOGRF 200
+DESCRP Ag20_SCH3_VE1E3
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/SinglePoints/Ag20_SCH3_VE1E3/Ag20_SCH3_VE1E3.t21
+RUTYPE NORMAL RUN
+MOLCHARGE 1 25 0
+HETATM     1 S                  10.29201  13.65324  14.25800    S   1 1   0.353877
+HETATM     2 Ag                 10.25344  13.17054  11.76680   Ag   1 1   0.996455
+HETATM     3 Ag                 11.69193  12.31727   9.43917   Ag   1 1   0.127507
+HETATM     4 Ag                 10.29782   9.62129   9.36048   Ag   1 1  -0.061558
+HETATM     5 Ag                  8.85340   8.92586   7.03970   Ag   1 1   0.018343
+HETATM     6 Ag                 11.63631   9.01077   6.95476   Ag   1 1  -0.215940
+HETATM     7 Ag                 14.39518   9.18861   6.88590   Ag   1 1  -0.021280
+HETATM     8 Ag                 13.14827   9.86161   9.27359   Ag   1 1  -0.133023
+HETATM     9 Ag                 13.00454  11.58518   6.98381   Ag   1 1  -0.014262
+HETATM    10 Ag                 10.16724  11.45570   6.96035   Ag   1 1  -0.059980
+HETATM    11 Ag                  7.33211  11.41530   7.15777   Ag   1 1  -0.213237
+HETATM    12 Ag                  6.08758   8.93488   7.14222   Ag   1 1  -0.201221
+HETATM    13 Ag                  7.43733   9.68546   9.44421   Ag   1 1   0.229329
+HETATM    14 Ag                  8.91615  10.36004  11.69546   Ag   1 1  -0.247194
+HETATM    15 Ag                 11.76602  10.44832  11.60802   Ag   1 1  -0.231849
+HETATM    16 Ag                 10.39132  11.21996  13.89716   Ag   1 1   0.126106
+HETATM    17 Ag                 10.14857  14.69206   9.44841   Ag   1 1   0.018633
+HETATM    18 Ag                  8.74655  12.22695   9.52540   Ag   1 1  -0.131785
+HETATM    19 Ag                  8.64687  13.83925   7.14539   Ag   1 1  -0.215184
+HETATM    20 Ag                 11.55703  13.92583   7.05641   Ag   1 1  -0.018456
+HETATM    21 Ag                 10.03620  16.23755   7.15224   Ag   1 1  -0.288720
+HETATM    22 C                  12.00605  14.20540  14.60798    C   1 1  -0.073945
+HETATM    23 H                  12.19179  14.11581  15.68618    H   1 1   0.137945
+HETATM    24 H                  12.74829  13.61145  14.06180    H   1 1   0.059103
+HETATM    25 H                  12.09820  15.25769  14.30834    H   1 1   0.060333
+UNIT ENERGY   kcal
+ENERGY -1670.750425544026
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_angle_1
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.40992  -3.39444   0.00026   Ag   1 1   0.151769
+HETATM     2 C                  -1.16548  -1.64383  -0.00570    C   1 1  -0.338136
+HETATM     3 S                   0.31192  -0.62380   0.02359    S   1 1  -0.068749
+HETATM     4 H                  -1.66915  -1.24254   0.89248    H   1 1   0.098419
+HETATM     5 H                  -1.75183  -1.23283  -0.84206    H   1 1   0.107108
+HETATM     6 H                   0.90311  -1.02721  -1.13095    H   1 1   0.049588
+UNIT ENERGY   kcal
+ENERGY -543.4203011807831
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_angle_2
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.40202  -3.39149   0.00053   Ag   1 1   0.132849
+HETATM     2 C                  -1.21083  -1.60566  -0.01054    C   1 1  -0.301573
+HETATM     3 S                   0.30642  -0.65018   0.02592    S   1 1  -0.071865
+HETATM     4 H                  -1.71304  -1.19730   0.88406    H   1 1   0.094176
+HETATM     5 H                  -1.78034  -1.19229  -0.85638    H   1 1   0.097475
+HETATM     6 H                   0.85250  -1.04300  -1.15318    H   1 1   0.048937
+UNIT ENERGY   kcal
+ENERGY -546.4126985110626
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_angle_3
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.39225  -3.38649   0.00069   Ag   1 1   0.112246
+HETATM     2 C                  -1.25876  -1.57129  -0.01409    C   1 1  -0.264308
+HETATM     3 S                   0.29553  -0.68141   0.02759    S   1 1  -0.074117
+HETATM     4 H                  -1.75506  -1.15675   0.87988    H   1 1   0.089373
+HETATM     5 H                  -1.81537  -1.15322  -0.86539    H   1 1   0.088640
+HETATM     6 H                   0.80861  -1.07179  -1.16710    H   1 1   0.048166
+UNIT ENERGY   kcal
+ENERGY -549.1843899437126
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_angle_4
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.38205  -3.38107   0.00075   Ag   1 1   0.092610
+HETATM     2 C                  -1.30686  -1.53735  -0.01656    C   1 1  -0.230473
+HETATM     3 S                   0.28313  -0.71350   0.02873    S   1 1  -0.074930
+HETATM     4 H                  -1.79463  -1.11737   0.87836    H   1 1   0.084642
+HETATM     5 H                  -1.85149  -1.11223  -0.87118    H   1 1   0.081034
+HETATM     6 H                   0.76947  -1.11349  -1.17309    H   1 1   0.047117
+UNIT ENERGY   kcal
+ENERGY -551.7136597366809
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_angle_5
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.37134  -3.37509   0.00080   Ag   1 1   0.074205
+HETATM     2 C                  -1.35339  -1.50284  -0.01882    C   1 1  -0.202312
+HETATM     3 S                   0.26840  -0.74758   0.02985    S   1 1  -0.072798
+HETATM     4 H                  -1.83312  -1.07831   0.87732    H   1 1   0.080668
+HETATM     5 H                  -1.88664  -1.07320  -0.87761    H   1 1   0.074263
+HETATM     6 H                   0.72825  -1.15484  -1.17995    H   1 1   0.045974
+UNIT ENERGY   kcal
+ENERGY -553.9774062506614
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_angle_6
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.35973  -3.36807   0.00087   Ag   1 1   0.056868
+HETATM     2 C                  -1.40098  -1.47065  -0.02128    C   1 1  -0.177671
+HETATM     3 S                   0.25120  -0.78420   0.03102    S   1 1  -0.068639
+HETATM     4 H                  -1.87340  -1.04106   0.87556    H   1 1   0.076812
+HETATM     5 H                  -1.92251  -1.03634  -0.88436    H   1 1   0.067975
+HETATM     6 H                   0.68487  -1.19601  -1.18668    H   1 1   0.044655
+UNIT ENERGY   kcal
+ENERGY -555.958426979597
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_angle_7
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.34806  -3.36102   0.00095   Ag   1 1   0.042220
+HETATM     2 C                  -1.44680  -1.43722  -0.02379    C   1 1  -0.161022
+HETATM     3 S                   0.23301  -0.82142   0.03219    S   1 1  -0.061582
+HETATM     4 H                  -1.91099  -1.00337   0.87404    H   1 1   0.074097
+HETATM     5 H                  -1.95553  -0.99933  -0.89164    H   1 1   0.063092
+HETATM     6 H                   0.63976  -1.23541  -1.19342    H   1 1   0.043195
+UNIT ENERGY   kcal
+ENERGY -557.6369226507045
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_angle_8
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.33546  -3.35291   0.00103   Ag   1 1   0.029657
+HETATM     2 C                  -1.49312  -1.40567  -0.02628    C   1 1  -0.148349
+HETATM     3 S                   0.21199  -0.86130   0.03330    S   1 1  -0.053572
+HETATM     4 H                  -1.94954  -0.96800   0.87278    H   1 1   0.071548
+HETATM     5 H                  -1.98952  -0.96401  -0.89869    H   1 1   0.058861
+HETATM     6 H                   0.59431  -1.27750  -1.19909    H   1 1   0.041856
+UNIT ENERGY   kcal
+ENERGY -558.9958359407676
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_angle_9
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.32239  -3.34431   0.00099   Ag   1 1   0.021247
+HETATM     2 C                  -1.53954  -1.37442  -0.02767    C   1 1  -0.141628
+HETATM     3 S                   0.18937  -0.90190   0.03395    S   1 1  -0.045380
+HETATM     4 H                  -1.98590  -0.93612   0.87538    H   1 1   0.068906
+HETATM     5 H                  -2.02679  -0.92915  -0.90279    H   1 1   0.056028
+HETATM     6 H                   0.55161  -1.33982  -1.19691    H   1 1   0.040827
+UNIT ENERGY   kcal
+ENERGY -560.0139718662447
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_10
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.30879  -3.33512   0.00106   Ag   1 1   0.014288
+HETATM     2 C                  -1.58540  -1.34422  -0.03012    C   1 1  -0.137166
+HETATM     3 S                   0.16470  -0.94484   0.03497    S   1 1  -0.037837
+HETATM     4 H                  -2.02137  -0.90106   0.87467    H   1 1   0.067188
+HETATM     5 H                  -2.05799  -0.89226  -0.90899    H   1 1   0.053852
+HETATM     6 H                   0.50429  -1.38392  -1.20134    H   1 1   0.039675
+UNIT ENERGY   kcal
+ENERGY -560.673783153499
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_11
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.29455  -3.32522   0.00110   Ag   1 1   0.010373
+HETATM     2 C                  -1.63104  -1.31478  -0.03225    C   1 1  -0.137256
+HETATM     3 S                   0.13803  -0.98941   0.03592    S   1 1  -0.030788
+HETATM     4 H                  -2.05799  -0.86878   0.87474    H   1 1   0.065865
+HETATM     5 H                  -2.09127  -0.85882  -0.91507    H   1 1   0.053010
+HETATM     6 H                   0.45344  -1.43615  -1.20381    H   1 1   0.038796
+UNIT ENERGY   kcal
+ENERGY -560.9545322601472
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_12
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.28004  -3.31512   0.00114   Ag   1 1   0.009504
+HETATM     2 C                  -1.67552  -1.28487  -0.03439    C   1 1  -0.140236
+HETATM     3 S                   0.10978  -1.03500   0.03679    S   1 1  -0.025572
+HETATM     4 H                  -2.09121  -0.83523   0.87499    H   1 1   0.065078
+HETATM     5 H                  -2.12108  -0.82244  -0.92045    H   1 1   0.053199
+HETATM     6 H                   0.40369  -1.48784  -1.20539    H   1 1   0.038027
+UNIT ENERGY   kcal
+ENERGY -560.8404096821599
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_13
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.26486  -3.30425   0.00116   Ag   1 1   0.011202
+HETATM     2 C                  -1.72023  -1.25619  -0.03644    C   1 1  -0.144369
+HETATM     3 S                   0.07952  -1.08231   0.03762    S   1 1  -0.022847
+HETATM     4 H                  -2.12542  -0.80449   0.87601    H   1 1   0.064254
+HETATM     5 H                  -2.15249  -0.78769  -0.92538    H   1 1   0.054317
+HETATM     6 H                   0.35075  -1.54736  -1.20496    H   1 1   0.037443
+UNIT ENERGY   kcal
+ENERGY -560.3115721485858
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_14
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.24887  -3.29251   0.00109   Ag   1 1   0.015805
+HETATM     2 C                  -1.76510  -1.22883  -0.03786    C   1 1  -0.147508
+HETATM     3 S                   0.04656  -1.13144   0.03812    S   1 1  -0.024138
+HETATM     4 H                  -2.15643  -0.77640   0.87909    H   1 1   0.062932
+HETATM     5 H                  -2.18294  -0.75123  -0.92788    H   1 1   0.055988
+HETATM     6 H                   0.29660  -1.62397  -1.19760    H   1 1   0.036920
+UNIT ENERGY   kcal
+ENERGY -559.3528485150537
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_15
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.23353  -3.28169   0.00126   Ag   1 1   0.020853
+HETATM     2 C                  -1.80790  -1.19865  -0.04118    C   1 1  -0.152930
+HETATM     3 S                   0.01468  -1.17999   0.03912    S   1 1  -0.025605
+HETATM     4 H                  -2.18766  -0.74530   0.87978    H   1 1   0.063667
+HETATM     5 H                  -2.20542  -0.70747  -0.93272    H   1 1   0.057429
+HETATM     6 H                   0.24373  -1.66561  -1.20315    H   1 1   0.036586
+UNIT ENERGY   kcal
+ENERGY -557.9575757489595
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_16
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.21653  -3.26852   0.00142   Ag   1 1   0.024195
+HETATM     2 C                  -1.85429  -1.17513  -0.04445    C   1 1  -0.152788
+HETATM     3 S                  -0.02096  -1.23332   0.04029    S   1 1  -0.030106
+HETATM     4 H                  -2.22180  -0.72093   0.88005    H   1 1   0.063591
+HETATM     5 H                  -2.23306  -0.67741  -0.93968    H   1 1   0.058821
+HETATM     6 H                   0.18572  -1.70537  -1.21128    H   1 1   0.036287
+UNIT ENERGY   kcal
+ENERGY -556.1254296383331
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_17
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.20038  -3.25697   0.00167   Ag   1 1   0.029865
+HETATM     2 C                  -1.89577  -1.14505  -0.04845    C   1 1  -0.156729
+HETATM     3 S                  -0.05619  -1.28476   0.04142    S   1 1  -0.034161
+HETATM     4 H                  -2.24985  -0.68777   0.87910    H   1 1   0.064244
+HETATM     5 H                  -2.25376  -0.63460  -0.94452    H   1 1   0.060041
+HETATM     6 H                   0.13285  -1.73275  -1.22129    H   1 1   0.036741
+UNIT ENERGY   kcal
+ENERGY -553.8606149951047
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_18
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.18322  -3.24395   0.00194   Ag   1 1   0.034839
+HETATM     2 C                  -1.94228  -1.12038  -0.05252    C   1 1  -0.150706
+HETATM     3 S                  -0.09305  -1.33905   0.04252    S   1 1  -0.044386
+HETATM     4 H                  -2.27754  -0.65598   0.87803    H   1 1   0.062759
+HETATM     5 H                  -2.27110  -0.59044  -0.94811    H   1 1   0.059958
+HETATM     6 H                   0.08062  -1.76140  -1.23092    H   1 1   0.037535
+UNIT ENERGY   kcal
+ENERGY -551.1774122472133
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_19
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.16664  -3.23215   0.00230   Ag   1 1   0.040042
+HETATM     2 C                  -1.98558  -1.09021  -0.05702    C   1 1  -0.150794
+HETATM     3 S                  -0.12968  -1.39206   0.04357    S   1 1  -0.051765
+HETATM     4 H                  -2.30149  -0.62004   0.87689    H   1 1   0.062275
+HETATM     5 H                  -2.28067  -0.54128  -0.95252    H   1 1   0.060995
+HETATM     6 H                   0.03258  -1.77580  -1.24392    H   1 1   0.039246
+UNIT ENERGY   kcal
+ENERGY -548.1116665238128
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_20
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.14959  -3.21963   0.00288   Ag   1 1   0.042566
+HETATM     2 C                  -2.03157  -1.06257  -0.06281    C   1 1  -0.148633
+HETATM     3 S                  -0.16754  -1.44760   0.04457    S   1 1  -0.057371
+HETATM     4 H                  -2.32134  -0.58329   0.87456    H   1 1   0.060514
+HETATM     5 H                  -2.28418  -0.48886  -0.95549    H   1 1   0.061858
+HETATM     6 H                  -0.00377  -1.75971  -1.26221    H   1 1   0.041067
+UNIT ENERGY   kcal
+ENERGY -544.7190484921286
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_21
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.29104  -3.32322   0.00155   Ag   1 1   0.010065
+HETATM     2 C                  -1.64153  -1.30855  -0.04019    C   1 1  -0.137049
+HETATM     3 S                   0.13076  -0.99829   0.03805    S   1 1  -0.030043
+HETATM     4 H                  -2.07175  -0.85572   0.86067    H   1 1   0.065668
+HETATM     5 H                  -2.08982  -0.85574  -0.93049    H   1 1   0.052767
+HETATM     6 H                   0.44922  -1.45776  -1.19571    H   1 1   0.038591
+UNIT ENERGY   kcal
+ENERGY 0.0
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_22
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.12386  -3.21005   0.01506   Ag   1 1   0.012235
+HETATM     2 C                  -2.00743  -0.94687  -0.10106    C   1 1  -0.111253
+HETATM     3 S                  -0.27614  -1.56803  -0.01276    S   1 1  -0.030838
+HETATM     4 H                  -2.36802  -0.43386   0.79086    H   1 1   0.068806
+HETATM     5 H                  -2.31575  -0.55058  -1.06889    H   1 1   0.069471
+HETATM     6 H                   0.50309  -0.42083  -0.08309    H   1 1  -0.008420
+UNIT ENERGY   kcal
+ENERGY -543.3190728864722
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_23
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.11002  -3.20795   0.01534   Ag   1 1  -0.004654
+HETATM     2 C                  -2.01290  -0.87540  -0.10475    C   1 1  -0.105157
+HETATM     3 S                  -0.32289  -1.60382  -0.01216    S   1 1  -0.017986
+HETATM     4 H                  -2.35040  -0.35139   0.78927    H   1 1   0.069573
+HETATM     5 H                  -2.30203  -0.47211  -1.07508    H   1 1   0.070046
+HETATM     6 H                   0.55150  -0.52069  -0.07973    H   1 1  -0.011822
+UNIT ENERGY   kcal
+ENERGY -538.3480735955493
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_24
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.10033  -3.21505   0.01648   Ag   1 1  -0.004596
+HETATM     2 C                  -1.99455  -0.77308  -0.11178    C   1 1  -0.110383
+HETATM     3 S                  -0.36671  -1.62237  -0.01507    S   1 1  -0.010802
+HETATM     4 H                  -2.31524  -0.25858   0.79319    H   1 1   0.069825
+HETATM     5 H                  -2.24877  -0.34329  -1.07989    H   1 1   0.069821
+HETATM     6 H                   0.60648  -0.61819  -0.02492    H   1 1  -0.013865
+UNIT ENERGY   kcal
+ENERGY -532.6074665402838
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_25
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.09427  -3.23177   0.01921   Ag   1 1   0.025122
+HETATM     2 C                  -1.94802  -0.64382  -0.12332    C   1 1  -0.144305
+HETATM     3 S                  -0.41109  -1.62091  -0.02554    S   1 1  -0.001388
+HETATM     4 H                  -2.28353  -0.18032   0.80359    H   1 1   0.066272
+HETATM     5 H                  -2.12334  -0.12330  -1.06442    H   1 1   0.069628
+HETATM     6 H                   0.66118  -0.72903   0.12960    H   1 1  -0.015330
+UNIT ENERGY   kcal
+ENERGY -526.4879529832701
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_26
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.29104  -3.32322   0.00155   Ag   1 1   0.010065
+HETATM     2 C                  -1.64153  -1.30855  -0.04019    C   1 1  -0.137049
+HETATM     3 S                   0.13076  -0.99829   0.03805    S   1 1  -0.030043
+HETATM     4 H                  -2.07175  -0.85572   0.86067    H   1 1   0.065668
+HETATM     5 H                  -2.08982  -0.85574  -0.93049    H   1 1   0.052767
+HETATM     6 H                   0.44922  -1.45776  -1.19571    H   1 1   0.038591
+UNIT ENERGY   kcal
+ENERGY 0.0
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_27
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.18565  -3.45536   0.05718   Ag   1 1  -0.147087
+HETATM     2 C                  -1.42877   0.12684  -0.13071    C   1 1  -0.197087
+HETATM     3 S                  -0.31003  -1.19224  -0.17975    S   1 1   0.105728
+HETATM     4 H                  -1.90759   0.38394  -1.07147    H   1 1   0.084344
+HETATM     5 H                  -1.54121   0.74231   0.75579    H   1 1   0.075465
+HETATM     6 H                   0.00775  -1.21675   1.13731    H   1 1   0.078637
+UNIT ENERGY   kcal
+ENERGY -525.1188107611946
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_28
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.18577  -3.47340   0.05672   Ag   1 1  -0.147857
+HETATM     2 C                  -1.35156   0.22934  -0.13938    C   1 1  -0.223785
+HETATM     3 S                  -0.34852  -1.18068  -0.17213    S   1 1   0.147641
+HETATM     4 H                  -1.88282   0.45550  -1.06000    H   1 1   0.082040
+HETATM     5 H                  -1.26466   0.96030   0.65917    H   1 1   0.079025
+HETATM     6 H                   0.02051  -1.17951   1.13220    H   1 1   0.062937
+UNIT ENERGY   kcal
+ENERGY -524.8633623209622
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_29
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.18490  -3.48953   0.05743   Ag   1 1  -0.163138
+HETATM     2 C                  -1.26789   0.32282  -0.14948    C   1 1  -0.241593
+HETATM     3 S                  -0.39005  -1.16886  -0.16966    S   1 1   0.184505
+HETATM     4 H                  -1.76595   0.59260  -1.07680    H   1 1   0.080728
+HETATM     5 H                  -1.11492   1.05032   0.64213    H   1 1   0.080378
+HETATM     6 H                  -0.01694  -1.18414   1.13291    H   1 1   0.059120
+UNIT ENERGY   kcal
+ENERGY -524.6510293113965
+END
+
+BIOGRF 200
+DESCRP LT_Ag_CH2_SH_ang_30
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_CH2_SH_angle/LT/LT_Ag_CH2_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.18424  -3.50620   0.05793   Ag   1 1  -0.175407
+HETATM     2 C                  -1.17839   0.41059  -0.15970    C   1 1  -0.256968
+HETATM     3 S                  -0.43352  -1.15245  -0.16609    S   1 1   0.216478
+HETATM     4 H                  -1.66892   0.70428  -1.08407    H   1 1   0.081121
+HETATM     5 H                  -0.92978   1.14303   0.60253    H   1 1   0.080380
+HETATM     6 H                  -0.05600  -1.18582   1.13477    H   1 1   0.054395
+UNIT ENERGY   kcal
+ENERGY -524.4915591443092
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_1
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -3.08967  -3.00925  -0.01339   Ag   1 1   0.309761
+HETATM     2 S                  -0.61193  -1.50442   0.05232    S   1 1  -0.254213
+HETATM     3 C                  -2.40438  -0.89620  -0.03221    C   1 1  -0.371175
+HETATM     4 H                  -2.38744   0.21194  -0.05929    H   1 1   0.106894
+HETATM     5 H                  -3.00572  -1.06551   0.88947    H   1 1   0.104665
+HETATM     6 H                  -2.93541  -1.11032  -0.98777    H   1 1   0.104069
+UNIT ENERGY   kcal
+ENERGY -534.646173642301
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_2
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -3.03658  -2.98139  -0.01174   Ag   1 1   0.230011
+HETATM     2 S                  -0.74871  -1.63328   0.04955    S   1 1  -0.168718
+HETATM     3 C                  -2.49756  -0.82608  -0.03847    C   1 1  -0.388509
+HETATM     4 H                  -2.33937   0.26903  -0.04658    H   1 1   0.115110
+HETATM     5 H                  -3.12619  -0.95466   0.86563    H   1 1   0.106306
+HETATM     6 H                  -3.04590  -0.98076  -0.98939    H   1 1   0.105800
+UNIT ENERGY   kcal
+ENERGY -544.3508723681672
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_3
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -3.01140  -2.97789  -0.01100   Ag   1 1   0.165046
+HETATM     2 S                  -0.83240  -1.69240   0.04789    S   1 1  -0.089492
+HETATM     3 C                  -2.50422  -0.72656  -0.04002    C   1 1  -0.419138
+HETATM     4 H                  -2.24113   0.34587  -0.05901    H   1 1   0.111441
+HETATM     5 H                  -3.13732  -0.82249   0.85817    H   1 1   0.115848
+HETATM     6 H                  -3.06934  -0.87073  -0.97650    H   1 1   0.116296
+UNIT ENERGY   kcal
+ENERGY -553.1886960738609
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_4
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.99894  -2.98506  -0.01019   Ag   1 1   0.116367
+HETATM     2 S                  -0.89341  -1.71693   0.04571    S   1 1  -0.043055
+HETATM     3 C                  -2.46728  -0.62463  -0.04145    C   1 1  -0.423023
+HETATM     4 H                  -2.12377   0.42385  -0.04376    H   1 1   0.103500
+HETATM     5 H                  -3.11595  -0.70738   0.84221    H   1 1   0.123366
+HETATM     6 H                  -3.03452  -0.73920  -0.97587    H   1 1   0.122846
+UNIT ENERGY   kcal
+ENERGY -560.4635426514833
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_5
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.99302  -2.99800  -0.00978   Ag   1 1   0.079600
+HETATM     2 S                  -0.94058  -1.72341   0.04423    S   1 1  -0.028879
+HETATM     3 C                  -2.41341  -0.52014  -0.04126    C   1 1  -0.393574
+HETATM     4 H                  -1.99258   0.49933  -0.04950    H   1 1   0.096822
+HETATM     5 H                  -3.06212  -0.57242   0.84258    H   1 1   0.122884
+HETATM     6 H                  -2.99242  -0.61515  -0.96891    H   1 1   0.123147
+UNIT ENERGY   kcal
+ENERGY -566.3821668556956
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_6
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.99075  -3.01375  -0.00942   Ag   1 1   0.055157
+HETATM     2 S                  -0.98117  -1.71853   0.04271    S   1 1  -0.034712
+HETATM     3 C                  -2.34706  -0.41994  -0.04073    C   1 1  -0.345631
+HETATM     4 H                  -1.85652   0.56668  -0.05144    H   1 1   0.091775
+HETATM     5 H                  -2.99706  -0.44183   0.84155    H   1 1   0.116314
+HETATM     6 H                  -2.93650  -0.49067  -0.96216    H   1 1   0.117098
+UNIT ENERGY   kcal
+ENERGY -571.1349748193012
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_7
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.98892  -3.02985  -0.00898   Ag   1 1   0.037576
+HETATM     2 S                  -1.02138  -1.71060   0.04088    S   1 1  -0.046643
+HETATM     3 C                  -2.27914  -0.32447  -0.04012    C   1 1  -0.292458
+HETATM     4 H                  -1.71458   0.62084  -0.04590    H   1 1   0.089338
+HETATM     5 H                  -2.93207  -0.30974   0.83883    H   1 1   0.105787
+HETATM     6 H                  -2.87074  -0.35681  -0.96106    H   1 1   0.106401
+UNIT ENERGY   kcal
+ENERGY -574.8895822150763
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_8
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.98930  -3.04763  -0.00849   Ag   1 1   0.027805
+HETATM     2 S                  -1.05704  -1.69570   0.03871    S   1 1  -0.059118
+HETATM     3 C                  -2.20463  -0.23172  -0.03915    C   1 1  -0.248617
+HETATM     4 H                  -1.57447   0.67027  -0.03185    H   1 1   0.088449
+HETATM     5 H                  -2.86636  -0.18442   0.83248    H   1 1   0.095802
+HETATM     6 H                  -2.79176  -0.22249  -0.96381    H   1 1   0.095680
+UNIT ENERGY   kcal
+ENERGY -577.7363553186699
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_9
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.98923  -3.06470  -0.00804   Ag   1 1   0.019556
+HETATM     2 S                  -1.09474  -1.67984   0.03660    S   1 1  -0.066668
+HETATM     3 C                  -2.12984  -0.14612  -0.03802    C   1 1  -0.216387
+HETATM     4 H                  -1.43258   0.70424  -0.02118    H   1 1   0.088883
+HETATM     5 H                  -2.79276  -0.05966   0.82967    H   1 1   0.087573
+HETATM     6 H                  -2.70974  -0.09295  -0.96577    H   1 1   0.087043
+UNIT ENERGY   kcal
+ENERGY -579.7565001492126
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_10
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.98877  -3.08109  -0.00766   Ag   1 1   0.012073
+HETATM     2 S                  -1.13389  -1.66336   0.03474    S   1 1  -0.070281
+HETATM     3 C                  -2.05479  -0.06675  -0.03689    C   1 1  -0.193345
+HETATM     4 H                  -1.29417   0.72724  -0.01637    H   1 1   0.089714
+HETATM     5 H                  -2.71189   0.06470   0.83006    H   1 1   0.081182
+HETATM     6 H                  -2.62886   0.03059  -0.96515    H   1 1   0.080657
+UNIT ENERGY   kcal
+ENERGY -581.019919772032
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_11
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.98967  -3.09876  -0.00755   Ag   1 1   0.005936
+HETATM     2 S                  -1.17033  -1.64100   0.03382    S   1 1  -0.072928
+HETATM     3 C                  -1.97611   0.00954  -0.03579    C   1 1  -0.176471
+HETATM     4 H                  -1.15539   0.74107  -0.03092    H   1 1   0.090648
+HETATM     5 H                  -2.60989   0.19310   0.83934    H   1 1   0.075983
+HETATM     6 H                  -2.55548   0.14497  -0.95620    H   1 1   0.076832
+UNIT ENERGY   kcal
+ENERGY -581.5764605437554
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_12
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.98995  -3.11543  -0.00728   Ag   1 1   0.000151
+HETATM     2 S                  -1.20862  -1.61893   0.03219    S   1 1  -0.073855
+HETATM     3 C                  -1.89781   0.07943  -0.03429    C   1 1  -0.163810
+HETATM     4 H                  -1.02424   0.74689  -0.03397    H   1 1   0.091098
+HETATM     5 H                  -2.51320   0.30992   0.84343    H   1 1   0.072489
+HETATM     6 H                  -2.47161   0.25820  -0.95133    H   1 1   0.073927
+UNIT ENERGY   kcal
+ENERGY -581.4929796973622
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_13
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.99022  -3.13187  -0.00685   Ag   1 1  -0.005732
+HETATM     2 S                  -1.24739  -1.59437   0.02970    S   1 1  -0.073243
+HETATM     3 C                  -1.81902   0.14322  -0.03230    C   1 1  -0.155747
+HETATM     4 H                  -0.89532   0.73864  -0.02274    H   1 1   0.091710
+HETATM     5 H                  -2.42112   0.41368   0.84324    H   1 1   0.070993
+HETATM     6 H                  -2.37144   0.36708  -0.95260    H   1 1   0.072019
+UNIT ENERGY   kcal
+ENERGY -580.8203016900503
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_14
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.99013  -3.14759  -0.00652   Ag   1 1  -0.009492
+HETATM     2 S                  -1.28720  -1.56937   0.02761    S   1 1  -0.073484
+HETATM     3 C                  -1.74021   0.20099  -0.03041    C   1 1  -0.150178
+HETATM     4 H                  -0.77508   0.72673  -0.01909    H   1 1   0.091665
+HETATM     5 H                  -2.32276   0.51292   0.84520    H   1 1   0.070189
+HETATM     6 H                  -2.27585   0.46721  -0.94994    H   1 1   0.071300
+UNIT ENERGY   kcal
+ENERGY -579.6061088490771
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_15
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.99012  -3.16334  -0.00618   Ag   1 1  -0.012145
+HETATM     2 S                  -1.32698  -1.54185   0.02561    S   1 1  -0.074454
+HETATM     3 C                  -1.66128   0.25474  -0.02881    C   1 1  -0.148845
+HETATM     4 H                  -0.65747   0.70183  -0.01299    H   1 1   0.092184
+HETATM     5 H                  -2.22169   0.60316   0.84715    H   1 1   0.071149
+HETATM     6 H                  -2.17244   0.55929  -0.95018    H   1 1   0.072112
+UNIT ENERGY   kcal
+ENERGY -577.9123151535342
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_16
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.98944  -3.17793  -0.00584   Ag   1 1  -0.011815
+HETATM     2 S                  -1.36840  -1.51435   0.02358    S   1 1  -0.079280
+HETATM     3 C                  -1.58303   0.29985  -0.02705    C   1 1  -0.147421
+HETATM     4 H                  -0.55012   0.67354  -0.00726    H   1 1   0.092348
+HETATM     5 H                  -2.12125   0.68550   0.84770    H   1 1   0.072652
+HETATM     6 H                  -2.07045   0.64265  -0.94824    H   1 1   0.073516
+UNIT ENERGY   kcal
+ENERGY -575.7841977497517
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_17
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.98834  -3.19181  -0.00545   Ag   1 1  -0.009906
+HETATM     2 S                  -1.41078  -1.48570   0.02084    S   1 1  -0.088355
+HETATM     3 C                  -1.50601   0.33843  -0.02423    C   1 1  -0.145761
+HETATM     4 H                  -0.44774   0.63261  -0.00358    H   1 1   0.093040
+HETATM     5 H                  -2.01541   0.75702   0.85253    H   1 1   0.075071
+HETATM     6 H                  -1.96808   0.71672  -0.94452    H   1 1   0.075911
+UNIT ENERGY   kcal
+ENERGY -573.276001164209
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_18
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.98685  -3.20497  -0.00512   Ag   1 1  -0.003770
+HETATM     2 S                  -1.45389  -1.45675   0.01869    S   1 1  -0.106350
+HETATM     3 C                  -1.42962   0.37120  -0.02228    C   1 1  -0.139506
+HETATM     4 H                  -0.35386   0.59093   0.00366    H   1 1   0.093523
+HETATM     5 H                  -1.91466   0.82108   0.85304    H   1 1   0.077750
+HETATM     6 H                  -1.86231   0.78181  -0.94327    H   1 1   0.078353
+UNIT ENERGY   kcal
+ENERGY -570.4487944800991
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_19
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.98482  -3.21723  -0.00471   Ag   1 1   0.005127
+HETATM     2 S                  -1.49799  -1.42708   0.01575    S   1 1  -0.132920
+HETATM     3 C                  -1.35499   0.39660  -0.01920    C   1 1  -0.128107
+HETATM     4 H                  -0.26661   0.53898   0.00665    H   1 1   0.094519
+HETATM     5 H                  -1.80887   0.87390   0.85825    H   1 1   0.080408
+HETATM     6 H                  -1.76062   0.83728  -0.93846    H   1 1   0.080974
+UNIT ENERGY   kcal
+ENERGY -567.3550982154676
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_CH3_angle_20
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_CH3_angle/LT/LT_Ag_S_CH3_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 6 0
+HETATM     1 Ag                 -2.98216  -3.22841  -0.00440   Ag   1 1   0.017961
+HETATM     2 S                  -1.54320  -1.39761   0.01370    S   1 1  -0.169824
+HETATM     3 C                  -1.28206   0.41486  -0.01723    C   1 1  -0.109413
+HETATM     4 H                  -0.18703   0.48426   0.01362    H   1 1   0.095462
+HETATM     5 H                  -1.70960   0.91822   0.85894    H   1 1   0.082737
+HETATM     6 H                  -1.65574   0.88163  -0.93734    H   1 1   0.083077
+UNIT ENERGY   kcal
+ENERGY -564.0643624182889
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_1
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.45339  -3.28931  -0.00000   Ag   1 1   0.251638
+HETATM     2 S                  -0.00908  -0.90697  -0.00000    S   1 1  -0.248570
+HETATM     3 H                  -1.21439  -1.56886  -0.00000    H   1 1  -0.003068
+UNIT ENERGY   kcal
+ENERGY -172.35390728111105
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_2
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.44556  -3.27681  -0.00000   Ag   1 1   0.241382
+HETATM     2 S                  -0.03336  -0.94945  -0.00000    S   1 1  -0.219323
+HETATM     3 H                  -1.27527  -1.54646  -0.00000    H   1 1  -0.022058
+UNIT ENERGY   kcal
+ENERGY -175.54086396097185
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_3
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.43818  -3.26509  -0.00000   Ag   1 1   0.226064
+HETATM     2 S                  -0.05623  -0.98948  -0.00000    S   1 1  -0.191579
+HETATM     3 H                  -1.33218  -1.51998  -0.00000    H   1 1  -0.034485
+UNIT ENERGY   kcal
+ENERGY -178.82095062379886
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_4
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.43106  -3.25381  -0.00000   Ag   1 1   0.207205
+HETATM     2 S                  -0.07839  -1.02814  -0.00000    S   1 1  -0.166017
+HETATM     3 H                  -1.38440  -1.49010  -0.00000    H   1 1  -0.041188
+UNIT ENERGY   kcal
+ENERGY -182.10393145424595
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_5
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.42410  -3.24278  -0.00000   Ag   1 1   0.186651
+HETATM     2 S                  -0.10016  -1.06602  -0.00000    S   1 1  -0.143677
+HETATM     3 H                  -1.43290  -1.45786  -0.00000    H   1 1  -0.042974
+UNIT ENERGY   kcal
+ENERGY -185.293007476028
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_6
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.41833  -3.23380  -0.00000   Ag   1 1   0.165592
+HETATM     2 S                  -0.11821  -1.09734  -0.00000    S   1 1  -0.127130
+HETATM     3 H                  -1.47135  -1.41704  -0.00000    H   1 1  -0.038462
+UNIT ENERGY   kcal
+ENERGY -188.29119176375647
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_7
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.41372  -3.22675  -0.00000   Ag   1 1   0.146770
+HETATM     2 S                  -0.13273  -1.12244  -0.00000    S   1 1  -0.117018
+HETATM     3 H                  -1.50050  -1.36873  -0.00000    H   1 1  -0.029752
+UNIT ENERGY   kcal
+ENERGY -191.03646421804214
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_8
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.40991  -3.22107  -0.00000   Ag   1 1   0.131787
+HETATM     2 S                  -0.14478  -1.14312  -0.00000    S   1 1  -0.112605
+HETATM     3 H                  -1.52244  -1.31538  -0.00000    H   1 1  -0.019182
+UNIT ENERGY   kcal
+ENERGY -193.50490285834
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_9
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.40737  -3.21754  -0.00000   Ag   1 1   0.121160
+HETATM     2 S                  -0.15295  -1.15683  -0.00000    S   1 1  -0.113057
+HETATM     3 H                  -1.53248  -1.25462  -0.00000    H   1 1  -0.008103
+UNIT ENERGY   kcal
+ENERGY -195.70580461227308
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_10
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.40549  -3.21511  -0.00000   Ag   1 1   0.114258
+HETATM     2 S                  -0.15903  -1.16697  -0.00000    S   1 1  -0.116563
+HETATM     3 H                  -1.53924  -1.19067  -0.00000    H   1 1   0.002304
+UNIT ENERGY   kcal
+ENERGY -197.66357910577364
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_11
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.40377  -3.21297  -0.00000   Ag   1 1   0.110129
+HETATM     2 S                  -0.16472  -1.17616  -0.00000    S   1 1  -0.120698
+HETATM     3 H                  -1.54060  -1.12613  -0.00000    H   1 1   0.010569
+UNIT ENERGY   kcal
+ENERGY -199.4079655015508
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_12
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.40272  -3.21195  -0.00000   Ag   1 1   0.108096
+HETATM     2 S                  -0.16839  -1.18170  -0.00000    S   1 1  -0.125198
+HETATM     3 H                  -1.53598  -1.05858  -0.00000    H   1 1   0.017102
+UNIT ENERGY   kcal
+ENERGY -200.96628577776283
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_13
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.40124  -3.21019  -0.00000   Ag   1 1   0.106658
+HETATM     2 S                  -0.17350  -1.18962  -0.00000    S   1 1  -0.128388
+HETATM     3 H                  -1.53093  -0.99385  -0.00000    H   1 1   0.021730
+UNIT ENERGY   kcal
+ENERGY -202.35457461754697
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_14
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.40051  -3.20973  -0.00000   Ag   1 1   0.106440
+HETATM     2 S                  -0.17634  -1.19330  -0.00000    S   1 1  -0.131185
+HETATM     3 H                  -1.51765  -0.92621  -0.00000    H   1 1   0.024744
+UNIT ENERGY   kcal
+ENERGY -203.58314661566226
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_15
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39976  -3.20921  -0.00000   Ag   1 1   0.106436
+HETATM     2 S                  -0.17935  -1.19714  -0.00000    S   1 1  -0.132925
+HETATM     3 H                  -1.50177  -0.85968  -0.00000    H   1 1   0.026488
+UNIT ENERGY   kcal
+ENERGY -204.657187316467
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_16
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39891  -3.20851  -0.00000   Ag   1 1   0.106328
+HETATM     2 S                  -0.18275  -1.20153  -0.00000    S   1 1  -0.133703
+HETATM     3 H                  -1.48474  -0.79431  -0.00000    H   1 1   0.027375
+UNIT ENERGY   kcal
+ENERGY -205.58203641293767
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_17
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39834  -3.20831  -0.00000   Ag   1 1   0.106692
+HETATM     2 S                  -0.18537  -1.20426  -0.00000    S   1 1  -0.134046
+HETATM     3 H                  -1.46152  -0.72927  -0.00000    H   1 1   0.027354
+UNIT ENERGY   kcal
+ENERGY -206.35503949320812
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_18
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39772  -3.20801  -0.00000   Ag   1 1   0.106903
+HETATM     2 S                  -0.18822  -1.20728  -0.00000    S   1 1  -0.133852
+HETATM     3 H                  -1.43689  -0.66533  -0.00000    H   1 1   0.026949
+UNIT ENERGY   kcal
+ENERGY -206.97619798290728
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_19
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39730  -3.20805  -0.00000   Ag   1 1   0.107376
+HETATM     2 S                  -0.19054  -1.20912  -0.00000    S   1 1  -0.133522
+HETATM     3 H                  -1.40779  -0.60211  -0.00000    H   1 1   0.026146
+UNIT ENERGY   kcal
+ENERGY -207.44406087326328
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_20
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39669  -3.20776  -0.00000   Ag   1 1   0.107658
+HETATM     2 S                  -0.19360  -1.21202  -0.00000    S   1 1  -0.132797
+HETATM     3 H                  -1.37606  -0.54180  -0.00000    H   1 1   0.025139
+UNIT ENERGY   kcal
+ENERGY -207.75923138005365
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_21
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39635  -3.20794  -0.00000   Ag   1 1   0.108241
+HETATM     2 S                  -0.19584  -1.21330  -0.00000    S   1 1  -0.132335
+HETATM     3 H                  -1.34070  -0.48167  -0.00000    H   1 1   0.024094
+UNIT ENERGY   kcal
+ENERGY -207.91856044188097
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_22
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39598  -3.20806  -0.00000   Ag   1 1   0.108901
+HETATM     2 S                  -0.19829  -1.21471  -0.00000    S   1 1  -0.131943
+HETATM     3 H                  -1.30224  -0.42393  -0.00000    H   1 1   0.023042
+UNIT ENERGY   kcal
+ENERGY -207.9234377489404
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_23
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39547  -3.20795  -0.00000   Ag   1 1   0.109592
+HETATM     2 S                  -0.20127  -1.21682  -0.00000    S   1 1  -0.131677
+HETATM     3 H                  -1.26154  -0.36902  -0.00000    H   1 1   0.022085
+UNIT ENERGY   kcal
+ENERGY -207.77601861920704
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_24
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39541  -3.20860  -0.00000   Ag   1 1   0.111044
+HETATM     2 S                  -0.20290  -1.21639  -0.00000    S   1 1  -0.132401
+HETATM     3 H                  -1.21681  -0.31388  -0.00000    H   1 1   0.021357
+UNIT ENERGY   kcal
+ENERGY -207.47588047693793
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_25
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39508  -3.20879  -0.00000   Ag   1 1   0.112728
+HETATM     2 S                  -0.20548  -1.21734  -0.00000    S   1 1  -0.133436
+HETATM     3 H                  -1.16986  -0.26306  -0.00000    H   1 1   0.020708
+UNIT ENERGY   kcal
+ENERGY -207.025922848955
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_26
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39476  -3.20901  -0.00000   Ag   1 1   0.114911
+HETATM     2 S                  -0.20807  -1.21816  -0.00000    S   1 1  -0.135286
+HETATM     3 H                  -1.12102  -0.21411  -0.00000    H   1 1   0.020375
+UNIT ENERGY   kcal
+ENERGY -206.4295478178958
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_27
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39471  -3.20969  -0.00000   Ag   1 1   0.118144
+HETATM     2 S                  -0.20990  -1.21737  -0.00000    S   1 1  -0.138361
+HETATM     3 H                  -1.06827  -0.16717  -0.00000    H   1 1   0.020217
+UNIT ENERGY   kcal
+ENERGY -205.69285032252526
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_28
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39447  -3.21002  -0.00000   Ag   1 1   0.121756
+HETATM     2 S                  -0.21241  -1.21762  -0.00000    S   1 1  -0.142090
+HETATM     3 H                  -1.01445  -0.12350  -0.00000    H   1 1   0.020334
+UNIT ENERGY   kcal
+ENERGY -204.81831243272774
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_29
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39446  -3.21077  -0.00000   Ag   1 1   0.126349
+HETATM     2 S                  -0.21424  -1.21643  -0.00000    S   1 1  -0.147010
+HETATM     3 H                  -0.95738  -0.08210  -0.00000    H   1 1   0.020661
+UNIT ENERGY   kcal
+ENERGY -203.81083266182466
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_30
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39439  -3.21142  -0.00000   Ag   1 1   0.131363
+HETATM     2 S                  -0.21630  -1.21547  -0.00000    S   1 1  -0.152642
+HETATM     3 H                  -0.89890  -0.04352  -0.00000    H   1 1   0.021279
+UNIT ENERGY   kcal
+ENERGY -202.6781259517675
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_31
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39418  -3.21181  -0.00000   Ag   1 1   0.136629
+HETATM     2 S                  -0.21890  -1.21523  -0.00000    S   1 1  -0.158617
+HETATM     3 H                  -0.83891  -0.00930  -0.00000    H   1 1   0.021988
+UNIT ENERGY   kcal
+ENERGY -201.4274309574298
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_32
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39420  -3.21260  -0.00000   Ag   1 1   0.142372
+HETATM     2 S                  -0.22080  -1.21363  -0.00000    S   1 1  -0.165479
+HETATM     3 H                  -0.77684   0.02347  -0.00000    H   1 1   0.023107
+UNIT ENERGY   kcal
+ENERGY -200.06455077382466
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_33
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39418  -3.21332  -0.00000   Ag   1 1   0.148231
+HETATM     2 S                  -0.22289  -1.21211  -0.00000    S   1 1  -0.172529
+HETATM     3 H                  -0.71308   0.05177  -0.00000    H   1 1   0.024298
+UNIT ENERGY   kcal
+ENERGY -198.5985128075898
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_34
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39406  -3.21389  -0.00000   Ag   1 1   0.153834
+HETATM     2 S                  -0.22530  -1.21102  -0.00000    S   1 1  -0.179677
+HETATM     3 H                  -0.64866   0.07695  -0.00000    H   1 1   0.025843
+UNIT ENERGY   kcal
+ENERGY -197.0402054858703
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_35
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39404  -3.21460  -0.00000   Ag   1 1   0.159339
+HETATM     2 S                  -0.22746  -1.20933  -0.00000    S   1 1  -0.187076
+HETATM     3 H                  -0.58287   0.09923  -0.00000    H   1 1   0.027737
+UNIT ENERGY   kcal
+ENERGY -195.3991948075964
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_36
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39405  -3.21538  -0.00000   Ag   1 1   0.164636
+HETATM     2 S                  -0.22953  -1.20729  -0.00000    S   1 1  -0.194466
+HETATM     3 H                  -0.51584   0.11720  -0.00000    H   1 1   0.029830
+UNIT ENERGY   kcal
+ENERGY -193.6847974135529
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_37
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39390  -3.21588  -0.00000   Ag   1 1   0.169193
+HETATM     2 S                  -0.23214  -1.20608  -0.00000    S   1 1  -0.201597
+HETATM     3 H                  -0.44881   0.13157  -0.00000    H   1 1   0.032404
+UNIT ENERGY   kcal
+ENERGY -191.9099087782723
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_38
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39369  -3.21626  -0.00000   Ag   1 1   0.173099
+HETATM     2 S                  -0.23498  -1.20513  -0.00000    S   1 1  -0.208493
+HETATM     3 H                  -0.38142   0.14171  -0.00000    H   1 1   0.035394
+UNIT ENERGY   kcal
+ENERGY -190.08962103510925
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_39
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39352  -3.21673  -0.00000   Ag   1 1   0.176385
+HETATM     2 S                  -0.23767  -1.20379  -0.00000    S   1 1  -0.215377
+HETATM     3 H                  -0.31357   0.14875  -0.00000    H   1 1   0.038992
+UNIT ENERGY   kcal
+ENERGY -188.23700252150317
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_H_angle_40
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_H_angle/LT/LT_Ag_S_H_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 3 0
+HETATM     1 Ag                 -1.39361  -3.21764  -0.00000   Ag   1 1   0.179365
+HETATM     2 S                  -0.23955  -1.20088  -0.00000    S   1 1  -0.222518
+HETATM     3 H                  -0.24476   0.15283  -0.00000    H   1 1   0.043153
+UNIT ENERGY   kcal
+ENERGY -186.36701471023898
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_2
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.42924  -4.26713  -0.02395   Ag   1 1   0.114591
+HETATM     2 S                  -1.62005  -2.63702  -0.02336    S   1 1  -0.380776
+HETATM     3 S                  -0.34312  -1.04689   0.06411    S   1 1   0.196251
+HETATM     4 H                  -0.89619  -0.50370   1.24733    H   1 1   0.069934
+UNIT ENERGY   kcal
+ENERGY 0.0
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_3
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.01387  -3.75722  -0.01755   Ag   1 1   0.114591
+HETATM     2 S                  -0.73064  -4.02799  -0.15884    S   1 1  -0.380776
+HETATM     3 S                  -2.60983  -1.32928   0.21374    S   1 1   0.196251
+HETATM     4 H                  -1.26344  -1.50684   0.11965    H   1 1   0.069934
+UNIT ENERGY   kcal
+ENERGY -259.6861240737119
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_4
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.03926  -3.79227  -0.02001   Ag   1 1   0.031204
+HETATM     2 S                  -0.74302  -3.92509  -0.14728    S   1 1  -0.071734
+HETATM     3 S                  -2.51534  -1.31455   0.21117    S   1 1   0.049836
+HETATM     4 H                  -1.17541  -1.52066   0.09628    H   1 1  -0.009306
+UNIT ENERGY   kcal
+ENERGY -257.44028031020525
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_5
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.05943  -3.82980  -0.02300   Ag   1 1   0.045428
+HETATM     2 S                  -0.76119  -3.84115  -0.13741    S   1 1  -0.068157
+HETATM     3 S                  -2.43230  -1.27453   0.21176    S   1 1   0.017761
+HETATM     4 H                  -1.09388  -1.47213   0.08119    H   1 1   0.004968
+UNIT ENERGY   kcal
+ENERGY -254.96677376044877
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_6
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.16562  -3.84265  -0.03006   Ag   1 1   0.072499
+HETATM     2 S                  -0.69165  -3.39676  -0.05444    S   1 1  -0.234672
+HETATM     3 S                  -2.11244  -1.68248   0.18977    S   1 1   0.117793
+HETATM     4 H                  -2.18242  -1.26486  -1.10452    H   1 1   0.044380
+UNIT ENERGY   kcal
+ENERGY -278.4223296578663
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_7
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.15966  -3.86303  -0.03219   Ag   1 1   0.068104
+HETATM     2 S                  -0.75935  -3.39718  -0.05294    S   1 1  -0.191294
+HETATM     3 S                  -2.06639  -1.61564   0.19535    S   1 1   0.077353
+HETATM     4 H                  -2.12796  -1.21072  -1.10315    H   1 1   0.045836
+UNIT ENERGY   kcal
+ENERGY -281.1034476667179
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_8
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.16178  -3.88705  -0.03437   Ag   1 1   0.071874
+HETATM     2 S                  -0.81064  -3.38202  -0.05047    S   1 1  -0.159346
+HETATM     3 S                  -2.01039  -1.55243   0.20004    S   1 1   0.040949
+HETATM     4 H                  -2.05247  -1.14886  -1.09955    H   1 1   0.046522
+UNIT ENERGY   kcal
+ENERGY -283.0521399122287
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_9
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.16875  -3.91341  -0.03669   Ag   1 1   0.077635
+HETATM     2 S                  -0.85074  -3.35893  -0.04747    S   1 1  -0.133552
+HETATM     3 S                  -1.94929  -1.48911   0.20470    S   1 1   0.009161
+HETATM     4 H                  -1.97943  -1.09419  -1.09631    H   1 1   0.046756
+UNIT ENERGY   kcal
+ENERGY -284.6554725052774
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_10
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.17702  -3.93988  -0.03898   Ag   1 1   0.079166
+HETATM     2 S                  -0.88776  -3.33276  -0.04418    S   1 1  -0.111741
+HETATM     3 S                  -1.88690  -1.42856   0.20901    S   1 1  -0.014039
+HETATM     4 H                  -1.90717  -1.03742  -1.09422    H   1 1   0.046614
+UNIT ENERGY   kcal
+ENERGY -286.1671337109266
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_11
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.18671  -3.96701  -0.04124   Ag   1 1   0.076347
+HETATM     2 S                  -0.92120  -3.30232  -0.04070    S   1 1  -0.095035
+HETATM     3 S                  -1.82363  -1.37013   0.21294    S   1 1  -0.027573
+HETATM     4 H                  -1.82517  -0.97821  -1.08944    H   1 1   0.046261
+UNIT ENERGY   kcal
+ENERGY -287.6893579012465
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_12
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.19691  -3.99383  -0.04356   Ag   1 1   0.069691
+HETATM     2 S                  -0.95310  -3.27039  -0.03680    S   1 1  -0.082860
+HETATM     3 S                  -1.75966  -1.31401   0.21672    S   1 1  -0.032533
+HETATM     4 H                  -1.76047  -0.92663  -1.08748    H   1 1   0.045703
+UNIT ENERGY   kcal
+ENERGY -289.1969429860508
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_13
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.20607  -4.01962  -0.04581   Ag   1 1   0.060180
+HETATM     2 S                  -0.98665  -3.23910  -0.03289    S   1 1  -0.073542
+HETATM     3 S                  -1.69742  -1.26059   0.22030    S   1 1  -0.031611
+HETATM     4 H                  -1.69962  -0.87873  -1.08589    H   1 1   0.044972
+UNIT ENERGY   kcal
+ENERGY -290.60729049367086
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_14
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.21674  -4.04591  -0.04817   Ag   1 1   0.050438
+HETATM     2 S                  -1.01644  -3.20291  -0.02821    S   1 1  -0.068228
+HETATM     3 S                  -1.63334  -1.21019   0.22347    S   1 1  -0.026389
+HETATM     4 H                  -1.65530  -0.83642  -1.08487    H   1 1   0.044179
+UNIT ENERGY   kcal
+ENERGY -291.82540349848387
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_15
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.22503  -4.07022  -0.05035   Ag   1 1   0.040395
+HETATM     2 S                  -1.05091  -3.17083  -0.02385    S   1 1  -0.062472
+HETATM     3 S                  -1.57268  -1.16245   0.22634    S   1 1  -0.021176
+HETATM     4 H                  -1.60655  -0.79019  -1.08255    H   1 1   0.043252
+UNIT ENERGY   kcal
+ENERGY -292.77132397379097
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_16
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.23327  -4.09415  -0.05253   Ag   1 1   0.031401
+HETATM     2 S                  -1.08511  -3.13817  -0.01934    S   1 1  -0.058029
+HETATM     3 S                  -1.51230  -1.11645   0.22906    S   1 1  -0.015906
+HETATM     4 H                  -1.56369  -0.74698  -1.08043    H   1 1   0.042534
+UNIT ENERGY   kcal
+ENERGY -293.3948197962474
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_17
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.24128  -4.11771  -0.05463   Ag   1 1   0.023545
+HETATM     2 S                  -1.11938  -3.10414  -0.01492    S   1 1  -0.054563
+HETATM     3 S                  -1.45287  -1.07309   0.23156    S   1 1  -0.011266
+HETATM     4 H                  -1.51165  -0.70356  -1.07808    H   1 1   0.042283
+UNIT ENERGY   kcal
+ENERGY -293.6720143072606
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_18
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.24861  -4.14041  -0.05664   Ag   1 1   0.016939
+HETATM     2 S                  -1.15472  -3.07013  -0.01048    S   1 1  -0.051148
+HETATM     3 S                  -1.39469  -1.03261   0.23375    S   1 1  -0.008135
+HETATM     4 H                  -1.45875  -0.65896  -1.07495    H   1 1   0.042345
+UNIT ENERGY   kcal
+ENERGY -293.591154539717
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_19
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.25543  -4.16247  -0.05861   Ag   1 1   0.011483
+HETATM     2 S                  -1.19069  -3.03588  -0.00601    S   1 1  -0.048516
+HETATM     3 S                  -1.33754  -0.99433   0.23580    S   1 1  -0.005918
+HETATM     4 H                  -1.40786  -0.61901  -1.07253    H   1 1   0.042951
+UNIT ENERGY   kcal
+ENERGY -293.1530728314829
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_20
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.26168  -4.18379  -0.06057   Ag   1 1   0.007363
+HETATM     2 S                  -1.22737  -3.00153  -0.00124    S   1 1  -0.046670
+HETATM     3 S                  -1.28131  -0.95864   0.23748    S   1 1  -0.004588
+HETATM     4 H                  -1.36473  -0.57995  -1.06949    H   1 1   0.043894
+UNIT ENERGY   kcal
+ENERGY -292.3714767693728
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_21
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.26748  -4.20460  -0.06243   Ag   1 1   0.004713
+HETATM     2 S                  -1.26473  -2.96676   0.00323    S   1 1  -0.046601
+HETATM     3 S                  -1.22624  -0.92496   0.23916    S   1 1  -0.003411
+HETATM     4 H                  -1.31179  -0.54414  -1.06731    H   1 1   0.045300
+UNIT ENERGY   kcal
+ENERGY -291.26565205737234
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_22
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.27245  -4.22430  -0.06428   Ag   1 1   0.003294
+HETATM     2 S                  -1.30293  -2.93149   0.00830    S   1 1  -0.048661
+HETATM     3 S                  -1.17263  -0.89546   0.24018    S   1 1  -0.001426
+HETATM     4 H                  -1.27276  -0.50857  -1.06368    H   1 1   0.046793
+UNIT ENERGY   kcal
+ENERGY -289.85556362252044
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_23
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.27695  -4.24348  -0.06597   Ag   1 1   0.003582
+HETATM     2 S                  -1.34170  -2.89517   0.01271    S   1 1  -0.054176
+HETATM     3 S                  -1.12065  -0.86866   0.24133    S   1 1   0.002132
+HETATM     4 H                  -1.21447  -0.47645  -1.06173    H   1 1   0.048462
+UNIT ENERGY   kcal
+ENERGY -288.16295654497026
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_24
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.28104  -4.26199  -0.06772   Ag   1 1   0.005937
+HETATM     2 S                  -1.38047  -2.85810   0.01797    S   1 1  -0.064235
+HETATM     3 S                  -1.06947  -0.84487   0.24181    S   1 1   0.008247
+HETATM     4 H                  -1.17451  -0.44394  -1.05802    H   1 1   0.050051
+UNIT ENERGY   kcal
+ENERGY -286.20855718338925
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_25
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.28418  -4.27952  -0.06929   Ag   1 1   0.010563
+HETATM     2 S                  -1.42101  -2.82192   0.02249    S   1 1  -0.079225
+HETATM     3 S                  -1.02009  -0.82330   0.24248    S   1 1   0.017078
+HETATM     4 H                  -1.12149  -0.41655  -1.05596    H   1 1   0.051584
+UNIT ENERGY   kcal
+ENERGY -284.01965915506594
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_26
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.28745  -4.29700  -0.07090   Ag   1 1   0.017643
+HETATM     2 S                  -1.46026  -2.78305   0.02756    S   1 1  -0.100813
+HETATM     3 S                  -0.97140  -0.80459   0.24271    S   1 1   0.030177
+HETATM     4 H                  -1.07403  -0.38929  -1.05321    H   1 1   0.052994
+UNIT ENERGY   kcal
+ENERGY -281.6214348261067
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_27
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.28864  -4.31212  -0.07228   Ag   1 1   0.026437
+HETATM     2 S                  -1.50318  -2.74715   0.03205    S   1 1  -0.127446
+HETATM     3 S                  -0.92607  -0.79057   0.24278    S   1 1   0.046756
+HETATM     4 H                  -1.02455  -0.36870  -1.05136    H   1 1   0.054254
+UNIT ENERGY   kcal
+ENERGY -279.0351519524347
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_28
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.29133  -4.32885  -0.07384   Ag   1 1   0.038382
+HETATM     2 S                  -1.54226  -2.70614   0.03741    S   1 1  -0.161489
+HETATM     3 S                  -0.87942  -0.77641   0.24257    S   1 1   0.067633
+HETATM     4 H                  -0.97927  -0.34501  -1.04875    H   1 1   0.055474
+UNIT ENERGY   kcal
+ENERGY -276.2923019976135
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_29
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.29039  -4.34120  -0.07521   Ag   1 1   0.050579
+HETATM     2 S                  -1.58737  -2.67103   0.04321    S   1 1  -0.198672
+HETATM     3 S                  -0.83865  -0.77066   0.24126    S   1 1   0.091491
+HETATM     4 H                  -0.94181  -0.33079  -1.04656    H   1 1   0.056602
+UNIT ENERGY   kcal
+ENERGY -273.4201769024868
+END
+
+BIOGRF 200
+DESCRP LT_Ag_S_SH_angle_30
+REMARK Created by adfreport
+REMARK DataFrom /home/dulong/AgSCH/Optimized_Geo/fromJavri/Ag_S_SH_angle/LT/LT_Ag_S_SH_angle.t21
+RUTYPE MAXIT   1
+MOLCHARGE 1 4 0
+HETATM     1 Ag                 -3.28985  -4.35403  -0.07645   Ag   1 1   0.064786
+HETATM     2 S                  -1.63093  -2.63323   0.04820    S   1 1  -0.239814
+HETATM     3 S                  -0.79811  -0.76609   0.24035    S   1 1   0.117346
+HETATM     4 H                  -0.90320  -0.31408  -1.04415    H   1 1   0.057683
+UNIT ENERGY   kcal
+ENERGY -270.4560969976878
+END
