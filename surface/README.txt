@@ -59,3 +59,8 @@ http://dx.doi.org/10.1021/jp802134x
 To simulate the steps involved in the conversion of methanol to formaldehyde, we started with the crystal structure of V2O5 which has cell parameters of a ) 3.564 Angstrom, b ) 11.519 Angstrom, and c ) 4.373 Angstrom. We then built a 6 Å~ 2 supercell in the a and b directions and used a finite slab with three layers in the c direction, leading to a (001) surface. This slab, containing 504 atoms, was exposed on both surfaces to a gas phase containing 30 methanol molecules in a volume of 8211 Angstrom^3 , which would correspond to a methanol pressure of 0.16 GPa at 2000 K. First, we optimized the CH3OH/V2O5 system to minimize the energy.
 Subsequent simulations of the reaction with methanol were carried out for 250 ps using a dual-temperature thermostat keeping the V and O atoms associated with the vanadium oxide slab at 650 K. while the C, O, and H atoms associated with the methanol molecules were kept at 2000 K. This temperature regime was maintained throughout the simulation and did not change when reactions occurred.
 To follow the reaction events, molecular analysis of the simulations was performed using a bond order cutoff of 0.2 to allow detection of short-lived intermediates.
+
+63_H2_YSZ_Ni111: Shu-Sheng Liu et al.,
+Communications Chemistry volume 2, Article number: 48 (2019) 
+https://www.nature.com/articles/s42004-019-0148-x
+Published: 23 April 2019
