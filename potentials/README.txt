@@ -368,6 +368,115 @@ Volume 169, November 2019, 109143
 2019-08-05
 http://dx.doi.org/10.1016/j.commatsci.2019.109143
 -------------------------------------------------------------------
+2009
+
+2009X1
+CHOVMoTeNb
+K. Chenoweth et al.,
+First published: 23 September 2009 https://doi.org/10.1002/anie.200902574
+-------------------------------------------------------------------
+2010
+
+2010X1
+CHNi
+J. Mueller et al.,
+Cite this: J. Phys. Chem. C 2010, 114, 12, 5675-5685
+Publication Date:January 27, 2010
+https://doi.org/10.1021/jp9089003
+-------------------------------------------------------------------
+2011
+
+2011X1
+CHONSSi
+N. Rom et al.,
+Cite this: J. Phys. Chem. A 2011, 115, 36, 10181-10202
+Publication Date:August 3, 2011
+https://doi.org/10.1021/jp202059v
+-------------------------------------------------------------------
+2012
+
+2012X1
+CHO
+X.-M. Cheng et al.,
+Cite this: J. Phys. Chem. A 2012, 116, 40, 9811-9818
+Publication Date:September 21, 2012
+https://doi.org/10.1021/jp304040q
+
+2012X2
+CHOCaSiAlS
+L. Liu et al.,
+Cite this: J. Phys. Chem. A 2012, 116, 15, 3918-3925
+Publication Date:March 13, 2012
+https://doi.org/10.1021/jp210135j
+-------------------------------------------------------------------
+2013
+
+2013X1
+OPd
+T. P. Senftle et al.,
+J. Chem. Phys. 139, 044109 (2013); https://doi.org/10.1063/1.4815820
+Published Online: 25 July 2013 Accepted: July 2013
+
+2013X2
+CHON
+N. Rom et al.,
+Cite this: J. Phys. Chem. C 2013, 117, 41, 21043-21054
+Publication Date:September 11, 2013
+https://doi.org/10.1021/jp404907b
+-------------------------------------------------------------------
+2014
+
+2014X1
+CHONiPt
+https://pure.tue.nl/ws/files/4010654/770079.pdf
+
+2014X2
+CHO
+T. Cheng et al.,
+Cite this: J. Am. Chem. Soc. 2014, 136, 26, 9434-9442
+Publication Date:June 2, 2014
+https://doi.org/10.1021/ja5037258
+
+2014X3
+OPt
+D. Fantauzzi et al.,
+Phys. Chem. Chem. Phys., 2014,16, 23118-23133
+https://doi.org/10.1039/C4CP03111C
+-------------------------------------------------------------------
+2015
+
+2015X1
+S. Hong et al.,
+Cite this: J. Phys. Chem. C 2015, 119, 31, 17876-17886
+Publication Date:July 7, 2015
+https://doi.org/10.1021/acs.jpcc.5b04650
+
+2015X2
+B. D. Jensen et al.,
+First published: 12 June 2015 https://doi.org/10.1002/jcc.23970
+
+2015X3
+W. Zhang et al.,
+Cite this: J. Phys. Chem. C 2015, 119, 49, 27727-27736
+Publication Date:November 13, 2015
+https://doi.org/10.1021/acs.jpcc.5b07271
+-------------------------------------------------------------------
+2016
+
+2016X1
+HOSMg
+Y. K. Shin et al.,
+Cite this: J. Phys. Chem. A 2016, 120, 41, 8044-8055
+Publication Date:September 26, 2016
+https://doi.org/10.1021/acs.jpca.6b06770
+
+2016X2
+CHONS
+T. Zhang et al.,
+Cite this: Energy Fuels 2016, 30, 4, 3140-3150
+Publication Date:March 25, 2016
+https://doi.org/10.1021/acs.energyfuels.6b00247
+-------------------------------------------------------------------
 2017
 
 No.52
@@ -398,7 +507,7 @@ Cite this: Energy Fuels 2017, 31, 4, 3675-3683
 Publication Date:February 27, 2017
 https://doi.org/10.1021/acs.energyfuels.6b03243
 
-2017X5. No.56
+2017X5, No.56
 Z. Chen et al.,
 Cite this: J. Phys. Chem. A 2017, 121, 10, 2069-2078
 Publication Date:March 1, 2017
@@ -493,8 +602,37 @@ Published Online: 28 December 2017 Accepted: November 2017
 CHOPTiLiAl
 Y. K. Shin et al.,
 Phys. Chem. Chem. Phys., 2018,20, 22134-22147
-https://pubs.rsc.org/en/content/articlelanding/2018/cp/c8cp03586e#!divAbstract
+https://doi.org/10.1039/C8CP03586E
 06 Jun 2018
+
+2018X2
+HNRu
+S.-Y. Kim et al.,
+Cite this: ACS Appl. Mater. Interfaces 2018, 10, 31, 26188-26194
+Publication Date:July 18, 2018
+https://doi.org/10.1021/acsami.8b05070
+
+2018X3
+BNNi
+https://krex.k-state.edu/dspace/bitstream/handle/2097/39116/SongLiu2018.pdf?sequence=5
+
+2018X4
+Y. Yang et al.,
+Cite this: J. Phys. Chem. B 2018, 122, 41, 9616-9624
+Publication Date:September 28, 2018
+https://doi.org/10.1021/acs.jpcb.8b08094
+
+2018X5
+M. Y. Sengul et al.,
+Cite this: ACS Appl. Mater. Interfaces 2018, 10, 43, 37717-37724
+Publication Date:October 3, 2018
+https://doi.org/10.1021/acsami.8b13630
+
+2018X6
+T. Trnka et al.,
+Cite this: J. Chem. Theory Comput. 2018, 14, 1, 291-302
+Publication Date:November 20, 2017
+https://doi.org/10.1021/acs.jctc.7b00870
 
 No.69
 CH
@@ -580,6 +718,30 @@ Publication Date:November 8, 2018
 https://doi.org/10.1021/acs.jpcc.8b10427
 -------------------------------------------------------------------
 2019
+
+2019X1
+CHOFeAlNiCuSCr
+S. Shabnam et al.,
+Phys. Chem. Chem. Phys., 2019,21, 9865-9875
+https://doi.org/10.1039/C9CP00354A
+
+2019X2
+S. H. Hahn et al.,
+Cite this: J. Phys. Chem. C 2019, 123, 25, 15606-15617
+Publication Date:May 31, 2019
+https://doi.org/10.1021/acs.jpcc.9b02940
+
+2019X3
+M. Kowalik et al.,
+Cite this: J. Phys. Chem. B 2019, 123, 25, 5357-5367
+Publication Date:May 30, 2019
+https://doi.org/10.1021/acs.jpcb.9b04298
+
+2019X4
+N. Nayir et al.,
+Cite this: J. Phys. Chem. A 2019, 123, 19, 4303-4313
+Publication Date:April 24, 2019
+https://doi.org/10.1021/acs.jpca.9b01481
 
 No.81
 CHONSSi
@@ -752,4 +914,28 @@ Y. Chen et al.,
 Cite this: J. Am. Chem. Soc. 2020, 142, 19, 8625-8632
 Publication Date:April 22, 2020
 https://doi.org/10.1021/jacs.9b13218
+
+S. Kwon et al.,
+Cite this: J. Phys. Chem. A 2018, 122, 48, 9350-9358
+Publication Date:November 9, 2018
+https://doi.org/10.1021/acs.jpca.8b07290
+
+J. R. Boes et al.,
+First published: 02 March 2016 https://doi.org/10.1002/qua.25115
+https://onlinelibrary.wiley.com/doi/full/10.1002/qua.25115?casa_token=7zls2KrtN2kAAAAA%3AgqjM_vzL98gxfMWwxTV2LjZ3TTDyvsGFsayCONWikO6_gyra4FybLNkguyg9wxTwyYm6MegQg_b5bD2BZQ
+
+M. Zheng et al.,
+Cite this: Energy Fuels 2014, 28, 1, 522-534
+Publication Date:December 9, 2013
+https://doi.org/10.1021/ef402140n
+
+J. M. Rimsza et al.,
+Cite this: J. Phys. Chem. C 2016, 120, 43, 24803-24816
+Publication Date:October 3, 2016
+https://doi.org/10.1021/acs.jpcc.6b07939
+
+H.-J. Qian et al.,
+Cite this: J. Chem. Theory Comput. 2011, 7, 7, 2040-2048
+Publication Date:May 31, 2011
+https://doi.org/10.1021/ct200197v
 -------------------------------------------------------------------
