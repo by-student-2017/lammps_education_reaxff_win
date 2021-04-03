@@ -1,0 +1,62 @@
+# MD Oxidation of 4H-SiC (000-1) C-face and O_2
+#
+
+
+##                    USER INPUT                          ##
+
+variable num_run equal 100000 # [fs]
+variable num_dump equal 5000 # [fs]
+
+variable input_file string 4H-SiC+O2_C-face.txt
+variable temperature equal 1100 # [C]
+
+##                                                        ##
+
+
+# PRINT TO SCREEN
+print ""
+print "Run ${num_run} fs at ${temperature}°C."
+print "Save every ${num_dump} fs."
+print ""
+
+# °C to °K
+variable output_file string C-T=${temperature}
+variable temperature equal ${temperature}+274.15 # [K]
+
+# SETTINGS
+timestep 1
+units real # [A, fs, A/fs, K]
+dimension 3
+atom_style charge
+boundary p p f
+thermo ${num_dump}
+thermo_modify lost warn flush yes
+
+# INITIAL STRUCTURE
+read_data ../${input_file}
+print "" # Empty line
+
+# POTENTIAL AND FIX
+pair_style reax/c NULL
+pair_coeff * * ffield.reax.2010Fogarty Si C O
+fix basic all nve
+fix zwalls all wall/reflect zlo EDGE zhi EDGE
+fix reax all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+
+# SIMULATION AND OUTPUT
+#
+fix temperature all temp/berendsen ${temperature} ${temperature} 1.0
+dump dumpfile all xyz ${num_dump} ${output_file}.xyz
+dump_modify dumpfile element Si C O
+fix bondcount all reax/c/species 10 10 ${num_dump} ${output_file}.reaxc element Si C O
+
+# RUN
+#
+run ${num_run}
+
+
+## END
+#
+quit
+
+

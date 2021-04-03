@@ -1,0 +1,17 @@
+V. Simonka, IuE TU Wien, (2016.11.07)
+Create structure files of 4H-SiC + O2
+
+Num. Cells = 29
+(X = 10, Y = 10, Z = 9)
+Num. Types = 3
+Gas height = 250 A
+Num. of O = 2000
+Distance O2 = 5
+Face = 3
+
+Real Num. of Elements = 9048
+(Si = 3600, C = 3600, O1 = 924, O2 = 924)
+
+Simulation Box [A] 
+Xlo, Ylo, Zlo (-13.9645, -0.1, -0.1) 
+Xhi, Yhi, Zhi (29.3695, 27.8832, 341.821) 

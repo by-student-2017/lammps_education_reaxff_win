@@ -60,7 +60,7 @@ To simulate the steps involved in the conversion of methanol to formaldehyde, we
 Subsequent simulations of the reaction with methanol were carried out for 250 ps using a dual-temperature thermostat keeping the V and O atoms associated with the vanadium oxide slab at 650 K. while the C, O, and H atoms associated with the methanol molecules were kept at 2000 K. This temperature regime was maintained throughout the simulation and did not change when reactions occurred.
 To follow the reaction events, molecular analysis of the simulations was performed using a bond order cutoff of 0.2 to allow detection of short-lived intermediates.
 
-62_H2_YSZ_Ni111: Shu-Sheng Liu et al.,
+83_H2_YSZ_Ni111: Shu-Sheng Liu et al.,
 Communications Chemistry volume 2, Article number: 48 (2019) 
 https://www.nature.com/articles/s42004-019-0148-x
 Published: 23 April 2019

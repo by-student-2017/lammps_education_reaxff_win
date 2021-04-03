@@ -1,0 +1,40 @@
+# Timestep     No_Moles     No_Specs     Si3588C3578O16	SiO3	SiO	SiC2O	Si	SiCO	SiCO2	SiO2	SiC	C	CO	O2	O	
+5000        994         13	 1	 1	 4	 1	 2	 1	 1	 1	 1	 5	 12	 947	 27	
+# Timestep     No_Moles     No_Specs     SiO2	Si3441C3412O45	SiO	Si4C5	Si3CO	Si12C7O6	Si5C7	SiCO	SiC	Si2C3	Si5C7O	Si5C3O2	Si2O2	Si2CO	Si12C6O11	Si2C2O	SiC2	Si3CO4	Si4C2O	Si4C2O4	Si	Si2O	Si2O3	Si3C2O	SiC3	SiCO3	Si2C2	SiO3	SiC4	SiO4	Si2CO2	CO2	CO	C	C2	O2	O	
+10000       1165         37	 3	 1	 20	 1	 3	 1	 1	 8	 18	 1	 1	 1	 2	 3	 1	 2	 1	 1	 1	 1	 8	 2	 2	 1	 1	 1	 1	 1	 1	 1	 2	 3	 55	 24	 4	 811	 176	
+# Timestep     No_Moles     No_Specs     Si3386C3370O61	SiO	Si	Si6C4O3	Si20C17O13	SiC	Si2CO	Si6C5O4	Si4C2O	Si3O	Si2O3	SiO2	Si3O2	Si4O3	Si2O	SiC2	Si6C2O	SiCO	Si2O2	Si5C3O2	SiCO3	Si2C	SiO3	Si3CO	Si2C2	Si4CO2	SiCO2	Si2C2O	Si2	Si3CO2	SiC2O	SiCO4	Si3C2	C	C2	CO	C3	CO2	O2	O	
+15000       1279         40	 1	 26	 24	 1	 1	 29	 3	 1	 1	 1	 1	 4	 3	 1	 3	 6	 1	 6	 1	 1	 2	 4	 4	 1	 1	 1	 2	 2	 1	 1	 2	 1	 1	 36	 6	 67	 1	 2	 721	 308	
+# Timestep     No_Moles     No_Specs     Si3434C3376O91	Si3C3	Si4CO	Si2O	Si3C	SiC	SiCO	SiO	Si3	SiO2	Si2O2	Si4CO2	Si6O2	Si14C7O5	SiO3	Si3CO2	Si3O	Si2CO	Si	Si2	Si3CO	Si3C2O2	Si3O4	Si2C	Si2C2	Si2C2O	Si3C3O	Si2O3	Si2CO2	SiC2O	C	C2O2	CO	C2	C5	C2O	O2	O	
+20000       1314         38	 1	 2	 1	 6	 1	 13	 6	 20	 1	 5	 4	 1	 1	 1	 3	 1	 1	 3	 12	 2	 1	 2	 1	 1	 3	 1	 1	 1	 1	 2	 46	 1	 95	 4	 1	 1	 652	 415	
+# Timestep     No_Moles     No_Specs     Si3450C3370O114	Si3C2	Si19C14O10	Si	SiO	Si15C6O8	Si2CO	Si2C2O	Si4C2O2	SiC	Si8CO13	SiCO	Si2O	Si10C5O7	Si4CO3	SiO3	Si2C3O	Si3CO	Si3CO3	Si2C2O3	Si2C3	Si2O3	SiO2	C	CO	C2	CO2	O2	O	
+25000       1316         29	 1	 1	 1	 27	 15	 1	 3	 1	 1	 10	 1	 3	 1	 1	 1	 2	 1	 1	 1	 1	 2	 1	 1	 34	 112	 2	 2	 598	 490	
+# Timestep     No_Moles     No_Specs     Si3487C3394O137	Si3C2O2	Si	SiO	SiC	Si2C2O3	Si8CO13	Si2C2O2	Si5CO4	Si10C7O8	Si4CO5	SiO3	Si2CO	Si2C3O	Si3C2O5	Si2CO2	Si3CO	Si4CO4	Si2C3	SiC2O	SiCO	C	CO	C2	CO2	O2	O	
+30000       1284         27	 1	 1	 16	 22	 6	 1	 1	 1	 1	 1	 1	 2	 2	 1	 1	 1	 1	 1	 2	 1	 1	 29	 110	 1	 3	 590	 486	
+# Timestep     No_Moles     No_Specs     Si3482C3377O142	Si	SiO	Si3C4	SiC	Si3C4O4	Si2O2	SiCO4	Si9C3O14	SiC2	Si10C7O10	Si5C2O6	SiO3	SiCO	Si2CO	Si3C2O5	Si2O	Si3CO	Si4O4	Si3O3	Si2C3	Si4C2	C	CO	CO2	C2	O2	O	
+35000       1295         28	 1	 21	 15	 1	 7	 1	 2	 1	 1	 3	 1	 1	 2	 3	 1	 1	 1	 1	 1	 1	 1	 1	 32	 113	 3	 2	 582	 495	
+# Timestep     No_Moles     No_Specs     Si3473C3364O152	Si16C9O16	SiO	Si2C2	Si	SiC	Si3C4O4	Si2O2	SiCO4	Si10C4O14	SiC2	SiO3	SiCO	Si2CO2	SiC3	Si3C3	Si4C2O6	Si2O	Si3CO	Si4O4	Si3O3	Si2C3	C	CO	C2	CO2	C2O2	O2	O	
+40000       1281         29	 1	 1	 15	 1	 19	 3	 1	 3	 1	 1	 2	 2	 3	 1	 1	 1	 1	 1	 1	 1	 1	 1	 37	 105	 3	 2	 1	 582	 489	
+# Timestep     No_Moles     No_Specs     Si3459C3353O155	Si16C9O17	SiO	Si	Si3C4O4	Si2O2	SiCO4	Si10C4O14	Si5C5	SiO3	Si2C3	Si2C2	Si2CO	Si2CO2	Si2	Si4C2O6	Si2O	Si3C2O	SiCO	SiC2	Si4O4	Si3O3	SiC	C	CO	C2	CO2	O2	O	
+45000       1290         29	 1	 1	 16	 20	 1	 3	 1	 1	 1	 3	 2	 2	 1	 1	 1	 1	 1	 1	 2	 2	 1	 1	 6	 40	 106	 1	 2	 575	 496	
+# Timestep     No_Moles     No_Specs     Si3464C3342O155	Si16C10O17	SiO	Si	Si3C3O4	SiC	Si2O2	Si10C5O14	Si6C7	Si5CO6	SiO3	Si3CO	SiC2	Si2CO2	Si4C2O7	Si2O	Si3C2O	Si4O4	Si2C3	Si4C5	SiCO	SiCO2	C	CO	C2	CO2	O2	O	
+50000       1283         28	 1	 1	 15	 18	 1	 5	 2	 1	 1	 1	 3	 1	 4	 1	 1	 1	 1	 1	 1	 1	 1	 1	 38	 109	 1	 2	 575	 495	
+# Timestep     No_Moles     No_Specs     Si3471C3360O158	Si16C11O17	SiO	Si	Si3C3O6	Si2O2	SiC	Si10C5O14	Si5CO6	SiO3	Si3CO	Si2O	Si2CO2	SiO2	Si4C2O7	Si3C2O	Si2C2	Si4O4	SiCO2	SiC2	C	CO	CO2	C2	O2	O	
+55000       1266         26	 1	 1	 13	 17	 1	 3	 4	 1	 1	 3	 1	 1	 1	 1	 1	 1	 1	 1	 1	 1	 30	 110	 2	 1	 570	 498	
+# Timestep     No_Moles     No_Specs     Si3485C3361O188	Si2C	Si9CO12	SiO	Si2O4	Si2O2	Si	SiO2	SiO3	Si4C2O2	Si2O	SiCO2	Si2O3	Si2C2	SiC	Si3C2	Si2CO4	Si3O3	CO	C	CO2	C2	O2	O	
+60000       1259         24	 1	 1	 1	 17	 1	 4	 10	 1	 4	 2	 2	 1	 1	 2	 5	 1	 1	 1	 111	 32	 2	 1	 567	 490	
+# Timestep     No_Moles     No_Specs     Si3495C3361O204	Si9CO12	Si	Si2O4	SiO3	Si4CO6	SiO	SiC	SiCO2	Si4C2O3	Si2O3	Si4C4O4	Si3O3	Si2O2	CO	C	C2	CO2	O2	O	
+65000       1255         20	 1	 1	 21	 1	 5	 1	 8	 7	 2	 1	 1	 1	 1	 1	 109	 27	 1	 1	 556	 509	
+# Timestep     No_Moles     No_Specs     Si3492C3339O205	Si10CO12	Si	Si2O4	SiO3	Si4CO6	SiO	SiC	SiCO2	Si4C2O3	Si2O3	Si4C4O4	Si3O3	Si2O2	CO	C	C2	CO2	O2	O	
+70000       1264         20	 1	 1	 19	 1	 5	 1	 9	 6	 2	 1	 1	 1	 1	 1	 109	 32	 3	 2	 549	 519	
+# Timestep     No_Moles     No_Specs     Si3488C3329O207	Si10CO12	Si	Si2O4	SiO3	Si4CO6	SiO	SiC	SiCO2	Si4C2O3	Si2O3	Si4C4O4	SiC3	Si3O3	Si2O2	CO	C	CO2	C2	C4	O2	O	
+75000       1264         22	 1	 1	 21	 1	 6	 1	 7	 5	 2	 1	 1	 1	 1	 1	 1	 111	 30	 4	 1	 1	 542	 524	
+# Timestep     No_Moles     No_Specs     Si3489C3327O208	Si10C2O12	SiO	Si2O4	SiO3	Si2O3	Si	Si8C2O9	SiCO2	SiC	Si2C2	Si2O2	Si3CO5	SiCO	SiC2	CO	C	CO2	C2	CO4	O2	O	
+80000       1250         22	 1	 1	 8	 1	 6	 2	 15	 1	 3	 4	 1	 2	 1	 1	 1	 111	 30	 3	 1	 1	 542	 514	
+# Timestep     No_Moles     No_Specs     Si3479C3299O214	SiO	Si2CO	Si10C2O12	Si2O4	SiO3	Si2O3	Si	Si8C2O9	SiCO2	SiC	Si3O	Si2O	Si2C2	SiC2O2	Si3CO4	SiCO	Si2O2	CO	C	CO2	CO4	O2	O	
+85000       1257         24	 1	 7	 1	 1	 1	 7	 2	 18	 1	 2	 2	 1	 1	 1	 1	 1	 1	 1	 110	 43	 4	 1	 540	 509	
+# Timestep     No_Moles     No_Specs     Si3453C3255O214	SiO	Si	SiC	Si2CO	Si10C2O14	Si2O4	SiO3	Si2O3	Si11C10	Si8C2O9	SiCO2	Si3O	Si2O	Si3C5	Si2C2	Si5C5	SiC2O2	Si3CO4	SiCO	Si2O2	CO	C2	C	CO2	CO4	O2	O	
+90000       1266         28	 1	 7	 18	 8	 1	 1	 1	 8	 2	 1	 1	 2	 1	 1	 1	 1	 1	 1	 1	 1	 1	 110	 4	 40	 4	 1	 537	 510	
+# Timestep     No_Moles     No_Specs     Si3479C3281O215	SiO	Si10C2O14	Si2O4	SiO3	Si2CO3	Si6C2O7	Si	SiCO2	SiC	Si3O2	Si2O	Si2O3	Si2C2	Si2CO4	SiC2O2	Si3CO4	SiCO	SiCO5	Si2O2	CO	C	CO2	C2O	CO4	C2	O2	O	
+95000       1250         28	 1	 12	 1	 1	 7	 1	 1	 13	 2	 3	 1	 1	 1	 1	 1	 1	 1	 1	 1	 1	 111	 35	 4	 1	 1	 1	 527	 518	
+# Timestep     No_Moles     No_Specs     Si3472C3270O220	SiO	SiC3	Si	Si11C2O14	Si2O4	Si2CO3	SiO3	Si3C4	SiC	Si7C2O11	SiCO2	Si3O3	Si2O	SiC2O2	Si3CO4	SiCO	SiCO5	Si2O2	CO	C	CO2	C2O	CO4	C2	O2	O	
+100000       1258         27	 1	 12	 1	 16	 1	 1	 2	 6	 1	 6	 1	 2	 1	 1	 1	 1	 1	 1	 1	 113	 32	 4	 1	 1	 1	 524	 525	

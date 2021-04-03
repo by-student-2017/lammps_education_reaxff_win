@@ -1,0 +1,19 @@
+# Ar parameters for C3O2 diluted in Ar: X. Bidault and N. Pineau, J. Chem. Phys. (2018)
+# Ar electronegativity and hardness: Furtado et al., The Noble Gases: How Their Electronegativity and Hardness Determines Their Chemistry, J. Phys. Chem. A, 119, 8, 1339-1346 (2015).
+# ReaxFF-lg: Reactive MD-force field: nitramines (RDX/HMX/TATB/PETN))+lg: Liu et al., Journal of Physical Chemistry A, 115, 11016-11022 (2011)
+# Types: 1,2,3 = C,O,Ar
+
+# ------------------------ FORCE FIELD ------------------------------
+#pair_style	reax/c NULL lgvdw yes
+#pair_coeff	* * ffield.reax.lg_Ar C O Ar
+#fix             myQeqReax all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+
+# ------------------------ ALTERNATIVE FORCE FIELD ------------------
+pair_style	hybrid morse 8.5 reax/c NULL lgvdw yes
+pair_coeff	* * reax/c ffield.reax.lg_Ar C O NULL
+pair_coeff	1 3 morse 0.20183 1.38058 3.84739
+pair_coeff	2 3 morse 0.14424 1.47158 3.85296
+pair_coeff	3 3 morse 0.23642 1.71126 3.76002
+fix             myQeqReax all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+
+

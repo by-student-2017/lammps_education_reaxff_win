@@ -1,0 +1,12 @@
+# Commands for invoking charge-implicit ReaxFF with ZBL correction in LAMMPS for modeling hydrocarbon solids
+
+pair_style hybrid/overlay reax/c NULL checkqeq no table linear 11000 
+pair_coeff * * reax/c jz7b03155_si_001.txt C H 
+pair_coeff 1 1 table jz7b03155_si_002.txt CC_cireaxFF 
+pair_coeff 1 2 table jz7b03155_si_002.txt CH_cireaxFF 
+pair_coeff 2 2 table jz7b03155_si_002.txt HH_cireaxFF 
+
+# In this example C atoms are type 1 while H atoms are type 2, charge calculation is 
+#disabled (checkqeq no) and short-range corrections for CC, CH and HH interactions (ZBL force 
+#field) are calculated from the tabulated data read from the jz7b03155_si_002.txt file, which 
+#contains at most 11 000 values.

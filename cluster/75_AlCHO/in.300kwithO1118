@@ -1,0 +1,53 @@
+# 力场文件和网上下载的一样了
+# MSD的计算写在log文件里即可
+
+echo		screen
+units		real
+atom_style	charge
+boundary	p p p
+
+read_data	data.hope
+
+neighbor	2.0 bin
+neigh_modify	every 10 delay 0 check yes
+
+thermo			100
+thermo_style		custom step temp etotal pe ke
+thermo_modify		lost ignore flush yes 
+timestep		0.5
+
+group		O2 type 11
+group		ANP subtract all O2
+group		Al type 2
+
+pair_style	reax/c NULL
+pair_coeff	* * ffield_AlCO_Hong_2016 C Al C H H H H H O H O
+
+fix             1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+
+velocity	all create 300.0 591032
+
+write_data	data.1
+
+min_style	sd
+minimize 	1.0e-12 1.0e-12 50000 50000
+
+fix		2 ANP momentum 1 linear 1 1 1 angular
+fix		3 all nve
+fix		4 all temp/berendsen 300.0 300.0 0.5
+
+compute		1 all pe/atom
+compute		2 O2 ke
+compute		3 ANP ke
+compute		4 all pe
+compute		5 all ke/atom
+compute		6 all property/atom q
+
+thermo			100
+thermo_style		custom step temp etotal pe ke c_2 c_3 c_4
+thermo_modify		lost ignore flush yes 
+timestep		0.5
+
+log		log.ANPwithO2
+dump		1 all custom 100 ANPwithO2.lammpstrj id type x y z c_1 c_5 c_6
+run		300000

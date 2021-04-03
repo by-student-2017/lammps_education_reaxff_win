@@ -354,7 +354,7 @@ Volume 393, 15 February 2017, Pages 49-53
 2016-11-17
 http://dx.doi.org/10.1016/j.nimb.2016.11.007
 
-oNo.51
+No.51
 C
 X. Li et al.,
 Computational Materials Science
@@ -379,20 +379,103 @@ Publication Date:January 20, 2017
 https://doi.org/10.1021/acs.jpclett.6b02902
 
 No.54
+CHO
+R. Smith et al.,
+Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms
+Volume 393, 15 February 2017, Pages 49-53
+https://www.sciencedirect.com/science/article/pii/S0168583X16304773#f0025
+
+No.55
+CHONS
+M. Zheng et al.,
+Cite this: Energy Fuels 2017, 31, 4, 3675-3683
+Publication Date:February 27, 2017
+https://doi.org/10.1021/acs.energyfuels.6b03243
+
+2017X5. No.56
+Z. Chen et al.,
+Cite this: J. Phys. Chem. A 2017, 121, 10, 2069-2078
+Publication Date:March 1, 2017
+https://doi.org/10.1021/acs.jpca.6b12367
+
+No.57
+CHOZn
+X. Y. Liu et al.,
+Cite this: J. Phys. Chem. C 2017, 121, 13, 7312-7318
+Publication Date:March 17, 2017
+https://doi.org/10.1021/acs.jpcc.7b00676
+
+No.58
 HO
 W. Zhang et al.,
 Cite this: J. Phys. Chem. B 2017, 121, 24, 6021-6032
 Publication Date:June 1, 2017
 https://doi.org/10.1021/acs.jpcb.7b02548
 
-No.55
+No.59
+CHOSiLiF
+K.-S. Yun et al.,
+Cite this: J. Phys. Chem. Lett. 2017, 8, 13, 2812-2818
+Publication Date:June 8, 2017
+https://doi.org/10.1021/acs.jpclett.7b00898
+
+No.60
+CHONAl
+N. Wang et al.,
+Cite this: J. Phys. Chem. C 2017, 121, 27, 14597-14610
+Publication Date:June 13, 2017
+https://doi.org/10.1021/acs.jpcc.7b03108
+
+No.61
+CHONSSiFXRORCHB
+J. Prehl et al.,
+Cite this: J. Phys. Chem. C 2017, 121, 29, 15984-15992
+Publication Date:June 21, 2017
+https://doi.org/10.1021/acs.jpcc.7b03219
+
+Np.62
+CHON
+S. Han et al.,
+Cite this: Energy Fuels 2017, 31, 8, 8434-8444
+Publication Date:June 27, 2017
+https://doi.org/10.1021/acs.energyfuels.7b01194
+
+No.63
+CHO
+Q. Mao et al.,
+Carbon
+Volume 121, September 2017, Pages 380-388
+https://www.sciencedirect.com/science/article/pii/S0008622317305766
+
+No.64
 CHOSCuCl
 J. Yeon et al.,
 Cite this: J. Phys. Chem. B 2018, 122, 2, 888-896
 Publication Date:October 5, 2017
 https://doi.org/10.1021/acs.jpcb.7b06976
 
-No.56
+No.65
+unkown
+V. Simonka et al.,
+Cite this: J. Phys. Chem. A 2017, 121, 46, 8791-8798
+Publication Date:October 31, 2017
+https://doi.org/10.1021/acs.jpca.7b08983
+
+No.66
+OAu
+I. G. Shuttleworth,
+Cite this: J. Phys. Chem. C 2017, 121, 45, 25255-25270
+Publication Date:November 1, 2017
+https://doi.org/10.1021/acs.jpcc.7b08832
+
+No.67
+CHONSMgPNaCu
+X. Hu et al.,
+Cite this: J. Phys. Chem. C 2017, 121, 50, 28077-28089
+Publication Date:December 1, 2017
+https://doi.org/10.1021/acs.jpcc.7b09948
+
+No.68
 CH
 Q. Mao et al.,
 J. Chem. Phys. 147, 244305 (2017); https://doi.org/10.1063/1.5000534
@@ -400,129 +483,224 @@ Published Online: 28 December 2017 Accepted: November 2017
 -------------------------------------------------------------------
 2018
 
-No.57
+No.69
+CH
+M. Kanski et al.,
+Cite this: J. Phys. Chem. Lett. 2018, 9, 2, 359-363
+Publication Date:January 1, 2018
+https://doi.org/10.1021/acs.jpclett.7b03155
+
+No.70
 CHONSMgPNaCuCl
 W. Zhang et al.,
 Cite this: J. Phys. Chem. B 2018, 122, 14, 4083-4092
 Publication Date:March 8, 2018
 https://doi.org/10.1021/acs.jpcb.8b01127
 
-No.58
+No.71
+CHO
+M. Y. Sengul et al.,
+J. Chem. Phys. 148, 164506 (2018); https://doi.org/10.1063/1.5025932
+Published Online: 27 April 2018 Accepted: April 2018
+
+No.72
 CHONSMgPNaCuCl
 A. Vashisth et al.,
 Cite this: J. Phys. Chem. A 2018, 122, 32, 6633-6642
 Publication Date:July 11, 2018
 https://doi.org/10.1021/acs.jpca.8b03826
 
-No.59
+No.73
 CHOSiNa
 S. H. Hahn et al.,
 Cite this: J. Phys. Chem. C 2018, 122, 34, 19613-19624
 Publication Date:August 8, 2018
 https://doi.org/10.1021/acs.jpcc.8b05852
 
-No.60
+No.74
+CHONSMgPNaTiClFPd
+S. Monti et al.,
+Cite this: J. Phys. Chem. Lett. 2018, 9, 18, 5233-5239
+Publication Date:August 21, 2018
+https://doi.org/10.1021/acs.jpclett.8b02275
+
+No.75
+AlCHO
+J. Liu et al.,
+Computational Materials Science
+Volume 151, August 2018, Pages 95-105
+https://www.sciencedirect.com/science/article/abs/pii/S0927025618302957
+ffield_AlCO_Hong_2016
+
+No.76
+CHONSMgPNaCuCl
+W. Zhang et al.,
+Cite this: J. Phys. Chem. Lett. 2018, 9, 18, 5445-5452
+Publication Date:September 6, 2018
+https://doi.org/10.1021/acs.jpclett.8b02379
+
+No.77
+CHONSSiAr
+X. Bidault et al.,
+J. Chem. Phys. 149, 114301 (2018); https://doi.org/10.1063/1.5028456
+Published Online: 18 September 2018 Accepted: August 2018
+
+No.78
 CHONSSi
 F. A. Soria et al.,
 Cite this: J. Phys. Chem. C 2018, 122, 41, 23515-23527
 Publication Date:September 26, 2018
 https://doi.org/10.1021/acs.jpcc.8b07075
+
+No.79
+CHO
+Z. Chen et al.,
+Cite this: Energy Fuels 2018, 32, 11, 11852-11863
+Publication Date:October 2, 2018
+https://doi.org/10.1021/acs.energyfuels.8b02035
+
+No.80
+COFe
+K. Lu et al.,
+Cite this: J. Phys. Chem. C 2018, 122, 48, 27582-27589
+Publication Date:November 8, 2018
+https://doi.org/10.1021/acs.jpcc.8b10427
 -------------------------------------------------------------------
 2019
 
-No.61
+No.81
+CHONSSi
+C. Ren et al.,
+Cite this: J. Chem. Inf. Model. 2019, 59, 5, 2079-2092
+Publication Date:February 15, 2019
+https://doi.org/10.1021/acs.jcim.8b00952
+
+No.82
 CHOCsKNaClIFLi
 M. V. Fedkin et al.,
 Cite this: J. Phys. Chem. A 2019, 123, 10, 2125-2141
 Publication Date:February 18, 2019
 https://doi.org/10.1021/acs.jpca.8b10453
 
-No.62
+No.83
 ZrYONiH
 Shu-Sheng Liu et al.,
 Communications Chemistry volume 2, Article number: 48 (2019) 
 https://www.nature.com/articles/s42004-019-0148-x
 Published: 23 April 2019
+
+No.84
+CuZr
+H. S. Huang et al.,
+J. Chem. Phys. 151, 094503 (2019); https://doi.org/10.1063/1.5112794
+Published Online: 06 September 2019 Accepted: August 2019
+
+No.85
+CHONSiCu
+J. Wen et al.,
+Cite this: J. Phys. Chem. C 2019, 123, 43, 26467-26474
+Publication Date:October 10, 2019
+https://doi.org/10.1021/acs.jpcc.9b08466
+
+No.86
+CHOFeClSiAl
+S. J. Pai at al.,
+Cite this: J. Phys. Chem. Lett. 2019, 10, 22, 7293-7299
+Publication Date:November 10, 2019
+https://doi.org/10.1021/acs.jpclett.9b02668
+
+No.87
+CHOGe
+N. Nayir et al.,
+Cite this: J. Phys. Chem. C 2019, 123, 2, 1208-1218
+Publication Date:December 19, 2018
+https://doi.org/10.1021/acs.jpcc.8b08862
 -------------------------------------------------------------------
 2020
 
-No.63
+No.88
+AgAvEl
+B. Evangelisti et al.,
+J. Chem. Phys. 153, 104106 (2020); https://doi.org/10.1063/5.0018971
+Published Online: 08 September 2020 Accepted: August 2020
+
+No.89
 CHONaPFe
 T. D. Ta et al.,
 Cite this: ACS Appl. Nano Mater. 2020, 3, 3, 2687-2704
 Publication Date:February 20, 2020
 https://doi.org/10.1021/acsanm.0c00042
 
-No.64
+No.90
 CHONSi
 Yang Wang, Yuqing Shi, Qiang Sun, Kang Lu, Momoji Kubo, and Jingxiang Xu*
 Cite this: J. Phys. Chem. C 2020, 124, 18, 10007-10015
 https://doi.org/10.1021/acs.jpcc.0c01645
 Publication Date:April 14, 2020
 
-No.65
+No.91
 CHOCsKNaClIFLi
 Nabankur Dasgupta,  Yun Kyung Shin, Mark V. Fedkin, and  Adri van Duin
 J. Chem. Phys. 152, 204502 (2020); https://doi.org/10.1063/5.0006676
 Published Online: 26 May 2020
 
-No.66
+No.92
 CHONSMgFNaCuCl
 N. Dasgupta et al.,
 Cite this: J. Phys. Chem. B 2020, 124, 25, 5311-5322
 Publication Date:June 4, 2020
 https://doi.org/10.1021/acs.jpcb.0c03008
 
-No.67
+No.93
 CHOSMoNiN
 Behzad Damirchi, Matthew Radue, Krishan Kanhaiya, Hendrik Heinz, Gregory M. Odegard, and Adri C. T. van Duin
 Cite this: J. Phys. Chem. C 2020, 124, 37, 20488-20497
 Publication Date:August 25, 2020
 https://doi.org/10.1021/acs.jpcc.0c03509
 
-No.68
+No.94
 CHONSMgPNaTiClFAg
 C. Dulong et al.,
 Cite this: J. Chem. Theory Comput. 2020, 16, 11, 7089-7099
 Publication Date:September 1, 2020
 https://doi.org/10.1021/acs.jctc.0c00480
 
-No.69
+No.95
 CHONSSiGe
 W. Zhang et al.,
 Cite this: Chem. Mater. 2020, 32, 19, 8306-8317
 Publication Date:September 10, 2020
 https://doi.org/10.1021/acs.chemmater.0c02121
 
-No.70
+No.96
 CHONSMgPNaCuCl
 Ali Rahnamoun, Mehmet Cagri Kaymak, Madushanka Manathunga, Andreas W. Gotz, Adri C. T. van Duin, Kenneth M. Merz Jr.*, and Hasan Metin Aktulga
 Cite this: J. Chem. Theory Comput. 2020, 16, 12, 7645-7654
 Publication Date:November 3, 2020
 https://doi.org/10.1021/acs.jctc.0c00874
 
-No.71
+No.97
 CHONSZr
 S. Dwivedi et al.,
 Cite this: J. Phys. Chem. Lett. 2021, 12, 1, 177-184
 Publication Date:December 15, 2020
 https://doi.org/10.1021/acs.jpclett.0c02930
 
-No.72
+No.98
 CHONSMgPNaTiClFKLi
 K. Ganeshan et al.,
 Cite this: ACS Appl. Mater. Interfaces 2020, 12, 52, 5837-58389
 Publication Date:December 18, 2020
 https://doi.org/10.1021/acsami.0c17536
 
-No.73
+No.99
 HSeW
 N. Naylr et al.,
 Cite this: J. Phys. Chem. C 2020, 124, 51, 28285^28297
 Publication Date:December 11, 2020
 https://doi.org/10.1021/acs.jpcc.0c09155
 
-No.74
+No.100
 K. Heijmans et al.,
 Cite this: J. Chem. Theory Comput. 2021, 17, 1, 322^329
 Publication Date:December 22, 2020
@@ -530,21 +708,21 @@ https://doi.org/10.1021/acs.jctc.0c00876
 -------------------------------------------------------------------
 2021
 
-No.75
+No.101
 CHOSMoNiLiBFPN
 Y. Liu et al.,
 Cite this: J. Phys. Chem. Lett. 2021, 12, 4, 1300-1306
 Publication Date:January 27, 2021
 https://doi.org/10.1021/acs.jpclett.0c03720
 
-No.76
+No.102
 CHONSFe
 E. Moerman et al.,
 Cite this: J. Chem. Inf. Model. 2021, 61, 3, 1204-1214
 Publication Date:February 22, 2021
 https://doi.org/10.1021/acs.jcim.0c01292
 
-No.77
+No.103
 CHOSMoNiLiBFPN
 Y. Liu et al.,
 Cite this: J. Phys. Chem. Lett. 2021, 12, 11, 2922-2929

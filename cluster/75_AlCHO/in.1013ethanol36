@@ -1,0 +1,52 @@
+# REAX potential for CHOAl system
+# 3nm Particle Al model (841 atoms) wuith 500 ethanol molecule (4500 atoms) around
+# Both temperature is set 300K.
+#Timestep 0.1fs
+
+units		real
+
+atom_style	charge
+boundary	p p f
+
+read_data	data.ethanol36
+
+group		Al type 1
+group		other type 2 3 4 
+
+pair_style	reax/c NULL
+pair_coeff	* * ffield_AlCO_Hong_2016 Al C O H
+
+neighbor	2 bin
+neigh_modify	every 10 delay 0 check yes
+
+compute		1 other ke
+compute		2 Al ke
+compute		3 all pe
+compute		4 all ke/atom
+compute		5 all pe/atom
+compute		6 all property/atom q
+compute		7 all pair reax/c epair
+compute		8 all pair reax/c evdwl
+compute		9 all pair reax/c ecoul
+
+thermo			100
+thermo_style		custom step temp etotal pe ke c_1 c_2 c_3 c_7 c_8 c_9
+thermo_modify		lost ignore flush yes 
+timestep		0.1
+
+velocity	Al set 0.0 0.0 0.0 units box
+velocity	other create 300.0 4928459 dist gaussian
+
+fix		1 all nve
+fix		2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+fix		3 other temp/berendsen 300.0 300.0 10.0
+fix		4 all wall/reflect zlo EDGE zhi EDGE
+fix		6 Al setforce 0.0 0.0 0.0
+fix		7 Al momentum 1 linear 1 1 1 angular
+
+min_style	cg
+minimize 	1.0e-10 1.0e-10 1000 1000
+
+dump		1 all custom 100 1013ethanol36.lammpstrj id type x y z c_4 c_5 c_6
+log		log.1013ethanol36
+run		250000
