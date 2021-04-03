@@ -233,6 +233,12 @@ A. C. T. van Duin et al.,
 Cite this: J. Phys. Chem. A 2008, 112, 14, 3133-3140
 Publication Date:March 19, 2008
 https://doi.org/10.1021/jp076775c
+other(
+A. C. T. van Duin et al.,
+Cite this: J. Phys. Chem. A 2008, 112, 45, 11414-11422
+Publication Date:October 16, 2008
+https://doi.org/10.1021/jp801082q
+)
 
 No.34
 CHOS
@@ -482,6 +488,13 @@ J. Chem. Phys. 147, 244305 (2017); https://doi.org/10.1063/1.5000534
 Published Online: 28 December 2017 Accepted: November 2017
 -------------------------------------------------------------------
 2018
+
+2018X1
+CHOPTiLiAl
+Y. K. Shin et al.,
+Phys. Chem. Chem. Phys., 2018,20, 22134-22147
+https://pubs.rsc.org/en/content/articlelanding/2018/cp/c8cp03586e#!divAbstract
+06 Jun 2018
 
 No.69
 CH
