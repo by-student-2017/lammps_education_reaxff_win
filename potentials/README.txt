@@ -423,6 +423,13 @@ N. Rom et al.,
 Cite this: J. Phys. Chem. C 2013, 117, 41, 21043-21054
 Publication Date:September 11, 2013
 https://doi.org/10.1021/jp404907b
+
+2013X3
+CHONSMgPNaTiClF
+S.-Y. Kim et al.,
+Cite this: J. Phys. Chem. A 2013, 117, 27, 5655-5663
+Publication Date:June 10, 2013
+https://doi.org/10.1021/jp4031943
 -------------------------------------------------------------------
 2014
 
@@ -442,20 +449,25 @@ OPt
 D. Fantauzzi et al.,
 Phys. Chem. Chem. Phys., 2014,16, 23118-23133
 https://doi.org/10.1039/C4CP03111C
+
+2014X4
+CHONS
+T.-R. Shan et al.,
+Cite this: J. Phys. Chem. A 2014, 118, 8, 1469-1478
+Publication Date:January 30, 2014
+https://doi.org/10.1021/jp408397n
 -------------------------------------------------------------------
 2015
 
 2015X1
+OAl
 S. Hong et al.,
 Cite this: J. Phys. Chem. C 2015, 119, 31, 17876-17886
 Publication Date:July 7, 2015
 https://doi.org/10.1021/acs.jpcc.5b04650
 
 2015X2
-B. D. Jensen et al.,
-First published: 12 June 2015 https://doi.org/10.1002/jcc.23970
-
-2015X3
+CHON
 W. Zhang et al.,
 Cite this: J. Phys. Chem. C 2015, 119, 49, 27727-27736
 Publication Date:November 13, 2015
@@ -876,6 +888,7 @@ Publication Date:December 11, 2020
 https://doi.org/10.1021/acs.jpcc.0c09155
 
 No.100
+HO
 K. Heijmans et al.,
 Cite this: J. Chem. Theory Comput. 2021, 17, 1, 322^329
 Publication Date:December 22, 2020
@@ -938,4 +951,21 @@ H.-J. Qian et al.,
 Cite this: J. Chem. Theory Comput. 2011, 7, 7, 2040-2048
 Publication Date:May 31, 2011
 https://doi.org/10.1021/ct200197v
+
+MoVNbTeO catalyst
+W. A. Goddard III et al.,
+Catalysis Today
+Volume 157, Issues 1-4, 17 November 2010, Pages 71-76
+https://doi.org/10.1016/j.cattod.2010.03.069
+
+A. Gouissem et al.,
+Computational Materials Science
+Volume 70, April 2013, Pages 171-177
+https://doi.org/10.1016/j.commatsci.2012.12.038
+
+C. A. Clark et al.,
+Cite this: ACS Catal. 2020, 10, 1, 494-509
+Publication Date:November 27, 2019
+https://doi.org/10.1021/acscatal.9b03239
+structure data (PSCAR)
 -------------------------------------------------------------------
