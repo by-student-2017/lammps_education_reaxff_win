@@ -488,6 +488,13 @@ T. Zhang et al.,
 Cite this: Energy Fuels 2016, 30, 4, 3140-3150
 Publication Date:March 25, 2016
 https://doi.org/10.1021/acs.energyfuels.6b00247
+
+2016X3
+CHOMnLiFPNiAl
+S. Reddivari, 2016
+"Electrode-electrolyte interface layers in lithium ion batteries 
+using reactive force field based molecular dynamics"
+https://deepblue.lib.umich.edu/bitstream/handle/2027.42/133380/sahitya_1.pdf?sequence=1
 -------------------------------------------------------------------
 2017
 
