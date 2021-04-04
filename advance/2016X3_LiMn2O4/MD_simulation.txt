@@ -1,0 +1,38 @@
+S. Reddivari, 2016
+https://deepblue.lib.umich.edu/bitstream/handle/2027.42/133380/sahitya_1.pdf?sequence=1
+
+  The formation of the cathode electrolyte interface layer was simulated using a 
+cathode half-cell composed of a LiMn2O4 crystal with its 100 surfaces exposed to the 
+electrolyte consisting of 208 EC molecules, 480 DMC molecules, 36 FEC molecules and 
+52 LiPF6 molecules. The LiMn2O4 crystal measuring 3.5 nm x 3.5 nm x 3.5 nm is located 
+at the center of the simulation box with dimensions of 10.5 nm x 3.5 nm x 3.5 nm, the 
+rest of the simulation box is filled with the electrolyte as shown in Figure 4.1. This 
+configuration helps with maintaining periodic boundary conditions in all three directions 
+without any discontinuities. Bulk electrolyte character is maintained at distances greater 
+than 2 nm from the electrode surfaces even after 2 ns, the maximum time period in this 
+study. The equilibrium electrolyte density in the simulation cell is 1.26 g/cc with 3:7 
+mole ratio of ethylene carbonate (EC) and dimethyl carbonate (DMC), 1M lithium 
+hexafluorophosphate and 5% fluoroethylene carbonate. 
+  The simulation cells were maintained at 330 K under the NVT ensemble using the 
+Nose Hoover thermostat with a temperature rescaling constant of 10 fs. The starting 
+configuration of the electrolyte molecules was generated using the PACKMOL code to 
+make sure short range repulsive forces do not disrupt the simulation during the first time 
+step. Each MD simulation was initiated from an energy-minimized structure and was 
+equilibrated to the simulation temperature for 100 ps prior to the production run for 2 ns 
+with a 0.2 fs time step.
+  The fate of HF on the cathode surface was studied by running a duplicate 
+simulation as described above and introducing HF molecules into the simulation after 1.5
+ns of cathode electrolyte interface layer formation. The HF molecules were introduced at 
+random locations within a distance of 10 Angstrom from the surface of the anode. HF molecules
+are introduced into the cathode electrolyte interface layer at a rate of 0.5 molecules/ps 
+with a total of 10 molecules introduced into the simulation cell. After the introduction of 
+HF molecules, the simulations were run for an additional 500 ps. 
+  The ReaxFF based MD simulations were implemented using the LAMMPS 
+parallel molecular dynamics code. Molecular analysis of the simulations, to identify 
+SEI layer compounds, were performed using a bond order cutoff of 0.2 as implemented 
+in a home built MATLAB code. 
+
+| Electrolyte (3.5 nm) | Cathode (3.5 nm) | Electrolyte (3.5 nm) |
+Figure 4.1 The starting configuration of the simulation cell with the cathode in the center. 
+The 100 surface is exposed to the electrolyte on both sides.
+

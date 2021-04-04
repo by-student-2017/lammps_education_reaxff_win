@@ -1,0 +1,36 @@
+# A mixture of EC/DMC (3:7), FEC 5%, LiPF6 1M
+
+# All the atoms from different molecules will be separated at least 2.5
+# Angstroms at the solution.
+
+tolerance 2.5
+seed 235
+
+# The file type of input and output files is xyz
+
+filetype xyz
+
+# The name of the output file
+
+output electout.xyz
+
+structure DMC.xyz 
+ number 240
+ inside box 0. 0. 0. 33. 33. 33. 
+end structure
+
+structure EC.xyz 
+ number 104 
+ inside box 0. 0. 0. 33. 33. 33. 
+end structure
+
+#structure FEC.xyz 
+# number 18
+# inside box 0. 0. 0. 33. 33. 33. 
+#end structure
+
+structure LiPF6.xyz 
+ number 26 
+ inside box 0. 0. 0. 33. 33. 33. 
+end structure
+
