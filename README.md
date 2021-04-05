@@ -6,8 +6,8 @@ Lammps ZTC for education (windows 10 (64 bit))
 
 □ インストール方法
 1. http://packages.lammps.org/windows.html のHPで"their own download area"と”64bit”をクリックする
-  （LAMMPS Binaries Repository: ./admin/64bit）
-2. LAMMPS-64bit-18Jun2019.exe をダウンロードして実行する
+  (https://rpm.lammps.org/windows/admin/64bit/index.html)
+2. LAMMPS-64bit-18Jun2019.exe (https://rpm.lammps.org/windows/admin/64bit/LAMMPS-64bit-18Jun2019.exe) をダウンロードして実行する
 3. ディフォルトの設定のまま最後まで進めばよい
 以上で lammps のダウンロードと設定は完了です
 ※ 配布元のHPが変更を加えるなどして、別のバージョンのlammpsを使う必要になった場合には、run.batで["C:\Program Files\LAMMPS 64-bit 18Jun2019\bin\lmp_serial.exe" -in in.lmp]の部分をインストールしたlammpsのバージョンに対応するものに書き換えてください。または[C:\Program Files\LAMMPS 64-bit **********]を書き換えるという方法もあります
