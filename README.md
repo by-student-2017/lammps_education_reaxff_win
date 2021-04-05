@@ -1,5 +1,6 @@
 # lammps_education_reaxff_win
-##Lammps ZTC for education (windows 10 (64 bit))
+
+## Lammps ZTC for education (windows 10 (64 bit))
 
 ------------------------------------------------------------------------------
 # lammps
