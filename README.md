@@ -16,7 +16,7 @@
 * Ovito（https://www.ovito.org/windows-downloads/）
 
 
-## Usage
+## Usage (basic, advance, surface, cluster, gcmc and tutorial)
 1. click run.bat
 2. cfg folder > click *.cfg
 
