@@ -25,6 +25,10 @@
 1. see parallel directory
 
 
+## ffield.reax file
+1. see potentials directory
+
+
 ## References
 * [IR1] [lammps-users] Script for calculating IR spectra
   https://lammps.sandia.gov/threads/msg64502.html
