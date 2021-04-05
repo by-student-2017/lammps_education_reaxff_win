@@ -5,7 +5,7 @@
 
 
 ## Installation
-1. http://packages.lammps.org/windows.html > "their own download area" > ”64bit"
+1. LAMMPS Windows Installer Repository (http://packages.lammps.org/windows.html) > "their own download area" > ”64bit"
   (https://rpm.lammps.org/windows/admin/64bit/index.html)
 2. LAMMPS-64bit-18Jun2019.exe (https://rpm.lammps.org/windows/admin/64bit/LAMMPS-64bit-18Jun2019.exe)
 
