@@ -24,6 +24,7 @@
 ## Multi-core calculation
 1. see parallel directory
 
+
 ## References
 * [IR1] [lammps-users] Script for calculating IR spectra
   https://lammps.sandia.gov/threads/msg64502.html
