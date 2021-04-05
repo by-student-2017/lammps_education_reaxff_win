@@ -1,0 +1,115 @@
+#initializing
+
+log log.LiSEI
+units real
+boundary p p p
+atom_style full
+timestep 0.2
+
+read_data data.elect_LiMn2O4
+velocity all create 10 12572
+
+pair_style	reax/c lmp_control
+pair_coeff * * ffield.reax.2016X3.CHOMnLiFPNiAl C H O Li F P Mn
+
+#group cath molecule 9
+group elect molecule 1 2 4 
+group Li type 4
+group EC molecule 1
+group DMC molecule 2
+group salt molecule 3 4
+#group Mn type 5
+group Mn type 7
+
+fix f1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+
+thermo 100
+thermo_style custom step temp pe ke etotal press vol
+
+neighbor 2 bin 
+neigh_modify every 1 delay 0 check no one 10000
+
+thermo_style    one #custom step etotal temp lx vol press
+thermo          50
+
+dump		d1 all cfg 50 cfg/run.*.cfg mass type xs ys zs id type q
+dump_modify	d1 element C H O Li F P Mn
+
+minimize 1.0e-8 1.0e-8 10000 10000
+#----------------------------------------------------------------------
+
+#Heating
+
+dump 1 all custom 10000 dump.nvt20ps id mol type q x y z 
+dump_modify 1 sort id
+
+fix 1 all nvt temp 10 330 100
+
+run 100000
+
+write_restart restart_LiSEI_20ps
+#----------------------------------------------------------------------
+
+#Equilibration
+
+restart 50000 restart.LiSEI.mpiio
+undump 1
+unfix 1
+
+fix 2 all nvt temp 330 330 100
+
+dump 3 all custom 10000 dump.nvtequi.* id mol type q x y z 
+dump_modify 3 sort id
+
+run 500000
+
+write_restart restart_LiSEI_nvt120ps
+
+undump 3
+#----------------------------------------------------------------------
+
+#Production
+
+#Compute MSD
+
+compute saltmsd salt msd com yes
+fix saltmsd salt ave/time 5000 100 500000 c_saltmsd file 
+salt.msd mode vector
+
+compute ECmsd EC msd com yes
+fix ECmsd EC ave/time 5000 100 500000 c_ECmsd file EC.msd 
+mode vector
+
+compute DMCmsd DMC msd com yes
+fix DMCmsd DMC ave/time 5000 100 500000 c_DMCmsd file 
+DMC.msd mode vector
+
+compute Mnmsd Mn msd com yes
+fix Mnmsd Mn ave/time 5000 100 500000 c_Mnmsd file Mn.msd 
+mode vector
+
+compute Limsd Li msd com yes
+fix Limsd Li ave/time 5000 100 500000 c_Limsd file Li.msd 
+mode vector
+
+#Compute RDF
+
+#RDF between Li and all O
+
+compute LiOrdf all rdf 200 4 3
+
+fix LiOrdf all ave/time 5000 100 500000 c_LiOrdf file 
+LiO.rdf mode vector
+
+#RDF between Mn and all O
+
+compute MnOrdf all rdf 200 4 3
+fix MnOrdf all ave/time 5000 100 500000 c_MnOrdf file 
+MnO.rdf mode vector
+
+dump 4 all custom 10000 dump.nvtprod.* id mol type q x y z 
+dump_modify 4 sort id
+
+run 5000000 upto
+
+write_restart restart_LiSEI_nvt1ns
