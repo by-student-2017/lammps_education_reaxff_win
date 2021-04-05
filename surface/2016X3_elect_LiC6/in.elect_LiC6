@@ -6,7 +6,7 @@ boundary p p p
 atom_style full
 timestep 0.2
 
-read_data readdata
+read_data data.elect_LiC6
 velocity all create 10 12572
 
 pair_style	reax/c lmp_control
