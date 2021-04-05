@@ -13,7 +13,7 @@ Lammps ZTC for education (windows 10 (64 bit))
 ※ 配布元のHPが変更を加えるなどして、別のバージョンのlammpsを使う必要になった場合には、run.batで["C:\Program Files\LAMMPS 64-bit 18Jun2019\bin\lmp_serial.exe" -in in.lmp]の部分をインストールしたlammpsのバージョンに対応するものに書き換えてください。または[C:\Program Files\LAMMPS 64-bit **********]を書き換えるという方法もあります
 
 □ 描画ソフト（gnuplotとOvito）
- ・gnuplot（http://www.gnuplot.info/）
+・gnuplot（http://www.gnuplot.info/）
   http://www.yamamo10.jp/yamamoto/comp/gnuplot/inst_win/index.php
 ・Ovito（https://www.ovito.org/windows-downloads/）
 ※ web上に情報がありますので、お手数をおかけしますが、そちらをご参照ください
