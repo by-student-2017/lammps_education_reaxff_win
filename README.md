@@ -21,7 +21,7 @@
 2. cfg folder > click *.cfg
 
 
-## multi-core calculation
+## Multi-core calculation
 1. see parallel directory
 
 ## References
