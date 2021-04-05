@@ -1,6 +1,6 @@
 # lammps_education_reaxff_win
+##Lammps ZTC for education (windows 10 (64 bit))
 
-Lammps ZTC for education (windows 10 (64 bit))
 ------------------------------------------------------------------------------
 # lammps
 
@@ -63,7 +63,7 @@ Lammps ZTC for education (windows 10 (64 bit))
 ※ CHO用のファイルのparam.qeqはCHOの順に書き換えています。
 
 ------------------------------------------------------------------------------
-■ 赤外スペクトル
+# 赤外スペクトル
 
 ## pythonのインストール
 1. python(https://www.python.org/downloads)から Release version と書かれたところから下にある Python 3.8.1 をクリックします。Windows x86-64 executable installer をクリックして保存します。
