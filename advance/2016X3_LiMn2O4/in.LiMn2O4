@@ -44,7 +44,7 @@ velocity       all create 10 4928459 rot yes mom yes dist gaussian
 # NVT thermostat (from 10 K to 330 K)
 #fix		1 all nve
 fix		2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
-#fix		3 all temp/berendsen 298.15 1998.15 100.0 # relaxation constant, 0.1 ps
+#fix		3 all temp/berendsen 10 330 100.0 # relaxation constant, 0.1 ps
 
 fix		3 all nvt temp 10 330 100
 
