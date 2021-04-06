@@ -392,6 +392,11 @@ N. Rom et al.,
 Cite this: J. Phys. Chem. A 2011, 115, 36, 10181-10202
 Publication Date:August 3, 2011
 https://doi.org/10.1021/jp202059v
+
+2011X2
+L. Huang et al.,
+Phys. Chem. Chem. Phys., 2012,14, 11327-11332
+https://doi.org/10.1039/C2CP41511A
 -------------------------------------------------------------------
 2012
 
@@ -495,6 +500,12 @@ S. Reddivari, 2016
 "Electrode-electrolyte interface layers in lithium ion batteries 
 using reactive force field based molecular dynamics"
 https://deepblue.lib.umich.edu/bitstream/handle/2027.42/133380/sahitya_1.pdf?sequence=1
+
+2016X4
+CHONSSi
+B. S. Mercer,
+"Molecular Dynamics Modeling of PPTA Crystals in Aramid Fibers"
+https://escholarship.org/content/qt5mj4x6r5/qt5mj4x6r5_noSplash_c3793311178962a95ebb9045b9735344.pdf?t=odi75d
 -------------------------------------------------------------------
 2017
 
