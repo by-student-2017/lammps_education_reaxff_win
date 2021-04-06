@@ -648,18 +648,14 @@ BNNi
 https://krex.k-state.edu/dspace/bitstream/handle/2097/39116/SongLiu2018.pdf?sequence=5
 
 2018X4
-Y. Yang et al.,
-Cite this: J. Phys. Chem. B 2018, 122, 41, 9616-9624
-Publication Date:September 28, 2018
-https://doi.org/10.1021/acs.jpcb.8b08094
-
-2018X5
+CHOZn
 M. Y. Sengul et al.,
 Cite this: ACS Appl. Mater. Interfaces 2018, 10, 43, 37717-37724
 Publication Date:October 3, 2018
 https://doi.org/10.1021/acsami.8b13630
 
-2018X6
+2018X5
+CHON
 T. Trnka et al.,
 Cite this: J. Chem. Theory Comput. 2018, 14, 1, 291-302
 Publication Date:November 20, 2017
