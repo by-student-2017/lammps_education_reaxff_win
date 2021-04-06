@@ -1,0 +1,135 @@
+# Strain rate simulation for PPTA - ReaxFF
+
+# Strain rate
+variable erate equal 1.0e9*1.0e-15
+
+# Units and atom style (must be 'charge')
+units real
+atom_style charge
+#dimension	3
+#boundary	p p p
+
+# Read equilibrated restart file
+#read_restart equil.rst
+read_data data.PPTA
+replicate 2 2 2
+
+#------ ReaxFF force field setup with reax/c ------------------
+#pair_style reax/c reaxcontrol.txt lgvdw yes
+pair_style reax/c lmp_control lgvdw yes
+pair_coeff * * ffield.reax.CHONSSi O N C C H H
+fix QEQ all qeq/reax 1 0 10 1e-6 reax/c
+#--------------------------------------------------------------
+
+# Output
+thermo_style    one #custom step etotal temp lx vol press
+thermo          50
+
+# Ovito settings
+dump		d1 all cfg 50 cfg/run.*.cfg mass type xs ys zs id type q
+dump_modify	d1 element O N C C H H
+
+# Temperature and pressure settings
+variable Tstart equal 300.0
+variable Tend equal 300.0
+variable Tdamp equal 100.0
+variable pdamp equal 1000.0
+
+# Pressure conversion between atm/MPa
+variable atm2MPa equal 101325/1.0e6
+variable MPa2atm equal 1/v_atm2MPa
+
+# **************************************************************
+# *************** STRAIN CONTROLLED DEFORMATION ****************
+
+# Ending strain and strain rate setup
+variable eps equal 0.15
+variable lz0 equal 106.64 # Equilibrium simulation cell length
+variable v0 equal v_erate*v_lz0 # Unit cell stretch velocity
+
+fix STRETCH all deform 1 z vel ${v0} units box
+fix NPT all npt temp ${Tstart} ${Tend} ${Tdamp} x 0 0 ${pdamp} y 0 0 ${pdamp}
+
+# Timestep setup
+variable dt equal 0.25
+variable tf equal round(v_eps/v_erate)
+variable nt equal round(v_tf/v_dt)
+variable tsim equal step*v_dt
+timestep ${dt}
+reset_timestep 0
+
+# ***************************************************************
+# ***************************************************************
+
+
+# **************** Set up simulation calculations ***************
+# ***************************************************************
+
+# Set up computes for virial and total stress
+compute VIRIAL all pressure thermo_temp virial
+compute STRESS all pressure thermo_temp
+
+# Compute bond, angle, dihedral, and improper data
+#compute BTYPE all property/local batom1 batom2 btype
+#compute BDIST all bond/local dist eng
+
+# Save box dimensions at every step
+variable lenx equal "lx"
+variable leny equal "ly"
+variable lenz equal "lz"
+
+# Energy
+variable E equal etotal
+variable KE equal ke
+variable PE equal pe
+
+# Save stresses at every step
+variable sxx equal -c_STRESS[1]*v_atm2MPa
+variable syy equal -c_STRESS[2]*v_atm2MPa
+variable szz equal -c_STRESS[3]*v_atm2MPa
+variable sxy equal -c_STRESS[4]*v_atm2MPa
+variable sxz equal -c_STRESS[5]*v_atm2MPa
+variable syz equal -c_STRESS[6]*v_atm2MPa
+
+# Axial strain
+variable ezz equal lz/${lz0}-1.0
+
+# ***************************************************************
+# ***************************************************************
+
+
+# ********************* Set up Data output **********************
+# ***************************************************************
+
+# Setup data output frequency
+variable neverydata equal ceil(0.00001/v_erate) # dt = deps/epsdot
+variable neveryBdata equal ceil(0.001/v_erate) # dt = deps/epsdot
+
+# Thermo output and calculations
+thermo_style custom v_tsim v_ezz temp press etotal pe ke
+thermo ${neverydata}
+thermo_modify flush yes
+
+# Track bond breaking and forming - use REAXC version
+fix printbonds all reax/c/bonds ${neveryBdata} reaxbonds.txt
+
+# Axial stress-strain
+fix 1 all print ${neverydata} "${tsim} ${ezz} ${szz}" file sigeps.txt screen no
+
+# Keep track of strain-time relation for plotting out bond behavior
+fix 2 all print ${neveryBdata} "${tsim} ${ezz}" file straintime.txt screen no
+
+# XYZ file
+dump xyzfile all xyz ${neveryBdata} dump.xyz
+dump_modify xyzfile flush yes element O N C C H H
+
+# Dump for rerun
+dump mydump all atom ${neverydata} dump.atom
+
+#*********************** Run simulation ************************
+
+restart ${neverydata} rst1 rst2
+
+run ${nt} upto
+
+write_restart sigeps.rst

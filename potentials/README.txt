@@ -527,6 +527,7 @@ Publication Date:February 27, 2017
 https://doi.org/10.1021/acs.energyfuels.6b03243
 
 No.56
+CHOSMoNiN
 Z. Chen et al.,
 Cite this: J. Phys. Chem. A 2017, 121, 10, 2069-2078
 Publication Date:March 1, 2017
