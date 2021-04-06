@@ -753,18 +753,21 @@ Phys. Chem. Chem. Phys., 2019,21, 9865-9875
 https://doi.org/10.1039/C9CP00354A
 
 2019X2
+CHOSiNa
 S. H. Hahn et al.,
 Cite this: J. Phys. Chem. C 2019, 123, 25, 15606-15617
 Publication Date:May 31, 2019
 https://doi.org/10.1021/acs.jpcc.9b02940
 
 2019X3
+CHON
 M. Kowalik et al.,
 Cite this: J. Phys. Chem. B 2019, 123, 25, 5357-5367
 Publication Date:May 30, 2019
 https://doi.org/10.1021/acs.jpcb.9b04298
 
 2019X4
+HOSi
 N. Nayir et al.,
 Cite this: J. Phys. Chem. A 2019, 123, 19, 4303-4313
 Publication Date:April 24, 2019
