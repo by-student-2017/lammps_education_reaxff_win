@@ -8,17 +8,16 @@ boundary	p p p
 atom_style	charge
 
 # Atom Definition
-read_data	data.LiMn2O4
-replicate	2 2 2
+read_data	data.LiC6
+replicate	4 4 3
 
 # Mass Definition
-mass 1   6.941    # Li
-mass 2  54.938045 # Mn
-mass 3  15.9994   # O
+mass 1   6.941 # Li
+mass 2 12.0107 # C
 
 # Potential Definition
 pair_style	reax/c lmp_control
-pair_coeff	* * ffield.reax.CHOMnLiFPNiAl Li Mn O
+pair_coeff	* * ffield.reax.CHOMnLiFPNiAl Li C
 
 neighbor	2 bin
 neigh_modify	every 10 delay 0 check no
@@ -29,7 +28,7 @@ thermo          50
 
 # ovito settings
 dump		d1 all cfg 50 cfg/run.*.cfg mass type xs ys zs id type q
-dump_modify	d1 element Li Mn O
+dump_modify	d1 element Li C
 
 # relax structure, 0 K
 fix				f1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
