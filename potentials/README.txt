@@ -368,12 +368,26 @@ Volume 169, November 2019, 109143
 2019-08-05
 http://dx.doi.org/10.1016/j.commatsci.2019.109143
 -------------------------------------------------------------------
+2008
+
+2008X1
+CHONi
+Cite this: J. Phys. Chem. C 2008, 112, 33, 12663-12668
+Publication Date:July 30, 2008
+https://doi.org/10.1021/jp711825a
+-------------------------------------------------------------------
 2009
 
 2009X1
 CHOVMoTeNb
 K. Chenoweth et al.,
 First published: 23 September 2009 https://doi.org/10.1002/anie.200902574
+
+2009X2
+CHONSbCl
+Cite this: J. Phys. Chem. A 2009, 113, 42, 11443-11453
+Publication Date:September 28, 2009
+https://doi.org/10.1021/jp908205x
 -------------------------------------------------------------------
 2010
 
@@ -383,6 +397,12 @@ J. Mueller et al.,
 Cite this: J. Phys. Chem. C 2010, 114, 12, 5675-5685
 Publication Date:January 27, 2010
 https://doi.org/10.1021/jp9089003
+
+2010X2
+CHOFeCl
+Cite this: J. Phys. Chem. A 2010, 114, 21, 6298-6307
+Publication Date:May 10, 2010
+https://doi.org/10.1021/jp101332k
 -------------------------------------------------------------------
 2011
 
@@ -413,6 +433,11 @@ L. Liu et al.,
 Cite this: J. Phys. Chem. A 2012, 116, 15, 3918-3925
 Publication Date:March 13, 2012
 https://doi.org/10.1021/jp210135j
+
+2012X3
+CHONTi
+Vol. 109, Iss. 21 - 21 November 2012
+https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.109.213201
 -------------------------------------------------------------------
 2013
 
@@ -435,6 +460,11 @@ S.-Y. Kim et al.,
 Cite this: J. Phys. Chem. A 2013, 117, 27, 5655-5663
 Publication Date:June 10, 2013
 https://doi.org/10.1021/jp4031943
+
+2013X4
+CHONSMgPNaCuCl
+Phys. Chem. Chem. Phys., 2013,15, 15062-15077 
+https://doi.org/10.1039/C3CP51931G
 -------------------------------------------------------------------
 2014
 
@@ -477,6 +507,16 @@ W. Zhang et al.,
 Cite this: J. Phys. Chem. C 2015, 119, 49, 27727-27736
 Publication Date:November 13, 2015
 https://doi.org/10.1021/acs.jpcc.5b07271
+
+2015X2
+SLi
+Phys. Chem. Chem. Phys., 2015,17, 3383-3393 
+https://doi.org/10.1039/C4CP04532G
+
+2015X3
+CHONSFPtClNiLi
+PNAS June 30, 2015 112 (26) 7914-7919
+first published June 15, 2015; https://doi.org/10.1073/pnas.1503546112
 -------------------------------------------------------------------
 2016
 
@@ -506,8 +546,25 @@ CHONSSi
 B. S. Mercer,
 "Molecular Dynamics Modeling of PPTA Crystals in Aramid Fibers"
 https://escholarship.org/content/qt5mj4x6r5/qt5mj4x6r5_noSplash_c3793311178962a95ebb9045b9735344.pdf?t=odi75d
+
+2016X5
+CHFe
+Phys. Chem. Chem. Phys., 2016,18, 761-771
+https://doi.org/10.1039/C5CP06108C
+
+2016X6
+CHONSiCuAgZn
+Surface Science
+Volume 645, March 2016, Pages 67-73
+https://doi.org/10.1016/j.susc.2015.11.009
 -------------------------------------------------------------------
 2017
+
+2017X1
+HOCuCl
+Cite this: J. Phys. Chem. C 2017, 121, 21, 11251-11260
+Publication Date:May 8, 2017
+https://doi.org/10.1021/acs.jpcc.6b13055
 
 No.52
 CHO
@@ -934,6 +991,11 @@ Y. Liu et al.,
 Cite this: J. Phys. Chem. Lett. 2021, 12, 11, 2922-2929
 Publication Date:March 16, 2021
 https://doi.org/10.1021/acs.jpclett.1c00279
+
+2021X1
+Cite this: J. Phys. Chem. A 2021, 125, 8, 1766-1777
+Publication Date:February 22, 2021
+https://doi.org/10.1021/acs.jpca.0c10946
 -------------------------------------------------------------------
 Other information
 
