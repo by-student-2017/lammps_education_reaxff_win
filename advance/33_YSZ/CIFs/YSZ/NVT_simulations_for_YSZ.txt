@@ -1,0 +1,162 @@
+# LAMMPS input script for the simulation of the phenomenological coefficients in YSZ
+# Declaration of the variables 
+
+variable T equal 1300 
+variable PrztY2O3 string 08 
+variable setupNo index 01 02 03 04 05 06 07 08 09 10 13 14 15 
+
+variable dt equal 0.5e-3 
+variable tequil equal 2000000 
+variable trun equal 1000000 
+variable dthermo_equil equal 10 
+variable dthermo_run equal 1 
+variable tdump equal 500 
+variable tdumpr equal 1 
+
+# Physical constants 
+
+variable NA equal 6.022140857e23 
+variable e equal 1.60217662e-19
+
+# Lattice constant from the NpT simulations 
+
+variable Nlx index 5 
+variable Nly index 5 
+variable Nlz index 5 
+variable aLat index 5.14888 5.14874 5.14868 5.14881 5.14876 5.14881 5.14880 & 
+ 5.14883 5.14886 5.14885 5.14890 5.14900 5.14876 5.14873 5.14889 
+
+# Units and setup problem 
+
+label loop 
+clear 
+
+units metal 
+variable aBox_x equal ${Nlx}*${aLat} 
+variable aBox_y equal ${Nly}*${aLat} 
+variable aBox_z equal ${Nlz}*${aLat} 
+variable V equal ${aBox_x}*${aBox_y}*${aBox_z}*1e-30
+
+dimension 3 
+boundary p p p 
+
+kspace_style ewald 1.0e-4 
+atom_style charge 
+
+read_restart aLat/restart.run${setupNo} 
+group zrc type 1 
+group oxy type 2 
+group ytr type 3 
+change_box all x final 0.0 ${aBox_x} y final 0.0 ${aBox_y} z final 0.0 & 
+       ${aBox_z} remap units lattice 
+
+timestep ${dt} 
+
+# Equilibration and thermalization 
+
+log log.YSZ_equil${setupNo} 
+thermo ${dthermo_equil} 
+reset_timestep 0 
+dump myDump all atom ${tdump} 
+ & dump.YSZ${PrztY2O3}equil_setup${setupNo} 
+fix NVT all nvt temp $T $T 0.5 
+thermo_style custom step time temp press etotal 
+run ${tequil} 
+undump myDump 
+write_restart restart.equil${setupNo} 
+reset_timestep 0 
+
+# Production run and calculation of the micro fluxes 
+
+log log.YSZ_run${setupNo} 
+thermo ${dthermo_run} 
+dump myDump all custom ${tdumpr} & 
+     dump.YSZ${PrztY2O3}run_setup${setupNo} & 
+     id type x y z vx vy vz 
+
+# Calculation of the micro molar flux of the anions 
+
+compute w all property/atom vx vy vz 
+compute wSum oxy reduce sum c_w[1] c_w[2] c_w[3] 
+variable wSumX equal c_wSum[1]*100/($V*${NA}) 
+variable wSumY equal c_wSum[2]*100/($V*${NA}) 
+variable wSumZ equal c_wSum[3]*100/($V*${NA}) 
+
+# Calculation of the micro heat flux 
+
+compute ekin all ke/atom 
+compute epot all pe/atom 
+compute eB all pe/atom bond
+compute stress all stress/atom NULL virial 
+compute Jq all heat/flux ekin epot stress 
+compute JqK all heat/flux ekin eB stress 
+variable JqX equal c_Jq[1]*100*$e/$V 
+variable JqY equal c_Jq[2]*100*$e/$V 
+variable JqZ equal c_Jq[3]*100*$e/$V 
+variable JqKX equal c_JqK[4]*100*$e/$V 
+variable JqKY equal c_JqK[5]*100*$e/$V 
+variable JqKZ equal c_JqK[6]*100*$e/$V 
+variable JqPX equal (c_Jq[1]-c_JqK[4])*100*$e/$V 
+variable JqPY equal (c_Jq[2]-c_JqK[4])*100*$e/$V 
+variable JqPZ equal (c_Jq[3]-c_JqK[4])*100*$e/$V 
+print "$V" 
+
+# Production run 
+
+thermo_style custom step temp press etotal pe ke v_wSumX v_wSumY & 
+          v_wSumZ v_JqX v_JqY v_JqZ v_JqKX v_JqKY & 
+             v_JqKZ v_JqPX v_JqPY v_JqPZ 
+run ${trun} 
+undump myDump 
+unfix NVT
+write_restart restart.run${setupNo} 
+
+# Setup problem for rerun 
+
+clear 
+log log.YSZ_rerun${setupNo} 
+
+clear 
+
+units metal 
+variable aBox_x equal ${Nlx}*${aLat} 
+variable aBox_y equal ${Nly}*${aLat} 
+variable aBox_z equal ${Nlz}*${aLat} 
+variable V equal ${aBox_x}*${aBox_y}*${aBox_z}*1e-30
+
+dimension 3 
+boundary p p p 
+
+kspace_style ewald 1.0e-4 
+atom_style charge 
+
+read_restart aLat/restart.run${setupNo} 
+group zrc type 1 
+group oxy type 2 
+group ytr type 3 
+change_box all x final 0.0 ${aBox_x} y final 0.0 ${aBox_y} z final 0.0 ${aBox_z} & 
+       remap units lattice 
+
+set atom * charge 0.0 
+
+timestep ${dt} 
+
+# Recalculation of the micro heat flux 
+
+compute ekin all ke/atom 
+compute epot all pe/atom 
+compute eB all pe/atom bond 
+compute stress all stress/atom NULL virial 
+compute Jq all heat/flux ekin epot stress 
+compute JqK all heat/flux ekin eB stress 
+print "$V" 
+
+# Production run 
+
+thermo ${dthermo_run} 
+thermo_style custom step temp press etotal pe ke v_JqX v_JqY v_JqZ v_JqKX & 
+         v_JqKY v_JqKZ v_JqPX v_JqPY v_JqPZ 
+rerun dump.YSZ${PrztY2O3}run_setup${setupNo} dump x y z vx vy vz 
+next setupNo 
+next aLat 
+jump in.YSZ loop 

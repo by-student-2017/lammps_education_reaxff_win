@@ -1,0 +1,112 @@
+# LAMMPS input script to create YSZ configurations 
+# Definition of the variables 
+
+variable setupNo index 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 
+label loop_s 
+clear 
+
+variable T equal 70 
+variable dt equal 4.0 
+variable x_Y2O3_soll equal 0.8 
+variable PrztY2O3 string 08
+variable Nlx equal 5 
+variable Nly equal 5 
+variable Nlz equal 5 
+
+# Setup problem and periodic boundary conditions 
+
+units metal 
+dimension 3 
+boundary p p p 
+
+# Zirconium dioxide lattice setup 
+
+lattice custom 5.0 a1 1.0 0.0 0.0 a2 0.0 1.0 0.0 a3 0.0 0.0 1.0 basis 0.0 0.0 0.0 & 
+   basis 0.5 0.5 0.0 basis 0.5 0.0 0.5 basis 0.0 0.5 0.5 basis 0.25 0.25 0.25 & 
+   basis 0.25 0.75 0.25 basis 0.75 0.25 0.25 basis 0.75 0.75 0.25 & 
+   basis 0.25 0.25 0.75 basis 0.25 0.75 0.75 basis 0.75 0.25 0.75 basis 0.75 0.75 0.75 
+region box block 0 ${Nlx} 0 ${Nly} 0 ${Nlz} 
+create_box 3 box 
+create_atoms 2 region box basis 1 1 basis 2 1 basis 3 1 basis 4 1 basis 5 2 basis 6 2 & 
+   basis 7 2 basis 8 2 basis 9 2 basis 10 2 basis 11 2 basis 12 2 
+group zrc type 1 
+group oxy type 2 
+
+# Loop for the random substitution of zirconium by yttrium 
+
+label loop_y 
+variable index loop 200000 
+variable ytt_id equal round(random(1,count(all),8${setupNo}034002)) 
+group ytr_all id ${ytt_id} 
+group ytr intersect ytr_all zrc 
+group zrc delete 
+group zrc type 1 
+variable NZr equal count(zrc) 
+variable NY equal count(ytr) 
+variable x_Y2O3 equal (${NY}/2)/(${NY}/2+${NZr}) 
+set group ytr type 3 
+if "${x_Y2O3} >= ${x_Y2O3_soll}" then "jump in.YSZ_setup break_y" 
+next index 
+jump in.YSZ_setup loop_y 
+label break_y 
+variable x_Y2O3_soll delete 
+variable index delete 
+
+# Loop for the random creation of vacancies 
+
+label loop_v 
+variable index loop 2000 
+variable vac_id equal round(random(1,count(all),1437${setupNo}435)) 
+group vacancy_all id ${vac_id} 
+group vacancy intersect vacancy_all oxy 
+variable Nv equal count(vacancy) 
+variable Nv_hilfe equal ${NY}/2 
+if "${Nv} >= ${Nv_hilfe}" then "jump in.YSZ_setup break_v" 
+next index 
+jump in.YSZ_setup loop_v 
+label break_v 
+delete_atoms group vacancy 
+variable vac_id delete 
+variable Nv_hilfe delete 
+variable Nv delete 
+variable index delete 
+
+group ytr delete 
+group zrc delete 
+group oxy delete 
+variable NY delete 
+variable NZr delete 
+
+# Calculating resulting Y2O3 concentration 
+
+group zrc type 1 
+group oxy type 2 
+group ytr type 3 
+
+variable NZr equal count(zrc) 
+variable NOx equal count(oxy) 
+variable NY equal count(ytr) 
+variable neut equal 4*${NZr}+3*${NY}-2*${NOx} 
+variable x_Y2O3 equal (${NY}/2)/(${NY}/2+${NZr}) 
+
+print "${x_Y2O3}" 
+print "${neut}" append log.proof 
+
+# Potential parameterization for a random simulation of one single step
+
+mass 1 1.0 
+mass 2 1.0 
+mass 3 1.0 
+pair_style lj/cut 13.0 
+pair_coeff * * 0.0 0.0 
+timestep ${dt} 
+
+# Saving start configuration at t=0 with a random simulation of one single step 
+
+velocity all create $T 102486 mom yes rot yes dist gaussian 
+fix NVT all nvt temp $T $T 10 drag 0.2 
+dump myDump all atom 100 & 
+  dump.YSZ${PrztY2O3}_setup${setupNo} 
+run 1 
+next setupNo 
+jump in.YSZ_setup loop_s
