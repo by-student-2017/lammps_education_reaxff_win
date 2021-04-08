@@ -566,6 +566,12 @@ Cite this: J. Phys. Chem. C 2017, 121, 21, 11251-11260
 Publication Date:May 8, 2017
 https://doi.org/10.1021/acs.jpcc.6b13055
 
+2017X2
+CHOPd
+Cite this: ACS Catal. 2017, 7, 1, 327-332
+Publication Date:December 7, 2016
+https://doi.org/10.1021/acscatal.6b02447
+
 No.52
 CHO
 C. Ashraf et al.,
