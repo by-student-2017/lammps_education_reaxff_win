@@ -724,6 +724,13 @@ Cite this: J. Chem. Theory Comput. 2018, 14, 1, 291-302
 Publication Date:November 20, 2017
 https://doi.org/10.1021/acs.jctc.7b00870
 
+2018XX (subscription required)
+CHON
+Wood, M. A.; Kittell, D. E.; Yarrington, C. D.; Thompson, A. P.
+Multiscale modeling of shock wave localization in porous energetic
+material. Phys. Rev. B 2018, 97, No. 014109.
+DOI:https://doi.org/10.1103/PhysRevB.97.014109
+
 No.69
 CH
 M. Kanski et al.,
