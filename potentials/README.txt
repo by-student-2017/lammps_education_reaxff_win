@@ -502,13 +502,6 @@ Publication Date:July 7, 2015
 https://doi.org/10.1021/acs.jpcc.5b04650
 
 2015X2
-CHON
-W. Zhang et al.,
-Cite this: J. Phys. Chem. C 2015, 119, 49, 27727-27736
-Publication Date:November 13, 2015
-https://doi.org/10.1021/acs.jpcc.5b07271
-
-2015X2
 SLi
 Phys. Chem. Chem. Phys., 2015,17, 3383-3393 
 https://doi.org/10.1039/C4CP04532G
@@ -517,6 +510,13 @@ https://doi.org/10.1039/C4CP04532G
 CHONSFPtClNiLi
 PNAS June 30, 2015 112 (26) 7914-7919
 first published June 15, 2015; https://doi.org/10.1073/pnas.1503546112
+
+2015X4
+CHON
+W. Zhang et al.,
+Cite this: J. Phys. Chem. C 2015, 119, 49, 27727-27736
+Publication Date:November 13, 2015
+https://doi.org/10.1021/acs.jpcc.5b07271
 -------------------------------------------------------------------
 2016
 
