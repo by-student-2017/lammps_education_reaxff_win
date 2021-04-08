@@ -465,6 +465,12 @@ https://doi.org/10.1021/jp4031943
 CHONSMgPNaCuCl
 Phys. Chem. Chem. Phys., 2013,15, 15062-15077 
 https://doi.org/10.1039/C3CP51931G
+
+2013X5
+CHONSSiAlF
+Appl. Phys. Lett. 102, 051912 (2013); https://doi.org/10.1063/1.4790181
+ Published Online: 07 February 2013
+Accepted: January 2013
 -------------------------------------------------------------------
 2014
 
@@ -557,6 +563,24 @@ CHONSiCuAgZn
 Surface Science
 Volume 645, March 2016, Pages 67-73
 https://doi.org/10.1016/j.susc.2015.11.009
+
+2016X7
+CHONiPt
+Cite this: J. Phys. Chem. C 2016, 120, 18, 9780-9793
+Publication Date:April 19, 2016
+https://doi.org/10.1021/acs.jpcc.6b01064
+
+2016X8
+HOZnC
+Cite this: J. Phys. Chem. C 2016, 120, 5, 2950-2961
+Publication Date:February 1, 2016
+https://doi.org/10.1021/acs.jpcc.5b09511
+
+2016X9
+MoTeCu
+J. Chem. Phys. 145, 194702 (2016); https://doi.org/10.1063/1.4967808
+Published Online: 16 November 2016
+Accepted: October 2016
 -------------------------------------------------------------------
 2017
 
@@ -571,6 +595,12 @@ CHOPd
 Cite this: ACS Catal. 2017, 7, 1, 327-332
 Publication Date:December 7, 2016
 https://doi.org/10.1021/acscatal.6b02447
+
+2017X3
+CHONS
+Cite this: J. Phys. Chem. A 2017, 121, 9, 2001-2013
+Publication Date:February 8, 2017
+https://doi.org/10.1021/acs.jpca.6b11761
 
 No.52
 CHO
@@ -843,6 +873,12 @@ Cite this: J. Phys. Chem. A 2019, 123, 19, 4303-4313
 Publication Date:April 24, 2019
 https://doi.org/10.1021/acs.jpca.9b01481
 
+2019X5
+CHO
+Cite this: J. Chem. Eng. Data 2020, 65, 2, 360-372
+Publication Date:October 17, 2019
+https://doi.org/10.1021/acs.jced.9b00701
+
 No.81
 CHONSSi
 C. Ren et al.,
@@ -892,6 +928,12 @@ Publication Date:December 19, 2018
 https://doi.org/10.1021/acs.jpcc.8b08862
 -------------------------------------------------------------------
 2020
+
+2020X1
+HOCuCl
+Chemical Physics Letters
+Volume 750, July 2020, 137505
+https://doi.org/10.1016/j.cplett.2020.137505
 
 No.88
 AgAvEl
@@ -1061,4 +1103,61 @@ Cite this: ACS Catal. 2020, 10, 1, 494-509
 Publication Date:November 27, 2019
 https://doi.org/10.1021/acscatal.9b03239
 structure data (PSCAR)
+
+Cite this: J. Am. Chem. Soc. 2014, 136, 39, 13684-13697
+Publication Date:September 3, 2014
+https://doi.org/10.1021/ja5051555
+POSCAR
+
+https://smartech.gatech.edu/handle/1853/42784
+file:///C:/Users/inukai/AppData/Local/Temp/zaharieva_roussislava_201108.pdf
+VASP
+
+Cite this: Inorg. Chem. 2015, 54, 11, 5266-5272
+Publication Date:May 19, 2015
+https://doi.org/10.1021/acs.inorgchem.5b00240
+cif
+
+Cite this: J. Phys. Chem. Lett. 2019, 10, 22, 7044-7049
+Publication Date:October 30, 2019
+https://doi.org/10.1021/acs.jpclett.9b02883
+cif
+
+Cite this: J. Chem. Theory Comput. 2016, 12, 4, 1833-1844
+Publication Date:February 29, 2016
+https://doi.org/10.1021/acs.jctc.5b01237
+structure
+
+Cite this: J. Am. Chem. Soc. 2014, 136, 24, 8528-8531
+Publication Date:June 2, 2014
+https://doi.org/10.1021/ja503664k
+strcture
+
+Dr. Jarod M. Younker
+First published: 07 November 2011
+https://doi.org/10.1002/cphc.201100477
+strcture
+
+Cite this: J. Chem. Theory Comput. 2008, 4, 8, 1313-1323
+Publication Date:July 26, 2008
+https://doi.org/10.1021/ct800132a
+structure
+
+Journal of Molecular Graphics and Modelling
+Volume 77, October 2017, Pages 350-362
+https://doi.org/10.1016/j.jmgm.2017.08.023
+structure
+
+A thermodynamic study of the hydrogen dissociation by the Small System Methodand the reactive force field ReaxFF
+https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2390753/12537_FULLTEXT.pdf?sequence=1&isAllowed=y
+lammps input file
+
+https://tesionline.univaq.it/bitstream/20.500.12319/2401/1/MSc_Thesis_CHOPRA.pdf
+lammps input
+
+https://d-nb.info/1179909305/34
+YSZ lammps input
+
+https://www.researchgate.net/profile/Pascal-Brault/publication/273339399_Molecular_Dynamics_simulations_of_magnetron_reactive_sputtering_and_deposition/links/54fee67e0cf2eaf210b4300f/Molecular-Dynamics-simulations-of-magnetron-reactive-sputtering-and-deposition.pdf
+potential data
 -------------------------------------------------------------------

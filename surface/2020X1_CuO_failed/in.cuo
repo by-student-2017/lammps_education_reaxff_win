@@ -1,0 +1,43 @@
+# set file for O2 dissociation
+#--------------------------------------------general setting --------------------------------------
+
+units		real
+boundary        p p f
+atom_style	charge
+read_restart cuo.160000.model
+pair_style	reax/c lmp_control  checkqeq no  
+pair_coeff	* * ffield.cuo O O Cu
+neighbor	2 bin
+neigh_modify	every 10 delay 0 check no
+fix wallhi all wall/lj93 zhi 50  1.0 1.0 2.5
+#-------------------------------------------------------------------------------------------------------
+
+#---------------------------delete oxygen molecules not adsorbed -----------------------------
+
+region island22 cone z 30.5 30.5 22 14 10 29 side out units box
+region basement22  block 0 62 0 62  0 13 side out units box
+region modeldel22 intersect 2 island22 basement22 
+group modeldel22 region modeldel22
+delete_atoms group modeldel22
+#-------------------------------------------------------------------------------------------------------
+
+#---------------------------difine a discharge process -------------------------------------------
+region chargereleasezoon cone z 30.5 30.5 12 12 26.0 30 side in units box
+group chargerelease region chargereleasezoon 
+set group chargerelease charge -0.9    #//-0.5, -0.6...-0.9
+#-------------------------------------------------------------------------------------------------------
+
+fix freeze1 inactive setforce 0 0 0
+fix 3 o1  nvt temp 520 520 10
+fix 2 cuo2 nvt temp 520 520 10
+
+restart 10000 cuo.*.model2
+
+timestep	     0.1
+thermo      1000
+#-----------------------------output file --------------------------------------------------------
+dump	  3 all xyz 2000 dump.model09.xyz
+dump    all2 all custom 2000 temp.model09 id type x y z q
+#--------------------------------------------------------------------------------------------------
+run 5 000000
+
