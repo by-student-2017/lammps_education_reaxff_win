@@ -1026,6 +1026,11 @@ https://doi.org/10.1021/acs.jctc.0c00876
 -------------------------------------------------------------------
 2021
 
+2021X1
+Cite this: J. Phys. Chem. A 2021, 125, 8, 1766-1777
+Publication Date:February 22, 2021
+https://doi.org/10.1021/acs.jpca.0c10946
+
 No.101
 CHOSMoNiLiBFPN
 Y. Liu et al.,
@@ -1046,11 +1051,6 @@ Y. Liu et al.,
 Cite this: J. Phys. Chem. Lett. 2021, 12, 11, 2922-2929
 Publication Date:March 16, 2021
 https://doi.org/10.1021/acs.jpclett.1c00279
-
-2021X1
-Cite this: J. Phys. Chem. A 2021, 125, 8, 1766-1777
-Publication Date:February 22, 2021
-https://doi.org/10.1021/acs.jpca.0c10946
 -------------------------------------------------------------------
 Other information
 
