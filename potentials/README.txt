@@ -414,9 +414,17 @@ Publication Date:August 3, 2011
 https://doi.org/10.1021/jp202059v
 
 2011X2
+CHONSMgPNaCu
 L. Huang et al.,
 Phys. Chem. Chem. Phys., 2012,14, 11327-11332
 https://doi.org/10.1039/C2CP41511A
+
+2011X3
+CHO
+S. Agrawalla and A. C. T. van Duin
+Cite this: J. Phys. Chem. A 2011, 115, 6, 960-972
+Publication Date:January 25, 2011
+https://doi.org/10.1021/jp108325e
 -------------------------------------------------------------------
 2012
 
@@ -471,6 +479,12 @@ CHONSSiAlF
 Appl. Phys. Lett. 102, 051912 (2013); https://doi.org/10.1063/1.4790181
  Published Online: 07 February 2013
 Accepted: January 2013
+
+2013X6
+CHONSMgPNaTiClF
+Cite this: Langmuir 2013, 29, 25, 7838-7846
+Publication Date:May 20, 2013
+https://doi.org/10.1021/la4006983
 -------------------------------------------------------------------
 2014
 
@@ -1026,11 +1040,6 @@ https://doi.org/10.1021/acs.jctc.0c00876
 -------------------------------------------------------------------
 2021
 
-2021X1
-Cite this: J. Phys. Chem. A 2021, 125, 8, 1766-1777
-Publication Date:February 22, 2021
-https://doi.org/10.1021/acs.jpca.0c10946
-
 No.101
 CHOSMoNiLiBFPN
 Y. Liu et al.,
@@ -1051,6 +1060,11 @@ Y. Liu et al.,
 Cite this: J. Phys. Chem. Lett. 2021, 12, 11, 2922-2929
 Publication Date:March 16, 2021
 https://doi.org/10.1021/acs.jpclett.1c00279
+
+2021X1
+Cite this: J. Phys. Chem. A 2021, 125, 8, 1766-1777
+Publication Date:February 22, 2021
+https://doi.org/10.1021/acs.jpca.0c10946
 -------------------------------------------------------------------
 Other information
 
@@ -1147,6 +1161,11 @@ Journal of Molecular Graphics and Modelling
 Volume 77, October 2017, Pages 350-362
 https://doi.org/10.1016/j.jmgm.2017.08.023
 structure
+
+Cite this: J. Am. Chem. Soc. 2015, 137, 41, 13224-13227
+Publication Date:September 30, 2015
+https://doi.org/10.1021/jacs.5b07073
+structure (Mo-V-Te-Nb-O Mixed Metal Oxide Catalysts)
 
 A thermodynamic study of the hydrogen dissociation by the Small System Methodand the reactive force field ReaxFF
 https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2390753/12537_FULLTEXT.pdf?sequence=1&isAllowed=y
