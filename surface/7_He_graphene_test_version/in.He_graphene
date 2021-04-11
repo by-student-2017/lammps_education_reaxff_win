@@ -9,7 +9,7 @@ atom_style	charge
 
 # Atom Definition
 read_data	data.He_graphene
-replicate	5 4 1
+replicate	1 1 1
 
 # Mass Definition
 mass 1 12.0107   # C
@@ -48,10 +48,11 @@ fix		5 all reax/c/species 100 1 100 species.reaxc
 
 # real unit: force = Kcal/mole-Angstrom
 # 69.4786 pN = 1 kcal/mol Angstrom
-variable impact_decelerate   equal  1/69.4786*(step*dt)*50/0.005 # increse 50 pN / 0.005 fs
-variable impact_acceleration equal -1/69.4786*(step*dt)*50/0.005 # increse 50 pN / 0.005 fs
-region	region_decelerate   block INF INF INF INF 20.0 30.0
-region	region_acceleration block INF INF INF INF 10.0 20.0
+# 1 Kcal/mole = 43.36 meV
+variable impact_decelerate   equal  1/(43.36/1000)/10*1000*0.25 #  0.25 keV / 10 Angstrom
+variable impact_acceleration equal -1/(43.36/1000)/10*1000*0.25 # -0.25 keV / 10 Angstrom
+region	region_decelerate   block INF INF INF INF 40.0 50.0
+region	region_acceleration block INF INF INF INF 30.0 40.0
 group	group_decelerate   region region_decelerate
 group	group_acceleration region region_acceleration
 fix		6 group_decelerate   addforce 0.0 0.0 v_impact_decelerate   # test case
@@ -72,4 +73,4 @@ variable	temperature equal temp
 fix			fout1 all ave/time 1 100 100 v_energy v_temperature file out_energy.txt
 
 # Run the simulation
-run			2500000 # 0.5 * 2500000 = 1250 ps = 1.25 ns
+run			5000000 # 0.005 * 5000000 = 25.00 ps
