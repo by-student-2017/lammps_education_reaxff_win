@@ -56,6 +56,12 @@ William A. Goddard III, J. Phys. Chem. C 2010, 114, 11, 4939-4949.
 http://dx.doi.org/10.1021/jp9035056
   The temperature-programmed (NVT)- MD simulations were performed using a velocity Verlet approach with a time step of 0.25 fs. A Berendsen thermostat with a damping constant of 100 fs was used for temperature control. Each MD simulation was initiated from an energy-minimized structure and was equilibrated to the simulation temperature by the thermostat prior to any reactive events being observed.
 
+46_tip_Ni111: F. Tavazza et al.,
+Cite this: J. Phys. Chem. C 2015, 119, 24, 13580-13589
+Publication Date:May 8, 2015
+https://doi.org/10.1021/acs.jpcc.5b01275
+  All ReaxFF MD simulations were conducted in the NVT ensemble, where a Berendsen thermostat with a 500 fs damping constant was employed to maintain a system temperature of 300 K. An extended Ni surface surrounding the indentation site precludes lateral expansion, as the entire Ni slab would have to expand uniformly. Hence, simulations in the NVT ensemble are appropriate as they do not allow for the dissipation of surface stress by an unphysical uniform expansion of the entire Ni surface. Each simulation consisted of 70 000 MD iterations with a time step of 0.25 fs, yielding a total simulation time of 17.5 ps. In all simulations, the indenter tip was initially placed 17.6 Angstrom above the Ni surface and was lowered at a rate of 2.4 Angstrom/ps for the initial 35 000 iterations and was retracted at the same rate for the final 35 000 iterations. This yields a penetration depth of 3.4 Angstrom below the Ni surface, which corresponds to three Ni atomic layers. The position of the indenter was controlled via bond restraints between fixed dummy atoms (four placed above and two below the surface) and four carbon atoms at the indenter base and two at the tip. A total of six MD simulations were conducted, consisting of the three indenter models interacting with each of the two surface models, allowing for a comparative analysis of the various effects hydrogen and oxygen contaminates have on Ni-C interactions at the indenter-surface interface.
+
 48_Pd-H2:Thomas P. Senftle, Michael J. Janik, Adri C. T. van Duin,
 J. Phys. Chem. C 2014, 118, 9, 4967-4981.
 http://dx.doi.org/10.1021/jp411015a
