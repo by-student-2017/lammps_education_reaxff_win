@@ -63,10 +63,10 @@ group	group_tip type 2:3
 # real unit: force = Kcal/mole-Angstrom
 # 69.4786 pN = 1 kcal/mol Angstrom
 # 1 Kcal/mole = 43.36 meV
-variable impact_acceleration equal -1/(43.36/1000)/10*1000*0.1 # -0.1 keV / 10 Angstrom
+variable impact_acceleration equal -1/(43.36/1000)/10*1000*0.001 # -0.001 keV / 10 Angstrom
 fix		6 group_tip  addforce 0.0 0.0 v_impact_acceleration # test case
 
-run			0
+run			100
 unfix 6
 
 # Run the simulation
@@ -75,9 +75,9 @@ run			32000 # 0.25 * 32000 = 8 ps
 # real unit: force = Kcal/mole-Angstrom
 # 69.4786 pN = 1 kcal/mol Angstrom
 # 1 Kcal/mole = 43.36 meV
-variable impact_decelerate   equal  1/(43.36/1000)/10*1000*0.1 #  0.1 keV / 10 Angstrom
+variable impact_decelerate   equal  1/(43.36/1000)/10*1000*0.001 #  0.001 keV / 10 Angstrom
 fix		6 group_gas  addforce 0.0 0.0 v_impact_decelerate # test case
-run			0
+run			100
 unfix 6
 
 # Run the simulation
