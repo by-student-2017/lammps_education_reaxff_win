@@ -18,8 +18,6 @@ mass 3  1.00794 # H
 
 # Potential Definition
 pair_style	reax/c lmp_control
-#pair_coeff	* * ffield.reax.046.CHONi Ni C H
-#pair_coeff	* * ffield.reax.046.CHONi_remove_2nd Ni C H
 pair_coeff	* * ffield.reax.046.CHONi_remove_3rd Ni C H
 
 neighbor	2 bin
