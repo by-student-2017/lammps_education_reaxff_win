@@ -1,0 +1,29 @@
+Disclaimer: Using these force fields for systems they have not been
+explicitly trained against may produce unrealistic results.  Please
+see the README file in each subdirectory for more detailed
+information.
+
+Note that more than 4 replicas should be used for a precise estimate 
+of the activation energy corresponding to a transition.
+
+8_CBN-B: S. J. Pai, et al.,
+Phys. Chem. Chem. Phys., 2016,18, 1818-1827
+http://dx.doi.org/10.1039/C5CP05486A
+  For the production steps of the MD simulations a parallelized ReaxFF code in LAMMPS was used and the MD simulations were carried out in the canonical (NVT) ensemble. During the NVT-MD simulations, temperatures were controlled using the Nose-Hoover thermostat with a damping constant of 1.0 and a MD time step of 0.1 fs (femtoseconds) was used. To accelerate the chemical reactions (e.g., dehydrogenation) of the liquid CBN hydrogen-storage materials during the MD simulations, the simulation temperature was increased from 300 to 2000 K at a heating rate of 34 K ps^-1 . To simulate a liquid phase, the cell should be maintained below the boiling temperature of the CBN compounds (600-800 K). However, the experimental dehydrogenation of liquid CBN-type hydrogen-storage compounds usually occurs on a timescale of minutes, which is difficult to consider within the framework of a MD simulation; therefore, heating to high temperatures is unavoidable to investigate the chemical reactions of systems on the timescale of a MD simulation. We also assumed that the reactions that occur at the lowest temperature would be the preferred reactions in liquid phases. In addition, we used a ReaxFF bond order cutoff of 0.3 to analyze the chemical reactions between atoms.
+
+11_Glycine: O. Rahaman et al.,
+Cite this: J. Phys. Chem. B 2011, 115, 2, 249-261
+Publication Date:December 17, 2010
+https://doi.org/10.1021/jp108642r
+  We performed NVT-MD simulations with NF in the gas phase as well as one NF solvated by 213 water molecules in a cubic simulation box of length 18.62 Angstrom with periodic boundary conditions. Each simulation was performed for 1 ns with the temperature maintained at 300 K with a Berendsen thermostat and a temperature damping constant of 0.1 ps. The time step was 0.25 fs. The density of the system in water was maintained at 1.01 kg/dm^3 . To allow for equilibration, configurations generated in the first 100 ps were discarded. The dihedral angle distributions were constructed using configurations generated in the next 900 ps of simulation.
+
+15_cefotaxime-water: S. Monti et al.,
+Phys. Chem. Chem. Phys., 2013,15, 15062-15077
+http://dx.doi.org/10.1039/C3CP51931G
+  The ReaxFF version incorporated into the Amsterdam Density Functional (ADF) program was used for all the reactive dynamics simulations. The geometries obtained at the end of the equilibration phase of the non-reactive AMBER molecular dynamics were used as starting structures of the reactive simulations. The peptide/protein conformations were close to the corresponding experimental geometries because of the restraints applied during the non-reactive equilibration. Moreover, the solvent density was close to the bulk value. Reactive simulations were performed in the NVT ensemble using the Berendsen thermostat with a relaxation constant of 0.1 ps. The equations of motion were solved with the velocity- Verlet algorithm and the time step was set to 0.25 fs. Before printing actual MD-NVT simulation, every system was energy minimized at T = 0 K. Then, the system temperature was gradually increased from 0 K to 300 K in 12.5 ps. After reaching 300 K, MD-NVT simulation was performed at 300 K for 500 ps without any restraints. Three-dimensional periodic boundary conditions wereemployed forall the simulations.The hydrolysis reaction was studied with a water molecule as the nucleophile. To find the minimum energy path (MEP) of the hydrolysis reaction, the nudged elastic band (NEB) method was employed as implemented in a stand-alone ReaxFF code. In the implemented NEB approach, all degrees of freedom participated in defining the spring force and were allowed to relax. The MEPs for the hydrolysis reactions were found by forming sets of replicas between the initial and final structures of the systems and optimizing the elastic bands. The elastic band was constructed with 15 replicas for the penicillin-water systems, 25 replicas for the cefotaxime-water systems for the best performance. Each replica found the lowest energy possible while maintaining the elastic band between neighboring replicas. A spring constant to connect the replicas in the band was set as 5 eV Angstrom^-2 .
+
+28_Gly_PC44: B. Zhang, A. C. T. van Duin, J K. Johnson;
+J. Phys. Chem. B 2014, 118, 41, 12008-12016.
+http://dx.doi.org/10.1021/jp5054277
+  MD simulations were performed with the large-scale atomic/molecular massively parallel simulator (LAMMPS) MD package. The isothermal-isobaric (NpT) ensemble was employed for equilibration and to measure the density. A time step of 0.5 fs was used, and the temperature was maintained using a Nose-Hoover thermostat with a damping parameter of 50 fs. Pressure was maintained at 1 atm for all NpT simulations using by Nose-Hoover barostat with a damping parameter of 500 fs. The temperature was first ramped up to 350 K for 1 ns to quickly equilibrate the system and relax high-energy configurations. Then, the temperature was lowered to 300 K to carry out production runs of 1 ns to determine the equilibrium density. We also used constant volume NVT ensemble simulations, again with the Nose-Hoover thermostat with a damping parameter of 50 fs. We also employed constant energy NVE simulations for some calculations to avoid any influence of the thermostat. The time step was lowered to 0.25 fs for NVE simulations to ensure good energy conservation.
+

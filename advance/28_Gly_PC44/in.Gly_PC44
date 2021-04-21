@@ -4,7 +4,7 @@
 # Intialization
 units		real
 dimension	3
-boundary	f f f
+boundary	p p p
 atom_style	charge
 
 # Atom Definition
