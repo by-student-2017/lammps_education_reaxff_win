@@ -54,7 +54,7 @@ fix		2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
 # 1 Kcal/mole = 43.36 meV
 variable	gravity   equal  -(1/69.4786)*10^12*9.81/1000*12.0107/(6.0221*10^23)
 #
-region		region_fix block INF INF INF INF INF 10.0 # fix under 4 layer
+region		region_fix block INF INF INF INF 0 10.0 # fix under 4 layer
 group		group_fix region region_fix
 group		group_move subtract all group_fix
 #
