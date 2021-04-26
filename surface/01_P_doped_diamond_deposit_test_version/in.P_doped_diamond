@@ -54,7 +54,7 @@ fix		2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
 # 1 Kcal/mole = 43.36 meV
 variable	gravity   equal  -(1/69.4786)*10^12*9.81/1000*12.0107/(6.0221*10^23)
 #
-region		region_fix block INF INF INF INF 0 10.0 # fix under 4 layer
+region		region_fix block INF INF INF INF INF 10.0 # fix under 4 layer
 group		group_fix region region_fix
 group		group_move subtract all group_fix
 #
@@ -80,13 +80,13 @@ fix		5 addatoms_P deposit  1 3 40000 12345 region slab near 1.0 vz -0.010 -0.010
 fix		6 addatoms_C wall/reflect zhi EDGE
 fix		7 addatoms_P wall/reflect zhi EDGE
 
-#fix		8 addatoms_C nve
-#fix		9 addatoms_P nve
+fix		8 addatoms_C nve
+fix		9 addatoms_P nve
 #fix		10 group_move langevin 273.0 1173.0 100.0 587283
-#fix		10 group_move temp/berendsen 273.0 1173.0 100.0
-fix		10 all temp/berendsen 273.0 1173.0 100.0
-#fix		11 group_move nve
-fix		11 all nve
+fix		10 group_move temp/berendsen 273.0 1173.0 100.0
+#fix		10 all temp/berendsen 273.0 1173.0 100.0
+fix		11 group_move nve
+#fix		11 all nve
 
 thermo_style	custom step atoms temp epair etotal press
 thermo          100
