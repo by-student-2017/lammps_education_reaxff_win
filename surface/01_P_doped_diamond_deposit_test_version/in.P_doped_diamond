@@ -33,7 +33,7 @@ thermo		100
 fix			f1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
 fix			f2 all box/relax iso 0.0
 fix			f2 all box/relax x 0.0 y 0.0
-minimize	1.0e-10 0.0 1000 100000
+minimize	1.0e-10 0.0 10000 100000
 unfix		f1
 unfix		f2
 
