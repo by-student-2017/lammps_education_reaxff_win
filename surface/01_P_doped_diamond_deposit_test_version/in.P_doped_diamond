@@ -5,6 +5,7 @@
 units		real
 dimension	3
 boundary	p p f
+#boundary	p p p
 atom_style	charge
 
 # Atom Definition
@@ -13,11 +14,12 @@ replicate	1 1 1
 
 # Mass Definition
 mass 1 12.0107 # C
-mass 2 30.9738 # P
+mass 2 12.0107 # C
+mass 3 30.9738 # P
 
 # Potential Definition
 pair_style	reax/c lmp_control
-pair_coeff	* * ffield.reax.CHOSiAlLiFPB C P
+pair_coeff	* * ffield.reax.CHOSiAlLiFPB C C P # 1st C is substrate
 
 #neighbor	2 bin
 #neigh_modify	every 10 delay 0 check no
@@ -65,16 +67,16 @@ fix			fix_add_gravity group_move addforce 0.0 0.0 v_gravity
 variable	va equal 1.0*10^-10
 fix			fix_efield group_move efield 0.0 0.0 v_va
 
-group		addatoms_C type 1
-group		addatoms_P type 2
+group		addatoms_C type 2
+group		addatoms_P type 3
 compute		add_C addatoms_C temp
 compute		add_P addatoms_P temp
 compute_modify	add_C dynamic/dof yes extra/dof 0
 compute_modify	add_P dynamic/dof yes extra/dof 0
 
 region          slab block 0 10.0 0 8.7 60.0 62.0
-fix		4 addatoms_C deposit  5 1   400 12345 region slab near 1.0 vz -0.010 -0.010 # (velocity units), velocity = Angstroms/femtosecond
-fix		5 addatoms_P deposit  1 2 40000 12345 region slab near 1.0 vz -0.010 -0.010 # (velocity units), velocity = Angstroms/femtosecond
+fix		4 addatoms_C deposit  5 2   400 12345 region slab near 1.0 vz -0.010 -0.010 # (velocity units), velocity = Angstroms/femtosecond
+fix		5 addatoms_P deposit  1 3 40000 12345 region slab near 1.0 vz -0.010 -0.010 # (velocity units), velocity = Angstroms/femtosecond
 fix		6 addatoms_C wall/reflect zhi EDGE
 fix		7 addatoms_P wall/reflect zhi EDGE
 
@@ -96,7 +98,7 @@ timestep	0.020 # 0.020 fs
 
 # ovito settings
 dump		d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q
-dump_modify	d1 element C P
+dump_modify	d1 element C C P
 
 # gnuplot settings
 variable	energy equal etotal
