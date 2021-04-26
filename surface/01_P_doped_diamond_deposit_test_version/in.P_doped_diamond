@@ -73,7 +73,7 @@ compute_modify	add_C dynamic/dof yes extra/dof 0
 compute_modify	add_P dynamic/dof yes extra/dof 0
 
 region          slab block 0 10.0 0 8.7 60.0 62.0
-fix		4 addatoms_C deposit 10 1   400 12345 region slab near 1.0 vz -0.010 -0.010 # (velocity units), velocity = Angstroms/femtosecond
+fix		4 addatoms_C deposit  5 1   400 12345 region slab near 1.0 vz -0.010 -0.010 # (velocity units), velocity = Angstroms/femtosecond
 fix		5 addatoms_P deposit  1 2 40000 12345 region slab near 1.0 vz -0.010 -0.010 # (velocity units), velocity = Angstroms/femtosecond
 fix		6 addatoms_C wall/reflect zhi EDGE
 fix		7 addatoms_P wall/reflect zhi EDGE
