@@ -92,7 +92,7 @@ thermo_modify	temp add_C
 thermo_modify	temp add_P
 
 # 0.005, 0.01, 0.015, and 0.02 fs for He+, Ne+, Ar+, and Kr+ irradiations, respectively)
-timestep	0.025 # 0.025 fs
+timestep	0.02 # 0.02 fs
 
 # ovito settings
 dump		d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q
@@ -104,4 +104,4 @@ variable	temperature equal temp
 fix			fout1 all ave/time 1 100 100 v_energy v_temperature file out_energy.txt
 
 # Run the simulation
-run			40000000 # 0.025 * 40000000 = 1000.0 ps = 1.0 ns
+run			50000000 # 0.02 * 50000000 = 1000.0 ps = 1.0 ns
