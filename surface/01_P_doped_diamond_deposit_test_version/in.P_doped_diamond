@@ -73,8 +73,8 @@ compute_modify	add_C dynamic/dof yes extra/dof 0
 compute_modify	add_P dynamic/dof yes extra/dof 0
 
 region          slab block 0 10.0 0 8.7 60.0 62.0
-fix		4 addatoms_C deposit  1 1   400 12345 region slab near 1.0 vz -0.005 -0.005
-fix		5 addatoms_P deposit  1 2 40000 12345 region slab near 1.0 vz -0.005 -0.005
+fix		4 addatoms_C deposit 10 1   400 12345 region slab near 1.0 vz -0.010 -0.010 # (velocity units), velocity = Angstroms/femtosecond
+fix		5 addatoms_P deposit  1 2 40000 12345 region slab near 1.0 vz -0.010 -0.010 # (velocity units), velocity = Angstroms/femtosecond
 fix		6 addatoms_C wall/reflect zhi EDGE
 fix		7 addatoms_P wall/reflect zhi EDGE
 
@@ -92,7 +92,7 @@ thermo_modify	temp add_C
 thermo_modify	temp add_P
 
 # 0.005, 0.01, 0.015, and 0.02 fs for He+, Ne+, Ar+, and Kr+ irradiations, respectively)
-timestep	0.02 # 0.02 fs
+timestep	0.020 # 0.020 fs
 
 # ovito settings
 dump		d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q
@@ -104,4 +104,4 @@ variable	temperature equal temp
 fix			fout1 all ave/time 1 100 100 v_energy v_temperature file out_energy.txt
 
 # Run the simulation
-run			50000000 # 0.02 * 50000000 = 1000.0 ps = 1.0 ns
+run			50000000 # 0.020 * 50000000 = 1000.0 ps = 1.0 ns
