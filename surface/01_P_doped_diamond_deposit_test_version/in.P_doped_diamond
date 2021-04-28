@@ -31,7 +31,7 @@ thermo		100
 
 # relax structure, 0 K
 fix			f1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
-fix			f2 all box/relax iso 0.0
+#fix			f2 all box/relax iso 0.0
 fix			f2 all box/relax x 0.0 y 0.0
 minimize	1.0e-10 0.0 10000 100000
 unfix		f1
@@ -95,7 +95,7 @@ thermo_modify	temp add_C
 thermo_modify	temp add_P
 
 # 0.005, 0.01, 0.015, and 0.02 fs for He+, Ne+, Ar+, and Kr+ irradiations, respectively)
-timestep	0.020 # 0.020 fs
+timestep	0.010 # 0.010 fs
 
 # ovito settings
 dump		d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q
@@ -107,4 +107,13 @@ variable	temperature equal temp
 fix			fout1 all ave/time 1 100 100 v_energy v_temperature file out_energy.txt
 
 # Run the simulation
-run			50000000 # 0.020 * 50000000 = 1000.0 ps = 1.0 ns
+run			500000 # 0.010 * 500000 = 5.0 ps
+
+unfix 10
+#fix		10 group_move langevin 1173.0 1173.0 100.0 587283
+fix		10 group_move temp/berendsen 1173.0 1173.0 100.0
+
+timestep	0.10 # 0.10 fs
+
+# Run the simulation
+run			100000000 # 0.10 * 100000000 = 1000.0 ps = 1.0 ns
