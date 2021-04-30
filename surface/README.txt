@@ -23,6 +23,13 @@ Surface Science, Volume 645, March 2016, Pages 67-73.
 http://dx.doi.org/10.1016/j.susc.2015.11.009
   Deposition simulations via MD were conducted using the velocity Verlet algorithm [32] with a corresponding time step of 1 fs. Periodic boundaries were implemented in the x and y directions along with a fixed bottom ZnO layer to emulate a large ZnO slab. A Berendsen thermostat [33] is used for temperature control applied to the second and third double ZnO layers. The simulation cells used for the polar and non-polar ZnO surfaces were of similar volume, namely 22.80 x 26.33 x 30 Angstrom (with 512 atoms) for ZnO (0001) and 26.51 x 26.33 x 30 Angstrom (with 640 atoms) for ZnO (1010).
 
+12_ZIF-4: Y. Yang et al.,
+J. Phys. Chem. B 2018, 122, 41, 9616-9624
+Publication Date:September 28, 2018
+https://doi.org/10.1021/acs.jpcb.8b08094
+  The ReaxFF force fields from ref 38 have been used to simulate ZIF-4, ZIF-62, and ZIF-77 using LAMMPS. A timestep of 0.25 fs is used for time integration. The initial configurations of ZIF-4, ZIF-62, and ZIF-77 crystals are extracted from the Cambridge Structural Database (CSD) and are equilibrated at 10 K using a Berendsen thermostat. ZIF-4 and ZIF-62 are then heated to 300 K in 2.5 ps with the temperature and pressure controlled using a Nose-Hoover thermostat/barostat in the isothermal-isobaric ensemble (NPT), followed by further heating to 1500 K within 12.5 ps for melting. ZIF-77 is directly heated from 10 to 900 K using the same heating rate. The ZIF-4 sample is then quenched to 300 K within 12.5 ps using an NPT ensemble, to form a glass. For the ReaxFF, a tolerance of 10-6 for the charge equilibrium is used. The average pressure of the system is maintained at 1 atm. The sample contains 2176 atoms, 2368 atoms, and 3360 atoms for the ZIF-4, ZIF-62, and ZIF-77 simulations, respectively. In terms of computational cost, the melt-quench simulation (25 ps) for 2176 atoms can be
+completed in about 1.5 h using 8 Intel Xeon processors (2.2 GHz) available in common workstations. Because of the low CPU-time cost, ReaxFF is suitable for simulating many ZIF materials that contain C, H, O, N, and Zn, and can be extended to cover other elements if needed. We note that in ref 10, because of the high computational cost of first-principles MD, the ZIF-glass model from reverse Monte Carlo modeling whose unit cell contains thousands of atoms cannot be directly simulated.
+
 14_Amino_acids_on_Cu: Susanna Monti, Cui Li, Vincenzo Carravetta,
 J. Phys. Chem. C 2013, 117, 10, 5221-5228.
 http://dx.doi.org/10.1021/jp312828d
