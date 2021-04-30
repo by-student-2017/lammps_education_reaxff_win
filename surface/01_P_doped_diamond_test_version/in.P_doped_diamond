@@ -56,13 +56,17 @@ group		group_fix region region_fix
 group		group_move subtract all group_fix
 #
 fix			fix_fix group_fix setforce 0.0 0.0 0.0
-fix			fix_move group_move nvt temp 273.0 1173.0 100.0 # damping constant, 100 fs = 0.1 ps
 #
 fix			fix_add_gravity group_move addforce 0.0 0.0 v_gravity
 
 # E-field component values (electric field units) (electric field = volts/Angstrom)
 variable	va equal 1.0*10^-10
 fix			fix_efield group_move efield 0.0 0.0 v_va
+
+fix			10 group_move nvt temp 273.0 1173.0 100.0 # damping constant, 100 fs = 0.1 ps
+#fix		10 group_move langevin 273.0 1173.0 100.0 587283
+#fix		10 group_move temp/berendsen 273.0 1173.0 100.0
+#fix		11 group_move nve # For langevin or temp/berendsen
 
 timestep	0.25 # 0.25 fs
 
@@ -77,3 +81,26 @@ fix			fout1 all ave/time 1 100 100 v_energy v_temperature file out_energy.txt
 
 # Run the simulation
 run			400000 # 0.25 * 400000 = 1000.0 ps = 1 ns
+
+# hold temperature
+unfix 10
+fix			10 group_move nvt temp 1173.0 1173.0 100.0 # damping constant, 100 fs = 0.1 ps
+#fix		10 group_move langevin 1173.0 1173.0 100.0 587283
+#fix		10 group_move temp/berendsen 1173.0 1173.0 100.0
+
+timestep	0.10 # 0.10 fs
+
+# Run the simulation
+run			100000000 # 0.10 * 100000000 = 1000.0 ps = 1.0 ns
+
+
+# cooling
+unfix 10
+fix			10 group_move nvt temp 1173.0 273.0 100.0 # damping constant, 100 fs = 0.1 ps
+#fix		10 group_move langevin 1173.0 273.0 100.0 587283
+#fix		10 group_move temp/berendsen 273.0 1173.0 100.0
+
+timestep	0.10 # 0.10 fs
+
+# Run the simulation
+run			100000000 # 0.10 * 100000000 = 1000.0 ps = 1.0 ns

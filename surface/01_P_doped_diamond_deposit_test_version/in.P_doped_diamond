@@ -60,7 +60,6 @@ group		group_fix region region_fix
 group		group_move subtract all group_fix
 #
 fix			fix_fix group_fix setforce 0.0 0.0 0.0
-#fix			fix_move group_move nvt temp 273.0 1173.0 100.0 # damping constant, 100 fs = 0.1 ps
 #
 fix			fix_add_gravity group_move addforce 0.0 0.0 v_gravity
 
@@ -85,9 +84,7 @@ fix		8 addatoms_C nve
 fix		9 addatoms_P nve
 #fix		10 group_move langevin 273.0 1173.0 100.0 587283
 fix		10 group_move temp/berendsen 273.0 1173.0 100.0
-#fix		10 all temp/berendsen 273.0 1173.0 100.0
-fix		11 group_move nve
-#fix		11 all nve
+fix		11 group_move nve # For langevin or temp/berendsen
 
 thermo_style	custom step atoms temp epair etotal press
 thermo          100
@@ -106,14 +103,28 @@ variable	energy equal etotal
 variable	temperature equal temp
 fix			fout1 all ave/time 1 100 100 v_energy v_temperature file out_energy.txt
 
+
 # Run the simulation
 run			500000 # 0.010 * 500000 = 5.0 ps
 
+
+# hold temperature
 unfix 10
 #fix		10 group_move langevin 1173.0 1173.0 100.0 587283
 fix		10 group_move temp/berendsen 1173.0 1173.0 100.0
 
 timestep	0.10 # 0.10 fs
 
-# Run the simulation
+# Run
+run			100000000 # 0.10 * 100000000 = 1000.0 ps = 1.0 ns
+
+
+# cooling
+unfix 10
+#fix		10 group_move langevin 1173.0 273.0 100.0 587283
+fix		10 group_move temp/berendsen 1173.0 273.0 100.0
+
+timestep	0.10 # 0.10 fs
+
+# Run
 run			100000000 # 0.10 * 100000000 = 1000.0 ps = 1.0 ns
