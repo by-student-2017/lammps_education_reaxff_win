@@ -68,8 +68,8 @@ fix			fix_fix group_fix setforce 0.0 0.0 0.0
 fix			fix_add_gravity group_move addforce 0.0 0.0 v_gravity
 
 # E-field component values (electric field units) (electric field = volts/Angstrom)
-variable	va equal 1.0*10^-10
-fix			fix_efield group_move efield 0.0 0.0 v_va
+#variable	va equal 1.0*10^-10
+#fix			fix_efield group_move efield 0.0 0.0 v_va
 
 #fix		6 all wall/reflect zhi EDGE # For boundary p p f
 
