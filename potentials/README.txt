@@ -579,24 +579,18 @@ Phys. Chem. Chem. Phys., 2016,18, 761-771
 https://doi.org/10.1039/C5CP06108C
 
 2016X6
-CHONSiCuAgZn
-Surface Science
-Volume 645, March 2016, Pages 67-73
-https://doi.org/10.1016/j.susc.2015.11.009
-
-2016X7
 CHONiPt
 Cite this: J. Phys. Chem. C 2016, 120, 18, 9780-9793
 Publication Date:April 19, 2016
 https://doi.org/10.1021/acs.jpcc.6b01064
 
-2016X8
+2016X7
 HOZnC
 Cite this: J. Phys. Chem. C 2016, 120, 5, 2950-2961
 Publication Date:February 1, 2016
 https://doi.org/10.1021/acs.jpcc.5b09511
 
-2016X9
+2016X8
 MoTeCu
 Nicolas Onofrio, David Guzman, and Alejandro Strachan,
 J. Chem. Phys. 145, 194702 (2016); https://doi.org/10.1063/1.4967808
