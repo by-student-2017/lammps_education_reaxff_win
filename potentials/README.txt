@@ -1135,6 +1135,12 @@ https://smartech.gatech.edu/handle/1853/42784
 file:///C:/Users/inukai/AppData/Local/Temp/zaharieva_roussislava_201108.pdf
 VASP
 
+ACS Omega 2017, 2, 8, 4921-4928
+Publication Date:August 24, 2017
+https://doi.org/10.1021/acsomega.7b01129
+https://pubs.acs.org/doi/suppl/10.1021/acsomega.7b01129/suppl_file/ao7b01129_si_001.pdf
+VASP
+
 Cite this: Inorg. Chem. 2015, 54, 11, 5266-5272
 Publication Date:May 19, 2015
 https://doi.org/10.1021/acs.inorgchem.5b00240
