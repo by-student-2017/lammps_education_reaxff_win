@@ -9,7 +9,7 @@ boundary	p p p
 atom_style	charge
 
 # Atom Definition
-read_data	data.N2_ZIF-8_Ag111
+read_data	data.N2_ZIF-8_Cu111
 replicate	1 1 1
 
 # Mass Definition
@@ -17,11 +17,12 @@ mass 1  12.0107  # C
 mass 2   1.00794 # H
 mass 3  14.0067  # N
 mass 4  65.409   # Zn
-mass 5 107.8682  # Ag
+mass 5  63.546   # Cu
+#mass 5 107.8682  # Ag
 
 # Potential Definition
 pair_style	reax/c lmp_control
-pair_coeff	* * ffield.reax.CHONSiCuAgZn C H N Zn Ag
+pair_coeff	* * ffield.reax.CHONSiCuAgZn C H N Zn Cu # Ag
 
 neighbor	2 bin
 neigh_modify	every 10 delay 0 check no
@@ -76,14 +77,14 @@ fix			fix_efield group_move efield 0.0 0.0 v_va
 #fix		 9 group_move nve # For boundary p p f
 #fix		10 group_move langevin 273.0 1173.0 100.0 587283 # For boundary p p f
 #fix		10 group_move temp/berendsen 273.0 1173.0 100.0 # For boundary p p f
-#fix		10 group_move nvt temp 273.0 1173.0 100.0 # For boundary p p p
-fix		10 group_move npt temp 273.0 1173.0 100.0 iso 1.0 1.0 2500.0 # For boundary p p p
+fix		10 group_move nvt temp 273.0 1173.0 100.0 # For boundary p p p
+#fix		10 group_move npt temp 273.0 1173.0 100.0 iso 1.0 1.0 2500.0 # For boundary p p p
 
 timestep	0.10 # 0.10 fs
 
 # ovito settings
 dump		d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q
-dump_modify	d1 element C H N Zn Ag
+dump_modify	d1 element C H N Zn Cu # Ag
 
 # gnuplot settings
 variable	energy equal etotal
@@ -96,8 +97,8 @@ run			500000 # 0.010 * 500000 = 5.0 ps
 unfix 10
 #fix		10 group_move langevin 1173.0 1173.0 100.0 587283
 #fix		10 group_move temp/berendsen 1173.0 1173.0 100.0
-#fix		10 group_move nvt temp 1173.0 1173.0 100.0 # For boundary p p p
-fix		10 group_move npt temp 1173.0 1173.0 100.0 iso 1.0 1.0 2500.0 # For boundary p p p
+fix		10 group_move nvt temp 1173.0 1173.0 100.0 # For boundary p p p
+#fix		10 group_move npt temp 1173.0 1173.0 100.0 iso 1.0 1.0 2500.0 # For boundary p p p
 
 timestep	0.10 # 0.10 fs
 
