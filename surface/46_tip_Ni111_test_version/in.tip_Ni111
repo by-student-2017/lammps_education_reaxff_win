@@ -46,7 +46,7 @@ velocity	group_main create 300.0 4928459 rot yes mom yes dist gaussian
 # berendsen thermostat (from 300.0 K to 300.0 K)
 fix			1 group_main nve
 fix			2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
-fix			3 group_main temp/berendsen 300.0 300.0 500.0
+fix			3 group_main temp/berendsen 300.0 300.0 500.0 # damping constant, 500 fs = 0.5 ps
 
 #fix		4 all reax/c/bonds 100 bonds.reaxc
 #fix		5 all reax/c/species 100 1 100 species.reaxc

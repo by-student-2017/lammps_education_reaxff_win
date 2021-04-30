@@ -36,7 +36,7 @@ https://pubs.acs.org/doi/10.1021/acs.jpcc.5b00699
 26_SiGe: G. Psofogiannakis, A. C. T. van Duin;
 Surface Science, 646, April 2016, Pages 253-260.
 http://dx.doi.org/10.1016/j.susc.2015.08.019
-  A 0.1fs time step was used in all molecular dynamics simulations described here. The MD simulations were performed in an NVT ensemble using a Berendsen thermostat [30] with a 50 fs damping constant. When bombarded with H atoms, only the slab atoms (Si,Ge) were thermostated, as the kinetic energy of the progressively added H atoms was selected in advance, and thus the NVT ensemble applies only to the constant-mass Si/Ge slab. In particular, the H atoms were inserted sequentially at a particular distance above the surface, one hydrogen atom being added every 100 time steps (10 fs).
+  A 0.1 fs time step was used in all molecular dynamics simulations described here. The MD simulations were performed in an NVT ensemble using a Berendsen thermostat [30] with a 50 fs damping constant. When bombarded with H atoms, only the slab atoms (Si,Ge) were thermostated, as the kinetic energy of the progressively added H atoms was selected in advance, and thus the NVT ensemble applies only to the constant-mass Si/Ge slab. In particular, the H atoms were inserted sequentially at a particular distance above the surface, one hydrogen atom being added every 100 time steps (10 fs).
 
 27_HZSM-5: C. Bai, L. Liu, H. Sun;
 J. Phys. Chem. C 2012, 116, 12, 7029-7039.

@@ -1,4 +1,4 @@
-# REAX potential for high energy YSZ systems
+# REAX potential for high energy LiC6 systems
 # Title
 
 # Intialization
@@ -43,7 +43,7 @@ velocity       all create 10 4928459 rot yes mom yes dist gaussian
 # NVT thermostat (from 10 K to 330 K)
 #fix		1 all nve
 fix		2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
-#fix		3 all temp/berendsen 10 330 100.0 # relaxation constant, 0.1 ps
+#fix		3 all temp/berendsen 10 330 100.0 # damping constant, 100 fs = 0.1 ps
 
 fix		3 all nvt temp 10 330 100
 
