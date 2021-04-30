@@ -75,6 +75,13 @@ To simulate the steps involved in the conversion of methanol to formaldehyde, we
 Subsequent simulations of the reaction with methanol were carried out for 250 ps using a dual-temperature thermostat keeping the V and O atoms associated with the vanadium oxide slab at 650 K. while the C, O, and H atoms associated with the methanol molecules were kept at 2000 K. This temperature regime was maintained throughout the simulation and did not change when reactions occurred.
 To follow the reaction events, molecular analysis of the simulations was performed using a bond order cutoff of 0.2 to allow detection of short-lived intermediates.
 
+57_10H2O_IRMOF-14: X. Y. Liu et al.,
+Cite this: J. Phys. Chem. C 2017, 121, 13, 7312-7318
+Publication Date:March 17, 2017
+https://doi.org/10.1021/acs.jpcc.7b00676
+  MD simulations were carried out under the isothermal-isobaric (NPT) ensemble to simulate the volume change of MOFs as a function of water content at 300 K and 1 atm. The MD simulations were performed with a parallelized ReaxFF in LAMMPS,43 where a time step of 0.001 ps was used and the simulations were performed up to 2,000 ps. We also tested an effect of the MD time on water stability of the MOFs and found that collapse of the MOF structures induced by hydrolysis reactions were observed within 500 ps, which indicates that the MD time of 2000 ps considered in this work is sufficient for our conclusion.
+  During the simulations, lattice parameters (a, b, c) were changed independently, while, the lattice angles (Éø, É¿, É¡) were fixed. To eliminate the boundary effects, an infinite threedimensional periodic simulation box was used with 1 x 1 x 1 unit cell for IRMOF-10, IRMOF-13 and IRMOF-14, 2 x 2 x 1 and 2 x 1 x1 supercells for SUMOF-4 and IRMOF-9, respectively. The lattice parameters of the MOFs are summarized in Supporting Information. The initial structures including MOFs and H2O molecules were constructed using grand canonical Monte Carlo simulation with the universal force field (UFF) where the H2O molecules were randomly distributed in free volume of the MOFs.
+
 65_C-and_Si-face 4H-SiC: V. Simonka et al.,
 Cite this: J. Phys. Chem. A 2017, 121, 46, 8791-8798
 Publication Date:October 31, 2017
