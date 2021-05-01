@@ -9,7 +9,7 @@ boundary	p p p
 atom_style	charge
 
 # Atom Definition
-read_data	data.N2_ZIF-8_Cu111
+read_data	data.N2_ZIF-8_Cu111_v1
 replicate	1 1 1
 
 # Mass Definition
