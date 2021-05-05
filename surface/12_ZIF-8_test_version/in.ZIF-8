@@ -74,3 +74,35 @@ run		50000 # 0.25 * 50000 = 12.5 ps
 unfix 3
 fix		3 all npt temp 1500.0 300.0 100.0 iso 1.0 1.0 2500.0
 run		50000 # 0.25 * 50000 = 12.5 ps
+
+
+# ----- Radial Distribution Function -----
+compute         distribution all rdf 400  1 1  2 2  3 3  4 4  1 2  1 3  1 4   2 3  2 4  3 4  * * # C-C, H-H, N-N, Zn-Zn, C-H, C-N, C-N, H-N, H-Zn, N-Zn, Total
+fix             f1 all ave/time 3000 1 3000 c_distribution[*] file out_rdf.txt mode vector
+
+# ----- Mean Square Displacement -----
+group           C type 1
+compute         Cmsd C msd
+fix             f2 all ave/time 1 1 5 c_Cmsd[*] file out_C_msd.txt
+# -----
+group           H type 2
+compute         Hmsd H msd
+fix             f3 all ave/time 1 1 5 c_Hmsd[*] file out_H_msd.txt
+# -----
+group           N type 3
+compute         Nmsd N msd
+fix             f4 all ave/time 1 1 5 c_Nmsd[*] file out_N_msd.txt
+# -----
+group           Zn type 4
+compute         Znmsd Zn msd
+fix             f5 all ave/time 1 1 5 c_Znmsd[*] file out_Zn_msd.txt
+# -----
+compute         allmsd all msd
+fix             f6 all ave/time 1 1 5 c_allmsd[*] file out_all_msd.txt
+# -----
+unfix           3
+fix		        3 all npt temp 300.0 300.0 100.0 iso 1.0 1.0 2500.0
+run             3000
+
+# ----- Output restart data -----
+write_data data.in.restart
