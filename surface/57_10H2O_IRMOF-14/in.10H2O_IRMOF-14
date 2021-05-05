@@ -27,7 +27,7 @@ neigh_modify	every 10 delay 0 check no
 
 # output
 thermo_style    one #custom step etotal temp lx vol press
-thermo          50
+thermo          100
 
 # relax structure, 0 K
 fix				f1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
