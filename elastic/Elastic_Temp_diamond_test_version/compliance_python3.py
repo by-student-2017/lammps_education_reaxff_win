@@ -103,6 +103,17 @@ for i in range(6):
         print (" %15.8g " % s[i][j], end=" ")
     print(" ", end="\n")
         
+
+print(" ", end="\n")
+
+cpc = c[0][1] - c[3][3] # C12 - C44
+print ("Cauchy pressure (C12 - C44) for cubic structure: %15.8g" % cpc, end="\n")
+cph = c[0][2] - c[3][3] # C13 - C44
+print ("Cauchy pressure (C13 - C44) for hexagonal structure: %15.8g" % cph, end="\n")
+print ("Cauchy pressure (C13 - C44) for tetragonal structure: %15.8g" % cph, end="\n")
+cpt = c[0][1] - c[5][5] # C12 - C66
+print ("Cauchy pressure (C12 - C66) for tetragonal structure: %15.8g" % cpt, end="\n")
+
 print(" ", end="\n")
 print("Ref: F. M. Gao and L. H. Gao, Journal of Superhard Materials, 2010, Vol. 32, No. 3, pp. 148-166.", end="\n")
 
