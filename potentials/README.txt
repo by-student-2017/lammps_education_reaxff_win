@@ -525,6 +525,12 @@ T.-R. Shan et al.,
 Cite this: J. Phys. Chem. A 2014, 118, 8, 1469-1478
 Publication Date:January 30, 2014
 https://doi.org/10.1021/jp408397n
+
+2014X5
+CHONSSi
+Tingting Zhou et al.,
+Phys. Chem. Chem. Phys., 2014,16, 23779-23791 
+https://doi.org/10.1039/C4CP03781B
 -------------------------------------------------------------------
 2015
 
@@ -991,6 +997,13 @@ I. Leven et al.,
 J. Phys. Chem. Lett. 2020, 11, 21, 9240-9247
 Publication Date:October 19, 2020
 https://doi.org/10.1021/acs.jpclett.0c02516
+
+2020X3
+CHOSMoNiAlZr
+Seong Soon Jo et al.,
+Nano Lett. 2020, 20, 12, 8592-8599
+Publication Date:November 12, 2020
+https://doi.org/10.1021/acs.nanolett.0c03263
 
 No.88
 AgAvEl
