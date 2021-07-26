@@ -388,6 +388,13 @@ CHONSbCl
 Cite this: J. Phys. Chem. A 2009, 113, 42, 11443-11453
 Publication Date:September 28, 2009
 https://doi.org/10.1021/jp908205x
+
+2009X3
+CHO
+K. Chenoweth et al.,
+J. Phys. Chem. A 2009, 113, 9, 1740-1746
+Publication Date:February 11, 2009
+https://doi.org/10.1021/jp8081479
 -------------------------------------------------------------------
 2010
 
@@ -485,6 +492,13 @@ CHONSMgPNaTiClF
 Cite this: Langmuir 2013, 29, 25, 7838-7846
 Publication Date:May 20, 2013
 https://doi.org/10.1021/la4006983
+
+2013X7
+CHONPt
+M. F. Russo, Jr. et al.,
+J. Phys. Chem. A 2013, 117, 38, 9216-9223
+Publication Date:August 28, 2013
+https://doi.org/10.1021/jp403511q
 -------------------------------------------------------------------
 2014
 
@@ -511,12 +525,6 @@ T.-R. Shan et al.,
 Cite this: J. Phys. Chem. A 2014, 118, 8, 1469-1478
 Publication Date:January 30, 2014
 https://doi.org/10.1021/jp408397n
-
-2014X5
-CHONSSi
-Tingting Zhou et al.,
-Phys. Chem. Chem. Phys., 2014,16, 23779-23791 
-https://doi.org/10.1039/C4CP03781B
 -------------------------------------------------------------------
 2015
 
@@ -592,10 +600,15 @@ https://doi.org/10.1021/acs.jpcc.5b09511
 
 2016X8
 MoTeCu
-Nicolas Onofrio, David Guzman, and Alejandro Strachan,
 J. Chem. Phys. 145, 194702 (2016); https://doi.org/10.1063/1.4967808
 Published Online: 16 November 2016
 Accepted: October 2016
+
+2016X9
+CHONSMgPNaCuCl
+P. O. Hubin et al.,
+https://doi.org/10.1002/jcc.24481
+Supporting Information
 -------------------------------------------------------------------
 2017
 
@@ -616,6 +629,12 @@ CHONS
 Cite this: J. Phys. Chem. A 2017, 121, 9, 2001-2013
 Publication Date:February 8, 2017
 https://doi.org/10.1021/acs.jpca.6b11761
+
+2017X4
+H. Xiao et al.,
+J. Phys. Chem. A 2017, 121, 32, 6135-6149
+Publication Date:July 19, 2017
+https://doi.org/10.1021/acs.jpca.7b05257
 
 No.52
 CHO
@@ -658,6 +677,7 @@ X. Y. Liu et al.,
 Cite this: J. Phys. Chem. C 2017, 121, 13, 7312-7318
 Publication Date:March 17, 2017
 https://doi.org/10.1021/acs.jpcc.7b00676
+Ref: https://doi.org/10.1039/C0CC01132K
 
 No.58
 HO
@@ -714,6 +734,7 @@ V. Simonka et al.,
 Cite this: J. Phys. Chem. A 2017, 121, 46, 8791-8798
 Publication Date:October 31, 2017
 https://doi.org/10.1021/acs.jpca.7b08983
+LAMMPS files (https://pubs.acs.org/doi/suppl/10.1021/acs.jpca.7b08983/suppl_file/jp7b08983_si_001.zip)
 
 No.66
 OAu
@@ -768,6 +789,13 @@ T. Trnka et al.,
 Cite this: J. Chem. Theory Comput. 2018, 14, 1, 291-302
 Publication Date:November 20, 2017
 https://doi.org/10.1021/acs.jctc.7b00870
+
+2018X6
+E. Wang et al.,
+CH
+Energy Fuels 2018, 32, 1, 901-907
+Publication Date:December 14, 2017
+https://doi.org/10.1021/acs.energyfuels.7b03452
 
 2018XX (subscription required)
 CHON
@@ -894,6 +922,13 @@ Cite this: J. Chem. Eng. Data 2020, 65, 2, 360-372
 Publication Date:October 17, 2019
 https://doi.org/10.1021/acs.jced.9b00701
 
+2019X6
+CHONS
+T. Zhang et al.,
+Energy Fuels 2019, 33, 11, 11210-11225
+Publication Date:October 17, 2019
+https://doi.org/10.1021/acs.energyfuels.9b02843
+
 No.81
 CHONSSi
 C. Ren et al.,
@@ -951,11 +986,11 @@ Volume 750, July 2020, 137505
 https://doi.org/10.1016/j.cplett.2020.137505
 
 2020X2
-CHOSMoNiAlZr
-Seong Soon Jo et al.,
-Nano Lett. 2020, 20, 12, 8592-8599
-Publication Date:November 12, 2020
-https://doi.org/10.1021/acs.nanolett.0c03263
+HOEl
+I. Leven et al.,
+J. Phys. Chem. Lett. 2020, 11, 21, 9240-9247
+Publication Date:October 19, 2020
+https://doi.org/10.1021/acs.jpclett.0c02516
 
 No.88
 AgAvEl
@@ -1073,6 +1108,13 @@ https://doi.org/10.1021/acs.jpclett.1c00279
 Cite this: J. Phys. Chem. A 2021, 125, 8, 1766-1777
 Publication Date:February 22, 2021
 https://doi.org/10.1021/acs.jpca.0c10946
+
+2021X2
+HONSiF
+D. H. Kim et al.,
+ACS Omega 2021, 6, 24, 16009-16015
+Publication Date:June 8, 2021
+https://doi.org/10.1021/acsomega.1c01824
 -------------------------------------------------------------------
 Other information
 
@@ -1193,4 +1235,10 @@ YSZ lammps input
 
 https://www.researchgate.net/profile/Pascal-Brault/publication/273339399_Molecular_Dynamics_simulations_of_magnetron_reactive_sputtering_and_deposition/links/54fee67e0cf2eaf210b4300f/Molecular-Dynamics-simulations-of-magnetron-reactive-sputtering-and-deposition.pdf
 potential data
+
+J. P. Larentzos et al.,
+J. Chem. Theory Comput. 2015, 11, 2, 381-391
+Publication Date:January 20, 2015
+https://doi.org/10.1021/ct500788c
+training data
 -------------------------------------------------------------------

@@ -1,0 +1,85 @@
+ReaxFF/C-GeM parameter file: Below is the parameter file for the ReaxFF/C-GeM 
+39 ! Number of general parameters 
+50.0000 !Overcoordination parameter 
+ 9.5469 !Overcoordination parameter 
+ 1.6725 !Valency angle conjugation parameter 
+ 1.7224 !Triple bond stabilisation parameter 
+ 6.8702 !Triple bond stabilisation parameter 
+54.6742 !C2-correction 
+ 1.0588 !Undercoordination parameter 
+ 4.6000 !Triple bond stabilisation parameter 
+12.1176 !Undercoordination parameter 
+13.3056 !Undercoordination parameter
+-34.5448 !Triple bond stabilization energy 
+ 0.0000 !Lower Taper-radius 
+10.000 !Upper Taper-radius 
+ 2.8793 !Not used 
+33.8667 !Valency undercoordination 
+ 6.0891 !Valency angle/lone pair parameter 
+ 1.0563 !Valency angle 
+ 2.0384 !Valency angle parameter 
+ 6.1431 !Not used 
+ 6.9290 !Double bond/angle parameter 
+ 0.3989 !Double bond/angle parameter: overcoord
+ 3.9954 !Double bond/angle parameter: overcoord
+ 2.06064 !Lambda C-GeM 
+ 8.5385 !Torsion/BO parameter 
+ 6.7491 !Torsion overcoordination 
+ 0.1414 !Torsion overcoordination 
+ 1.0000 !Conjugation 0 (not used) 
+ 1.1348 !Conjugation 
+ 5.05591 !vdWaals shielding 
+ 0.1000 !Cutoff for bond order (*100) 
+ 1.7602 !Valency angle conjugation parameter 
+ 0.6991 !Overcoordination parameter 
+ 3.0000 !Overcoordination parameter 
+ 1.8512 !Valency/lone pair parameter 
+ 0.3741 !Omega_core C-GeM 
+ 2.7300 !Omega_shell C-GeM 
+ 1.5000 !Pval 
+ 0.0000 !Molecular energy (not used) 
+ 0.7903 !Valency angle conjugation parameter 
+3 ! Nr of atoms; cov.r; valency;a.m;Rvdw;Evdw;gammaEEM;cov.r2;#
+ alfa;gammavdW;valency;Eunder;Eover;chiEEM;etaEEM;n.u. 
+ cov r3;Elp;Heat inc.;n.u.;n.u.;Chi_CGeM;R_CGEM 
+ ov/un;val1;n.u.;val3,vval4 
+H 0.743102 1.0000 1.0080 0.9056 0.1000 0.6683 -0.1000 1.0000 
+  9.1827 20.15154 1.0000 0.0000 0.2457 4.9673 6.2079 3.4114 
+ -0.1000 0.0000 55.5000 1.1004 6.8959 0.0003 15.7581 0.5749 
+ -6.05532 3.5000 0.0020 1.0000 2.8793 1.0000 0.0000 10.1000
+ 239.48 1.67
+O 1.2518 2.0000 15.9990 1.7091 0.2841 0.5500 1.0727 6.0000 
+ 10.07915 20.000 4.0000 37.5000 0.6500 8.5000 7.9071 5.4479 
+  0.9049 0.5488 68.0152 2.1943 2.3055 0.0021 21.506629 0.5414 
+ -3.0011 3.6068 0.0022 4.0000 2.9225 1.0000 0.0000 10.1000
+ 634.7066 1.67
+El 0.1000 0.0000 1.0000 1.3000 0.0050 0.2500 0.1000 0.0000
+   2.0000 4.0000 4.0000 0.0000 0.0000 1.0002 1.0009 10.0000
+  -1.1000 0.0000 -2.3700 6.4918 8.5961 0.2368 -15.4766 0.784 
+  -5.0000 3.1873 0.1600 6.2998 2.5791 0.00040 0.0000 0.0000
+   0.0 0.0 
+3 ! Nr of bonds; Edis1;LPpen;n.u.;pbe1;pbo5;13corr;pbo6 
+ pbe2;pbo3;pbo4;Etrip;pbo1;pbo2;ovcorr 
+1 1 161.2898 0.0000 0.0000 -0.2387 0.0000 1.0000 6.0000 0.6279
+ 13.2089 1.0000 0.0000 1.0000 -0.1674 4.9118 0.0000 0.8926
+1 2 176.55 0.0000 0.0000 -0.87230 0.0000 1.0000 6.0000 0.4913927 
+ 5.4551 1.0000 0.0000 0.0000 -0.0799 4.4906 0.0000 1.8000 
+2 2 0.28 93.7249 50.8293 0.0134 -0.1000 1.0000 29.7503 0.01125 
+ 5.677 -0.2030 9.1777 1.0000 -0.3357 4.570474 1.0000 0.2700 
+1 ! Nr of off-diagonal terms; Ediss;Ro;gamma;rsigma;rpi;rpi2 
+ 1 2 0.0495 1.019613 12.1010 0.8969069 -1.0000 -1.0000 
+6 ! Nr of angles;at1;at2;at3;Thetao,o;ka;kb;pv1;pv2 
+ 1 1 1 0.0000 27.9213 5.8635 0.0000 0.0000 0.0000 1.0400
+ 2 2 2 77.3022 33.4558 1.4033 0.0000 3.9048 0.0000 1.0000
+ 1 2 2 90.0000 26.3185 8.0000 0.0000 0.8615 0.0000 1.7579
+ 1 2 1 84.0874 19.0967 1.0887 0.0000 2.0594 0.0000 7.07106 
+ 2 1 2 0.0000 15.0000 0.5640 0.0000 0.0000 0.0000 1.0400
+ 1 1 2 0.0000 2.0000 0.0839 0.0000 0.0000 0.0000 2.9374
+6 ! Nr of torsions;at1;at2;at3;at4;;V1;V2;V3;V2(BO);vconj;n.u;n
+ 1 2 2 1 -1.6122 5.0000 -1.0000 -2.5394 -0.9921 0.0000 0.0000
+ 1 2 2 2 -2.5000 75.7606 -0.6120 -7.8633 -1.2407 0.0000 0.0000
+ 0 1 1 0 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+ 0 1 2 0 0.0000 0.1000 0.0200 -2.5415 0.0000 0.0000 0.0000
+ 2 2 2 2 -0.5000 5.0000 1.0000 -2.5000 -0.9000 0.0000 0.0000
+ 0 2 2 0 0.5511 25.4150 1.1330 -5.1903 -1.0000 0.0000 0.0000
+ 0

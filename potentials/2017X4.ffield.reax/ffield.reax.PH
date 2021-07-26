@@ -1,0 +1,76 @@
+Reactive MD-force field
+ 39       ! Number of general parameters
+   50.0000 !Comment here
+    9.5469 !Comment here
+   26.5405 !Comment here
+    1.5105 !p(trip4)
+    6.6630 !p(trip3)
+   70.0000 !kc2
+    1.0588 !Comment here
+    4.6000 !Comment here
+   12.1176 !Comment here
+   13.3056 !Comment here
+  -70.1292 !p(trip1)
+    0.0000 !Comment here
+   10.0000 !Comment here
+    2.8793 !Comment here
+   33.8667 !Comment here
+    6.0891 !Comment here
+    1.0563 !Comment here
+    2.0384 !Comment here
+    6.1431 !Comment here
+    6.9290 !p(pen2)
+    0.3989 !p(pen3)
+    3.9954 !p(pen4)
+   -2.4837 !Comment here
+    9.6260 !Comment here
+    9.7452 !Comment here
+    4.1021 !Comment here
+   -1.2327 !Comment here
+    2.1645 !Comment here
+    1.5591 !Comment here
+    0.1000 !Comment here
+    2.1365 !Comment here
+    0.6991 !Comment here
+   50.0000 !Comment here
+    1.8512 !Comment here
+    0.5000 !Comment here
+   1.0000 !Comment here
+    5.0000 !Comment here
+    0.0000 !Comment here
+    2.6962 !Comment here
+  2    !Nr of atoms; cov.r; valency;a.m;Rvdw;Evdw;gammaEEM;cov.r2;
+            alfa;gammavdW;valency;Eunder;Eover;chiEEM;etaEEM;n.u.
+            cov r3;Elp;Heat inc.;n.u.;n.u.;n.u.;n.u.
+            ov/un;val1;n.u.;val3,vval4
+ P    2.1199  3.0000  30.9738   2.3355   0.0887   0.4060   1.9507   5.0000
+      9.5120   7.6148   3.0000   0.0000  82.517   6.3467   8.5658   0.0000
+      1.8354   0.0000  120.0000  11.8556  15.5783   2.8491     5066.5788   2.1233
+     -2.0858   4.8954   1.0338   3.0000   1.6350   2.6552   0.0743  15.5028
+	 5066.5788   2.1233
+ H    0.7853   1.0000   1.0080   1.5904   0.0419   1.0206  -0.1000   1.0000     
+      9.3557   5.0518   1.0000   0.0000 121.1250   5.3200   7.4366   1.0000     
+     -0.1000   0.0000  62.4879   1.9771   3.3517   0.7571   101.0453   1.9593     
+    -15.7683   2.1488   1.0338   1.0000   2.8793   2.0000   0.0000   1.0000      
+	101.0453   1.9593  
+  3      ! Nr of bonds; Edis1;LPpen;n.u.;pbe1;pbo5;13corr;pbo6
+                         pbe2;pbo3;pbo4;n.u.;pbo1;pbo2;ovcorr
+  1  1  52.2711  23.4911  20.0346   0.4917  -0.2395   1.0000  17.8190   0.7412
+         1.4218  -0.2226  13.6705   1.0000  -0.2457   7.5884   1.0000   0.0000
+  1  2 124.0512   0.0000   0.0000  -0.3732   0.0000   1.0000   6.0000   0.5862  
+         5.9712   1.0000   0.0000   1.0000  -0.1003   5.6515   0.0000   0.0000  
+  2  2 156.0973   0.0000   0.0000  -0.1377   0.0000   1.0000   6.0000   0.8240  
+         2.9907   1.0000   0.0000   1.0000  -0.0593   4.8358   0.0000   0.0000  
+  1    ! Nr of off-diagonal terms; Ediss;Ro;gamma;rsigma;rpi;rpi2
+  1  2   0.1064   1.5940  10.3773   1.4319  -1.0000  -1.0000          
+  6    ! Nr of angles;at1;at2;at3;Thetao,o;ka;kb;pv1;pv2 
+  1  1  1  81.1291  81.4496   0.5055  0.0000   0.1993   0.000   1.0534
+  2  2  2   0.0000  0.0000   5.8635   0.0000   0.0000   0.0000   1.0400    
+  2  1  1  87.7897  48.0234   1.1576   0.0000   2.4234   0.0000   1.6028    
+  2  1  2  91.5071  16.1001   2.6120   0.0000   0.5531   0.0000   1.0740     
+  1  2  1   7.0790   0.0000   0.4358   0.0000   0.0000   0.1050   2.1684        
+  2  2  1   0.0000   0.0000   6.0000   0.0000   0.0000   0.0000   1.0400         
+  2    ! Nr of torsions;at1;at2;at3;at4;;V1;V2;V3;V2(BO);vconj;n.u;n
+  1  1  1  2  -0.0137  46.5023   0.7269  -3.2753  0.0000   0.0000   0.0000 
+  2  1  1  2  -0.1595  49.6094   0.5875  -2.0714  0.0000   0.0000   0.0000 
+  0    ! Nr of hydrogen bonds;at1;at2;at3;Rhb;Dehb;vhb1
