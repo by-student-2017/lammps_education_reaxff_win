@@ -381,6 +381,7 @@ https://doi.org/10.1021/jp711825a
 
 2008X2
 CHONSSiPtZrNiAuVBiTiMoTeNb
+William A. Goddard III et al.,
 Topics in Catalysis volume 54, pages 659-668 (2011)
 https://link.springer.com/article/10.1007/s11244-011-9688-8
 -------------------------------------------------------------------
