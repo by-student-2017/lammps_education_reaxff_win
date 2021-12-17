@@ -3,6 +3,9 @@ explicitly trained against may produce unrealistic results.  Please
 see the README file in each subdirectory for more detailed
 information.
 
+Acknowledgments
+  ffield_V_Mo_Te_Bi (ffield.reax.2008X2.CHONSSiPtZrNiAuVBiTiMoTeNb) was comfortably provided as a CC0 or MIT license by Professor William Goddard and Professor van Duin, Adri. I'm grateful.
+
 Ref.1: http://kiff.vfab.org/
 -------------------------------------------------------------------
 No.1
@@ -375,6 +378,11 @@ CHONi
 Cite this: J. Phys. Chem. C 2008, 112, 33, 12663-12668
 Publication Date:July 30, 2008
 https://doi.org/10.1021/jp711825a
+
+2008X2
+CHONSSiPtZrNiAuVBiTiMoTeNb
+Topics in Catalysis volume 54, pages 659-668 (2011)
+https://link.springer.com/article/10.1007/s11244-011-9688-8
 -------------------------------------------------------------------
 2009
 
