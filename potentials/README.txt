@@ -1146,7 +1146,7 @@ Publication Date:June 8, 2021
 https://doi.org/10.1021/acsomega.1c01824
 
 2021X3
-HfO
+OHf
 M. Laura Urquiza et al.,
 Cite this: ACS Nano 2021, 15, 8, 12945-12954
 Publication Date:July 30, 2021
