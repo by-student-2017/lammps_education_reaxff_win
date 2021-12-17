@@ -4,7 +4,7 @@ see the README file in each subdirectory for more detailed
 information.
 
 Acknowledgments
-  ffield_V_Mo_Te_Bi (ffield.reax.2008X2.CHONSSiPtZrNiAuVBiTiMoTeNb) was comfortably provided as a CC0 or MIT license by Professor William Goddard and Professor van Duin, Adri. I'm grateful.
+  ffield_V_Mo_Te_Bi (ffield.reax.2008X2.CHONSSiPtZrNiAuVBiTiMoTeNb) was kindly provided as a CC0 or MIT license by Professor William A. Goddard III and Professor Adri van Duin.
 
 Ref.1: http://kiff.vfab.org/
 -------------------------------------------------------------------
