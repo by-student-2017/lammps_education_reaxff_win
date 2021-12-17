@@ -651,6 +651,13 @@ J. Phys. Chem. A 2017, 121, 32, 6135-6149
 Publication Date:July 19, 2017
 https://doi.org/10.1021/acs.jpca.7b05257
 
+2017X5
+CHOAlGe
+Y. Zheng et al.,
+ACS Appl. Mater. Interfaces 2017, 9, 18, 15848-15856
+Publication Date:April 5, 2017
+https://doi.org/10.1021/acsami.7b01618
+
 No.52
 CHO
 C. Ashraf et al.,
@@ -1137,6 +1144,13 @@ D. H. Kim et al.,
 ACS Omega 2021, 6, 24, 16009-16015
 Publication Date:June 8, 2021
 https://doi.org/10.1021/acsomega.1c01824
+
+2021X3
+HfO
+M. Laura Urquiza et al.,
+Cite this: ACS Nano 2021, 15, 8, 12945-12954
+Publication Date:July 30, 2021
+https://doi.org/10.1021/acsnano.1c01466
 -------------------------------------------------------------------
 Other information
 

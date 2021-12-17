@@ -1,0 +1,152 @@
+# Defining the units
+#-------------------
+units           real
+
+# Defining atom style and boundary conditions 
+#--------------------------------------------
+atom_style      charge
+if $(version<20170513) then "atom_modify id yes map hash" else "atom_modify map yes"
+dimension       3
+boundary        p p s  
+
+neighbor        2.0 nsq
+neigh_modify    delay 2
+
+# Defining the simulation box
+#----------------------------
+read_data   mim-A-relaxed.data    
+
+
+## Defining atom type  
+##-------------------
+mass         1 178.49
+group        type1    type  1
+mass         2 15.9994
+group        type2    type  2
+mass         3 178.49
+group        type3    type  3
+mass         4 178.49
+group        type4    type  4
+mass         5 178.49
+group        type5    type  5
+mass         6 178.49
+group        type6    type  6
+
+group     Hfatoms     union type1 type3 type4 type5 type6
+group     active      union type1 type2 type4 type5
+
+
+## Defining interaction potential
+##-------------------------------
+pair_style      reax/c NULL  safezone 4.0 mincap 400
+pair_coeff      * * ffield    Hf O Hf Hf Hf Hf
+
+compute reax   all pair reax/c   
+fix     10     all qeq/shielded  1 10.0 1.0e-6 50000 param.qeq
+
+
+## Defining computes and variables for post processing 
+##--------------------------------------------------------
+compute       ncoord       all    coord/atom cutoff 2.70  2
+compute       active_temp  active temp
+
+
+## Defining the output format (ie. customize thermo_style)
+##--------------------------------------------------------
+variable eb    equal c_reax[1]  #    eb = bond energy
+variable ea    equal c_reax[2]  #    ea = atom energy
+variable elp   equal c_reax[3]  #    elp = lone-pair energy
+variable emol  equal c_reax[4]  #    emol = molecule energy (always 0.0)
+variable ev    equal c_reax[5]  #    ev = valence angle energy
+variable epen  equal c_reax[6]  #    epen = double-bond valence angle penalty
+variable ecoa  equal c_reax[7]  #    ecoa = valence angle conjugation energy
+variable ehb   equal c_reax[8]  #    ehb = hydrogen bond energy
+variable et    equal c_reax[9]  #    et = torsion energy
+variable eco   equal c_reax[10] #    eco = conjugation energy
+variable ew    equal c_reax[11] #    ew = van der Waals energy
+variable ep    equal c_reax[12] #    ep = Coulomb energy
+variable efi   equal c_reax[13] #    efi = electric field energy (always 0.0)
+variable eqeq  equal c_reax[14] #    eqeq = charge equilibration energy
+
+
+thermo 500
+thermo_style custom step temp c_active_temp press pe ke etotal v_eb v_ea v_elp v_emol v_ev v_epen v_ecoa v_ehb v_et v_eco v_ew v_ep v_efi v_eqeq
+
+
+#-----------
+# SIMULATION
+#-----------
+
+timestep     0.20    #0.2 fs
+velocity     active create 300.0 98347 rot yes mom yes dist gaussian
+
+
+## EchemDID stuff
+##-----------------------------------------------------
+
+# Initialize the property
+fix          locpot  all  property/atom d_locpot d_lap
+compute      locpot  all  property/atom d_locpot d_lap
+
+
+# Boundary conditions regions
+variable        z_bottom atom "z < 21.0"
+group           bottom_elec variable z_bottom
+variable        z_top atom "z > 60.0"
+group           top_elec variable z_top
+
+
+#print out energies and trajectory
+dump          prueba   all custom 500 positions.lammpstrj id element c_ncoord c_locpot[1] c_locpot[2] q x y z
+dump_modify   prueba   element  Hf O Hf Hf Hf Hf
+dump_modify   prueba   sort id
+
+
+#dynamic loop
+variable a loop 30   # for a smulation of 2 ns
+label loop
+
+# Defining undercoordinated Hf
+  variable   lowcoord    atom    "c_ncoord < 6.00000000"
+  group      undercoord  dynamic  Hfatoms  var  lowcoord
+  run        0            #this is for identifying the undercoordinated atoms
+  group      undercoord  static
+
+# Initialize local electrochemical potential
+  set         type 1 d_locpot 0.0
+  set         type 2 d_locpot 0.0
+  set         type 3 d_locpot 0.0
+  set         type 4 d_locpot 0.0
+  set         type 5 d_locpot 0.0
+  set         type 6 d_locpot 0.0
+
+# Set restart frequency
+  restart     250000     restart
+
+# Run echemdid to the propagate the portential
+  fix         fixechem   undercoord  echemdid  1 k 6.0 rc 3.9 norm 0.5 nelec 10 bottom_elec top_elec volt 4.0
+  run         1000        #0.2 ps   
+  unfix       fixechem 
+  #k: effective diffusivity
+  #rc:critical sepration distance below which two atoms are considered as part of the same metallic cluster
+  #norm: normalization factor (if 0 the code will compute the norm for you)
+  #nelec: number of electronic steps between ionic steps
+
+# Run nvt
+  fix         fixnvt    active   nvt temp 300.0 300.0 10.0 #z 1.0 1.0 100.0
+  run         249000    #49.8 ps  
+  unfix       fixnvt
+
+# Clean the undercoordinated Hf group to reasign in the next step
+  group        undercoord   clear
+  run          0
+
+next a
+jump SELF loop
+
+label  skip
+
+print "Out of loop"
+
+
+              
