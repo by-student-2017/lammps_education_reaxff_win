@@ -1303,9 +1303,9 @@ CHONSMgPNaTiClFBaSr
 Phys. Chem. Chem. Phys., 2021,23, 25056-25062
 https://doi.org/10.1039/D1CP03353K
 
-2021X15
+2021X15, 2021X16, 2021X17
 V. Gomzi et al.,
-CHOMnLiFPNiAlCuNS
+CHOMnLiFPNiAlCuNS, CHOMnLiFPNiAlFe, CHOMnLiFPNiAl
 Cite this: J. Phys. Chem. A 2021, XXXX, XXX, XXX-XXX
 Publication Date:December 9, 2021
 https://doi.org/10.1021/acs.jpca.1c06939
