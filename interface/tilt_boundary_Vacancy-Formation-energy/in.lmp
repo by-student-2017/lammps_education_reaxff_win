@@ -1,0 +1,144 @@
+#LAMMPS Input file
+# Title
+clear
+
+# ----- condition settings -----
+variable vacancy_site equal 65 # vacancy site (id in data.in)
+
+variable bottom string 'Ni'
+variable top    string 'Ni'
+
+variable mass_bottom equal 58.6934
+variable mass_top    equal 58.6934
+
+variable struct_type string 'fcc'
+
+# --------------- INITIALIZATION ------------------
+units           real
+atom_style      charge
+dimension       3
+boundary        p p p
+# ------------------ ATOM DEFINITION -------------------
+read_data       data.in
+replicate       1 1 1
+
+# ----- Potential settings (ReaxFF)-----
+pair_style reax/c lmp_control
+pair_coeff * * ../../potentials/ffield.reax.032.CHONSSiPtZrNiCuCoHeArKrXe ${bottom} ${top}
+
+## other reaxff potential
+#pair_style reax/c lmp_control
+#pair_coeff * * ../../potentials/ffield.reax.030.CHONSSiPtZrNiCuCoYBa_rm_2nd_Zr ${bottom} ${top}
+
+mass 1 ${mass_bottom} # Ni ${bottom}
+mass 2 ${mass_top}    # Ni ${top}
+
+fix  f1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+#fix  f2 all box/relax iso 0.0
+#---------------------------Settings----------------------------
+compute csym all centro/atom ${struct_type}
+compute eng all pe/atom 
+compute eatoms all reduce sum c_eng
+
+group bottom type 1
+group top    type 2
+
+compute eng_bottom bottom pe/atom 
+compute eatoms_bottom bottom reduce sum c_eng_bottom
+
+compute eng_top top pe/atom 
+compute eatoms_top top reduce sum c_eng_top
+#----------------------Run Minimization-------------------------
+reset_timestep	0
+
+thermo 10
+thermo_style custom step pe lx ly lz press pxx pyy pzz c_eatoms_bottom c_eatoms_top
+
+dump 1 all custom 400 ./cfg/dump.relax.1.*.cfg id type xs ys zs c_csym c_eng 
+
+min_style cg
+minimize 1e-15 1e-15 5000 5000
+
+run 0
+undump 1
+
+#variable N equal count(all), counts the total number of atoms in the cell
+#the total number of atoms is stored to the variable N
+
+#variable N equal count(all)
+#variable No equal $N
+# An error is displayed if there is a blank in the operation of "variable". 
+variable N_bottom equal count(bottom)
+variable N_top equal count(top)
+variable Ni_bottom equal ${N_bottom}
+variable Ni_top equal ${N_top}
+variable Nio equal (${N_bottom}+${N_top})
+
+#variable Ei equal "c_eatoms" computes the initial energy of the cell system before the vacancy
+#E is needed to store the initial energy of the system to the variable Ei
+
+#variable E equal "c_eatoms"
+#variable Ei equal $E
+# An error is displayed if there is a blank in the operation of "variable". 
+variable E_bottom equal "c_eatoms_bottom"
+variable E_top equal "c_eatoms_top"
+variable Ei_bottom equal ${E_bottom}
+variable Ei_top equal ${E_top}
+variable Ei equal (${Ei_bottom}+${Ei_top})
+#---------------------------------------------------------------
+group select id ${vacancy_site}
+delete_atoms group select compress yes
+
+variable N_bottom equal count(bottom)
+variable N_top equal count(top)
+variable Nf_bottom equal ${N_bottom}
+variable Nf_top equal ${N_top}
+variable Nfo equal (${Nf_bottom}+${Nf_top})
+#---------------------------------------------------------------------
+reset_timestep	0
+
+thermo 10
+thermo_style custom step pe lx ly lz press pxx pyy pzz c_eatoms_bottom c_eatoms_top
+
+dump 1 all custom 2 ./cfg/dump.atom.cfg id type xs ys zs c_csym c_eng 
+
+min_style cg
+minimize 1e-15 1e-15 5000 5000
+
+#variable Ef equal "c_eatoms" computes the final energy of the cell system after the vacancy
+#The final energy is stored to the variable Ef 
+
+#variable Ef equal "c_eatoms"
+#variable Ev equal (${Ef}-((${No}-1)/${No})*${Ei})
+# An error is displayed if there is a blank in the operation of "variable". 
+variable E_bottom equal "c_eatoms_bottom"
+variable E_top equal "c_eatoms_top"
+variable Ef_bottom equal ${E_bottom}
+variable Ef_top equal ${E_top}
+variable Ef equal (${Ef_bottom}+${Ef_top})
+variable Ev_bottom equal (${Ef_bottom}-(${Nf_bottom}/${Ni_bottom})*${Ei_bottom})
+variable Ev_top equal (${Ef_top}-(${Nf_top}/${Ni_top})*${Ei_top})
+variable Ev equal (${Ev_bottom}+${Ev_top})
+#---------------------------------------------
+
+######################################
+# SIMULATION DONE
+print "All done"
+######################################
+print "Initial total number of atoms = ${Nio}"
+print "Initial energy of atoms = ${Ei} Kcal/mole"
+print "Initial energy of atoms (bottom range) = ${Ei_bottom} Kcal/mole"
+print "Initial energy of atoms (top range) = ${Ei_top} Kcal/mole"
+######################################
+print "Final total number of atoms = ${Nfo}"
+print "Final energy of atoms = ${Ef} Kcal/mole"
+print "Final energy of atoms (bottom range) = ${Ef_bottom} Kcal/mole"
+print "Final energy of atoms (top range) = ${Ef_top} Kcal/mole"
+######################################
+print "Vacancy formation energy = ${Ev} Kcal/mole"
+#Avogadro's number: 6.02214076*10^23 = 1 mole
+variable EvmJ equal ${Ev}*4186.798188*1000/(6.02214076*10^23)
+print "Vacancy formation energy = ${EvmJ} mJ"
+variable EceV equal ${Ev}*0.043361254529175
+print "Vacancy formation energy = ${EceV} eV"
+######################################

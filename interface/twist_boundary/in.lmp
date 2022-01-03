@@ -1,0 +1,173 @@
+#LAMMPS Input file
+# Title
+clear
+
+# ----- condition settings -----
+
+variable bottom string 'Ni'
+variable top    string 'Ni'
+
+variable mass_bottom equal 58.6934
+variable mass_top    equal 58.6934
+
+variable x_displace equal 1.00 # shift x in top side
+variable y_displace equal 0.00 # shift y in top side
+variable z_displace equal 0.00 # shift z in top side
+
+variable        tempm  index  1073.0 # K (heat)
+
+variable        temph  index   673.0 # K (cool No.1)
+
+variable        tempc  index   273.0 # K (cool No.2)
+
+variable        pres   index     1.0 # 0.1 MPa (atmospheres units)
+
+variable        Erate  index    0.00 # 1/(1.0 fs), if Erate < 0.0 (compress)
+
+variable        fs     index    0.10 # 0.1 fs
+variable        ps     index   20000 # 20 ps
+
+# ----- other settings -----
+variable        nstep  equal ${ps}/${fs}
+variable        nsteph equal ${ps}/${fs}
+variable        nstepc equal ${ps}/${fs}
+
+# ----- Structure settings -----
+units           real
+atom_style      charge
+dimension       3
+boundary        p p p
+read_data       data.in
+replicate       1 1 1
+timestep        ${fs}
+
+# ----- Potential settings (ReaxFF)-----
+pair_style reax/c lmp_control
+pair_coeff * * ../../potentials/ffield.reax.032.CHONSSiPtZrNiCuCoHeArKrXe ${bottom} ${top}
+
+## other reaxff potential
+#pair_style reax/c lmp_control
+#pair_coeff * * ../../potentials/ffield.reax.030.CHONSSiPtZrNiCuCoYBa_rm_2nd_Zr ${bottom} ${top}
+
+mass 1 ${mass_bottom} # Ni ${bottom}
+mass 2 ${mass_top}    # Ni ${top}
+# -------------------------------------------------------------------
+neighbor        2.0 bin
+neigh_modify    every 5 delay 0 check no
+
+#set type 1 type/fraction 2 1.0 545096
+
+fix  f1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+#fix  f2 all box/relax iso 0.0
+min_style cg
+minimize 1e-10 1e-10 1000 1000
+#unfix f2
+
+# ----- setting -----
+
+compute peratom all pe/atom
+compute eatoms all reduce sum c_peratom
+
+thermo 1
+thermo_style custom step pe c_eatoms
+
+#dump 1 all custom 1 ./cfg/dump.init.cfg id type xs ys zs c_peratom
+dump        d1 all custom 1 cfg/run.init.cfg mass type xs ys zs id type c_peratom
+dump_modify d1 element ${bottom} ${top}
+run 0
+
+variable E equal "c_eatoms"
+variable Eo equal $E
+
+group top type 1
+displace_atoms top move ${x_displace} ${y_displace} ${z_displace} units box
+
+#displace_atoms is the command neccessary to move atoms into the next stacking arrangement (ie: A -> B)
+
+fix 2 all setforce 0 0 NULL
+min_style cg
+minimize 1e-10 1e-10 1000 1000
+variable Ef equal "c_eatoms"
+variable Cf equal 4186.798188*1000/(6.02214076*10^23)
+variable A equal (lx*ly)*1e-20
+variable SFE equal ((${Ef}-${Eo})*${Cf})/${A}
+
+#variable Ef equal "c_eatoms" computes the final energy of the system after sliding is done
+#variable A is the area of the Stacking fault plane
+#variable Cf is the conversion factor of electro volts to millijoules
+#variable SFE is the stacking-fault energy of the system
+####################################
+# SIMULATION DONE
+print "All done"
+print "Initial energy of atoms = ${Eo} eV"
+print "Final energy of atoms = ${Ef} eV"
+print "Stacking-fault energy = ${SFE} mJ/m^2"
+
+#unfix 2 # for "fix 2 all setforce 0 0 NULL"
+
+# ----- Output setting -----
+thermo_style    custom step etotal temp lx vol press pxx pyy pxy
+thermo          10
+
+# ----- Check equilibriation setting -----
+variable        energy equal etotal
+variable        temperature equal temp
+fix             fout1 all ave/time 1 100 100 v_energy v_temperature file out_energy.txt
+
+# initial velocity settings
+velocity all create 10.0 4928459 rot yes mom yes dist gaussian
+
+dump        d2 all cfg 100 cfg/run.heat.*.cfg mass type xs ys zs id type
+dump_modify d2 element ${bottom} ${top}
+# ----- Equilibriation (heat)-----
+fix		3 all npt temp 10.0 ${tempm} 400.0 iso 1.0 ${pres} 2500
+fix		4 all reax/c/bonds 100 bonds.reaxc
+fix		5 all reax/c/species 50 1 50 species.reaxc
+run		${nstep}
+
+undump  d2
+dump    d2 all cfg 100 cfg/run.cool_No1.*.cfg mass type xs ys zs id type
+# ----- Calculation (cool No.1) (Berendsen thermostat)-----
+fix		1 all nve
+unfix	3
+fix		3 all temp/berendsen ${tempm} ${temph} 400.0 # relaxation constant 0.25*400 = 0.1 ps
+run		${nsteph}
+
+undump  d2
+dump    d2 all cfg 100 cfg/run.cool_No2.*.cfg mass type xs ys zs id type
+# ----- Calculation (cool No.2) (Berendsen thermostat)-----
+unfix	3
+fix		3 all temp/berendsen ${temph} ${tempc} 400.0 # relaxation constant 0.25*400 = 0.1 ps
+run		${nstepc}
+
+undump  d2
+dump    d2 all cfg 100 cfg/run.Erate.*.cfg mass type xs ys zs id type
+# ----- Calculation (Berendsen thermostat)-----
+fix		f1 all deform 1 x erate ${Erate} remap x
+unfix	3
+fix		3 all temp/berendsen ${tempc} ${tempc} 400.0 # relaxation constant 0.25*400 = 0.1 ps
+run		${nstep}
+unfix	f1
+
+# ----- Radial Distribution Function -----
+#comm_modify     cutoff 14
+compute         distribution all rdf 240
+fix             f1 all ave/time 1 1000 3000 c_distribution[*] file out_rdf.txt mode vector
+
+# ----- Mean Square Displacement -----
+group           ${bottom} type 1
+compute         ${bottom}msd ${bottom} msd
+fix             f2 all ave/time 1 1 5 c_${bottom}msd[*] file out_${bottom}_msd.txt
+# -----
+group           ${top} type 2
+compute         ${top}msd ${top} msd
+fix             f3 all ave/time 1 1 5 c_${top}msd[*] file out_${top}_msd.txt
+# -----
+compute         allmsd all msd
+fix             f4 all ave/time 1 1 5 c_allmsd[*] file out_all_msd.txt
+
+fix             f5 all nvt temp ${tempc} ${tempc} ${tdamp}
+run             3000
+
+# ----- Output restart data -----
+write_data data.in.restart

@@ -1,0 +1,83 @@
+
+variable y_displace equal 0.0 # shift y in top side
+variable z_displace equal 0.0 # shift z in top side
+
+variable bottom string 'Ni'
+variable top    string 'Ni'
+
+variable mass_bottom equal 58.6934
+variable mass_top    equal 58.6934
+
+# ----- Structure settings -----
+units           real
+atom_style      charge
+dimension       3
+boundary        p p s
+read_data       data.in
+replicate       1 1 1
+
+# ----- Potential settings (ReaxFF)-----
+pair_style reax/c lmp_control
+pair_coeff * * ../../potentials/ffield.reax.032.CHONSSiPtZrNiCuCoHeArKrXe ${bottom} ${top}
+
+## other reaxff potential
+#pair_style reax/c lmp_control
+#pair_coeff * * ../../potentials/ffield.reax.030.CHONSSiPtZrNiCuCoYBa_rm_2nd_Zr ${bottom} ${top}
+
+mass 1 ${mass_bottom} # Ni ${bottom}
+mass 2 ${mass_top}    # Ni ${top}
+
+fix  f1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+#fix  f2 all box/relax iso 0.0
+
+min_style cg
+minimize 1e-10 1e-10 1000 1000
+
+# ----- setting -----
+
+compute peratom all pe/atom
+compute eatoms all reduce sum c_peratom
+
+thermo 1
+thermo_style custom step pe c_eatoms
+
+#dump 1 all custom 1 ./cfg/dump.init.cfg id type xs ys zs c_peratom
+dump        d1 all custom 1 cfg/run.init.cfg mass type xs ys zs id type c_peratom
+dump_modify d1 element ${bottom} ${top}
+run 0
+
+variable E equal "c_eatoms"
+variable Eo equal $E
+
+group top type 1
+displace_atoms top move ${x_displace} ${y_displace} ${z_displace} units box
+
+#displace_atoms is the command neccessary to move atoms into the next stacking arrangement (ie: A -> B)
+
+fix 2 all setforce 0 0 NULL
+min_style cg
+minimize 1e-10 1e-10 1000 1000
+variable Ef equal "c_eatoms"
+variable Cf equal 4186.798188*1000/(6.02214076*10^23)
+variable A equal (lx*ly)*1e-20
+variable SFE equal ((${Ef}-${Eo})*${Cf})/${A}
+
+#Avogadro's number: 6.02214076*10^23 = 1 mole
+#variable Ef equal "c_eatoms" computes the final energy of the system after sliding is done
+#variable A is the area of the Stacking fault plane
+#variable Cf is the conversion factor of electro volts to millijoules
+#variable SFE is the stacking-fault energy of the system
+####################################
+# SIMULATION DONE
+print "All done"
+print "Initial energy of atoms = ${Eo} Kcal/mole"
+print "Final energy of atoms = ${Ef} Kcal/mole"
+print "Stacking-fault energy = ${SFE} mJ/m^2"
+
+print "${x_displace} ${SFE}" append displace_vs_SFenergy.txt
+
+#dump 1 all custom 1 ./cfg/dump.finish.cfg id type xs ys zs c_peratom
+dump        d1 all custom 1 cfg/run.finish.cfg mass type xs ys zs id type c_peratom
+dump_modify d1 element ${bottom} ${top}
+run 0
+undump d1

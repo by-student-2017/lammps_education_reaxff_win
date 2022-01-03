@@ -1,0 +1,58 @@
+#LAMMPS Input file
+# Title
+clear
+
+# ----- condition settings -----
+
+variable bottom string 'Ni'
+variable top    string 'Ni'
+
+variable mass_bottom equal 58.6934
+variable mass_top    equal 58.6934
+
+# ----- Structure settings -----
+units           real
+atom_style      charge
+dimension       3
+boundary        p p s
+read_data       data.in
+replicate       4 4 1
+
+# ----- Potential settings (ReaxFF)-----
+pair_style reax/c lmp_control
+pair_coeff * * ../../potentials/ffield.reax.032.CHONSSiPtZrNiCuCoHeArKrXe ${bottom} ${top}
+
+## other reaxff potential
+#pair_style reax/c lmp_control
+#pair_coeff * * ../../potentials/ffield.reax.030.CHONSSiPtZrNiCuCoYBa_rm_2nd_Zr ${bottom} ${top}
+
+mass 1 ${mass_bottom} # Ni ${bottom}
+mass 2 ${mass_top}    # Ni ${top}
+# -------------------------------------------------------------------
+neighbor        2.0 bin
+neigh_modify    every 5 delay 0 check no
+
+#set type 1 type/fraction 2 1.0 545096
+
+fix  f1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+#fix  f2 all box/relax iso 0.0
+
+compute eng all pe/atom
+compute eatoms all reduce sum c_eng
+
+dump d1 all cfg 1 cfg/run.*.cfg mass type xs ys zs id type
+dump_modify d1 element ${bottom} ${top}
+
+thermo_style custom step pe lx ly lz press pxx pyy pzz c_eatoms
+min_style cg
+minimize 1e-25 1e-25 5000 10000
+
+variable natoms equal "count(all)"
+variable teng equal "c_eatoms"
+variable length equal "lx"
+variable ecoh equal "v_teng/v_natoms"
+print "cohesive energy = ${ecoh} eV/atom"
+variable Ec equal (v_teng/v_natoms)*4186.798188/1000
+print "cohesive energy = ${Ec} (KJ/mole)/atom"
+variable EceV equal (v_teng/v_natoms)*0.043361254529175
+print "cohesive energy = ${EceV} eV/atom"

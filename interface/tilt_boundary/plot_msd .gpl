@@ -1,0 +1,16 @@
+#!/usr/bin/gnuplot
+
+set terminal win font "Arial,12"
+#set xlabel "Time / ps"
+#set xtics 0.1
+#set mxtics 5
+set xlabel "Time / ps"
+set ylabel "r^2 / Angstrom^2"
+set mytics 5
+plot "out_all_msd.txt" u ($1*1.0/1000):2 w l t "Total", "out_Co_msd.txt" u ($1*1.0/1000):2 w l t "Co", "out_Ni_msd.txt" u ($1*1.0/1000):2 w l t "Ni", "out_Cr_msd.txt" u ($1*1.0/1000):2 w l t "Cr"
+
+# pause -1
+
+#set terminal postscript color enhanced lw 2
+#set out "msd.ps"
+#replot
