@@ -1,0 +1,14 @@
+LAMMPS commands for using charge-implicit ReaxFF with tabularized correction potential
+
+pair_style hybrid/overlay reaxff NULL checkqeq no table linear 10000
+pair_coeff * * reaxff jz1c03867_si_001.txt C H O
+pair_coeff 1 1 table jz1c03867_si_002.txt ireax_CHO_CC
+pair_coeff 1 2 table jz1c03867_si_002.txt ireax_CHO_CH
+pair_coeff 1 3 table jz1c03867_si_002.txt ireax_CHO_CO
+pair_coeff 2 2 table jz1c03867_si_002.txt ireax_CHO_HH
+pair_coeff 2 3 table jz1c03867_si_002.txt ireax_CHO_HO
+pair_coeff 3 3 table jz1c03867_si_002.txt ireax_CHO_OO
+
+  There are 3 atom types in this example: 1 - carbon, 2 - hydrogen, 3 - oxygen. ReaxFF is splined 
+with the correction potential tabularized in file Ågjz1c03867_si_002.txtÅh which is a part of the 
+supporting information. Charge equilibration check is disabled (Ågcheckqeq noÅh).
