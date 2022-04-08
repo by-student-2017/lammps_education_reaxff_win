@@ -43,7 +43,7 @@ Reactive MD-force field: TiO2-surface defects Stijn Huygh
  alfa;gammavdW;valency;Eunder;Eover;chiEEM;etaEEM;n.u. 
  cov r3;Elp;Heat inc.;n.u.;n.u.;n.u.;n.u. 
  ov/un;val1;n.u.;val3,vval4 
-C 1.3817 4.0000 12.0000 1.8903 0.1838 0.9000 1.1341 4.0000 
+ C 1.3817 4.0000 12.0000 1.8903 0.1838 0.9000 1.1341 4.0000 
  9.7559 2.1346 4.0000 34.9350 79.5548 5.9666 7.0000 0.0000 
  1.2114 0.0000 202.2908 8.9539 34.9289 13.5366 0.8563 0.0000 
  -2.8983 2.5000 1.0564 4.0000 2.9663 0.0000 0.0000 0.0000 
