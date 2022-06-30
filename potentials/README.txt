@@ -643,6 +643,12 @@ CHBN
 S. J. Pai et al.,
 Phys. Chem. Chem. Phys., 2016,18, 1818-1827.
 https://doi.org/10.1039/C5CP05486A
+
+2016X11
+CHONSSi
+David Furman et al.,
+Cite this: J. Phys. Chem. C 2016, 120, 9, 4744-4752.
+https://doi.org/10.1021/acs.jpcc.5b10812
 -------------------------------------------------------------------
 2017
 
@@ -694,6 +700,12 @@ https://doi.org/10.1111/jace.15292
 CHONSMgPNaTiClF
 S. Huygh
 https://medialibrary.uantwerpen.be/oldcontent/container2642/files/PhD-theses/Huygh.pdf
+
+2017X9
+BNNi
+Song Liu et al.,
+Cite this: ACS Nano 2017, 11, 4, 3585-3596.
+https://doi.org/10.1021/acsnano.6b06736
 
 No.52
 CHO
@@ -862,6 +874,16 @@ OSMoAl
 Cite this: J. Phys. Chem. C 2018, 122, 13, 7494-7503
 Publication Date:March 9, 2018
 https://doi.org/10.1021/acs.jpcc.7b12035
+
+2018X8A
+CHONS
+F. Rahmani
+https://egrove.olemiss.edu/etd/403/
+
+2018X8B
+CHONSSi
+F. Rahmani
+https://egrove.olemiss.edu/etd/403/
 
 T. Du et al.,
 J. Chem. Phys. 148, 234504 (2018)
@@ -1637,6 +1659,9 @@ Bipeng Wang et al.,
 Cite this: J. Phys. Chem. Lett. 2021, 12, 26, 6070-6077.
 https://doi.org/10.1021/acs.jpclett.1c01645
 
+learning
+https://doi.org/10.1021/acs.jctc.1c00523
+
 python
 Xiaoya Chang et al.,
 Cite this: J. Phys. Chem. C 2021, 125, 51, 28100-28107.
@@ -1661,4 +1686,7 @@ extended PCFF (2017C1)
 Jacob R. Gissinger et al.,
 Cite this: ACS Appl. Mater. Interfaces 2018, 10, 1, 1017-1027.
 https://doi.org/10.1021/acsami.7b09739
+
+PQEq
+https://doi.org/10.1063/1.4978891
 -------------------------------------------------------------------
