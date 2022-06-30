@@ -462,6 +462,12 @@ https://doi.org/10.1021/jp210135j
 CHONTi
 Vol. 109, Iss. 21 - 21 November 2012
 https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.109.213201
+
+2012X4
+CHONSMgFNaTiClF
+Susanna Monti et al.,
+Cite this: J. Phys. Chem. C 2012, 116, 8, 5141-5150.
+https://doi.org/10.1021/jp2121593
 -------------------------------------------------------------------
 2013
 
@@ -575,6 +581,11 @@ W. Zhang et al.,
 Cite this: J. Phys. Chem. C 2015, 119, 49, 27727-27736
 Publication Date:November 13, 2015
 https://doi.org/10.1021/acs.jpcc.5b07271
+
+2015X5
+Hyun Jung et al.,
+Cite this: J. Phys. Chem. C 2015, 119, 7, 3447^3455.
+https://doi.org/10.1021/jp5094756
 -------------------------------------------------------------------
 2016
 
@@ -649,6 +660,18 @@ CHONSSi
 David Furman et al.,
 Cite this: J. Phys. Chem. C 2016, 120, 9, 4744-4752.
 https://doi.org/10.1021/acs.jpcc.5b10812
+
+2016X12
+CHONBS
+Vitaly V. Chaban et al.,
+Cite this: J. Am. Chem. Soc. 2016, 138, 49, 15927-15934.
+https://doi.org/10.1021/jacs.6b08082
+
+2016X13
+CHONSSi
+David Furman et al.,
+Cite this: J. Phys. Chem. C 2016, 120, 9, 4744-4752.
+https://doi.org/10.1021/acs.jpcc.5b10812
 -------------------------------------------------------------------
 2017
 
@@ -706,6 +729,12 @@ BNNi
 Song Liu et al.,
 Cite this: ACS Nano 2017, 11, 4, 3585-3596.
 https://doi.org/10.1021/acsnano.6b06736
+
+2017X10
+CHONSSi
+Farzin Rahmani et al.,
+Cite this: ACS Appl. Mater. Interfaces 2017, 9, 14, 12802-12811.
+https://doi.org/10.1021/acsami.7b02032
 
 No.52
 CHO
@@ -1689,4 +1718,8 @@ https://doi.org/10.1021/acsami.7b09739
 
 PQEq
 https://doi.org/10.1063/1.4978891
+
+C++ code
+https://doi.org/10.1021/acs.iecr.7b01714
+https://pubs.acs.org/doi/suppl/10.1021/acs.iecr.7b01714/suppl_file/ie7b01714_si_001.pdf
 -------------------------------------------------------------------

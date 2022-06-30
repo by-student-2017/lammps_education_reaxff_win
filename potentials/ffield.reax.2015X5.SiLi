@@ -1,0 +1,67 @@
+Reactive MD-force field: Li/Si force field by Dr. Sang Soo Han in KIST, Aug. 2014
+39 ! Number of general parameters
+ 50.0000 !Overcoordination parameter
+ 9.5469 !Overcoordination parameter
+ 26.5405 !Valency angle conjugation parameter
+ 1.7224 !Triple bond stabilisation parameter
+ 6.8702 !Triple bond stabilisation parameter
+ 60.4850 !C2-correction
+ 1.0588 !Undercoordination parameter
+ 4.6000 !Triple bond stabilisation parameter
+ 12.1176 !Undercoordination parameter
+ 13.3056 !Undercoordination parameter
+ -70.5044 !Triple bond stabilization energy
+ 0.0000 !Lower Taper-radius
+ 10.0000 !Upper Taper-radius
+ 2.8793 !Not used
+ 33.8667 !Valency undercoordination
+ 6.0891 !Valency angle/lone pair parameter
+ 1.0563 !Valency angle
+ 2.0384 !Valency angle parameter
+ 6.1431 !Not used
+ 6.9290 !Double bond/angle parameter
+ 0.3989 !Double bond/angle parameter: overcoord
+ 3.9954 !Double bond/angle parameter: overcoord
+ -2.4837 !Not used
+ 5.7796 !Torsion/BO parameter
+ 10.0000 !Torsion overcoordination
+ 1.9487 !Torsion overcoordination
+ -1.2327 !Conjugation 0 (not used)
+ 2.1645 !Conjugation
+ 1.5591 !vdWaals shielding
+ 0.0010 !Cutoff for bond order (*100)
+ 2.1365 !Valency angle conjugation parameter
+ 0.6991 !Overcoordination parameter
+ 50.0000 !Overcoordination parameter
+ 1.8512 !Valency/lone pair parameter
+ 0.5000 !Not used
+ 20.0000 !Not used
+ 5.0000 !Molecular energy (not used)
+ 0.0000 !Molecular energy (not used)
+ 2.6962 !Valency angle conjugation parameter
+ 2 ! Nr of atoms; cov.r; valency;a.m;Rvdw;Evdw;gammaEEM;cov.r2;#
+ alfa;gammavdW;valency;Eunder;Eover;chiEEM;etaEEM;n.u.
+ cov r3;Elp;Heat inc.;n.u.;n.u.;n.u.;n.u.
+ ov/un;val1;n.u.;val3,vval4
+Si 2.2902 4.0000 28.0600 1.8354 0.2110 0.5947 1.2962 4.0000
+ 11.1336 3.1831 4.0000 21.7115 139.9309 4.2033 5.5558 0.0000
+ -1.0000 0.0000 104.0000 9.0751 23.8188 0.8381 0.8563 0.0000
+ -4.1684 2.0754 1.0338 4.0000 2.5791 1.4000 0.2000 13.0000
+Li 1.9205 1.0000 6.9410 1.8896 0.0905 0.4668 -0.1000 1.0000
+ 9.9084 1.0896 1.0000 0.0000 0.0000 -6.4188 15.0000 0.0000
+ -1.0000 0.0000 37.5000 5.4409 6.9107 0.1973 0.8563 0.0000
+ -25.0000 2.2989 1.0338 1.0000 2.8103 1.3000 0.2000 13.0000
+ 3 ! Nr of bonds; Edis1;LPpen;n.u.;pbe1;pbo5;13corr;pbo6
+ pbe2;pbo3;pbo4;n.u.;pbo1;pbo2;ovcorr
+ 1 1 61.1127 85.8146 30.0000 -0.8197 -0.3000 1.0000 16.0000 0.1386
+ 0.1307 -0.8055 7.1248 1.0000 -0.0674 8.2374 0.0000 0.0000
+ 1 2 23.1963 0.0000 0.0000 1.0000 0.3000 0.0000 26.0000 0.5185
+ 0.0812 0.0000 12.0000 1.0000 -0.1142 6.0525 0.0000 0.0000
+ 2 2 55.1128 0.0000 0.0000 0.1708 0.3000 0.0000 26.0000 0.5445
+ 1.4206 0.0000 12.0000 1.0000 -0.1361 4.1293 0.0000 0.0000
+ 1 ! Nr of off-diagonal terms; Ediss;Ro;gamma;rsigma;rpi;rpi2
+ 1 2 0.1271 2.0090 11.5659 1.7156 1.0000 1.0000
+ 1 ! Nr of angles;at1;at2;at3;Thetao,o;ka;kb;pv1;pv2;val(bo)
+ 3 3 3 66.2921 19.5195 0.9624 0.0000 0.1000 0.0000 1.2636
+ 0 ! Nr of torsions;at1;at2;at3;at4;;V1;V2;V3;V2(BO);vconj;n.u;n
+ 0 ! Nr of hydrogen bonds;at1;at2;at3;Rhb;Dehb;vhb1
