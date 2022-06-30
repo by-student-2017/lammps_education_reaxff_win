@@ -1044,6 +1044,24 @@ A. Vashisth et al.,
 Nanoscale, 2019,11, 7447-7456
 https://doi.org/10.1039/C9NR00958B
 
+2019X12
+CHONSMgPNaCuCl
+Aya K. Buckley et al.,
+Cite this: J. Am. Chem. Soc. 2019, 141, 18, 7355-7364.
+https://doi.org/10.1021/jacs.8b13655
+
+2019X13
+HGeSCu
+Nicolas Onofrio et al.,
+Cite this: J. Phys. Chem. C 2019, 123, 14, 9486-9495.
+https://doi.org/10.1021/acs.jpcc.8b12020
+
+2019X14
+CHO
+Qian Mao et al.,
+Cite this: J. Phys. Chem. A 2018, 122, 44, 8701-8708.
+https://doi.org/10.1021/acs.jpca.8b07102
+
 No.81
 CHONSSi
 C. Ren et al.,
@@ -1127,6 +1145,24 @@ CHOSiNaAl
 H. Liu et al.,
 Journal of the American Ceramic Society 103 (2020) 3575-3589.
 https://doi.org/10.1111/jace.17036
+
+2020X6
+CHOFeP
+ames P. Ewen et al.,
+Cite this: J. Phys. Chem. C 2020, 124, 18, 9852-9865,
+https://doi.org/10.1021/acs.jpcc.9b11787
+
+2020X7
+CHOD
+Peyman Saidi et al.,
+Cite this: J. Phys. Chem. C 2020, 124, 49, 26864-26873.
+https://doi.org/10.1021/acs.jpcc.0c08817
+
+2020X8
+CHONAl
+C. Ulises Gonzalez-Valle et al.,
+Cite this: J. Phys. Chem. C 2020, 124, 21, 11558-11563.
+https://doi.org/10.1021/acs.jpcc.0c02847
 
 No.88
 AgAvEl
@@ -1341,6 +1377,27 @@ V. Gomzi et al.,
 J. Phys. Chem. A 2021, 125, 50, 10649-10656
 Publication Date:December 9, 2021
 https://doi.org/10.1021/acs.jpca.1c06939
+
+2021X18
+CaOHC
+Jagjeevan S. Bhamra et al.,
+Cite this: J. Phys. Chem. C 2021, 125, 33, 18395-18408.
+https://doi.org/10.1021/acs.jpcc.1c02857
+
+2021X19
+CHONSMgPNaCuClZn
+Phuoc H. H. Duong et al.,
+Cite this: ACS Appl. Mater. Interfaces 2021, 13, 35, 42164-42175,
+https://doi.org/10.1021/acsami.1c10866
+
+2021X20
+CHOCaSiZr
+S. Arash Sheikholeslam et al.,
+Cite this: ACS Omega 2021, 6, 43, 28561-28568,
+https://doi.org/10.1021/acsomega.1c02533
+
+2021X21
+
 -------------------------------------------------------------------
 2022
 
@@ -1392,6 +1449,12 @@ CSiB
 Y. Shen et al.,
 Journal of the American Ceramic Society 105 (2022) 2978-2989.
 https://doi.org/10.1111/jace.18028
+
+2022X8
+CHONSSiNaP
+Yihan Huang et al.,
+Cite this: J. Phys. Chem. C 2022, 126, 22, 9284-9292.
+https://doi.org/10.1021/acs.jpcc.2c01841
 -------------------------------------------------------------------
 Other information
 
@@ -1507,6 +1570,14 @@ lammps input file
 https://tesionline.univaq.it/bitstream/20.500.12319/2401/1/MSc_Thesis_CHOPRA.pdf
 lammps input
 
+https://doi.org/10.1021/acsami.1c07545
+https://pubs.acs.org/doi/suppl/10.1021/acsami.1c07545/suppl_file/am1c07545_si_001.pdf
+LAMMPS input
+
+https://doi.org/10.1021/acs.jpcc.8b06409
+https://pubs.acs.org/doi/suppl/10.1021/acs.jpcc.8b06409/suppl_file/jp8b06409_si_001.pdf
+lammps input and data
+
 https://d-nb.info/1179909305/34
 YSZ lammps input
 
@@ -1524,10 +1595,15 @@ First published: 24 September 2018
 https://doi.org/10.1029/2018JB016120
 zip file
 
-CHARM script
+CHARMM script
 Cite this: J. Phys. Chem. A 2018, 122, 13, 3337-3345
 Publication Date:March 5, 2018
 https://doi.org/10.1021/acs.jpca.7b12233
+
+CHARMM input files for all molecules studied
+Joshua P. Allers et al.,
+Cite this: J. Phys. Chem. B 2022, 126, 24, 4555-4564.
+https://doi.org/10.1021/acs.jpcb.2c01723
 
 GLUP
 CeOH
@@ -1540,4 +1616,49 @@ https://github.com/cagrikymk/JAX-ReaxFF
 
 lammps USER information
 https://www.lammps.org/external.html
+
+learning
+Chidozie Onwudinanti et al.,
+Cite this: J. Phys. Chem. C 2022, 126, 13, 5950-5959.
+https://doi.org/10.1021/acs.jpcc.1c08776
+
+learning(2022Y1)
+I. Ponomarev et al.,
+Cite this: J. Phys. Chem. C 2022, 126, 22, 9475-9481.
+https://doi.org/10.1021/acs.jpcc.2c01075
+
+learning
+Kiran Sasikumar et al.,
+Cite this: J. Phys. Chem. A 2022, 126, 21, 3358-3372.
+https://doi.org/10.1021/acs.jpca.2c00901
+
+learning
+Bipeng Wang et al.,
+Cite this: J. Phys. Chem. Lett. 2021, 12, 26, 6070-6077.
+https://doi.org/10.1021/acs.jpclett.1c01645
+
+python
+Xiaoya Chang et al.,
+Cite this: J. Phys. Chem. C 2021, 125, 51, 28100-28107.
+https://doi.org/10.1021/acs.jpcc.1c08247
+
+VASP
+Hao Yang et al.,
+Cite this: ACS Appl. Mater. Interfaces 2021, 13, 27, 31554-31560.
+https://doi.org/10.1021/acsami.1c02909
+
+Clayff
+Randall T. Cygan et al.,
+Cite this: J. Phys. Chem. C 2021, 125, 32, 17573-17589.
+https://doi.org/10.1021/acs.jpcc.1c04600
+
+2021Z1
+Puhan Zhao et al.,
+Cite this: J. Phys. Chem. C 2021, 125, 41, 22747-22765.
+https://doi.org/10.1021/acs.jpcc.1c05139
+
+extended PCFF (2017C1)
+Jacob R. Gissinger et al.,
+Cite this: ACS Appl. Mater. Interfaces 2018, 10, 1, 1017-1027.
+https://doi.org/10.1021/acsami.7b09739
 -------------------------------------------------------------------

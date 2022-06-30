@@ -1,0 +1,26 @@
+units real
+dimension 3
+boundary p p p
+atom_style charge
+
+read_data MoSO.input
+
+replicate 1 1 1 
+mass 1 50.942
+mass 2 32.065
+
+# mass 3  1.008
+
+
+pair_style reax/c NULL safezone 16.0 mincap 2400
+pair_coeff * * ffield.reax Mo S
+
+fix 1 all qeq/reax 1 0.0 10.0 1.0e-8 reax/c
+
+thermo 10
+thermo_style custom step pe temp lx 
+
+dump restart_dump all custom 10 MoSO.lmp id type q x y z
+dump_modify restart_dump sort id
+#fix 2 all box/relax x 0.0 y 0.0 z 0.0 xy 0.0 xz 0.0 yz 0.0 vmax 0.0001
+minimize 1.0e-12 1.0e-12 10000 10000

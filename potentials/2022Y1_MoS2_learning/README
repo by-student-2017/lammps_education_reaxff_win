@@ -1,0 +1,21 @@
+ffield_start - the developed Mo/S force field; entries for other elements are in development stage, better not to use them for purposes other than development
+
+*.input files - structures that were used in training
+
+MC_opt_parallel.py - a python script that runs Monte-Carlo optimization. Variables "lammps" (path to lammps) and "number_parallel" (number of cores to use) need to be set up according to the setup you are using. The script will write the file named "output" with the outcomes of the run. 
+Structures can be optimized with optimizing the unit cell (STRUCTURES_ISIF3) and with fixed unit cell (STRUCTURES_ISIF2, I normally use it for molecular species, but other uses like EOS calculations are also possible); or one can only calculate forces (STRUCTURES_FORCES) without doing optimization. 
+
+trainset - the definition of the training set; it has FORCE, ENERGY, CELL, BONDS, ANGLES and CHARGES sections
+FORCE section - for force comparisons between the reference method and ReaxFF; I label the structures for this sections as "STRUCTURE_forces"; every structure also requires a "STRUCTURE_forces_DFT" file containing DFT-computed forces in eV/angstrom; those structures are to go to the "STRUCTURES_FORCES" list in the "MC_opt_parallel.py" script. Format: WEIGHT - STRUCTURE.
+ENERGY section - for comparing energy differences between the reference method and ReaxFF. Format: WEIGHT - STRUCTURE1 - FRACTION1 - STRUCTURE2 - FRACTION2 - ... - ENERGY DIFFERENCE (kcal/mol). 
+CELL section - for comparing cell parameters between the reference method and ReaxFF. Format: WEIGHT - STRUCTURE - PARAMETER LABEL (a,b,c) - REFERENCE VALUE (Angstrom). 
+BONDS section - for comparing bond lengths (and, overall, distances) between the reference method and ReaxFF. Format: WEIGHT - STRUCTURE - ATOM1 - ATOM2 - REFERENCE VALUE (Angstrom).
+ANGLES section - for comparing bond lengths (and, overall, distances) between the reference method and ReaxFF. Format: WEIGHT - STRUCTURE - ATOM1 - ATOM2 - REFERENCE VALUE (Angstrom).
+
+params_all - a list of parameters that can be changed. Format: line - number of the parameter in line (starting from 0, non-parameter entries are to be considered as well; e.g., in line "1 1 1 70.0000 ..." the "70.0000" parameter will have number 3) - maximum change of the parameter (in fraction of its value, "0.05" would mean a maximum of 5% change) per step - minimum possible value of the parameter - maximum possible value of the parameter
+
+error_calc.py - python script that computes the error of the training set
+
+in.MoS_cryst_opt.lmp, in.MoS_mol_opt.lmp, in.MoS_forces.lmp - LAMMPS input scripts that are doing (respectively) optimization with optimizing the unit cell, optimization with fixed unit cell and force calculation. 
+
+To start the MC run after all appropriate adjustments: ./MC_opt_parallel.py >& trash &

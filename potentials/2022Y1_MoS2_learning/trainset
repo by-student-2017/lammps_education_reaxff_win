@@ -1,0 +1,48 @@
+FORCE
+0.0001   MoS2_MQ_1_forces
+0.0001   MoS2_MQ_2_forces
+0.0001   MoS2_MQ_3_forces
+0.0001   MoS2_MQ_4_forces
+0.0001   MoS2_MQ_5_forces
+0.0001   MoS2_MQ_6_forces
+0.0001   MoS2_MQ_7_forces
+0.0001   MoS2_MQ_8_forces
+0.0001   MoS2_MQ_9_forces
+0.0001   MoS2_MQ_10_forces
+0.0001   MoS2_MQ_11_forces
+0.0001   MoS2_MQ_12_forces
+0.0001   MoS2_MQ_13_forces
+0.0001   MoS2_MQ_14_forces
+ENERGY
+2000.0  MoS2           -1/2     Mo_bcc   1/2    S8_rh 2/128   62.25
+2000.0  MoS_NaCl       -1/4     Mo_bcc   1/2    S8_rh 1/128   -0.59
+2000.0  Mo3S4          -1/18    Mo_bcc   1/2    S8_rh 4/384   37.51
+2000.0  Mo2S3          -1/4     Mo_bcc   1/2    S8_rh 3/256   44.87
+500.0   MoS2_MQ_1      -1/35    MoS2     1/2                 -38.53
+500.0   MoS2_MQ_2      -1/35    MoS2     1/2                 -38.74
+500.0   MoS2_MQ_3      -1/35    MoS2     1/2                 -38.36
+500.0   MoS2_MQ_4      -1/35    MoS2     1/2                 -38.24
+500.0   MoS2_MQ_5      -1/35    MoS2     1/2                 -38.92
+500.0   MoS2_MQ_6      -1/35    MoS2     1/2                 -38.34
+500.0   MoS2_MQ_1_new  -1/35    MoS2     1/2                 -34.11
+500.0   MoS2_MQ_2_new  -1/35    MoS2     1/2                 -28.97
+500.0   MoS2_MQ_3_new  -1/35    MoS2     1/2                 -32.65
+500.0   MoS2_MQ_4_new  -1/35    MoS2     1/2                 -34.26
+500.0   MoS2_MQ_5_new  -1/35    MoS2     1/2                 -29.25
+500.0   MoS2_MQ_6_new  -1/35    MoS2     1/2                 -32.26
+8000.0  MoS2_1T        -1/1     MoS2     1/2                 -17.41
+500.0   MoS2_MQ_7_new  -1/35    MoS2     1/2                 -25.79
+500.0   MoS2_MQ_8_new  -1/35    MoS2     1/2                 -31.73
+500.0   MoS2_MQ_9_new  -1/35    MoS2     1/2                 -29.92
+500.0   MoS2_MQ_10_new -1/35    MoS2     1/2                 -28.48
+500.0   MoS2_MQ_11_new -1/35    MoS2     1/2                 -28.48
+500.0   MoS2_MQ_12_new -1/35    MoS2     1/2                 -28.93
+500.0   MoS2_MQ_13_new -1/35    MoS2     1/2                 -30.46
+CELL
+10000.0 MoS2           a                                     3.190
+500.0   MoS2           c                                    12.407
+10000.0 MoS2_1T        a                                     3.231
+500.0   MoS2_1T        c                                     6.068
+BONDS
+ANGLES
+CHARGES

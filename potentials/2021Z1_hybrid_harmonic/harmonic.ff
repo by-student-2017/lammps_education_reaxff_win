@@ -1,0 +1,52 @@
+bond_style hybrid harmonic table spline 991
+angle_style harmonic
+dihedral_style harmonic
+improper_style harmonic
+pair_style buck/coul/long 11.0 11.0
+pair_coeff 1 1 107023.9 0.27469 554.01
+pair_coeff 1 2 107023.9 0.27469 554.01
+pair_coeff 1 3 37103.2 0.28873 484.30
+pair_coeff 1 4 62222.2 0.28969 679.53
+pair_coeff 1 5 41281.1 0.27453 363.93
+pair_coeff 1 6 16829.5 0.24890 67.52
+pair_coeff 2 2 107023.9 0.27469 554.01
+pair_coeff 2 3 37103.2 0.28873 484.30
+pair_coeff 2 4 62222.2 0.28969 679.53
+pair_coeff 2 5 41281.1 0.27453 363.93
+pair_coeff 2 6 16829.5 0.24890 67.52
+pair_coeff 3 3 13783.9 0.30000 423.36
+pair_coeff 3 4 23210.0 0.30080 594.02
+pair_coeff 3 5 14298.9 0.28861 318.14
+pair_coeff 3 6 4827.6 0.27001 59.03
+pair_coeff 4 4 39091.8 0.30159 833.48
+pair_coeff 4 5 23978.2 0.28957 446.39
+pair_coeff 4 6 8017.4 0.27135 82.82
+pair_coeff 5 5 15923.1 0.27438 239.07
+pair_coeff 5 6 6509.2 0.24864 44.36
+pair_coeff 6 6 7584.2 0.18923 8.23
+
+bond_coeff 1 harmonic 250.00 1.440
+bond_coeff 2 harmonic 150.00 1.427
+bond_coeff 3 harmonic 336.00 1.322
+bond_coeff 4 harmonic 439.00 1.230
+bond_coeff 5 harmonic 425.00 1.010
+bond_coeff 6 table jp1c05139_si_002.txt
+
+angle_coeff 1 32.0 118.4
+angle_coeff 2 32.0 121.6
+angle_coeff 3 30.0 121.7
+angle_coeff 4 30.0 119.2
+angle_coeff 5 70.0 116.8
+angle_coeff 6 32.0 112.0
+angle_coeff 7 47.5 117.3
+angle_coeff 8 32.0 119.0
+
+dihedral_coeff 1 2.675 -1 2 
+dihedral_coeff 2 10.0 -1 2
+dihedral_coeff 3 10.0 -1 2
+dihedral_coeff 4 0.80 -1 2
+dihedral_coeff 5 4.44 -1 2
+
+improper_coeff 1 18.25 0.0
+improper_coeff 2 44.65 0.0
+improper_coeff 3 1.05 0.0
