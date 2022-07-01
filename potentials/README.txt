@@ -441,6 +441,12 @@ S. Agrawalla and A. C. T. van Duin
 Cite this: J. Phys. Chem. A 2011, 115, 6, 960-972
 Publication Date:January 25, 2011
 https://doi.org/10.1021/jp108325e
+
+2011X4
+CHONSSi
+U. Khalilov et al.,
+Cite this: J. Phys. Chem. C 2011, 115, 50, 24839-24848.
+https://doi.org/10.1021/jp2082566
 -------------------------------------------------------------------
 2012
 
@@ -465,6 +471,18 @@ https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.109.213201
 
 2012X4
 CHONSMgFNaTiClF
+Susanna Monti et al.,
+Cite this: J. Phys. Chem. C 2012, 116, 8, 5141-5150.
+https://doi.org/10.1021/jp2121593
+
+2012X5
+CHONS
+Quan-De Wang et al.,
+Cite this: J. Phys. Chem. A 2012, 116, 15, 3794-3801.
+https://doi.org/10.1021/jp300059a
+
+2012X6
+CHONSMgPNaTiClF
 Susanna Monti et al.,
 Cite this: J. Phys. Chem. C 2012, 116, 8, 5141-5150.
 https://doi.org/10.1021/jp2121593
@@ -523,6 +541,18 @@ https://doi.org/10.1021/jp403511q
 BNNi
 S. Liu
 https://krex.k-state.edu/dspace/bitstream/handle/2097/39116/SongLiu2018.pdf?sequence=5
+
+2013X9
+CHONSSi
+Qi An et al.,
+Cite this: J. Phys. Chem. C 2013, 117, 50, 26551-26561.
+https://doi.org/10.1021/jp404753v
+
+2013X10
+OHNb
+Alexey L. Kaledin et al.,
+Cite this: J. Phys. Chem. A 2013, 117, 32, 6967-6974.
+https://doi.org/10.1021/jp312033p
 -------------------------------------------------------------------
 2014
 
@@ -555,6 +585,18 @@ CHONSSi
 Tingting Zhou et al.,
 Phys. Chem. Chem. Phys., 2014,16, 23779-23791 
 https://doi.org/10.1039/C4CP03781B
+
+2014X6
+CHONSSi
+G. Katz et al.,
+Cite this: J. Phys. Chem. Lett. 2014, 5, 5, 772-776.
+https://doi.org/10.1021/jz402801m
+
+2014X7
+CHON
+David Furman et al.,
+Cite this: J. Am. Chem. Soc. 2014, 136, 11, 4192-4200.
+https://doi.org/10.1021/ja410020f
 -------------------------------------------------------------------
 2015
 
@@ -583,9 +625,22 @@ Publication Date:November 13, 2015
 https://doi.org/10.1021/acs.jpcc.5b07271
 
 2015X5
+SiLi
 Hyun Jung et al.,
-Cite this: J. Phys. Chem. C 2015, 119, 7, 3447^3455.
+Cite this: J. Phys. Chem. C 2015, 119, 7, 3447-3455.
 https://doi.org/10.1021/jp5094756
+
+2015X6
+CCo
+Xue-Qing Zhang et al.,
+Cite this: ACS Catal. 2015, 5, 2, 596-601.
+https://doi.org/10.1021/cs501484c
+
+2015X7
+CHOZn
+Kiettipong Banlusan et al.,
+Cite this: J. Phys. Chem. C 2015, 119, 46, 25845-25852.
+https://doi.org/10.1021/acs.jpcc.5b05446
 -------------------------------------------------------------------
 2016
 
@@ -735,6 +790,30 @@ CHONSSi
 Farzin Rahmani et al.,
 Cite this: ACS Appl. Mater. Interfaces 2017, 9, 14, 12802-12811.
 https://doi.org/10.1021/acsami.7b02032
+
+2017X11
+CHONSSi
+Farzin Rahmani et al.,
+Cite this: ACS Appl. Mater. Interfaces 2017, 9, 14, 12802-12811.
+https://doi.org/10.1021/acsami.7b02032
+
+2017X12
+ClAu
+Tao ChengOrcid et al.,
+Cite this: J. Phys. Chem. Lett. 2017, 8, 14, 3317-3320.
+https://doi.org/10.1021/acs.jpclett.7b01335
+
+2017X13
+CHONSSiCaCsKSrNaMgAlCu
+Nicolas Arancibia-Miranda et al.,
+Cite this: J. Phys. Chem. C 2017, 121, 23, 12658-12668.
+https://doi.org/10.1021/acs.jpcc.6b12155
+
+2017X14
+CCu
+Tao ChengOrcid et al.,
+Cite this: J. Am. Chem. Soc. 2017, 139, 34, 11642-11645.
+https://doi.org/10.1021/jacs.7b03300
 
 No.52
 CHO
@@ -1722,4 +1801,7 @@ https://doi.org/10.1063/1.4978891
 C++ code
 https://doi.org/10.1021/acs.iecr.7b01714
 https://pubs.acs.org/doi/suppl/10.1021/acs.iecr.7b01714/suppl_file/ie7b01714_si_001.pdf
+
+code
+https://doi.org/10.1021/acs.energyfuels.6b01854
 -------------------------------------------------------------------
