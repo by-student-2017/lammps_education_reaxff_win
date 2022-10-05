@@ -641,6 +641,13 @@ CHOZn
 Kiettipong Banlusan et al.,
 Cite this: J. Phys. Chem. C 2015, 119, 46, 25845-25852.
 https://doi.org/10.1021/acs.jpcc.5b05446
+
+2015X8
+CHONAl (Alumina/Epoxy(N-Al))
+F. O. Valega Mackenzie et al.,
+Cite this: J. Phys. Chem. C 2015, 119, 9, 4796-4804
+Publication Date:February 12, 2015
+https://doi.org/10.1021/jp5105328
 -------------------------------------------------------------------
 2016
 
@@ -727,6 +734,13 @@ CHONSSi
 David Furman et al.,
 Cite this: J. Phys. Chem. C 2016, 120, 9, 4744-4752.
 https://doi.org/10.1021/acs.jpcc.5b10812
+
+2016X14
+CHONSFClN
+M. A. Wood et al.,
+Cite this: J. Phys. Chem. C 2016, 120, 1, 542-552
+Publication Date:December 8, 2015
+https://doi.org/10.1021/acs.jpcc.5b09820
 -------------------------------------------------------------------
 2017
 
@@ -1585,6 +1599,39 @@ CHONSSiNaP
 Yihan Huang et al.,
 Cite this: J. Phys. Chem. C 2022, 126, 22, 9284-9292.
 https://doi.org/10.1021/acs.jpcc.2c01841
+
+2022X9
+Combustion C/H/O/ force field + atom type N (May11, 2018) +Ar2016
+P. Zhang et al.,
+Cite this: Energy Fuels 2022, XXXX, XXX, XXX-XXX
+https://doi.org/10.1021/acs.energyfuels.2c02206
+
+2022X10
+CHONSFPtClNi
+H. Hafiz et al.,
+Cite this: J. Phys. Chem. C 2022, 126, 28, 11447-11456
+Publication Date:July 6, 2022
+https://doi.org/10.1021/acs.jpcc.2c01107
+
+2022X11
+OMg
+F. Fiesinger et al.,
+10.26434/chemrxiv-2022-3chphs
+
+2022X12
+LiNaMg
+D. Gaissmaier et al.,
+10.26434/chemrxiv-2022-lrsjd-v2
+
+2022X13
+CHONaCaMg
+N. Dasgupta et al.,
+10.26434/chemrxiv-2021-v2rcx
+
+2022X14
+CHONSMgPNaTiClFAg
+C. Dulong et al.,
+10.26434/chemrxiv.12280289.v1
 -------------------------------------------------------------------
 Other information
 
@@ -1693,6 +1740,17 @@ Publication Date:September 30, 2015
 https://doi.org/10.1021/jacs.5b07073
 structure (Mo-V-Te-Nb-O Mixed Metal Oxide Catalysts)
 
+M. Pols et al.,
+ACS Appl. Mater. Interfaces 2022, 14, 36, 40841-40850
+Publication Date:August 30, 2022
+https://doi.org/10.1021/acsami.2c09239
+strcture
+
+E. Voyiatzis et al.,
+Cite this: J. Phys. Chem. B 2022, 126, 36, 7027-7036
+Publication Date:August 31, 2022
+https://doi.org/10.1021/acs.jpcb.2c03620
+
 A thermodynamic study of the hydrogen dissociation by the Small System Methodand the reactive force field ReaxFF
 https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2390753/12537_FULLTEXT.pdf?sequence=1&isAllowed=y
 lammps input file
@@ -1744,6 +1802,11 @@ https://doi.org/10.1021/acs.jpca.1c04078
 JAX-ReaxFF
 https://github.com/cagrikymk/JAX-ReaxFF
 
+https://github.com/keithgroup
+
+comb3
+https://pubs.acs.org/doi/full/10.1021/jp212083t
+
 lammps USER information
 https://www.lammps.org/external.html
 
@@ -1751,6 +1814,8 @@ learning
 Chidozie Onwudinanti et al.,
 Cite this: J. Phys. Chem. C 2022, 126, 13, 5950-5959.
 https://doi.org/10.1021/acs.jpcc.1c08776
+
+https://pubs.acs.org/doi/full/10.1021/jp212083t
 
 learning(2022Y1)
 I. Ponomarev et al.,
