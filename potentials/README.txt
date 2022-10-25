@@ -1540,8 +1540,11 @@ S. Arash Sheikholeslam et al.,
 Cite this: ACS Omega 2021, 6, 43, 28561-28568,
 https://doi.org/10.1021/acsomega.1c02533
 
-2021X21
-
+NTO_ReaxFFlg
+CHONSSi
+L. Du et al.,
+Molecules 2021, 26(16), 4808.
+https://doi.org/10.3390/molecules26164808
 -------------------------------------------------------------------
 2022
 
@@ -1758,6 +1761,9 @@ lammps input file
 https://tesionline.univaq.it/bitstream/20.500.12319/2401/1/MSc_Thesis_CHOPRA.pdf
 lammps input
 
+https://www.mdpi.com/1420-3049/27/18/5773
+lammps input
+
 https://doi.org/10.1021/acsami.1c07545
 https://pubs.acs.org/doi/suppl/10.1021/acsami.1c07545/suppl_file/am1c07545_si_001.pdf
 LAMMPS input
@@ -1771,6 +1777,9 @@ YSZ lammps input
 
 https://www.researchgate.net/profile/Pascal-Brault/publication/273339399_Molecular_Dynamics_simulations_of_magnetron_reactive_sputtering_and_deposition/links/54fee67e0cf2eaf210b4300f/Molecular-Dynamics-simulations-of-magnetron-reactive-sputtering-and-deposition.pdf
 potential data
+
+https://www.mdpi.com/1420-3049/21/2/236
+lammps dat
 
 J. P. Larentzos et al.,
 J. Chem. Theory Comput. 2015, 11, 2, 381-391
