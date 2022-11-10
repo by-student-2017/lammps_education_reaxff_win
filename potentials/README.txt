@@ -1206,6 +1206,18 @@ Qian Mao et al.,
 Cite this: J. Phys. Chem. A 2018, 122, 44, 8701-8708.
 https://doi.org/10.1021/acs.jpca.8b07102
 
+2019X15
+CHONSSiNaFP
+J. M. Rimsza et al., Front. Mater., 24 April 2019
+Sec. Ceramics and Glass
+https://doi.org/10.3389/fmats.2019.00079
+
+2019X16
+CHONSSiNaFPCl
+J. M. Rimsza et al., Front. Mater., 24 April 2019
+Sec. Ceramics and Glass
+https://doi.org/10.3389/fmats.2019.00079
+
 No.81
 CHONSSi
 C. Ren et al.,
@@ -1635,6 +1647,27 @@ N. Dasgupta et al.,
 CHONSMgPNaTiClFAg
 C. Dulong et al.,
 10.26434/chemrxiv.12280289.v1
+
+2022X15
+CHOSMoNiAuTi
+Q. Mao et al.,
+Front. Nanotechnol., 26 October 2022
+Sec. Nanomaterials
+https://doi.org/10.3389/fnano.2022.1034795
+
+2022X16
+CHONS
+M. Zheng et al.,
+Energy Fuels 2022, 36, 21, 13073-13083
+Publication Date:October 19, 2022
+https://doi.org/10.1021/acs.energyfuels.2c03162
+
+2022X17
+CHONSSiPtZrNiCuCoZrYBa
+C. Liu et al.,
+J. Phys. Chem. C 2022, 126, 23, 9724-9735
+Publication Date:June 3, 2022
+https://doi.org/10.1021/acs.jpcc.2c02084
 -------------------------------------------------------------------
 Other information
 
@@ -1768,6 +1801,10 @@ https://doi.org/10.1021/acsami.1c07545
 https://pubs.acs.org/doi/suppl/10.1021/acsami.1c07545/suppl_file/am1c07545_si_001.pdf
 LAMMPS input
 
+https://pubs.acs.org/doi/10.1021/acsanm.2c03564
+https://pubs.acs.org/doi/suppl/10.1021/acsanm.2c03564/suppl_file/an2c03564_si_001.pdf
+LAMMPS input
+
 https://doi.org/10.1021/acs.jpcc.8b06409
 https://pubs.acs.org/doi/suppl/10.1021/acs.jpcc.8b06409/suppl_file/jp8b06409_si_001.pdf
 lammps input and data
@@ -1780,6 +1817,9 @@ potential data
 
 https://www.mdpi.com/1420-3049/21/2/236
 lammps dat
+
+https://pubs.acs.org/doi/10.1021/acs.jpclett.2c02222
+Source code
 
 J. P. Larentzos et al.,
 J. Chem. Theory Comput. 2015, 11, 2, 381-391
