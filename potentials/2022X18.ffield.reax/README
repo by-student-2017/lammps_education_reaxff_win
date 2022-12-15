@@ -1,0 +1,11 @@
+# CHONCl-2022_weak
+
+This folder contains the following files.
+
+* ffield.CHONCl-2022_weak contains the force field parameters in a format
+  suitable for LAMMPS
+* trainset.in contains all energies used in the training set
+* geo_train contains the geometries linked to the training set
+* validation.in contains all energies used in the validation set
+* geo_validation contains the geometries linked to the validation set
+
