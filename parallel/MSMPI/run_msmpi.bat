@@ -1,4 +1,4 @@
-set ncore=3
+set ncore=4
 
 mkdir cfg
 
