@@ -6,6 +6,9 @@ information.
 Acknowledgments
   ffield_V_Mo_Te_Bi (ffield.reax.2008X2.CHONSSiPtZrNiAuVBiTiMoTeNb) was kindly provided as a CC0 or MIT license by Professor William A. Goddard III and Professor Adri van Duin.
 
+Attention !!!
+  AA read error may occur depending on the version of lammps. In the old version, it was possible even if it was blank, but in the latest version, if 0.0000 is not specified, a read error may occur. For example, the files "31_C_TM" and "31_C_TM_MSMPI" in the "gcmc" file.
+
 Ref.1: http://kiff.vfab.org/
 -------------------------------------------------------------------
 No.1
