@@ -14,21 +14,21 @@ log log.elastic.${logsuffix}
 
 # select temperature and pressure (lattice constant)
 
-variable temp index 1477.0                 # temperature of initial sample (metal = real unit)
-variable a index 5.457                     # lattice constant (metal = real unit)
+variable temp index 1477.0                 # temperature of initial sample
+variable a index 5.457                     # lattice constant
 
 # select sampling parameters, important for speed/convergence
 
 variable nthermo index 1500               # interval for thermo output
 variable nevery index 10                  # stress sampling interval
 variable neveryborn index 100             # Born sampling interval
-variable timestep equal 0.000766*0.3*1000 # timestep (metal:ps -> real:fs)
-variable nlat index 3                     # number of lattice unit cells
+variable timestep equal 0.1               # timestep
+variable nlat index 2                     # number of lattice unit cells
 
 # other settings
 
 variable mass1 index 28.06                # mass
-variable tdamp equal 0.01*1000            # time constant for thermostat
+variable tdamp equal 100.0                # time constant for thermostat
 variable seed index 123457                # seed for thermostat
 variable thermostat index 0               # 0 if NVE, 1 if NVT
 variable delta index 1.0e-6               # Born numdiff strain magnitude 
@@ -46,35 +46,39 @@ variable nrun equal 100*${nthermo}        # length of equilibrated run
 
 units		real
 atom_style	charge
-box 		tilt large
+#box 		tilt large
 
 # unit lattice vectors are
 # a1 = (a1x 0 0)
 # a2 = (a2x a2y 0)
 # a3 = (a3x a3y a3z)
 
-variable 	a1x index 1
-variable 	a2x index 0
-variable 	a2y index 1
-variable 	a3x index 0
-variable 	a3y index 0
-variable 	a3z index 1
-variable 	atmp equal $a
-variable 	l index $a
-variable 	basis index "basis 0    0    0  basis 0.25 0.25 0.25 basis 0    0.5  0.5 basis 0.25 0.75 0.75 basis 0.5  0    0.5 basis 0.75 0.25 0.75 basis 0.5  0.5  0 basis 0.75 0.75 0.25"
-lattice         custom ${l}             &
-                a1 ${a1x}      0      0 &
-                a2 ${a2x} ${a2y}      0 &
-                a3 ${a3x} ${a3y} ${a3z} &
-                ${basis}    &
-		spacing 1 1 1
+# variable 	a1x index 1
+# variable 	a2x index 0
+# variable 	a2y index 1
+# variable 	a3x index 0
+# variable 	a3y index 0
+# variable 	a3z index 1
+# variable 	atmp equal $a
+# variable 	l index $a
+# variable 	basis index "basis 0    0    0  basis 0.25 0.25 0.25 basis 0    0.5  0.5 basis 0.25 0.75 0.75 basis 0.5  0    0.5 basis 0.75 0.25 0.75 basis 0.5  0.5  0 basis 0.75 0.75 0.25"
+# lattice         custom ${l}             &
+#                 a1 ${a1x}      0      0 &
+#                 a2 ${a2x} ${a2y}      0 &
+#                 a3 ${a3x} ${a3y} ${a3z} &
+#                 ${basis}    &
+# 		spacing 1 1 1
 
-region		box prism 0 ${a1x} 0 ${a2y} 0 ${a3z} ${a2x} ${a3x} ${a3y}
+# region		box prism 0 ${a1x} 0 ${a2y} 0 ${a3z} ${a2x} ${a3x} ${a3y}
 
-create_box	1 box
-create_atoms	1 box
-mass 1 ${mass1}
+# create_box	1 box
+# create_atoms	1 box
+# mass 1 ${mass1} # Si
+
+# diamond unit cell
+read_data       data.si
+group Si type 1
+
 replicate ${nlat} ${nlat} ${nlat}
 velocity	all create ${temp} 87287
-
 

@@ -1,0 +1,17 @@
+#!/usr/bin/gnuplot
+
+set terminal win font "Arial,12"
+set xlabel "Step"
+set mxtics 5
+set ylabel "Pressure / kPa, Temperature / K"
+set mytics 5
+set y2label "Pressure / kPa, Temperature / K"
+set y2tics
+set my2tics 5
+plot "rho_vs_p.dat" u 1:($3*0.1*1000) w l t "Pressure (kPa)", "rho_vs_p.dat" u 1:5 w l t "Temperature (K)"
+
+# pause -1
+
+#set terminal postscript color enhanced lw 2
+#set out "gcmc.ps"
+#replot
