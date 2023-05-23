@@ -1,0 +1,17 @@
+This folder contains:
+
+- the gound state force field 'AB_S0.ff'
+  Additionally, we added 'AB_S0_without_Z_atomtype_with_additional_atom_types_from_original_force_field.ff'.
+  This force field contains the ground state parameters and additionally all atom types that were present in the original force field by Vashisth et al. (2018)
+
+- the force field to model the first excited state of azobenzene derivatives 'AB_S1.ff'
+
+- the python code to run the CMA-ES optimizer in combination with LAMMPS in the folder
+  './cmaes_code_force_field_fitting/'. We also provide example input for the optimization.
+
+- the 'geo' and 'trainset.in' files for the three subsequent optimizations conducted in this work:
+  './optimize_bond_parameters_ground_state/'
+  './optimize_dihedral_parameters_ground_state/'
+  './optimize_parameters_first_excited_state/'
+
+- an example LAMMPS input for the nonadiabatic surface hopping simulation of E-AB in hexane.

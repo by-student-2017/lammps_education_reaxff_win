@@ -6,9 +6,6 @@ information.
 Acknowledgments
   ffield_V_Mo_Te_Bi (ffield.reax.2008X2.CHONSSiPtZrNiAuVBiTiMoTeNb) was kindly provided as a CC0 or MIT license by Professor William A. Goddard III and Professor Adri van Duin.
 
-Attention !!!
-  AA read error may occur depending on the version of lammps. In the old version, it was possible even if it was blank, but in the latest version, if 0.0000 is not specified, a read error may occur. For example, the files "31_C_TM" and "31_C_TM_MSMPI" in the "gcmc" file.
-
 Ref.1: http://kiff.vfab.org/
 -------------------------------------------------------------------
 No.1
@@ -1555,6 +1552,11 @@ S. Arash Sheikholeslam et al.,
 Cite this: ACS Omega 2021, 6, 43, 28561-28568,
 https://doi.org/10.1021/acsomega.1c02533
 
+2021X21
+IPbCs
+M. Pols et al.,
+https://doi.org/10.48550/arXiv.2104.01455
+
 NTO_ReaxFFlg
 CHONSSi
 L. Du et al.,
@@ -1621,7 +1623,8 @@ https://doi.org/10.1021/acs.jpcc.2c01841
 2022X9
 Combustion C/H/O/ force field + atom type N (May11, 2018) +Ar2016
 P. Zhang et al.,
-Cite this: Energy Fuels 2022, XXXX, XXX, XXX-XXX
+Energy Fuels 2022, 36, 19, 12350–12364
+Publication Date:September 15, 2022
 https://doi.org/10.1021/acs.energyfuels.2c02206
 
 2022X10
@@ -1671,6 +1674,89 @@ C. Liu et al.,
 J. Phys. Chem. C 2022, 126, 23, 9724-9735
 Publication Date:June 3, 2022
 https://doi.org/10.1021/acs.jpcc.2c02084
+
+2022X18
+CHONSMgPNaCuCl
+M. Wolf et al.,
+J. Chem. Phys. 157, 184302 (2022)
+https://doi.org/10.1063/5.0120831
+(https://pubs.aip.org/jcp/article-supplement/2842051/zip/184302_1_epaps/)
+
+2022X19
+CHONSLiNaKClI
+J. A. Schulze et al.,
+ACS Earth Space Chem. 2023, 7, 1, 168–181
+Publication Date:December 7, 2022
+https://doi.org/10.1021/acsearthspacechem.2c00267
+
+2022X20
+OHSMoC
+I. Ponomarev et al.,
+J. Phys. Chem. C 2022, 126, 22, 9475–9481
+Publication Date:May 26, 2022
+https://doi.org/10.1021/acs.jpcc.2c01075
+
+2022X21
+CHON
+J. Phys. Chem. B 2011, 115, 2, 249–261
+Publication Date:December 17, 2010
+https://doi.org/10.1021/jp108642r
+
+2022X22
+H. Osthues et al.,
+J. Chem. Phys. 157, 244101 (2022)
+https://doi.org/10.1063/5.0129699
+(https://pubs.aip.org/jcp/article-supplement/2842861/zip/244101_1_epaps/)
+
+2022X23
+HRu
+C. Onwudinanti et al.,
+J. Phys. Chem. C 2022, 126, 13, 5950–5959
+Publication Date:March 23, 2022
+https://doi.org/10.1021/acs.jpcc.1c08776
+-------------------------------------------------------------------
+2023
+
+2023X1NN
+LiSiC
+S. B. O. Guifo et al.,
+J. Phys. Chem. C 2023, 127, 6, 2818–2834
+Publication Date:February 6, 2023
+https://doi.org/10.1021/acs.jpcc.2c07773
+
+2023X2NN
+CHOSMoSi
+N. Nayir et al.,
+J. Phys. Chem. C 2023, 127, 19, 9039–9048
+Publication Date:May 9, 2023
+https://doi.org/10.1021/acs.jpcc.3c01010
+
+2023X3NN
+HSiLiCN
+H. Park et al.,
+Chem. Mater. 2023, 35, 7, 2835–2845
+Publication Date:February 22, 2023
+https://doi.org/10.1021/acs.chemmater.2c03603
+
+
+2023X4NN
+CHOSiNaAl
+N. Dasgupta et al.,
+J. Phys. Chem. Lett. 2023, 14, 6, 1693–1701
+Publication Date:February 9, 2023
+https://doi.org/10.1021/acs.jpclett.3c00124
+
+2023X5NN
+K. Mohammadtabar et al.,
+https://doi.org/10.48550/arXiv.2302.01268
+(Ancillary files > (click) details (https://arxiv.org/src/2302.01268v1/anc) > FF-files/ffield_2021 or FF-files/ffield_2017)
+
+2023X6NN
+CHOFeSCr
+X. Zhu et al.,
+Langmuir 2023, 39, 14, 5145–5155
+Publication Date:April 3, 2023
+https://doi.org/10.1021/acs.langmuir.3c00217
 -------------------------------------------------------------------
 Other information
 
