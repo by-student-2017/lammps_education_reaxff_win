@@ -1717,41 +1717,40 @@ https://doi.org/10.1021/acs.jpcc.1c08776
 -------------------------------------------------------------------
 2023
 
-2023X1NN
+2023X1
 LiSiC
 S. B. O. Guifo et al.,
 J. Phys. Chem. C 2023, 127, 6, 2818–2834
 Publication Date:February 6, 2023
 https://doi.org/10.1021/acs.jpcc.2c07773
 
-2023X2NN
+2023X2
 CHOSMoSi
 N. Nayir et al.,
 J. Phys. Chem. C 2023, 127, 19, 9039–9048
 Publication Date:May 9, 2023
 https://doi.org/10.1021/acs.jpcc.3c01010
 
-2023X3NN
+2023X3
 HSiLiCN
 H. Park et al.,
 Chem. Mater. 2023, 35, 7, 2835–2845
 Publication Date:February 22, 2023
 https://doi.org/10.1021/acs.chemmater.2c03603
 
-
-2023X4NN
+2023X4
 CHOSiNaAl
 N. Dasgupta et al.,
 J. Phys. Chem. Lett. 2023, 14, 6, 1693–1701
 Publication Date:February 9, 2023
 https://doi.org/10.1021/acs.jpclett.3c00124
 
-2023X5NN
+2023X5
 K. Mohammadtabar et al.,
 https://doi.org/10.48550/arXiv.2302.01268
 (Ancillary files > (click) details (https://arxiv.org/src/2302.01268v1/anc) > FF-files/ffield_2021 or FF-files/ffield_2017)
 
-2023X6NN
+2023X6
 CHOFeSCr
 X. Zhu et al.,
 Langmuir 2023, 39, 14, 5145–5155
