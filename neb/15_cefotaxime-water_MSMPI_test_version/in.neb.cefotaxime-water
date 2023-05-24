@@ -1,0 +1,51 @@
+# NEB simulation of vacancy hopping in silicon crystal
+
+units           real
+
+atom_style      charge
+atom_modify     map array
+boundary        p p p
+atom_modify	sort 0 0.0
+
+# diamond unit cell
+
+read_data       initial.cefotaxime-water
+
+
+mass 1 32.0650 # S
+mass 2 15.999  # O
+mass 3 14.0067 # N
+mass 4 12.0107 # C
+mass 5 1.00794 # H
+
+# choose potential
+
+pair_style	reax/c lmp_control
+pair_coeff	* * ffield.reax.CHONSMgPNaCuCl S O N C H
+fix			f1 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+
+timestep        0.25
+
+# set up neb run
+
+variable	u uloop 20 # 20 replica
+
+# initial minimization to relax
+
+displace_atoms all random 0.1 0.1 0.1 123456
+minimize	1.0e-6 1.0e-4 1000 10000
+
+reset_timestep	0
+
+dump events all custom 1000 dump.neb.cefotaxime-water.$u id type q x y z mass # element is bad, ovito can read these outputs
+
+fix		1 all neb 1.0 
+
+thermo		100
+
+# run NEB for 2000 steps or to force tolerance
+
+timestep        2.5
+min_style	quickmin
+
+neb		0.0 0.01 100 100 10 final final.cefotaxime-water

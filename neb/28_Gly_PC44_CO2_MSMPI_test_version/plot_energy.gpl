@@ -1,0 +1,14 @@
+#!/usr/bin/gnuplot
+
+set terminal win font "Arial,12"
+set xlabel "RDx (position)"
+set mxtics 5
+set ylabel "Energy / eV"
+set mytics 5
+plot "out_energy.txt" u 1:2 w lp t "Energy"
+
+# pause -1
+
+#set terminal postscript color enhanced lw 2
+#set out "energy.ps"
+#replot
