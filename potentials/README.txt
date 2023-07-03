@@ -747,6 +747,12 @@ M. A. Wood et al.,
 Cite this: J. Phys. Chem. C 2016, 120, 1, 542-552
 Publication Date:December 8, 2015
 https://doi.org/10.1021/acs.jpcc.5b09820
+
+2016X15
+CHONSMgPNaTiClFAu
+X. Li et al.,
+Cite this: J. Chem. Theory Comput. 2016, 12, 7, 3325–3339.
+https://doi.org/10.1021/acs.jctc.6b00283
 -------------------------------------------------------------------
 2017
 
@@ -1796,6 +1802,11 @@ input file (reaxff, lammps)
 - M. Deffner et al., J. Chem. Theory. Comput. 19 (2023) 992-1002.: https://doi.org/10.1021/acs.jctc.2c00648
 -------------------------------------------------------------------
 Other information
+
+G. Shchygol et al.,
+Cite this: J. Chem. Theory Comput. 2019, 15, 12, 6799–6812
+Publication Date:October 27, 2019
+https://doi.org/10.1021/acs.jctc.9b00769
 
 Chunfu Shao et al., 
 Study on cellulose degradation induced by hydroxyl radical with cellobiose as a model using GC-MS, ReaxFF simulation and DFT computation
