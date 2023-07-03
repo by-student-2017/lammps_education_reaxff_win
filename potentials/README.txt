@@ -1931,6 +1931,9 @@ https://pubs.acs.org/doi/10.1021/acsanm.2c03564
 https://pubs.acs.org/doi/suppl/10.1021/acsanm.2c03564/suppl_file/an2c03564_si_001.pdf
 LAMMPS input
 
+https://doi.org/10.1021/acs.jctc.6b00874
+LAMMPS input
+
 https://doi.org/10.1021/acs.jpcc.8b06409
 https://pubs.acs.org/doi/suppl/10.1021/acs.jpcc.8b06409/suppl_file/jp8b06409_si_001.pdf
 lammps input and data
