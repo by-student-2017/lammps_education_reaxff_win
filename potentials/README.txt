@@ -1768,6 +1768,12 @@ X. Zhu et al.,
 Langmuir 2023, 39, 14, 5145–5155
 Publication Date:April 3, 2023
 https://doi.org/10.1021/acs.langmuir.3c00217
+
+2023X7
+CHOAl
+J. A. Scher et al.,
+Cite this: ACS Appl. Mater. Interfaces 2023, 15, 23, 28716–28730.
+https://doi.org/10.1021/acsami.3c02327
 -------------------------------------------------------------------
 input file (reaxff, lammps)
 
