@@ -1720,6 +1720,12 @@ C. Onwudinanti et al.,
 J. Phys. Chem. C 2022, 126, 13, 5950–5959
 Publication Date:March 23, 2022
 https://doi.org/10.1021/acs.jpcc.1c08776
+
+2022X24
+OHSMoC
+A. Bondarev et al., 
+Cite this: ACS Appl. Mater. Interfaces 2022, 14, 49, 55051–55061.
+https://doi.org/10.1021/acsami.2c15706
 -------------------------------------------------------------------
 2023
 
