@@ -1,0 +1,103 @@
+|===============================================================================
+|
+|  DFTB+ release 20.1
+|
+|  Copyright (C) 2006 - 2020  DFTB+ developers group
+|
+|===============================================================================
+|
+|  When publishing results obtained with DFTB+, please cite the following
+|  reference:
+|
+|  * DFTB+, a software package for efficient approximate density functional
+|    theory based atomistic simulations, J. Chem. Phys. 152, 124101 (2020).
+|    [doi: 10.1063/1.5143190]
+|
+|  You should also cite additional publications crediting the parametrization
+|  data you use. Please consult the documentation of the SK-files for the
+|  references.
+|
+|===============================================================================
+
+Reading input file 'dftb_in.hsd'
+Parser version: 8
+
+--------------------------------------------------------------------------------
+Reading SK-files:
+Done.
+
+
+Processed input in HSD format written to 'dftb_pin.hsd'
+
+Starting initialization...
+--------------------------------------------------------------------------------
+ init negf
+ (negf_init) CONTACT INFO #1 "source"
+ FICTITIOUS CONTACT 
+ DOS:    1.3605692249999999     
+ Temperature (DM):    0.0000000000000000     
+ Temperature (Current):    0.0000000000000000     
+ Potential (with built-in):          0.0000000000 H            0.0000 eV
+ eFermi:                            -0.1714466237 H           -4.6653 eV
+
+ Electro-chemical potentials:       -0.1714466237 H           -4.6653 eV
+
+ (negf_init) CONTACT INFO #2 "drain"
+ FICTITIOUS CONTACT 
+ DOS:    1.3605692249999999     
+ Temperature (DM):    0.0000000000000000     
+ Temperature (Current):    0.0000000000000000     
+ Potential (with built-in):          0.0000000000 H            0.0000 eV
+ eFermi:                            -0.1714466237 H           -4.6653 eV
+
+ Electro-chemical potentials:       -0.1714466237 H           -4.6653 eV
+
+ Density Matrix Parameters
+ Contour Points:           20          20
+ Number of poles:            0
+ Real-axis points:            0
+ Read Existing SGFs: No, option            2
+
+OpenMP threads:              1
+Chosen random seed:          888077576
+Mode:                        Static calculation
+Self consistent charges:     No
+Spin polarisation:           No
+Nr. of up electrons:          1887.000000
+Nr. of down electrons:        1887.000000
+Periodic boundaries:         No
+Electronic solver:           Transport Only (no energies)
+Electronic temperature:        0.100000E-07 H      0.272114E-06 eV
+Included shells:             H:  s
+                             C:  s, p
+                             S:  s, p, d
+                            Au:  s, p, d
+Extra options:
+                             Mulliken analysis
+
+--------------------------------------------------------------------------------
+
+***  Geometry step: 0
+
+  Structure info:
+  Number of PLs:           1
+  PLs coupled to contacts:           1           1
+
+
+================================================================================
+                             COMPUTATION OF CURRENT         
+================================================================================
+
+ Spin           1 k-point           1 k-weight   1.0000000000000000     
+CALCULATION OF COHERENT TRANSMISSION: 401 points  parallelized on 1 processes
+
+  contacts:   1  2 current:    0.00000E+00 A       
+
+--------------------------------------------------------------------------------
+DFTB+ running times                          cpu [s]             wall clock [s]
+--------------------------------------------------------------------------------
+Post-geometry optimisation             +  7740.95  (100.0%)   7957.88  (100.0%)
+--------------------------------------------------------------------------------
+Missing                                +     0.18  (  0.0%)      0.19  (  0.0%)
+Total                                  =  7741.13  (100.0%)   7958.06  (100.0%)
+--------------------------------------------------------------------------------

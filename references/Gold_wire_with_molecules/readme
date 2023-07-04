@@ -1,0 +1,7 @@
+This archiv contains the following folders/files:
+
+md_simulation: This contains input files for a MD simulation. Parameter files for the reactive force fields are not provided, as they are part of other computational packages.
+
+transport: This contains the input for an exemplary transport calculation of a whole transmission function.
+
+example_gpr_notebook: This folder contains a jupyter notebook and two input files. The notebook exemplifies the processing of the structural data from the MD simulation, fitting of a Gaussian Process and predicting the conductance for molecular junctions.

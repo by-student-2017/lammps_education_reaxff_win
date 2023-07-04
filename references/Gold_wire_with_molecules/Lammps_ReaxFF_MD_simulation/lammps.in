@@ -1,0 +1,49 @@
+# define processors
+processors  2 2 2
+
+# define units
+units		real
+atom_style	full
+dimension	3
+boundary	s s s
+
+read_data      input.data 
+
+group PosMiddle  id 1:386
+group PosLower id 387:460
+group PosUpper  id 461:534
+
+pair_style	reax/c lmp_control
+
+pair_coeff	* *  AuSCH_2013.ff  Au H C S
+neighbor        3 bin
+neigh_modify    every 10 delay 0 check yes
+thermo_modify   lost ignore
+
+fix		F_Fix   PosLower   setforce 0.0 0.0 0.0
+fix		F_Mob   PosUpper   setforce 0.0 0.0 0.0
+
+velocity        PosLower  set 0.0 0.0 0.0
+velocity        PosUpper  set 0.0 0.0 0.0
+velocity        PosMiddle create 300 9922 dist gaussian
+
+fix     fixTem_1 PosMiddle     temp/berendsen 300 300 0.3 
+fix     fixNVE_1 all        nve
+fix     fixReax  all qeq/reax 1 0.0 10.0 1e-6 reax/c
+
+timestep     0.5
+thermo		1000
+
+dump d1 all custom 500 output.lammpstrj id type x y z vx vy vz fx fy fz q  element
+
+dump_modify d1  element  Au H C S
+dump_modify d1 format 4 %6.8g
+dump_modify d1 format 5 %6.8g
+dump_modify d1 format 6 %6.8g
+
+run    50000
+
+velocity PosUpper  set 0.0  0.0  0.00005 sum yes units box
+
+run 1000000
+

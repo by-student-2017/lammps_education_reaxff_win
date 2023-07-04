@@ -1,0 +1,100 @@
+#Sample of GO simulation box
+# ----------------------- VARIABLES ---------------------
+# ReaxFF potential for TATB system
+
+
+
+variable        Car equal 0
+variable        Hyd equal 0.3
+variable        Epo equal 0
+variable        try equal 1
+variable        frac equal 0.5
+variable        tmin equal 300
+variable        tmax equal 400
+
+units		real
+atom_style	charge
+
+read_data	FilteringVertical.data
+
+group           water type 11 12 15 16
+group           H2O type 11 15 
+group           D2O type 12 16
+group           edge type 2 17
+group           wall type 6
+group 		System subtract all wall
+
+pair_style      reax/c lmp_control
+pair_coeff      * * HydDuetxt.reax.chod C C C C C C O O O O O O H H H D C
+
+fix             0 edge setforce 0.0 0.0 0.0
+
+compute reax all pair reax/c
+
+variable eb  	 equal c_reax[1]
+variable ea  	 equal c_reax[2]
+variable elp 	 equal c_reax[3]
+variable emol 	 equal c_reax[4]
+variable ev 	 equal c_reax[5]
+variable epen 	 equal c_reax[6]
+variable ecoa 	 equal c_reax[7]
+variable ehb 	 equal c_reax[8]
+variable et 	 equal c_reax[9]
+variable eco 	 equal c_reax[10]
+variable ew 	 equal c_reax[11]
+variable ep 	 equal c_reax[12]
+variable efi 	 equal c_reax[13]
+variable eqeq 	 equal c_reax[14]
+
+neighbor	2.5 bin
+neigh_modify	delay 0 every 5 check no
+
+compute		MSDH2O H2O msd
+compute		MSDD2O D2O msd
+
+dump            myDump all custom 10000 dumpfile*.dump id type q x y z
+restart         50000 restartfile*.restart
+
+thermo          500
+
+thermo_style 	custom step temp epair etotal press lx ly lz &
+		v_eb v_ea v_elp v_emol v_ev v_epen v_ecoa &
+		v_ehb v_et v_eco v_ew v_ep v_efi v_eqeq & 
+		c_MSDH2O[1] c_MSDH2O[2] c_MSDH2O[3] c_MSDH2O[4] &
+		c_MSDD2O[1] c_MSDD2O[2] c_MSDD2O[3] c_MSDD2O[4]
+
+timestep	0.25
+fix             1 all qeq/reax 50000 0.0 10.0 1.0e-6 reax/c
+fix             2 all reax/c/bonds 50000 bonds.reaxc
+minimize        1.0e-4 1.0e-6 10000 10000
+unfix           1
+unfix           2
+#velocity	System create ${tmin} 458127641 mom yes rot yes dist gaussian units box
+#run_style       verlet
+
+
+
+fix             3 wall move linear 5.0e-5 0.0 0.0
+fix             nvt all  nvt temp ${tmin} ${tmax} 1
+fix             1 all qeq/reax 50000 0.0 10.0 1.0e-6 reax/c
+fix             2 all reax/c/bonds 50000 bonds.reaxc
+run             100000
+unfix           nvt
+unfix           3
+unfix           1
+unfix           2
+
+fix             3 wall move linear 5.0e-5 0.0 0.0
+fix             nvt all  nvt temp ${tmax} ${tmax} 1
+fix             1 all qeq/reax 50000 0.0 10.0 1.0e-6 reax/c
+fix             2 all reax/c/bonds 50000 bonds.reaxc
+run             10000000
+unfix           nvt
+unfix           3
+unfix           1
+unfix           2
+
+
+
+
+
