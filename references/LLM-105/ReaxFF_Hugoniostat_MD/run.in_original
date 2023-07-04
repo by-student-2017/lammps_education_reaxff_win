@@ -7,17 +7,12 @@ atom_style full
 neighbor 2.0 bin
 neigh_modify delay 1
 atom_modify map array
-
 box tilt large
-
 read_data ./LLM105.data
-
-replicate 2 1 1
 
 # Potential Parameters
 pair_style reax/c NULL lgvdw yes checkqeq yes safezone 20.0 mincap 1000
-#pair_coeff * * ./ffield_reaxFFlg_nitramines N C O H
-pair_coeff * * ./ffield_reaxFFlg_nitramines N H O C
+pair_coeff * * ./ffield_reaxFFlg_nitramines N C O H
 
 compute reax all pair reax/c
 fix 10 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
@@ -44,13 +39,13 @@ variable pzz equal pzz # axial stress
 variable tau equal 0.5*(pzz-0.5*(pxx+pyy)) # shear stress
 variable time equal dt*step
 
-thermo_style custom elaplong pe ke etotal temp density vol press pxx pyy pzz pxy pxz pyz lx ly lz v_tau f_myhug v_dele v_us v_up v_eb v_ev
+thermo_style custom elaplong pe ke etotal temp density vol press pxx pyy pzz pxy pxz pyz lx ly lz v_tau f_myhug 
+v_dele v_us v_up v_eb v_ev
 thermo 100
 
 fix rbo all reax/c/bonds 500 bonds.txt
 
-#fix spe1 all reax/c/species 1 1 500 species.out element N C O H
-fix spe1 all reax/c/species 1 1 500 species.out element N H O C
+fix spe1 all reax/c/species 1 1 500 species.out element N C O H
 
 fix stress all print 10 "${time} ${pzz} ${tau} " screen no append stress_vs_t.dat title '#time pzz tau (no drag)'
 
