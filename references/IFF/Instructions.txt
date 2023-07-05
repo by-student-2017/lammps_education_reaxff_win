@@ -1,0 +1,21 @@
+1. In "MD_NAMD" folder
+There are example IFF structural files (pdb and psf) of benzene and naphthalene at 
+different surface coverage on Pt(111), corresponding to the 3-box method for 
+calculating the heat of adsorption.
+
+The configuration and parameter files for use with NAMD are also included.
+
+2. In the "DFT_VASP" folder
+There are cif files of the structures of calculating the heat of adsorption 
+of benzene and naphthalene at different surface coverage on Pt(111),
+corresponding to the 2-box method.
+
+The typical INCAR file and KPOINT settings for use with VASP are also included.
+
+3. In the "ReaxFF_LAMMPS" folder
+There is an example of using ReaxFF to calculate the adsorption of benzene on Pt surface with a coverage of 0.1 ML. 
+
+The data file and input file for LAMMPS program, along with the used force field file are included. 
+
+4. In the "MOVIES" folder
+There are two movies showing how the benzene and naphthalene molecules assemble on the Pt(111) surface at different surface coverages.

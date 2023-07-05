@@ -1,0 +1,41 @@
+# I/O
+# ISTART = 0
+  ICHARG = 2
+  LWAVE = .FALSE.
+  LCHARG = .TRUE.
+# LVOT = .FALSE.
+# LELF = .FALSE.
+
+
+# Electronic Relaxation
+  GGA = OR          # also have opt functionals
+  LUSE_VDW = .TRUE.
+  AGGAC = 0.0000
+  LASPH = .TRUE.
+  ENMAX = 400
+  EDIFF = 1e-5      # test
+  PREC = Normal     # Accurate? Sth related to FFT grid, cutoff energy, etc
+  ISMEAR = 1        # or 1? Or 2?
+  SIGMA = 0.1       # define ISMEAR
+  ISPIN = 1         # spin polarized calculation
+  ALGO = Fast       # RMM-DIIS algorithm
+  IMIX = 4          # Pulay density mixing
+  AMIX = 0.5        # assume mixing amplitude in castep, suggested 0.02 for metal, 0,1 easy for converge?
+  BMIX = 1.5        # assume mixing cutoff in castep, 0.01 easy for converge?
+  NELM = 60
+  NELMIN = 8
+  NWRITE = 3
+
+# Geometry optimization
+  NSW = 300
+  IBRION = 1
+  POTIM = 0.2       # define IBRION
+  EDIFFG = -1e-3     # test
+  ISIF = 2          # stress tensor not calculated
+
+# Paralization
+  LREAL = Auto      # projection done in reciprocal space, suggested real space
+  LPLANE = .TRUE.
+  NPAR = 8
+  NSIM = 1
+
