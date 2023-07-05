@@ -55,6 +55,9 @@ fix stress all print 10 "${time} ${pzz} ${tau} " screen no append stress_vs_t.da
 dump dhug all custom 500 Dump.dump id type x y z q vx vy vz
 dump_modify dhug sort id
 
+dump d1 all cfg 500 cfg/run.*.cfg mass type xs ys zs id type q vx vy vz fx fy fz
+dump_modify d1 element N C O H
+
 restart 100000 hug.*.rst
 
 run 2000000

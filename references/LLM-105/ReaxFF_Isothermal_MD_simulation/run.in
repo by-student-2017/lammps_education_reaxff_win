@@ -29,6 +29,9 @@ fix spe1 all reax/c/species 1 1 500 species.out element N C O H
 fix rbo all reax/c/bonds 500 bonds.txt
 dump dhug all custom 500 Dump.*.dump id type x y z q vx vy vz
 
+dump d1 all cfg 500 cfg/run.*.cfg mass type xs ys zs id type q vx vy vz fx fy fz
+dump_modify d1 element N C O H
+
 fix 7 all nvt temp 2000 2000 100
 
 timestep 0.1
