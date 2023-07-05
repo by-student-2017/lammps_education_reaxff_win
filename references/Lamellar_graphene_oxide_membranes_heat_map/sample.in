@@ -103,8 +103,8 @@ unfix           2
 #unfix           2
 #unfix           3
 # ----- --------------------------------------------------------------------------------------------
-#velocity	System create ${tmin} 458127641 mom yes rot yes dist gaussian units box
-#run_style       verlet
+velocity	System create ${tmin} 458127641 mom yes rot yes dist gaussian units box
+run_style       verlet
 # ----- --------------------------------------------------------------------------------------------
 
 fix             3 wall move linear 5.0e-5 0.0 0.0
