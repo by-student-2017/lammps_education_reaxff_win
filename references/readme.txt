@@ -13,6 +13,9 @@ input file (reaxff, lammps)
 - M. Deffner et al., J. Chem. Theory. Comput. 19 (2023) 992-1002.: https://doi.org/10.1021/acs.jctc.2c00648
   Gold_wire_with_molecules
 
+- S. Boyd et al., Nature Mater. 20 (2021) 1689–1694.: https://www.nature.com/articles/s41563-021-01066-4
+  https://doi.org/10.24435/materialscloud:kh-y2.
+
 - M. L. Urquiza et al., ACS Nano 15 (2021) 12945-12954.: https://doi.org/10.1021/acsnano.1c01466
   HfO2: Supporting Information
 
