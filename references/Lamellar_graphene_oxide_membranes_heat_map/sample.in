@@ -12,7 +12,7 @@ variable        frac equal 0.5
 variable        tmin equal 300
 variable        tmax equal 400
 
-variable        nprint equal 500
+variable        nprint equal 1000
 
 units		real
 atom_style	charge
