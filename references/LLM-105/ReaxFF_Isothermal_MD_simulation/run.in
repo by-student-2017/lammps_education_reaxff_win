@@ -16,8 +16,7 @@ replicate 2 1 1
 ###REACTIVE FORCE FIELD###
 
 pair_style reax/c NULL lgvdw yes checkqeq yes safezone 20.0 mincap 1000
-#pair_coeff * * ./ffield_reaxFFlg_nitramines N C O H
-pair_coeff * * ./ffield_reaxFFlg_nitramines N H O C
+pair_coeff * * ./ffield_reaxFFlg_nitramines N C O H
 
 fix 4 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
 
@@ -26,8 +25,7 @@ neigh_modify delay 2
 
 thermo_modify line one flush yes
 
-#fix spe1 all reax/c/species 1 1 500 species.out element N C O H
-fix spe1 all reax/c/species 1 1 500 species.out element N H O C
+fix spe1 all reax/c/species 1 1 500 species.out element N C O H
 fix rbo all reax/c/bonds 500 bonds.txt
 dump dhug all custom 500 Dump.*.dump id type x y z q vx vy vz
 
