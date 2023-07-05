@@ -52,6 +52,14 @@ neigh_modify	delay 0 every 5 check no
 compute		MSDH2O H2O msd
 compute		MSDD2O D2O msd
 
+# Display "D" and "H" separately
+dump d1 all cfg 10000 cfg/run.*.cfg mass type xs ys zs id type q vx vy vz fx fy fz
+dump_modify d1 element C C C C C C O O O O O O H H H D C
+
+# Display "D" as "H"
+dump d2 all cfg 10000 cfg/H_run.*.cfg mass type xs ys zs id type q vx vy vz fx fy fz
+dump_modify d2 element C C C C C C O O O O O O H H H H C
+
 dump            myDump all custom 10000 dumpfile*.dump id type q x y z
 restart         50000 restartfile*.restart
 

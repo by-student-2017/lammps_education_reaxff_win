@@ -34,7 +34,7 @@ fix     fixReax  all qeq/reax 1 0.0 10.0 1e-6 reax/c
 timestep     0.5
 thermo		1000
 
-dump d1 all custom 500 output.lammpstrj id type x y z vx vy vz fx fy fz q  element
+dump d1 all custom 500 output.lammpstrj id type x y z vx vy vz fx fy fz q element
 
 dump_modify d1  element  Au H C S
 dump_modify d1 format 4 %6.8g
