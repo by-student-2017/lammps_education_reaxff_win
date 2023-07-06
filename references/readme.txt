@@ -22,6 +22,8 @@ input file (reaxff, lammps)
 
 - P. Shi et al., Phys. Chem. Chem. Phys., 2023,25, 13946-13965.: https://doi.org/10.1039/d2cp05196f
 
+- V. Ekberg, (2019).: https://lup.lub.lu.se/luur/download?func=downloadFile&recordOId=8969772&fileOId=8969776
+
 - M. L. Urquiza et al., ACS Nano 15 (2021) 12945-12954.: https://doi.org/10.1021/acsnano.1c01466
   HfO2: Supporting Information
 
