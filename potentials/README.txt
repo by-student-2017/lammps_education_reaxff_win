@@ -410,6 +410,12 @@ K. Chenoweth et al.,
 J. Phys. Chem. A 2009, 113, 9, 1740-1746
 Publication Date:February 11, 2009
 https://doi.org/10.1021/jp8081479
+
+2009X4
+SiGe
+Y. Park et al.,
+Journal of Applied Physics 106, 034304 (2009).
+https://doi.org/10.1063/1.3168424
 -------------------------------------------------------------------
 2010
 
