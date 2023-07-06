@@ -1321,6 +1321,11 @@ M. J. Cawkwell et al.,
 J. Chem. Phys. 150, 024107 (2019)
 https://doi.org/10.1063/1.5063385
 
+2019X20
+G. Lyngdoh et al.,
+J. Chem. Phys. 151, 064307 (2019)
+https://doi.org/10.1063/1.5121519
+
 No.81
 CHONSSi
 C. Ren et al.,
@@ -1876,15 +1881,20 @@ P. L. B. Prado, (2022).
 https://etheses.whiterose.ac.uk/30261/1/2022_01_Phebe_PhD_Thesis_V4.pdf
 
 2022X26
+E. J. Gurniak et al.,
+J. Chem. Phys. 157, 044105 (2022)
+https://doi.org/10.1063/5.0102293
+
+2022X27
 W. Noid et al., Doctor of Philosophy
 https://etda.libraries.psu.edu/catalog/20337bue33
 
-2022X27
+2022X28
 H. Yin et al.,
 Physics of Plasmas 29, 033508 (2022)
 https://doi.org/10.1063/5.0068505
 
-2022X28
+2022X29
 Z. G. Fthenakis et al.,
 Front. Chem., 29 August 2022
 Sec. Physical Chemistry and Chemical Physics
@@ -2235,4 +2245,14 @@ CP2k and Gromacs
 https://pubs.aip.org/aip/jcp/article/146/12/124117/636339
 S. Naserifar et al., J. Chem. Phys. 146, 124117 (2017).: https://doi.org/10.1063/1.4978891
 PQEq
+
+https://atrium.lib.uoguelph.ca/xmlui/handle/10214/24856
+https://atrium.lib.uoguelph.ca/xmlui/bitstream/handle/10214/24856/Vivcharuk_Victor_PhD.pdf?sequence=1&isAllowed=y
+charmm input file
+
+https://pubs.acs.org/doi/full/10.1021/acs.jpca.7b12233
+charmm input file
+
+https://pubs.rsc.org/en/content/articlelanding/2023/CP/D2CP04395E
+structure mol file
 -------------------------------------------------------------------

@@ -30,6 +30,8 @@ input file (reaxff, lammps)
 
 - M. Siviero, Master Thesis (2021).: https://webthesis.biblio.polito.it/21114/1/tesi.pdf
 
+- file:///C:/Users/manab/Downloads/2013_12_Bernardi_Crippa.pdf
+
 - M. L. Urquiza et al., ACS Nano 15 (2021) 12945-12954.: https://doi.org/10.1021/acsnano.1c01466
   HfO2: Supporting Information
 
