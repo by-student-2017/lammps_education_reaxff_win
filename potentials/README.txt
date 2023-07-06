@@ -791,6 +791,11 @@ CHONSMgPNaTiClFAu
 X. Li et al.,
 Cite this: J. Chem. Theory Comput. 2016, 12, 7, 3325–3339.
 https://doi.org/10.1021/acs.jctc.6b00283
+
+2016X17
+T. Zhu et al,
+J. Chem. Phys. 145, 064302 (2016)
+https://doi.org/10.1063/1.4960146
 -------------------------------------------------------------------
 2017
 
@@ -1406,6 +1411,11 @@ S. P. L. Roefs, MASTER (2020).
 https://pure.tue.nl/ws/portalfiles/portal/208445034/Afstudeerverslag_Sven_Roefs_0861746_.pdf
 
 2020X11
+R. Chen et al.,
+Journal of Vacuum Science & Technology A 38, 022201 (2020)
+https://doi.org/10.1116/1.5128377
+
+2020X12
 Le, Tran Thi Bao; (2020).
 https://discovery.ucl.ac.uk/id/eprint/10115512/
 
@@ -1660,6 +1670,10 @@ https://doi.org/10.1063/5.0044840
 2021X24
 C. J. Jongejan, MASTER (2021).
 https://pure.tue.nl/ws/portalfiles/portal/295803135/MCE_afstudeerverslag_Koen_Jongejan_0905695_.pdf
+
+2021X25
+B. Jasper, MASTER (2021).
+https://pure.tue.nl/ws/portalfiles/portal/230727153/MCE_afstudeerverslag_Jasper_Bouwman_0884604_.pdf
 
 NTO_ReaxFFlg
 CHONSSi
