@@ -1076,15 +1076,19 @@ F. Rahmani
 https://egrove.olemiss.edu/etd/403/
 
 2018X9
+CHOFeClSiAlCaNa
 Y. Yu et al.,
 J. Chem. Phys. 148, 074503 (2018)
 https://doi.org/10.1063/1.5010934
 
-2018X10
+2018X10, (ffield.best.pdf)
+CHOFe
 J. Petucci et al.,
 J. Chem. Phys. 149, 014702 (2018)
 https://doi.org/10.1063/1.5026691
 
+2018X11A, CHOCaSi
+2018X11B, CHONSSiCaCsKSrNaMgAlClIF
 T. Du et al.,
 J. Chem. Phys. 148, 234504 (2018)
 https://doi.org/10.1063/1.5027583
@@ -1433,18 +1437,15 @@ S. P. L. Roefs, MASTER (2020).
 https://pure.tue.nl/ws/portalfiles/portal/208445034/Afstudeerverslag_Sven_Roefs_0861746_.pdf
 
 2020X11
+OSMo
 R. Chen et al.,
 Journal of Vacuum Science & Technology A 38, 022201 (2020)
 https://doi.org/10.1116/1.5128377
 
 2020X12
-Le, Tran Thi Bao; (2020).
+CHONSSi
+T. T. B. Le, PhD Thesis (2020).
 https://discovery.ucl.ac.uk/id/eprint/10115512/
-
-2020X13
-Z. Cui et al.,
-Physics of Fluids 32, 112110 (2020)
-https://doi.org/10.1063/5.0030749
 
 No.88
 AgAvEl
@@ -1690,15 +1691,18 @@ Energ. Mater. Front. 3 (2022) 1-9.
 https://doi.org/10.1016/j.enmf.2021.09.006
 
 2021X23
+CHONSSiNaFXP
 J. Park et al.,
 Journal of Applied Physics 129, 175103 (2021)
 https://doi.org/10.1063/5.0044840
 
-2021X24
+2021X24A, Fe
+2021X24B, CFe
 C. J. Jongejan, MASTER (2021).
 https://pure.tue.nl/ws/portalfiles/portal/295803135/MCE_afstudeerverslag_Koen_Jongejan_0905695_.pdf
 
-2021X25
+2021X25A, CCo
+2021X25B, CCo
 B. Jasper, MASTER (2021).
 https://pure.tue.nl/ws/portalfiles/portal/230727153/MCE_afstudeerverslag_Jasper_Bouwman_0884604_.pdf
 
