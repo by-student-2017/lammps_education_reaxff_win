@@ -24,6 +24,10 @@ input file (reaxff, lammps)
 
 - V. Ekberg, (2019).: https://lup.lub.lu.se/luur/download?func=downloadFile&recordOId=8969772&fileOId=8969776
 
+- V. Ponce et al., Phys. Chem. Chem. Phys., 2021,23, 597-606.: DOI	https://doi.org/10.1039/D0CP02851G
+
+- M. A. Zobair, MSU Graduate Theses (2021).: https://bearworks.missouristate.edu/cgi/viewcontent.cgi?article=4730&context=theses
+
 - M. L. Urquiza et al., ACS Nano 15 (2021) 12945-12954.: https://doi.org/10.1021/acsnano.1c01466
   HfO2: Supporting Information
 

@@ -681,6 +681,11 @@ F. O. Valega Mackenzie et al.,
 Cite this: J. Phys. Chem. C 2015, 119, 9, 4796-4804
 Publication Date:February 12, 2015
 https://doi.org/10.1021/jp5105328
+
+2015X9
+A. Aryanfar et al.,
+J. Chem. Phys. 143, 134701 (2015)
+https://doi.org/10.1063/1.4930014
 -------------------------------------------------------------------
 2016
 
@@ -1651,6 +1656,10 @@ https://doi.org/10.1016/j.enmf.2021.09.006
 J. Park et al.,
 Journal of Applied Physics 129, 175103 (2021)
 https://doi.org/10.1063/5.0044840
+
+2021X24
+C. J. Jongejan, MASTER (2021).
+https://pure.tue.nl/ws/portalfiles/portal/295803135/MCE_afstudeerverslag_Koen_Jongejan_0905695_.pdf
 
 NTO_ReaxFFlg
 CHONSSi
