@@ -630,6 +630,11 @@ CHON
 Q. An et al.,
 Cite this: J. Phys. Chem. C 2014, 118, 34, 19918–19928.
 https://doi.org/10.1021/jp506501r
+
+2014X9
+I. Leven et al.,
+J. Chem. Phys. 140, 104106 (2014)
+https://doi.org/10.1063/1.4867272
 -------------------------------------------------------------------
 2015
 
@@ -1072,6 +1077,16 @@ https://egrove.olemiss.edu/etd/403/
 CHONSSi
 F. Rahmani
 https://egrove.olemiss.edu/etd/403/
+
+2018X9
+Y. Yu et al.,
+J. Chem. Phys. 148, 074503 (2018)
+https://doi.org/10.1063/1.5010934
+
+2018X10
+J. Petucci et al.,
+J. Chem. Phys. 149, 014702 (2018)
+https://doi.org/10.1063/1.5026691
 
 T. Du et al.,
 J. Chem. Phys. 148, 234504 (2018)
