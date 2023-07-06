@@ -2181,4 +2181,8 @@ script on vasp
 
 https://pubs.acs.org/doi/full/10.1021/acs.jpca.3c00424
 CP2k and Gromacs
+
+https://pubs.aip.org/aip/jcp/article/146/12/124117/636339
+S. Naserifar et al., J. Chem. Phys. 146, 124117 (2017).: https://doi.org/10.1063/1.4978891
+PQEq
 -------------------------------------------------------------------
