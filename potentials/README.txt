@@ -468,6 +468,11 @@ CHONSSi
 U. Khalilov et al.,
 Cite this: J. Phys. Chem. C 2011, 115, 50, 24839-24848.
 https://doi.org/10.1021/jp2082566
+
+2011X5
+B.-H. Kim et al.,
+Appl. Phys. Lett. 99, 143115 (2011)
+https://doi.org/10.1063/1.3643038
 -------------------------------------------------------------------
 2012
 
