@@ -1,0 +1,66 @@
+2022 Ag e-ReaxFF Potential ‘ffield: The 2022 Ag e-ReaxFF described in this dissertation is included below: [ ereaxff acks2 ] Reactive MD-force field: Ag 12-9-2022
+39 ! Number of general parameters 
+ 50.0000 !Overcoordination parameter 
+ 9.5469 !Overcoordination parameter 
+ 1.6725 !Valency angle conjugation parameter 
+ 1.7224 !Triple bond stabilisation parameter 
+ 6.8702 !Triple bond stabilisation parameter 
+ 54.6742 !C2-correction 
+ 1.0588 !Undercoordination parameter 
+ 4.6000 !Triple bond stabilisation parameter 
+ 12.1176 !Undercoordination parameter 
+ 13.3056 !Undercoordination parameter 
+ -34.5448 !Triple bond stabilization energy 
+ 0.0000 !Lower Taper-radius 
+ 10.0000 !Upper Taper-radius 
+ 2.8793 !Not used 
+ 20.0000 !Valency undercoordination 
+ 6.0891 !Valency angle/lone pair parameter 
+ 1.0563 !Valency angle 
+ 2.0384 !Valency angle parameter 
+ 6.1431 !Not used 
+ 6.9290 !Double bond/angle parameter 
+ 0.3989 !Double bond/angle parameter: overcoord
+ 3.9954 !Double bond/angle parameter: overcoord 
+ -2.4837 !Not used 
+ 8.5385 !Torsion/BO parameter 
+ 6.7491 !Torsion overcoordination 
+ 0.1414 !Torsion overcoordination 
+ 1.0000 !Conjugation 0 (not used) 
+ 1.1348 !Conjugation 
+ 1.5591 !vdWaals shielding 
+ 0.1000 !Cutoff for bond order (*100) 
+ 1.7602 !Valency angle conjugation parameter 
+ 0.6991 !Overcoordination parameter 
+ 50.0000 !Overcoordination parameter 
+ 1.8512 !Valency/lone pair parameter 
+ 548.6451 !Softness 
+ 0.0001 !nu 
+ 0.0866 !Pval 
+ 5.7000 !Electron taper 
+ 0.7903 !Valency angle conjugation parameter 
+ 3 ! Nr of atoms; cov.r; valency;a.m;Rvdw;Evdw;gammaEEM;cov.r2;# 
+ alfa;gammavdW;valency;Eunder;Eover;chiEEM;etaEEM;n.u. 
+ cov r3;Elp;Heat inc.;n.u.;n.u.;n.u.;n.u. 
+ ov/un;val1;n.u.;val3,vval4 
+Ag 1.6241 0.0000 107.8682 2.0778 1.0421 0.7152 0.0000 0.0000 
+ 12.7994 1.0649 1.0458 0.0000 0.1265 0.0100 3.6487 5.4886 
+ -1.0000 0.0000 23.0419 5.4409 6.9107 0.1973 5.4886 6.6071 
+ -30.4477 2.2989 0.0024 1.0000 2.8103 0.0000 0.0000 0.0000 
+El -0.1000 0.0000 1.0000 1.2942 0.1116 0.4079 -0.1000 0.0000 
+ 7.4194 4.5841 4.0000 0.0000 0.7194 1.0000 1.0000 10.0000 
+ -0.1000 0.0000 -2.3700 6.4918 8.5961 0.2368 10.0000 11.3404 
+ -5.0000 3.1873 0.0001 6.2998 2.5791 0.0000 0.0000 0.0000 
+X -0.1000 2.0000 1.0080 2.0000 0.0000 1.0000 -0.1000 6.0000 
+ 10.0000 2.5000 4.0000 0.0000 0.0000 8.5000 1.5000 10.0000 
+ -0.1000 0.0000 -2.3700 8.7410 13.3640 0.6690 0.9745 0.0000 
+ -11.0000 2.7466 1.0338 4.0000 2.8793 0.0000 0.0000 0.0000 
+ 1 ! Nr of bonds; Edis1;LPpen;n.u.;pbe1;pbo5;13corr;pbo6 
+ pbe2;pbo3;pbo4;Etrip;pbo1;pbo2;ovcorr 
+ 1 1 75.3876 21.1762 0.0000 -0.7038 0.3000 0.0000 26.0000 0.0416 
+ 1.0188 -0.8442 0.0000 0.0000 -0.0731 5.9399 0.0000 0.0100 
+ 1 ! Nr of off-diagonal terms; Ediss;Ro;gamma;rsigma;rpi;rpi2 
+ 1 2 1.6865 1.4785 1.7555 -1.0000 -1.0000 -1.0000 
+ 0 ! Nr of angles;at1;at2;at3;Thetao,o;ka;kb;pv1;pv2 
+ 0 ! Nr of torsions;at1;at2;at3;at4;;V1;V2;V3;V2(BO);vconj;n.u;n 
+ 0 0 !H-bonds

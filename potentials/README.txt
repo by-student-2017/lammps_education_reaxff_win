@@ -1877,15 +1877,18 @@ P. L. B. Prado, (2022).
 https://etheses.whiterose.ac.uk/30261/1/2022_01_Phebe_PhD_Thesis_V4.pdf
 
 2022X26
+CHONSSi
 E. J. Gurniak et al.,
 J. Chem. Phys. 157, 044105 (2022)
 https://doi.org/10.1063/5.0102293
 
 2022X27
+AgEl
 W. Noid et al., Doctor of Philosophy
 https://etda.libraries.psu.edu/catalog/20337bue33
 
 2022X28
+CHON
 H. Yin et al.,
 Physics of Plasmas 29, 033508 (2022)
 https://doi.org/10.1063/5.0068505
