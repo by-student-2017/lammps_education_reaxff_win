@@ -1,0 +1,36 @@
+#Supplementary material S3 Running setting file for ReaxFF MD simulation of adiabatic decomposition of CL-20/N2O initiated at 800 K performed using LAMMPS
+units		     real
+atom_style	     charge
+read_data	     data.CL20-N2O_4x2x2-relax.anm
+pair_style	     reax/c NULL lgvdw yes
+pair_coeff	     * * ffield.reax.lg C H O N
+compute          reax all pair reax/c
+velocity	     all create 300 1585431050
+variable eb  	 equal c_reax[1]
+variable ea  	 equal c_reax[2]
+variable elp 	 equal c_reax[3]
+variable emol 	 equal c_reax[4]
+variable ev 	 equal c_reax[5]
+variable epen 	 equal c_reax[6]
+variable ecoa 	 equal c_reax[7]
+variable ehb 	 equal c_reax[8]
+variable et 	 equal c_reax[9]
+variable eco 	 equal c_reax[10]
+variable ew 	 equal c_reax[11]
+variable ep 	 equal c_reax[12]
+variable efi 	 equal c_reax[13]
+variable eqeq 	 equal c_reax[14]
+neighbor		 2.5 bin
+neigh_modify	 every 10 delay 0 check no 
+fix		         1 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+fix		         2 all nve
+fix		         3 all temp/berendsen 300 800 50
+fix		         4 all reax/c/bonds 500 bonds.reax
+thermo 			 1000
+thermo_style	 custom step temp epair etotal  pe ke press  pxx pyy pzz pxy pxz pyz v_eb v_ea v_elp v_emol v_ev v_epen v_ecoa v_ehb v_et v_eco v_ew v_ep v_efi v_eqeq lx ly lz cella cellb cellc cellalpha cellbeta cellgamma vol density
+dump		     2 all custom 500 dump.trj id type q xu yu zu 
+timestep		 0.1
+restart		     200000 restart1 restart2
+run 		     10000
+unfix		     3
+run 		     7000000
