@@ -11,10 +11,16 @@ input file (reaxff, lammps)
   lamellar graphene oxide (GO) membranes 
 
 - M. Deffner et al., J. Chem. Theory. Comput. 19 (2023) 992-1002.: https://doi.org/10.1021/acs.jctc.2c00648
-  Gold_wire_with_molecules
 
-- S. Boyd et al., Nature Mater. 20 (2021) 1689–1694.: https://www.nature.com/articles/s41563-021-01066-4
-  https://doi.org/10.24435/materialscloud:kh-y2.
+- N. M. Erksen, NTNU Open (2017).: https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2390753
+  hydrogen_dissociation: https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2390753/12537_FULLTEXT.pdf?sequence=1&isAllowed=y
+
+- C. Zhu et al., ACS Nano 17 (2023) 9938–9952.: https://doi.org/10.1021/acsnano.2c10953
+  INTERFACE force field (IFF), Metal Surfaces in Four Dimensions
+
+- C.-x. Ren et al.,Energ. Mater. Front. 3 (2022) 1-9.: https://doi.org/10.1016/j.enmf.2021.09.006
+
+- P. Shi et al., Phys. Chem. Chem. Phys., 2023,25, 13946-13965.: https://doi.org/10.1039/d2cp05196f
 
 - M. L. Urquiza et al., ACS Nano 15 (2021) 12945-12954.: https://doi.org/10.1021/acsnano.1c01466
   HfO2: Supporting Information
