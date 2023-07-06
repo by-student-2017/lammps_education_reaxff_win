@@ -1938,6 +1938,12 @@ CHOAl
 J. A. Scher et al.,
 Cite this: ACS Appl. Mater. Interfaces 2023, 15, 23, 28716–28730.
 https://doi.org/10.1021/acsami.3c02327
+
+2023X8
+CHOSMoNiLiBFPN
+F. Qi et al.,
+J. Chem. Phys. 158, 104704 (2023)
+https://doi.org/10.1063/5.0130686
 -------------------------------------------------------------------
 input file (reaxff, lammps)
 
