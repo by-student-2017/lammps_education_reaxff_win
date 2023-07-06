@@ -384,6 +384,12 @@ CHONSSiPtZrNiAuVBiTiMoTeNb
 William A. Goddard III et al.,
 Topics in Catalysis volume 54, pages 659-668 (2011)
 https://link.springer.com/article/10.1007/s11244-011-9688-8
+
+2008X3
+Au
+T. Jarvi et al.,
+Eur. Phys. J. B 66, 75–79 (2008).
+https://doi.org/10.1140/epjb/e2008-00378-3
 -------------------------------------------------------------------
 2009
 
@@ -419,6 +425,15 @@ CHOFeCl
 Cite this: J. Phys. Chem. A 2010, 114, 21, 6298-6307
 Publication Date:May 10, 2010
 https://doi.org/10.1021/jp101332k
+
+2010X3
+CHOCaSi
+Fogarty et al., J. Chem. Phys., 2010
+
+2010X4
+CHONSSiPtZrNiCuCoHeNeArKrXe
+K. Amar, Master Thesis (2010).
+https://etda.libraries.psu.edu/catalog/11698
 -------------------------------------------------------------------
 2011
 
@@ -553,6 +568,12 @@ OHNb
 Alexey L. Kaledin et al.,
 Cite this: J. Phys. Chem. A 2013, 117, 32, 6967-6974.
 https://doi.org/10.1021/jp312033p
+
+2013X11
+CHONSSiPtZrNiCuCoHeNeArKrXe
+L. Huang et al.,
+J. Chem. Phys. 139, 194707 (2013)
+https://doi.org/10.1063/1.4832039
 -------------------------------------------------------------------
 2014
 
@@ -749,6 +770,12 @@ Publication Date:December 8, 2015
 https://doi.org/10.1021/acs.jpcc.5b09820
 
 2016X15
+CHOSAu
+A. Ulvestad et al.,
+Cite this: J. Phys. Chem. Lett. 2016, 7, 15, 3008–3013
+https://doi.org/10.1021/acs.jpclett.6b01038
+
+2016X16
 CHONSMgPNaTiClFAu
 X. Li et al.,
 Cite this: J. Chem. Theory Comput. 2016, 12, 7, 3325–3339.
@@ -840,6 +867,17 @@ CCu
 Tao ChengOrcid et al.,
 Cite this: J. Am. Chem. Soc. 2017, 139, 34, 11642-11645.
 https://doi.org/10.1021/jacs.7b03300
+
+2017X15
+CHONSSi
+T. Zhou et al.,
+Phys. Chem. Chem. Phys., 2018,20, 3953-3969.
+DOI	https://doi.org/10.1039/C7CP07321F
+
+2017X16
+CHOS
+J. Muller et al., (2017).
+https://macau.uni-kiel.de/servlets/MCRFileNodeServlet/dissertation_derivate_00007173/Diss_Mueller.pdf
 
 No.52
 CHO
@@ -1230,6 +1268,18 @@ J. M. Rimsza et al., Front. Mater., 24 April 2019
 Sec. Ceramics and Glass
 https://doi.org/10.3389/fmats.2019.00079
 
+2019X17
+CHONSSi
+C. Ren et al.,
+Phys. Chem. Chem. Phys., 2020,22, 2827-2840.
+https://doi.org/10.1039/C9CP06102A
+
+2019X18
+CHOSeW
+Y. Xuan et al.,
+J. Cryst. Growth 527 (2019) 125247.
+https://doi.org/10.1016/j.jcrysgro.2019.125247
+
 No.81
 CHONSSi
 C. Ren et al.,
@@ -1331,6 +1381,22 @@ CHONAl
 C. Ulises Gonzalez-Valle et al.,
 Cite this: J. Phys. Chem. C 2020, 124, 21, 11558-11563.
 https://doi.org/10.1021/acs.jpcc.0c02847
+
+2020X9
+CHONSSiCaCsKSrNaMgAlCu
+J. Guo et al.,
+Chem. Phys. Lett. 739 (2020) 136979.
+https://doi.org/10.1016/j.cplett.2019.136979
+
+2020X10A
+2020X10B
+CCo
+S. P. L. Roefs, MASTER (2020).
+https://pure.tue.nl/ws/portalfiles/portal/208445034/Afstudeerverslag_Sven_Roefs_0861746_.pdf
+
+2020X11
+Le, Tran Thi Bao; (2020).
+https://discovery.ucl.ac.uk/id/eprint/10115512/
 
 No.88
 AgAvEl
@@ -1569,6 +1635,17 @@ IPbCs
 M. Pols et al.,
 https://doi.org/10.48550/arXiv.2104.01455
 
+2021X22
+CHONSSi
+C.-x. Ren et al.,
+Energ. Mater. Front. 3 (2022) 1-9.
+https://doi.org/10.1016/j.enmf.2021.09.006
+
+2021X23
+J. Park et al.,
+Journal of Applied Physics 129, 175103 (2021)
+https://doi.org/10.1063/5.0044840
+
 NTO_ReaxFFlg
 CHONSSi
 L. Du et al.,
@@ -1650,6 +1727,7 @@ https://doi.org/10.1021/acs.jpcc.2c01107
 OMg
 F. Fiesinger et al.,
 10.26434/chemrxiv-2022-3chphs
+https://doi.org/10.1021/acs.jpclett.1c03867
 
 2022X12
 LiNaMg
@@ -1732,6 +1810,27 @@ OHSMoC
 A. Bondarev et al., 
 Cite this: ACS Appl. Mater. Interfaces 2022, 14, 49, 55051–55061.
 https://doi.org/10.1021/acsami.2c15706
+
+2022X25A, CHONSSiCaCsKSrNaMgAlCu
+2022X25B, CHONAlMg
+P. L. B. Prado, (2022).
+https://etheses.whiterose.ac.uk/30261/1/2022_01_Phebe_PhD_Thesis_V4.pdf
+
+2022X26
+W. Noid et al., Doctor of Philosophy
+https://etda.libraries.psu.edu/catalog/20337bue33
+
+2022X27
+H. Yin et al.,
+Physics of Plasmas 29, 033508 (2022)
+https://doi.org/10.1063/5.0068505
+
+2022X28
+Z. G. Fthenakis et al.,
+Front. Chem., 29 August 2022
+Sec. Physical Chemistry and Chemical Physics
+Volume 10 - 2022 | https://doi.org/10.3389/fchem.2022.951261
+(https://www.frontiersin.org/articles/10.3389/fchem.2022.951261/full)
 -------------------------------------------------------------------
 2023
 
@@ -2058,4 +2157,13 @@ https://pubs.acs.org/doi/suppl/10.1021/acs.iecr.7b01714/suppl_file/ie7b01714_si_
 
 code
 https://doi.org/10.1021/acs.energyfuels.6b01854
+
+https://pubs.acs.org/doi/suppl/10.1021/acs.jpcc.0c03786/suppl_file/jp0c03786_si_001.pdf
+Quantum Espresso (input file)
+
+https://pubs.acs.org/doi/full/10.1021/acs.jpcc.6b12752
+script on vasp
+
+https://pubs.acs.org/doi/full/10.1021/acs.jpca.3c00424
+CP2k and Gromacs
 -------------------------------------------------------------------
