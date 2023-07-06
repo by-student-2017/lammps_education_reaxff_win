@@ -468,11 +468,6 @@ CHONSSi
 U. Khalilov et al.,
 Cite this: J. Phys. Chem. C 2011, 115, 50, 24839-24848.
 https://doi.org/10.1021/jp2082566
-
-2011X5
-B.-H. Kim et al.,
-Appl. Phys. Lett. 99, 143115 (2011)
-https://doi.org/10.1063/1.3643038
 -------------------------------------------------------------------
 2012
 
@@ -635,11 +630,6 @@ CHON
 Q. An et al.,
 Cite this: J. Phys. Chem. C 2014, 118, 34, 19918–19928.
 https://doi.org/10.1021/jp506501r
-
-2014X9
-I. Leven et al.,
-J. Chem. Phys. 140, 104106 (2014)
-https://doi.org/10.1063/1.4867272
 -------------------------------------------------------------------
 2015
 
@@ -693,6 +683,7 @@ Publication Date:February 12, 2015
 https://doi.org/10.1021/jp5105328
 
 2015X9
+Li
 A. Aryanfar et al.,
 J. Chem. Phys. 143, 134701 (2015)
 https://doi.org/10.1063/1.4930014
@@ -803,6 +794,7 @@ Cite this: J. Chem. Theory Comput. 2016, 12, 7, 3325–3339.
 https://doi.org/10.1021/acs.jctc.6b00283
 
 2016X17
+CHON
 T. Zhu et al,
 J. Chem. Phys. 145, 064302 (2016)
 https://doi.org/10.1063/1.4960146
