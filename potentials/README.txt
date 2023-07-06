@@ -1893,7 +1893,8 @@ H. Yin et al.,
 Physics of Plasmas 29, 033508 (2022)
 https://doi.org/10.1063/5.0068505
 
-2022X29
+2022X29,  hybrid RDX and C-2013 for graphene (Cg) + C/H/O/N
+CHONCg
 Z. G. Fthenakis et al.,
 Front. Chem., 29 August 2022
 Sec. Physical Chemistry and Chemical Physics
