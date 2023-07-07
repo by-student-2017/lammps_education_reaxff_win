@@ -1,0 +1,46 @@
+# REAX potential for ZnO system
+units real
+atom_style charge
+read_data data.ZnO
+pair_style reax/c lmp_control
+pair_coeff * * ffield.reax.ZnOH Zn O
+neighbor 2 bin
+neigh_modify every 10 delay 0 check no
+velocity all create 300 4928459 dist gaussian
+#dump: output file
+dump 1 all custom 100 dump_glass_rt_info.xyz id type x y z q fx fy fz
+dump 2 all xyz 100 glass_eq_npt.xyz
+dump 3 all xtc 100 test.xtc
+timestep 0.5 #femtosecond
+fix 1 all qeq/reax 1 0.0 10.0 1e-6 param.qeq
+# ---------- STEP 1 : equilibrate at 300K----------------
+fix 2 all npt temp 300.0 300.0 100 iso 1.0 1.0 100
+thermo 1000
+thermo_style custom step temp epair etotal press vol density lx ly lz
+run 100000
+unfix 2
+# ---------- STEP 2 : anneal it up to 2500K----------------
+fix 3 all npt temp 300.0 2500.0 100 iso 1.0 1.0 100
+#fix 6 all temp/rescale 100 5000 5000 5 1.0
+thermo 1000
+thermo_style custom step temp epair etotal press vol density lx ly lz
+run 100000
+unfix 3
+# ---------- STEP 3 : equilibrate at 2500K----------------
+fix 4 all npt temp 2500.0 2500.0 100 iso 1.0 1.0 100
+#fix 6 all temp/rescale 100 5000 5000 5 1.0
+thermo 10000
+thermo_style custom step temp epair etotal press vol density lx ly lz
+run 1000000
+unfix 4
+# ---------- STEP 4 : cool it down to 300K-quench----------------
+fix 5 all npt temp 2500.0 300.0 100 iso 1.0 1.0 100
+thermo 1000
+thermo_style custom step temp epair etotal press vol density lx ly lz
+run 94000
+unfix 5
+# ---------- STEP 5 : equilibrate it at 300K----------------
+fix 6 all npt temp 300.0 300.0 100 iso 1.0 1.0 100
+thermo 1000
+thermo_style custom step temp epair etotal press vol density lx ly lz
+run 1000000

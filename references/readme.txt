@@ -28,9 +28,9 @@ input file (reaxff, lammps)
   Li-ion_battery
 
 - M. A. Zobair, MSU Graduate Theses (2021).: https://bearworks.missouristate.edu/cgi/viewcontent.cgi?article=4730&context=theses
+  ZnO
 
 - M. Siviero, Master Thesis (2021).: https://webthesis.biblio.polito.it/21114/1/tesi.pdf
-  ZnO
 
 - M. L. Urquiza et al., ACS Nano 15 (2021) 12945-12954.: https://doi.org/10.1021/acsnano.1c01466
   HfO2: Supporting Information
