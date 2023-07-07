@@ -19,6 +19,7 @@ input file (reaxff, lammps)
   INTERFACE force field (IFF), Metal Surfaces in Four Dimensions
 
 - C.-x. Ren et al.,Energ. Mater. Front. 3 (2022) 1-9.: https://doi.org/10.1016/j.enmf.2021.09.006
+  CL-20_N2O
 
 - P. Shi et al., Phys. Chem. Chem. Phys., 2023,25, 13946-13965.: https://doi.org/10.1039/d2cp05196f
 

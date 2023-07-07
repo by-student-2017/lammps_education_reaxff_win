@@ -16,6 +16,7 @@ units		real
 atom_style	charge
 
 read_data	FilteringVertical.data
+#read_data	FilteringHorizental.data
 
 group           water type 11 12 15 16
 group           H2O type 11 15 
