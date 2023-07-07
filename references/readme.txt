@@ -21,11 +21,11 @@ input file (reaxff, lammps)
 - C.-x. Ren et al.,Energ. Mater. Front. 3 (2022) 1-9.: https://doi.org/10.1016/j.enmf.2021.09.006
   CL-20_N2O
 
-- P. Shi et al., Phys. Chem. Chem. Phys., 2023,25, 13946-13965.: https://doi.org/10.1039/d2cp05196f
-
 - V. Ekberg, (2019).: https://lup.lub.lu.se/luur/download?func=downloadFile&recordOId=8969772&fileOId=8969776
+  Tobermorite_with_water
 
 - V. Ponce et al., Phys. Chem. Chem. Phys., 2021,23, 597-606.: DOI	https://doi.org/10.1039/D0CP02851G
+  Li-ion_battery
 
 - M. A. Zobair, MSU Graduate Theses (2021).: https://bearworks.missouristate.edu/cgi/viewcontent.cgi?article=4730&context=theses
 
@@ -41,6 +41,8 @@ input file (reaxff, lammps)
 
 - S. Urata et al., J. Phys. Chem. C 122 (2018) 20555-20563.: https://doi.org/10.1021/acs.jpcc.8b06409
   BMDEE polymerization: Supplementary information
+
+- P. Shi et al., Phys. Chem. Chem. Phys., 2023,25, 13946-13965.: https://doi.org/10.1039/d2cp05196f
 -------------------------------------------------------------------
 plot the temperature of each atom
 

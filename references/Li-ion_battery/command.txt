@@ -1,0 +1,5 @@
+1. copy pdf to notepad
+  file name: structure.txt
+2. linux command
+  cat structure.txt | sed 's/\r//g' | tr ' ' '\n' | awk '{if(NR%(7*51+1)!=0){print}}' > tmp.txt
+  cat tmp.txt | awk '{if(NR%7)ORS=" ";else ORS="\n";print}' > out.txt

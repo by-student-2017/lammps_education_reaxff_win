@@ -1,0 +1,81 @@
+# 0. Basic settings
+
+units  real
+atom_style full
+dimension 3
+#boundary f f f
+boundary p p p
+
+read_data tobermorite_with_water.lmp
+
+pair_style reax/c NULL
+pair_coeff * * ffield.reax Si O Ca O H
+
+neighbor 0.8 bin
+neigh_modify delay 0 check yes
+
+thermo 10
+thermo_style custom step time temp etotal press lx ly lz xy xz yz
+
+group silica type <> 1 2
+group Ca type == 3
+group water type <> 4 5
+
+fix charge all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+
+# 1. minimization of all atoms except silica
+
+print """Starting" minimization of all atoms except "silica"""
+min_style cg
+fix 1 silica setforce 0.0 0.0 0.0
+minimize 1.0e-5 1.0e-7 300 1000
+unfix 1
+
+dump             d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q vx vy vz fx fy fz
+dump_modify      d1 element Si O Ca O H
+
+# 2. MD of all atoms except silica 2.5 ps
+
+timestep 0.1
+velocity silica zero linear
+velocity Ca create 0.1 1881677804
+velocity water create 0.1 1514666106
+fix 1 silica setforce 0.0 0.0 0.0
+fix 2 Ca nvt temp 0.1 500.0 1000.0
+fix 3 water nvt temp 0.1 500.0 1000.0
+print """running" 0.1 K->500 K "MD"""
+
+run 2500
+unfix 1
+unfix 2
+unfix 3
+
+# 3. E minimization with no frozen atoms
+
+print """Starting" minimization of all atoms in the "cell"""
+min_style cg
+dump 1 all xyz 1000 tobermorite_with_water_step3.xyz
+dump_modify 1 element Si O Ca O H
+
+minimize 1.0e-5 1.0e-7 300 1000
+undump 1
+
+# 4. low temperature MD of the whole system
+
+timestep 0.1
+velocity all create 0.1 722092004
+print """running" 0.1 K MD for the whole "system"""
+fix 1 all nvt temp 0.1 0.1 1000.0
+
+run 2500
+unfix 1
+
+# 5. E minimization with no frozen atoms
+
+print """Starting" minimization of all atoms in the "cell"""
+min_style cg
+dump 1 all xyz 1000 tobermorite_with_water_step5.xyz
+dump_modify 1 element Si O Ca O H
+
+minimize 1.0e-5 1.0e-7 300 1000
+undump 1

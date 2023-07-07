@@ -1,0 +1,247 @@
+################################beginning-of-the-input-file######################
+# Li7P2S8I-input
+
+units real
+boundary p p p
+
+atom_style full
+bond_style harmonic
+angle_style harmonic
+
+read_data LiPSI.data
+pair_style hybrid/overlay reax/c NULL checkqeq no lj/cut/coul/cut 12.0 morse 5
+pair_coeff * * reax/c CHOLiLvCu_co-v2.ff Li Li Li P S NULL NULL NULL NULL NULL Li Li
+
+#LJ parameters
+
+pair_coeff 1 1 lj/cut/coul/cut 0.000 3.1 #Li(anode)-Li(anode)
+pair_coeff 1 2 lj/cut/coul/cut 0.000 2.8 #Li(anode)-Li(SE)
+pair_coeff 1 3 lj/cut/coul/cut 0.000 2.3 #Li(anode)-Li(cathode)
+pair_coeff 1 4 lj/cut/coul/cut 0.000 2.6 #Li(anode)-P(SE)
+pair_coeff 1 5 lj/cut/coul/cut 0.000 2.1 #Li(anode)-S(SE)
+pair_coeff 1 6 lj/cut/coul/cut 0.500 2.5 #Li(anode)-I(SE)
+pair_coeff 1 7 lj/cut/coul/cut 0.285 3.4 #Li(anode)-Co(cathode)
+pair_coeff 1 8 lj/cut/coul/cut 0.285 3.4 #Li(anode)-O(cathode)
+pair_coeff 1 9 lj/cut/coul/cut 2.550 2.4 #Li(anode)-Al(cathode)
+pair_coeff 1 10 lj/cut/coul/cut 2.550 2.4 #Li(anode)-Cu(cathode)
+pair_coeff 1 11 lj/cut/coul/cut 0.000 2.8 #Li(anode)-Li(cathode-temp)
+pair_coeff 1 12 lj/cut/coul/cut 0.000 2.8 #Li(anode)-Li(anode-temp)
+
+pair_coeff 2 2 lj/cut/coul/cut 0.000 1.4 #Li(SE)-Li(SE)
+pair_coeff 2 3 lj/cut/coul/cut 0.000 2.5 #Li(SE)-Li(cathode)
+pair_coeff 2 4 lj/cut/coul/cut 0.000 2.6 #Li(SE)-P(SE)
+pair_coeff 2 5 lj/cut/coul/cut 0.000 2.1 #Li(SE)-S(SE)
+pair_coeff 2 6 lj/cut/coul/cut 0.500 2.5 #Li(SE)-I(SE)
+pair_coeff 2 7 lj/cut/coul/cut 0.285 2.5 #Li(SE)-Co(cathode)
+pair_coeff 2 8 lj/cut/coul/cut 0.285 1.4 #Li(SE)-O(cathode)
+pair_coeff 2 9 lj/cut/coul/cut 2.550 3.0 #Li(SE)-Al(cathode)
+pair_coeff 2 10 lj/cut/coul/cut 2.550 3.0 #Li(SE)-Cu(cathode)
+pair_coeff 2 11 lj/cut/coul/cut 0.000 2.8 #Li(SE)-Li(cathode-temp)
+pair_coeff 2 12 lj/cut/coul/cut 0.000 2.8 #Li(SE)-Li(anode-temp)
+
+pair_coeff 3 3 lj/cut/coul/cut 0.000 2.1 #Li(cathode)-Li(cathode)
+pair_coeff 3 4 lj/cut/coul/cut 0.000 3.3 #Li(cathode)-P(SE)
+pair_coeff 3 5 lj/cut/coul/cut 0.000 3.3 #Li(cathode)-S(SE)
+pair_coeff 3 6 lj/cut/coul/cut 0.500 3.3 #Li(cathode)-I(SE)
+pair_coeff 3 7 lj/cut/coul/cut 0.285 3.2 #Li(cathode)-Co(cathode)
+pair_coeff 3 8 lj/cut/coul/cut 0.285 1.2 #Li(cathode)-O(cathode)
+pair_coeff 3 9 lj/cut/coul/cut 2.550 3.4 #Li(cathode)-Al(cathode)
+pair_coeff 3 10 lj/cut/coul/cut 2.550 2.4 #Li(cathode)-Cu(cathode)
+pair_coeff 3 11 lj/cut/coul/cut 0.000 2.5 #Li(cathode)-Li(cathodetemp)
+pair_coeff 3 12 lj/cut/coul/cut 0.000 2.5 #Li(cathode)-Li(anode-temp)
+
+
+pair_coeff 4 4 lj/cut/coul/cut 0.000 5.7 #P(SE)-P(SE)
+pair_coeff 4 5 lj/cut/coul/cut 0.000 2.2 #P(SE)-S(SE)
+pair_coeff 4 6 lj/cut/coul/cut 0.100 2.5 #P(SE)-I(SE)
+pair_coeff 4 7 lj/cut/coul/cut 0.582 3.4 #P(SE)-Co(cathode)
+pair_coeff 4 8 lj/cut/coul/cut 0.582 3.4 #P(SE)-O(cathode)
+pair_coeff 4 9 lj/cut/coul/cut 0.017 3.5 #P(SE)-Al(cathode)
+pair_coeff 4 10 lj/cut/coul/cut 0.017 3.5 #P(SE)-Cu(cathode)
+pair_coeff 4 11 lj/cut/coul/cut 0.000 2.6 #P(SE)-Li(cathode-temp)
+pair_coeff 4 12 lj/cut/coul/cut 0.000 2.6 #P(SE)-Li(anode-temp)
+
+pair_coeff 5 5 lj/cut/coul/cut 0.000 3.8 #S(SE)-S(SE)
+pair_coeff 5 6 lj/cut/coul/cut 0.100 4.0 #S(SE)-I(SE)
+pair_coeff 5 7 lj/cut/coul/cut 0.582 3.4 #S(SE)-Co(cathode)
+pair_coeff 5 8 lj/cut/coul/cut 0.058 3.0 #S(SE)-O(cathode)
+pair_coeff 5 9 lj/cut/coul/cut 0.017 3.5 #S(SE)-Al(cathode)
+pair_coeff 5 10 lj/cut/coul/cut 0.017 3.5 #S(SE)-Cu(cathode)
+pair_coeff 5 11 lj/cut/coul/cut 0.000 2.1 #S(SE)-Li(cathode-temp)
+pair_coeff 5 12 lj/cut/coul/cut 0.000 2.1 #S(SE)-Li(anode-temp)
+
+pair_coeff 6 6 lj/cut/coul/cut 5.000 4.9 #I(SE)-I(SE)
+pair_coeff 6 7 lj/cut/coul/cut 0.582 3.4 #I(SE)-Co(cathode)
+pair_coeff 6 8 lj/cut/coul/cut 0.582 3.4 #I(SE)-O(cathode)
+pair_coeff 6 9 lj/cut/coul/cut 0.017 3.5 #I(SE)-Al(cathode)
+pair_coeff 6 10 lj/cut/coul/cut 0.017 3.5 #I(SE)-Cu(cathode)
+pair_coeff 6 11 lj/cut/coul/cut 0.050 2.5 #I(SE)-Li(cathode-temp)
+pair_coeff 6 12 lj/cut/coul/cut 0.050 2.5 #I(SE)-Li(anode-temp)
+
+pair_coeff 7 7 lj/cut/coul/cut 0.186 3.4 #Co(cathode)-Co(cathode)
+pair_coeff 7 8 lj/cut/coul/cut 0.000 3.4 #Co(cathode)-O(cathode)
+pair_coeff 7 9 lj/cut/coul/cut 0.010 2.4 #Co(cathode)-Al(cathode)
+pair_coeff 7 10 lj/cut/coul/cut 2.550 2.4 #Co(cathode)-Cu(cathode)
+pair_coeff 7 11 lj/cut/coul/cut 0.079 2.5 #Co(cathode)-Li(cathodetemp)
+pair_coeff 7 12 lj/cut/coul/cut 0.079 2.5 #Co(cathode)-Li(anodetemp)
+
+pair_coeff 8 8 lj/cut/coul/cut 0.595 2.8 #O(cathode)-O(cathode)
+pair_coeff 8 9 lj/cut/coul/cut 0.010 2.4 #O(cathode)-Al(cathode)
+pair_coeff 8 10 lj/cut/coul/cut 2.550 2.4 #O(cathode)-Cu(cathode)
+pair_coeff 8 11 lj/cut/coul/cut 0.079 1.4 #O(cathode)-Li(cathodetemp)
+pair_coeff 8 12 lj/cut/coul/cut 0.079 1.4 #O(cathode)-Li(anode-temp)
+
+pair_coeff 9 9 lj/cut/coul/cut 1.006 2.5 #Al(cathode)-Al(cathode)
+pair_coeff 9 10 lj/cut/coul/cut 0.010 2.4 #Al(cathode)-Cu(cathode)
+pair_coeff 9 11 lj/cut/coul/cut 0.011 3.0 #Al(cathode)-Li(cathodetemp)
+pair_coeff 9 12 lj/cut/coul/cut 0.011 3.0 #Al(cathode)-Li(anode-temp)
+
+pair_coeff 10 10 lj/cut/coul/cut 2.506 2.3 #Cu(cathode)-Cu(cathode)
+pair_coeff 10 11 lj/cut/coul/cut 0.011 3.0 #Cu(cathode)-Li(cathodetemp)
+pair_coeff 10 12 lj/cut/coul/cut 0.011 3.0 #Cu(cathode)-Li(anodetemp
+
+pair_coeff 11 11 lj/cut/coul/cut 0.000 2.8 #Li(cathode-temp)-Li(cathode-temp)
+pair_coeff 11 12 lj/cut/coul/cut 0.000 2.8 #Li(cathode-temp)-Li(anodetemp)
+pair_coeff 12 12 lj/cut/coul/cut 0.000 1.4 #Li(anode-temp)-Li(anodetemp)
+
+#morse parameters
+pair_coeff 1 1 morse 0.00 1.0 1.0 #Li(anode)-Li(anode)
+pair_coeff 1 2 morse 0.00 1.0 1.0 #Li(anode)-Li(SE)
+pair_coeff 1 3 morse 0.00 1.0 1.0 #Li(anode)-Li(cathode)
+pair_coeff 1 4 morse 0.00 1.0 1.0 #Li(anode)-P(SE)
+pair_coeff 1 5 morse 0.00 1.0 1.0 #Li(anode)-S(SE)
+pair_coeff 1 6 morse 0.00 1.0 1.0 #Li(anode)-I(SE)
+pair_coeff 1 7 morse 0.00 1.0 1.0 #Li(anode)-Co(cathode)
+pair_coeff 1 8 morse 0.00 1.0 1.0 #Li(anode)-O(cathode)
+pair_coeff 1 9 morse 0.00 1.0 1.0 #Li(anode)-Al(cathode)
+pair_coeff 1 10 morse 0.00 1.0 1.0 #Li(anode)-Cu(cathode)
+pair_coeff 1 11 morse 0.00 1.0 1.0 #Li(anode)-Li(cathode-temp)
+pair_coeff 1 12 morse 0.00 1.0 1.0 #Li(anode)-Li(anode-temp)
+
+pair_coeff 2 2 morse 0.00 1.0 1.0 #Li(SE)-Li(SE)
+pair_coeff 2 3 morse 0.00 1.0 1.0 #Li(SE)-Li(cathode)
+pair_coeff 2 4 morse 0.00 1.0 1.0 #Li(SE)-P(SE)
+pair_coeff 2 5 morse 0.00 1.0 1.0 #Li(SE)-S(SE)
+pair_coeff 2 6 morse 0.00 1.0 1.0 #Li(SE)-I(SE)
+pair_coeff 2 7 morse 0.00 1.0 1.0 #Li(SE)-Co(cathode)
+pair_coeff 2 8 morse 0.00 1.0 1.0 #Li(SE)-O(cathode)
+pair_coeff 2 9 morse 0.00 1.0 1.0 #Li(SE)-Al(cathode)
+pair_coeff 2 10 morse 0.00 1.0 1.0 #Li(SE)-Cu(cathode)
+pair_coeff 2 11 morse 0.00 1.0 1.0 #Li(SE)-Li(cathode-temp)
+pair_coeff 2 12 morse 0.00 1.0 1.0 #Li(SE)-Li(anode-temp)
+
+pair_coeff 3 3 morse 0.00 1.0 1.0 #Li(cathode)-Li(cathode)
+pair_coeff 3 4 morse 0.00 1.0 1.0 #Li(cathode)-P(SE)
+pair_coeff 3 5 morse 0.00 1.0 1.0 #Li(cathode)-S(SE)
+pair_coeff 3 6 morse 0.00 1.0 1.0 #Li(cathode)-I(SE)
+pair_coeff 3 7 morse 0.00 1.0 1.0 #Li(cathode)-Co(cathode)
+pair_coeff 3 8 morse 0.00 1.0 1.0 #Li(cathode)-O(cathode)
+pair_coeff 3 9 morse 0.00 1.0 1.0 #Li(cathode)-Al(cathode)
+pair_coeff 3 10 morse 0.00 1.0 1.0 #Li(cathode)-Cu(cathode)
+pair_coeff 3 11 morse 0.00 1.0 1.0 #Li(cathode)-Li(cathodetemp)
+pair_coeff 3 12 morse 0.00 1.0 1.0 #Li(cathode)-Li(anode-temp)
+
+pair_coeff 4 4 morse 0.00 1.0 1.0 #P(SE)-P(SE)
+pair_coeff 4 5 morse 36.44 2.0 2.1 #P(SE)-S(SE)
+pair_coeff 4 6 morse 41.97 1.6 2.5 #P(SE)-I(SE)
+pair_coeff 4 7 morse 0.00 1.0 1.0 #P(SE)-Co(cathode)
+pair_coeff 4 8 morse 0.00 1.0 1.0 #P(SE)-O(cathode)
+pair_coeff 4 9 morse 0.00 1.0 1.0 #P(SE)-Al(cathode)
+pair_coeff 4 10 morse 0.00 1.0 1.0 #P(SE)-Cu(cathode)
+pair_coeff 4 11 morse 0.00 1.0 1.0 #P(SE)-Li(cathode-temp)
+pair_coeff 4 12 morse 0.00 1.0 1.0 #P(SE)-Li(anode-temp)
+
+pair_coeff 5 5 morse 0.00 1.0 1.0 #S(SE)-S(SE)
+pair_coeff 5 6 morse 0.00 1.0 1.0 #S(SE)-I(SE)
+pair_coeff 5 7 morse 0.00 1.0 1.0 #S(SE)-Co(cathode)
+pair_coeff 5 8 morse 0.00 1.0 1.0 #S(SE)-O(cathode)
+pair_coeff 5 9 morse 0.00 1.0 1.0 #S(SE)-Al(cathode)
+pair_coeff 5 10 morse 0.00 1.0 1.0 #S(SE)-Cu(cathode)
+pair_coeff 5 11 morse 0.00 1.0 1.0 #S(SE)-Li(cathode-temp)
+pair_coeff 5 12 morse 0.00 1.0 1.0 #S(SE)-Li(anode-temp)
+
+pair_coeff 6 6 morse 0.00 1.0 1.0 #I(SE)-I(SE)
+pair_coeff 6 7 morse 0.00 1.0 1.0 #I(SE)-Co(cathode)
+pair_coeff 6 8 morse 0.00 1.0 1.0 #I(SE)-O(cathode)
+pair_coeff 6 9 morse 0.00 1.0 1.0 #I(SE)-Al(cathode)
+pair_coeff 6 10 morse 0.00 1.0 1.0 #I(SE)-Cu(cathode)
+pair_coeff 6 11 morse 0.00 1.0 1.0 #I(SE)-Li(cathode-temp)
+pair_coeff 6 12 morse 0.00 1.0 1.0 #I(SE)-Li(anode-temp)
+
+pair_coeff 7 7 morse 0.00 1.0 1.0 #Co(cathode)-Co(cathode)
+pair_coeff 7 8 morse 0.00 1.0 1.0 #Co(cathode)-O(cathode)
+pair_coeff 7 9 morse 0.00 1.0 1.0 #Co(cathode)-Al(cathode)
+pair_coeff 7 10 morse 0.00 1.0 1.0 #Co(cathode)-Cu(cathode)
+pair_coeff 7 11 morse 0.00 1.0 1.0 #Co(cathode)-Li(cathodetemp)
+pair_coeff 7 12 morse 0.00 1.0 1.0 #Co(cathode)-Li(anodetemp)
+
+pair_coeff 8 8 morse 0.00 1.0 1.0 #O(cathode)-O(cathode)
+pair_coeff 8 9 morse 0.00 1.0 1.0 #O(cathode)-Al(cathode)
+pair_coeff 8 10 morse 0.00 1.0 1.0 #O(cathode)-Cu(cathode)
+pair_coeff 8 11 morse 0.00 1.0 1.0 #O(cathode)-Li(cathodetemp)
+pair_coeff 8 12 morse 0.00 1.0 1.0 #O(cathode)-Li(anode-temp)
+
+pair_coeff 9 9 morse 0.00 1.0 1.0 #Al(cathode)-Al(cathode)
+pair_coeff 9 10 morse 0.00 1.0 1.0 #Al(cathode)-Cu(cathode)
+pair_coeff 9 11 morse 0.00 1.0 1.0 #Al(cathode)-Li(cathodetemp)
+pair_coeff 9 12 morse 0.00 1.0 1.0 #Al(cathode)-Li(anode-temp)
+
+pair_coeff 10 10 morse 0.00 1.0 1.0 #Cu(cathode)-Cu(cathode)
+pair_coeff 10 11 morse 0.00 1.0 1.0 #Cu(cathode)-Li(cathodetemp)
+pair_coeff 10 12 morse 0.00 1.0 1.0 #Cu(cathode)-Li(anodetemp)
+
+pair_coeff 11 11 morse 0.00 1.0 1.0 #Li(cathode-temp)-Li(cathode-temp)
+pair_coeff 11 12 morse 0.00 1.0 1.0 #Li(cathode-temp)-Li(anodetemp)
+pair_coeff 12 12 morse 0.00 1.0 1.0 #Li(anode-temp)-Li(anodetemp)
+
+neighbor 0.1 bin
+neigh_modify every 1 delay 0 check yes
+
+#set the atoms charges, the others are defined in the data file
+set type 2 charge 1 #Li
+set type 4 charge 5 #P
+set type 5 charge -2 #S
+set type 6 charge -1 #I
+set type 3 charge 0.0 #Li-cath
+set type 7 charge 0.0 #Co-cath
+
+velocity all create 5.0 12345678 dist uniform
+timestep 0.1
+restart 1000 batt2.restart1 batt2.restart2
+
+compute 1 all pe/atom
+compute 2 all ke/atom
+# =====================================================
+# minimization
+# =====================================================
+dump 1 all custom 1 min.dump id mol type x y z q c_1 c_2 vx vy vz
+minimize 1e-5 1e-5 10000 100000
+undump 1
+reset_timestep 0
+
+# =======================================================
+# molecular dynamics
+# =======================================================
+# thermodynamic data
+thermo_style custom step temp press pe ke etotal vol
+thermo 100
+#equilibration at 5K
+dump 2 all custom 1000 equil5k.dump id mol type x y z q c_1 c_2 vx vy vz
+fix 2 all npt temp 5.0 5.0 50 iso 1 1 500
+run 2000000
+undump 2
+unfix 2
+#heating
+
+dump 3 all custom 1000 heating.dump id mol type x y z q c_1 c_2 vx vy vz
+fix 3 all npt temp 5.0 300.0 50 iso 1 1 500
+run 2000000
+undump 3
+unfix 3
+#equilibration at 300K
+dump 4 all custom 1000 equil300k.dump id mol type x y z q c_1 c_2 vx vy vz
+fix 4 all npt temp 300.0 300.0 50 iso 1 1 500
+run 2000000
+undump 4
+unfix 4
+################################end-of-the-input-file######################
