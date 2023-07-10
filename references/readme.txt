@@ -12,13 +12,6 @@ input file (reaxff, lammps)
 
 - M. Deffner et al., J. Chem. Theory. Comput. 19 (2023) 992-1002.: https://doi.org/10.1021/acs.jctc.2c00648
   Gold_wire_with_molecules
-  
-- M. Siviero, Master Thesis (2021).: https://webthesis.biblio.polito.it/21114/1/tesi.pdf
-  FcC6S code
-
-- N. M. Erksen, NTNU Open (2017).: https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2390753
-  hydrogen_dissociation: https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2390753/12537_FULLTEXT.pdf?sequence=1&isAllowed=y
-  (nothing init.data)
 
 - C. Zhu et al., ACS Nano 17 (2023) 9938–9952.: https://doi.org/10.1021/acsnano.2c10953
   INTERFACE force field (IFF), Metal Surfaces in Four Dimensions
@@ -35,14 +28,21 @@ input file (reaxff, lammps)
 - Y.-S. Zhang et al., RSC Adv. 12 (2022) 9501-9511.: https://doi.org/10.1039/D1RA09329K
   FeCrO2: https://github.com/wenyanggroup/MD/tree/main
 
-- M. L. Urquiza et al., ACS Nano 15 (2021) 12945-12954.: https://doi.org/10.1021/acsnano.1c01466
-  HfO2: Supporting Information
+- N. M. Erksen, NTNU Open (2017).: https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2390753
+  hydrogen_dissociation: https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2390753/12537_FULLTEXT.pdf?sequence=1&isAllowed=y
+  (nothing init.data)
 
 - S. Urata et al., J. Phys. Chem. C 122 (2018) 20555-20563.: https://doi.org/10.1021/acs.jpcc.8b06409
   BMDEE polymerization: Supplementary information (failed)
 
 - V. Ponce et al., Phys. Chem. Chem. Phys., 2021,23, 597-606.: DOI	https://doi.org/10.1039/D0CP02851G
   Li-ion_battery (failed)
+
+- M. L. Urquiza et al., ACS Nano 15 (2021) 12945-12954.: https://doi.org/10.1021/acsnano.1c01466
+  HfO2: (need USER-ECHEMDID3) (see Supporting Information)
+
+- M. Siviero, Master Thesis (2021).: https://webthesis.biblio.polito.it/21114/1/tesi.pdf
+  FcC6S code
 
 - P. Shi et al., Phys. Chem. Chem. Phys., 2023,25, 13946-13965.: https://doi.org/10.1039/d2cp05196f
 -------------------------------------------------------------------
