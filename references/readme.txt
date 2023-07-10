@@ -8,7 +8,7 @@ input file (reaxff, lammps)
   LLM-105 structure file: https://scripts.iucr.org/cgi-bin/paper?S2053229618006617
 
 - P. Saidi et al., J. Phys. Chem. C 124 (2020) 26864-26873.: https://doi.org/10.1021/acs.jpcc.0c08817
-  lamellar graphene oxide (GO) membranes 
+  lamellar graphene oxide membranes 
 
 - M. Deffner et al., J. Chem. Theory. Comput. 19 (2023) 992-1002.: https://doi.org/10.1021/acs.jctc.2c00648
   Gold_wire_with_molecules
