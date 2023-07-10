@@ -1,17 +1,20 @@
 -------------------------------------------------------------------
 input file (reaxff, lammps)
 
-- K. Banlusan et al., J. Phys. Chem. C 119 (2015) 25845-25852.: https://doi.org/10.1021/acs.jpcc.5b05446
-  Metal–organic frameworks (MOFs): Supporting Information
+- P. Saidi et al., J. Phys. Chem. C 124 (2020) 26864-26873.: https://doi.org/10.1021/acs.jpcc.0c08817
+  lamellar graphene oxide membranes 
+
+- Y.-S. Zhang et al., RSC Adv. 12 (2022) 9501-9511.: https://doi.org/10.1039/D1RA09329K
+  FeCrO2: https://github.com/wenyanggroup/MD/tree/main (Currently, only conditions forHighPressure and (100) are in place.)
 
 - B. W. Hamilton et al., J. Phys. Chem. A 125 (2021) 1766-1777.: https://doi.org/10.1021/acs.jpca.0c10946
   LLM-105 structure file: https://scripts.iucr.org/cgi-bin/paper?S2053229618006617
 
-- P. Saidi et al., J. Phys. Chem. C 124 (2020) 26864-26873.: https://doi.org/10.1021/acs.jpcc.0c08817
-  lamellar graphene oxide membranes 
-
 - M. Deffner et al., J. Chem. Theory. Comput. 19 (2023) 992-1002.: https://doi.org/10.1021/acs.jctc.2c00648
   Gold_wire_with_molecules
+
+- K. Banlusan et al., J. Phys. Chem. C 119 (2015) 25845-25852.: https://doi.org/10.1021/acs.jpcc.5b05446
+  Metal–organic frameworks (MOFs): Supporting Information
 
 - C. Zhu et al., ACS Nano 17 (2023) 9938–9952.: https://doi.org/10.1021/acsnano.2c10953
   INTERFACE force field (IFF), Metal Surfaces in Four Dimensions
@@ -24,9 +27,6 @@ input file (reaxff, lammps)
 
 - M. A. Zobair, MSU Graduate Theses (2021).: https://bearworks.missouristate.edu/cgi/viewcontent.cgi?article=4730&context=theses
   ZnO
-
-- Y.-S. Zhang et al., RSC Adv. 12 (2022) 9501-9511.: https://doi.org/10.1039/D1RA09329K
-  FeCrO2: https://github.com/wenyanggroup/MD/tree/main
 
 - N. M. Erksen, NTNU Open (2017).: https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2390753
   hydrogen_dissociation: https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2390753/12537_FULLTEXT.pdf?sequence=1&isAllowed=y
