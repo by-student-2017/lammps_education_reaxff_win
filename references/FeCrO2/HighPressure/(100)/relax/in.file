@@ -32,15 +32,15 @@ group		g_nve region r_nve
 region		r_nvt_o block 0.0 28.7403 0.0 28.7403 46 86
 region		boxo block 1 28 1 28 48 84
 #create_atoms    2 random ${atoms} ${seed} boxo mol O2 ${seed2}
-create_atoms 0 random ${atoms} ${seed} boxo mol O2 ${seed2} overlap 1.33
+create_atoms 0 random ${atoms} ${seed} boxo mol O2 ${seed2} # overlap 1.33
 group           g_nvt_o region r_nvt_o
 
-mass		1 52
-mass 		2 55.84
-mass		3 16
+mass		1 52    # Cr
+mass 		2 55.84 # Fe
+mass		3 16    # O
 
 #fix             qeq all qeq/reax 1 0 5 1.0e-6 reaxff
-fix qeq all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+fix qeq all qeq/reax 1 0 5 1.0e-6 reax/c
 
 thermo		100
 timestep	0.25
@@ -56,8 +56,8 @@ reset_timestep  0
 dump		1 all custom 400 relax_nve.lammpstrj id type q x y z
 dump_modify     1 sort id
 #----------------------------------------------------------------
-dump        d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q vx vy vz fx fy fz
-dump_modify d1 element Cr Fe O
+#dump        d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q vx vy vz fx fy fz
+#dump_modify d1 element Cr Fe O
 #----------------------------------------------------------------
 fix		reflect g_nvt_o wall/reflect zlo 46
 fix		1 g_nvt_crfe nve
