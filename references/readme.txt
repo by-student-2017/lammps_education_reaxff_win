@@ -39,7 +39,7 @@ input file (reaxff, lammps)
   Li-ion_battery (failed)
 
 - M. L. Urquiza et al., ACS Nano 15 (2021) 12945-12954.: https://doi.org/10.1021/acsnano.1c01466
-  HfO2: (need USER-ECHEMDID3) (see Supporting Information)
+  HfO2: (need USER-ECHEMDID3) (see Supporting Information) (failed)
 
 - M. Siviero, Master Thesis (2021).: https://webthesis.biblio.polito.it/21114/1/tesi.pdf
   FcC6S code
