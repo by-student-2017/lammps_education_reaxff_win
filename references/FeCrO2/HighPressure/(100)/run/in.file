@@ -1,0 +1,145 @@
+echo 		    screen
+variable	    temp equal 800
+variable	    seed equal 534
+variable	    seed2 equal 868
+variable            timestep equal step
+
+units               real
+atom_style          charge
+boundary            p p f
+atom_modify         map yes
+
+read_data           /share/home/yszhang/${temp}/CrFeO.nvt
+molecule            O2 /share/home/yszhang/O2.mol 
+
+pair_style          reaxff NULL
+pair_coeff          * * /share/home/yszhang/potentials/CrOFeSCH.reax Cr Fe O
+
+######################## fix bot ####################
+region		    r_fixed_crfe block INF INF INF INF INF 4.32
+group		    g_fixed_crfe region r_fixed_crfe
+
+#######################  nvt CrFe ####################
+region		    r_nvt_crfe block INF INF INF INF 4.32 27.31
+
+########################## nve CrFe + O ###################
+region		    r_nve block INF INF INF INF 27.31 48
+
+######################### nvt O ################
+region		    r_nvt_o block 0.0 28.7403 0.0 28.7403 48 86
+region		    create_o block 2 26.7403 2 26.7403 50 84
+
+######################## msd ###################
+group               cr id 2802 2842 2844 2830 2864 2886 2888 2906 2812 2834 2838 2876 2894 2934 2936 2938 2954 2956 2976 2994 2996 2958 2821 2861 2863 2809 2847 2923 2887 2907 2927 2929 2965 2983 2831 2837 2877 2917 2955 2995 2957 2959 2977 2997 2604 2610 2626 2628 2662 2724 2690 2726 2742 2748 2786 2616 2634 2660 2678 2698 2738 2752 2776 2794 2780 2798 2603 2605 2627 2685 2703 2763 2781 2783 2787 2789 2615 2617 2639 2677 2691 2693 2711 2699 2719 2755 2757 2779 2402 2430 2450 2488 2490 2508 2544 2570 2586 2588 2434 2452 2456 2420 2460 2496 2532 2500 2518 2538 2580 2598
+group               fe id 2804 2822 2824 2806 2808 2810 2826 2828 2846 2848 2850 2862 2882 2884 2902 2904 2922 2924 2866 2868 2870 2890 2908 2910 2926 2928 2930 2942 2944 2962 2964 2982 2984 2946 2948 2950 2966 2968 2970 2986 2988 2990 2814 2816 2832 2836 2852 2854 2856 2818 2820 2840 2858 2860 2872 2874 2892 2896 2912 2914 2916 2932 2878 2880 2898 2900 2918 2920 2940 2952 2972 2974 2992 2960 2978 2980 2998 3000 2801 2803 2805 2823 2825 2841 2843 2845 2865 2807 2827 2829 2849 2867 2869 2881 2883 2885 2901 2903 2905 2921 2925 2889 2909 2941 2943 2945 2961 2963 2981 2985 2947 2949 2967 2969 2987 2989 2811 2813 2815 2833 2835 2851 2853 2855 2871 2873 2875 2817 2819 2839 2857 2859 2879 2891 2893 2895 2911 2913 2915 2931 2933 2935 2897 2899 2919 2937 2939 2951 2953 2971 2973 2975 2991 2993 2979 2999 2602 2622 2624 2642 2644 2606 2608 2630 2646 2648 2650 2664 2682 2684 2702 2704 2722 2666 2668 2670 2686 2688 2706 2708 2710 2728 2730 2744 2762 2764 2782 2784 2746 2750 2766 2768 2770 2788 2790 2612 2614 2632 2636 2652 2654 2656 2618 2620 2638 2640 2658 2672 2674 2676 2692 2694 2696 2712 2714 2716 2732 2734 2736 2680 2700 2718 2720 2740 2754 2756 2772 2774 2792 2796 2758 2760 2778 2800 2601 2621 2623 2625 2641 2643 2645 2661 2663 2665 2607 2609 2629 2647 2649 2667 2669 2681 2683 2701 2705 2721 2723 2725 2687 2689 2707 2709 2727 2729 2741 2743 2745 2761 2765 2785 2747 2749 2767 2769 2611 2613 2631 2633 2635 2651 2653 2655 2671 2673 2675 2619 2637 2657 2659 2679 2695 2713 2715 2731 2733 2735 2697 2717 2737 2739 2751 2753 2771 2773 2775 2791 2793 2795 2759 2777 2797 2799 2404 2422 2424 2442 2444 2406 2408 2410 2426 2428 2446 2448 2462 2464 2482 2484 2502 2504 2522 2524 2466 2468 2470 2486 2506 2510 2526 2528 2530 2542 2562 2564 2582 2584 2546 2548 2550 2566 2568 2590 2412 2414 2416 2432 2436 2454 2418 2438 2440 2458 2472 2474 2476 2492 2494 2512 2514 2516 2534 2536 2478 2480 2498 2520 2540 2552 2554 2556 2572 2574 2576 2592 2594 2596 2558 2560 2578 2600
+group		    crfe union cr fe
+group		    o type 3
+group		    species union crfe o
+
+mass		    1 52
+mass 		    2 55.84
+mass		    3 16
+
+fix                 qeq all qeq/reax 1 0 5 1.0e-6 reax/c
+
+thermo		    1
+timestep	    0.25
+
+velocity	    g_fixed_crfe set 0 0 0
+fix		    fixed_crfe g_fixed_crfe setforce 0 0 0
+
+group               g_nvt_crfe region r_nvt_crfe
+group		    g_nve region r_nve
+group		    g_nvt_o region r_nvt_o
+
+compute             msd_cr cr msd com yes
+compute             msd_fe fe msd com yes
+
+#thermo_style	    custom step temp pe etotal press c_msd_cr[1] c_msd_cr[2] c_msd_cr[3] c_msd_cr[4] c_msd_fe[1] c_msd_fe[2] c_msd_fe[3] c_msd_fe[4]
+
+variable            msdcrx equal c_msd_cr[1]
+variable            msdfex equal c_msd_fe[1]
+variable            msdcry equal c_msd_cr[2]
+variable            msdfey equal c_msd_fe[2]
+variable            msdcrz equal c_msd_cr[3]
+variable            msdfez equal c_msd_fe[3]
+variable            msdcrall equal c_msd_cr[4]
+variable            msdfeall equal c_msd_fe[4]
+
+thermo_style	    custom step temp pe etotal press c_msd_cr[1] c_msd_cr[2] c_msd_cr[3] c_msd_cr[4] c_msd_fe[1] c_msd_fe[2] c_msd_fe[3] c_msd_fe[4]
+
+
+dump                1 all custom 400 run.lammpstrj id type q x y z
+dump_modify         1 sort id
+
+fix                 top g_nvt_o wall/reflect zhi 86
+fix                 1 g_nvt_crfe nvt temp ${temp} ${temp} 25
+fix                 2 g_nvt_o nvt temp ${temp} ${temp} 25
+fix                 3 g_nve nve
+
+#dump 		    2 all custom 100 index.${timestep} id type q x y z
+#dump_modify         2 sort id
+
+fix                 9999 species reaxff/species 1 10 10 species.out element Cr Fe O cutoff 1 1 1 cutoff 2 2 1 cutoff 1 2 1
+
+run                 800000 every 10 &
+		    "unfix qeq" &
+		    "unfix top" &
+                    "unfix 1" &
+                    "unfix 2" &
+                    "unfix 3" &
+                    "group g_nvt_o delete" &
+                    "group g_nvt_crfe delete" &
+                    "group g_nve delete" &
+                    "group g_nvt_crfe region r_nvt_crfe" &
+                    "group g_nve region r_nve" &
+                    "group g_nvt_o region r_nvt_o" &
+		    "fix qeq all qeq/reax 1 0 5 1.0e-6 reax/c" &
+                    "fix top g_nvt_o wall/reflect zhi 86" &
+                    "fix 1 g_nvt_crfe nvt temp ${temp} ${temp} 25" &
+                    "fix 2 g_nvt_o nvt temp ${temp} ${temp} 25" &
+                    "fix 3 g_nve nve" &
+		    "variable num_o equal count(g_nvt_o)" &
+		    "variable num_add equal ceil((396-${num_o})/8)" &
+		    "print '@timestep ${timestep} add ${num_add} num ${num_o}'" &
+		    "if '${num_o} < 396' then &
+		    'create_atoms 2 random ${num_add} ${timestep} create_o mol O2 ${timestep}' &
+		    'mass 3 16' &
+		    'unfix qeq' &
+                    'unfix top' &
+                    'unfix 1' &
+                    'unfix 2' &
+                    'unfix 3' &
+		    'group g_nvt_o delete' &
+                    'group g_nvt_crfe delete' &
+                    'group g_nve delete' &
+                    'group g_nvt_crfe region r_nvt_crfe' &
+                    'group g_nve region r_nve' &
+                    'group g_nvt_o region r_nvt_o' &
+		    'fix qeq all qeq/reax 1 0 5 1.0e-6 reax/c' &
+                    'fix top g_nvt_o wall/reflect zhi 86' &
+		    'fix 1 g_nvt_crfe nvt temp ${temp} ${temp} 25' &
+                    'fix 2 g_nvt_o nvt temp ${temp} ${temp} 25' &
+		    'fix 3 g_nve nve' &
+		    'velocity g_nvt_o create ${temp} ${seed2} dist gaussian' &
+		    else &
+		    'unfix qeq' &
+                    'unfix top' &
+                    'unfix 1' &
+                    'unfix 2' &
+                    'unfix 3' &
+                    'group g_nvt_o delete' &
+                    'group g_nvt_crfe delete' &
+                    'group g_nve delete' &
+                    'group g_nvt_crfe region r_nvt_crfe' &
+                    'group g_nve region r_nve' &
+                    'group g_nvt_o region r_nvt_o' &
+                    'fix qeq all qeq/reax 1 0 5 1.0e-6 reax/c' &
+                    'fix top g_nvt_o wall/reflect zhi 86' &
+                    'fix 1 g_nvt_crfe nvt temp ${temp} ${temp} 25' &
+                    'fix 3 g_nve nve' &
+                    'fix 2 g_nvt_o nvt temp ${temp} ${temp} 25' "
+
+
+
+
