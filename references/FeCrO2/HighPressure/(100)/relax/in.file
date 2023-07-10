@@ -56,8 +56,9 @@ reset_timestep  0
 dump		1 all custom 400 relax_nve.lammpstrj id type q x y z
 dump_modify     1 sort id
 #----------------------------------------------------------------
-#dump        d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q vx vy vz fx fy fz
-#dump_modify d1 element Cr Fe O
+dump        d1 all cfg 50 cfg/run.*.cfg mass type xs ys zs id type q vx vy vz fx fy fz
+dump_modify d1 element Cr Fe O
+thermo_style custom step temp epair etotal press vol density lx ly lz
 #----------------------------------------------------------------
 fix		reflect g_nvt_o wall/reflect zlo 46
 fix		1 g_nvt_crfe nve
