@@ -225,19 +225,21 @@ reset_timestep 0
 # thermodynamic data
 thermo_style custom step temp press pe ke etotal vol
 thermo 100
+
 #equilibration at 5K
 dump 2 all custom 1000 equil5k.dump id mol type x y z q c_1 c_2 vx vy vz
 fix 2 all npt temp 5.0 5.0 50 iso 1 1 500
 run 2000000
 undump 2
 unfix 2
-#heating
 
+#heating
 dump 3 all custom 1000 heating.dump id mol type x y z q c_1 c_2 vx vy vz
 fix 3 all npt temp 5.0 300.0 50 iso 1 1 500
 run 2000000
 undump 3
 unfix 3
+
 #equilibration at 300K
 dump 4 all custom 1000 equil300k.dump id mol type x y z q c_1 c_2 vx vy vz
 fix 4 all npt temp 300.0 300.0 50 iso 1 1 500

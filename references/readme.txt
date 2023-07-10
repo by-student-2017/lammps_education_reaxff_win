@@ -25,7 +25,7 @@ input file (reaxff, lammps)
   Tobermorite_with_water
 
 - V. Ponce et al., Phys. Chem. Chem. Phys., 2021,23, 597-606.: DOI	https://doi.org/10.1039/D0CP02851G
-  Li-ion_battery
+  Li-ion_battery (failed)
 
 - M. A. Zobair, MSU Graduate Theses (2021).: https://bearworks.missouristate.edu/cgi/viewcontent.cgi?article=4730&context=theses
   ZnO
@@ -39,7 +39,7 @@ input file (reaxff, lammps)
   FeCrO2: https://github.com/wenyanggroup/MD/tree/main
 
 - S. Urata et al., J. Phys. Chem. C 122 (2018) 20555-20563.: https://doi.org/10.1021/acs.jpcc.8b06409
-  BMDEE polymerization: Supplementary information
+  BMDEE polymerization: Supplementary information (failed)
 
 - P. Shi et al., Phys. Chem. Chem. Phys., 2023,25, 13946-13965.: https://doi.org/10.1039/d2cp05196f
 -------------------------------------------------------------------
