@@ -5,7 +5,7 @@ input file (reaxff, lammps)
   lamellar graphene oxide membranes 
 
 - Y.-S. Zhang et al., RSC Adv. 12 (2022) 9501-9511.: https://doi.org/10.1039/D1RA09329K
-  FeCrO2: https://github.com/wenyanggroup/MD/tree/main (Currently, only conditions forHighPressure and (100) are in place.)
+  FeCrO2: https://github.com/wenyanggroup/MD/tree/main 
 
 - B. W. Hamilton et al., J. Phys. Chem. A 125 (2021) 1766-1777.: https://doi.org/10.1021/acs.jpca.0c10946
   LLM-105 structure file: https://scripts.iucr.org/cgi-bin/paper?S2053229618006617
