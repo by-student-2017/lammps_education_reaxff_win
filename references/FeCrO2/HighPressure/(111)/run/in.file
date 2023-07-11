@@ -10,7 +10,7 @@ atom_style          charge
 boundary            p p f
 atom_modify         map yes
 
-read_data           ./../CrFeO.nvt
+read_data           CrFeO.nvt
 molecule            O2 ./../O2.mol 
 
 pair_style          reaxff NULL
@@ -74,11 +74,6 @@ thermo_style	    custom step temp pe etotal press c_msd_cr[1] c_msd_cr[2] c_msd_
 
 dump                1 all custom 400 run.lammpstrj id type q x y z
 dump_modify         1 sort id
-#----------------------------------------------------------------
-dump        d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q vx vy vz fx fy fz
-dump_modify d1 element Cr Fe O
-thermo_style custom step temp epair etotal press vol density lx ly lz
-#----------------------------------------------------------------
 
 fix                 top g_nvt_o wall/reflect zhi 89.8016
 fix                 1 g_nvt_crfe nvt temp ${temp} ${temp} 25
@@ -87,6 +82,11 @@ fix                 3 g_nve nve
 
 #dump 		    2 all custom 100 index.${timestep} id type q x y z
 #dump_modify         2 sort id
+#----------------------------------------------------------------
+dump        d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q vx vy vz fx fy fz
+dump_modify d1 element Cr Fe O
+##thermo_style custom step temp epair etotal press vol density lx ly lz
+#----------------------------------------------------------------
 
 fix                 9999 species reaxff/species 1 10 10 species.out element Cr Fe O cutoff 1 1 1 cutoff 2 2 1 cutoff 1 2 1
 

@@ -84,7 +84,7 @@ fix                 3 g_nve nve
 #----------------------------------------------------------------
 dump        d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q vx vy vz fx fy fz
 dump_modify d1 element Cr Fe O
-thermo_style custom step temp epair etotal press vol density lx ly lz
+#thermo_style custom step temp epair etotal press vol density lx ly lz
 #----------------------------------------------------------------
 
 fix                 9999 species reaxff/species 1 10 10 species.out element Cr Fe O cutoff 1 1 1 cutoff 2 2 1 cutoff 1 2 1
