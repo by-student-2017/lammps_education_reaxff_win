@@ -74,6 +74,11 @@ thermo_style	    custom step temp pe etotal press c_msd_cr[1] c_msd_cr[2] c_msd_
 
 dump                1 all custom 400 run.lammpstrj id type q x y z
 dump_modify         1 sort id
+#----------------------------------------------------------------
+dump        d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q vx vy vz fx fy fz
+dump_modify d1 element Cr Fe O
+thermo_style custom step temp epair etotal press vol density lx ly lz
+#----------------------------------------------------------------
 
 fix                 top g_nvt_o wall/reflect zhi 89.8016
 fix                 1 g_nvt_crfe nvt temp ${temp} ${temp} 25

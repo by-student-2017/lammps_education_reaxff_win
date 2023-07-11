@@ -69,7 +69,8 @@ fix		reflect g_nvt_o wall/reflect zlo 46
 fix		1 g_nvt_crfe nve
 fix		2 g_nve nve
 fix		3 g_nvt_o nve
-run		80000
+#run		80000
+run		400
 undump		1
 unfix		1
 unfix		2
@@ -89,7 +90,8 @@ velocity        g_nvt_o create ${temp} ${seed2} dist gaussian
 fix             1 g_nvt_crfe nvt temp ${temp} ${temp} 25
 fix             2 g_nvt_o nvt temp ${temp} ${temp} 25
 fix             3 g_nve nve
-run	       	400000
+#run	       	400000
+run	       	4000
 unfix           reflect
 unfix		top
 undump		1
