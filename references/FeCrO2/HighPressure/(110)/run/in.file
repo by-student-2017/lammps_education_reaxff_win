@@ -10,11 +10,11 @@ atom_style          charge
 boundary            p p f
 atom_modify         map yes
 
-read_data           /share/home/yszhang/PBS/myExample/110/4/init_struct/${temp}/CrFeO.nvt
-molecule            O2 /share/home/yszhang/PBS/myExample/O2/O2.mol 
+read_data           CrFeO.nvt
+molecule            O2 ./../O2.mol 
 
 pair_style          reaxff NULL
-pair_coeff          * * /share/home/yszhang/potentials/CrOFeSCH.reax Cr Fe O
+pair_coeff          * * ./../CrOFeSCH.reax Cr Fe O
 
 ######################## fix bot ####################
 region		    r_fixed_crfe block INF INF INF INF INF 6.1
@@ -38,11 +38,12 @@ group               o type 3
 group               species union crfe o
 
 
-mass		    1 52
-mass 		    2 55.84
-mass		    3 16
+mass		    1 52    # Cr
+mass 		    2 55.84 # Fe
+mass		    3 16    # O
 
-fix                 qeq all qeq/reaxff 1 0 5 1.0e-6 reaxff
+#fix                 qeq all qeq/reaxff 1 0 5 1.0e-6 reaxff
+fix qeq all qeq/reax 1 0 5 1.0e-6 reax/c
 
 thermo		    1
 timestep	    0.25
@@ -81,6 +82,11 @@ fix                 3 g_nve nve
 
 #dump 		    2 all custom 100 index.${timestep} id type q x y z
 #dump_modify         2 sort id
+#----------------------------------------------------------------
+dump        d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id type q vx vy vz fx fy fz
+dump_modify d1 element Cr Fe O
+thermo_style custom step temp epair etotal press vol density lx ly lz
+#----------------------------------------------------------------
 
 fix                 9999 species reaxff/species 1 10 10 species.out element Cr Fe O cutoff 1 1 1 cutoff 2 2 1 cutoff 1 2 1
 
@@ -96,7 +102,7 @@ run                 800000 every 10 &
                     "group g_nvt_crfe region r_nvt_crfe" &
                     "group g_nve region r_nve" &
                     "group g_nvt_o region r_nvt_o" &
-		    "fix qeq all qeq/reaxff 1 0 5 1.0e-6 reaxff" &
+		    "fix qeq all qeq/reax 1 0 5 1.0e-6 reax/c" &
                     "fix top g_nvt_o wall/reflect zhi 93.7738" &
                     "fix 1 g_nvt_crfe nvt temp ${temp} ${temp} 25" &
                     "fix 2 g_nvt_o nvt temp ${temp} ${temp} 25" &
@@ -105,7 +111,7 @@ run                 800000 every 10 &
 		    "variable num_add equal ceil((${number}-${num_o})/8)" &
 		    "print '@timestep ${timestep} add ${num_add} num ${num_o}'" &
 		    "if '${num_o} < ${number}' then &
-		    'create_atoms 2 random ${num_add} ${timestep} create_o mol O2 ${timestep}' &
+		    'create_atoms 0 random ${num_add} ${timestep} create_o mol O2 ${timestep}' &
 		    'mass 3 16' &
 		    'unfix qeq' &
                     'unfix top' &
@@ -118,7 +124,7 @@ run                 800000 every 10 &
                     'group g_nvt_crfe region r_nvt_crfe' &
                     'group g_nve region r_nve' &
                     'group g_nvt_o region r_nvt_o' &
-		    'fix qeq all qeq/reaxff 1 0 5 1.0e-6 reaxff' &
+		    'fix qeq all qeq/reax 1 0 5 1.0e-6 reax/c' &
                     'fix top g_nvt_o wall/reflect zhi 93.7738' &
 		    'fix 1 g_nvt_crfe nvt temp ${temp} ${temp} 25' &
                     'fix 2 g_nvt_o nvt temp ${temp} ${temp} 25' &
@@ -136,7 +142,7 @@ run                 800000 every 10 &
                     'group g_nvt_crfe region r_nvt_crfe' &
                     'group g_nve region r_nve' &
                     'group g_nvt_o region r_nvt_o' &
-                    'fix qeq all qeq/reaxff 1 0 5 1.0e-6 reaxff' &
+                    'fix qeq all qeq/reax 1 0 5 1.0e-6 reax/c' &
                     'fix top g_nvt_o wall/reflect zhi 93.7738' &
                     'fix 1 g_nvt_crfe nvt temp ${temp} ${temp} 25' &
                     'fix 3 g_nve nve' &

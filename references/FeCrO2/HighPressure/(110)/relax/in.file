@@ -10,11 +10,11 @@ atom_style          charge
 boundary            p p f
 atom_modify         map yes
 
-read_data           /share/home/yszhang/PBS/myExample/110/CrFeO.data
-molecule            O2 /share/home/yszhang/PBS/myExample/O2/O2.mol 
+read_data           ./../CrFeO.data
+molecule            O2 ./../O2.mol 
 
 pair_style          reaxff NULL
-pair_coeff          * * /share/home/yszhang/potentials/CrOFeSCH.reax Cr Fe O
+pair_coeff          * * ./../CrOFeSCH.reax Cr Fe O
 
 ######################## fix bot ####################
 region		r_fixed_crfe block INF INF INF INF INF 6.1
@@ -31,14 +31,16 @@ group		g_nve region r_nve
 ######################### nvt O ################
 region		r_nvt_o block 0.0 20.1182 0.0 20.3224 53.78 93.7738
 region		boxo block 1 19 1 19 55 92
-create_atoms    2 random ${atoms} ${seed} boxo mol O2 ${seed2}
+#create_atoms    2 random ${atoms} ${seed} boxo mol O2 ${seed2}
+create_atoms 0 random ${atoms} ${seed} boxo mol O2 ${seed2} # overlap 1.33
 group           g_nvt_o region r_nvt_o
 
-mass		1 52
-mass 		2 55.84
-mass		3 16
+mass		1 52    # Cr
+mass 		2 55.84 # Fe
+mass		3 16    # O
 
-fix             qeq all qeq/reaxff 1 0 5 1.0e-6 reaxff
+#fix             qeq all qeq/reaxff 1 0 5 1.0e-6 reaxff
+fix qeq all qeq/reax 1 0 5 1.0e-6 reax/c
 
 thermo		100
 timestep	0.25
@@ -53,6 +55,10 @@ write_data    	CrFeO.min
 reset_timestep  0
 dump		1 all custom 400 relax_nve.lammpstrj id type q x y z
 dump_modify     1 sort id
+#----------------------------------------------------------------
+dump        d1 all cfg 100 cfg/run.nve.*.cfg mass type xs ys zs id type q vx vy vz fx fy fz
+dump_modify d1 element Cr Fe O
+#----------------------------------------------------------------
 fix		reflect g_nvt_o wall/reflect zlo 53.78
 fix		1 g_nvt_crfe nve
 fix		2 g_nve nve
@@ -67,6 +73,11 @@ write_data	CrFeO.nve
 reset_timestep	0
 dump		1 all custom 400 relax_nvt.lammpstrj id type q x y z
 dump_modify     1 sort id
+#----------------------------------------------------------------
+undump      d1 
+dump        d1 all cfg 100 cfg/run.nvt.*.cfg mass type xs ys zs id type q vx vy vz fx fy fz
+dump_modify d1 element Cr Fe O
+#----------------------------------------------------------------
 velocity        g_nvt_crfe create ${temp} ${seed2} dist gaussian
 velocity        g_nvt_o create ${temp} ${seed2} dist gaussian
 fix             1 g_nvt_crfe nvt temp ${temp} ${temp} 25

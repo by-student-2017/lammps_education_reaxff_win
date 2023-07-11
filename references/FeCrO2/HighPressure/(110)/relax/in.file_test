@@ -1,6 +1,6 @@
 echo 		    screen
 variable	    temp equal 1000
-variable	    atoms equal 124
+variable	    atoms equal 98
 variable	    seed equal 234
 variable	    seed2 equal 563
 
@@ -17,20 +17,20 @@ pair_style          reaxff NULL
 pair_coeff          * * ./../CrOFeSCH.reax Cr Fe O
 
 ######################## fix bot ####################
-region		r_fixed_crfe block INF INF INF INF INF 3.32
+region		r_fixed_crfe block INF INF INF INF INF 6.1
 group		g_fixed_crfe region r_fixed_crfe
 
 #######################  nvt CrFe ####################
-region		r_nvt_crfe block INF INF INF INF 3.32 28.21
+region		r_nvt_crfe block INF INF INF INF 6.1 28.452
 group		g_nvt_crfe region r_nvt_crfe
 
 ########################## nve CrFe + O ###################
-region		r_nve block INF INF INF INF 28.21 50
+region		r_nve block INF INF INF INF 28.452 53.78
 group		g_nve region r_nve
 
 ######################### nvt O ################
-region		r_nvt_o block 0.0 24.3869 0.0 21.1196749196 50 89.8016
-region		boxo block 1 23 1 20 51 88
+region		r_nvt_o block 0.0 20.1182 0.0 20.3224 53.78 93.7738
+region		boxo block 1 19 1 19 55 92
 #create_atoms    2 random ${atoms} ${seed} boxo mol O2 ${seed2}
 create_atoms 0 random ${atoms} ${seed} boxo mol O2 ${seed2} # overlap 1.33
 group           g_nvt_o region r_nvt_o
@@ -48,7 +48,7 @@ timestep	0.25
 velocity	g_fixed_crfe set 0 0 0
 fix		fixed_crfe g_fixed_crfe setforce 0 0 0
 
-fix             top g_nvt_o wall/reflect zhi 89.8016
+fix             top g_nvt_o wall/reflect zhi 93.7738
 
 write_data    	CrFeO.min
 ###########################     relax_nve        ###################### 
@@ -59,11 +59,12 @@ dump_modify     1 sort id
 dump        d1 all cfg 100 cfg/run.nve.*.cfg mass type xs ys zs id type q vx vy vz fx fy fz
 dump_modify d1 element Cr Fe O
 #----------------------------------------------------------------
-fix		reflect g_nvt_o wall/reflect zlo 50
+fix		reflect g_nvt_o wall/reflect zlo 53.78
 fix		1 g_nvt_crfe nve
 fix		2 g_nve nve
 fix		3 g_nvt_o nve
-run		80000
+#run		80000
+run		400
 undump		1
 unfix		1
 unfix		2
@@ -83,7 +84,8 @@ velocity        g_nvt_o create ${temp} ${seed2} dist gaussian
 fix             1 g_nvt_crfe nvt temp ${temp} ${temp} 25
 fix             2 g_nvt_o nvt temp ${temp} ${temp} 25
 fix             3 g_nve nve
-run	       	400000
+#run	       	400000
+run	       	4000
 unfix           reflect
 unfix		top
 undump		1
