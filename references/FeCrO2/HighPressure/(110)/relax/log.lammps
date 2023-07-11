@@ -1,0 +1,183 @@
+LAMMPS (22 Dec 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Loaded 1 plugins from C:\Program Files\LAMMPS 64-bit 23Jun2022\plugins
+Loaded 0 plugins from C:\Program Files\LAMMPS 64-bit 23Jun2022-MPI\plugins
+Loaded 1 plugins from C:\Program Files\LAMMPS 64-bit 22Dec2022-MSMPI\plugins
+Loaded 1 plugins from C:\Program Files\LAMMPS 64-bit 28Mar2023-MPI\plugins
+echo 		    screen
+Reading data file ...
+  orthogonal box = (0 0 0) to (20.1182 20.3224 93.7738)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  1750 atoms
+  read_data CPU = 0.004 seconds
+Read molecule template O2:
+  1 molecules
+  0 fragments
+  2 atoms with max type 3
+  0 bonds with max type 0
+  0 angles with max type 0
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+WARNING: Changed valency_val to valency_boc for X (src/REAXFF/reaxff_ffield.cpp:296)
+280 atoms in group g_fixed_crfe
+770 atoms in group g_nvt_crfe
+700 atoms in group g_nve
+Created 196 atoms
+  using lattice units in orthogonal box = (0 0 0) to (20.1182 20.3224 93.7738)
+  create_atoms CPU = 0.000 seconds
+196 atoms in group g_nvt_o
+System init for write_data ...
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12
+  ghost atom cutoff = 12
+  binsize = 6, bins = 4 4 16
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair reaxff, perpetual
+      attributes: half, newton off, ghost
+      pair build: half/bin/newtoff/ghost
+      stencil: full/ghost/bin/3d
+      bin: standard
+  (2) fix qeq/reax, perpetual, copy from (1)
+      attributes: half, newton off
+      pair build: copy
+      stencil: none
+      bin: none
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+
+- pair reaxff command: doi:10.1016/j.parco.2011.08.005
+
+@Article{Aktulga12,
+ author = {H. M. Aktulga and J. C. Fogarty and S. A. Pandit and A. Y. Grama},
+ title = {Parallel Reactive Molecular Dynamics: {N}umerical Methods and Algorithmic Techniques},
+ journal = {Parallel Computing},
+ year =    2012,
+ volume =  38,
+ number =  {4--5},
+ pages =   {245--259}
+}
+
+- fix qeq/reaxff command: doi:10.1016/j.parco.2011.08.005
+
+@Article{Aktulga12,
+ author = {H. M. Aktulga and J. C. Fogarty and S. A. Pandit and A. Y. Grama},
+ title = {Parallel Reactive Molecular Dynamics: {N}umerical Methods and Algorithmic Techniques},
+ journal = {Parallel Computing},
+ year =    2012,
+ volume =  38,
+ pages =   {245--259}
+}
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Per MPI rank memory allocation (min/avg/max) = 169.2 | 169.2 | 169.2 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0             -96136.853      0             -96136.853      14761.574    
+       100   13474.25      -171801.43      0             -93682.101      71431.182    
+       200   13506.243     -172086.84      0             -93782.03       68330.52     
+       300   13454.532     -171660.56      0             -93655.554      67660.956    
+       400   13414.375     -171184.08      0             -93411.882      69792.71     
+Loop time of 110.566 on 1 procs for 400 steps with 1946 atoms
+
+Performance: 0.078 ns/day, 307.128 hours/ns, 3.618 timesteps/s, 7.040 katom-step/s
+81.3% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 106.59     | 106.59     | 106.59     |   0.0 | 96.40
+Neigh   | 1.0177     | 1.0177     | 1.0177     |   0.0 |  0.92
+Comm    | 0.014635   | 0.014635   | 0.014635   |   0.0 |  0.01
+Output  | 0.042965   | 0.042965   | 0.042965   |   0.0 |  0.04
+Modify  | 2.8946     | 2.8946     | 2.8946     |   0.0 |  2.62
+Other   |            | 0.007005   |            |       |  0.01
+
+Nlocal:           1946 ave        1946 max        1946 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           7150 ave        7150 max        7150 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:         696463 ave      696463 max      696463 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 696463
+Ave neighs/atom = 357.89466
+Neighbor list builds = 27
+Dangerous builds = 0
+System init for write_data ...
+Per MPI rank memory allocation (min/avg/max) = 169.2 | 169.2 | 169.2 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   507.07904     -171184.08      0             -168244.2      -19430.218    
+       100   417.04062     -171262.46      0             -168844.59     -17530.772    
+       200   484.92356     -172543.22      0             -169731.79     -14852.13     
+       300   476.8861      -172897         0             -170132.17     -11741.139    
+       400   470.79324     -172823.38      0             -170093.87     -14616.385    
+       500   512.99109     -172867.45      0             -169893.29     -11547.144    
+       600   472.00074     -172391.18      0             -169654.68     -11083.999    
+       700   563.90161     -172576.02      0             -169306.7      -13400.616    
+       800   523.29374     -172400.35      0             -169366.47     -9947.4839    
+       900   549.11546     -172647.05      0             -169463.46     -8804.369     
+      1000   527.53419     -172686.82      0             -169628.34     -9863.6183    
+      1100   536.80584     -172948.46      0             -169836.24     -7320.2688    
+      1200   520.71605     -172969.68      0             -169950.73     -7748.7187    
+      1300   518.35102     -172854.42      0             -169849.19     -9267.896     
+      1400   548.93606     -172817.93      0             -169635.38     -5995.0214    
+      1500   552.2799      -172635.74      0             -169433.8      -6317.3247    
+      1600   547.63051     -172505.26      0             -169330.27     -7057.0884    
+      1700   572.77293     -172656.66      0             -169335.91     -4594.5706    
+      1800   553.75595     -172684.33      0             -169473.83     -5776.2909    
+      1900   539.18866     -172747.95      0             -169621.91     -6764.0144    
+      2000   548.34897     -172899.93      0             -169720.78     -4484.6381    
+      2100   543.67272     -172840.84      0             -169688.8      -5535.7287    
+      2200   561.28537     -172765.86      0             -169511.71     -5601.1231    
+      2300   571.29972     -172738.2       0             -169425.99     -4061.0666    
+      2400   572.31972     -172711.48      0             -169393.35     -4878.4486    
+      2500   563.83515     -172696.8       0             -169427.86     -4280.8817    
+      2600   557.90549     -172771.9       0             -169537.34     -3071.4734    
+      2700   554.94832     -172774.38      0             -169556.97     -3517.9945    
+      2800   576.75124     -172761.67      0             -169417.85     -2281.06      
+      2900   564.84973     -172591.94      0             -169317.12     -2031.1845    
+      3000   584.92392     -172608.57      0             -169217.37     -2458.0656    
+      3100   587.94578     -172597.33      0             -169188.61     -1394.7886    
+      3200   563.23592     -172495.03      0             -169229.57     -1881.9235    
+      3300   585.37947     -172625.69      0             -169231.84     -2335.5915    
+      3400   565.27965     -172540.71      0             -169263.4      -703.02598    
+      3500   601.01632     -172647.95      0             -169163.45     -96.374501    
+      3600   594.51348     -172630.84      0             -169184.05      346.34879    
+      3700   555.8417      -172529.11      0             -169306.52      1230.3158    
+      3800   606.13907     -172713.83      0             -169199.64      1432.9011    
+      3900   573.65985     -172563.07      0             -169237.17      1050.1597    
+      4000   589.01993     -172617.12      0             -169202.18      1363.5821    
+Loop time of 1132.32 on 1 procs for 4000 steps with 1946 atoms
+
+Performance: 0.076 ns/day, 314.532 hours/ns, 3.533 timesteps/s, 6.874 katom-step/s
+76.4% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1103.7     | 1103.7     | 1103.7     |   0.0 | 97.47
+Neigh   | 1.1523     | 1.1523     | 1.1523     |   0.0 |  0.10
+Comm    | 0.12254    | 0.12254    | 0.12254    |   0.0 |  0.01
+Output  | 0.37828    | 0.37828    | 0.37828    |   0.0 |  0.03
+Modify  | 26.959     | 26.959     | 26.959     |   0.0 |  2.38
+Other   |            | 0.04579    |            |       |  0.00
+
+Nlocal:           1946 ave        1946 max        1946 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           7122 ave        7122 max        7122 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:         701214 ave      701214 max      701214 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 701214
+Ave neighs/atom = 360.33607
+Neighbor list builds = 29
+Dangerous builds = 0
+System init for write_data ...
+Total wall time: 0:20:43
