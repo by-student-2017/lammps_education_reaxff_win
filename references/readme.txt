@@ -45,6 +45,9 @@ input file (reaxff, lammps)
   FcC6S code
 
 - P. Shi et al., Phys. Chem. Chem. Phys., 2023,25, 13946-13965.: https://doi.org/10.1039/d2cp05196f
+
+- L. Tian Graduate Theses and Dissertations.: https://www.researchgate.net/profile/Liang-Tian-13/publication/323376967_Structure-property_relationships_in_an_Al_matrix_Ca_nano_lamentary_composite_conductor_with_potential_application_in_high-voltage_power_transmission/links/5a9105230f7e9ba4296bb281/Structure-property-relationships-in-an-Al-matrix-Ca-nano-lamentary-composite-conductor-with-potential-application-in-high-voltage-power-transmission.pdf#page=221
+  Al-Ca_system
 -------------------------------------------------------------------
 plot the temperature of each atom
 
