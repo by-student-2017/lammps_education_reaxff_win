@@ -1,5 +1,6 @@
 # Input Script File for Equilibrium Constant and Cohesive Energy Calculation of Al2Ca
 # Al2Ca lattice parameter and cohesive energy calculation by reax potential
+
 # ---------- Initialize Simulation ---------------------
 clear
 units real
@@ -7,35 +8,48 @@ dimension 3
 boundary p p p
 atom_style full
 atom_modify map array
+
 # ---------- Create Atoms ---------------------
 # in LAMMPS, the lattice actually means crystal structure in solid state physics. In Al2Ca, 
 #there are total 24 atoms in unit cell. 6 atoms per basis (2 are Ca atoms and 4 are Al atoms). 
 #First defined 8 atoms are Ca, next 16 atoms are Al atoms
 
 lattice custom 7.0 a1 1 0 0 a2 0 1 0 a3 0 0 1 basis 0 0 0 basis 0.25 0.25 0.25 basis 0.5 0.5 0 &
-basis 0.75 0.75 0.25 basis 0.5 0 0.5 basis 0.75 0.25 0.75 basis 0 0.5 0.5 basis 0.25 0.75 0.75&
-basis 0.625 0.625 0.625 basis 0.875 0.875 0.625 basis 0.625 0.875 0.875 basis 0.875 0.625& 
-0.875 basis 0.125 0.125 0.625 basis 0.375 0.375 0.625 basis 0.125 0.375 0.875 basis 0.375& 
-0.125 0.875 basis 0.125 0.625 0.125 basis 0.375 0.875 0.125 basis 0.125 0.875 0.375 basis&
-0.375 0.625 0.375 basis 0.625 0.125 0.125 basis 0.875 0.375 0.125 basis 0.625 0.375 0.375& 
-basis 0.875 0.125 0.375
-# 0<=x,y,y<1 due to pbc. Theoretical equilibrium lattice constant should be 8.02A
+  basis 0.75 0.75 0.25 basis 0.5 0 0.5 basis 0.75 0.25 0.75 basis 0 0.5 0.5 basis 0.25 0.75 0.75 &
+  basis 0.625 0.625 0.625 basis 0.875 0.875 0.625 basis 0.625 0.875 0.875 basis 0.875 0.625 &
+  0.875 basis 0.125 0.125 0.625 basis 0.375 0.375 0.625 basis 0.125 0.375 0.875 basis 0.375 &
+  0.125 0.875 basis 0.125 0.625 0.125 basis 0.375 0.875 0.125 basis 0.125 0.875 0.375 basis &
+  0.375 0.625 0.375 basis 0.625 0.125 0.125 basis 0.875 0.375 0.125 basis 0.625 0.375 0.375 &
+  basis 0.875 0.125 0.375
 
+# 0<=x,y,y<1 due to pbc. Theoretical equilibrium lattice constant should be 8.02A
 region cell block 0 1 0 1 0 1 units lattice
+
 create_box 2 cell
 create_atoms 1 box basis 1 1 basis 2 1 basis 3 1 basis 4 1 basis 5 1 basis 6 1 basis 7 1 basis & 
-8 1 basis 9 2 basis 10 2 basis 11 2 basis 12 2 basis 13 2 basis 14 2 basis 15 2 basis 16 2 & 
-basis 17 2 basis 18 2 basis 19 2 basis 20 2 basis 21 2 basis 22 2 basis 23 2 basis 24 2
+  8 1 basis 9 2 basis 10 2 basis 11 2 basis 12 2 basis 13 2 basis 14 2 basis 15 2 basis 16 2 & 
+  basis 17 2 basis 18 2 basis 19 2 basis 20 2 basis 21 2 basis 22 2 basis 23 2 basis 24 2
+
 replicate 1 1 1
+
 #----define mass-----
-mass 1 40
-mass 2 27
+mass 1 40 # Ca
+mass 2 27 # Al
 # atom type 1 is Ca, atom type 2 is Al
 
 # ---------- Define Interatomic Potential ---------------------
-pair_style reax
-pair_coeff * * ffield.reax 4 6
+
+# old type settings
+#pair_style reax
+#pair_coeff * * ffield.reax 4 6
 # atom type 1 Ca is the 4th place in the atom list in reax potential file
+
+# new type settings
+pair_style reaxff NULL
+pair_coeff * * ffield.reax.025.CHONSSiCaCsKSrNaMgAlCu Ca Al
+
+fix qeq all qeq/reax 1 0 5 1.0e-6 reax/c
+
 neighbor 2.0 bin
 neigh_modify delay 10 check yes
 
@@ -45,30 +59,45 @@ compute eatoms all reduce sum c_eng
 
 # ---------- Run Minimization ---------------------
 reset_timestep 0
+
 fix 1 all box/relax iso 1.0 vmax 0.001
+
 thermo 10
 thermo_style custom step pe lx ly lz press pxx pyy pzz c_eatoms fmax
+
 dump 1 all custom 20 EMin.Al2Ca.cfg mass type xs ys zs c_eng fx fy fz
 dump_modify 1 element Ca Al
+
+neigh_modify every 1 delay 0 check yes
+
 min_style cg
 minimize 1e-25 1e-25 5000 10000
+
 undump 1
 unfix 1
 
 #----run dynamics------
 reset_timestep 0
+
 timestep 1
+
 velocity all create 298 12345 mom yes rot no
+
 # temperature 25 C
+
 fix 1 all npt temp 298 298 100 iso 1 1 1000
+
 dump 1 all custom 1000 Al2Ca_Dyn.cfg mass type xs ys zs c_eng fx fy fz
 dump_modify 1 element Ca Al
+
 thermo 1000
 thermo_style custom step pe vol lx ly lz press pxx pyy pzz c_eatoms temp ke fmax
+
 run 20000
+
 write_restart restart.Al2Ca20000
 
 print "All done!"
 
-Lattice constant is the lx or ly or lz (unit Angstrom) and cohensive energy is calculated by 
-the c_eatoms*0.043/24 (unit eV/atom) at the end of 20,000 time steps.
+#Lattice constant is the lx or ly or lz (unit Angstrom) and cohensive energy is calculated by 
+# the c_eatoms*0.043/24 (unit eV/atom) at the end of 20,000 time steps.

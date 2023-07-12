@@ -1,6 +1,7 @@
 # LAMMPS Input File for Al/Ca bicrystal interface
 # This file will generate an initial Al(111)/Ca(111) incoherent interface and minimize
 # and run dynamics using reax potential
+
 # ---------- Initialize Simulation ---------------------
 clear
 units real
@@ -10,24 +11,37 @@ atom_style full
 
 # ---------- Create Atomistic Structure ---------------------
 lattice fcc 4.05
+
 region whole block 0 25 -14 14 0 25 units box
 create_box 2 whole 
+
 region upper block INF INF 0 14 INF INF units box
 lattice fcc 4.05 orient x -1 0 1 orient y 1 1 1 orient z -1 2 -1
 create_atoms 1 region upper
+
 region lower block INF INF -14 0 INF INF units box
 lattice fcc 5.58 orient x -1 0 1 orient y 1 1 1 orient z -1 2 -1
 create_atoms 2 region lower
+
 group upper type 1
 group lower type 2
 
 #---define Mass----
-mass 1 27
-mass 2 40
+mass 1 27 # Al
+mass 2 40 # Ca
 
 # ---------- Define Interatomic Potential ---------------------
-pair_style reax
-pair_coeff * * ffield.reax 6 4
+
+# old type settings
+#pair_style reax
+#pair_coeff * * ffield.reax 6 4
+
+# new type settings
+pair_style reaxff NULL
+pair_coeff * * ffield.reax.025.CHONSSiCaCsKSrNaMgAlCu Ca Al
+
+fix qeq all qeq/reax 1 0 5 1.0e-6 reax/c
+
 neighbor 2.0 bin
 neigh_modify delay 10 check yes
 
@@ -42,22 +56,33 @@ compute eatoms all reduce sum c_eng
 
 # ---------- Run Minimization ---------------------
 reset_timestep 0
+
 thermo 20
 thermo_style custom step pe lx ly lz press pxx pyy pzz c_eatoms fmax
+
 dump 1 all custom 20 EnMin.AlCa.cfg mass type xs ys zs c_csym c_eng fx fy fz
 dump_modify 1 element Al Ca
+
+neigh_modify every 1 delay 0 check yes
+
 min_style cg
 minimize 1e-15 1e-15 5000 5000
+
 undump 1
 
 # ---------- Run Minimization 2---------------------
 # Now allow the box to expand/contract in x and z directions (perpendicular to the interface), 
 #fix box/relax command only works for periodic dimension
+
 reset_timestep 0
+
 thermo 20
 thermo_style custom step pe lx ly lz press pxx pyy pzz c_eatoms fmax
+
 fix 1 all box/relax x 1.0 z 1.0 couple xz vmax 0.001
+
 # 1 atmosphere pressure in x and z directions
+
 min_style cg
 minimize 1e-15 1e-15 5000 5000
 
@@ -74,25 +99,35 @@ print "Al/Ca incoherent interface energy is ${inteng_mJm2} mJ/m^2"
 
 # ---------- Dump data into Data file -------------
 reset_timestep 0
+
 dump 1 all custom 10000 AlCa_final.cfg mass type xs ys zs c_csym c_eng fx fy fz
 dump_modify 1 element Al Ca
+
 minimize 1e-15 1e-15 5000 5000
+
 undump 1
 unfix 1
+
 write_restart restart.AlCa
 
 #-------begin dynamics---------------------
 reset_timestep 0
+
 timestep 1
+
 velocity all create 629 12345 mom yes rot no
+
 #temperature 356 C
+
 fix 1 all npt temp 629 629 100 x 1 1 1000 z 1 1 1000
+
 dump 2 all custom 1000 AlCa_Dyn.cfg mass type xs ys zs c_csym c_eng fx fy fz
 dump_modify 2 element Al Ca
+
 thermo 1000
 thermo_style custom step pe vol lx ly lz press pxx pyy pzz temp ke
 
 run 20000
+
 write_restart restart.AlCa10000
 print "All done"
-
