@@ -4,11 +4,11 @@ units		     real
 atom_style 	     charge
 boundary	     p p p
 
-read_data     	     MOF5_Unitcell_ReaxFF.data
+read_data     	     MOF5_Unitcell_ReaxFF_4x4x4_slab.data
 #replicate 4 4 4
 
 pair_style	     reax/c NULL checkqeq yes
-pair_coeff    	     * * ffield.reax C H O Zn
+pair_coeff    	     * * ffield.reax C Zn O H
 
 neigh_modify   	     every 1 delay 0 check yes
 
@@ -19,12 +19,12 @@ timestep             0.25
 thermo_style         custom step etotal temp press pxx pyy pzz lx ly lz
 thermo               100
 
+dump        d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id
+dump_modify d1 element C Zn O H
+
 ######### NVT EQUILIBRATION ##########
 #minimize       	     1.0e-6 1.0e-8 1000000 10000000
 minimize       	     1.0e-6 1.0e-8 400 400
-
-dump        d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id
-dump_modify d1 element C H O Zn
 
 # 1 (kcal/mol/angstrom) : 1 N
 #fix g1 all gravity 1.0 vector 0 0 1

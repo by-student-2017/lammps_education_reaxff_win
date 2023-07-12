@@ -1,4 +1,4 @@
-set ncore=8
+set ncore=20
 
 mkdir cfg
 
