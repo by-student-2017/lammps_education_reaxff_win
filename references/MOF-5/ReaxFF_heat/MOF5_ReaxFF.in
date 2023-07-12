@@ -21,7 +21,7 @@ thermo               100
 
 ######### NVT EQUILIBRATION ##########
 #minimize       	     1.0e-6 1.0e-8 1000000 10000000
-minimize       	     1.0e-6 1.0e-8 1000 1000
+minimize       	     1.0e-6 1.0e-8 400 400
 
 dump        d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id
 dump_modify d1 element C H O Zn
