@@ -15,6 +15,11 @@ input file (reaxff, lammps)
 
 - K. Banlusan et al., J. Phys. Chem. C 119 (2015) 25845-25852.: https://doi.org/10.1021/acs.jpcc.5b05446
   Metal–organic frameworks (MOFs): Supporting Information
+  MOF-5
+
+- Y. Yang et al., J. Phys. Chem. B 2023, XXXX, XXX, XXX-XXX.: https://doi.org/10.1021/acs.jpcb.3c00563
+  Metal–organic frameworks (MOFs): Supporting Information
+  ZIF
 
 - C. Zhu et al., ACS Nano 17 (2023) 9938–9952.: https://doi.org/10.1021/acsnano.2c10953
   INTERFACE force field (IFF), Metal Surfaces in Four Dimensions

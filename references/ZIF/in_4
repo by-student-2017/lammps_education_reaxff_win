@@ -1,0 +1,27 @@
+units           real
+box             tilt large
+dimension       3
+boundary        p p p
+
+atom_style      charge
+read_data       MOF_STRUCTURE_file(supported by Lammps)
+
+pair_style      reax/c ./lmp_control
+pair_coeff      * * ./reaxFF C H O N Zn
+
+neighbor        2 bin
+neigh_modify    every 10 delay 0 check no
+
+fix             1 all qeq/reax 1 0.0 10.0 1e-6  reax/c
+timestep        0.25
+thermo          100
+thermo_style    custom step temp press vol pxx pyy pzz 
+
+velocity        all create 300 2343 rot yes dist gaussian
+dump            2 all xtc 1000 dump.xtc
+
+fix             6 all nvt temp 300 300 100.0  # used for NVT ensemble
+(fix             6 all npt temp 300 300 100.0  aniso 1.0 1.0 1000.0  # used for NPT ensemble to relax the volume)
+
+fix             100 all plumed plumedfile plumed.dat outfile p.log
+run             4000000

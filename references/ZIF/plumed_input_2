@@ -1,0 +1,19 @@
+# usage of commands can be found on https://www.plumed.org/
+
+# define Ow-Zn, Hw-N distances
+d1: DISTANCE ATOMS=273,263 #Ow-Zn
+d2: DISTANCE ATOMS=274,224 #Hw-N
+
+# upper wall for Ow-Zn, Hw-N
+UPPER_WALLS ARG=d1 AT=3.0  KAPPA=100 EXP=2
+UPPER_WALLS ARG=d2 AT=2.0  KAPPA=100 EXP=2 
+
+# upper wall for Ow-Hw bonds in water
+d3: DISTANCE ATOMS=273,274 
+d4: DISTANCE ATOMS=273,275 
+UPPER_WALLS ARG=d3 AT=1.1  KAPPA=50  EXP=2
+UPPER_WALLS ARG=d4 AT=1.1  KAPPA=800 EXP=2 
+
+# additional upper walls can be used for Zn-N bonds (omitted here)
+
+metad: METAD ARG=d1,d2 SIGMA=0.1,0.1 PACE=1000 HEIGHT=5.0 TEMP=300 BIASFACTOR=100 FILE=HILLS GRID_MIN=0,0 GRID_MAX=8,8

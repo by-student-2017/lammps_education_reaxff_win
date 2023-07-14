@@ -1,0 +1,72 @@
+##### LAMMPS input file for ReaxFF ###########
+
+units		     real
+atom_style 	     charge
+boundary	     p p p
+
+read_data     	     MOF5_Unitcell_ReaxFF_3x3x3_slab.data # O C Zn H
+#read_data     	     MOF5_Unitcell_ReaxFF_4x4x4_slab.data # C Zn O H
+
+pair_style	     reax/c NULL checkqeq yes
+pair_coeff    	     * * ffield.reax C C C Zn # 3x3x3, wrong settings for image
+#pair_coeff    	     * * ffield.reax C O Zn H # 4x4x4, wrong settings for image
+
+neigh_modify   	     every 1 delay 0 check yes
+
+fix                  1 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+
+timestep             0.25
+
+#thermo_style         custom step etotal temp press pxx pyy pzz lx ly lz
+#thermo               100
+
+dump        d1 all cfg 100 cfg/run.*.cfg mass type xs ys zs id
+dump_modify d1 element  O C H Zn
+#dump_modify d1 element C O Zn H
+
+######### NPT EQUILIBRATION ##########
+#minimize       	     1.0e-6 1.0e-8 1000000 10000000
+#minimize       	     1.0e-6 1.0e-8 100 100
+
+velocity      	     all create 2500.0 4928459 dist gaussian
+
+#fix                  2 all npt temp 300.0 300.0 100.0 aniso 0.0 0.0 5000.0
+
+#fix                  2 all npt temp 300.0 1500.0 $(100.0*dt) iso 1.0 1.0 $(5000.0*dt)
+#run            	     100000
+#unfix		     2
+
+#fix                  3 all npt temp 1500.0 2500.0 $(100.0*dt) iso 1.0 1.0 $(5000.0*dt)
+#run            	     200000
+#unfix		     3
+
+#fix                  4 all npt temp 2500.0 3500.0 $(100.0*dt) iso 1.0 1.0 $(5000.0*dt)
+#run            	     400000
+#unfix		     4
+
+fix                  5 all npt temp 2500.0 2500.0 $(100.0*dt) iso 1.0 1.0 $(5000.0*dt)
+run            	     400000
+unfix		     5
+
+fix                  6 all npt temp 2500.0 1500.0 $(100.0*dt) iso 1.0 1.0 $(5000.0*dt)
+run            	     400000
+unfix		     6
+
+fix                  7 all npt temp 1500.0 300.0 $(100.0*dt) iso 1.0 1.0 $(5000.0*dt)
+run            	     400000
+unfix		     7
+
+write_restart	     MOF5_Unitcell_Equi10ps.rst
+
+######## COMPRESSION ###########
+reset_timestep       0
+
+#fix		     2 all npt temp 300.0 300.0 100.0 x 0.0 0.0 5000.0 y 0.0 0.0 5000.0
+fix		     2 all npt temp 300.0 1173.0 100.0 x 0.0 0.0 5000.0 y 0.0 0.0 5000.0
+fix            	     3 all deform 1 z erate -0.000003 units box
+
+dump           	     1 all custom 2000 MOF5_Unitcell_Compress_Str30.dump id type x y z
+
+run     	     1000000
+
+write_data	     MOF5_Unitcell_Compress_Str30.data
