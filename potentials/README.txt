@@ -1706,9 +1706,14 @@ https://pure.tue.nl/ws/portalfiles/portal/295803135/MCE_afstudeerverslag_Koen_Jo
 B. Jasper, MASTER (2021).
 https://pure.tue.nl/ws/portalfiles/portal/230727153/MCE_afstudeerverslag_Jasper_Bouwman_0884604_.pdf
 
+2021X26A, HONiCr
+2021X26B, COSMoNiSeWAl
+M. Y. Sengul et al., npj Comput. Mater. 7 (2021) 68.
+https://doi.org/10.1038/s41524-021-00534-4
+
 NTO_ReaxFFlg
 CHONSSi
-L. Du et al.,
+L. Du et al., npj Computational Materials 7 (2021) Article number: 68 (2021)
 Molecules 2021, 26(16), 4808.
 https://doi.org/10.3390/molecules26164808
 -------------------------------------------------------------------
