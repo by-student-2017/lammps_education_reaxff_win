@@ -1954,6 +1954,11 @@ CHOSMoNiLiBFPN
 F. Qi et al.,
 J. Chem. Phys. 158, 104704 (2023)
 https://doi.org/10.1063/5.0130686
+
+2023X9
+CHONSMgPNaCuClZn
+J. Phys. Chem. B 2023, XXXX, XXX, XXX-XXX
+https://doi.org/10.1021/acs.jpcb.3c00563
 -------------------------------------------------------------------
 input file (reaxff, lammps)
 
