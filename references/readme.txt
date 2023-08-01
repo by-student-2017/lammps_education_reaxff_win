@@ -58,7 +58,10 @@ input file (reaxff, lammps)
   https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2445481
   amorphous_carbon
 
-- https://bearworks.missouristate.edu/theses/3669/ (ReaxFF file)
+- K. A.-Boahen, Master thesis (2021).
+  https://bearworks.missouristate.edu/theses/3669/
+  Argon_Bombardment (need 100_ortho_25_argon.BCH and param_bch.qeq)
+
 - https://bearworks.missouristate.edu/theses/3536/ (ReaxFF file)
 - https://bearworks.missouristate.edu/theses/3739/ (ReaxFF file)
 - https://bearworks.missouristate.edu/theses/3690/ (ReaxFF ZnO)
