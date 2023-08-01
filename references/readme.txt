@@ -54,12 +54,10 @@ input file (reaxff, lammps)
 
 - P. Shi et al., Phys. Chem. Chem. Phys., 2023,25, 13946-13965.: https://doi.org/10.1039/d2cp05196f
 
-- A. Q. Nguyen, Master thesis (2017)
+- A. Q. Nguyen, Master thesis (2017).
   https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2445481
   amorphous_carbon
-  
-- https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/246379 (ReaxFF file)
-- https://repository.mines.edu/handle/11124/79468 (ReaxFF file)
+
 - https://bearworks.missouristate.edu/theses/3669/ (ReaxFF file)
 - https://bearworks.missouristate.edu/theses/3536/ (ReaxFF file)
 - https://bearworks.missouristate.edu/theses/3739/ (ReaxFF file)

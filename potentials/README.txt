@@ -580,6 +580,11 @@ CHONSSiPtZrNiCuCoHeNeArKrXe
 L. Huang et al.,
 J. Chem. Phys. 139, 194707 (2013)
 https://doi.org/10.1063/1.4832039
+
+2013X12
+HOSiAlLi
+B. Narayanan, Doctor thesis (2013).
+https://repository.mines.edu/handle/11124/79468
 -------------------------------------------------------------------
 2014
 
@@ -896,6 +901,11 @@ DOI	https://doi.org/10.1039/C7CP07321F
 CHOS
 J. Muller et al., (2017).
 https://macau.uni-kiel.de/servlets/MCRFileNodeServlet/dissertation_derivate_00007173/Diss_Mueller.pdf
+
+2017X17A, 2017X17B
+Ge
+K. A. Jensen, Master thesis (2009).
+https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/246379
 
 No.52
 CHO
