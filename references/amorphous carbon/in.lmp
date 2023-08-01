@@ -1,0 +1,50 @@
+#The LAMMPS input for the liquid-quenching steps for creating amorphous carbon models.
+#-------------------- Initialize Simulation --------------------
+clear
+units real
+dimension 3
+boundary p p p
+atom_style charge
+atom_modify map array 
+#-------------------- Define simulation box --------------------
+variable nrC equal 125
+region box block 0.0 10 0.0 10 0.0 10
+create_box 1 box
+create_atoms 1 random $(v_nrC) 8321981 box
+mass 1 12.00
+set type 1 charge 0
+#-------------------- Define FF --------------------------------
+pair_style reax/c NULL safezone 1.5 mincap 100
+pair_coeff * * ffield.reax C
+neighbor 2.0 bin
+#-------------------- Define settings ---------------------------
+compute peratom all pe/atom
+compute_modify peratom dynamic yes
+dump 1 all xyz 1000 amorp_C2.xyz
+dump_modify 1 element C append yes
+
+reset_timestep 0
+timestep 0.01
+restart 200000 restart
+#-------------------- Equilibration -----------------------------
+thermo 1000
+thermo_style custom step temp atoms press pe etotal temp density vol
+fix 1 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+fix 2 all nvt temp 1000.0 1000.0 1000.0
+run 1000000
+
+fix 3 all nvt temp 1000.0 3000.0 100.0
+run 2000000
+
+fix 4 all nvt temp 3000.0 3000.0 1000.0
+run 1000000
+
+fix 5 all nvt temp 3000.0 300.0 100.0
+run 2000000
+
+fix 6 all nvt temp 300.0 300.0 1000.0
+run 1000000
+
+write_data dta.2.5_lq1
+
+print "All done!"
