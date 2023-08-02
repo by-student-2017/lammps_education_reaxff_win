@@ -66,6 +66,9 @@ input file (reaxff, lammps)
 - Y. Lu, Master thesis (2020).
   https://bearworks.missouristate.edu/theses/3536/
   Atomic_Layer_Deposition
+  
+- H. Cho, Master thesis (2004).
+  https://dspace.mit.edu/handle/1721.1/57788 (ReaxFF)
 -------------------------------------------------------------------
 plot the temperature of each atom
 
