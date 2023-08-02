@@ -1,0 +1,16 @@
+# LAMMPS library.meam file containing MEAM C and H parameters for saturated
+# hydrocarbons developed by Sasan Nouranian.
+# Reference: Physical Chemistry Chemical Physics, 16(13) (2014):6233-6249.
+# This file is used together with the CH.meam file.
+# Contact: nouranian@gmail.com (Dr. Sasan Nouranian)
+
+# elt        lat     z       ielement     atwt 
+# alpha      b0      b1      b2           b3    alat    esub    asub 
+# t0         t1              t2           t3            rozero  ibar 
+
+'C' 'dia' 4 6 12.011100 
+3.600000 4.200000 4.500000 4.300000 4.180000 3.325000 7.370000 0.640000 
+1.000000 0.500000 0.450000 -3.800000 1.000000 -5.000000 
+'H' 'dim' 1 1 1.007900 
+2.038800 2.720000 2.045000 2.250000 3.000000 0.740000 2.363000 2.500000 
+1.000000 0.200000 -0.400000 0.000001 1.500000 -5.000000 

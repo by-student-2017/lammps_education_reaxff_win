@@ -1,0 +1,40 @@
+# LAMMPS CH.meam file containing the MEAM CH parameters for saturated
+# hydrocarbons developed by Sasan Nouranian.
+# Reference: Physical Chemistry Chemical Physics, 16(13) (2014):6233-6249.
+# This file is used together with the library.meam file.
+# Contact: nouranian@gmail.com (Dr. Sasan Nouranian)
+
+rc = 3.000000 
+delta(1,2) = 2.120000
+re(1,2) = 1.020000
+delr = 0.1
+alpha(1,2) = 3.200000
+lattce(1,2) = dim
+rho0(1) = 1.000000
+rho0(2) = 1.800000
+ialloy = 1
+emb_lin_neg = 1
+bkgd_dyn = 1
+erose_form = 0
+zbl(1,1) = -100
+zbl(1,2) = -100
+zbl(2,2) = -100
+augt1 = 0
+attrac(1,1) = 0.000000 
+repuls(1,1) = 0.000000 
+attrac(1,2) = 0.050000 
+repuls(1,2) = 0.050000 
+attrac(2,2) = 0.000000 
+repuls(2,2) = 0.050000 
+Cmin(1,1,1) = 2.000000 
+Cmax(1,1,1) = 2.800000 
+Cmin(1,1,2) = 2.000000 
+Cmax(1,1,2) = 2.800000 
+Cmin(1,2,1) = 0.445000 
+Cmax(1,2,1) = 2.800000 
+Cmin(1,2,2) = 1.500000 
+Cmax(1,2,2) = 2.000000 
+Cmin(2,2,1) = 0.520000 
+Cmax(2,2,1) = 2.200000 
+Cmin(2,2,2) = 0.750000 
+Cmax(2,2,2) = 2.800000 

@@ -1,0 +1,40 @@
+# REAX potential for Al surface + water system
+
+units real
+box tilt large
+
+atom_style charge
+read_data Al100_with_H2O # or Al111_with_H2O
+replicate 5 5 1
+# structure: https://legacy.materialsproject.org/materials/mp-134/
+
+pair_style reax/c lmp_control
+pair_coeff * * ffield.reax.AlCH2 Al H O
+
+mass 1 26.9800 # A
+#mass 2 12.0107 # C
+mass 2 1.0080  # H
+mass 3 15.999  # O
+
+#velocity all create 300.0 4928459 rot yes dist gaussian
+
+neighbor 2 bin
+neigh_modify every 10 delay 0 check no
+
+restart 1000 restart.*.equil
+
+thermo_style custom step temp etotal pe press vol pxx pyy pzz pyz pxz pxy
+
+fix 1 all nvt temp 300.0 300.0 100.0
+fix 2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+
+timestep 0.25
+
+thermo 10
+thermo_style custom step temp press etotal
+
+#dump1 all custom 50 dump.output_Al100_18H2O.txt.300k_2 id type q x y z
+dump            d1 all cfg 1000 cfg/run.*.cfg mass type xs ys zs id type q vx vy vz fx fy fz
+dump_modify     d1 element Al H O
+
+run 50000

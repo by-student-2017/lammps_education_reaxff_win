@@ -62,7 +62,10 @@ input file (reaxff, lammps)
   https://bearworks.missouristate.edu/theses/3669/
   Argon_Bombardment (need 100_ortho_25_argon.BCH and param_bch.qeq)
 
-- https://bearworks.missouristate.edu/theses/3536/ (ReaxFF file)
+- Y. Lu, Master thesis (2020).
+  https://bearworks.missouristate.edu/theses/3536/
+  Atomic_Layer_Deposition
+
 - https://bearworks.missouristate.edu/theses/3739/ (ReaxFF file)
 - https://bearworks.missouristate.edu/theses/3690/ (ReaxFF ZnO)
 -------------------------------------------------------------------
