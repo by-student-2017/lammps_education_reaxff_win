@@ -30,7 +30,8 @@ input file (reaxff, lammps)
 - V. Ekberg, (2019).: https://lup.lub.lu.se/luur/download?func=downloadFile&recordOId=8969772&fileOId=8969776
   Tobermorite_with_water
 
-- M. A. Zobair, MSU Graduate Theses (2021).: https://bearworks.missouristate.edu/cgi/viewcontent.cgi?article=4730&context=theses
+- M. A. Zobair, Master thesis (2021).
+  https://bearworks.missouristate.edu/theses/3690/
   ZnO
   
 - L. Tian Graduate Theses and Dissertations.: https://www.researchgate.net/profile/Liang-Tian-13/publication/323376967_Structure-property_relationships_in_an_Al_matrix_Ca_nano_lamentary_composite_conductor_with_potential_application_in_high-voltage_power_transmission/links/5a9105230f7e9ba4296bb281/Structure-property-relationships-in-an-Al-matrix-Ca-nano-lamentary-composite-conductor-with-potential-application-in-high-voltage-power-transmission.pdf#page=221
@@ -65,8 +66,6 @@ input file (reaxff, lammps)
 - Y. Lu, Master thesis (2020).
   https://bearworks.missouristate.edu/theses/3536/
   Atomic_Layer_Deposition
-
-- https://bearworks.missouristate.edu/theses/3690/ (ReaxFF ZnO)
 -------------------------------------------------------------------
 plot the temperature of each atom
 
