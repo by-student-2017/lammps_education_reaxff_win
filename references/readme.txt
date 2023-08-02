@@ -66,7 +66,6 @@ input file (reaxff, lammps)
   https://bearworks.missouristate.edu/theses/3536/
   Atomic_Layer_Deposition
 
-- https://bearworks.missouristate.edu/theses/3739/ (ReaxFF file)
 - https://bearworks.missouristate.edu/theses/3690/ (ReaxFF ZnO)
 -------------------------------------------------------------------
 plot the temperature of each atom

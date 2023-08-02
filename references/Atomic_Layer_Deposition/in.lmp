@@ -21,7 +21,7 @@ mass 3 15.999  # O
 neighbor 2 bin
 neigh_modify every 10 delay 0 check no
 
-restart 1000 restart.*.equil
+restart 1000 restart_file/restart.*.equil
 
 thermo_style custom step temp etotal pe press vol pxx pyy pzz pyz pxz pxy
 

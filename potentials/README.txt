@@ -1920,6 +1920,11 @@ Front. Chem., 29 August 2022
 Sec. Physical Chemistry and Chemical Physics
 Volume 10 - 2022 | https://doi.org/10.3389/fchem.2022.951261
 (https://www.frontiersin.org/articles/10.3389/fchem.2022.951261/full)
+
+2022X30A, CHOAl
+2022X30B, CHOAlGe
+D. T. Romine, Master thesis (2022).
+https://bearworks.missouristate.edu/theses/3739/
 -------------------------------------------------------------------
 2023
 
