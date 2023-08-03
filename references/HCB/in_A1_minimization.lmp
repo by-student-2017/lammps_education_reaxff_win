@@ -1,0 +1,33 @@
+# LAMMPS Input Scripts
+# Structural Minimization Scripts
+
+# REAX potential for HCB system
+
+units real
+atom_style charge
+read_data data.BCH
+
+# ---------- Calling the potential file---------------------------------
+pair_style reax/c lmp_control
+pair_coeff * * ffield.reax.hcb B C H
+
+#-----------------------------------------------------------------------
+mass 1 10.811
+mass 2 1.008
+
+#----------------------Thermo and loop --------------------------------------------
+thermo 10
+thermo_style custom step temp pe etotal press vol pxx pyy pzz lx ly lz xy xz yz
+
+neighbor 0.3 bin
+neigh_modify every 1 delay 0 check no
+
+restart 10000 restart.*.dens17
+
+fix 3 all qeq/reax 1 0.0 10.0 1e-6 param_bch.qeq
+
+timestep 0.05
+
+dump 1 all atom 10 dump_structural_minimization.dat
+
+minimize 0.0 1.0e-8 5000 100000

@@ -1,0 +1,107 @@
+# LAMMPS Input Scripts
+# Argon Bombardment Script
+#simulation of PKA damage 600 eV
+
+units real
+boundary p p p
+atom_style charge
+read_data data.BCHAr
+
+## hybrid potentials
+## ReaxFF Potential
+pair_style hybrid reax/c lmp_control lj/cut 11.0 
+pair_coeff * * reax/c ffield.reax.hcb B C H NULL
+
+##lj
+pair_coeff 1 4 lj/cut 0.150885 3.4265
+pair_coeff 2 4 lj/cut 0.115303 3.385
+pair_coeff 3 4 lj/cut 0.13283 3.054
+pair_coeff 4 4 lj/cut 0.23983 3.4
+
+#mass
+mass 1 10.811
+mass 2 12.0107
+mass 3 1.00794
+mass 4 39.948
+
+##
+velocity all create 2.0 893267 rot yes dist gaussian
+neighbor 0.3 bin
+neigh_modify every 1 delay 0 check yes
+restart 5000 restart.*.dens17
+
+#Outputs and Run
+thermo 100
+thermo_style custom step temp pe etotal press vol pxx pyy pzz lx ly lz xy xz yz
+dump 1 all custom 100 dump_total_600_eV.reax.amorphous_b4cH id type q x y z
+fix 1 all qeq/reax 1 0.0 10.0 1e-6 param_bch.qeq
+fix 4 all reax/c/species 1 1 10 species_600_eV.out element B C H Ar 
+fix 2 all nvt temp 2 2 100.0
+timestep 0.05
+run 5000
+#Starting PKA run
+#First unfix
+unfix 2
+
+##
+group PKA1 id == 24001
+group PKA2 id == 24002
+group PKA3 id == 24003
+group PKA4 id == 24004
+group PKA5 id == 24005
+group PKA6 id == 24006
+group PKA7 id == 24007
+group PKA8 id == 24008
+group PKA9 id == 24009
+group PKA10 id == 24010
+group PKA11 id == 24011
+group PKA12 id == 24012
+group PKA13 id == 24013
+group PKA14 id == 24014
+group PKA15 id == 24015
+group PKA16 id == 24016
+group PKA17 id == 24017
+group PKA18 id == 24018
+group PKA19 id == 24019
+group PKA20 id == 24020
+group PKA21 id == 24021
+group PKA22 id == 24022
+group PKA23 id == 24023
+group PKA24 id == 24024
+group PKA25 id == 24025
+
+##
+velocity PKA1 set -0.093421963 0.4946317 -0.189871321 units box
+velocity PKA2 set -0.139243516 0.347723005 -0.386185521 units box
+velocity PKA3 set -0.399808671 0.231396691 -0.275767835 units box
+velocity PKA4 set -0.514487782 -0.15490504 -0.027313939 units box
+velocity PKA5 set -0.04688941 0.291898419 0.449484148 units box
+velocity PKA6 set 0.235841762 -0.241773637 -0.418764221 units box
+velocity PKA7 set 0.148291693 -0.28918918 0.428740591 units box
+velocity PKA8 set 0.331223185 0.422913633 0.029573001 units box
+velocity PKA9 set -0.201536712 -0.256911739 0.427572933 units box
+velocity PKA10 set -0.331223185 0.370791828 0.205533267 units box
+velocity PKA11 set -0.451201104 -0.227714197 -0.184399321 units box
+velocity PKA12 set 0.37372317 0.04716364 -0.384117019 units box
+velocity PKA13 set 0.465917886 -0.243794817 0.113683389 units box
+velocity PKA14 set -0.47935762 0.240534278 -0.042412684 units box
+velocity PKA15 set 0.435247611 0.306832639 -0.076501968 units box
+velocity PKA16 set 0.456246172 0.285050829 0.00497558 units box
+velocity PKA17 set 0.5376679 0.010226022 0.015746691 units box
+velocity PKA18 set -0.07487452 0.027882498 0.532029767 units box
+velocity PKA19 set 0.393465097 0.289130711 0.225893668 units box
+velocity PKA20 set 0.338571622 -0.354569871 -0.221559845 units box
+velocity PKA21 set 0.446018595 0.197370991 0.22704935 units box
+velocity PKA22 set -0.111855581 0.46464158 0.247054312 units box
+velocity PKA23 set -0.359989344 0.356232135 -0.181509338 units box
+velocity PKA24 set -0.345816927 -0.224461303 0.345640099 units box
+velocity PKA25 set -0.451201104 -0.227714197 -0.184399321 units box
+
+##
+fix 2 all nve
+run 100000
+unfix 2
+undump 1
+
+## SIMULATION DONE 
+print “All done”

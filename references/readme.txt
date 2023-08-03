@@ -58,6 +58,10 @@ input file (reaxff, lammps)
   https://bearworks.missouristate.edu/theses/3669/
   Argon_Bombardment (need 100_ortho_25_argon.BCH and param_bch.qeq)
 
+- N. Baishnab, Master thesis (2019).
+  https://bearworks.missouristate.edu/theses/3416/
+  HCB (Argon_Bombardment) (need structure file)
+
 - Y. Lu, Master thesis (2020).
   https://bearworks.missouristate.edu/theses/3536/
   Atomic_Layer_Deposition

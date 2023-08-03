@@ -1,0 +1,44 @@
+# LAMMPS Input Scripts
+# NPT Simulation Scripts
+#simulation NPT
+
+units real
+boundary p p p
+atom_style charge
+read_data data.BCH
+
+##hybrid potentials 
+pair_style hybrid reax/c lmp_control lj/cut 11.0 
+pair_coeff * * reax/c ffield.reax.hcb B C H NULL
+
+##lj
+pair_coeff 1 4 lj/cut 0.150885 3.4265
+pair_coeff 2 4 lj/cut 0.115303 3.385
+pair_coeff 3 4 lj/cut 0.13283 3.054
+pair_coeff 4 4 lj/cut 0.23983 3.4
+
+#mass
+mass 1 10.811  # B
+mass 2 12.0107 # C
+mass 3 1.00794 # H
+mass 4 39.948  # Ar
+
+##
+velocity all create 2.0 893267 rot yes dist gaussian
+neighbor 0.3 bin
+neigh_modify every 1 delay 0 check yes
+restart 10000 restart.*.dens17
+
+#----------------------Thermo and run --------------------------------------------
+thermo 100
+thermo_style custom step temp pe etotal press vol pxx pyy pzz lx ly lz xy xz yz
+dump 1 all custom 100 dump_NVT_600_eV.reax.amorphous_b4cH id type q x y z
+fix 1 all qeq/reax 1 0.0 10.0 1e-6 param_bch.qeq
+fix 2 all reax/c/species 1 1 10 species_600_eV.out element B C H Ar
+fix 3 all npt temp 300.0 300.0 100.0 iso 0.0 0.0 1000.
+timestep 0.25
+run 100000
+unfix 3
+undump 1
+## SIMULATION DONE 
+print “All done”
