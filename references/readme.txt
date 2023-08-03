@@ -54,13 +54,13 @@ input file (reaxff, lammps)
   https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2445481
   amorphous_carbon
 
-- K. A.-Boahen, Master thesis (2021).
-  https://bearworks.missouristate.edu/theses/3669/
-  Argon_Bombardment (need 100_ortho_25_argon.BCH and param_bch.qeq)
-
 - N. Baishnab, Master thesis (2019).
   https://bearworks.missouristate.edu/theses/3416/
-  HCB (Argon_Bombardment) (need structure file)
+  Argon_Bombardment_HCB_2019 (need structure file)
+
+- K. A.-Boahen, Master thesis (2021).
+  https://bearworks.missouristate.edu/theses/3669/
+  Argon_Bombardment_HCB_2021 (need 100_ortho_25_argon.BCH and param_bch.qeq)
 
 - Y. Lu, Master thesis (2020).
   https://bearworks.missouristate.edu/theses/3536/

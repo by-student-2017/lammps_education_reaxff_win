@@ -7,7 +7,7 @@ atom_style charge
 
 read_data 100_ortho_25_argon.BCH
 
-####hybrid potentials 
+###hybrid potentials 
 
 ##ReaxFF Potential
 pair_style hybrid reax/c lmp_control lj/cut 11.0

@@ -8,6 +8,7 @@ atom_style charge
 read_data data.BCHAr
 
 ## hybrid potentials
+
 ## ReaxFF Potential
 pair_style hybrid reax/c lmp_control lj/cut 11.0 
 pair_coeff * * reax/c ffield.reax.hcb B C H NULL
@@ -19,10 +20,10 @@ pair_coeff 3 4 lj/cut 0.13283 3.054
 pair_coeff 4 4 lj/cut 0.23983 3.4
 
 #mass
-mass 1 10.811
-mass 2 12.0107
-mass 3 1.00794
-mass 4 39.948
+mass 1 10.811  # B
+mass 2 12.0107 # C
+mass 3 1.00794 # H
+mass 4 39.948  # Ar
 
 ##
 velocity all create 2.0 893267 rot yes dist gaussian
@@ -33,12 +34,19 @@ restart 5000 restart.*.dens17
 #Outputs and Run
 thermo 100
 thermo_style custom step temp pe etotal press vol pxx pyy pzz lx ly lz xy xz yz
+
 dump 1 all custom 100 dump_total_600_eV.reax.amorphous_b4cH id type q x y z
+
 fix 1 all qeq/reax 1 0.0 10.0 1e-6 param_bch.qeq
+
 fix 4 all reax/c/species 1 1 10 species_600_eV.out element B C H Ar 
+
 fix 2 all nvt temp 2 2 100.0
+
 timestep 0.05
+
 run 5000
+
 #Starting PKA run
 #First unfix
 unfix 2
@@ -99,7 +107,9 @@ velocity PKA25 set -0.451201104 -0.227714197 -0.184399321 units box
 
 ##
 fix 2 all nve
+
 run 100000
+
 unfix 2
 undump 1
 
