@@ -66,6 +66,10 @@ input file (reaxff, lammps)
   https://bearworks.missouristate.edu/theses/3536/
   Atomic_Layer_Deposition
   
+- P. Song, thesis (2010).
+  https://qmro.qmul.ac.uk/xmlui/handle/123456789/427 (ReaxFF)
+  Silicon_Oxidation (MATLAB)
+  
 - N. M. Erksen, NTNU Open (2017).
   https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2390753
   hydrogen_dissociation: https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2390753/12537_FULLTEXT.pdf?sequence=1&isAllowed=y
@@ -89,6 +93,11 @@ input file (reaxff, lammps)
   
 - H. Cho, Master thesis (2004).
   https://dspace.mit.edu/handle/1721.1/57788 (ReaxFF)
+  
+- B. D. Jensen, Master thesis (2013).
+  https://digitalcommons.mtu.edu/etds/643/ (ReaxFF)
+  
+- https://digitalcommons.mtu.edu/etds/809/ (ReaxFF)
 -------------------------------------------------------------------
 plot the temperature of each atom
 
