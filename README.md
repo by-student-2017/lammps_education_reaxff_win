@@ -38,3 +38,10 @@
   http://kiff.vfab.org/reax
   potentials folder are getting from above URL.
 ------------------------------------------------------------------------------
+
+
+## Acknowledgment ######################################
+- This project (modified version) is/was partially supported by the following :
+  + meguREnergy Co., Ltd.
+  + ATSUMITEC Co., Ltd.
+  + RIKEN
