@@ -1,4 +1,5 @@
 set ncore=3
+set OMP_NUM_THREADS=1
 
 mkdir cfg
 
