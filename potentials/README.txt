@@ -1807,7 +1807,6 @@ https://doi.org/10.1021/acs.jpcc.2c01107
 OMg
 F. Fiesinger et al.,
 10.26434/chemrxiv-2022-3chphs
-https://doi.org/10.1021/acs.jpclett.1c03867
 
 2022X12
 LiNaMg
@@ -1982,8 +1981,64 @@ https://doi.org/10.1063/5.0130686
 
 2023X9
 CHONSMgPNaCuClZn
-J. Phys. Chem. B 2023, XXXX, XXX, XXX-XXX
+Y. Yang et al.,
+J. Phys. Chem. B 2023, 127, 28, 6374-6384.
 https://doi.org/10.1021/acs.jpcb.3c00563
+
+2023X10
+CHO
+S. M. Ma et al.,
+J. Phys. Chem. A 2023, 127, 35, 7323-7334.
+https://doi.org/10.1021/acs.jpca.3c03717
+
+2023X11
+HSiLiCN
+H. Park et al.,
+Chem. Mater. 2023, 35, 7, 2835-2845.
+https://doi.org/10.1021/acs.chemmater.2c03603
+
+2023X12
+CHONaCaMg
+N. Dasgupta et al.,
+Phys. Chem. Chem. Phys., 2022,24, 3322-3337.
+https://doi.org/10.1039/D1CP04790F
+
+2023X13
+CHONBAl
+A. Lele et al.,
+J. Phys. Chem. A 2022, 126, 4, 568-582.
+https://doi.org/10.1021/acs.jpca.1c09648
+
+2023X14
+CHONAr
+P. Zhang et al.,
+nergy Fuels 2022, 36, 19, 12350-12364.
+https://doi.org/10.1021/acs.energyfuels.2c02206
+
+2023X15
+CHOSiCu
+K. A. Roshan et al.,
+J. Phys. Chem. C 2023, 127, 41, 20445-20458.
+https://doi.org/10.1021/acs.jpcc.3c03079
+
+2023X16
+CHOSMoNi
+K. Mohammadtabar et al.,
+J. Phys. Chem. C 2023, 127, 25, 12171-12183.
+https://doi.org/10.1021/acs.jpcc.3c00668
+
+2023X17
+CHONSMgPNaCuCl
+H. Cui et al.,
+J. Chem. Theory Comput. 2023, 19, 13, 4286-4298.
+https://doi.org/10.1021/acs.jctc.3c00013
+
+M. D'Amore et al.,
+CHOSMoNiLiBFPN
+J. Phys. Chem. C 2023, 127, 47, 22880-22888.
+https://doi.org/10.1021/acs.jpcc.3c04991
+
+
 -------------------------------------------------------------------
 input file (reaxff, lammps)
 

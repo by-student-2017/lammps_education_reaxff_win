@@ -1,0 +1,53 @@
+log log.crack append
+units		real
+
+shell mkdir restart species bonds xyz com
+atom_style	charge
+read_data	PET.data
+
+pair_style      reax/c control.reax_c.rdx #safezone 10 mincap 1000000 minhbonds 1000000
+pair_coeff      * * cho.reax H H C C C C O O
+
+
+
+
+timestep	0.1
+fix 1 all box/relax iso 1.0 vmax 0.01
+fix             5 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+dump 1 all custom 1000 min_dump.xyz id element x y z
+dump_modify 1 element H H C C C C O O sort id
+minimize 1.0e-6 1.0e-8 1000 100000
+undump 1
+unfix 1
+reset_timestep 0
+neighbor        2.0 bin
+neigh_modify    every 1 delay 0 check no
+variable START_TEMP equal 300
+variable FINAL_NUM equal 12
+variable i loop 1 ${FINAL_NUM}   ######
+label loop
+velocity all create 300.0 4928459 rot yes dist gaussian
+variable Sim_T equal ${START_TEMP}+100*${i}-100
+
+fix             2 all nvt temp ${Sim_T} ${Sim_T} 100 #iso 1.1 1.1 20
+fix             3 all reax/c/bonds 10000 bonds/bonds.reaxc.${i}
+fix             4 all reax/c/species 10 10 1000 species/species.reaxc.${i} element H H C C C C O O position 1000 com/com_sp.${i}
+thermo		10000
+thermo_style 	custom step temp epair etotal press density
+restart 1000000 restart/${i}.crack_*.restart
+dump 2 all custom 10000 xyz/relax_dump_${i}.xyz id type x y z
+if "${i} < ${FINAL_NUM}" then &
+	"run 10000" &
+else &
+	"run 10000000"
+
+undump 2
+unfix 2
+unfix 3
+unfix 4
+
+next i
+jump crack_temp.in loop
+
+
+
