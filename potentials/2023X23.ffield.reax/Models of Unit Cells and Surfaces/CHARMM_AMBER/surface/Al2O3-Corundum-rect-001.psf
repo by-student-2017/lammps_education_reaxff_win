@@ -1,0 +1,144 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+     120 !NATOM
+       1 AlO  1    AlO  AL1  ALO1      1.620000        26.9815           0
+       2 AlO  1    AlO  AL2  ALO1      1.620000        26.9815           0
+       3 AlO  1    AlO  AL3  ALO1      1.620000        26.9815           0
+       4 AlO  1    AlO  AL4  ALO1      1.620000        26.9815           0
+       5 AlO  1    AlO  AL5  ALO1      1.620000        26.9815           0
+       6 AlO  1    AlO  AL6  ALO1      1.620000        26.9815           0
+       7 AlO  1    AlO  O1   OAL1     -1.080000        15.9994           0
+       8 AlO  1    AlO  O2   OAL1     -1.080000        15.9994           0
+       9 AlO  1    AlO  O3   OAL1     -1.080000        15.9994           0
+      10 AlO  1    AlO  AL7  ALO1      1.620000        26.9815           0
+      11 AlO  1    AlO  AL8  ALO1      1.620000        26.9815           0
+      12 AlO  1    AlO  AL9  ALO1      1.620000        26.9815           0
+      13 AlO  2    AlO  AL1  ALO1      1.620000        26.9815           0
+      14 AlO  2    AlO  O1   OAL1     -1.080000        15.9994           0
+      15 AlO  2    AlO  O2   OAL1     -1.080000        15.9994           0
+      16 AlO  2    AlO  O3   OAL1     -1.080000        15.9994           0
+      17 AlO  2    AlO  O4   OAL1     -1.080000        15.9994           0
+      18 AlO  2    AlO  AL2  ALO1      1.620000        26.9815           0
+      19 AlO  2    AlO  O5   OAL1     -1.080000        15.9994           0
+      20 AlO  2    AlO  O6   OAL1     -1.080000        15.9994           0
+      21 AlO  2    AlO  O7   OAL1     -1.080000        15.9994           0
+      22 AlO  2    AlO  AL3  ALO1      1.620000        26.9815           0
+      23 AlO  2    AlO  AL4  ALO1      1.620000        26.9815           0
+      24 AlO  2    AlO  AL5  ALO1      1.620000        26.9815           0
+      25 AlO  2    AlO  AL6  ALO1      1.620000        26.9815           0
+      26 AlO  2    AlO  AL7  ALO1      1.620000        26.9815           0
+      27 AlO  2    AlO  AL8  ALO1      1.620000        26.9815           0
+      28 AlO  2    AlO  AL9  ALO1      1.620000        26.9815           0
+      29 AlO  3    AlO  O1   OAL1     -1.080000        15.9994           0
+      30 AlO  3    AlO  O2   OAL1     -1.080000        15.9994           0
+      31 AlO  3    AlO  O3   OAL1     -1.080000        15.9994           0
+      32 AlO  3    AlO  O4   OAL1     -1.080000        15.9994           0
+      33 AlO  3    AlO  O5   OAL1     -1.080000        15.9994           0
+      34 AlO  3    AlO  O6   OAL1     -1.080000        15.9994           0
+      35 AlO  3    AlO  O7   OAL1     -1.080000        15.9994           0
+      36 AlO  3    AlO  O8   OAL1     -1.080000        15.9994           0
+      37 AlO  3    AlO  O9   OAL1     -1.080000        15.9994           0
+      38 AlO  3    AlO  O10  OAL1     -1.080000        15.9994           0
+      39 AlO  3    AlO  O11  OAL1     -1.080000        15.9994           0
+      40 AlO  3    AlO  O12  OAL1     -1.080000        15.9994           0
+      41 AlO  3    AlO  O13  OAL1     -1.080000        15.9994           0
+      42 AlO  3    AlO  O14  OAL1     -1.080000        15.9994           0
+      43 AlO  3    AlO  AL1  ALO1      1.620000        26.9815           0
+      44 AlO  3    AlO  AL2  ALO1      1.620000        26.9815           0
+      45 AlO  3    AlO  AL3  ALO1      1.620000        26.9815           0
+      46 AlO  3    AlO  AL4  ALO1      1.620000        26.9815           0
+      47 AlO  3    AlO  AL5  ALO1      1.620000        26.9815           0
+      48 AlO  3    AlO  AL6  ALO1      1.620000        26.9815           0
+      49 AlO  3    AlO  AL7  ALO1      1.620000        26.9815           0
+      50 AlO  3    AlO  AL8  ALO1      1.620000        26.9815           0
+      51 AlO  3    AlO  O15  OAL1     -1.080000        15.9994           0
+      52 AlO  3    AlO  O16  OAL1     -1.080000        15.9994           0
+      53 AlO  3    AlO  O17  OAL1     -1.080000        15.9994           0
+      54 AlO  3    AlO  O18  OAL1     -1.080000        15.9994           0
+      55 AlO  3    AlO  O19  OAL1     -1.080000        15.9994           0
+      56 AlO  3    AlO  O20  OAL1     -1.080000        15.9994           0
+      57 AlO  3    AlO  O21  OAL1     -1.080000        15.9994           0
+      58 AlO  3    AlO  O22  OAL1     -1.080000        15.9994           0
+      59 AlO  3    AlO  O23  OAL1     -1.080000        15.9994           0
+      60 AlO  3    AlO  O24  OAL1     -1.080000        15.9994           0
+      61 AlO  3    AlO  AL9  ALO1      1.620000        26.9815           0
+      62 AlO  4    AlO  AL1  ALO1      1.620000        26.9815           0
+      63 AlO  4    AlO  AL2  ALO1      1.620000        26.9815           0
+      64 AlO  4    AlO  O1   OAL1     -1.080000        15.9994           0
+      65 AlO  4    AlO  O2   OAL1     -1.080000        15.9994           0
+      66 AlO  4    AlO  O3   OAL1     -1.080000        15.9994           0
+      67 AlO  4    AlO  AL3  ALO1      1.620000        26.9815           0
+      68 AlO  4    AlO  AL4  ALO1      1.620000        26.9815           0
+      69 AlO  4    AlO  AL5  ALO1      1.620000        26.9815           0
+      70 AlO  4    AlO  AL6  ALO1      1.620000        26.9815           0
+      71 AlO  4    AlO  O4   OAL1     -1.080000        15.9994           0
+      72 AlO  4    AlO  O5   OAL1     -1.080000        15.9994           0
+      73 AlO  4    AlO  O6   OAL1     -1.080000        15.9994           0
+      74 AlO  4    AlO  O7   OAL1     -1.080000        15.9994           0
+      75 AlO  4    AlO  O8   OAL1     -1.080000        15.9994           0
+      76 AlO  4    AlO  O9   OAL1     -1.080000        15.9994           0
+      77 AlO  4    AlO  O10  OAL1     -1.080000        15.9994           0
+      78 AlO  4    AlO  AL7  ALO1      1.620000        26.9815           0
+      79 AlO  4    AlO  AL8  ALO1      1.620000        26.9815           0
+      80 AlO  4    AlO  AL9  ALO1      1.620000        26.9815           0
+      81 AlO  5    AlO  AL1  ALO1      1.620000        26.9815           0
+      82 AlO  5    AlO  AL2  ALO1      1.620000        26.9815           0
+      83 AlO  5    AlO  AL3  ALO1      1.620000        26.9815           0
+      84 AlO  5    AlO  AL4  ALO1      1.620000        26.9815           0
+      85 AlO  5    AlO  O1   OAL1     -1.080000        15.9994           0
+      86 AlO  5    AlO  O2   OAL1     -1.080000        15.9994           0
+      87 AlO  5    AlO  O3   OAL1     -1.080000        15.9994           0
+      88 AlO  5    AlO  O4   OAL1     -1.080000        15.9994           0
+      89 AlO  5    AlO  O5   OAL1     -1.080000        15.9994           0
+      90 AlO  5    AlO  O6   OAL1     -1.080000        15.9994           0
+      91 AlO  5    AlO  O7   OAL1     -1.080000        15.9994           0
+      92 AlO  5    AlO  O8   OAL1     -1.080000        15.9994           0
+      93 AlO  5    AlO  O9   OAL1     -1.080000        15.9994           0
+      94 AlO  5    AlO  O10  OAL1     -1.080000        15.9994           0
+      95 AlO  5    AlO  O11  OAL1     -1.080000        15.9994           0
+      96 AlO  5    AlO  O12  OAL1     -1.080000        15.9994           0
+      97 AlO  5    AlO  O13  OAL1     -1.080000        15.9994           0
+      98 AlO  5    AlO  O14  OAL1     -1.080000        15.9994           0
+      99 AlO  5    AlO  AL5  ALO1      1.620000        26.9815           0
+     100 AlO  5    AlO  AL6  ALO1      1.620000        26.9815           0
+     101 AlO  5    AlO  AL7  ALO1      1.620000        26.9815           0
+     102 AlO  5    AlO  AL8  ALO1      1.620000        26.9815           0
+     103 AlO  5    AlO  AL9  ALO1      1.620000        26.9815           0
+     104 AlO  6    AlO  AL1  ALO1      1.620000        26.9815           0
+     105 AlO  6    AlO  AL2  ALO1      1.620000        26.9815           0
+     106 AlO  6    AlO  AL3  ALO1      1.620000        26.9815           0
+     107 AlO  6    AlO  O1   OAL1     -1.080000        15.9994           0
+     108 AlO  6    AlO  O2   OAL1     -1.080000        15.9994           0
+     109 AlO  6    AlO  O3   OAL1     -1.080000        15.9994           0
+     110 AlO  6    AlO  O4   OAL1     -1.080000        15.9994           0
+     111 AlO  6    AlO  O5   OAL1     -1.080000        15.9994           0
+     112 AlO  6    AlO  O6   OAL1     -1.080000        15.9994           0
+     113 AlO  6    AlO  O7   OAL1     -1.080000        15.9994           0
+     114 AlO  6    AlO  O8   OAL1     -1.080000        15.9994           0
+     115 AlO  6    AlO  O9   OAL1     -1.080000        15.9994           0
+     116 AlO  6    AlO  O10  OAL1     -1.080000        15.9994           0
+     117 AlO  6    AlO  O11  OAL1     -1.080000        15.9994           0
+     118 AlO  6    AlO  O12  OAL1     -1.080000        15.9994           0
+     119 AlO  6    AlO  O13  OAL1     -1.080000        15.9994           0
+     120 AlO  6    AlO  O14  OAL1     -1.080000        15.9994           0
+
+       0 !NBOND: bonds
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0

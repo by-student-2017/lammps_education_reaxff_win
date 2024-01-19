@@ -1,0 +1,64 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+      40 !NATOM
+       1 MgO  1    MgO  MG1  MGO1      1.060000        24.3050           0
+       2 MgO  1    MgO  O1   OMG1     -1.060000        15.9994           0
+       3 MgO  1    MgO  O2   OMG1     -1.060000        15.9994           0
+       4 MgO  1    MgO  O3   OMG1     -1.060000        15.9994           0
+       5 MgO  1    MgO  O4   OMG1     -1.060000        15.9994           0
+       6 MgO  1    MgO  MG2  MGO1      1.060000        24.3050           0
+       7 MgO  1    MgO  MG3  MGO1      1.060000        24.3050           0
+       8 MgO  1    MgO  MG4  MGO1      1.060000        24.3050           0
+       9 MgO  1    MgO  MG5  MGO1      1.060000        24.3050           0
+      10 MgO  1    MgO  O5   OMG1     -1.060000        15.9994           0
+      11 MgO  1    MgO  O6   OMG1     -1.060000        15.9994           0
+      12 MgO  1    MgO  O7   OMG1     -1.060000        15.9994           0
+      13 MgO  1    MgO  O8   OMG1     -1.060000        15.9994           0
+      14 MgO  1    MgO  MG6  MGO1      1.060000        24.3050           0
+      15 MgO  1    MgO  MG7  MGO1      1.060000        24.3050           0
+      16 MgO  1    MgO  MG8  MGO1      1.060000        24.3050           0
+      17 MgO  1    MgO  MG9  MGO1      1.060000        24.3050           0
+      18 MgO  2    MgO  O1   OMG1     -1.060000        15.9994           0
+      19 MgO  2    MgO  O2   OMG1     -1.060000        15.9994           0
+      20 MgO  2    MgO  O3   OMG1     -1.060000        15.9994           0
+      21 MgO  2    MgO  O4   OMG1     -1.060000        15.9994           0
+      22 MgO  2    MgO  MG1  MGO1      1.060000        24.3050           0
+      23 MgO  2    MgO  MG2  MGO1      1.060000        24.3050           0
+      24 MgO  2    MgO  MG3  MGO1      1.060000        24.3050           0
+      25 MgO  2    MgO  MG4  MGO1      1.060000        24.3050           0
+      26 MgO  2    MgO  O5   OMG1     -1.060000        15.9994           0
+      27 MgO  2    MgO  O6   OMG1     -1.060000        15.9994           0
+      28 MgO  2    MgO  O7   OMG1     -1.060000        15.9994           0
+      29 MgO  2    MgO  O8   OMG1     -1.060000        15.9994           0
+      30 MgO  2    MgO  MG5  MGO1      1.060000        24.3050           0
+      31 MgO  2    MgO  MG6  MGO1      1.060000        24.3050           0
+      32 MgO  2    MgO  MG7  MGO1      1.060000        24.3050           0
+      33 MgO  2    MgO  MG8  MGO1      1.060000        24.3050           0
+      34 MgO  2    MgO  O9   OMG1     -1.060000        15.9994           0
+      35 MgO  2    MgO  O10  OMG1     -1.060000        15.9994           0
+      36 MgO  2    MgO  O11  OMG1     -1.060000        15.9994           0
+      37 MgO  2    MgO  O12  OMG1     -1.060000        15.9994           0
+      38 MgO  2    MgO  MG9  MGO1      1.060000        24.3050           0
+      39 MgO  3    MgO  MG1  MGO1      1.060000        24.3050           0
+      40 MgO  3    MgO  MG2  MGO1      1.060000        24.3050           0
+
+       0 !NBOND: bonds
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0

@@ -1,0 +1,56 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+      32 !NATOM
+       1 CaO  1    CaO  CA1  CAO1      1.230000        40.0780           0
+       2 CaO  1    CaO  O1   OCA1     -1.230000        15.9994           0
+       3 CaO  1    CaO  O2   OCA1     -1.230000        15.9994           0
+       4 CaO  1    CaO  O3   OCA1     -1.230000        15.9994           0
+       5 CaO  1    CaO  O4   OCA1     -1.230000        15.9994           0
+       6 CaO  1    CaO  CA2  CAO1      1.230000        40.0780           0
+       7 CaO  1    CaO  CA3  CAO1      1.230000        40.0780           0
+       8 CaO  1    CaO  CA4  CAO1      1.230000        40.0780           0
+       9 CaO  1    CaO  CA5  CAO1      1.230000        40.0780           0
+      10 CaO  1    CaO  O5   OCA1     -1.230000        15.9994           0
+      11 CaO  1    CaO  O6   OCA1     -1.230000        15.9994           0
+      12 CaO  1    CaO  O7   OCA1     -1.230000        15.9994           0
+      13 CaO  1    CaO  O8   OCA1     -1.230000        15.9994           0
+      14 CaO  1    CaO  CA6  CAO1      1.230000        40.0780           0
+      15 CaO  1    CaO  CA7  CAO1      1.230000        40.0780           0
+      16 CaO  1    CaO  CA8  CAO1      1.230000        40.0780           0
+      17 CaO  1    CaO  CA9  CAO1      1.230000        40.0780           0
+      18 CaO  2    CaO  O1   OCA1     -1.230000        15.9994           0
+      19 CaO  2    CaO  O2   OCA1     -1.230000        15.9994           0
+      20 CaO  2    CaO  O3   OCA1     -1.230000        15.9994           0
+      21 CaO  2    CaO  O4   OCA1     -1.230000        15.9994           0
+      22 CaO  2    CaO  CA1  CAO1      1.230000        40.0780           0
+      23 CaO  2    CaO  CA2  CAO1      1.230000        40.0780           0
+      24 CaO  2    CaO  CA3  CAO1      1.230000        40.0780           0
+      25 CaO  2    CaO  CA4  CAO1      1.230000        40.0780           0
+      26 CaO  2    CaO  O5   OCA1     -1.230000        15.9994           0
+      27 CaO  2    CaO  O6   OCA1     -1.230000        15.9994           0
+      28 CaO  2    CaO  O7   OCA1     -1.230000        15.9994           0
+      29 CaO  2    CaO  O8   OCA1     -1.230000        15.9994           0
+      30 CaO  2    CaO  CA5  CAO1      1.230000        40.0780           0
+      31 CaO  2    CaO  CA6  CAO1      1.230000        40.0780           0
+      32 CaO  2    CaO  CA7  CAO1      1.230000        40.0780           0
+
+       0 !NBOND: bonds
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0

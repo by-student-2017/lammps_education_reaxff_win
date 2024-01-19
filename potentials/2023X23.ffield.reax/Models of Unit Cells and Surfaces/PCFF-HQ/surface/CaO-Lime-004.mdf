@@ -1,0 +1,60 @@
+!BIOSYM molecular_data 4
+ 
+!Date: Mon Sep 25 12:02:25 2023   Materials Studio Generated MDF file
+ 
+#topology
+
+@column 1 element
+@column 2 atom_type
+@column 3 charge_group
+@column 4 isotope
+@column 5 formal_charge
+@column 6 charge
+@column 7 switching_atom
+@column 8 oop_flag
+@column 9 chirality_flag
+@column 10 occupancy
+@column 11 xray_temp_factor
+@column 12 connections
+ 
+@molecule CaO
+ 
+XXXX_1:Ca1          Ca cao1    ?     0  2+    1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:O1           O  oca1    ?     0  2-   -1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:O2           O  oca1    ?     0  2-   -1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:O3           O  oca1    ?     0  2-   -1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:O4           O  oca1    ?     0  2-   -1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:Ca2          Ca cao1    ?     0  2+    1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:Ca3          Ca cao1    ?     0  2+    1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:Ca4          Ca cao1    ?     0  2+    1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:Ca5          Ca cao1    ?     0  2+    1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:O5           O  oca1    ?     0  2-   -1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:O6           O  oca1    ?     0  2-   -1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:O7           O  oca1    ?     0  2-   -1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:O8           O  oca1    ?     0  2-   -1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:Ca6          Ca cao1    ?     0  2+    1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:Ca7          Ca cao1    ?     0  2+    1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:Ca8          Ca cao1    ?     0  2+    1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:Ca9          Ca cao1    ?     0  2+    1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:O9           O  oca1    ?     0  2-   -1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:O10          O  oca1    ?     0  2-   -1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:O11          O  oca1    ?     0  2-   -1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:O12          O  oca1    ?     0  2-   -1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:Ca10         Ca cao1    ?     0  2+    1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:Ca11         Ca cao1    ?     0  2+    1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:Ca12         Ca cao1    ?     0  2+    1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:Ca13         Ca cao1    ?     0  2+    1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:O13          O  oca1    ?     0  2-   -1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:O14          O  oca1    ?     0  2-   -1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:O15          O  oca1    ?     0  2-   -1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:O16          O  oca1    ?     0  2-   -1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:Ca14         Ca cao1    ?     0  2+    1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:Ca15         Ca cao1    ?     0  2+    1.3600 0 0 8 1.0000  0.0000 
+XXXX_1:Ca16         Ca cao1    ?     0  2+    1.3600 0 0 8 1.0000  0.0000 
+ 
+!
+#symmetry
+@periodicity 3 xyz
+@group (P1)
+
+#end

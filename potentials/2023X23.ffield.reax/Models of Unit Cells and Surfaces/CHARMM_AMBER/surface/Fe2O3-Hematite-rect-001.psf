@@ -1,0 +1,144 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+     120 !NATOM
+       1 FeO  1    FeO  FE1  FEO1      1.740000        55.8450           0
+       2 FeO  1    FeO  FE2  FEO1      1.740000        55.8450           0
+       3 FeO  1    FeO  FE3  FEO1      1.740000        55.8450           0
+       4 FeO  1    FeO  FE4  FEO1      1.740000        55.8450           0
+       5 FeO  1    FeO  FE5  FEO1      1.740000        55.8450           0
+       6 FeO  1    FeO  FE6  FEO1      1.740000        55.8450           0
+       7 FeO  1    FeO  O1   OFE1     -1.160000        15.9994           0
+       8 FeO  1    FeO  O2   OFE1     -1.160000        15.9994           0
+       9 FeO  1    FeO  O3   OFE1     -1.160000        15.9994           0
+      10 FeO  1    FeO  FE7  FEO1      1.740000        55.8450           0
+      11 FeO  1    FeO  FE8  FEO1      1.740000        55.8450           0
+      12 FeO  1    FeO  FE9  FEO1      1.740000        55.8450           0
+      13 FeO  2    FeO  FE1  FEO1      1.740000        55.8450           0
+      14 FeO  2    FeO  O1   OFE1     -1.160000        15.9994           0
+      15 FeO  2    FeO  O2   OFE1     -1.160000        15.9994           0
+      16 FeO  2    FeO  O3   OFE1     -1.160000        15.9994           0
+      17 FeO  2    FeO  O4   OFE1     -1.160000        15.9994           0
+      18 FeO  2    FeO  FE2  FEO1      1.740000        55.8450           0
+      19 FeO  2    FeO  O5   OFE1     -1.160000        15.9994           0
+      20 FeO  2    FeO  O6   OFE1     -1.160000        15.9994           0
+      21 FeO  2    FeO  O7   OFE1     -1.160000        15.9994           0
+      22 FeO  2    FeO  FE3  FEO1      1.740000        55.8450           0
+      23 FeO  2    FeO  FE4  FEO1      1.740000        55.8450           0
+      24 FeO  2    FeO  FE5  FEO1      1.740000        55.8450           0
+      25 FeO  2    FeO  FE6  FEO1      1.740000        55.8450           0
+      26 FeO  2    FeO  FE7  FEO1      1.740000        55.8450           0
+      27 FeO  2    FeO  FE8  FEO1      1.740000        55.8450           0
+      28 FeO  2    FeO  FE9  FEO1      1.740000        55.8450           0
+      29 FeO  3    FeO  O1   OFE1     -1.160000        15.9994           0
+      30 FeO  3    FeO  O2   OFE1     -1.160000        15.9994           0
+      31 FeO  3    FeO  O3   OFE1     -1.160000        15.9994           0
+      32 FeO  3    FeO  O4   OFE1     -1.160000        15.9994           0
+      33 FeO  3    FeO  O5   OFE1     -1.160000        15.9994           0
+      34 FeO  3    FeO  O6   OFE1     -1.160000        15.9994           0
+      35 FeO  3    FeO  O7   OFE1     -1.160000        15.9994           0
+      36 FeO  3    FeO  O8   OFE1     -1.160000        15.9994           0
+      37 FeO  3    FeO  O9   OFE1     -1.160000        15.9994           0
+      38 FeO  3    FeO  O10  OFE1     -1.160000        15.9994           0
+      39 FeO  3    FeO  O11  OFE1     -1.160000        15.9994           0
+      40 FeO  3    FeO  O12  OFE1     -1.160000        15.9994           0
+      41 FeO  3    FeO  O13  OFE1     -1.160000        15.9994           0
+      42 FeO  3    FeO  O14  OFE1     -1.160000        15.9994           0
+      43 FeO  3    FeO  FE1  FEO1      1.740000        55.8450           0
+      44 FeO  3    FeO  FE2  FEO1      1.740000        55.8450           0
+      45 FeO  3    FeO  FE3  FEO1      1.740000        55.8450           0
+      46 FeO  3    FeO  FE4  FEO1      1.740000        55.8450           0
+      47 FeO  3    FeO  FE5  FEO1      1.740000        55.8450           0
+      48 FeO  3    FeO  FE6  FEO1      1.740000        55.8450           0
+      49 FeO  3    FeO  FE7  FEO1      1.740000        55.8450           0
+      50 FeO  3    FeO  FE8  FEO1      1.740000        55.8450           0
+      51 FeO  3    FeO  O15  OFE1     -1.160000        15.9994           0
+      52 FeO  3    FeO  O16  OFE1     -1.160000        15.9994           0
+      53 FeO  3    FeO  O17  OFE1     -1.160000        15.9994           0
+      54 FeO  3    FeO  O18  OFE1     -1.160000        15.9994           0
+      55 FeO  3    FeO  O19  OFE1     -1.160000        15.9994           0
+      56 FeO  3    FeO  O20  OFE1     -1.160000        15.9994           0
+      57 FeO  3    FeO  O21  OFE1     -1.160000        15.9994           0
+      58 FeO  3    FeO  O22  OFE1     -1.160000        15.9994           0
+      59 FeO  3    FeO  O23  OFE1     -1.160000        15.9994           0
+      60 FeO  3    FeO  O24  OFE1     -1.160000        15.9994           0
+      61 FeO  3    FeO  FE9  FEO1      1.740000        55.8450           0
+      62 FeO  4    FeO  FE1  FEO1      1.740000        55.8450           0
+      63 FeO  4    FeO  FE2  FEO1      1.740000        55.8450           0
+      64 FeO  4    FeO  O1   OFE1     -1.160000        15.9994           0
+      65 FeO  4    FeO  O2   OFE1     -1.160000        15.9994           0
+      66 FeO  4    FeO  O3   OFE1     -1.160000        15.9994           0
+      67 FeO  4    FeO  FE3  FEO1      1.740000        55.8450           0
+      68 FeO  4    FeO  FE4  FEO1      1.740000        55.8450           0
+      69 FeO  4    FeO  FE5  FEO1      1.740000        55.8450           0
+      70 FeO  4    FeO  FE6  FEO1      1.740000        55.8450           0
+      71 FeO  4    FeO  O4   OFE1     -1.160000        15.9994           0
+      72 FeO  4    FeO  O5   OFE1     -1.160000        15.9994           0
+      73 FeO  4    FeO  O6   OFE1     -1.160000        15.9994           0
+      74 FeO  4    FeO  O7   OFE1     -1.160000        15.9994           0
+      75 FeO  4    FeO  O8   OFE1     -1.160000        15.9994           0
+      76 FeO  4    FeO  O9   OFE1     -1.160000        15.9994           0
+      77 FeO  4    FeO  O10  OFE1     -1.160000        15.9994           0
+      78 FeO  4    FeO  FE7  FEO1      1.740000        55.8450           0
+      79 FeO  4    FeO  FE8  FEO1      1.740000        55.8450           0
+      80 FeO  4    FeO  FE9  FEO1      1.740000        55.8450           0
+      81 FeO  5    FeO  FE1  FEO1      1.740000        55.8450           0
+      82 FeO  5    FeO  FE2  FEO1      1.740000        55.8450           0
+      83 FeO  5    FeO  FE3  FEO1      1.740000        55.8450           0
+      84 FeO  5    FeO  FE4  FEO1      1.740000        55.8450           0
+      85 FeO  5    FeO  O1   OFE1     -1.160000        15.9994           0
+      86 FeO  5    FeO  O2   OFE1     -1.160000        15.9994           0
+      87 FeO  5    FeO  O3   OFE1     -1.160000        15.9994           0
+      88 FeO  5    FeO  O4   OFE1     -1.160000        15.9994           0
+      89 FeO  5    FeO  O5   OFE1     -1.160000        15.9994           0
+      90 FeO  5    FeO  O6   OFE1     -1.160000        15.9994           0
+      91 FeO  5    FeO  O7   OFE1     -1.160000        15.9994           0
+      92 FeO  5    FeO  O8   OFE1     -1.160000        15.9994           0
+      93 FeO  5    FeO  O9   OFE1     -1.160000        15.9994           0
+      94 FeO  5    FeO  O10  OFE1     -1.160000        15.9994           0
+      95 FeO  5    FeO  O11  OFE1     -1.160000        15.9994           0
+      96 FeO  5    FeO  O12  OFE1     -1.160000        15.9994           0
+      97 FeO  5    FeO  O13  OFE1     -1.160000        15.9994           0
+      98 FeO  5    FeO  O14  OFE1     -1.160000        15.9994           0
+      99 FeO  5    FeO  FE5  FEO1      1.740000        55.8450           0
+     100 FeO  5    FeO  FE6  FEO1      1.740000        55.8450           0
+     101 FeO  5    FeO  FE7  FEO1      1.740000        55.8450           0
+     102 FeO  5    FeO  FE8  FEO1      1.740000        55.8450           0
+     103 FeO  5    FeO  FE9  FEO1      1.740000        55.8450           0
+     104 FeO  6    FeO  FE1  FEO1      1.740000        55.8450           0
+     105 FeO  6    FeO  FE2  FEO1      1.740000        55.8450           0
+     106 FeO  6    FeO  FE3  FEO1      1.740000        55.8450           0
+     107 FeO  6    FeO  O1   OFE1     -1.160000        15.9994           0
+     108 FeO  6    FeO  O2   OFE1     -1.160000        15.9994           0
+     109 FeO  6    FeO  O3   OFE1     -1.160000        15.9994           0
+     110 FeO  6    FeO  O4   OFE1     -1.160000        15.9994           0
+     111 FeO  6    FeO  O5   OFE1     -1.160000        15.9994           0
+     112 FeO  6    FeO  O6   OFE1     -1.160000        15.9994           0
+     113 FeO  6    FeO  O7   OFE1     -1.160000        15.9994           0
+     114 FeO  6    FeO  O8   OFE1     -1.160000        15.9994           0
+     115 FeO  6    FeO  O9   OFE1     -1.160000        15.9994           0
+     116 FeO  6    FeO  O10  OFE1     -1.160000        15.9994           0
+     117 FeO  6    FeO  O11  OFE1     -1.160000        15.9994           0
+     118 FeO  6    FeO  O12  OFE1     -1.160000        15.9994           0
+     119 FeO  6    FeO  O13  OFE1     -1.160000        15.9994           0
+     120 FeO  6    FeO  O14  OFE1     -1.160000        15.9994           0
+
+       0 !NBOND: bonds
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0

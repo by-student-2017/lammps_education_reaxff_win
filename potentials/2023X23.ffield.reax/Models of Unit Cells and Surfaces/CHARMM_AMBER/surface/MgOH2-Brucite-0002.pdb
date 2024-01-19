@@ -1,0 +1,23 @@
+REMARK generated coordinate PDB file from .car/.mdf files
+CRYST1  3.148  3.148  119.080  90.00  90.00  90.00 P 1           1
+ATOM      1 MG1  MgH     1       0.000   0.000   2.454  1.00  0.00      MgH  Mg
+ATOM      2 H1   MgH     1       1.574   0.909   5.215  1.00  0.00      MgH  H
+ATOM      3 H2   MgH     1      -0.000   1.817   4.464  1.00  0.00      MgH  H
+ATOM      4 O1   MgH     1       1.574   0.909   6.184  1.00  0.00      MgH  O
+ATOM      5 O2   MgH     1      -0.000   1.817   3.495  1.00  0.00      MgH  O
+ATOM      6 MG2  MgH     1       0.000   0.000   7.224  1.00  0.00      MgH  Mg
+ATOM      7 H3   MgH     1       1.574   0.909   9.985  1.00  0.00      MgH  H
+ATOM      8 H4   MgH     1      -0.000   1.817   9.234  1.00  0.00      MgH  H
+ATOM      9 O3   MgH     1       1.574   0.909  10.954  1.00  0.00      MgH  O
+ATOM     10 O4   MgH     1      -0.000   1.817   8.265  1.00  0.00      MgH  O
+ATOM     11 MG3  MgH     1       0.000   0.000  11.994  1.00  0.00      MgH  Mg
+ATOM     12 H5   MgH     1       1.574   0.909  14.755  1.00  0.00      MgH  H
+ATOM     13 H6   MgH     1      -0.000   1.817  14.004  1.00  0.00      MgH  H
+ATOM     14 O5   MgH     1       1.574   0.909  15.724  1.00  0.00      MgH  O
+ATOM     15 O6   MgH     1      -0.000   1.817  13.035  1.00  0.00      MgH  O
+ATOM     16 MG4  MgH     1       0.000   0.000  16.764  1.00  0.00      MgH  Mg
+ATOM     17 H7   MgH     1       1.574   0.909   0.445  1.00  0.00      MgH  H
+ATOM     18 H8   MgH     1      -0.000   1.817  18.774  1.00  0.00      MgH  H
+ATOM     19 O7   MgH     1       1.574   0.909   1.414  1.00  0.00      MgH  O
+ATOM     20 O8   MgH     1      -0.000   1.817  17.805  1.00  0.00      MgH  O
+END

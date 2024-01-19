@@ -1,0 +1,30 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+       5 !NATOM
+       1 CAH  1    CAH  CA1  CAO2      1.700000        40.0780           0
+       2 CAH  1    CAH  O1   OCA2     -1.320000        15.9994           0
+       3 CAH  1    CAH  H1   IHOP      0.470000         1.0079           0
+       4 CAH  1    CAH  O2   OCA2     -1.320000        15.9994           0
+       5 CAH  1    CAH  H2   IHOP      0.470000         1.0079           0
+
+       2 !NBOND: bonds
+       4       5       2       3
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0

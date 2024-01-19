@@ -1,0 +1,43 @@
+REMARK generated coordinate PDB file from .car/.mdf files
+CRYST1  4.168  4.168  120.842  90.00  90.00  90.00 P 1           1
+ATOM      1 NI1  NiO     1       0.000   0.000   0.000  1.00  0.00      NiO  Ni
+ATOM      2 O1   NiO     1       2.084   2.084   2.084  1.00  0.00      NiO  O
+ATOM      3 O2   NiO     1       0.000   0.000   2.084  1.00  0.00      NiO  O
+ATOM      4 O3   NiO     1       0.000   2.084   0.000  1.00  0.00      NiO  O
+ATOM      5 O4   NiO     1       2.084   0.000   0.000  1.00  0.00      NiO  O
+ATOM      6 NI2  NiO     1       2.084   2.084   0.000  1.00  0.00      NiO  Ni
+ATOM      7 NI3  NiO     1       2.084   0.000   2.084  1.00  0.00      NiO  Ni
+ATOM      8 NI4  NiO     1       0.000   2.084   2.084  1.00  0.00      NiO  Ni
+ATOM      9 NI5  NiO     1       0.000   0.000   4.168  1.00  0.00      NiO  Ni
+ATOM     10 O5   NiO     1       2.084   2.084   6.253  1.00  0.00      NiO  O
+ATOM     11 O6   NiO     1       0.000   0.000   6.253  1.00  0.00      NiO  O
+ATOM     12 O7   NiO     1       0.000   2.084   4.168  1.00  0.00      NiO  O
+ATOM     13 O8   NiO     1       2.084   0.000   4.168  1.00  0.00      NiO  O
+ATOM     14 NI6  NiO     1       2.084   2.084   4.168  1.00  0.00      NiO  Ni
+ATOM     15 NI7  NiO     1       2.084   0.000   6.253  1.00  0.00      NiO  Ni
+ATOM     16 NI8  NiO     1       0.000   2.084   6.253  1.00  0.00      NiO  Ni
+ATOM     17 NI9  NiO     1       0.000   0.000   8.337  1.00  0.00      NiO  Ni
+ATOM     18 O1   NiO     2       2.084   2.084  10.421  1.00  0.00      NiO  O
+ATOM     19 O2   NiO     2       0.000   0.000  10.421  1.00  0.00      NiO  O
+ATOM     20 O3   NiO     2       0.000   2.084   8.337  1.00  0.00      NiO  O
+ATOM     21 O4   NiO     2       2.084   0.000   8.337  1.00  0.00      NiO  O
+ATOM     22 NI1  NiO     2       2.084   2.084   8.337  1.00  0.00      NiO  Ni
+ATOM     23 NI2  NiO     2       2.084   0.000  10.421  1.00  0.00      NiO  Ni
+ATOM     24 NI3  NiO     2       0.000   2.084  10.421  1.00  0.00      NiO  Ni
+ATOM     25 NI4  NiO     2       0.000   0.000  12.505  1.00  0.00      NiO  Ni
+ATOM     26 O5   NiO     2       2.084   2.084  14.589  1.00  0.00      NiO  O
+ATOM     27 O6   NiO     2       0.000   0.000  14.589  1.00  0.00      NiO  O
+ATOM     28 O7   NiO     2       0.000   2.084  12.505  1.00  0.00      NiO  O
+ATOM     29 O8   NiO     2       2.084   0.000  12.505  1.00  0.00      NiO  O
+ATOM     30 NI5  NiO     2       2.084   2.084  12.505  1.00  0.00      NiO  Ni
+ATOM     31 NI6  NiO     2       2.084   0.000  14.589  1.00  0.00      NiO  Ni
+ATOM     32 NI7  NiO     2       0.000   2.084  14.589  1.00  0.00      NiO  Ni
+ATOM     33 NI8  NiO     2       0.000   0.000  16.674  1.00  0.00      NiO  Ni
+ATOM     34 O9   NiO     2       2.084   2.084  18.758  1.00  0.00      NiO  O
+ATOM     35 O10  NiO     2       0.000   0.000  18.758  1.00  0.00      NiO  O
+ATOM     36 O11  NiO     2       0.000   2.084  16.674  1.00  0.00      NiO  O
+ATOM     37 O12  NiO     2       2.084   0.000  16.674  1.00  0.00      NiO  O
+ATOM     38 NI9  NiO     2       2.084   2.084  16.674  1.00  0.00      NiO  Ni
+ATOM     39 NI1  NiO     3       2.084   0.000  18.758  1.00  0.00      NiO  Ni
+ATOM     40 NI2  NiO     3       0.000   2.084  18.758  1.00  0.00      NiO  Ni
+END

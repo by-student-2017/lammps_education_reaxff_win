@@ -1,0 +1,52 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+      25 !NATOM
+       1 NiH  1    NiH  NI1  NIO2      1.360000        58.6934           0
+       2 NiH  1    NiH  O1   ONI2     -0.960000        15.9994           0
+       3 NiH  1    NiH  H1   IHOP      0.280000         1.0079           0
+       4 NiH  1    NiH  O2   ONI2     -0.960000        15.9994           0
+       5 NiH  1    NiH  H2   IHOP      0.280000         1.0079           0
+       6 NiH  1    NiH  NI2  NIO2      1.360000        58.6934           0
+       7 NiH  1    NiH  O3   ONI2     -0.960000        15.9994           0
+       8 NiH  1    NiH  H3   IHOP      0.280000         1.0079           0
+       9 NiH  1    NiH  O4   ONI2     -0.960000        15.9994           0
+      10 NiH  1    NiH  H4   IHOP      0.280000         1.0079           0
+      11 NiH  1    NiH  NI3  NIO2      1.360000        58.6934           0
+      12 NiH  1    NiH  O5   ONI2     -0.960000        15.9994           0
+      13 NiH  1    NiH  H5   IHOP      0.280000         1.0079           0
+      14 NiH  1    NiH  O6   ONI2     -0.960000        15.9994           0
+      15 NiH  1    NiH  H6   IHOP      0.280000         1.0079           0
+      16 NiH  1    NiH  NI4  NIO2      1.360000        58.6934           0
+      17 NiH  1    NiH  O7   ONI2     -0.960000        15.9994           0
+      18 NiH  1    NiH  H7   IHOP      0.280000         1.0079           0
+      19 NiH  1    NiH  O8   ONI2     -0.960000        15.9994           0
+      20 NiH  1    NiH  H8   IHOP      0.280000         1.0079           0
+      21 NiH  1    NiH  NI5  NIO2      1.360000        58.6934           0
+      22 NiH  1    NiH  O9   ONI2     -0.960000        15.9994           0
+      23 NiH  1    NiH  H9   IHOP      0.280000         1.0079           0
+      24 NiH  1    NiH  O10  ONI2     -0.960000        15.9994           0
+      25 NiH  1    NiH  H10  IHOP      0.280000         1.0079           0
+
+      10 !NBOND: bonds
+       2       3       4       5       7       8       9      10
+      12      13      14      15      17      18      19      20
+      24      25      22      23
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0

@@ -1,0 +1,48 @@
+# Remember that LAMMPS 2005 uses only single words
+# as commands, e.g. bond_style
+############***Defining 108  Files***############################################
+# (1) Initialization
+units                   real     #determines the units to be used
+dimension               3        #2 run either 3D or 2D simulation
+boundary                p p p    # boundary conditions wether periodic etc.
+newton                  on       # processors communicate to inform pairwise intercation
+atom_style              full
+atom_modify             map array sort 0 0.0
+#processors             2 2 2
+
+kspace_style            pppm 1.0e-6
+pair_style              lj/cut/coul/long 12 12
+bond_style              harmonic
+angle_style             harmonic
+dihedral_style          harmonic
+improper_style          cvff
+
+variable                f string CaO-1473-bulk-smd
+# (2) Atom definition
+read_data               $f.data
+
+# (3) Settings
+neighbor                2.0 bin
+neigh_modify            every 1 one 10000 page 100000
+special_bonds           lj/coul 0.0 0.0 1.0
+
+# (4) Minimization
+#min_style               cg
+#minimize                0.0001 0.0001 20000 20000   #syntax etol ftol maxiter maxeval
+#dump                    1 all xyz 100 mindump.xyz
+#reset_timestep	        0
+
+# (5) SMD
+timestep                1     #since units is real timestep is in femtosecond
+group                   pull id 11749
+region 					metalfreeze block INF INF 0 3.5 INF INF 
+group					freez region metalfreeze
+dump                    2 all xyz 5000 $f.xyz 
+dump                    3 all atom 5000 $f.lammpstraj
+fix 					5 freez setforce 0.0 0.0 0.0
+fix 					9 pull smd cvel 500.0 -0.000001 tether NULL NULL 100 0.0
+fix 					1 all npt temp 1473.0 1473.0 100 iso 1.0 1.0 100
+thermo					200
+thermo_style custom 	step etotal temp press pe ke enthalpy f_9[3] f_9[4] f_9[5] f_9[6] f_9[7]
+
+run 					3000000 

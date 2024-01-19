@@ -1963,7 +1963,7 @@ https://doi.org/10.48550/arXiv.2302.01268
 2023X6
 CHOFeSCr
 X. Zhu et al.,
-Langmuir 2023, 39, 14, 5145–5155
+Langmuir 2023, 39, 14, 5145-5155.
 Publication Date:April 3, 2023
 https://doi.org/10.1021/acs.langmuir.3c00217
 
@@ -2026,6 +2026,7 @@ CHOSMoNi
 K. Mohammadtabar et al.,
 J. Phys. Chem. C 2023, 127, 25, 12171-12183.
 https://doi.org/10.1021/acs.jpcc.3c00668
+(https://arxiv.org/abs/2302.01268)
 
 2023X17
 CHONSMgPNaCuCl
@@ -2033,12 +2034,99 @@ H. Cui et al.,
 J. Chem. Theory Comput. 2023, 19, 13, 4286-4298.
 https://doi.org/10.1021/acs.jctc.3c00013
 
+2023X18
 M. D'Amore et al.,
 CHOSMoNiLiBFPN
 J. Phys. Chem. C 2023, 127, 47, 22880-22888.
 https://doi.org/10.1021/acs.jpcc.3c04991
 
+2023X19
+N. Nayir et al.,
+CHONSMoSi
+J. Phys. Chem. C 2023, 127, 19, 9039-9048.
+https://doi.org/10.1021/acs.jpcc.3c01010
 
+2023X20
+CHOFeClSiAlF
+Q. Xu et al.,
+ACS Appl. Mater. Interfaces 2023, 15, 38, 45506-45515.
+https://doi.org/10.1021/acsami.3c10784
+
+2023X21
+CHO
+G. Cai et al.,
+ACS Sustainable Chem. Eng. 2024, 12, 1, 325-345.
+https://doi.org/10.1021/acssuschemeng.3c05836
+
+2023X22
+CHONSMgPNaTiClF
+Y. Huang et al.,
+J. Phys. Chem. B 2023, 127, 22, 5094-5101.
+https://doi.org/10.1021/acs.jpcb.2c09117
+
+2023X23
+CHOMSSiCaCsKSrNaMgAlCu
+HOSiAlLi
+K. Kanhaiya et al.,
+J. Chem. Theory Comput. 2023, 19, 22, 8293-8322.
+https://doi.org/10.1021/acs.jctc.3c00750
+
+2023X24
+CHONSSiCaCsKSrNaMgAlCuTi
+H. Jabraoui et al.,
+Phys. Chem. Chem. Phys., 2023,25, 11268-11277.
+https://doi.org/10.1039/D3CP00032J
+
+2023X25
+CHOSiLiF
+E. Chiavazzo et al., (2023)
+https://doi.org/10.21203/rs.3.rs-3119969/v1
+(https://doi.org/10.1038/s41598-023-50978-5)
+
+2023X26
+CHPt
+C. Zhu et al.,
+ACS Nano 2023, 17, 11, 9938-9952.
+Publication Date:June 1, 2023
+https://doi.org/10.1021/acsnano.2c10953
+
+2023X27
+HOCeNaClSi
+L. Brugnoli et al.,
+Langmuir 2023, 39, 15, 5527-5541.
+https://doi.org/10.1021/acs.langmuir.3c00304
+-------------------------------------------------------------------
+2024
+
+2024X1
+CHOSiNaCa
+J. M. Rimsza et al.,
+J. Phys. Chem. C 2024, XXXX, XXX, XXX-XXX.
+https://doi.org/10.1021/acs.jpcc.3c05985
+
+2024X2
+CHOSiLiF
+P. D. Angelis et al.,
+Scientific Reports volume 14, Article number: 978 (2024) 
+https://doi.org/10.1038/s41598-023-50978-5
+
+2024X3
+CHONSSiNaFZr
+D. Wei et al.,
+J. Phys. Chem. A 2024, 128, 2, 378-391.
+https://doi.org/10.1021/acs.jpca.3c06406
+
+2024X4
+CHONSSiFe
+H. Suzuki et al.,
+ACS Omega 2024, XXXX, XXX, XXX-XXX.
+Publication Date:January 12, 2024
+https://doi.org/10.1021/acsomega.3c07902
+-------------------------------------------------------------------
+important information
+- X. Hao et al., J. Phys. Chem. C 2023, 127, 40, 20157–20168
+Publication Date:October 2, 2023
+https://doi.org/10.1021/acs.jpcc.3c05175
 -------------------------------------------------------------------
 input file (reaxff, lammps)
 
@@ -2081,6 +2169,14 @@ input file (reaxff, lammps)
 
 - S. Urata et al., J. Phys. Chem. C 122 (2018) 20555-20563.: https://doi.org/10.1021/acs.jpcc.8b06409
   BMDEE polymerization: Supplementary information
+
+- M. Pols et al., ACS Appl. Mater. Interfaces 2022, 14, 36, 40841-40850.: https://doi.org/10.1021/acsami.2c09239
+
+- B. Kirchhoff et al., J. Phys. Chem. C 2022, 126, 15, 6773-6781.: https://doi.org/10.1021/acs.jpcc.2c00472
+
+- M. Wolf et al., J. Chem. Phys. 157, 184302 (2022).: https://doi.org/10.1063/5.0120831
+
+- U. Nwankwo et al., J. Appl. Phys. 134, 184502 (2023).: https://doi.org/10.1063/5.0173333
 -------------------------------------------------------------------
 Other information
 

@@ -1,0 +1,68 @@
+!BIOSYM molecular_data 4
+ 
+!Date: Mon Sep 25 11:59:37 2023   Materials Studio Generated MDF file
+ 
+#topology
+
+@column 1 element
+@column 2 atom_type
+@column 3 charge_group
+@column 4 isotope
+@column 5 formal_charge
+@column 6 charge
+@column 7 switching_atom
+@column 8 oop_flag
+@column 9 chirality_flag
+@column 10 occupancy
+@column 11 xray_temp_factor
+@column 12 connections
+ 
+@molecule CaOH2
+ 
+XXXX_1:Ca1          Ca cao2    ?     0  2+    1.7000 0 0 8 1.0000  0.0000 
+XXXX_1:O1           O  oca2    ?     0  1-   -1.3200 0 0 8 1.0000  0.0000 H1 
+XXXX_1:H1           H  hop     ?     0  0     0.4700 0 0 8 1.0000  0.0000 O1 
+XXXX_1:O2           O  oca2    ?     0  1-   -1.3200 0 0 8 1.0000  0.0000 H2 
+XXXX_1:H2           H  hop     ?     0  0     0.4700 0 0 8 1.0000  0.0000 O2 
+XXXX_1:O3           O  oca2    ?     0  1-   -1.3200 0 0 8 1.0000  0.0000 H3 
+XXXX_1:H3           H  hop     ?     0  0     0.4700 0 0 8 1.0000  0.0000 O3 
+XXXX_1:Ca2          Ca cao2    ?     0  2+    1.7000 0 0 8 1.0000  0.0000 
+XXXX_1:O4           O  oca2    ?     0  1-   -1.3200 0 0 8 1.0000  0.0000 H4 
+XXXX_1:H4           H  hop     ?     0  0     0.4700 0 0 8 1.0000  0.0000 O4 
+XXXX_1:Ca3          Ca cao2    ?     0  2+    1.7000 0 0 8 1.0000  0.0000 
+XXXX_1:O5           O  oca2    ?     0  1-   -1.3200 0 0 8 1.0000  0.0000 H5 
+XXXX_1:H5           H  hop     ?     0  0     0.4700 0 0 8 1.0000  0.0000 O5 
+XXXX_1:O6           O  oca2    ?     0  1-   -1.3200 0 0 8 1.0000  0.0000 H6 
+XXXX_1:H6           H  hop     ?     0  0     0.4700 0 0 8 1.0000  0.0000 O6 
+XXXX_1:O7           O  oca2    ?     0  1-   -1.3200 0 0 8 1.0000  0.0000 H7 
+XXXX_1:H7           H  hop     ?     0  0     0.4700 0 0 8 1.0000  0.0000 O7 
+XXXX_1:Ca4          Ca cao2    ?     0  2+    1.7000 0 0 8 1.0000  0.0000 
+XXXX_1:O8           O  oca2    ?     0  1-   -1.3200 0 0 8 1.0000  0.0000 H8 
+XXXX_1:H8           H  hop     ?     0  0     0.4700 0 0 8 1.0000  0.0000 O8 
+XXXX_1:Ca5          Ca cao2    ?     0  2+    1.7000 0 0 8 1.0000  0.0000 
+XXXX_1:O9           O  oca2    ?     0  1-   -1.3200 0 0 8 1.0000  0.0000 H9 
+XXXX_1:H9           H  hop     ?     0  0     0.4700 0 0 8 1.0000  0.0000 O9 
+XXXX_1:O10          O  oca2    ?     0  1-   -1.3200 0 0 8 1.0000  0.0000 H10 
+XXXX_1:H10          H  hop     ?     0  0     0.4700 0 0 8 1.0000  0.0000 O10 
+XXXX_1:O11          O  oca2    ?     0  1-   -1.3200 0 0 8 1.0000  0.0000 H11 
+XXXX_1:H11          H  hop     ?     0  0     0.4700 0 0 8 1.0000  0.0000 O11 
+XXXX_1:Ca6          Ca cao2    ?     0  2+    1.7000 0 0 8 1.0000  0.0000 
+XXXX_1:O12          O  oca2    ?     0  1-   -1.3200 0 0 8 1.0000  0.0000 H12 
+XXXX_1:H12          H  hop     ?     0  0     0.4700 0 0 8 1.0000  0.0000 O12 
+XXXX_1:Ca7          Ca cao2    ?     0  2+    1.7000 0 0 8 1.0000  0.0000 
+XXXX_1:O13          O  oca2    ?     0  1-   -1.3200 0 0 8 1.0000  0.0000 H13 
+XXXX_1:H13          H  hop     ?     0  0     0.4700 0 0 8 1.0000  0.0000 O13 
+XXXX_1:O14          O  oca2    ?     0  1-   -1.3200 0 0 8 1.0000  0.0000 H14 
+XXXX_1:H14          H  hop     ?     0  0     0.4700 0 0 8 1.0000  0.0000 O14 
+XXXX_1:O15          O  oca2    ?     0  1-   -1.3200 0 0 8 1.0000  0.0000 H15 
+XXXX_1:H15          H  hop     ?     0  0     0.4700 0 0 8 1.0000  0.0000 O15 
+XXXX_1:Ca8          Ca cao2    ?     0  2+    1.7000 0 0 8 1.0000  0.0000 
+XXXX_1:O16          O  oca2    ?     0  1-   -1.3200 0 0 8 1.0000  0.0000 H16 
+XXXX_1:H16          H  hop     ?     0  0     0.4700 0 0 8 1.0000  0.0000 O16 
+ 
+!
+#symmetry
+@periodicity 3 xyz
+@group (P1)
+
+#end

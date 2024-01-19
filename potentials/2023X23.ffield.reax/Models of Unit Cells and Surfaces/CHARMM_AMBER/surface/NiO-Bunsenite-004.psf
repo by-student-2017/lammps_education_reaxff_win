@@ -1,0 +1,64 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+      40 !NATOM
+       1 NiO  1    NiO  NI1  NIO1      1.100000        58.6934           0
+       2 NiO  1    NiO  O1   ONI1     -1.100000        15.9994           0
+       3 NiO  1    NiO  O2   ONI1     -1.100000        15.9994           0
+       4 NiO  1    NiO  O3   ONI1     -1.100000        15.9994           0
+       5 NiO  1    NiO  O4   ONI1     -1.100000        15.9994           0
+       6 NiO  1    NiO  NI2  NIO1      1.100000        58.6934           0
+       7 NiO  1    NiO  NI3  NIO1      1.100000        58.6934           0
+       8 NiO  1    NiO  NI4  NIO1      1.100000        58.6934           0
+       9 NiO  1    NiO  NI5  NIO1      1.100000        58.6934           0
+      10 NiO  1    NiO  O5   ONI1     -1.100000        15.9994           0
+      11 NiO  1    NiO  O6   ONI1     -1.100000        15.9994           0
+      12 NiO  1    NiO  O7   ONI1     -1.100000        15.9994           0
+      13 NiO  1    NiO  O8   ONI1     -1.100000        15.9994           0
+      14 NiO  1    NiO  NI6  NIO1      1.100000        58.6934           0
+      15 NiO  1    NiO  NI7  NIO1      1.100000        58.6934           0
+      16 NiO  1    NiO  NI8  NIO1      1.100000        58.6934           0
+      17 NiO  1    NiO  NI9  NIO1      1.100000        58.6934           0
+      18 NiO  2    NiO  O1   ONI1     -1.100000        15.9994           0
+      19 NiO  2    NiO  O2   ONI1     -1.100000        15.9994           0
+      20 NiO  2    NiO  O3   ONI1     -1.100000        15.9994           0
+      21 NiO  2    NiO  O4   ONI1     -1.100000        15.9994           0
+      22 NiO  2    NiO  NI1  NIO1      1.100000        58.6934           0
+      23 NiO  2    NiO  NI2  NIO1      1.100000        58.6934           0
+      24 NiO  2    NiO  NI3  NIO1      1.100000        58.6934           0
+      25 NiO  2    NiO  NI4  NIO1      1.100000        58.6934           0
+      26 NiO  2    NiO  O5   ONI1     -1.100000        15.9994           0
+      27 NiO  2    NiO  O6   ONI1     -1.100000        15.9994           0
+      28 NiO  2    NiO  O7   ONI1     -1.100000        15.9994           0
+      29 NiO  2    NiO  O8   ONI1     -1.100000        15.9994           0
+      30 NiO  2    NiO  NI5  NIO1      1.100000        58.6934           0
+      31 NiO  2    NiO  NI6  NIO1      1.100000        58.6934           0
+      32 NiO  2    NiO  NI7  NIO1      1.100000        58.6934           0
+      33 NiO  2    NiO  NI8  NIO1      1.100000        58.6934           0
+      34 NiO  2    NiO  O9   ONI1     -1.100000        15.9994           0
+      35 NiO  2    NiO  O10  ONI1     -1.100000        15.9994           0
+      36 NiO  2    NiO  O11  ONI1     -1.100000        15.9994           0
+      37 NiO  2    NiO  O12  ONI1     -1.100000        15.9994           0
+      38 NiO  2    NiO  NI9  NIO1      1.100000        58.6934           0
+      39 NiO  3    NiO  NI1  NIO1      1.100000        58.6934           0
+      40 NiO  3    NiO  NI2  NIO1      1.100000        58.6934           0
+
+       0 !NBOND: bonds
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0

@@ -1,0 +1,79 @@
+!BIOSYM molecular_data 4
+ 
+!Date: Mon Sep 25 12:00:58 2023   Materials Studio Generated MDF file
+ 
+#topology
+
+@column 1 element
+@column 2 atom_type
+@column 3 charge_group
+@column 4 isotope
+@column 5 formal_charge
+@column 6 charge
+@column 7 switching_atom
+@column 8 oop_flag
+@column 9 chirality_flag
+@column 10 occupancy
+@column 11 xray_temp_factor
+@column 12 connections
+ 
+@molecule a_cristobalite_unit
+ 
+XXXX_1:O            O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_1:SI           Si sio1    ?     0  0     1.3000 0 0 8 1.0000  0.0000 
+XXXX_2:O1           O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_2:O2           O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_2:Si1          Si sio1    ?     0  0     1.3000 0 0 8 1.0000  0.0000 
+XXXX_3:O1           O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_3:O2           O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_3:Si1          Si sio1    ?     0  0     1.3000 0 0 8 1.0000  0.0000 
+XXXX_4:O1           O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_4:O2           O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_4:Si1          Si sio1    ?     0  0     1.3000 0 0 8 1.0000  0.0000 
+ 
+@molecule a_cristobalite_unit2
+ 
+XXXX_1:O            O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_1:SI           Si sio1    ?     0  0     1.3000 0 0 8 1.0000  0.0000 
+XXXX_2:O1           O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_2:O2           O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_2:Si1          Si sio1    ?     0  0     1.3000 0 0 8 1.0000  0.0000 
+XXXX_3:O1           O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_3:O2           O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_3:Si1          Si sio1    ?     0  0     1.3000 0 0 8 1.0000  0.0000 
+XXXX_4:O1           O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_4:O2           O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_4:Si1          Si sio1    ?     0  0     1.3000 0 0 8 1.0000  0.0000 
+ 
+@molecule a_cristobalite_unit3
+ 
+XXXX_1:O            O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_1:SI           Si sio1    ?     0  0     1.3000 0 0 8 1.0000  0.0000 
+XXXX_2:O1           O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_2:O2           O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_2:Si1          Si sio1    ?     0  0     1.3000 0 0 8 1.0000  0.0000 
+XXXX_3:O1           O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_3:O2           O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_3:Si1          Si sio1    ?     0  0     1.3000 0 0 8 1.0000  0.0000 
+XXXX_4:O1           O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_4:O2           O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+XXXX_4:Si1          Si sio1    ?     0  0     1.3000 0 0 8 1.0000  0.0000 
+ 
+@molecule a_cristobalite_unit4
+ 
+XXXX_5:O            O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+ 
+@molecule a_cristobalite_unit5
+ 
+XXXX_5:O            O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+ 
+@molecule a_cristobalite_unit6
+ 
+XXXX_5:O            O  osi1    ?     0  0    -0.6500 0 0 8 1.0000  0.0000 
+ 
+!
+#symmetry
+@periodicity 3 xyz
+@group (P1)
+
+#end

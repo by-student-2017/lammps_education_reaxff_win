@@ -1,0 +1,32 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+       8 !NATOM
+       1 CAO  1    CAO  CA1  CAO1      1.230000        40.0780           0
+       2 CAO  1    CAO  O1   OCA1     -1.230000        15.9994           0
+       3 CAO  1    CAO  O2   OCA1     -1.230000        15.9994           0
+       4 CAO  1    CAO  O3   OCA1     -1.230000        15.9994           0
+       5 CAO  1    CAO  O4   OCA1     -1.230000        15.9994           0
+       6 CAO  1    CAO  CA2  CAO1      1.230000        40.0780           0
+       7 CAO  1    CAO  CA3  CAO1      1.230000        40.0780           0
+       8 CAO  1    CAO  CA4  CAO1      1.230000        40.0780           0
+
+       0 !NBOND: bonds
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0

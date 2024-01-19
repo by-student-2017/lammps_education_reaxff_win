@@ -1,0 +1,84 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+      60 !NATOM
+       1 FEO  1    FEO  FE1  FEO1      1.740000        55.8450           0
+       2 FEO  1    FEO  FE2  FEO1      1.740000        55.8450           0
+       3 FEO  1    FEO  FE3  FEO1      1.740000        55.8450           0
+       4 FEO  1    FEO  FE4  FEO1      1.740000        55.8450           0
+       5 FEO  1    FEO  O1   OFE1     -1.160000        15.9994           0
+       6 FEO  1    FEO  O2   OFE1     -1.160000        15.9994           0
+       7 FEO  1    FEO  O3   OFE1     -1.160000        15.9994           0
+       8 FEO  1    FEO  O4   OFE1     -1.160000        15.9994           0
+       9 FEO  1    FEO  O5   OFE1     -1.160000        15.9994           0
+      10 FEO  1    FEO  FE5  FEO1      1.740000        55.8450           0
+      11 FEO  1    FEO  FE6  FEO1      1.740000        55.8450           0
+      12 FEO  1    FEO  FE7  FEO1      1.740000        55.8450           0
+      13 FEO  1    FEO  FE8  FEO1      1.740000        55.8450           0
+      14 FEO  1    FEO  O6   OFE1     -1.160000        15.9994           0
+      15 FEO  1    FEO  O7   OFE1     -1.160000        15.9994           0
+      16 FEO  1    FEO  O8   OFE1     -1.160000        15.9994           0
+      17 FEO  1    FEO  O9   OFE1     -1.160000        15.9994           0
+      18 FEO  1    FEO  FE9  FEO1      1.740000        55.8450           0
+      19 FEO  2    FEO  O1   OFE1     -1.160000        15.9994           0
+      20 FEO  2    FEO  O2   OFE1     -1.160000        15.9994           0
+      21 FEO  2    FEO  O3   OFE1     -1.160000        15.9994           0
+      22 FEO  2    FEO  FE1  FEO1      1.740000        55.8450           0
+      23 FEO  2    FEO  FE2  FEO1      1.740000        55.8450           0
+      24 FEO  2    FEO  FE3  FEO1      1.740000        55.8450           0
+      25 FEO  2    FEO  FE4  FEO1      1.740000        55.8450           0
+      26 FEO  2    FEO  FE5  FEO1      1.740000        55.8450           0
+      27 FEO  2    FEO  FE6  FEO1      1.740000        55.8450           0
+      28 FEO  2    FEO  FE7  FEO1      1.740000        55.8450           0
+      29 FEO  2    FEO  O4   OFE1     -1.160000        15.9994           0
+      30 FEO  2    FEO  O5   OFE1     -1.160000        15.9994           0
+      31 FEO  2    FEO  O6   OFE1     -1.160000        15.9994           0
+      32 FEO  2    FEO  O7   OFE1     -1.160000        15.9994           0
+      33 FEO  2    FEO  O8   OFE1     -1.160000        15.9994           0
+      34 FEO  2    FEO  O9   OFE1     -1.160000        15.9994           0
+      35 FEO  2    FEO  O10  OFE1     -1.160000        15.9994           0
+      36 FEO  2    FEO  O11  OFE1     -1.160000        15.9994           0
+      37 FEO  2    FEO  O12  OFE1     -1.160000        15.9994           0
+      38 FEO  2    FEO  O13  OFE1     -1.160000        15.9994           0
+      39 FEO  2    FEO  O14  OFE1     -1.160000        15.9994           0
+      40 FEO  2    FEO  O15  OFE1     -1.160000        15.9994           0
+      41 FEO  2    FEO  O16  OFE1     -1.160000        15.9994           0
+      42 FEO  2    FEO  O17  OFE1     -1.160000        15.9994           0
+      43 FEO  2    FEO  FE8  FEO1      1.740000        55.8450           0
+      44 FEO  2    FEO  FE9  FEO1      1.740000        55.8450           0
+      45 FEO  3    FEO  FE1  FEO1      1.740000        55.8450           0
+      46 FEO  3    FEO  FE2  FEO1      1.740000        55.8450           0
+      47 FEO  3    FEO  FE3  FEO1      1.740000        55.8450           0
+      48 FEO  3    FEO  FE4  FEO1      1.740000        55.8450           0
+      49 FEO  3    FEO  FE5  FEO1      1.740000        55.8450           0
+      50 FEO  3    FEO  FE6  FEO1      1.740000        55.8450           0
+      51 FEO  3    FEO  O1   OFE1     -1.160000        15.9994           0
+      52 FEO  3    FEO  O2   OFE1     -1.160000        15.9994           0
+      53 FEO  3    FEO  O3   OFE1     -1.160000        15.9994           0
+      54 FEO  3    FEO  O4   OFE1     -1.160000        15.9994           0
+      55 FEO  3    FEO  O5   OFE1     -1.160000        15.9994           0
+      56 FEO  3    FEO  O6   OFE1     -1.160000        15.9994           0
+      57 FEO  3    FEO  O7   OFE1     -1.160000        15.9994           0
+      58 FEO  3    FEO  O8   OFE1     -1.160000        15.9994           0
+      59 FEO  3    FEO  O9   OFE1     -1.160000        15.9994           0
+      60 FEO  3    FEO  O10  OFE1     -1.160000        15.9994           0
+
+       0 !NBOND: bonds
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0

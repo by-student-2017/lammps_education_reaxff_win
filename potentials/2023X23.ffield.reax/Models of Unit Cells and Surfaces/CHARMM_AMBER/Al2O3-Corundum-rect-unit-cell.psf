@@ -1,0 +1,84 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+      60 !NATOM
+       1 ALO  1    ALO  AL1  ALO1      1.620000        26.9815           0
+       2 ALO  1    ALO  AL2  ALO1      1.620000        26.9815           0
+       3 ALO  1    ALO  AL3  ALO1      1.620000        26.9815           0
+       4 ALO  1    ALO  AL4  ALO1      1.620000        26.9815           0
+       5 ALO  1    ALO  O1   OAL1     -1.080000        15.9994           0
+       6 ALO  1    ALO  O2   OAL1     -1.080000        15.9994           0
+       7 ALO  1    ALO  O3   OAL1     -1.080000        15.9994           0
+       8 ALO  1    ALO  O4   OAL1     -1.080000        15.9994           0
+       9 ALO  1    ALO  O5   OAL1     -1.080000        15.9994           0
+      10 ALO  1    ALO  AL5  ALO1      1.620000        26.9815           0
+      11 ALO  1    ALO  AL6  ALO1      1.620000        26.9815           0
+      12 ALO  1    ALO  AL7  ALO1      1.620000        26.9815           0
+      13 ALO  1    ALO  AL8  ALO1      1.620000        26.9815           0
+      14 ALO  1    ALO  O6   OAL1     -1.080000        15.9994           0
+      15 ALO  1    ALO  O7   OAL1     -1.080000        15.9994           0
+      16 ALO  1    ALO  O8   OAL1     -1.080000        15.9994           0
+      17 ALO  1    ALO  O9   OAL1     -1.080000        15.9994           0
+      18 ALO  1    ALO  AL9  ALO1      1.620000        26.9815           0
+      19 ALO  2    ALO  O1   OAL1     -1.080000        15.9994           0
+      20 ALO  2    ALO  O2   OAL1     -1.080000        15.9994           0
+      21 ALO  2    ALO  O3   OAL1     -1.080000        15.9994           0
+      22 ALO  2    ALO  AL1  ALO1      1.620000        26.9815           0
+      23 ALO  2    ALO  AL2  ALO1      1.620000        26.9815           0
+      24 ALO  2    ALO  AL3  ALO1      1.620000        26.9815           0
+      25 ALO  2    ALO  AL4  ALO1      1.620000        26.9815           0
+      26 ALO  2    ALO  AL5  ALO1      1.620000        26.9815           0
+      27 ALO  2    ALO  AL6  ALO1      1.620000        26.9815           0
+      28 ALO  2    ALO  AL7  ALO1      1.620000        26.9815           0
+      29 ALO  2    ALO  O4   OAL1     -1.080000        15.9994           0
+      30 ALO  2    ALO  O5   OAL1     -1.080000        15.9994           0
+      31 ALO  2    ALO  O6   OAL1     -1.080000        15.9994           0
+      32 ALO  2    ALO  O7   OAL1     -1.080000        15.9994           0
+      33 ALO  2    ALO  O8   OAL1     -1.080000        15.9994           0
+      34 ALO  2    ALO  O9   OAL1     -1.080000        15.9994           0
+      35 ALO  2    ALO  O10  OAL1     -1.080000        15.9994           0
+      36 ALO  2    ALO  O11  OAL1     -1.080000        15.9994           0
+      37 ALO  2    ALO  O12  OAL1     -1.080000        15.9994           0
+      38 ALO  2    ALO  O13  OAL1     -1.080000        15.9994           0
+      39 ALO  2    ALO  O14  OAL1     -1.080000        15.9994           0
+      40 ALO  2    ALO  O15  OAL1     -1.080000        15.9994           0
+      41 ALO  2    ALO  O16  OAL1     -1.080000        15.9994           0
+      42 ALO  2    ALO  O17  OAL1     -1.080000        15.9994           0
+      43 ALO  2    ALO  AL8  ALO1      1.620000        26.9815           0
+      44 ALO  2    ALO  AL9  ALO1      1.620000        26.9815           0
+      45 ALO  3    ALO  AL1  ALO1      1.620000        26.9815           0
+      46 ALO  3    ALO  AL2  ALO1      1.620000        26.9815           0
+      47 ALO  3    ALO  AL3  ALO1      1.620000        26.9815           0
+      48 ALO  3    ALO  AL4  ALO1      1.620000        26.9815           0
+      49 ALO  3    ALO  AL5  ALO1      1.620000        26.9815           0
+      50 ALO  3    ALO  AL6  ALO1      1.620000        26.9815           0
+      51 ALO  3    ALO  O1   OAL1     -1.080000        15.9994           0
+      52 ALO  3    ALO  O2   OAL1     -1.080000        15.9994           0
+      53 ALO  3    ALO  O3   OAL1     -1.080000        15.9994           0
+      54 ALO  3    ALO  O4   OAL1     -1.080000        15.9994           0
+      55 ALO  3    ALO  O5   OAL1     -1.080000        15.9994           0
+      56 ALO  3    ALO  O6   OAL1     -1.080000        15.9994           0
+      57 ALO  3    ALO  O7   OAL1     -1.080000        15.9994           0
+      58 ALO  3    ALO  O8   OAL1     -1.080000        15.9994           0
+      59 ALO  3    ALO  O9   OAL1     -1.080000        15.9994           0
+      60 ALO  3    ALO  O10  OAL1     -1.080000        15.9994           0
+
+       0 !NBOND: bonds
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0

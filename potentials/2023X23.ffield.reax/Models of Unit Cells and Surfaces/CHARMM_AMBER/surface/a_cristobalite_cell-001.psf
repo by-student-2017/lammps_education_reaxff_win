@@ -1,0 +1,60 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+      36 !NATOM
+       1 SiO  1    SiO  O1   OSI1     -0.650000        15.9994           0
+       2 SiO  1    SiO  SI1  SIO1      1.300000        28.0855           0
+       3 SiO  1    SiO  O2   OSI1     -0.650000        15.9994           0
+       4 SiO  1    SiO  O3   OSI1     -0.650000        15.9994           0
+       5 SiO  1    SiO  SI2  SIO1      1.300000        28.0855           0
+       6 SiO  1    SiO  O4   OSI1     -0.650000        15.9994           0
+       7 SiO  1    SiO  O5   OSI1     -0.650000        15.9994           0
+       8 SiO  1    SiO  SI3  SIO1      1.300000        28.0855           0
+       9 SiO  1    SiO  O6   OSI1     -0.650000        15.9994           0
+      10 SiO  1    SiO  O7   OSI1     -0.650000        15.9994           0
+      11 SiO  1    SiO  SI4  SIO1      1.300000        28.0855           0
+      12 SiO  1    SiO  O8   OSI1     -0.650000        15.9994           0
+      13 SiO  1    SiO  SI5  SIO1      1.300000        28.0855           0
+      14 SiO  1    SiO  O9   OSI1     -0.650000        15.9994           0
+      15 SiO  1    SiO  O10  OSI1     -0.650000        15.9994           0
+      16 SiO  1    SiO  SI6  SIO1      1.300000        28.0855           0
+      17 SiO  1    SiO  O11  OSI1     -0.650000        15.9994           0
+      18 SiO  1    SiO  O12  OSI1     -0.650000        15.9994           0
+      19 SiO  1    SiO  SI7  SIO1      1.300000        28.0855           0
+      20 SiO  1    SiO  O13  OSI1     -0.650000        15.9994           0
+      21 SiO  1    SiO  O14  OSI1     -0.650000        15.9994           0
+      22 SiO  1    SiO  SI8  SIO1      1.300000        28.0855           0
+      23 SiO  1    SiO  O15  OSI1     -0.650000        15.9994           0
+      24 SiO  1    SiO  SI9  SIO1      1.300000        28.0855           0
+      25 SiO  2    SiO  O1   OSI1     -0.650000        15.9994           0
+      26 SiO  2    SiO  O2   OSI1     -0.650000        15.9994           0
+      27 SiO  2    SiO  SI1  SIO1      1.300000        28.0855           0
+      28 SiO  2    SiO  O3   OSI1     -0.650000        15.9994           0
+      29 SiO  2    SiO  O4   OSI1     -0.650000        15.9994           0
+      30 SiO  2    SiO  SI2  SIO1      1.300000        28.0855           0
+      31 SiO  2    SiO  O5   OSI1     -0.650000        15.9994           0
+      32 SiO  2    SiO  O6   OSI1     -0.650000        15.9994           0
+      33 SiO  2    SiO  SI3  SIO1      1.300000        28.0855           0
+      34 SiO  2    SiO  O7   OSI1     -0.650000        15.9994           0
+      35 SiO  2    SiO  O8   OSI1     -0.650000        15.9994           0
+      36 SiO  2    SiO  O9   OSI1     -0.650000        15.9994           0
+
+       0 !NBOND: bonds
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0

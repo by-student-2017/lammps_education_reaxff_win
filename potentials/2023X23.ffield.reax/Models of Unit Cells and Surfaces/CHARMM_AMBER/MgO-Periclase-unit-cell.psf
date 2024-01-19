@@ -1,0 +1,32 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+       8 !NATOM
+       1 MGO  1    MGO  MG1  MGO1      1.060000        24.3050           0
+       2 MGO  1    MGO  O1   OMG1     -1.060000        15.9994           0
+       3 MGO  1    MGO  O2   OMG1     -1.060000        15.9994           0
+       4 MGO  1    MGO  O3   OMG1     -1.060000        15.9994           0
+       5 MGO  1    MGO  O4   OMG1     -1.060000        15.9994           0
+       6 MGO  1    MGO  MG2  MGO1      1.060000        24.3050           0
+       7 MGO  1    MGO  MG3  MGO1      1.060000        24.3050           0
+       8 MGO  1    MGO  MG4  MGO1      1.060000        24.3050           0
+
+       0 !NBOND: bonds
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0

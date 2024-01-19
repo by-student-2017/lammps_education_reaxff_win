@@ -1,0 +1,68 @@
+!BIOSYM molecular_data 4
+ 
+!Date: Mon Sep 25 11:59:30 2023   Materials Studio Generated MDF file
+ 
+#topology
+
+@column 1 element
+@column 2 atom_type
+@column 3 charge_group
+@column 4 isotope
+@column 5 formal_charge
+@column 6 charge
+@column 7 switching_atom
+@column 8 oop_flag
+@column 9 chirality_flag
+@column 10 occupancy
+@column 11 xray_temp_factor
+@column 12 connections
+ 
+@molecule NiO
+ 
+XXXX_1:Ni1          Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O1           O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O2           O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O3           O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O4           O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni2          Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni3          Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni4          Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni5          Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O5           O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O6           O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O7           O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O8           O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni6          Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni7          Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni8          Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni9          Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O9           O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O10          O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O11          O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O12          O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni10         Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni11         Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni12         Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni13         Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O13          O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O14          O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O15          O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O16          O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni14         Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni15         Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni16         Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni17         Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O17          O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O18          O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O19          O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:O20          O  oni1    ?     0  2-   -1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni18         Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni19         Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+XXXX_1:Ni20         Ni nio1    ?     0  2+    1.1000 0 0 8 1.0000  0.0000 
+ 
+!
+#symmetry
+@periodicity 3 xyz
+@group (P1)
+
+#end

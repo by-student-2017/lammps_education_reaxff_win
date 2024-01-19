@@ -1,0 +1,44 @@
+# Pure HNS crystal, ReaxFF tests for benchmarking LAMMPS
+# See README for more info
+
+units             real
+atom_style        full
+atom_modify sort  100 0.0 # optional
+dimension         3
+boundary          p p p
+#box               tilt large
+
+read_data         Al2O3.data
+
+pair_style        reax/c NULL
+pair_coeff        * * jp5b11908_si_001.txt Al O
+
+compute           reax all pair reax/c
+
+neighbor          1.0 bin
+neigh_modify      every 20 delay 0 check no
+
+timestep          0.5
+
+thermo_style      custom step temp pe press evdwl ecoul vol cella cellb cellc cellalpha cellbeta cellgamma density pxx pyy pzz pxy pxz pyz
+thermo_modify     norm yes
+thermo            50
+velocity          all create 300.0 41279 loop geom
+
+fix               1 all npt temp 298.15 298.15 100.0 iso 1.0 1.0 1000.0
+fix               2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+dump 		      1 all atom 500 reaxx.lammpstraj
+restart           100000 CNT.*.restart
+run               1000000
+unfix 			  1
+undump            1
+
+thermo_style      custom step temp pe press evdwl ecoul vol cella cellb cellc cellalpha cellbeta cellgamma density pxx pyy pzz pxy pxz pyz
+thermo_modify     norm yes
+thermo            50
+velocity          all create 300.0 41279 loop geom
+
+fix               3 all npt temp 298.15 298.15 100.0 iso 2960.77 2960.77 1000.0
+dump 		      2 all atom 500 reaxx2.lammpstraj
+restart           100000 CNT.*.restart
+run               1000000

@@ -1,0 +1,68 @@
+!BIOSYM molecular_data 4
+ 
+!Date: Mon Sep 25 12:00:37 2023   Materials Studio Generated MDF file
+ 
+#topology
+
+@column 1 element
+@column 2 atom_type
+@column 3 charge_group
+@column 4 isotope
+@column 5 formal_charge
+@column 6 charge
+@column 7 switching_atom
+@column 8 oop_flag
+@column 9 chirality_flag
+@column 10 occupancy
+@column 11 xray_temp_factor
+@column 12 connections
+ 
+@molecule MgO
+ 
+XXXX_1:Mg1          Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0043 
+XXXX_1:O1           O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0047 
+XXXX_1:O2           O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:O3           O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:O4           O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg2          Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg3          Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg4          Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg5          Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0043 
+XXXX_1:O5           O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0047 
+XXXX_1:O6           O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:O7           O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:O8           O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg6          Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg7          Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg8          Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg9          Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0043 
+XXXX_1:O9           O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0047 
+XXXX_1:O10          O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:O11          O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:O12          O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg10         Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg11         Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg12         Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg13         Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0043 
+XXXX_1:O13          O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0047 
+XXXX_1:O14          O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:O15          O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:O16          O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg14         Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg15         Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg16         Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg17         Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0043 
+XXXX_1:O17          O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0047 
+XXXX_1:O18          O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:O19          O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:O20          O  omg1    ?     0  2-   -1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg18         Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg19         Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0000 
+XXXX_1:Mg20         Mg mgo1    ?     0  2+    1.0600 0 0 8 1.0000  0.0000 
+ 
+!
+#symmetry
+@periodicity 3 xyz
+@group (P1)
+
+#end

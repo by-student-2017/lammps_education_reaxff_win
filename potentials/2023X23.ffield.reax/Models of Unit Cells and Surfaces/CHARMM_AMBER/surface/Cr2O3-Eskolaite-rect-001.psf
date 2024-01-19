@@ -1,0 +1,144 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+     120 !NATOM
+       1 CrO  1    CrO  CR1  CRO1      1.650000        51.9961           0
+       2 CrO  1    CrO  CR2  CRO1      1.650000        51.9961           0
+       3 CrO  1    CrO  CR3  CRO1      1.650000        51.9961           0
+       4 CrO  1    CrO  CR4  CRO1      1.650000        51.9961           0
+       5 CrO  1    CrO  CR5  CRO1      1.650000        51.9961           0
+       6 CrO  1    CrO  CR6  CRO1      1.650000        51.9961           0
+       7 CrO  1    CrO  O1   OCR1     -1.100000        15.9994           0
+       8 CrO  1    CrO  O2   OCR1     -1.100000        15.9994           0
+       9 CrO  1    CrO  O3   OCR1     -1.100000        15.9994           0
+      10 CrO  1    CrO  CR7  CRO1      1.650000        51.9961           0
+      11 CrO  1    CrO  CR8  CRO1      1.650000        51.9961           0
+      12 CrO  1    CrO  CR9  CRO1      1.650000        51.9961           0
+      13 CrO  2    CrO  CR1  CRO1      1.650000        51.9961           0
+      14 CrO  2    CrO  O1   OCR1     -1.100000        15.9994           0
+      15 CrO  2    CrO  O2   OCR1     -1.100000        15.9994           0
+      16 CrO  2    CrO  O3   OCR1     -1.100000        15.9994           0
+      17 CrO  2    CrO  O4   OCR1     -1.100000        15.9994           0
+      18 CrO  2    CrO  CR2  CRO1      1.650000        51.9961           0
+      19 CrO  2    CrO  O5   OCR1     -1.100000        15.9994           0
+      20 CrO  2    CrO  O6   OCR1     -1.100000        15.9994           0
+      21 CrO  2    CrO  O7   OCR1     -1.100000        15.9994           0
+      22 CrO  2    CrO  CR3  CRO1      1.650000        51.9961           0
+      23 CrO  2    CrO  CR4  CRO1      1.650000        51.9961           0
+      24 CrO  2    CrO  CR5  CRO1      1.650000        51.9961           0
+      25 CrO  2    CrO  CR6  CRO1      1.650000        51.9961           0
+      26 CrO  2    CrO  CR7  CRO1      1.650000        51.9961           0
+      27 CrO  2    CrO  CR8  CRO1      1.650000        51.9961           0
+      28 CrO  2    CrO  CR9  CRO1      1.650000        51.9961           0
+      29 CrO  3    CrO  O1   OCR1     -1.100000        15.9994           0
+      30 CrO  3    CrO  O2   OCR1     -1.100000        15.9994           0
+      31 CrO  3    CrO  O3   OCR1     -1.100000        15.9994           0
+      32 CrO  3    CrO  O4   OCR1     -1.100000        15.9994           0
+      33 CrO  3    CrO  O5   OCR1     -1.100000        15.9994           0
+      34 CrO  3    CrO  O6   OCR1     -1.100000        15.9994           0
+      35 CrO  3    CrO  O7   OCR1     -1.100000        15.9994           0
+      36 CrO  3    CrO  O8   OCR1     -1.100000        15.9994           0
+      37 CrO  3    CrO  O9   OCR1     -1.100000        15.9994           0
+      38 CrO  3    CrO  O10  OCR1     -1.100000        15.9994           0
+      39 CrO  3    CrO  O11  OCR1     -1.100000        15.9994           0
+      40 CrO  3    CrO  O12  OCR1     -1.100000        15.9994           0
+      41 CrO  3    CrO  O13  OCR1     -1.100000        15.9994           0
+      42 CrO  3    CrO  O14  OCR1     -1.100000        15.9994           0
+      43 CrO  3    CrO  CR1  CRO1      1.650000        51.9961           0
+      44 CrO  3    CrO  CR2  CRO1      1.650000        51.9961           0
+      45 CrO  3    CrO  CR3  CRO1      1.650000        51.9961           0
+      46 CrO  3    CrO  CR4  CRO1      1.650000        51.9961           0
+      47 CrO  3    CrO  CR5  CRO1      1.650000        51.9961           0
+      48 CrO  3    CrO  CR6  CRO1      1.650000        51.9961           0
+      49 CrO  3    CrO  CR7  CRO1      1.650000        51.9961           0
+      50 CrO  3    CrO  CR8  CRO1      1.650000        51.9961           0
+      51 CrO  3    CrO  O15  OCR1     -1.100000        15.9994           0
+      52 CrO  3    CrO  O16  OCR1     -1.100000        15.9994           0
+      53 CrO  3    CrO  O17  OCR1     -1.100000        15.9994           0
+      54 CrO  3    CrO  O18  OCR1     -1.100000        15.9994           0
+      55 CrO  3    CrO  O19  OCR1     -1.100000        15.9994           0
+      56 CrO  3    CrO  O20  OCR1     -1.100000        15.9994           0
+      57 CrO  3    CrO  O21  OCR1     -1.100000        15.9994           0
+      58 CrO  3    CrO  O22  OCR1     -1.100000        15.9994           0
+      59 CrO  3    CrO  O23  OCR1     -1.100000        15.9994           0
+      60 CrO  3    CrO  O24  OCR1     -1.100000        15.9994           0
+      61 CrO  3    CrO  CR9  CRO1      1.650000        51.9961           0
+      62 CrO  4    CrO  CR1  CRO1      1.650000        51.9961           0
+      63 CrO  4    CrO  CR2  CRO1      1.650000        51.9961           0
+      64 CrO  4    CrO  O1   OCR1     -1.100000        15.9994           0
+      65 CrO  4    CrO  O2   OCR1     -1.100000        15.9994           0
+      66 CrO  4    CrO  O3   OCR1     -1.100000        15.9994           0
+      67 CrO  4    CrO  CR3  CRO1      1.650000        51.9961           0
+      68 CrO  4    CrO  CR4  CRO1      1.650000        51.9961           0
+      69 CrO  4    CrO  CR5  CRO1      1.650000        51.9961           0
+      70 CrO  4    CrO  CR6  CRO1      1.650000        51.9961           0
+      71 CrO  4    CrO  O4   OCR1     -1.100000        15.9994           0
+      72 CrO  4    CrO  O5   OCR1     -1.100000        15.9994           0
+      73 CrO  4    CrO  O6   OCR1     -1.100000        15.9994           0
+      74 CrO  4    CrO  O7   OCR1     -1.100000        15.9994           0
+      75 CrO  4    CrO  O8   OCR1     -1.100000        15.9994           0
+      76 CrO  4    CrO  O9   OCR1     -1.100000        15.9994           0
+      77 CrO  4    CrO  O10  OCR1     -1.100000        15.9994           0
+      78 CrO  4    CrO  CR7  CRO1      1.650000        51.9961           0
+      79 CrO  4    CrO  CR8  CRO1      1.650000        51.9961           0
+      80 CrO  4    CrO  CR9  CRO1      1.650000        51.9961           0
+      81 CrO  5    CrO  CR1  CRO1      1.650000        51.9961           0
+      82 CrO  5    CrO  CR2  CRO1      1.650000        51.9961           0
+      83 CrO  5    CrO  CR3  CRO1      1.650000        51.9961           0
+      84 CrO  5    CrO  CR4  CRO1      1.650000        51.9961           0
+      85 CrO  5    CrO  O1   OCR1     -1.100000        15.9994           0
+      86 CrO  5    CrO  O2   OCR1     -1.100000        15.9994           0
+      87 CrO  5    CrO  O3   OCR1     -1.100000        15.9994           0
+      88 CrO  5    CrO  O4   OCR1     -1.100000        15.9994           0
+      89 CrO  5    CrO  O5   OCR1     -1.100000        15.9994           0
+      90 CrO  5    CrO  O6   OCR1     -1.100000        15.9994           0
+      91 CrO  5    CrO  O7   OCR1     -1.100000        15.9994           0
+      92 CrO  5    CrO  O8   OCR1     -1.100000        15.9994           0
+      93 CrO  5    CrO  O9   OCR1     -1.100000        15.9994           0
+      94 CrO  5    CrO  O10  OCR1     -1.100000        15.9994           0
+      95 CrO  5    CrO  O11  OCR1     -1.100000        15.9994           0
+      96 CrO  5    CrO  O12  OCR1     -1.100000        15.9994           0
+      97 CrO  5    CrO  O13  OCR1     -1.100000        15.9994           0
+      98 CrO  5    CrO  O14  OCR1     -1.100000        15.9994           0
+      99 CrO  5    CrO  CR5  CRO1      1.650000        51.9961           0
+     100 CrO  5    CrO  CR6  CRO1      1.650000        51.9961           0
+     101 CrO  5    CrO  CR7  CRO1      1.650000        51.9961           0
+     102 CrO  5    CrO  CR8  CRO1      1.650000        51.9961           0
+     103 CrO  5    CrO  CR9  CRO1      1.650000        51.9961           0
+     104 CrO  6    CrO  CR1  CRO1      1.650000        51.9961           0
+     105 CrO  6    CrO  CR2  CRO1      1.650000        51.9961           0
+     106 CrO  6    CrO  CR3  CRO1      1.650000        51.9961           0
+     107 CrO  6    CrO  O1   OCR1     -1.100000        15.9994           0
+     108 CrO  6    CrO  O2   OCR1     -1.100000        15.9994           0
+     109 CrO  6    CrO  O3   OCR1     -1.100000        15.9994           0
+     110 CrO  6    CrO  O4   OCR1     -1.100000        15.9994           0
+     111 CrO  6    CrO  O5   OCR1     -1.100000        15.9994           0
+     112 CrO  6    CrO  O6   OCR1     -1.100000        15.9994           0
+     113 CrO  6    CrO  O7   OCR1     -1.100000        15.9994           0
+     114 CrO  6    CrO  O8   OCR1     -1.100000        15.9994           0
+     115 CrO  6    CrO  O9   OCR1     -1.100000        15.9994           0
+     116 CrO  6    CrO  O10  OCR1     -1.100000        15.9994           0
+     117 CrO  6    CrO  O11  OCR1     -1.100000        15.9994           0
+     118 CrO  6    CrO  O12  OCR1     -1.100000        15.9994           0
+     119 CrO  6    CrO  O13  OCR1     -1.100000        15.9994           0
+     120 CrO  6    CrO  O14  OCR1     -1.100000        15.9994           0
+
+       0 !NBOND: bonds
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0

@@ -1,0 +1,13 @@
+REMARK generated coordinate PDB file from .car/.mdf files
+CRYST1   6.2224   3.5925   4.9050  90.00  90.00  90.00 P 1           1
+ATOM      1 CA1  CAH     1       0.000   0.000   0.000  1.00  0.00      CAH  Ca
+ATOM      2 O1   CAH     1       1.037   1.796   1.143  1.00  0.00      CAH  O
+ATOM      3 H1   CAH     1       1.037   1.796   2.050  1.00  0.00      CAH  H
+ATOM      4 O2   CAH     1       2.074   0.000  -1.143  1.00  0.00      CAH  O
+ATOM      5 H2   CAH     1       2.074   0.000  -2.050  1.00  0.00      CAH  H
+ATOM      6 O3   CAH     1       4.148   0.000   1.143  1.00  0.00      CAH  O
+ATOM      7 H3   CAH     1       4.148   0.000   2.050  1.00  0.00      CAH  H
+ATOM      8 CA2  CAH     1       3.111   1.796   0.000  1.00  0.00      CAH  Ca
+ATOM      9 O4   CAH     1       5.185   1.796  -1.143  1.00  0.00      CAH  O
+ATOM     10 H4   CAH     1       5.185   1.796  -2.050  1.00  0.00      CAH  H
+END

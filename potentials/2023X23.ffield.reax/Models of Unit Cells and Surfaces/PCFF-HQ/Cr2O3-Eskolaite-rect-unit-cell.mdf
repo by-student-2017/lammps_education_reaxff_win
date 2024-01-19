@@ -1,0 +1,88 @@
+!BIOSYM molecular_data 4
+ 
+!Date: Thu Jan 19 07:59:43 2023   Materials Studio Generated MDF file
+ 
+#topology
+
+@column 1 element
+@column 2 atom_type
+@column 3 charge_group
+@column 4 isotope
+@column 5 formal_charge
+@column 6 charge
+@column 7 switching_atom
+@column 8 oop_flag
+@column 9 chirality_flag
+@column 10 occupancy
+@column 11 xray_temp_factor
+@column 12 connections
+ 
+@molecule global
+ 
+XXXX_1:Al1          Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al2          Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al3          Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al4          Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:O1           O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O2           O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O3           O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O4           O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O5           O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:Al5          Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al6          Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al7          Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al8          Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:O6           O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O7           O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O8           O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O9           O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:Al9          Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:O10          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O11          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O12          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:Al10         Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al11         Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al12         Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al13         Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al14         Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al15         Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al16         Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:O13          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O14          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O15          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O16          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O17          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O18          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O19          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O20          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O21          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O22          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O23          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O24          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O25          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O26          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:Al17         Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al18         Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al19         Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al20         Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al21         Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al22         Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al23         Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:Al24         Cr cro1    ?     0  3+    1.8600 0 0 8 1.0000  0.0000 
+XXXX_1:O27          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O28          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O29          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O30          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O31          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O32          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O33          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O34          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O35          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+XXXX_1:O36          O  ocr1    ?     0  2-   -1.2400 0 0 8 1.0000  0.0000 
+ 
+!
+#symmetry
+@periodicity 3 xyz
+@group (P1)
+
+#end

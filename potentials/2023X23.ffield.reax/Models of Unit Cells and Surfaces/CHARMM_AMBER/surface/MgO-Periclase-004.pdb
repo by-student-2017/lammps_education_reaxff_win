@@ -1,0 +1,43 @@
+REMARK generated coordinate PDB file from .car/.mdf files
+CRYST1  4.211  4.211  121.055  90.00  90.00  90.00 P 1           1
+ATOM      1 MG1  MgO     1       0.000   0.000   0.000  1.00  0.00      MgO  Mg
+ATOM      2 O1   MgO     1       2.106   2.106   2.106  1.00  0.00      MgO  O
+ATOM      3 O2   MgO     1       0.000   0.000   2.105  1.00  0.00      MgO  O
+ATOM      4 O3   MgO     1       0.000   2.105   0.000  1.00  0.00      MgO  O
+ATOM      5 O4   MgO     1       2.105   0.000   0.000  1.00  0.00      MgO  O
+ATOM      6 MG2  MgO     1       2.105   2.105   0.000  1.00  0.00      MgO  Mg
+ATOM      7 MG3  MgO     1       2.105   0.000   2.105  1.00  0.00      MgO  Mg
+ATOM      8 MG4  MgO     1       0.000   2.105   2.105  1.00  0.00      MgO  Mg
+ATOM      9 MG5  MgO     1       0.000   0.000   4.211  1.00  0.00      MgO  Mg
+ATOM     10 O5   MgO     1       2.106   2.106   6.316  1.00  0.00      MgO  O
+ATOM     11 O6   MgO     1       0.000   0.000   6.316  1.00  0.00      MgO  O
+ATOM     12 O7   MgO     1       0.000   2.105   4.211  1.00  0.00      MgO  O
+ATOM     13 O8   MgO     1       2.105   0.000   4.211  1.00  0.00      MgO  O
+ATOM     14 MG6  MgO     1       2.105   2.105   4.211  1.00  0.00      MgO  Mg
+ATOM     15 MG7  MgO     1       2.105   0.000   6.316  1.00  0.00      MgO  Mg
+ATOM     16 MG8  MgO     1       0.000   2.105   6.316  1.00  0.00      MgO  Mg
+ATOM     17 MG9  MgO     1       0.000   0.000   8.422  1.00  0.00      MgO  Mg
+ATOM     18 O1   MgO     2       2.106   2.106  10.527  1.00  0.00      MgO  O
+ATOM     19 O2   MgO     2       0.000   0.000  10.527  1.00  0.00      MgO  O
+ATOM     20 O3   MgO     2       0.000   2.105   8.422  1.00  0.00      MgO  O
+ATOM     21 O4   MgO     2       2.105   0.000   8.422  1.00  0.00      MgO  O
+ATOM     22 MG1  MgO     2       2.105   2.105   8.422  1.00  0.00      MgO  Mg
+ATOM     23 MG2  MgO     2       2.105   0.000  10.527  1.00  0.00      MgO  Mg
+ATOM     24 MG3  MgO     2       0.000   2.105  10.527  1.00  0.00      MgO  Mg
+ATOM     25 MG4  MgO     2       0.000   0.000  12.633  1.00  0.00      MgO  Mg
+ATOM     26 O5   MgO     2       2.106   2.106  14.739  1.00  0.00      MgO  O
+ATOM     27 O6   MgO     2       0.000   0.000  14.738  1.00  0.00      MgO  O
+ATOM     28 O7   MgO     2       0.000   2.105  12.633  1.00  0.00      MgO  O
+ATOM     29 O8   MgO     2       2.105   0.000  12.633  1.00  0.00      MgO  O
+ATOM     30 MG5  MgO     2       2.105   2.105  12.633  1.00  0.00      MgO  Mg
+ATOM     31 MG6  MgO     2       2.105   0.000  14.738  1.00  0.00      MgO  Mg
+ATOM     32 MG7  MgO     2       0.000   2.105  14.738  1.00  0.00      MgO  Mg
+ATOM     33 MG8  MgO     2       0.000   0.000  16.844  1.00  0.00      MgO  Mg
+ATOM     34 O9   MgO     2       2.106   2.106  18.950  1.00  0.00      MgO  O
+ATOM     35 O10  MgO     2       0.000   0.000  18.949  1.00  0.00      MgO  O
+ATOM     36 O11  MgO     2       0.000   2.105  16.844  1.00  0.00      MgO  O
+ATOM     37 O12  MgO     2       2.105   0.000  16.844  1.00  0.00      MgO  O
+ATOM     38 MG9  MgO     2       2.105   2.105  16.844  1.00  0.00      MgO  Mg
+ATOM     39 MG1  MgO     3       2.105   0.000  18.949  1.00  0.00      MgO  Mg
+ATOM     40 MG2  MgO     3       0.000   2.105  18.949  1.00  0.00      MgO  Mg
+END

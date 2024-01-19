@@ -1,0 +1,45 @@
+# REAX potential for Nitroamines system
+# .....
+
+dimension       3
+boundary        p p p
+units		    real
+
+atom_style	    full
+read_data	    Ben_Pt_0.1.data
+
+pair_style		reax/c NULL
+pair_coeff	* *	Reax.ffield_Cheng_Ben_Pt.FC Pt H C 
+
+
+#(3) Settings
+neighbor        2.0 bin
+neigh_modify 	every 1 delay 0 check yes page 400000 one 40000
+fix             2 all qeq/reax 1 0.0 10.0 1e-6 reax/c
+special_bonds   lj/coul 0.0 0.0 1.0
+change_box      all triclinic
+#kspace_style   pppm 1.0e-4
+
+
+# (4) Minimization: con.grad. (cg)/steep.desc. (sd, somewt. more stable)
+thermo              100
+#dump               0 all atom 25 whole.min
+minimize            0.0001 0.000001 10000 10000
+#undump             0
+reset_timestep      0
+
+
+# (5) NVT Dynamics 1 (pressure = 1 atm in x, y, and z directions of an orthogonal box)
+timestep                1.0
+velocity                all create 300 4928459 rot yes dist gaussian
+
+
+fix                     7 all nvt temp 300 300 100.0
+# Full stress tensor incl. xy, yz, xz requires declaration as a triclinic box with tilt factors
+thermo_style            custom step density temp etotal ke pe press lx ly lz pxx pyy pzz pxy pxz pyz
+thermo                  100
+restart                 1000000 Ben_Pt_0.1.*.restart
+dump 					1 all atom 500 Ben_Pt_0.1.lammpstraj
+
+run                     20000000
+

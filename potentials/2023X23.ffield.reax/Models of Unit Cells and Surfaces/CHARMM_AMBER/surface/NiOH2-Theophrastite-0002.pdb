@@ -1,0 +1,28 @@
+REMARK generated coordinate PDB file from .car/.mdf files
+CRYST1  3.117  3.117  122.975  90.00  90.00  90.00 P 1           1
+ATOM      1 NI1  NiH     1       0.000   0.000   3.022  1.00  0.00      NiH  Ni
+ATOM      2 O1   NiH     1       0.000   1.800   4.171  1.00  0.00      NiH  O
+ATOM      3 H1   NiH     1       0.000   1.800   5.299  1.00  0.00      NiH  H
+ATOM      4 O2   NiH     1       1.558   0.900   6.469  1.00  0.00      NiH  O
+ATOM      5 H2   NiH     1       1.558   0.900   5.341  1.00  0.00      NiH  H
+ATOM      6 NI2  NiH     1       0.000   0.000   7.617  1.00  0.00      NiH  Ni
+ATOM      7 O3   NiH     1       0.000   1.800   8.766  1.00  0.00      NiH  O
+ATOM      8 H3   NiH     1       0.000   1.800   9.894  1.00  0.00      NiH  H
+ATOM      9 O4   NiH     1       1.558   0.900  11.064  1.00  0.00      NiH  O
+ATOM     10 H4   NiH     1       1.558   0.900   9.936  1.00  0.00      NiH  H
+ATOM     11 NI3  NiH     1       0.000   0.000  12.212  1.00  0.00      NiH  Ni
+ATOM     12 O5   NiH     1       0.000   1.800  13.361  1.00  0.00      NiH  O
+ATOM     13 H5   NiH     1       0.000   1.800  14.489  1.00  0.00      NiH  H
+ATOM     14 O6   NiH     1       1.558   0.900  15.659  1.00  0.00      NiH  O
+ATOM     15 H6   NiH     1       1.558   0.900  14.531  1.00  0.00      NiH  H
+ATOM     16 NI4  NiH     1       0.000   0.000  16.807  1.00  0.00      NiH  Ni
+ATOM     17 O7   NiH     1       0.000   1.800  17.956  1.00  0.00      NiH  O
+ATOM     18 H7   NiH     1       0.000   1.800  19.084  1.00  0.00      NiH  H
+ATOM     19 O8   NiH     1       1.558   0.900  20.254  1.00  0.00      NiH  O
+ATOM     20 H8   NiH     1       1.558   0.900  19.126  1.00  0.00      NiH  H
+ATOM     21 NI5  NiH     1       0.000   0.000  21.402  1.00  0.00      NiH  Ni
+ATOM     22 O9   NiH     1       0.000   1.800  22.551  1.00  0.00      NiH  O
+ATOM     23 H9   NiH     1       0.000   1.800  23.679  1.00  0.00      NiH  H
+ATOM     24 O10  NiH     1       1.558   0.900   1.874  1.00  0.00      NiH  O
+ATOM     25 H10  NiH     1       1.558   0.900   0.746  1.00  0.00      NiH  H
+END

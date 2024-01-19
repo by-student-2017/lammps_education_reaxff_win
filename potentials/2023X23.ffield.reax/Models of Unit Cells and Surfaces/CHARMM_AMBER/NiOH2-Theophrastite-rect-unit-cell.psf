@@ -1,0 +1,35 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+      10 !NATOM
+       1 NIH  1    NIH  NI1  NIO2      1.360000        58.6934           0
+       2 NIH  1    NIH  O1   ONI2     -0.960000        15.9994           0
+       3 NIH  1    NIH  H1   IHOP      0.280000         1.0079           0
+       4 NIH  1    NIH  O2   ONI2     -0.960000        15.9994           0
+       5 NIH  1    NIH  H2   IHOP      0.280000         1.0079           0
+       6 NIH  1    NIH  O3   ONI2     -0.960000        15.9994           0
+       7 NIH  1    NIH  H3   IHOP      0.280000         1.0079           0
+       8 NIH  1    NIH  NI2  NIO2      1.360000        58.6934           0
+       9 NIH  1    NIH  O4   ONI2     -0.960000        15.9994           0
+      10 NIH  1    NIH  H4   IHOP      0.280000         1.0079           0
+
+       4 !NBOND: bonds
+       2       3       4       5       6       7       9      10
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0

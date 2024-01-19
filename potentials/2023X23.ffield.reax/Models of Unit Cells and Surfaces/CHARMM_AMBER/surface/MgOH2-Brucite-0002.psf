@@ -1,0 +1,46 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+      20 !NATOM
+       1 MgH  1    MgH  MG1  MGO2      1.350000        24.3050           0
+       2 MgH  1    MgH  H1   IHOP      0.345000         1.0079           0
+       3 MgH  1    MgH  H2   IHOP      0.345000         1.0079           0
+       4 MgH  1    MgH  O1   OMG2     -1.020000        15.9994           0
+       5 MgH  1    MgH  O2   OMG2     -1.020000        15.9994           0
+       6 MgH  1    MgH  MG2  MGO2      1.350000        24.3050           0
+       7 MgH  1    MgH  H3   IHOP      0.345000         1.0079           0
+       8 MgH  1    MgH  H4   IHOP      0.345000         1.0079           0
+       9 MgH  1    MgH  O3   OMG2     -1.020000        15.9994           0
+      10 MgH  1    MgH  O4   OMG2     -1.020000        15.9994           0
+      11 MgH  1    MgH  MG3  MGO2      1.350000        24.3050           0
+      12 MgH  1    MgH  H5   IHOP      0.345000         1.0079           0
+      13 MgH  1    MgH  H6   IHOP      0.345000         1.0079           0
+      14 MgH  1    MgH  O5   OMG2     -1.020000        15.9994           0
+      15 MgH  1    MgH  O6   OMG2     -1.020000        15.9994           0
+      16 MgH  1    MgH  MG4  MGO2      1.350000        24.3050           0
+      17 MgH  1    MgH  H7   IHOP      0.345000         1.0079           0
+      18 MgH  1    MgH  H8   IHOP      0.345000         1.0079           0
+      19 MgH  1    MgH  O7   OMG2     -1.020000        15.9994           0
+      20 MgH  1    MgH  O8   OMG2     -1.020000        15.9994           0
+
+       8 !NBOND: bonds
+       2       4       3       5       7       9       8      10
+      12      14      13      15      17      19      18      20
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0

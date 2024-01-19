@@ -1,0 +1,68 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+      40 !NATOM
+       1 CaH  1    CaH  CA1  CAO2      1.700000        40.0780           0
+       2 CaH  1    CaH  O1   OCA2     -1.320000        15.9994           0
+       3 CaH  1    CaH  H1   IHOP      0.470000         1.0079           0
+       4 CaH  1    CaH  O2   OCA2     -1.320000        15.9994           0
+       5 CaH  1    CaH  H2   IHOP      0.470000         1.0079           0
+       6 CaH  1    CaH  O3   OCA2     -1.320000        15.9994           0
+       7 CaH  1    CaH  H3   IHOP      0.470000         1.0079           0
+       8 CaH  1    CaH  CA2  CAO2      1.700000        40.0780           0
+       9 CaH  1    CaH  O4   OCA2     -1.320000        15.9994           0
+      10 CaH  1    CaH  H4   IHOP      0.470000         1.0079           0
+      11 CaH  1    CaH  CA3  CAO2      1.700000        40.0780           0
+      12 CaH  1    CaH  O5   OCA2     -1.320000        15.9994           0
+      13 CaH  1    CaH  H5   IHOP      0.470000         1.0079           0
+      14 CaH  1    CaH  O6   OCA2     -1.320000        15.9994           0
+      15 CaH  1    CaH  H6   IHOP      0.470000         1.0079           0
+      16 CaH  1    CaH  O7   OCA2     -1.320000        15.9994           0
+      17 CaH  1    CaH  H7   IHOP      0.470000         1.0079           0
+      18 CaH  1    CaH  CA4  CAO2      1.700000        40.0780           0
+      19 CaH  1    CaH  O8   OCA2     -1.320000        15.9994           0
+      20 CaH  1    CaH  H8   IHOP      0.470000         1.0079           0
+      21 CaH  1    CaH  CA5  CAO2      1.700000        40.0780           0
+      22 CaH  1    CaH  O9   OCA2     -1.320000        15.9994           0
+      23 CaH  1    CaH  H9   IHOP      0.470000         1.0079           0
+      24 CaH  1    CaH  O10  OCA2     -1.320000        15.9994           0
+      25 CaH  1    CaH  H10  IHOP      0.470000         1.0079           0
+      26 CaH  1    CaH  O11  OCA2     -1.320000        15.9994           0
+      27 CaH  1    CaH  H11  IHOP      0.470000         1.0079           0
+      28 CaH  1    CaH  CA6  CAO2      1.700000        40.0780           0
+      29 CaH  1    CaH  O12  OCA2     -1.320000        15.9994           0
+      30 CaH  1    CaH  H12  IHOP      0.470000         1.0079           0
+      31 CaH  1    CaH  CA7  CAO2      1.700000        40.0780           0
+      32 CaH  1    CaH  O13  OCA2     -1.320000        15.9994           0
+      33 CaH  1    CaH  H13  IHOP      0.470000         1.0079           0
+      34 CaH  1    CaH  O14  OCA2     -1.320000        15.9994           0
+      35 CaH  1    CaH  H14  IHOP      0.470000         1.0079           0
+      36 CaH  1    CaH  O15  OCA2     -1.320000        15.9994           0
+      37 CaH  1    CaH  H15  IHOP      0.470000         1.0079           0
+      38 CaH  1    CaH  CA8  CAO2      1.700000        40.0780           0
+      39 CaH  1    CaH  O16  OCA2     -1.320000        15.9994           0
+      40 CaH  1    CaH  H16  IHOP      0.470000         1.0079           0
+
+      16 !NBOND: bonds
+       2       3       4       5       6       7       9      10
+      12      13      14      15      16      17      19      20
+      22      23      24      25      26      27      29      30
+      32      33      34      35      36      37      39      40
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0

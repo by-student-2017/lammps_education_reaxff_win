@@ -1,0 +1,35 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+      10 !NATOM
+       1 MGH  1    MGH  MG1  MGO2      1.350000        24.3050           0
+       2 MGH  1    MGH  H1   IHOP      0.345000         1.0079           0
+       3 MGH  1    MGH  H2   IHOP      0.345000         1.0079           0
+       4 MGH  1    MGH  O1   OMG2     -1.020000        15.9994           0
+       5 MGH  1    MGH  O2   OMG2     -1.020000        15.9994           0
+       6 MGH  1    MGH  H3   IHOP      0.345000         1.0079           0
+       7 MGH  1    MGH  O3   OMG2     -1.020000        15.9994           0
+       8 MGH  1    MGH  MG2  MGO2      1.350000        24.3050           0
+       9 MGH  1    MGH  H4   IHOP      0.345000         1.0079           0
+      10 MGH  1    MGH  O4   OMG2     -1.020000        15.9994           0
+
+       4 !NBOND: bonds
+       2       4       3       5       6       7       9      10
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0

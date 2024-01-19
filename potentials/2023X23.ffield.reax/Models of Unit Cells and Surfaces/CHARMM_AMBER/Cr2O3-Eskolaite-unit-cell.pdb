@@ -1,0 +1,33 @@
+REMARK generated coordinate PDB file from .car/.mdf files
+CRYST1   4.9607   4.9607   13.5990  90.00  90.00  90.00 P 1           1
+ATOM      1 CR1  CRO     1       0.000   0.000   4.726  1.00  0.00      CRO  Cr
+ATOM      2 CR2  CRO     1       2.480   1.432   9.259  1.00  0.00      CRO  Cr
+ATOM      3 CR3  CRO     1       0.000   2.864   0.193  1.00  0.00      CRO  Cr
+ATOM      4 CR4  CRO     1       0.000   0.000   2.074  1.00  0.00      CRO  Cr
+ATOM      5 CR5  CRO     1       2.480   1.432   6.607  1.00  0.00      CRO  Cr
+ATOM      6 CR6  CRO     1       0.000   2.864  11.140  1.00  0.00      CRO  Cr
+ATOM      7 CR7  CRO     1       0.000   0.000   8.873  1.00  0.00      CRO  Cr
+ATOM      8 CR8  CRO     1       2.480   1.432  13.406  1.00  0.00      CRO  Cr
+ATOM      9 CR9  CRO     1       0.000   2.864   4.340  1.00  0.00      CRO  Cr
+ATOM     10 CR1  CRO     2       0.000   0.000  11.525  1.00  0.00      CRO  Cr
+ATOM     11 CR2  CRO     2       2.480   1.432   2.459  1.00  0.00      CRO  Cr
+ATOM     12 CR3  CRO     2       0.000   2.864   6.992  1.00  0.00      CRO  Cr
+ATOM     13 O1   CRO     2       1.518   0.000   3.400  1.00  0.00      CRO  O
+ATOM     14 O2   CRO     2       3.998   1.432   7.933  1.00  0.00      CRO  O
+ATOM     15 O3   CRO     2       1.518   2.864  12.466  1.00  0.00      CRO  O
+ATOM     16 O4   CRO     2      -0.759   1.315   3.400  1.00  0.00      CRO  O
+ATOM     17 O5   CRO     2       1.721   2.747   7.933  1.00  0.00      CRO  O
+ATOM     18 O6   CRO     2      -0.759   4.179  12.466  1.00  0.00      CRO  O
+ATOM     19 O7   CRO     2       1.721   2.981   3.400  1.00  0.00      CRO  O
+ATOM     20 O8   CRO     2       1.721   0.117   7.933  1.00  0.00      CRO  O
+ATOM     21 O9   CRO     2      -0.759   1.549  12.466  1.00  0.00      CRO  O
+ATOM     22 O10  CRO     2       3.443   0.000  10.199  1.00  0.00      CRO  O
+ATOM     23 O11  CRO     2       0.962   1.432   1.133  1.00  0.00      CRO  O
+ATOM     24 O12  CRO     2      -1.518   2.864   5.666  1.00  0.00      CRO  O
+ATOM     25 O13  CRO     2      -1.721   2.981  10.199  1.00  0.00      CRO  O
+ATOM     26 O14  CRO     2       3.239   0.117   1.133  1.00  0.00      CRO  O
+ATOM     27 O15  CRO     2       0.759   1.549   5.666  1.00  0.00      CRO  O
+ATOM     28 O16  CRO     2       0.759   1.315  10.199  1.00  0.00      CRO  O
+ATOM     29 O17  CRO     2       3.239   2.747   1.133  1.00  0.00      CRO  O
+ATOM     30 O18  CRO     2       0.759   4.179   5.666  1.00  0.00      CRO  O
+END

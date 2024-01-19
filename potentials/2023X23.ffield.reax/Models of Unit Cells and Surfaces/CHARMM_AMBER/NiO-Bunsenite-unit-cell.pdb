@@ -1,0 +1,11 @@
+REMARK generated coordinate PDB file from .car/.mdf files
+CRYST1   4.1684   4.1684   4.1684  90.00  90.00  90.00 P 1           1
+ATOM      1 NI1  NIO     1       0.000   0.000   0.000  1.00  0.00      NIO  Ni
+ATOM      2 O1   NIO     1       2.084   2.084   2.084  1.00  0.00      NIO  O
+ATOM      3 O2   NIO     1       0.000   0.000   2.084  1.00  0.00      NIO  O
+ATOM      4 O3   NIO     1       0.000   2.084   0.000  1.00  0.00      NIO  O
+ATOM      5 O4   NIO     1       2.084   0.000   0.000  1.00  0.00      NIO  O
+ATOM      6 NI2  NIO     1       2.084   2.084   0.000  1.00  0.00      NIO  Ni
+ATOM      7 NI3  NIO     1       2.084   0.000   2.084  1.00  0.00      NIO  Ni
+ATOM      8 NI4  NIO     1       0.000   2.084   2.084  1.00  0.00      NIO  Ni
+END

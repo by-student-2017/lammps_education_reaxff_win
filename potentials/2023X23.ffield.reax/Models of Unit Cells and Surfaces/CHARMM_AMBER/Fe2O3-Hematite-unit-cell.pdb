@@ -1,0 +1,33 @@
+REMARK generated coordinate PDB file from .car/.mdf files
+CRYST1   5.0380   5.0380   13.7720  90.00  90.00  90.00 P 1           1
+ATOM      1 FE1  FEO     1       0.000   0.000   4.893  1.00  0.00      FEO  Fe
+ATOM      2 FE2  FEO     1       2.519   1.454   9.484  1.00  0.00      FEO  Fe
+ATOM      3 FE3  FEO     1       0.000   2.909   0.303  1.00  0.00      FEO  Fe
+ATOM      4 FE4  FEO     1       0.000   0.000   1.993  1.00  0.00      FEO  Fe
+ATOM      5 FE5  FEO     1       2.519   1.454   6.583  1.00  0.00      FEO  Fe
+ATOM      6 FE6  FEO     1       0.000   2.909  11.174  1.00  0.00      FEO  Fe
+ATOM      7 FE7  FEO     1       0.000   0.000   8.879  1.00  0.00      FEO  Fe
+ATOM      8 FE8  FEO     1       2.519   1.454  13.469  1.00  0.00      FEO  Fe
+ATOM      9 FE9  FEO     1       0.000   2.909   4.288  1.00  0.00      FEO  Fe
+ATOM     10 FE1  FEO     2       0.000   0.000  11.779  1.00  0.00      FEO  Fe
+ATOM     11 FE2  FEO     2       2.519   1.454   2.598  1.00  0.00      FEO  Fe
+ATOM     12 FE3  FEO     2       0.000   2.909   7.189  1.00  0.00      FEO  Fe
+ATOM     13 O1   FEO     2       1.541   0.000   3.443  1.00  0.00      FEO  O
+ATOM     14 O2   FEO     2       4.060   1.454   8.034  1.00  0.00      FEO  O
+ATOM     15 O3   FEO     2       1.541   2.909  12.624  1.00  0.00      FEO  O
+ATOM     16 O4   FEO     2      -0.771   1.335   3.443  1.00  0.00      FEO  O
+ATOM     17 O5   FEO     2       1.748   2.789   8.034  1.00  0.00      FEO  O
+ATOM     18 O6   FEO     2      -0.771   4.243  12.624  1.00  0.00      FEO  O
+ATOM     19 O7   FEO     2       1.748   3.028   3.443  1.00  0.00      FEO  O
+ATOM     20 O8   FEO     2       1.748   0.120   8.034  1.00  0.00      FEO  O
+ATOM     21 O9   FEO     2      -0.771   1.574  12.624  1.00  0.00      FEO  O
+ATOM     22 O10  FEO     2       3.497   0.000  10.329  1.00  0.00      FEO  O
+ATOM     23 O11  FEO     2       0.978   1.454   1.148  1.00  0.00      FEO  O
+ATOM     24 O12  FEO     2      -1.541   2.909   5.738  1.00  0.00      FEO  O
+ATOM     25 O13  FEO     2      -1.748   3.028  10.329  1.00  0.00      FEO  O
+ATOM     26 O14  FEO     2       3.290   0.120   1.148  1.00  0.00      FEO  O
+ATOM     27 O15  FEO     2       0.771   1.574   5.738  1.00  0.00      FEO  O
+ATOM     28 O16  FEO     2       0.771   1.335  10.329  1.00  0.00      FEO  O
+ATOM     29 O17  FEO     2       3.290   2.789   1.148  1.00  0.00      FEO  O
+ATOM     30 O18  FEO     2       0.771   4.243   5.738  1.00  0.00      FEO  O
+END

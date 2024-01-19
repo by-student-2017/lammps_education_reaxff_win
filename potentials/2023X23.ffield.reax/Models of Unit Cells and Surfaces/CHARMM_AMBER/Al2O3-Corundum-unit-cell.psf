@@ -1,0 +1,54 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+      30 !NATOM
+       1 ALO  1    ALO  AL1  ALO1      1.620000        26.9815           0
+       2 ALO  1    ALO  AL2  ALO1      1.620000        26.9815           0
+       3 ALO  1    ALO  AL3  ALO1      1.620000        26.9815           0
+       4 ALO  1    ALO  AL4  ALO1      1.620000        26.9815           0
+       5 ALO  1    ALO  AL5  ALO1      1.620000        26.9815           0
+       6 ALO  1    ALO  AL6  ALO1      1.620000        26.9815           0
+       7 ALO  1    ALO  AL7  ALO1      1.620000        26.9815           0
+       8 ALO  1    ALO  AL8  ALO1      1.620000        26.9815           0
+       9 ALO  1    ALO  AL9  ALO1      1.620000        26.9815           0
+      10 ALO  2    ALO  AL1  ALO1      1.620000        26.9815           0
+      11 ALO  2    ALO  AL2  ALO1      1.620000        26.9815           0
+      12 ALO  2    ALO  AL3  ALO1      1.620000        26.9815           0
+      13 ALO  2    ALO  O1   OAL1     -1.080000        15.9994           0
+      14 ALO  2    ALO  O2   OAL1     -1.080000        15.9994           0
+      15 ALO  2    ALO  O3   OAL1     -1.080000        15.9994           0
+      16 ALO  2    ALO  O4   OAL1     -1.080000        15.9994           0
+      17 ALO  2    ALO  O5   OAL1     -1.080000        15.9994           0
+      18 ALO  2    ALO  O6   OAL1     -1.080000        15.9994           0
+      19 ALO  2    ALO  O7   OAL1     -1.080000        15.9994           0
+      20 ALO  2    ALO  O8   OAL1     -1.080000        15.9994           0
+      21 ALO  2    ALO  O9   OAL1     -1.080000        15.9994           0
+      22 ALO  2    ALO  O10  OAL1     -1.080000        15.9994           0
+      23 ALO  2    ALO  O11  OAL1     -1.080000        15.9994           0
+      24 ALO  2    ALO  O12  OAL1     -1.080000        15.9994           0
+      25 ALO  2    ALO  O13  OAL1     -1.080000        15.9994           0
+      26 ALO  2    ALO  O14  OAL1     -1.080000        15.9994           0
+      27 ALO  2    ALO  O15  OAL1     -1.080000        15.9994           0
+      28 ALO  2    ALO  O16  OAL1     -1.080000        15.9994           0
+      29 ALO  2    ALO  O17  OAL1     -1.080000        15.9994           0
+      30 ALO  2    ALO  O18  OAL1     -1.080000        15.9994           0
+
+       0 !NBOND: bonds
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0

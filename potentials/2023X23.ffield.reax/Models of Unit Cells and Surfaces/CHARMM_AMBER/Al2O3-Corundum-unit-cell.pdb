@@ -1,0 +1,33 @@
+REMARK generated coordinate PDB file from .car/.mdf files
+CRYST1   4.7589   4.7589   12.9910  90.00  90.00  90.00 P 1           1
+ATOM      1 AL1  ALO     1       0.000   0.000   4.573  1.00  0.00      ALO  Al
+ATOM      2 AL2  ALO     1       2.379   1.374   8.903  1.00  0.00      ALO  Al
+ATOM      3 AL3  ALO     1       0.000   2.748   0.242  1.00  0.00      ALO  Al
+ATOM      4 AL4  ALO     1       0.000   0.000   1.923  1.00  0.00      ALO  Al
+ATOM      5 AL5  ALO     1       2.379   1.374   6.253  1.00  0.00      ALO  Al
+ATOM      6 AL6  ALO     1       0.000   2.748  10.583  1.00  0.00      ALO  Al
+ATOM      7 AL7  ALO     1       0.000   0.000   8.418  1.00  0.00      ALO  Al
+ATOM      8 AL8  ALO     1       2.379   1.374  12.749  1.00  0.00      ALO  Al
+ATOM      9 AL9  ALO     1       0.000   2.748   4.088  1.00  0.00      ALO  Al
+ATOM     10 AL1  ALO     2       0.000   0.000  11.068  1.00  0.00      ALO  Al
+ATOM     11 AL2  ALO     2       2.379   1.374   2.408  1.00  0.00      ALO  Al
+ATOM     12 AL3  ALO     2       0.000   2.748   6.738  1.00  0.00      ALO  Al
+ATOM     13 O1   ALO     2       1.456   0.000   3.248  1.00  0.00      ALO  O
+ATOM     14 O2   ALO     2       3.836   1.374   7.578  1.00  0.00      ALO  O
+ATOM     15 O3   ALO     2       1.456   2.748  11.908  1.00  0.00      ALO  O
+ATOM     16 O4   ALO     2      -0.728   1.261   3.248  1.00  0.00      ALO  O
+ATOM     17 O5   ALO     2       1.651   2.635   7.578  1.00  0.00      ALO  O
+ATOM     18 O6   ALO     2      -0.728   4.009  11.908  1.00  0.00      ALO  O
+ATOM     19 O7   ALO     2       1.651   2.860   3.248  1.00  0.00      ALO  O
+ATOM     20 O8   ALO     2       1.651   0.113   7.578  1.00  0.00      ALO  O
+ATOM     21 O9   ALO     2      -0.728   1.486  11.908  1.00  0.00      ALO  O
+ATOM     22 O10  ALO     2       3.303   0.000   9.743  1.00  0.00      ALO  O
+ATOM     23 O11  ALO     2       0.923   1.374   1.083  1.00  0.00      ALO  O
+ATOM     24 O12  ALO     2      -1.456   2.748   5.413  1.00  0.00      ALO  O
+ATOM     25 O13  ALO     2      -1.651   2.860   9.743  1.00  0.00      ALO  O
+ATOM     26 O14  ALO     2       3.108   0.113   1.083  1.00  0.00      ALO  O
+ATOM     27 O15  ALO     2       0.728   1.486   5.413  1.00  0.00      ALO  O
+ATOM     28 O16  ALO     2       0.728   1.261   9.743  1.00  0.00      ALO  O
+ATOM     29 O17  ALO     2       3.108   2.635   1.083  1.00  0.00      ALO  O
+ATOM     30 O18  ALO     2       0.728   4.009   5.413  1.00  0.00      ALO  O
+END

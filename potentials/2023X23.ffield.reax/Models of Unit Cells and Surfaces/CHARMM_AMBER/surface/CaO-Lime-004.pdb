@@ -1,0 +1,35 @@
+REMARK generated coordinate PDB file from .car/.mdf files
+CRYST1  4.815  4.815  119.260  90.00  90.00  90.00 P 1           1
+ATOM      1 CA1  CaO     1       0.000   0.000   0.000  1.00  0.00      CaO  Ca
+ATOM      2 O1   CaO     1       2.408   2.408   2.408  1.00  0.00      CaO  O
+ATOM      3 O2   CaO     1       2.408   0.000   0.000  1.00  0.00      CaO  O
+ATOM      4 O3   CaO     1       0.000   2.408   0.000  1.00  0.00      CaO  O
+ATOM      5 O4   CaO     1       0.000   0.000   2.408  1.00  0.00      CaO  O
+ATOM      6 CA2  CaO     1       0.000   2.408   2.408  1.00  0.00      CaO  Ca
+ATOM      7 CA3  CaO     1       2.408   0.000   2.408  1.00  0.00      CaO  Ca
+ATOM      8 CA4  CaO     1       2.408   2.408   0.000  1.00  0.00      CaO  Ca
+ATOM      9 CA5  CaO     1       0.000   0.000   4.815  1.00  0.00      CaO  Ca
+ATOM     10 O5   CaO     1       2.408   2.408   7.223  1.00  0.00      CaO  O
+ATOM     11 O6   CaO     1       2.408   0.000   4.815  1.00  0.00      CaO  O
+ATOM     12 O7   CaO     1       0.000   2.408   4.815  1.00  0.00      CaO  O
+ATOM     13 O8   CaO     1       0.000   0.000   7.223  1.00  0.00      CaO  O
+ATOM     14 CA6  CaO     1       0.000   2.408   7.223  1.00  0.00      CaO  Ca
+ATOM     15 CA7  CaO     1       2.408   0.000   7.223  1.00  0.00      CaO  Ca
+ATOM     16 CA8  CaO     1       2.408   2.408   4.815  1.00  0.00      CaO  Ca
+ATOM     17 CA9  CaO     1       0.000   0.000   9.630  1.00  0.00      CaO  Ca
+ATOM     18 O1   CaO     2       2.408   2.408  12.037  1.00  0.00      CaO  O
+ATOM     19 O2   CaO     2       2.408   0.000   9.630  1.00  0.00      CaO  O
+ATOM     20 O3   CaO     2       0.000   2.408   9.630  1.00  0.00      CaO  O
+ATOM     21 O4   CaO     2       0.000   0.000  12.038  1.00  0.00      CaO  O
+ATOM     22 CA1  CaO     2       0.000   2.408  12.038  1.00  0.00      CaO  Ca
+ATOM     23 CA2  CaO     2       2.408   0.000  12.038  1.00  0.00      CaO  Ca
+ATOM     24 CA3  CaO     2       2.408   2.408   9.630  1.00  0.00      CaO  Ca
+ATOM     25 CA4  CaO     2       0.000   0.000  14.445  1.00  0.00      CaO  Ca
+ATOM     26 O5   CaO     2       2.408   2.408  16.852  1.00  0.00      CaO  O
+ATOM     27 O6   CaO     2       2.408   0.000  14.445  1.00  0.00      CaO  O
+ATOM     28 O7   CaO     2       0.000   2.408  14.445  1.00  0.00      CaO  O
+ATOM     29 O8   CaO     2       0.000   0.000  16.853  1.00  0.00      CaO  O
+ATOM     30 CA5  CaO     2       0.000   2.408  16.853  1.00  0.00      CaO  Ca
+ATOM     31 CA6  CaO     2       2.408   0.000  16.853  1.00  0.00      CaO  Ca
+ATOM     32 CA7  CaO     2       2.408   2.408  14.445  1.00  0.00      CaO  Ca
+END

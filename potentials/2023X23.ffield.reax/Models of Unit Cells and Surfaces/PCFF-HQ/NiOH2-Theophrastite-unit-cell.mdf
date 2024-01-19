@@ -1,0 +1,33 @@
+!BIOSYM molecular_data 4
+ 
+!Date: Thu Jan 19 08:01:19 2023   Materials Studio Generated MDF file
+ 
+#topology
+
+@column 1 element
+@column 2 atom_type
+@column 3 charge_group
+@column 4 isotope
+@column 5 formal_charge
+@column 6 charge
+@column 7 switching_atom
+@column 8 oop_flag
+@column 9 chirality_flag
+@column 10 occupancy
+@column 11 xray_temp_factor
+@column 12 connections
+ 
+@molecule NiOH2
+ 
+XXXX_1:Ni1          Ni nio2    ?     0  2+    1.5100 0 0 8 1.0000  0.0000 
+XXXX_1:O1           O  oni2    ?     0  1-   -1.1200 0 0 8 1.0000  0.0000 H1 
+XXXX_1:H1           H  hop     ?     0  0     0.3650 0 0 8 1.0000  0.0000 O1 
+XXXX_1:O2           O  oni2    ?     0  1-   -1.1200 0 0 8 1.0000  0.0000 H2 
+XXXX_1:H2           H  hop     ?     0  0     0.3650 0 0 8 1.0000  0.0000 O2 
+ 
+!
+#symmetry
+@periodicity 3 xyz
+@group (P1)
+
+#end

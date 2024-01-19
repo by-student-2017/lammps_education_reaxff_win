@@ -1,0 +1,58 @@
+!BIOSYM molecular_data 4
+ 
+!Date: Thu Jan 19 07:57:27 2023   Materials Studio Generated MDF file
+ 
+#topology
+
+@column 1 element
+@column 2 atom_type
+@column 3 charge_group
+@column 4 isotope
+@column 5 formal_charge
+@column 6 charge
+@column 7 switching_atom
+@column 8 oop_flag
+@column 9 chirality_flag
+@column 10 occupancy
+@column 11 xray_temp_factor
+@column 12 connections
+ 
+@molecule Fe2O3
+ 
+XXXX_1:Fe1          Fe feo1    ?     0  2+    1.7400 0 0 8 1.0000  0.0061 
+XXXX_1:Fe2          Fe feo1    ?     0  2+    1.7400 0 0 8 1.0000  0.0061 
+XXXX_1:Fe3          Fe feo1    ?     0  2+    1.7400 0 0 8 1.0000  0.0061 
+XXXX_1:Fe4          Fe feo1    ?     0  2+    1.7400 0 0 8 1.0000  0.0061 
+XXXX_1:Fe5          Fe feo1    ?     0  2+    1.7400 0 0 8 1.0000  0.0061 
+XXXX_1:Fe6          Fe feo1    ?     0  2+    1.7400 0 0 8 1.0000  0.0061 
+XXXX_1:Fe7          Fe feo1    ?     0  2+    1.7400 0 0 8 1.0000  0.0061 
+XXXX_1:Fe8          Fe feo1    ?     0  2+    1.7400 0 0 8 1.0000  0.0061 
+XXXX_1:Fe9          Fe feo1    ?     0  2+    1.7400 0 0 8 1.0000  0.0061 
+XXXX_1:Fe10         Fe feo1    ?     0  2+    1.7400 0 0 8 1.0000  0.0061 
+XXXX_1:Fe11         Fe feo1    ?     0  2+    1.7400 0 0 8 1.0000  0.0061 
+XXXX_1:Fe12         Fe feo1    ?     0  2+    1.7400 0 0 8 1.0000  0.0061 
+XXXX_1:O1           O  ofe1    ?     0  2-   -1.1600 0 0 8 1.0000  0.0061 
+XXXX_1:O2           O  ofe1    ?     0  2-   -1.1600 0 0 8 1.0000  0.0061 
+XXXX_1:O3           O  ofe1    ?     0  2-   -1.1600 0 0 8 1.0000  0.0061 
+XXXX_1:O4           O  ofe1    ?     0  2-   -1.1600 0 0 8 1.0000  0.0061 
+XXXX_1:O5           O  ofe1    ?     0  2-   -1.1600 0 0 8 1.0000  0.0061 
+XXXX_1:O6           O  ofe1    ?     0  2-   -1.1600 0 0 8 1.0000  0.0061 
+XXXX_1:O7           O  ofe1    ?     0  2-   -1.1600 0 0 8 1.0000  0.0061 
+XXXX_1:O8           O  ofe1    ?     0  2-   -1.1600 0 0 8 1.0000  0.0061 
+XXXX_1:O9           O  ofe1    ?     0  2-   -1.1600 0 0 8 1.0000  0.0061 
+XXXX_1:O10          O  ofe1    ?     0  2-   -1.1600 0 0 8 1.0000  0.0061 
+XXXX_1:O11          O  ofe1    ?     0  2-   -1.1600 0 0 8 1.0000  0.0061 
+XXXX_1:O12          O  ofe1    ?     0  2-   -1.1600 0 0 8 1.0000  0.0061 
+XXXX_1:O13          O  ofe1    ?     0  2-   -1.1600 0 0 8 1.0000  0.0061 
+XXXX_1:O14          O  ofe1    ?     0  2-   -1.1600 0 0 8 1.0000  0.0061 
+XXXX_1:O15          O  ofe1    ?     0  2-   -1.1600 0 0 8 1.0000  0.0061 
+XXXX_1:O16          O  ofe1    ?     0  2-   -1.1600 0 0 8 1.0000  0.0061 
+XXXX_1:O17          O  ofe1    ?     0  2-   -1.1600 0 0 8 1.0000  0.0061 
+XXXX_1:O18          O  ofe1    ?     0  2-   -1.1600 0 0 8 1.0000  0.0061 
+ 
+!
+#symmetry
+@periodicity 3 xyz
+@group (P1)
+
+#end

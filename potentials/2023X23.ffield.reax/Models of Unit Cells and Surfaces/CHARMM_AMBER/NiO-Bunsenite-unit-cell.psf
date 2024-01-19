@@ -1,0 +1,32 @@
+PSF
+
+       2 !NTITLE
+ REMARKS NAMD/X-Plor PSF generated from .car/.mdf files
+ REMARKS modified from msi2lmp, Jacob Gissinger and Hendrik Heinz 2015
+
+       8 !NATOM
+       1 NIO  1    NIO  NI1  NIO1      1.100000        58.6934           0
+       2 NIO  1    NIO  O1   ONI1     -1.100000        15.9994           0
+       3 NIO  1    NIO  O2   ONI1     -1.100000        15.9994           0
+       4 NIO  1    NIO  O3   ONI1     -1.100000        15.9994           0
+       5 NIO  1    NIO  O4   ONI1     -1.100000        15.9994           0
+       6 NIO  1    NIO  NI2  NIO1      1.100000        58.6934           0
+       7 NIO  1    NIO  NI3  NIO1      1.100000        58.6934           0
+       8 NIO  1    NIO  NI4  NIO1      1.100000        58.6934           0
+
+       0 !NBOND: bonds
+
+       0 !NTHETA: angles
+
+       0 !NPHI: dihedrals
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB
+
+       1       0 !NGRP
+       0       0       0
