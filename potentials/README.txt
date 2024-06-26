@@ -1924,6 +1924,11 @@ Volume 10 - 2022 | https://doi.org/10.3389/fchem.2022.951261
 2022X30B, CHOAlGe
 D. T. Romine, Master thesis (2022).
 https://bearworks.missouristate.edu/theses/3739/
+
+2022X31
+OMg
+F. Fiesinger et al., Chem. Phys. Chem. 16 (2022).
+https://doi.org/10.1002/cssc.202201821
 -------------------------------------------------------------------
 2023
 
@@ -2122,6 +2127,45 @@ H. Suzuki et al.,
 ACS Omega 2024, XXXX, XXX, XXX-XXX.
 Publication Date:January 12, 2024
 https://doi.org/10.1021/acsomega.3c07902
+
+2024X5
+HOAlSiNaK
+Y. Zhang et al., J. Chem. Phys. 160 (2024) 094103.
+https://doi.org/10.1063/5.0194486
+
+2024X6
+HONaPCa
+Z. Fallah et al., J. Chem. Phys. 160 (2024) 184505.
+https://doi.org/10.1063/5.0204589
+
+2024X7
+CHOBrNa
+J. Hur et al., Chem. Phys. Chem. 25 (2024).
+https://doi.org/10.1002/cphc.202300860
+
+2024X8
+CHONBAlSiCl
+N. Uene et al., J. Phys. Chem. C 2024, 128, 3, 1075-1086.
+Publication Date:January 16, 2024
+https://doi.org/10.1021/acs.jpcc.3c06704
+
+2024X9
+CHONZnClMg
+Y. Yang et al., J. Phys. Chem. C 2024, 128, 12, 5257-5270.
+Publication Date:March 15, 2024
+https://doi.org/10.1021/acs.jpcc.3c07183
+
+2024X10
+CHOMnLiFNSP
+M. K. Talkhoncheh et al., J. Phys. Chem. C 2024, 128, 16, 6538-6550.
+Publication Date:April 12, 2024
+https://doi.org/10.1021/acs.jpcc.3c07242
+
+2024X11
+CHO
+Q. Wang et al., J. Phys. Chem. A 2024, XXXX, XXX, XXX-XXX
+Publication Date:June 13, 2024
+https://doi.org/10.1021/acs.jpca.4c01924
 -------------------------------------------------------------------
 important information
 - X. Hao et al., J. Phys. Chem. C 2023, 127, 40, 20157–20168
