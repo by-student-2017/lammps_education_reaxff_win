@@ -2130,6 +2130,10 @@ https://doi.org/10.1021/acs.jpcc.3c05175
 -------------------------------------------------------------------
 input file (reaxff, lammps)
 
+- Q. Huang et al., J. Phys. Chem. A 2024, 128, 12, 2487-2497.: https://doi.org/10.1021/acs.jpca.3c07770
+
+- M. Pouvreau et al., J. Phys. Chem. Lett. 2023, 14, 30, 6743-6748.: https://doi.org/10.1021/acs.jpclett.3c01176
+
 - K. Banlusan et al., J. Phys. Chem. C 119 (2015) 25845-25852.: https://doi.org/10.1021/acs.jpcc.5b05446
   Metal–organic frameworks (MOFs): Supporting Information
 
