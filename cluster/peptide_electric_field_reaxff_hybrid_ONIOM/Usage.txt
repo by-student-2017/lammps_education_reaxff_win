@@ -1,0 +1,5 @@
+1. run_msmpi_step1.bat
+2. expand x y z
+3. rewrite group in in_step3.lmp
+4. run_msmpi_step2.bat
+5. run_msmpi_step3.bat

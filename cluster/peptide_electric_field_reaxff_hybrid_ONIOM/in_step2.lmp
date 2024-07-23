@@ -1,0 +1,26 @@
+#-----------------------------------------------------------------------------------------
+# The one molecule in water for use with DFTB+
+# test: lammps-stable_29Sep2021
+#-------------------- Initialization -----------------------------------------------------
+clear
+echo            both    # echoes each input script command to both log file and screen
+#-----------------------------------------------------------------------------------------
+
+variable Nh2o equal 300 # set the number of waters (Due to minimize settings, an even number is required)]
+
+#-----------------------------------------------------------------------------------------
+units           real
+dimension       3
+boundary        m m m # for (C)luster of DFTB+
+atom_style      full  # yes-MOLECULE
+
+#-------------------- Atom & Lattice description ----------------------------------------
+read_data data_after_step1.lammps extra/bond/per/atom 2 extra/angle/per/atom 1 extra/special/per/atom 2
+# extra for H2O
+
+molecule water spce.mol
+create_atoms 0 random ${Nh2o} 12345 NULL overlap 2.0 mol water 12345
+
+write_data data_after_step2.lammps
+
+#-----------------------------------------------------------------------------------------

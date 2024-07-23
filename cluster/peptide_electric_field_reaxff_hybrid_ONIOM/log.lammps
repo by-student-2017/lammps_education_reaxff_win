@@ -1,0 +1,309 @@
+LAMMPS (22 Dec 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Loaded 1 plugins from C:\Program Files\LAMMPS 64-bit 23Jun2022\plugins
+Loaded 0 plugins from C:\Program Files\LAMMPS 64-bit 23Jun2022-MPI\plugins
+Loaded 1 plugins from C:\Program Files\LAMMPS 64-bit 22Dec2022-MSMPI\plugins
+Loaded 1 plugins from C:\Program Files\LAMMPS 64-bit 28Mar2023-MPI\plugins
+#-----------------------------------------------------------------------------------------
+# The one molecule in water for use with DFTB+
+# test: lammps-stable_29Sep2021
+#-------------------- Initialization -----------------------------------------------------
+clear
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Loaded 1 plugins from C:\Program Files\LAMMPS 64-bit 23Jun2022\plugins
+Loaded 0 plugins from C:\Program Files\LAMMPS 64-bit 23Jun2022-MPI\plugins
+Loaded 1 plugins from C:\Program Files\LAMMPS 64-bit 22Dec2022-MSMPI\plugins
+Loaded 1 plugins from C:\Program Files\LAMMPS 64-bit 28Mar2023-MPI\plugins
+#-----------------------------------------------------------------------------------------
+units           real
+dimension       3
+boundary        m m m # for (C)luster of DFTB+
+atom_style      full  # yes-MOLECULE
+
+#-----------------------------------------------------------------------------------------
+variable Tini equal 273+25.0 # [K] (Initial temperature)
+variable Tfin equal 273+25.0 # [K] (Annealing temperature)
+
+variable  Nout equal 1000 # every 1000 time steps to the specified file
+variable nmain equal 321 # the number of atoms in data_after_step1.lammps
+
+#-----------------------------------------------------------------------------------------
+read_data data_after_step2.lammps
+Reading data file ...
+  orthogonal box = (-16.165891 -12.517442 -15.904859) to (32.876945 35.239818 31.29199)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  1221 atoms
+  reading velocities ...
+  1221 velocities
+  scanning bonds ...
+  2 = max bonds/atom
+  scanning angles ...
+  1 = max angles/atom
+  reading bonds ...
+  600 bonds
+  reading angles ...
+  300 angles
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     2 = max # of 1-2 neighbors
+     1 = max # of 1-3 neighbors
+     1 = max # of 1-4 neighbors
+     2 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_data CPU = 0.008 seconds
+
+variable elem string "C O H O H"
+
+#-------------------- pair style settings --------------------------------
+pair_style hybrid reax/c NULL lj/cut/coul/cut 10.0 coul/cut 10.0
+pair_coeff * * reax/c ./potentials/ffield.reax.2022X19.CHONSLiNaKClI ${elem} # K+, OH-
+pair_coeff * * reax/c ./potentials/ffield.reax.2022X19.CHONSLiNaKClI C O H O H 
+WARNING: Van der Waals parameters for element LI indicate inner wall+shielding, but earlier atoms indicate a different van der Waals method. This may cause division-by-zero errors. Keeping van der Waals setting for earlier atoms. (src/REAXFF/reaxff_ffield.cpp:251)
+WARNING: Van der Waals parameters for element K indicate inner wall+shielding, but earlier atoms indicate a different van der Waals method. This may cause division-by-zero errors. Keeping van der Waals setting for earlier atoms. (src/REAXFF/reaxff_ffield.cpp:251)
+#pair_coeff * * reax/c ./potentials/ffield.reax.098.CHONSMgPNaTiClFKLi ${elem} # K+, OH-
+pair_coeff 4 4 lj/cut/coul/cut 0.1553 3.166 # O-O
+pair_coeff 4 5 lj/cut/coul/cut 0.0 1.0 # O-H
+pair_coeff 5 5 lj/cut/coul/cut 0.0 1.0 # H-H
+pair_coeff 1*3 4 coul/cut
+pair_coeff 1*3 5 coul/cut
+
+#bond_style harmonic
+#bond_coeff 1 $(80.0) 1.0 # the r0 of O-H bond [Angstrom]
+
+#angle_style harmonic
+#angle_coeff 1 $(300.0) 109.47 # the theta0 of H-O-H angle [degree]
+
+bond_style zero
+bond_coeff 1 1.0
+
+angle_style zero
+angle_coeff 1 109.47
+
+group main  id <= ${nmain}
+group main  id <= 321
+321 atoms in group main
+group water id >  ${nmain}
+group water id >  321
+900 atoms in group water
+
+fix  f0 main qeq/reax 1 0.0 10.0 1e-6 reax/c
+fix rigid water shake 0.0001 10 10000 b 1 a 1
+Finding SHAKE clusters ...
+       0 = # of size 2 clusters
+       0 = # of size 3 clusters
+       0 = # of size 4 clusters
+     300 = # of frozen angles
+  find clusters CPU = 0.000 seconds
+
+#-------------------- Energy Minimization ------------------------------------------------
+minimize 0.0 1e-12 100000 100000
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+
+- pair reaxff command: doi:10.1016/j.parco.2011.08.005
+
+@Article{Aktulga12,
+ author = {H. M. Aktulga and J. C. Fogarty and S. A. Pandit and A. Y. Grama},
+ title = {Parallel Reactive Molecular Dynamics: {N}umerical Methods and Algorithmic Techniques},
+ journal = {Parallel Computing},
+ year =    2012,
+ volume =  38,
+ number =  {4--5},
+ pages =   {245--259}
+}
+
+- fix qeq/reaxff command: doi:10.1016/j.parco.2011.08.005
+
+@Article{Aktulga12,
+ author = {H. M. Aktulga and J. C. Fogarty and S. A. Pandit and A. Y. Grama},
+ title = {Parallel Reactive Molecular Dynamics: {N}umerical Methods and Algorithmic Techniques},
+ journal = {Parallel Computing},
+ year =    2012,
+ volume =  38,
+ pages =   {245--259}
+}
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+WARNING: Using a manybody potential with bonds/angles/dihedrals and special_bond exclusions (src/pair.cpp:245)
+WARNING: Using fix shake with minimization.
+  Substituting constraints with harmonic restraint forces using kbond=1987 (src/RIGID/fix_shake.cpp:358)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12
+  ghost atom cutoff = 12
+  binsize = 6, bins = 9 8 8
+  6 neighbor lists, perpetual/occasional/extra = 6 0 0
+  (1) pair reax/c, perpetual, skip from (5)
+      attributes: half, newton off, ghost
+      pair build: skip/ghost
+      stencil: none
+      bin: none
+  (2) pair lj/cut/coul/cut, perpetual, skip from (6)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (3) pair coul/cut, perpetual, skip from (6)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (4) fix qeq/reax, perpetual
+      attributes: half, newton off
+      pair build: half/bin/newtoff
+      stencil: full/bin/3d
+      bin: standard
+  (5) neighbor class addition, perpetual
+      attributes: half, newton off, ghost
+      pair build: half/bin/newtoff/ghost
+      stencil: full/ghost/bin/3d
+      bin: standard
+  (6) neighbor class addition, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Per MPI rank memory allocation (min/avg/max) = 31.04 | 31.04 | 31.04 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press          Volume    
+         0   0              9318.5321      0              9318.5321     -1509.0498      110543.37    
+        10   0              8923.899       0              8925.2369     -91.492727      110543.37    
+SHAKE stats (type/ave/delta/count) on step 10
+Bond:   1   1.00004   0.00356658       600
+Angle:  1   109.461   0.96315          300
+Loop time of 0.5035 on 1 procs for 10 steps with 1221 atoms
+
+62.1% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+      9318.53212235196   8925.23740154357   8925.23692079827
+  Force two-norm initial, final = 869.27964 221.16089
+  Force max component initial, final = 207.01515 42.702421
+  Final line search alpha, max atom move = 1.3630977e-13 5.820757e-12
+  Iterations, force evaluations = 10 155
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.37182    | 0.37182    | 0.37182    |   0.0 | 73.85
+Bond    | 2.7e-05    | 2.7e-05    | 2.7e-05    |   0.0 |  0.01
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 1.1e-05    | 1.1e-05    | 1.1e-05    |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0.13067    | 0.13067    | 0.13067    |   0.0 | 25.95
+Other   |            | 0.000965   |            |       |  0.19
+
+Nlocal:           1221 ave        1221 max        1221 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:              0 ave           0 max           0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          44062 ave       44062 max       44062 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 44062
+Ave neighs/atom = 36.086814
+Ave special neighs/atom = 1.4742015
+Neighbor list builds = 0
+Dangerous builds = 0
+#-------------------- Settings -----------------------------------------------------------
+reset_timestep 0
+
+timestep        0.001 # 0.001 [fs]
+
+thermo ${Nout}   # computes and prints thermodynamic
+thermo 1000   
+thermo_style custom step temp vol press etotal   # specifies content of thermodynamic data to be printed in screen
+
+velocity all create ${Tini} 12345 mom yes rot no # sets the velocity of a group of atoms
+velocity all create 298 12345 mom yes rot no 
+
+#-------------------- Equilibrium --------------------------------------------------------
+reset_timestep 0
+
+# Non-Equilibrium system, calculation settings
+#fix integ   all nve
+#fix therm   all langevin ${Tini} ${Tfin} $(100*dt) 12345
+
+# Equilibrium system, calculation settings
+fix f1 all nvt temp ${Tini} ${Tfin} $(100*dt) # temp conserved
+fix f1 all nvt temp 298 ${Tfin} $(100*dt) 
+fix f1 all nvt temp 298 298 $(100*dt) 
+fix f1 all nvt temp 298 298 0.10000000000000000555 
+#fix f1 all npt temp ${Tini} ${Tfin} $(100*dt) iso 0.0 1.0 $(1000*dt) # temp and pressure conserved
+
+#---------- output file settings --------------------------------------
+dump            d1 all cfg ${Nout} cfg/run_all.eq.*.cfg mass type xs ys zs id type vx vy vz fx fy fz q
+dump            d1 all cfg 1000 cfg/run_all.eq.*.cfg mass type xs ys zs id type vx vy vz fx fy fz q
+dump_modify     d1 element C O H Ow Hw
+#dump_modify     d1 sort id
+#dump            d2 main cfg ${Nout} cfg/run_main.eq.*.cfg mass type xs ys zs id type vx vy vz fx fy fz q
+#dump_modify     d2 element C O H Ow Hw
+#----------------------------------------------------------------------
+
+run             400000 # 4.0 [ps]
+WARNING: Using a manybody potential with bonds/angles/dihedrals and special_bond exclusions (src/pair.cpp:245)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12
+  ghost atom cutoff = 12
+  binsize = 6, bins = 9 8 8
+  6 neighbor lists, perpetual/occasional/extra = 6 0 0
+  (1) pair reax/c, perpetual, skip from (5)
+      attributes: half, newton off, ghost
+      pair build: skip/ghost
+      stencil: none
+      bin: none
+  (2) pair lj/cut/coul/cut, perpetual, skip from (6)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (3) pair coul/cut, perpetual, skip from (6)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (4) fix qeq/reax, perpetual
+      attributes: half, newton off
+      pair build: half/bin/newtoff
+      stencil: full/bin/3d
+      bin: standard
+  (5) neighbor class addition, perpetual
+      attributes: half, newton off, ghost
+      pair build: half/bin/newtoff/ghost
+      stencil: full/ghost/bin/3d
+      bin: standard
+  (6) neighbor class addition, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+SHAKE stats (type/ave/delta/count) on step 0
+Bond:   1   1.00004   0.00356658       600
+Angle:  1   109.461   0.96315          300
+Per MPI rank memory allocation (min/avg/max) = 31.29 | 31.29 | 31.29 Mbytes
+   Step          Temp          Volume         Press          TotEng    
+         0   298            110570.48     -177796.67      9506.8121    
+      1000   287.28701      110570.48      1041.7895      10020.333    
+      2000   293.89635      110570.48      275.50996      9586.4558    
+      3000   295.64873      110570.48     -232.80174      9676.361     
+      4000   287.11295      110570.48     -37.862903      9477.3194    
+      5000   308.58521      110570.48      50.645398      9492.69      
+      6000   303.42907      110570.48     -4278.8215      10356.601    
+      7000   302.41174      110570.48     -2733.9564      10141.832    
+      8000   297.926        110570.48     -148.67869      9612.1677    
+      9000   291.48183      110570.48      500.75912      10084.669    
+SHAKE stats (type/ave/delta/count) on step 10000
+Bond:   1   1         6.2681e-12       600
+Angle:  1   109.47    6.23572e-11      300
+     10000   289.56447      11

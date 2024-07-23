@@ -1,0 +1,115 @@
+#-----------------------------------------------------------------------------------------
+# The one molecule in water for use with DFTB+
+# test: lammps-stable_29Sep2021
+#-------------------- Initialization -----------------------------------------------------
+clear
+#-----------------------------------------------------------------------------------------
+units           real
+dimension       3
+boundary        m m m # for (C)luster of DFTB+
+atom_style      full  # yes-MOLECULE
+
+#-----------------------------------------------------------------------------------------
+variable Tini equal 273+25.0 # [K] (Initial temperature)
+variable Tfin equal 273+25.0 # [K] (Annealing temperature)
+
+variable  Nout equal 1000 # every 1000 time steps to the specified file
+variable nmain equal 321 # the number of atoms in data_after_step1.lammps
+
+#-----------------------------------------------------------------------------------------
+read_data data_after_step2.lammps
+
+variable elem string "C O H O H"
+
+#-------------------- pair style settings --------------------------------
+pair_style hybrid reax/c NULL lj/cut/coul/cut 10.0 coul/cut 10.0
+pair_coeff * * reax/c ./potentials/ffield.reax.2022X19.CHONSLiNaKClI ${elem} # K+, OH-
+#pair_coeff * * reax/c ./potentials/ffield.reax.098.CHONSMgPNaTiClFKLi ${elem} # K+, OH-
+pair_coeff 4 4 lj/cut/coul/cut 0.1553 3.166 # O-O
+pair_coeff 4 5 lj/cut/coul/cut 0.0 1.0 # O-H
+pair_coeff 5 5 lj/cut/coul/cut 0.0 1.0 # H-H
+pair_coeff 1*3 4 coul/cut
+pair_coeff 1*3 5 coul/cut
+
+#bond_style harmonic
+#bond_coeff 1 $(80.0) 1.0 # the r0 of O-H bond [Angstrom]
+
+#angle_style harmonic
+#angle_coeff 1 $(300.0) 109.47 # the theta0 of H-O-H angle [degree]
+
+bond_style zero
+bond_coeff 1 1.0
+
+angle_style zero
+angle_coeff 1 109.47
+
+group main  id <= ${nmain}
+group water id >  ${nmain}
+
+fix  f0 main qeq/reax 1 0.0 10.0 1e-6 reax/c
+fix rigid water shake 0.0001 10 10000 b 1 a 1
+
+#-------------------- Energy Minimization ------------------------------------------------
+minimize 0.0 1e-12 100000 100000
+#-------------------- Settings -----------------------------------------------------------
+reset_timestep 0
+
+timestep        0.001 # 0.001 [fs] 
+
+thermo ${Nout}   # computes and prints thermodynamic
+thermo_style custom step temp vol press etotal   # specifies content of thermodynamic data to be printed in screen
+
+velocity all create ${Tini} 12345 mom yes rot no # sets the velocity of a group of atoms
+
+#-------------------- Equilibrium --------------------------------------------------------
+reset_timestep 0
+
+# Non-Equilibrium system, calculation settings
+#fix integ   all nve
+#fix therm   all langevin ${Tini} ${Tfin} $(100*dt) 12345
+
+# Equilibrium system, calculation settings
+fix f1 all nvt temp ${Tini} ${Tfin} $(100*dt) # temp conserved
+#fix f1 all npt temp ${Tini} ${Tfin} $(100*dt) iso 0.0 1.0 $(1000*dt) # temp and pressure conserved
+
+#---------- output file settings --------------------------------------
+dump            d1 all cfg ${Nout} cfg/run_all.eq.*.cfg mass type xs ys zs id type vx vy vz fx fy fz q
+dump_modify     d1 element C O H Ow Hw
+#dump_modify     d1 sort id
+#dump            d2 main cfg ${Nout} cfg/run_main.eq.*.cfg mass type xs ys zs id type vx vy vz fx fy fz q
+#dump_modify     d2 element C O H Ow Hw
+#----------------------------------------------------------------------
+
+run             400000 # 4.0 [ps]
+
+unfix  f1 # deletes the previously d1fined fix 1
+undump d1 # deletes the previously defined dump 1
+#undump d2 # deletes the previously defined dump 2
+
+#-------------------- Run the simulation -------------------------------------------------
+#reset_timestep 0
+
+# Non-Equilibrium system, calculation settings
+#fix integef   all nve
+#fix thermef   all langevin ${Tini} ${Tfin} $(50*dt) 12345
+
+# Equilibrium system, calculation settings
+#fix f2 all nvt temp ${Tini} ${Tfin} $(100*dt) # temp conserved
+#fix f2 all npt temp ${Tini} ${Tfin} $(100*dt) iso 1.0 1.0 $(1000*dt) # temp and pressure conserved
+
+# E-field component values (electric field units) (electric field = volts/Angstrom) (E = V / d)
+#fix kick all efield 0.0 0.0 $(2.0/lz)
+#fix f4 all wall/reflect zlo EDGE zhi EDGE # For boundary p p f
+
+#---------- output file settings --------------------------------------
+#dump            d3 all cfg ${Nout} cfg/run_all.ef.*.cfg mass type xs ys zs id type vx vy vz fx fy fz q
+#dump_modify     d3 element C O H Ow Hw
+#dump_modify     d3 sort id
+#dump            d4 main cfg ${Nout} cfg/run_main.ef.*.cfg mass type xs ys zs id type vx vy vz fx fy fz q
+#dump_modify     d4 element C O H Ow Hw
+#----------------------------------------------------------------------
+
+#run             400000 # 4.0 [ps]
+
+#-------------------- End ----------------------------------------------------------------
+
