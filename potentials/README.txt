@@ -6,6 +6,51 @@ information.
 Acknowledgments
   ffield_V_Mo_Te_Bi (ffield.reax.2008X2.CHONSSiPtZrNiAuVBiTiMoTeNb) was kindly provided as a CC0 or MIT license by Professor William A. Goddard III and Professor Adri van Duin.
 
+-------------------------------------------------------------------
+Q. Mao et al., Progress in Energy and Combustion Science 97 (2023) 101084.
+-------------------------------------------------------------------
+Table 6. ReaxFF force field and applications. 
+ReaxFF force field Applications 
+H/O liquid water [168] (2017, No.58)
+C carbon condensed phases [169] (2015, No.6)
+C/H polycyclic aromatic hydrocarbons [170] (2017, No.68)
+C/H/O hydrocarbon [138,171] (2008, No.2, No.10, 2017, No.52)
+C/H/O/N/S/Mg/P/Na/Cu/Cl hydrocarbon/water weak interactions [172] (2018, No.70)
+C/H/Ar/He/Ne/Kr noble gas ion irradiation of graphene [173] (2016, No.7)
+C/H/O/N/S/Si/Pt/Zr/Ni/Cu/Co/He/Ne/Ar/Kr/Xe laser-induced incandescence of soot [174] (2010, No.32)
+C/H/O/N/S/Si energetic materials [175–177] (2009, No.29, No.20, 2011, No.22)
+H/O/N/B ammonia borane [178] (2010, No.41)
+C/H/B/N liquid carbon-boron-nitrogen hydrogen storage materials [179] (2016, 2016X10)
+Al/H/O aluminum-water [180] (2011, The parameters are not published)
+C/H/O/Al aluminum/aluminum hydride [181,182] (2009, No.4, 2016)
+Pd/O palladium/palladium oxide [160] (2013, 2013X1)
+C/H/O/Ge GeO2/Ge interfaces [183] (2019, No.87)
+C/H/O/Ca/Si hydration of calcium oxide surface [184] (2012, Not published as a parameter file)
+H/S/Mo molybdenum disulfide (MoS2) [185] (2017, No.53)
+V/O/C/H vanadium oxide catalyst [65] (2008, No.49)
+C/H/O/Fe/Al/Ni/Cu/S/Cr butane oxidation over a Cr2O3 catalyst [186] (2015, No.40)
+Ni/C/H hydrocarbon catalyzed by nickel [187] (2010, No.45)
+C/H/O/Ni/Pt platinum-nickel catalyst [188] (2016, 2016X1)
+C/H/O/N/S/Si/Pt/Zr/Ni/Cu/Co transition metal catalyzed reaction [165] (2005, No.31)
+C/H/Fe hydrogen with iron and iron carbide interface [189] (2016, 2016X5)
+C/H/O/Fe/Cl/Si/Al iron surface catalysis [190] (2012, Not published as a parameter file)
+Cu/C/O/H Cu-metal surface catalysis [191] (2020, Not published as a parameter file)
+Cu/Zr liquid Cu and Zr metal [192] (2019, No.84)
+Li/Si lithiation of silicon [193] (2015, Not published as a parameter file)
+Li/S sulfur cathode in lithium battery [194] (2015, No.44, 2015X2)
+H/O/Si/Al/Li lithium-aluminum silicate [195] (2012, 2012X7)
+C/H/O/N/S/Mg/P/Na/Li lithium battery electrolyte [196] (2012, Not published as a parameter file)
+H/O/Si/Al/Li SiO2/Al2O3 electrodes of lithium ion battery [197] (2016, No.43)
+C/H/O/S/Mo/Ni/Li/B/F/P/N lithium-sulfur battery [166] (2014, Not published as a parameter file)
+C/H/O/N/S/Si/Pt/Ni/Cu/Co/Zr/Y/Ba solid oxide fuel cell [198] (2014, No.30)
+C/H/O/Cs/K/Na/Cl/I/F/Li electrolyte–water [199] (2019, No.82)
+C/H/O/N/S/Mg/P/Na/Ti/Cl/F/K/Li aqueous electrolytes confined in 2D-TiO2/Ti3C2T2 MXene heterostructure [200] (2020, No.98)
+C/H/O/N/S/Mg/P/Na/Cu adsorption of ammonia on metal-organic framework [201] (2013, No.13)
+C/H/O/N/S/Si/Na/Al methanol to olefin reactions in zeolite [202] (2012, No.27)
+C/H/O/Fe/Al/Ni/Cu/S/Cr/Si/Ge surface reactions in atomic layer deposition [203] (2017, 2017X5)
+-------------------------------------------------------------------
+
+
 Ref.1: http://kiff.vfab.org/
 -------------------------------------------------------------------
 No.1
@@ -507,6 +552,12 @@ CHONSMgPNaTiClF
 Susanna Monti et al.,
 Cite this: J. Phys. Chem. C 2012, 116, 8, 5141-5150.
 https://doi.org/10.1021/jp2121593
+
+2012X7
+HOSiAlLi
+Badri Narayanan et al.,
+2012 Modelling Simul. Mater. Sci. Eng. 20 015002
+DOI 10.1088/0965-0393/20/1/015002
 -------------------------------------------------------------------
 2013
 
