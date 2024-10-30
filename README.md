@@ -1,6 +1,37 @@
 # lammps_education_reaxff_win
 
 ------------------------------------------------------------------------------
+## lammps (windows 11 (64 bit))
+
+## Installation (Lammps)
+1. LAMMPS Windows Installer Repository (http://packages.lammps.org/windows.html) -> LAMMPS Binaries Repository: ./legacy/admin/64bit (https://rpm.lammps.org/windows/legacy/admin/64bit/index.html)
+2. LAMMPS-64bit-22Dec2022-MSMPI-admin.exe (https://rpm.lammps.org/windows/legacy/admin/64bit/LAMMPS-64bit-22Dec2022-MSMPI-admin.exe)
+- LAMMPS Windows Installer Repository -> legacy -> admin -> 64bit -> LAMMPS-64bit-22Dec2022-MSMPI-admin.exe
+
+## Microsoft MPI
+1. Microsoft MPI v10.1.2 (https://www.microsoft.com/en-us/download/details.aspx?id=100593)
+
+## Gnuplot, Ovito and Python3
+* Gnuplot (http://www.gnuplot.info/)
+  http://www.yamamo10.jp/yamamoto/comp/gnuplot/inst_win/index.php
+* Ovito (https://www.ovito.org/windows-downloads/)
+
+## Python3 (installation) on PowerShell
+1. python3
+2. python3 -m pip install numpy
+
+## Usage (MS-MPI version)
+1. click run_msmpi.bat
+2. cfg folder > click *.cfg
+------------------------------------------------------------------------------
+# plot the temperature of each atom
+
+- MSMPI_heat_map version file
+1. *.cfg -> Ovito -> (upper right) Add modification... 
+2. Color coding -> Input property: f_ave_tempatom
+3. (click) Adjust range
+
+------------------------------------------------------------------------------
 ## lammps (windows 10 (64 bit))
 
 
