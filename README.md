@@ -59,7 +59,7 @@
 ## ffield.reax file
 1. see potentials directory
 
-
+------------------------------------------------------------------------------
 ## References
 * [IR1] [lammps-users] Script for calculating IR spectra
   https://lammps.sandia.gov/threads/msg64502.html
@@ -68,6 +68,13 @@
 * [P1] http://kiff.vfab.org/
   http://kiff.vfab.org/reax
   potentials folder are getting from above URL.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+## MOES
+- MOES (reaxff): https://apps.dtic.mil/sti/tr/pdf/ADA612711.pdf
+- MOES (github): https://github.com/MaOEA/MMO-MOES
 ------------------------------------------------------------------------------
 
 
