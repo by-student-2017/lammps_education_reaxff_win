@@ -75,6 +75,7 @@
 ## MOES
 - MOES (reaxff): https://apps.dtic.mil/sti/tr/pdf/ADA612711.pdf
 - MOES (github): https://github.com/MaOEA/MMO-MOES
+- https://www.researchgate.net/profile/Mark-Tschopp/publication/271847845_Understanding_and_Automating_the_Design_Aspects_of_Interatomic_Potential_Design/links/54d4b4750cf2464758063066/Understanding-and-Automating-the-Design-Aspects-of-Interatomic-Potential-Design.pdf
 ------------------------------------------------------------------------------
 
 
