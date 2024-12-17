@@ -78,7 +78,3 @@
 - https://www.researchgate.net/profile/Mark-Tschopp/publication/271847845_Understanding_and_Automating_the_Design_Aspects_of_Interatomic_Potential_Design/links/54d4b4750cf2464758063066/Understanding-and-Automating-the-Design-Aspects-of-Interatomic-Potential-Design.pdf
 ------------------------------------------------------------------------------
 
-
-## Acknowledgment ######################################
-- This project (modified version) is/was partially supported by the following :
-  + ATSUMITEC Co., Ltd.
