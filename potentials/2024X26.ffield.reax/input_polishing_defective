@@ -1,0 +1,61 @@
+# Initialization
+echo both
+variable p_id world  polishingx_defects # 1 2 3 4 1
+units           real
+dimension       3
+processors      4 4 3
+boundary        p p p
+atom_style      charge
+read_data ceria_defective_silica_gel40.lmp
+
+# Potential
+pair_style      reax/c NULL
+pair_coeff      * * ffield.reax.CeOHSiClNa   O Ce H Si
+fix             1 all qeq/reax 2 0.0 10.0 1e-6  reax/c
+neighbor        2  bin
+neigh_modify    every 10 delay 0 check yes
+
+# Define groups
+group fix_silica id 7911:8911
+group fix_ceria id 1:1008
+group slide_ceria id 1:1008
+group mobile subtract all fix_silica fix_ceria
+
+fix 2  fix_silica setforce 0.0 0.0 0.0
+fix 3 fix_ceria  setforce 0.0 0.0 0.0
+compute myTemp mobile temp
+
+# Thermal properties output
+thermo          40
+thermo_style    custom step etotal temp c_myTemp pe press pzz fmax
+timestep        0.25
+compute totalpressure all pressure thermo_temp
+
+# Compression
+fix 4 slide_ceria move linear 0.0000 0.0000 -0.00001 units box
+fix 5 mobile nvt temp 300 300 $(100.0*dt)
+run             3400000
+write_data      data.final_compression.${p_id}
+restart         200000 compression.*.restart.${p_id}
+unfix 4
+unfix 5
+
+# Sliding
+reset_timestep 0
+fix 4 slide_ceria move linear 0.0001 0.0000 0.0000 units box
+fix 5 mobile nvt temp 300 300 $(100.0*dt)
+run             10000000
+write_data      data.final_sliding.${p_id}
+restart 200000 sliding.*.restart.${p_id}g
+unfix 4
+unfix 5
+
+# Decompression
+reset_timestep 0
+fix 4 slide_ceria move linear 0.0000 0.0000 0.00001 units box
+fix 5 mobile nvt temp 300 300 $(100.0*dt)
+run             4000000
+write_data      data.final_decompression.${p_id}
+write_restart 200000 decompression.*.final.${p_id}
+unfix 4
+unfix 5
