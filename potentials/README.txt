@@ -2301,6 +2301,8 @@ CHPt
 A. Salom-Catala et al.,
 Cite this: J. Phys. Chem. C 2024, 128, 7, 2844–2855
 https://doi.org/10.1021/acs.jpcc.3c07126
+
+2024XX: https://doi.org/10.1021/acsnano.4c13792
 -------------------------------------------------------------------
 important information
 - X. Hao et al., J. Phys. Chem. C 2023, 127, 40, 20157–20168
@@ -2508,6 +2510,9 @@ LAMMPS input
 https://doi.org/10.1021/acs.jpcc.8b06409
 https://pubs.acs.org/doi/suppl/10.1021/acs.jpcc.8b06409/suppl_file/jp8b06409_si_001.pdf
 lammps input and data
+
+https://doi.org/10.1021/acsami.4c11275
+lammps input and CP2k
 
 https://d-nb.info/1179909305/34
 YSZ lammps input
