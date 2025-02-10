@@ -2223,6 +2223,12 @@ CHOCeAu
 S. Yang et al., Applied Surface Science
 Volume 679, 15 January 2025, 161232
 https://doi.org/10.1016/j.apsusc.2024.161232
+
+2024X13
+CHONBAl
+Y. Zhang et al.,
+Cite this: J. Phys. Chem. C 2024, 128, 44, 18767–18781
+https://doi.org/10.1021/acs.jpcc.4c04669
 -------------------------------------------------------------------
 important information
 - X. Hao et al., J. Phys. Chem. C 2023, 127, 40, 20157–20168
