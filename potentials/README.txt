@@ -2247,6 +2247,12 @@ SnSeHOMgC
 B. Fazlioglu-Yalcin et al.,
 Cite this: J. Phys. Chem. C 2024, 128, 34, 14294–14304
 https://doi.org/10.1021/acs.jpcc.4c03096
+
+2024X17
+CHONSSiPtZrNiAuVBiTiZnCuMg
+A. Sepehrinezhad et al.,
+Cite this: J. Phys. Chem. C 2024, 128, 30, 12534–12543
+https://doi.org/10.1021/acs.jpcc.4c02233
 -------------------------------------------------------------------
 important information
 - X. Hao et al., J. Phys. Chem. C 2023, 127, 40, 20157–20168
