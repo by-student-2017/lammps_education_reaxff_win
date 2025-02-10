@@ -2302,6 +2302,12 @@ A. Salom-Catala et al.,
 Cite this: J. Phys. Chem. C 2024, 128, 7, 2844–2855
 https://doi.org/10.1021/acs.jpcc.3c07126
 
+2024X26
+CeOHSiClNa
+M. D. Biase et al., 
+Cite this: Langmuir 2024, 40, 13, 6773–6785
+https://doi.org/10.1021/acs.langmuir.3c03557
+
 2024XX: https://doi.org/10.1021/acsnano.4c13792
 -------------------------------------------------------------------
 important information
