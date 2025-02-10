@@ -2283,6 +2283,12 @@ CHO
 Q. Huang et al.,
 Cite this: J. Phys. Chem. A 2024, 128, 12, 2487–2497
 https://doi.org/10.1021/acs.jpca.3c07770
+
+2024X23
+IBrPbCs
+M. Pols et al.,
+Cite this: J. Phys. Chem. C 2024, 128, 9, 4111–4118
+https://doi.org/10.1021/acs.jpcc.4c00563
 -------------------------------------------------------------------
 important information
 - X. Hao et al., J. Phys. Chem. C 2023, 127, 40, 20157–20168
