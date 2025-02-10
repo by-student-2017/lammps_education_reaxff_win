@@ -2331,6 +2331,13 @@ J. A. Scher et al.,
 Cite this: ACS Appl. Mater. Interfaces 2024, 16, 19, 25445–25461
 https://doi.org/10.1021/acsami.3c18840
 
+2024X31
+CHOSMoNiLiBFPN
+CHOSAu
+T. Duivenvoorden et al.,
+Batteries & Supercaps 7 (2024) e202300324 (Open Access)
+https://doi.org/10.1002/batt.202300324
+
 2024XX: https://doi.org/10.1021/acsnano.4c13792
 -------------------------------------------------------------------
 important information
