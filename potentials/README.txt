@@ -2235,6 +2235,12 @@ CHOPtCl
 M. K. Talkhoncheh et al.,
 Cite this: J. Phys. Chem. A 2024, 128, 38, 8232–8243
 https://doi.org/10.1021/acs.jpca.4c01708
+
+2024X15
+CHOSN
+L. Vermeersch et al., 
+Cite this: J. Phys. Chem. A 2024, 128, 48, 10431–10439
+https://doi.org/10.1021/acs.jpca.4c05470
 -------------------------------------------------------------------
 important information
 - X. Hao et al., J. Phys. Chem. C 2023, 127, 40, 20157–20168
