@@ -2271,6 +2271,12 @@ HOSiAl
 L. Dumortier et al.,
 Cite this: J. Chem. Theory Comput. 2024, 20, 9, 3779–3797
 https://doi.org/10.1021/acs.jctc.3c01009
+
+2024X21
+CHOFeAlNiCuSCrSiF
+T. Wang et al.,
+Cite this: Nano Lett. 2024, 24, 30, 9195–9201
+https://doi.org/10.1021/acs.nanolett.4c01431
 -------------------------------------------------------------------
 important information
 - X. Hao et al., J. Phys. Chem. C 2023, 127, 40, 20157–20168
