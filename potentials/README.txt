@@ -2253,6 +2253,12 @@ CHONSSiPtZrNiAuVBiTiZnCuMg
 A. Sepehrinezhad et al.,
 Cite this: J. Phys. Chem. C 2024, 128, 30, 12534–12543
 https://doi.org/10.1021/acs.jpcc.4c02233
+
+2024X18
+CHONZnClMg
+Y. Yang et al.,
+Cite this: J. Phys. Chem. C 2024, 128, 12, 5257–5270
+https://doi.org/10.1021/acs.jpcc.3c07183
 -------------------------------------------------------------------
 important information
 - X. Hao et al., J. Phys. Chem. C 2023, 127, 40, 20157–20168
