@@ -2562,6 +2562,18 @@ lammps input and data
 https://doi.org/10.1021/acsami.4c11275
 lammps input and CP2k
 
+https://doi.org/10.1021/acs.langmuir.3c02948
+lammps input
+
+https://doi.org/10.1021/acs.iecr.3c03573
+lammps input
+
+https://doi.org/10.1021/acsomega.4c07094
+lammps input
+
+https://doi.org/10.1021/acs.macromol.3c02590
+lammps input
+
 https://d-nb.info/1179909305/34
 YSZ lammps input
 
