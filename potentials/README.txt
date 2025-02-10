@@ -2277,6 +2277,12 @@ CHOFeAlNiCuSCrSiF
 T. Wang et al.,
 Cite this: Nano Lett. 2024, 24, 30, 9195–9201
 https://doi.org/10.1021/acs.nanolett.4c01431
+
+2024X22
+CHO
+Q. Huang et al.,
+Cite this: J. Phys. Chem. A 2024, 128, 12, 2487–2497
+https://doi.org/10.1021/acs.jpca.3c07770
 -------------------------------------------------------------------
 important information
 - X. Hao et al., J. Phys. Chem. C 2023, 127, 40, 20157–20168
