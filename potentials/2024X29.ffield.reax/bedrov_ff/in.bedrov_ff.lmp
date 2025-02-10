@@ -1,0 +1,123 @@
+#-------------------------------------------------------------
+# SYSTEM INITIALIZATION AND FORCE FIELD DEFINITIONS 
+#-------------------------------------------------------------
+
+newton          on
+boundary        p p p
+units           real
+
+atom_style      full
+bond_style      hybrid harmonic table spline 1600
+angle_style     harmonic
+dihedral_style  harmonic
+improper_style  harmonic
+pair_style      hybrid/overlay buck 11.0 lj/cut 11.0 coul/wolf 0.2 11.0
+
+box             tilt large
+read_data       data.00gpa.bedrov_ff.tatb 
+replicate       3 3 4
+
+neighbor        2.0 bin
+neigh_modify    delay 0 every 1 check yes   #Aggressive checking of neighbor lists 
+neigh_modify    exclude molecule/intra all  #Excludes intramolecular non-bonded interactions
+
+pair_coeff         1         1  buck        107023.9  0.27469    553.95
+pair_coeff         1         2  buck        107023.9  0.27469    553.95
+pair_coeff         1         3  buck        37103.2   0.28873    484.21
+pair_coeff         1         4  buck        62222.2   0.28969    679.44
+pair_coeff         1         5  buck        41281.1   0.27453    363.87
+pair_coeff         1         6  buck        16829.5   0.24890     67.49
+pair_coeff         2         2  buck        107023.9  0.27469    553.95
+pair_coeff         2         3  buck        37103.2   0.28873    484.21
+pair_coeff         2         4  buck        62222.2   0.28969    679.44
+pair_coeff         2         5  buck        41281.1   0.27453    363.87
+pair_coeff         2         6  buck        16829.5   0.24890     67.49
+pair_coeff         3         3  buck        13783.9   0.30000    423.25
+pair_coeff         3         4  buck        23210.0   0.30080    593.91
+pair_coeff         3         5  buck        14298.9   0.28861    318.05
+pair_coeff         3         6  buck        4827.6   0.27001     58.97
+pair_coeff         4         4  buck        39091.8   0.30159    833.37
+pair_coeff         4         5  buck        23978.2   0.28957    446.30
+pair_coeff         4         6  buck        8017.4   0.27135     82.76
+pair_coeff         5         5  buck        15923.1   0.27438    239.01
+pair_coeff         5         6  buck        6509.2   0.24864     44.32
+pair_coeff         6         6  buck        7584.2   0.18923      8.22
+
+pair_coeff         1         1  lj/cut          0.0000125       3.2963
+pair_coeff         1         2  lj/cut          0.0000125       3.2963
+pair_coeff         1         3  lj/cut          0.0000125       3.4647
+pair_coeff         1         4  lj/cut          0.0000125       3.4763
+pair_coeff         1         5  lj/cut          0.0000125       3.2944
+pair_coeff         1         6  lj/cut          0.0000125       2.9867
+pair_coeff         2         2  lj/cut          0.0000125       3.2963
+pair_coeff         2         3  lj/cut          0.0000125       3.4647
+pair_coeff         2         4  lj/cut          0.0000125       3.4763
+pair_coeff         2         5  lj/cut          0.0000125       3.2944
+pair_coeff         2         6  lj/cut          0.0000125       2.9867
+pair_coeff         3         3  lj/cut          0.0000125       3.6000
+pair_coeff         3         4  lj/cut          0.0000125       3.6096
+pair_coeff         3         5  lj/cut          0.0000125       3.4633
+pair_coeff         3         6  lj/cut          0.0000125       3.2401
+pair_coeff         4         4  lj/cut          0.0000125       3.6190
+pair_coeff         4         5  lj/cut          0.0000125       3.4748
+pair_coeff         4         6  lj/cut          0.0000125       3.2562
+pair_coeff         5         5  lj/cut          0.0000125       3.2925
+pair_coeff         5         6  lj/cut          0.0000125       2.9837
+pair_coeff         6         6  lj/cut          0.0000125       2.2707
+
+pair_coeff     * *      coul/wolf
+
+bond_coeff  1   harmonic 250.00    1.440
+bond_coeff  2   harmonic 150.00    1.427
+bond_coeff  3   harmonic 336.00    1.322
+bond_coeff  4   harmonic 439.00    1.230
+bond_coeff  5   harmonic 425.00    1.010
+bond_coeff  6   table intraOHrepulsion.txt OHbond
+
+angle_coeff     1   32.0   118.4
+angle_coeff     2   32.0   121.6
+angle_coeff     3   30.0   121.7
+angle_coeff     4   30.0   119.2
+angle_coeff     5   70.0   116.8
+angle_coeff     6   32.0   112.0
+angle_coeff     7   47.5   117.3
+angle_coeff     8   32.0   119.0
+
+dihedral_coeff  1    2.675   -1   2  
+dihedral_coeff  2   10.0     -1   2
+dihedral_coeff  3   10.0     -1   2
+dihedral_coeff  4    0.80    -1   2
+dihedral_coeff  5    4.44    -1   2
+
+improper_coeff  1   18.25     0.0
+improper_coeff  2   44.65     0.0
+improper_coeff  3    1.05     0.0
+
+#-------------------------------------------------------------
+# DUMP SETUP
+#-------------------------------------------------------------
+
+thermo_style    custom step time etotal pe ke temp press pxx pyy pzz pxy pxz pyz lx ly lz xy xz yz 
+thermo          10
+
+dump            trajectory  all custom 10000 dump.tatb.lammpstrj id mol type xu yu zu
+dump_modify     trajectory  first yes sort id format line "%8d %6d %4d %25.12e %25.12e %25.12e"
+
+#-------------------------------------------------------------
+# SIMULATION SETUP
+#-------------------------------------------------------------
+
+run_style       verlet
+timestep        0.50
+
+variable        myTemp  equal 300.0 
+
+velocity        all create ${myTemp} 61098 mom yes dist gaussian    
+
+fix             1 all nvt temp ${myTemp} ${myTemp} 100.0 flip no
+run             200000
+unfix           1
+
+
+
+

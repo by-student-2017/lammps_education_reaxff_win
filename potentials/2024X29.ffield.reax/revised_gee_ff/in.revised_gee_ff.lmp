@@ -1,0 +1,86 @@
+#-------------------------------------------------------------
+# SYSTEM INITIALIZATION AND FORCE FIELD DEFINITIONS 
+#-------------------------------------------------------------
+
+boundary        p p p
+newton          on
+units           real
+
+atom_style      full
+bond_style      hybrid harmonic table spline 1600
+angle_style     harmonic
+dihedral_style  harmonic
+pair_style      hybrid/overlay lj/cut 11.0 coul/wolf 0.2 11.0
+
+box             tilt large
+read_data       data.00gpa.revised_gee_ff.tatb 
+replicate       3 3 4
+
+neighbor        2.0 bin
+neigh_modify    delay 0 every 1 check no
+special_bonds   lj/coul 0.0 0.0 1.0
+
+pair_coeff	    1	1   lj/cut      0.010000000	3.830864488
+pair_coeff	    1	2   lj/cut      0.010000000	3.830864488
+pair_coeff	    1	3   lj/cut      0.010000000	3.830864488
+pair_coeff	    1	4   lj/cut      0.077459667	3.199802617
+pair_coeff	    1	5   lj/cut      0.044721360	2.408723904
+pair_coeff	    2	2   lj/cut      0.010000000	3.830864488
+pair_coeff	    2	3   lj/cut      0.010000000	3.830864488
+pair_coeff	    2	4   lj/cut      0.077459667	3.199802617
+pair_coeff	    2	5   lj/cut      0.044721360	2.408723904
+pair_coeff	    3	3   lj/cut      0.010000000	3.830864488
+pair_coeff	    3	4   lj/cut      0.077459667	3.199802617
+pair_coeff	    3	5   lj/cut      0.044721360	2.408723904
+pair_coeff	    4	4   lj/cut      0.600000000	2.672696154
+pair_coeff	    4	5   lj/cut      0.346410162	2.011932574
+pair_coeff	    5	5   lj/cut      0.200000000	1.514527821
+pair_coeff      *   *   coul/wolf
+
+bond_coeff      1       harmonic    700.0000000000 1.4420000000 
+bond_coeff      2       harmonic    700.0000000000 1.4190000000 
+bond_coeff      3       harmonic    700.0000000000 1.3140000000 
+bond_coeff      4       harmonic    700.0000000000 1.2430000000 
+bond_coeff      5       harmonic    350.0000000000 1.0000000000 
+bond_coeff      6       table       intraOHrepulsion.txt OHbond
+
+angle_coeff     1        50.0000000000       120.0000000000 
+angle_coeff     2        50.0000000000       122.0000000000 
+angle_coeff     3        50.0000000000       118.0000000000 
+angle_coeff     4        50.0000000000       120.0000000000 
+angle_coeff     5        50.0000000000       120.0000000000 
+angle_coeff     6        50.0000000000       118.0000000000 
+angle_coeff     7        50.0000000000       120.0000000000 
+angle_coeff     8        50.0000000000       123.0000000000 
+
+dihedral_coeff  1        12.5000000000        -1         2  
+dihedral_coeff  2        12.5000000000        -1         2  
+dihedral_coeff  3        12.5000000000        -1         2  
+dihedral_coeff  4        12.5000000000        -1         2  
+dihedral_coeff  5         0.7000000000        -1         2  
+dihedral_coeff  6         2.1250000000        -1         2  
+
+#-------------------------------------------------------------
+# DUMP SETUP
+#-------------------------------------------------------------
+
+thermo_style    custom step time etotal pe ke temp press pxx pyy pzz pxy pxz pyz lx ly lz xy xz yz 
+thermo          10
+
+dump            trajectory  all custom 10000 dump.tatb.lammpstrj id mol type xu yu zu
+dump_modify     trajectory  first yes sort id format line "%8d %6d %4d %25.12e %25.12e %25.12e"
+
+#-------------------------------------------------------------
+# SIMULATION SETUP
+#-------------------------------------------------------------
+
+run_style       verlet
+timestep        0.50
+
+variable        myTemp  equal 300.0 
+
+velocity        all create ${myTemp} 61098 mom yes dist gaussian    
+
+fix             1 all nvt temp ${myTemp} ${myTemp} 100.0 flip no
+run             200000
+unfix           1

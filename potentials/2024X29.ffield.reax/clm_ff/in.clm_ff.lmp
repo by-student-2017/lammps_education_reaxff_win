@@ -1,0 +1,97 @@
+#-------------------------------------------------------------
+# SYSTEM INITIALIZATION AND FORCE FIELD DEFINITIONS 
+#-------------------------------------------------------------
+
+newton          on
+boundary        p p p
+units           real
+
+atom_style      full
+bond_style      hybrid harmonic table spline 1600
+angle_style     harmonic
+dihedral_style  harmonic
+improper_style  harmonic
+pair_style      hybrid/overlay lj/cut 11.0 coul/wolf 0.2 11.0
+
+box             tilt large
+read_data       data.00gpa.clm_ff.tatb
+replicate       3 3 4
+
+neighbor        2.0 bin
+neigh_modify    delay 0 every 1 check yes
+special_bonds   lj/coul 0.0 0.0 1.0
+
+pair_coeff	1	1	lj/cut      0.010000000	3.830864488
+pair_coeff	1	2	lj/cut      0.010000000	3.830864488
+pair_coeff	1	3	lj/cut      0.010000000	3.830864488
+pair_coeff	1	4	lj/cut      0.010000000	3.830864488
+pair_coeff	1	5	lj/cut      0.077459667	3.199802617
+pair_coeff	1	6	lj/cut      0.044721360	2.408723904
+pair_coeff	2	2	lj/cut      0.010000000	3.830864488
+pair_coeff	2	3	lj/cut      0.010000000	3.830864488
+pair_coeff	2	4	lj/cut      0.010000000	3.830864488
+pair_coeff	2	5	lj/cut      0.077459667	3.199802617
+pair_coeff	2	6	lj/cut      0.044721360	2.408723904
+pair_coeff	3	3	lj/cut      0.010000000	3.830864488
+pair_coeff	3	4	lj/cut      0.010000000	3.830864488
+pair_coeff	3	5	lj/cut      0.077459667	3.199802617
+pair_coeff	3	6	lj/cut      0.044721360	2.408723904
+pair_coeff	4	4	lj/cut      0.010000000	3.830864488
+pair_coeff	4	5	lj/cut      0.077459667	3.199802617
+pair_coeff	4	6	lj/cut      0.044721360	2.408723904
+pair_coeff	5	5	lj/cut      0.600000000	2.672696154
+pair_coeff	5	6	lj/cut      0.346410162	2.011932574
+pair_coeff	6	6	lj/cut      0.200000000	1.514527821
+
+pair_coeff     * *      coul/wolf
+
+bond_coeff  1   harmonic 250.00    1.440
+bond_coeff  2   harmonic 150.00    1.427
+bond_coeff  3   harmonic 336.00    1.322
+bond_coeff  4   harmonic 439.00    1.230
+bond_coeff  5   harmonic 425.00    1.010
+bond_coeff  6   table intraOHrepulsion.txt OHbond
+
+angle_coeff     1   32.0   118.4
+angle_coeff     2   32.0   121.6
+angle_coeff     3   30.0   121.7
+angle_coeff     4   30.0   119.2
+angle_coeff     5   70.0   116.8
+angle_coeff     6   32.0   112.0
+angle_coeff     7   47.5   117.3
+angle_coeff     8   32.0   119.0
+
+dihedral_coeff  1    2.675   -1   2  
+dihedral_coeff  2   10.0     -1   2
+dihedral_coeff  3   10.0     -1   2
+dihedral_coeff  4    0.80    -1   2
+dihedral_coeff  5    4.44    -1   2
+
+improper_coeff  1   18.25     0.0
+improper_coeff  2   44.65     0.0
+improper_coeff  3    1.05     0.0
+
+#-------------------------------------------------------------
+# DUMP SETUP
+#-------------------------------------------------------------
+
+thermo_style    custom step time etotal pe ke temp press pxx pyy pzz pxy pxz pyz lx ly lz xy xz yz 
+thermo          10
+
+dump            trajectory  all custom 10000 dump.tatb.lammpstrj id mol type xu yu zu
+dump_modify     trajectory  first yes sort id format line "%8d %6d %4d %25.12e %25.12e %25.12e"
+
+#-------------------------------------------------------------
+# SIMULATION SETUP
+#-------------------------------------------------------------
+
+run_style       verlet
+timestep        0.50
+
+variable        myTemp  equal 300.0 
+
+velocity        all create ${myTemp} 61098 mom yes dist gaussian    
+
+fix             1 all nvt temp ${myTemp} ${myTemp} 100.0 flip no
+run             200000
+unfix           1

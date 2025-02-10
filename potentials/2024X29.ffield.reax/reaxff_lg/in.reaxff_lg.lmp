@@ -1,0 +1,49 @@
+#-------------------------------------------------------------
+# SYSTEM INITIALIZATION AND FORCE FIELD DEFINITIONS 
+#-------------------------------------------------------------
+
+units           real
+boundary        p p p
+
+atom_style      charge
+neighbor        2.0 bin
+neigh_modify    delay 1 
+
+box             tilt large
+read_data	    data.00gpa.reaxff_lg.tatb 
+replicate       3 3 4
+ 
+## all of reaxff is done through a single pair style that is many-bodied
+pair_style      reax/c ./lmp_control.lmp lgvdw yes checkqeq yes safezone 20.0 mincap 1000
+pair_coeff      * * ./ffield_reaxff_lg.lmp C H O N 
+
+## Get reax energy terms
+compute         reax all pair reax/c
+
+## QEQ is needed
+fix             10 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+
+#-------------------------------------------------------------
+# DUMP SETUP
+#-------------------------------------------------------------
+
+thermo_style 	custom step time etotal pe ke temp press pxx pyy pzz pxy pxz pyz lx ly lz xy xz yz 
+thermo 		    50
+
+dump            trajectory  all custom 50000 dump.tatb.lammpstrj id type q xu yu zu
+dump_modify     trajectory  first yes sort id format line "%8d %4d %25.12e %25.12e %25.12e %25.12e"
+
+#-------------------------------------------------------------
+# SIMULATION SETUP
+#-------------------------------------------------------------
+
+run_style       verlet
+timestep        0.10
+
+variable        myTemp  equal 300.0 
+
+velocity        all create ${myTemp} 61098 mom yes dist gaussian    
+
+fix             1 all nvt temp ${myTemp} ${myTemp} 100.0 flip no
+run             1000000
+unfix           1
