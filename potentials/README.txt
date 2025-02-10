@@ -2217,6 +2217,12 @@ CHO
 Q. Wang et al., J. Phys. Chem. A 2024, XXXX, XXX, XXX-XXX
 Publication Date:June 13, 2024
 https://doi.org/10.1021/acs.jpca.4c01924
+
+2024X12
+CHOCeAu
+S. Yang et al., Applied Surface Science
+Volume 679, 15 January 2025, 161232
+https://doi.org/10.1016/j.apsusc.2024.161232
 -------------------------------------------------------------------
 important information
 - X. Hao et al., J. Phys. Chem. C 2023, 127, 40, 20157–20168
