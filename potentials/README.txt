@@ -2327,6 +2327,12 @@ M. P. Kroonblawd et al.,
 Cite this: J. Chem. Eng. Data 2024, 69, 4, 1526–1545
 https://doi.org/10.1021/acs.jced.3c00756
 
+2024X30
+CHOAl
+J. A. Scher et al.,
+Cite this: ACS Appl. Mater. Interfaces 2024, 16, 19, 25445–25461
+https://doi.org/10.1021/acsami.3c18840
+
 2024XX: https://doi.org/10.1021/acsnano.4c13792
 -------------------------------------------------------------------
 important information
