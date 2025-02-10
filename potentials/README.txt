@@ -2338,6 +2338,12 @@ T. Duivenvoorden et al.,
 Batteries & Supercaps 7 (2024) e202300324 (Open Access)
 https://doi.org/10.1002/batt.202300324
 
+2024X32
+CHNScHe
+H. Fan et al.,
+Phys. Chem. Chem. Phys., 2025,27, 1640-1647
+https://doi.org/10.1039/D4CP03280B
+
 2024XX: https://doi.org/10.1021/acsnano.4c13792
 -------------------------------------------------------------------
 important information
