@@ -1,0 +1,29 @@
+# Initialize LAMMPS
+units real
+atom_style charge
+
+# Define your simulation box and boundary conditions
+boundary p p p
+
+# read in the data
+read_data input_atomic_config.data
+
+# Define elements and their REaxFF parameters
+pair_style reaxff NULL
+pair_coeff * * ../../parameters/ffield Al H O
+fix 1 all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff maxiter 1000
+
+# Set the timestep, temperature, pressure, etc.
+timestep 0.2
+
+# Specify your simulation integrator
+fix 2 all nvt temp 300.0 300.0 100.0
+thermo 10
+thermo_style custom step time temp pe etotal econserve
+
+##################
+# Dump timesteps #
+##################
+dump dum1 all xyz 10 dump_output.xyz
+dump_modify dum1 element Al H O
+run 10000
