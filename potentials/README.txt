@@ -2289,6 +2289,12 @@ IBrPbCs
 M. Pols et al.,
 Cite this: J. Phys. Chem. C 2024, 128, 9, 4111–4118
 https://doi.org/10.1021/acs.jpcc.4c00563
+
+2024X24
+CHOSiNaAl
+N. Dasgupta et al.,
+Cite this: J. Phys. Chem. C 2024, 128, 14, 5878–5888
+https://doi.org/10.1021/acs.jpcc.3c08383
 -------------------------------------------------------------------
 important information
 - X. Hao et al., J. Phys. Chem. C 2023, 127, 40, 20157–20168
