@@ -2229,6 +2229,12 @@ CHONBAl
 Y. Zhang et al.,
 Cite this: J. Phys. Chem. C 2024, 128, 44, 18767–18781
 https://doi.org/10.1021/acs.jpcc.4c04669
+
+2024X14
+CHOPtCl
+M. K. Talkhoncheh et al.,
+Cite this: J. Phys. Chem. A 2024, 128, 38, 8232–8243
+https://doi.org/10.1021/acs.jpca.4c01708
 -------------------------------------------------------------------
 important information
 - X. Hao et al., J. Phys. Chem. C 2023, 127, 40, 20157–20168
