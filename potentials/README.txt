@@ -2344,6 +2344,12 @@ H. Fan et al.,
 Phys. Chem. Chem. Phys., 2025,27, 1640-1647
 https://doi.org/10.1039/D4CP03280B
 
+2024X33
+CHNSSi
+Z. Liang et al.,
+Phys. Chem. Chem. Phys., 2024,26, 13182-13197
+https://doi.org/10.1039/D4CP01166J
+
 2024XX: https://doi.org/10.1021/acsnano.4c13792
 -------------------------------------------------------------------
 important information
