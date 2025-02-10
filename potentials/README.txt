@@ -2308,6 +2308,13 @@ M. D. Biase et al.,
 Cite this: Langmuir 2024, 40, 13, 6773–6785
 https://doi.org/10.1021/acs.langmuir.3c03557
 
+2024X27
+Cd
+Y. Zhang et al.,
+Chemical Physics Letters
+Volume 862, March 2025, 141864
+https://doi.org/10.1016/j.cplett.2025.141864
+
 2024XX: https://doi.org/10.1021/acsnano.4c13792
 -------------------------------------------------------------------
 important information
