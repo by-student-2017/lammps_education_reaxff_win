@@ -2315,6 +2315,12 @@ Chemical Physics Letters
 Volume 862, March 2025, 141864
 https://doi.org/10.1016/j.cplett.2025.141864
 
+2024X28
+CHOSiNaCa
+J. M. Rimsza et al.,
+Cite this: J. Phys. Chem. C 2024, 128, 3, 1249–1257
+https://doi.org/10.1021/acs.jpcc.3c05985
+
 2024XX: https://doi.org/10.1021/acsnano.4c13792
 -------------------------------------------------------------------
 important information
