@@ -2265,6 +2265,12 @@ CHON
 C. Qiu et al.,
 Cite this: ACS Omega 2024, 9, 30, 33153–33161
 https://doi.org/10.1021/acsomega.4c04558
+
+2024X20
+HOSiAl
+L. Dumortier et al.,
+Cite this: J. Chem. Theory Comput. 2024, 20, 9, 3779–3797
+https://doi.org/10.1021/acs.jctc.3c01009
 -------------------------------------------------------------------
 important information
 - X. Hao et al., J. Phys. Chem. C 2023, 127, 40, 20157–20168
