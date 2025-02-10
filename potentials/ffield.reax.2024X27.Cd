@@ -1,0 +1,57 @@
+Reactive MD-force field: Cd
+39       !Number of general parameters
+ 50.0000 !Overcoordination parameter : 1 : p_boc1
+  9.5469 !Overcoordination parameter : 2 : p_boc2
+ 26.5405 !Valency angle conjugation parameter : 3 : p_coa2
+  1.7224 !Triple bond stabilization parameter : 4 : p_trip4
+  6.8702 !Triple bond stabilization parameter : 5 : p_trip3
+ 60.4850 !C2-correction : 6 : k_C2
+  1.0588 !Undercoordination parameter : 7 : p_ovun6
+  4.6000 !Triple bond stabilization parameter : 8 : p_trip2
+ 12.1176 !Undercoordination parameter : 9 : p_ovun7
+ 13.3056 !Undercoordination parameter : 10 : p_ovun8
+-70.5044 !Triple bond stabilization energy : 11 : p_trip1
+  0.0000 !Lower Taper-radius : 12 : R_nonblow
+ 10.0000 !Upper Taper-radius : 13 : R_nonbcut
+  2.8793 !Fe dimer correction : 14 : unused
+ 33.8667 !Valency undercoordination : 15 : p_val6
+  6.0891 !Valency angle/lone pair parameter : 16 : p_lp1
+  1.0563 !Valency angle parameter : 17 : p_val9
+  2.0384 !Valency angle parameter : 18 : p_val10
+  6.1431 !Fe dimer correction : 19 : unused
+  6.9290 !Double bond/angle parameter : 20 : p_pen2
+  0.3989 !Double bond/angle parameter: overcoord : 21 : p_pen3
+  3.9954 !Double bond/angle parameter: overcoord : 22 : p_pen4
+ -2.4837 !Fe dimer correction : 23 : unused
+  5.7796 !Torsion/BO parameter : 24 : p_tor2
+ 10.0000 !Torsion overcoordination : 25 : p_tor3
+  1.9487 !Torsion overcoordination : 26 : p_tor4
+ -1.2327 !eReaxFF : 27 : unused
+  2.1645 !Conjugation : 28 : p_cot2
+  1.5591 !VdW shielding : 29 : p_vdW1
+  0.1000 !Cutoff for bond order (* 100) : 30 : bo_cut
+  2.1365 !Valency angle conjugation parameter : 31 : p_coa4
+  0.6991 !Overcoordination parameter : 32 : p_ovun4
+ 50.0000 !Overcoordination parameter : 33 : p_ovun3
+  1.8512 !Valency/lone pair parameter : 34 : p_val8
+  0.5000 !ACKS2 softness parameter : 35 : unused
+ 20.0000 !When lg used, it is very important : 36 : gp35
+  5.0000 !eReaxFF : 37 : unused
+  0.0000 !if 1: remove delta_j term for non-C-C-C angles and where none of the atoms is N : 38 : gp37
+  2.6962 !Valency angle conjugation parameter : 39 : p_coa3
+1 !Nr of atoms; 1_r_0^sigma 2_Val_i 3_mass 4_r_vdW 5_D_ij 6_gammaEEM 7_r_0^pi 8_Val_i^e
+  9_alpha_ij 10_gamma_vdw 11_Val_j^angle 12_p_ovun5 13_unused 14_chiEEM 15_etaEEM 16_p_hbond
+  17_r_0^pipi 18_p_lp2 19_unused 20_p_boc4 21_p_boc3 22_p_boc5 23_unused 24_unused
+  25_p_ovun2 26_p_val3 27_unused 28_Val_i^boc 29_p_val5 30_rij_in 31_D_in 32_alpha_in
+Cd 1.6404 2.0000 112.4100 1.6653 0.6561 1.0000 -1.0000 2.0000
+  12.2125 5.8206 2.0000 0.0000 0.0000 5.5005 6.6477 0.0000
+  -1.0000 0.0000 89.8000 27.6155 1.8359 0.7297 0.8563 0.0000
+  -5.7592 1.7287 1.0338 5.0000 2.5791 0.0000 0.0000 0.0000
+1 !Nr of bonds; 1_D_e^sigma 2_D_e^pi 3_D_e^pipi 4_p_be1 5_p_bo5 6_v13cor 7_p_bo6 8_p_ovun1
+  9_p_be2 10_p_bo3 11_p_bo4 12_unused 13_p_bo1 14_p_bo2 15_ovc 16_unused
+1 1 33.2229 0.0000 0.0000 -0.9926 -0.2000 0.0000 16.0000 0.2741
+     2.2213 -0.2000 15.0000 1.0000 -0.2377 3.0000 0.0000 0.0000
+0 ! Nr of off-diagonal terms; Ediss;Ro;gamma;rsigma;rpi;rpi2
+0 ! Nr of angles;at1;at2;at3;Thetao,o;ka;kb;pv1;pv2;val(bo)
+0 ! Nr of torsions;at1;at2;at3;at4;;V1;V2;V3;V2(BO);vconj;n.u;n
+0 ! Nr of hydrogen bonds;at1;at2;at3;Rhb;Dehb;vhb1
