@@ -2241,6 +2241,12 @@ CHOSN
 L. Vermeersch et al., 
 Cite this: J. Phys. Chem. A 2024, 128, 48, 10431–10439
 https://doi.org/10.1021/acs.jpca.4c05470
+
+2024X16
+SnSeHOMgC
+B. Fazlioglu-Yalcin et al.,
+Cite this: J. Phys. Chem. C 2024, 128, 34, 14294–14304
+https://doi.org/10.1021/acs.jpcc.4c03096
 -------------------------------------------------------------------
 important information
 - X. Hao et al., J. Phys. Chem. C 2023, 127, 40, 20157–20168
