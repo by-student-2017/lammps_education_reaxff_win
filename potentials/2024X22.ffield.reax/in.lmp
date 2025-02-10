@@ -1,0 +1,53 @@
+# Script S1. The LAMMPS input files used for force field validation.
+
+#  polymer model
+
+units         real
+dimension      3
+boundary      p p p
+atom_style     full 
+read_data     model.xyz
+pair_style     reax/c lmp_control   safezone 3.0 mincap 200
+pair_coeff *  *    ffield.reax.cho C H O
+neighbor      2 bin 
+neigh_modify every 1 delay 0 check yes
+
+#low temperature dynamics equilibrium for geometry optimization
+fix  low  all  nvt temp  300.0  300.0  100.0
+fix  species  all reax/c/species 10 10 1000 species1.out
+fix   1   all qeq/reax 5 0.0 5.0 1e-6 reax/c    
+timestep 0.25
+thermo 1000
+thermo_style   custom step temp press density etotal vol
+thermo_modify lost ignore
+dump 1 all xyz  1000 outwz1.xyz  
+run 20000
+
+unfix  low
+unfix  species
+#fixes   heating pyrolysis and remove the molecules
+fix   3   all nvt temp 300.0 1000.0 100.0 
+fix   4   all reax/c/species 10 10 1000 species2.out
+timestep 0.25
+
+thermo 1000
+thermo_style   custom step temp press density etotal vol
+thermo_modify lost ignore
+undump  1
+dump 2 all xyz  1000 outwz2.xyz  
+run  112000
+
+unfix 3
+unfix 4
+
+#fixes   cooling down pyrolysis and remove the molecules
+fix   5    all nvt temp 1000 1000 100.0                            
+fix   6    all reax/c/species 10 10 1000 species3.out
+timestep 0.25
+
+thermo 1000
+thermo_style   custom step temp press density etotal vol
+thermo_modify lost ignore
+undump  2
+dump 3 all xyz  1000 outwz3.xyz
+run  196000000
