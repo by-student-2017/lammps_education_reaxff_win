@@ -2157,7 +2157,7 @@ https://doi.org/10.1021/acs.langmuir.3c00304
 2024X1
 CHOSiNaCa
 J. M. Rimsza et al.,
-J. Phys. Chem. C 2024, XXXX, XXX, XXX-XXX.
+Cite this: J. Phys. Chem. C 2024, 128, 3, 1249–1257
 https://doi.org/10.1021/acs.jpcc.3c05985
 
 2024X2
@@ -2175,8 +2175,7 @@ https://doi.org/10.1021/acs.jpca.3c06406
 2024X4
 CHONSSiFe
 H. Suzuki et al.,
-ACS Omega 2024, XXXX, XXX, XXX-XXX.
-Publication Date:January 12, 2024
+Cite this: ACS Omega 2024, 9, 4, 4656–4663
 https://doi.org/10.1021/acsomega.3c07902
 
 2024X5
@@ -2214,8 +2213,7 @@ https://doi.org/10.1021/acs.jpcc.3c07242
 
 2024X11
 CHO
-Q. Wang et al., J. Phys. Chem. A 2024, XXXX, XXX, XXX-XXX
-Publication Date:June 13, 2024
+Cite this: J. Phys. Chem. A 2024, 128, 25, 5065–5076
 https://doi.org/10.1021/acs.jpca.4c01924
 
 2024X12
