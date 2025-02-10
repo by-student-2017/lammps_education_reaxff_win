@@ -2259,6 +2259,12 @@ CHONZnClMg
 Y. Yang et al.,
 Cite this: J. Phys. Chem. C 2024, 128, 12, 5257–5270
 https://doi.org/10.1021/acs.jpcc.3c07183
+
+2024X19
+CHON
+C. Qiu et al.,
+Cite this: ACS Omega 2024, 9, 30, 33153–33161
+https://doi.org/10.1021/acsomega.4c04558
 -------------------------------------------------------------------
 important information
 - X. Hao et al., J. Phys. Chem. C 2023, 127, 40, 20157–20168
