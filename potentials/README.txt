@@ -2295,6 +2295,12 @@ CHOSiNaAl
 N. Dasgupta et al.,
 Cite this: J. Phys. Chem. C 2024, 128, 14, 5878–5888
 https://doi.org/10.1021/acs.jpcc.3c08383
+
+2024X25
+CHPt
+A. Salom-Catala et al.,
+Cite this: J. Phys. Chem. C 2024, 128, 7, 2844–2855
+https://doi.org/10.1021/acs.jpcc.3c07126
 -------------------------------------------------------------------
 important information
 - X. Hao et al., J. Phys. Chem. C 2023, 127, 40, 20157–20168
