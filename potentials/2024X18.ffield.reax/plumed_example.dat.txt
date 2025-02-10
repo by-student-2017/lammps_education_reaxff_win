@@ -1,0 +1,30 @@
+# additional instruction for plumed files can be found on plumed.org
+UNITS LENGTH=A 
+
+# define collective variables based on different distances (not all variables are used for the metadynamics simulation. See Table 1 of the main text)
+d1: DISTANCE ATOMS=85,113 # N-C (the characteristic distance between -NH2 and CO2)
+d3: DISTANCE ATOMS=114,7 # O-H (i.e., the O-H distance between the proton from -NH2 and one oxygen in CO2)
+d4: DISTANCE ATOMS=85,7 # N-H (i.e., one of the N-H distances between the hydrogen nitrogen in -NH2)
+d34: CUSTOM ARG=d3,d4 VAR=x,y PERIODIC=NO FUNC=x+y # d34 is used to avoid a large distance of the proton from both the C atom in CO2 and the N atom in -NH2
+
+# define additional distance-based collective variables to avoid irrelevant bond formation or breaking.
+d11: DISTANCE ATOMS=85,8 # N-H (the other N-H bond in -NH2)
+d12: DISTANCE ATOMS=7,115  # H-O (distance between the proton and the other O atom in CO2)
+d13: DISTANCE ATOMS=7,112  # H-O (there is another O atom for which the proton may form an unwanted bond)
+
+rA: RMSD REFERENCE=./sa.pdb TYPE=OPTIMAL  # sa.pdb contains the positions of atoms from -NH2 and CO2 (C,H,O,N) which are close the adsorption site in the unadsorbed configruation; an example is provided.
+rB: RMSD REFERENCE=./sb.pdb TYPE=OPTIMAL  # sb.pdb contains the positions of atoms from -NH2 and CO2 (C,H,O,N) which are close the adsorption site in the adsorbed configruation; and example is provided.
+
+# Empirical walls are used to either enhance sampling of the CO2 chemisorption or prevent unwanted reactions
+UPPER_WALLS ARG=d1 AT=1.4  KAPPA=400  EXP=1
+UPPER_WALLS ARG=d3 AT=1.0  KAPPA=200  EXP=1
+UPPER_WALLS ARG=d4 AT=1.0  KAPPA=100  EXP=1
+UPPER_WALLS ARG=rA AT=0.0  KAPPA=160  EXP=1
+UPPER_WALLS ARG=rB AT=0.0  KAPPA=160  EXP=1
+UPPER_WALLS ARG=d11 AT=1.0  KAPPA=200   EXP=1
+LOWER_WALLS ARG=d12 AT=2.0  KAPPA=-200  EXP=1
+LOWER_WALLS ARG=d13 AT=2.0  KAPPA=-400  EXP=1
+UPPER_WALLS ARG=d34 AT=3.5  KAPPA=200   EXP=1 
+
+# Activate well-tempered metadynamics
+metad: METAD ARG=d1,d3 SIGMA=0.10,0.10 PACE=500 HEIGHT=10.0 TEMP=300 BIASFACTOR=100 FILE=HILLS GRID_MIN=0,0 GRID_MAX=9,9
