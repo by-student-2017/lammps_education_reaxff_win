@@ -1789,6 +1789,12 @@ https://pure.tue.nl/ws/portalfiles/portal/230727153/MCE_afstudeerverslag_Jasper_
 M. Y. Sengul et al., npj Comput. Mater. 7 (2021) 68.
 https://doi.org/10.1038/s41524-021-00534-4
 
+2021X27
+CHOFeSCr
+Z. Yan et al.,
+Tribol Lett 69, 153 (2021).
+https://doi.org/10.1007/s11249-021-01533-8
+
 NTO_ReaxFFlg
 CHONSSi
 L. Du et al., npj Computational Materials 7 (2021) Article number: 68 (2021)
