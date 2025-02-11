@@ -2199,6 +2199,13 @@ CHONSSi
 Z. Xiong et al.,
 J. Mol. Model. 29, 372 (2023).
 https://doi.org/10.1007/s00894-023-05773-4
+
+2023X29
+HOSZn
+Y. Li et al.,
+Advanced Energy Materials
+Volume 14, Issue 6 2303047
+https://doi.org/10.1002/aenm.202303047
 -------------------------------------------------------------------
 2024
 
