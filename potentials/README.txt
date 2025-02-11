@@ -1383,6 +1383,12 @@ G. Lyngdoh et al.,
 J. Chem. Phys. 151, 064307 (2019)
 https://doi.org/10.1063/1.5121519
 
+2019X21
+CHONSMgPNaCuClSi
+A. Vashisth et al., 
+Nanoscale, 2019,11, 7447-7456
+https://doi.org/10.1039/C9NR00958B
+
 No.81
 CHONSSi
 C. Ren et al.,
