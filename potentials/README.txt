@@ -1795,6 +1795,12 @@ Z. Yan et al.,
 Tribol Lett 69, 153 (2021).
 https://doi.org/10.1007/s11249-021-01533-8
 
+2021X28
+CHON
+M. D. Hossain et al.,
+Carbon 183 (2021) 940-947.
+https://doi.org/10.1016/j.carbon.2021.07.080
+
 NTO_ReaxFFlg
 CHONSSi
 L. Du et al., npj Computational Materials 7 (2021) Article number: 68 (2021)
