@@ -2193,6 +2193,12 @@ HOCeNaClSi
 L. Brugnoli et al.,
 Langmuir 2023, 39, 15, 5527-5541.
 https://doi.org/10.1021/acs.langmuir.3c00304
+
+2023X28
+CHONSSi
+Z. Xiong et al.,
+J. Mol. Model. 29, 372 (2023).
+https://doi.org/10.1007/s00894-023-05773-4
 -------------------------------------------------------------------
 2024
 
