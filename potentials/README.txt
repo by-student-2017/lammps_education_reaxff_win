@@ -1807,6 +1807,13 @@ A. Verma et al.,
 Phys. Chem. Chem. Phys., 2021,23, 10822-10834
 https://doi.org/10.1039/D1CP00546D
 
+2021X30
+CHONSFPtClNi
+X. Guo et al., Applied Surface Science
+Volume 556, 1 August 2021, 149756
+https://doi.org/10.1016/j.apsusc.2021.149756
+https://datadryad.org/stash/dataset/doi:10.5061/dryad.2r984j6
+
 NTO_ReaxFFlg
 CHONSSi
 L. Du et al., npj Computational Materials 7 (2021) Article number: 68 (2021)
