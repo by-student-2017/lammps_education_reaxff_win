@@ -2350,6 +2350,12 @@ Z. Liang et al.,
 Phys. Chem. Chem. Phys., 2024,26, 13182-13197
 https://doi.org/10.1039/D4CP01166J
 
+2024X34
+CHONSSiGeGaAg
+F. Niefind et al.,
+NANO MICRO Small 20 (2024) 2306554.
+https://doi.org/10.1002/smll.202306554
+
 2024XX: https://doi.org/10.1021/acsnano.4c13792
 -------------------------------------------------------------------
 2025
