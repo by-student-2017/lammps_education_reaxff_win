@@ -1801,6 +1801,12 @@ M. D. Hossain et al.,
 Carbon 183 (2021) 940-947.
 https://doi.org/10.1016/j.carbon.2021.07.080
 
+2021X29
+CHONB
+A. Verma et al.,
+Phys. Chem. Chem. Phys., 2021,23, 10822-10834
+https://doi.org/10.1039/D1CP00546D
+
 NTO_ReaxFFlg
 CHONSSi
 L. Du et al., npj Computational Materials 7 (2021) Article number: 68 (2021)
