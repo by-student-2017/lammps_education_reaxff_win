@@ -2352,6 +2352,14 @@ https://doi.org/10.1039/D4CP01166J
 
 2024XX: https://doi.org/10.1021/acsnano.4c13792
 -------------------------------------------------------------------
+2025
+
+2025X1
+CHOFeClSiAlCa
+Y. Li et al.,
+J. Am. Ceram. Soc. 108 (2025) e20134.
+https://doi.org/10.1111/jace.20134
+-------------------------------------------------------------------
 important information
 - X. Hao et al., J. Phys. Chem. C 2023, 127, 40, 20157–20168
 Publication Date:October 2, 2023
