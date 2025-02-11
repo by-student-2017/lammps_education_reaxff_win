@@ -2010,6 +2010,12 @@ https://bearworks.missouristate.edu/theses/3739/
 OMg
 F. Fiesinger et al., Chem. Phys. Chem. 16 (2022).
 https://doi.org/10.1002/cssc.202201821
+
+2022X32
+CHO
+N.D. Orekhov et al.,
+Carbon 191 (2022) 546-554.
+https://doi.org/10.1016/j.carbon.2022.02.018
 -------------------------------------------------------------------
 2023
 
