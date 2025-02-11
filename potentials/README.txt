@@ -2588,6 +2588,10 @@ lammps input
 https://doi.org/10.1021/acs.macromol.3c02590
 lammps input
 
+https://doi.org/10.1016/j.commatsci.2018.04.054
+https://data.mendeley.com/datasets/9n8w9t8d48/1
+Lammps input
+
 https://d-nb.info/1179909305/34
 YSZ lammps input
 
