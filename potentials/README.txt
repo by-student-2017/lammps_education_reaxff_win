@@ -1814,6 +1814,13 @@ Volume 556, 1 August 2021, 149756
 https://doi.org/10.1016/j.apsusc.2021.149756
 https://datadryad.org/stash/dataset/doi:10.5061/dryad.2r984j6
 
+2021X31
+CHGa
+CHIn
+S. Rajabpour et al.,
+J. Phys. Chem. C 2021, 125, 19, 10747–10758.
+https://doi.org/10.1021/acs.jpcc.1c01965
+
 NTO_ReaxFFlg
 CHONSSi
 L. Du et al., npj Computational Materials 7 (2021) Article number: 68 (2021)
