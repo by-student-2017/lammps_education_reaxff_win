@@ -2063,6 +2063,13 @@ CHGa
 N. Nayir et al.,
 Carbon 190 (2022) 276-290.
 https://doi.org/10.1016/j.carbon.2022.01.005
+
+2022X34
+CHOSMoNiAuTi
+Q. Mao et al.,
+Front. Nanotechnol. , 26 October 2022
+Sec. Nanomaterials Volume 4 - 2022 (Creative Commons Attribution License (CC BY).)
+https://doi.org/10.3389/fnano.2022.1034795
 -------------------------------------------------------------------
 2023
 
