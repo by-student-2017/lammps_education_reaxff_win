@@ -1009,8 +1009,8 @@ No.54
 CHO
 R. Smith et al.,
 Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms
-Volume 393, 15 February 2017, Pages 49-53
-https://www.sciencedirect.com/science/article/pii/S0168583X16304773#f0025
+Volume 393, 15 February 2017, Pages 49-53 (Under a Creative Commons license)
+https://doi.org/10.1016/j.nimb.2016.11.007
 
 No.55
 CHONS
