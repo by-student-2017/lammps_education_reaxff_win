@@ -485,6 +485,13 @@ Fogarty et al., J. Chem. Phys., 2010
 CHONSSiPtZrNiCuCoHeNeArKrXe
 K. Amar, Master Thesis (2010).
 https://etda.libraries.psu.edu/catalog/11698
+
+2010X5
+HOZrYV
+A. D. Mayernick et al., 
+Surface Science 
+Volume 604, Issues 17–18, 30 August 2010, Pages 1438-1444
+https://doi.org/10.1016/j.susc.2010.05.006
 -------------------------------------------------------------------
 2011
 
