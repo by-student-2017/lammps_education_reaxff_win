@@ -2247,6 +2247,13 @@ Y. Li et al.,
 Advanced Energy Materials
 Volume 14, Issue 6 2303047
 https://doi.org/10.1002/aenm.202303047
+
+2023X30
+AlNi
+W. Du et al.,
+Journal of Materials Research and Technology
+Volume 24, May–June 2023, Pages 4454-4467 (Under a Creative Commons license)
+https://doi.org/10.1016/j.jmrt.2023.04.038
 -------------------------------------------------------------------
 2024
 
