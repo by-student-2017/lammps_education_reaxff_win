@@ -1089,7 +1089,7 @@ V. Simonka et al.,
 Cite this: J. Phys. Chem. A 2017, 121, 46, 8791-8798
 Publication Date:October 31, 2017
 https://doi.org/10.1021/acs.jpca.7b08983
-LAMMPS files (https://pubs.acs.org/doi/suppl/10.1021/acs.jpca.7b08983/suppl_file/jp7b08983_si_001.zip)
+LAMMPS files (https://pubs.acs.org/doi/suppl/10.1021/acs.jpca.7b08983/suppl_file/jp7b08983_si_001.zip) (lammps input)
 
 No.66
 OAu
