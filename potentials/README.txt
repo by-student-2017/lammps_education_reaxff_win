@@ -65,6 +65,7 @@ K. Chenoweth et al.,
 Cite this: J. Phys. Chem. A 2008, 112, 5, 1040-1053
 Publication Date:January 16, 2008
 https://doi.org/10.1021/jp709896w
+(DOI 10.1088/0965-0393/20/1/015002)
 
 No.3
 HONB
