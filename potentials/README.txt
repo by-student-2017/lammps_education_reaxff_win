@@ -3,6 +3,9 @@ explicitly trained against may produce unrealistic results.  Please
 see the README file in each subdirectory for more detailed
 information.
 
+Copilot
+The ReaxFF files available in Lammps are also considered derivative works of Lammps. Lammps is distributed under the GNU General Public License (GPL) version 2, and the ReaxFF files are subject to the terms of this license. This means that derivative works that include ReaxFF files must also be released under the same GPLv2 terms.
+
 Acknowledgments
   ffield_V_Mo_Te_Bi (ffield.reax.2008X2.CHONSSiPtZrNiAuVBiTiMoTeNb) was kindly provided as a CC0 or MIT license by Professor William A. Goddard III and Professor Adri van Duin.
 
