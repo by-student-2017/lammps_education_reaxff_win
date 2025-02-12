@@ -567,6 +567,12 @@ HOSiAlLi
 Badri Narayanan et al.,
 2012 Modelling Simul. Mater. Sci. Eng. 20 015002
 DOI 10.1088/0965-0393/20/1/015002
+
+2012XX
+FeAlNi (Parameters for creating "ReaxFF".)
+Y. K. Shin et al.,
+J. Phys. Chem. A 2012, 116, 49, 12163–12174
+https://doi.org/10.1021/jp308507x
 -------------------------------------------------------------------
 2013
 
