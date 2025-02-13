@@ -1,5 +1,5 @@
 Reactive MD-force field for C/H/O/N/Si: 2019-08-01
-39       ! Number of general parameters
+39       !Number of general parameters
  50.0000 !Overcoordination parameter
   9.5469 !Overcoordination parameter
  26.5405 !Valency angle conjugation parameter
