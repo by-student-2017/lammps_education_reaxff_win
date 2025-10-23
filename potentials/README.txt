@@ -2302,6 +2302,7 @@ https://doi.org/10.1063/5.0194486
 HONaPCa
 Z. Fallah et al., J. Chem. Phys. 160 (2024) 184505.
 https://doi.org/10.1063/5.0204589
+input files
 
 2024X7
 CHOBrNa
@@ -2439,6 +2440,7 @@ CHON
 M. P. Kroonblawd et al.,
 Cite this: J. Chem. Eng. Data 2024, 69, 4, 1526–1545
 https://doi.org/10.1021/acs.jced.3c00756
+input files
 
 2024X30
 CHOAl
@@ -2663,15 +2665,21 @@ Cite this: J. Phys. Chem. B 2022, 126, 36, 7027-7036
 Publication Date:August 31, 2022
 https://doi.org/10.1021/acs.jpcb.2c03620
 
+----- Lammps input files -----
+https://doi.org/10.1021/acs.jpcc.4c01087
+
+https://doi.org/10.1021/acs.macromol.3c02590
+
+https://doi.org/10.1021/acs.jpcb.3c08419
+
+https://doi.org/10.1021/acs.jctc.4c00628
+
 A thermodynamic study of the hydrogen dissociation by the Small System Methodand the reactive force field ReaxFF
 https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2390753/12537_FULLTEXT.pdf?sequence=1&isAllowed=y
-lammps input file
 
 https://tesionline.univaq.it/bitstream/20.500.12319/2401/1/MSc_Thesis_CHOPRA.pdf
-lammps input
 
 https://www.mdpi.com/1420-3049/27/18/5773
-lammps input
 
 https://doi.org/10.1021/acsami.1c07545
 https://pubs.acs.org/doi/suppl/10.1021/acsami.1c07545/suppl_file/am1c07545_si_001.pdf
@@ -2679,33 +2687,25 @@ LAMMPS input
 
 https://pubs.acs.org/doi/10.1021/acsanm.2c03564
 https://pubs.acs.org/doi/suppl/10.1021/acsanm.2c03564/suppl_file/an2c03564_si_001.pdf
-LAMMPS input
 
 https://doi.org/10.1021/acs.jctc.6b00874
-LAMMPS input
 
 https://doi.org/10.1021/acs.jpcc.8b06409
 https://pubs.acs.org/doi/suppl/10.1021/acs.jpcc.8b06409/suppl_file/jp8b06409_si_001.pdf
-lammps input and data
 
 https://doi.org/10.1021/acsami.4c11275
 lammps input and CP2k
 
 https://doi.org/10.1021/acs.langmuir.3c02948
-lammps input
 
 https://doi.org/10.1021/acs.iecr.3c03573
-lammps input
 
 https://doi.org/10.1021/acsomega.4c07094
-lammps input
 
 https://doi.org/10.1021/acs.macromol.3c02590
-lammps input
 
 https://doi.org/10.1016/j.commatsci.2018.04.054
 https://data.mendeley.com/datasets/9n8w9t8d48/1
-Lammps input
 
 https://d-nb.info/1179909305/34
 YSZ lammps input
@@ -2718,6 +2718,7 @@ lammps dat
 
 https://pubs.acs.org/doi/10.1021/acs.jpclett.2c02222
 Source code
+---------- ---------- ---------- ---------- ----------
 
 J. P. Larentzos et al.,
 J. Chem. Theory Comput. 2015, 11, 2, 381-391
@@ -2840,3 +2841,4 @@ charmm input file
 https://pubs.rsc.org/en/content/articlelanding/2023/CP/D2CP04395E
 structure mol file
 -------------------------------------------------------------------
+
