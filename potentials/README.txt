@@ -2473,6 +2473,24 @@ F. Niefind et al.,
 NANO MICRO Small 20 (2024) 2306554.
 https://doi.org/10.1002/smll.202306554
 
+2024X35
+CHON
+R. W. Grayson et al.,
+Cite this: J. Phys. Chem. A 2024, 128, 47, 10250-10258.
+https://doi.org/10.1021/acs.jpca.4c06078
+
+2024X36
+CHOZrYBaEl
+Md. J.-Hossain, et al.,
+npj Comput Mater 10, 136 (2024)
+https://doi.org/10.1038/s41524-024-01268-9
+
+2024X37
+HSMoAu
+S. Mitra et al.,
+npj 2D Mater Appl 8, 26 (2024)
+https://doi.org/10.1038/s41699-024-00465-w
+
 2024XX: https://doi.org/10.1021/acsnano.4c13792
 -------------------------------------------------------------------
 2025
@@ -2841,4 +2859,5 @@ charmm input file
 https://pubs.rsc.org/en/content/articlelanding/2023/CP/D2CP04395E
 structure mol file
 -------------------------------------------------------------------
+
 
